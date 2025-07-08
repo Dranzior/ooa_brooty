@@ -162,6 +162,7 @@
                             "$maku_tree,pathkey,$k_normal",
                             "$lynna_village,shovel"
                         ],
+						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
                             {
                                 "name": "",
@@ -173,6 +174,35 @@
                         ],
                         "map_locations": [
                             {
+                                "map": "map",
+                                "x": 3700,
+                                "y": 457
+                            }
+                        ]
+                    },
+					{
+                        "name": "Maku Path (D0)",
+                        "sections": [
+                            {
+								"name": "Key Chest",
+								"ref": "Dungeons/Maku Path (D0)/Key Chest/"
+							},
+							{
+								"name": "Basement",
+								"ref": "Dungeons/Maku Path (D0)/Basement/"
+							},
+							{
+								"name": "Heart Piece",
+								"ref": "Dungeons/Maku Path (D0)/Heart Piece/"
+							},
+							{
+								"name": "Have Maku Path Key?",
+								"ref": "Dungeons/Maku Path (D0)/Have Maku Path Key?/"
+							},
+                        ],
+                        "map_locations": [
+                            {
+								"force_invisibility_rules": ["dungeon_er_on"],
                                 "map": "map",
                                 "x": 3700,
                                 "y": 457
@@ -879,6 +909,7 @@
                         "access_rules": [
                             "$d1_entrance"
                         ],
+						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
                             {
                                 "name": "",
@@ -895,7 +926,68 @@
                                 "y": 1057
                             }
                         ]
-                    }
+                    },
+					{
+						"name": "Spirit's Grave (D1)",
+						"sections": [
+							{
+								"name": "East Terrace",
+								"ref": "Dungeons/Spirit's Grave (D1)/East Terrace/"
+							},
+							{
+								"name": "Ghini Drop",
+								"ref": "Dungeons/Spirit's Grave (D1)/Ghini Drop/"
+							},
+							{
+								"name": "Crossroad",
+								"ref": "Dungeons/Spirit's Grave (D1)/Crossroad/"
+							},
+							{
+								"name": "Crystal Room",
+								"ref": "Dungeons/Spirit's Grave (D1)/Crystal Room/"
+							},
+							{
+								"name": "Wide Room",
+								"ref": "Dungeons/Spirit's Grave (D1)/Wide Room/"
+							},
+							{
+								"name": "Two-Buttons Chest",
+								"ref": "Dungeons/Spirit's Grave (D1)/Two-Buttons Chest/"
+							},
+							{
+								"name": "One-Button Chest",
+								"ref": "Dungeons/Spirit's Grave (D1)/One-Button Chest/"
+							},
+							{
+								"name": "Pot Chest",
+								"ref": "Dungeons/Spirit's Grave (D1)/Pot Chest/"
+							},
+							{
+								"name": "West Terrace",
+								"ref": "Dungeons/Spirit's Grave (D1)/West Terrace/"
+							},
+							{
+								"name": "Basement",
+								"ref": "Dungeons/Spirit's Grave (D1)/Basement/"
+							},
+							{
+								"name": "Pumpkin Head",
+								"ref": "Dungeons/Spirit's Grave (D1)/Pumpkin Head/Boss"
+							},
+							{
+								"name": "Eternal Spirit",
+								"ref": "Dungeons/Spirit's Grave (D1)/Eternal Spirit/Essence"
+							}
+						],
+						"map_locations": [
+                            {
+								"force_invisibility_rules": ["dungeon_er_on"],
+                                "map": "map",
+                                "x": 2184,
+                                "y": 1057
+                            }
+                        ]
+					}
                 ]
             },
             {
@@ -1082,6 +1174,7 @@
                         "access_rules": [
                             "$deku_forest,bombs"
                         ],
+						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
                             {
                                 "name": "",
@@ -1099,6 +1192,71 @@
                             }
                         ]
                     },
+					{
+						"name": "Wing Dungeon (D2)",
+						"sections": [
+							{
+								"name": "(1F): Bombed Terrace",
+								"ref": "Dungeons/Wing Dungeon (D2)/(1F): Bombed Terrace/"
+							},
+							{
+								"name": "(1F): Moblin Drop",
+								"ref": "Dungeons/Wing Dungeon (D2)/(1F): Moblin Drop/"
+							},
+							{
+								"name": "(1F): Rope Room",
+								"ref": "Dungeons/Wing Dungeon (D2)/(1F): Rope Room/"
+							},
+							{
+								"name": "(1F): Ladder Chest",
+								"ref": "Dungeons/Wing Dungeon (D2)/(1F): Ladder Chest/"
+							},
+							{
+								"name": "(B1F): Thwomp Tunnel",
+								"ref": "Dungeons/Wing Dungeon (D2)/(B1F): Thwomp Tunnel/"
+							},
+							{
+								"name": "(B1F): Thwomp Shelf",
+								"ref": "Dungeons/Wing Dungeon (D2)/(B1F): Thwomp Shelf/"
+							},
+							{
+								"name": "(B1F): Basement Chest",
+								"ref": "Dungeons/Wing Dungeon (D2)/(B1F): Basement Chest/"
+							},
+							{
+								"name": "(B1F): Basement Drop",
+								"ref": "Dungeons/Wing Dungeon (D2)/(B1F): Basement Drop/"
+							},
+							{
+								"name": "(1F): Moblin Platform",
+								"ref": "Dungeons/Wing Dungeon (D2)/(1F): Moblin Platform/"
+							},
+							{
+								"name": "(1F): Statue Puzzle",
+								"ref": "Dungeons/Wing Dungeon (D2)/(1F): Statue Puzzle/"
+							},
+							{
+								"name": "(1F): Color Room",
+								"ref": "Dungeons/Wing Dungeon (D2)/(1F): Color Room/"
+							},
+							{
+								"name": "Head Thwomp",
+								"ref": "Dungeons/Wing Dungeon (D2)/Head Thwomp/(1F): Boss"
+							},
+							{
+								"name": "Ancient Wood",
+								"ref": "Dungeons/Wing Dungeon (D2)/Ancient Wood/Essence"
+							}
+						],
+						"map_locations": [
+                            {
+								"force_invisibility_rules": ["dungeon_er_on"],
+                                "map": "map",
+                                "x": 2908,
+                                "y": 1052
+                            }
+                        ]
+					},
                     //{
                     //    "name": "Enter Wing Dungeon Present (D2)",
                     //    "access_rules": [
@@ -1298,6 +1456,7 @@
                         "access_rules": [
                             "$d3_entrance"
                         ],
+						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
                             {
                                 "name": "",
@@ -1307,6 +1466,79 @@
                         ],
                         "map_locations": [
                             {
+                                "map": "map",
+                                "x": 1688,
+                                "y": 1488
+                            }
+                        ]
+                    },
+					{
+                        "name": "Moonlit Grotto (D3)",
+                        "sections": [
+							{
+								"name": "(1F): Pols Voice Chest",
+								"ref": "Dungeons/Moonlit Grotto (D3)/(1F): Pols Voice Chest/"
+							},
+							{
+								"name": "(1F): Statue Drop",
+								"ref": "Dungeons/Moonlit Grotto (D3)/(1F): Statue Drop/"
+							},
+							{
+								"name": "(B1F): Conveyor Belt Room",
+								"ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Conveyor Belt Room/"
+							},
+							{
+								"name": "(1F): Six Blocs Drop",
+								"ref": "Dungeons/Moonlit Grotto (D3)/(1F): Six Blocs Drop/"
+							},
+							{
+								"name": "(1F): Armos Drop",
+								"ref": "Dungeons/Moonlit Grotto (D3)/(1F): Armos Drop/"
+							},
+							{
+								"name": "(1F): Bush Beetle Room",
+								"ref": "Dungeons/Moonlit Grotto (D3)/(1F): Bush Beetle Room/"
+							},
+							{
+								"name": "(1F): Mimic Room",
+								"ref": "Dungeons/Moonlit Grotto (D3)/(1F): Mimic Room/"
+							},
+							{
+								"name": "(1F): Crossroad",
+								"ref": "Dungeons/Moonlit Grotto (D3)/(1F): Crossroad/"
+							},
+							{
+								"name": "(B1F): Torch Chest",
+								"ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Torch Chest/"
+							},
+							{
+								"name": "(B1F): Moldorm Drop",
+								"ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Moldorm Drop/"
+							},
+							{
+								"name": "(1F): Bridge Chest",
+								"ref": "Dungeons/Moonlit Grotto (D3)/(1F): Bridge Chest/"
+							},
+							{
+								"name": "(B1F): East",
+								"ref": "Dungeons/Moonlit Grotto (D3)/(B1F): East/"
+							},
+							{
+								"name": "Shadow Hag",
+								"ref": "Dungeons/Moonlit Grotto (D3)/Shadow Hag/(B1F): Boss"
+							},
+							{
+								"name": "Echoing Howl",
+								"ref": "Dungeons/Moonlit Grotto (D3)/Echoing Howl/Essence"
+							},
+							{
+								"name": "Get scent seeds in D3's bridge rooms",
+								"ref": "Dungeons/Moonlit Grotto (D3)/Get scent seeds in D3's bridge rooms/Respawnable bushes"
+							},
+                        ],
+                        "map_locations": [
+                            {
+								"force_invisibility_rules": ["dungeon_er_on"],
                                 "map": "map",
                                 "x": 1688,
                                 "y": 1488
@@ -1851,6 +2083,7 @@
                         "access_rules": [
                             "$d4_entrance"
                         ],
+						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
                             {
                                 "name": "",
@@ -1861,6 +2094,63 @@
                         ],
                         "map_locations": [
                             {
+                                "map": "map",
+                                "x": 559,
+                                "y": 50
+                            }
+                        ]
+                    },
+					{
+                        "name": "Skull Dungeon (D4)",
+                        "sections": [
+                            {
+								"name": "(1F): First Chest",
+								"ref": "Dungeons/Skull Dungeon (D4)/(1F): First Chest/"
+							},
+							{
+								"name": "(1F): Cube Chest",
+								"ref": "Dungeons/Skull Dungeon (D4)/(1F): Cube Chest/"
+							},
+							{
+								"name": "(1F): Minecart Chest",
+								"ref": "Dungeons/Skull Dungeon (D4)/(1F): Minecart Chest/"
+							},
+							{
+								"name": "(1F): First Crystal Switch",
+								"ref": "Dungeons/Skull Dungeon (D4)/(1F): First Crystal Switch/"
+							},
+							{
+								"name": "(1F): Second Crystal Switch",
+								"ref": "Dungeons/Skull Dungeon (D4)/(1F): Second Crystal Switch/"
+							},
+							{
+								"name": "(1F): Color Tile Drop",
+								"ref": "Dungeons/Skull Dungeon (D4)/(1F): Color Tile Drop/"
+							},
+							{
+								"name": "(1F): Small Floor Puzzle",
+								"ref": "Dungeons/Skull Dungeon (D4)/(1F): Small Floor Puzzle/"
+							},
+							{
+								"name": "(B1F): Large Floor Puzzle",
+								"ref": "Dungeons/Skull Dungeon (D4)/(B1F): Large Floor Puzzle/"
+							},
+							{
+								"name": "(1F): Lava Pot Chest",
+								"ref": "Dungeons/Skull Dungeon (D4)/(1F): Lava Pot Chest/"
+							},
+							{
+								"name": "Eyesoar",
+								"ref": "Dungeons/Skull Dungeon (D4)/Eyesoar/(B1F): Boss"
+							},
+							{
+								"name": "Burning Flame",
+								"ref": "Dungeons/Skull Dungeon (D4)/Burning Flame/Essence"
+							}
+                        ],
+                        "map_locations": [
+                            {
+								"force_invisibility_rules": ["dungeon_er_on"],
                                 "map": "map",
                                 "x": 559,
                                 "y": 50
@@ -2029,6 +2319,7 @@
                             "$lynna_village, ages, mermaid, hook1, crownkey",
                             "$lynna_village, ages, mermaid, $jump3, crownkey"
                         ],
+						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
                             {
                                 "name": "",
@@ -2039,6 +2330,68 @@
                         ],
                         "map_locations": [
                             {
+                                "map": "map",
+                                "x": 1720,
+                                "y": 23
+                            }
+                        ]
+                    },
+					{
+                        "name": "Crown Dungeon (D5)",
+                        "visibility_rules": ["dungeon_er_on"],
+                        "sections": [
+                            {
+								"name": "(B1F): Like-Like Chest",
+								"ref": "Dungeons/Crown Dungeon (D5)/(B1F): Like-Like Chest/"
+							},
+							{
+								"name": "(1F): Eyes Chest",
+								"ref": "Dungeons/Crown Dungeon (D5)/(1F): Eyes Chest/"
+							},
+							{
+								"name": "(B1F): Dark Room",
+								"ref": "Dungeons/Crown Dungeon (D5)/(B1F): Dark Room/"
+							},
+							{
+								"name": "(B1F): Two-Statue Puzzle",
+								"ref": "Dungeons/Crown Dungeon (D5)/(B1F): Two-Statue Puzzle/"
+							},
+							{
+								"name": "(1F): Blue Peg Chest",
+								"ref": "Dungeons/Crown Dungeon (D5)/(1F): Blue Peg Chest/"
+							},
+							{
+								"name": "(1F): Diamond Chest",
+								"ref": "Dungeons/Crown Dungeon (D5)/(1F): Diamond Chest/"
+							},
+							{
+								"name": "(1F): Three-Statue Puzzle",
+								"ref": "Dungeons/Crown Dungeon (D5)/(1F): Three-Statue Puzzle/"
+							},
+							{
+								"name": "(B1F): Six-Statue Puzzle",
+								"ref": "Dungeons/Crown Dungeon (D5)/(B1F): Six-Statue Puzzle/"
+							},
+							{
+								"name": "(B1F): Red Peg Chest",
+								"ref": "Dungeons/Crown Dungeon (D5)/(B1F): Red Peg Chest/"
+							},
+							{
+								"name": "(B1F): Owl Puzzle",
+								"ref": "Dungeons/Crown Dungeon (D5)/(B1F): Owl Puzzle/"
+							},
+							{
+								"name": "Smog",
+								"ref": "Dungeons/Crown Dungeon (D5)/Smog/(1F): Boss"
+							},
+							{
+								"name": "Sacred Soil",
+								"ref": "Dungeons/Crown Dungeon (D5)/Sacred Soil/Essence"
+							}
+                        ],
+                        "map_locations": [
+                            {
+								"force_invisibility_rules": ["dungeon_er_on"],
                                 "map": "map",
                                 "x": 1720,
                                 "y": 23
@@ -2190,6 +2543,7 @@
                             "d6keypresent, $west_ridge_present, $pegasus_satchel, bracelet, feather",
                             "d6keypresent, $west_ridge_present, $jump3, bracelet"
                         ],
+						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
                             {
                                 "name": "",
@@ -2198,6 +2552,51 @@
                         ],
                         "map_locations": [
                             {
+                                "map": "map",
+                                "x": 1991,
+                                "y": 439
+                            }
+                        ]
+                    },
+					{
+                        "name": "Mermaid's Cave [Present] (D6)",
+                        "sections": [
+                            {
+								"name": "Diamond Chest",
+								"ref": "Dungeons/Mermaid's Cave [Present] (D6)/Diamond Chest/"
+							},
+							{
+								"name": "Rope Chest",
+								"ref": "Dungeons/Mermaid's Cave [Present] (D6)/Rope Chest/"
+							},
+							{
+								"name": "Cube Chest",
+								"ref": "Dungeons/Mermaid's Cave [Present] (D6)/Cube Chest/"
+							},
+							{
+								"name": "Spinner Chest",
+								"ref": "Dungeons/Mermaid's Cave [Present] (D6)/Spinner Chest/"
+							},
+							{
+								"name": "Beamos Chest",
+								"ref": "Dungeons/Mermaid's Cave [Present] (D6)/Beamos Chest/"
+							},
+							{
+								"name": "RNG Chest",
+								"ref": "Dungeons/Mermaid's Cave [Present] (D6)/RNG Chest/"
+							},
+							{
+								"name": "Channel Chest",
+								"ref": "Dungeons/Mermaid's Cave [Present] (D6)/Channel Chest/"
+							},
+							{
+								"name": "Vire Chest",
+								"ref": "Dungeons/Mermaid's Cave [Present] (D6)/Vire Chest/"
+							}
+                        ],
+                        "map_locations": [
+                            {
+								"force_invisibility_rules": ["dungeon_er_on"],
                                 "map": "map",
                                 "x": 1991,
                                 "y": 439
@@ -2459,6 +2858,7 @@
                             //from the upper cave, requires emblem?
                             "d6keypast, $west_ridge_present, $jump3, bracelet, echoes, flippers"
                         ],
+						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
                             {
                                 "name": "",
@@ -2468,6 +2868,55 @@
                         ],
                         "map_locations": [
                             {
+                                "map": "map",
+                                "x": 4331,
+                                "y": 425
+                            }
+                        ]
+                    },
+					{
+                        "name": "Mermaid's Cave [Past] (D6)",
+                        "sections": [
+                            {
+								"name": "(1F): Color Room",
+								"ref": "Dungeons/Mermaid's Cave [Past] (D6)/(1F): Color Room/"
+							},
+							{
+								"name": "(1F): Wizzrobe",
+								"ref": "Dungeons/Mermaid's Cave [Past] (D6)/(1F): Wizzrobe/"
+							},
+							{
+								"name": "(1F): Pool Chest",
+								"ref": "Dungeons/Mermaid's Cave [Past] (D6)/(1F): Pool Chest/"
+							},
+							{
+								"name": "(1F): Stalfos Chest",
+								"ref": "Dungeons/Mermaid's Cave [Past] (D6)/(1F): Stalfos Chest/"
+							},
+							{
+								"name": "(B1F): Rope Chest",
+								"ref": "Dungeons/Mermaid's Cave [Past] (D6)/(B1F): Rope Chest/"
+							},
+							{
+								"name": "(B1F): Spear Chest",
+								"ref": "Dungeons/Mermaid's Cave [Past] (D6)/(B1F): Spear Chest/"
+							},
+							{
+								"name": "(B1F): Diamond Chest",
+								"ref": "Dungeons/Mermaid's Cave [Past] (D6)/(B1F): Diamond Chest/"
+							},
+							{
+								"name": "Octogon",
+								"ref": "Dungeons/Mermaid's Cave [Past] (D6)/Octogon/(1F): Boss"
+							},
+							{
+								"name": "Lonely Peak",
+								"ref": "Dungeons/Mermaid's Cave [Past] (D6)/Lonely Peak/Essence"
+							}
+                        ],
+                        "map_locations": [
+                            {
+								"force_invisibility_rules": ["dungeon_er_on"],
                                 "map": "map",
                                 "x": 4331,
                                 "y": 425
@@ -2717,6 +3166,7 @@
                     },
                     {
                         "name": "Enter Jabu-Jabu's Belly (D7)",
+						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
                             {
                                 "name": "",
@@ -2729,6 +3179,83 @@
                         ],
                         "map_locations": [
                             {
+                                "map": "map",
+                                "x": 56,
+                                "y": 1360
+                            }
+                        ]
+                    },
+					{
+                        "name": "Jabu-Jabu's Belly (D7)",
+                        "sections": [
+                            {
+								"name": "(2F): Spike Chest",
+								"ref": "Dungeons/Jabu-Jabu's Belly (D7)/(2F): Spike Chest/"
+							},
+							{
+								"name": "(1F): Crab Chest",
+								"ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Crab Chest/"
+							},
+							{
+								"name": "(1F): Diamond Puzzle",
+								"ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Diamond Puzzle/"
+							},
+							{
+								"name": "(1F): Flower Room",
+								"ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Flower Room/"
+							},
+							{
+								"name": "(1F): Stairway Chest",
+								"ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Stairway Chest/"
+							},
+							{
+								"name": "(2F): Right Wing",
+								"ref": "Dungeons/Jabu-Jabu's Belly (D7)/(2F): Right Wing/"
+							},
+							{
+								"name": "(1F): Boxed Chest",
+								"ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Boxed Chest/"
+							},
+							{
+								"name": "(1F): Cane|Diamond Puzzle",
+								"ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Cane|Diamond Puzzle/"
+							},
+							{
+								"name": "(3F): Terrace",
+								"ref": "Dungeons/Jabu-Jabu's Belly (D7)/(3F): Terrace/"
+							},
+							{
+								"name": "(2F): Left Wing",
+								"ref": "Dungeons/Jabu-Jabu's Belly (D7)/(2F): Left Wing/"
+							},
+							{
+								"name": "(3F): Hallway Chest",
+								"ref": "Dungeons/Jabu-Jabu's Belly (D7)/(3F): Hallway Chest/"
+							},
+							{
+								"name": "(1F): Miniboss Chest",
+								"ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Miniboss Chest/"
+							},
+							{
+								"name": "(3F): Post-Hallway Chest",
+								"ref": "Dungeons/Jabu-Jabu's Belly (D7)/(3F): Post-Hallway Chest/"
+							},
+							{
+								"name": "(1F): Island Chest",
+								"ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Island Chest/"
+							},
+							{
+								"name": "Plasmarine",
+								"ref": "Dungeons/Jabu-Jabu's Belly (D7)/Plasmarine/(2F): Boss"
+							},
+							{
+								"name": "Rolling Sea",
+								"ref": "Dungeons/Jabu-Jabu's Belly (D7)/Rolling Sea/Essence"
+							}
+                        ],
+                        "map_locations": [
+                            {
+								"force_invisibility_rules": ["dungeon_er_on"],
                                 "map": "map",
                                 "x": 56,
                                 "y": 1360
@@ -2826,6 +3353,7 @@
                             "$d8_entrance",
                             "[l_hard], $d8_entrance_h"
                         ],
+						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
                             {
                                 "name": "",
@@ -2835,6 +3363,87 @@
                         ],
                         "map_locations": [
                             {
+                                "map": "map",
+                                "x": 4339,
+                                "y": 662
+                            }
+                        ]
+                    },
+					{
+                        "name": "Ancient Tomb (D8)",
+                        "sections": [
+							{
+								"name": "(1F): Single Chest",
+								"ref": "Dungeons/Ancient Tomb (D8)/(1F): Single Chest/"
+							},
+							{
+								"name": "(B2F): Ghini Chest",
+								"ref": "Dungeons/Ancient Tomb (D8)/(B2F): Ghini Chest/"
+							},
+							{
+								"name": "(B1F): NW Chest",
+								"ref": "Dungeons/Ancient Tomb (D8)/(B1F): NW Chest/"
+							},
+							{
+								"name": "(B1F): Blue Peg Chest",
+								"ref": "Dungeons/Ancient Tomb (D8)/(B1F): Blue Peg Chest/"
+							},
+							{
+								"name": "(B1F): Blade Trap",
+								"ref": "Dungeons/Ancient Tomb (D8)/(B1F): Blade Trap/"
+							},
+							{
+								"name": "(B1F): Sarcophagus Chest",
+								"ref": "Dungeons/Ancient Tomb (D8)/(B1F): Sarcophagus Chest/"
+							},
+							{
+								"name": "(B1F): Stalfos",
+								"ref": "Dungeons/Ancient Tomb (D8)/(B1F): Stalfos/"
+							},
+							{
+								"name": "(B2F): Maze Chest",
+								"ref": "Dungeons/Ancient Tomb (D8)/(B2F): Maze Chest/"
+							},
+							{
+								"name": "(B2F): NW Slate Chest",
+								"ref": "Dungeons/Ancient Tomb (D8)/(B2F): NW Slate Chest/"
+							},
+							{
+								"name": "(B2F): NE Slate Chest",
+								"ref": "Dungeons/Ancient Tomb (D8)/(B2F): NE Slate Chest/"
+							},
+							{
+								"name": "(B3F): Single Chest",
+								"ref": "Dungeons/Ancient Tomb (D8)/(B3F): Single Chest/"
+							},
+							{
+								"name": "(B2F): Tile Room",
+								"ref": "Dungeons/Ancient Tomb (D8)/(B2F): Tile Room/"
+							},
+							{
+								"name": "(B2F): SE Slate Chest",
+								"ref": "Dungeons/Ancient Tomb (D8)/(B2F): SE Slate Chest/"
+							},
+							{
+								"name": "(B1F): Floor Puzzle",
+								"ref": "Dungeons/Ancient Tomb (D8)/(B1F): Floor Puzzle/"
+							},
+							{
+								"name": "(B2F): SW Slate Chest",
+								"ref": "Dungeons/Ancient Tomb (D8)/(B2F): SW Slate Chest/"
+							},
+							{
+								"name": "Ramrock",
+								"ref": "Dungeons/Ancient Tomb (D8)/Ramrock/(B3F): Boss"
+							},
+							{
+								"name": "Falling Star",
+								"ref": "Dungeons/Ancient Tomb (D8)/Falling Star/Essence"
+							}
+                        ],
+                        "map_locations": [
+                            {
+								"force_invisibility_rules": ["dungeon_er_on"],
                                 "map": "map",
                                 "x": 4339,
                                 "y": 662
