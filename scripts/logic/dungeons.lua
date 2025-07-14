@@ -481,6 +481,9 @@ function d8_boss()
     return has("d8bk") and d8_tileroom() and requiredslates() and has("gallery")
 end
 
+function d8sk(amount)
+	return (has("d8sk", amount) or has("d8mk"))
+end
 
 
 -- ALL OLD UNUSED SHIT DOWN HERE LMAO
