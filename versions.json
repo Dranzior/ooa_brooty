@@ -1,6 +1,17 @@
 {
     "versions": [
         {
+            "package_version": "0.8.3",
+            "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.8.3/ooa.zip",
+            "sha256": "sha256:8fc4bdbebd9a00c6f5ab6326e4947afcb276db0f76c548ac7f73d4cbce192967",
+            "changelog": [
+                "NEW: replaced the dungeon entrance checks on the overworld by a group check of all check inside the dungeon when dungeon entrance rando is off",
+                "NEW: master keys now show in the tracker",
+                "FIX: some dungeon checks weren't checking for master key",
+				"FIX: D6 (present) checks that require action in D6 (past) should now show the right logic with all type of setting",
+            ]
+        },
+        {
             "package_version": "0.8.2",
             "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.8.2/ooa_brooty.zip",
             "sha256": "6d46835da6efa5b523035097b641fcbe85525225e56fc0f21473a3489dc7b593",
