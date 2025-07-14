@@ -3,7 +3,7 @@
   "game_name": "Oracle of Ages",
   "package_version": "0.8.2",
   "package_uid": "ooa_brooty",
-  "author": "Brooty",
+  "author": "Brooty, Dranzior",
   "variants": {
     "standard": {
       "display_name": "Map Tracker (AP)",
@@ -12,6 +12,6 @@
       ]
     }
   },
-  "versions_url": "https://raw.githubusercontent.com/Br00ty/ooa_brooty/master/versions.json",
+  "versions_url": "https://raw.githubusercontent.com/Dranzior/ooa_brooty/master/versions.json",
   "min_poptracker_version": "0.27.0"
 }
