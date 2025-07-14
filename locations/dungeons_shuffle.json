@@ -3,21 +3,18 @@
         "name": "Dungeons (Shuffled)",
         "chest_unopened_img": "images/items/chest.png",
         "chest_opened_img": "images/items/chest_gray.png",
-        "visibility_rules": [
-            "dungeon_er_on"
-        ],
         "children": [
             {
                 "name": "Spirit's Grave (D1)",
                 "access_rules": [],
                 "children": [
                     {
-                        "name": "Terrace chest",
+                        "name": "East Terrace",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$k_zol",
-                                    "[l_hard],$k_zol"
+                                    "dungeon_er_on,$d1_east_terrace"
                                 ],
                                 "item_count": 1
                             }
@@ -31,12 +28,12 @@
                         ]
                     },
                     {
-                        "name": "Ghini drop",
+                        "name": "Ghini Drop",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$k_zol",
-                                    "[l_hard],$k_zol"
+                                    "$d1_east_terrace"
                                 ],
                                 "item_count": 1
                             }
@@ -50,12 +47,12 @@
                         ]
                     },
                     {
-                        "name": "Crossroads chest",
+                        "name": "Crossroad",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$k_zol",
-                                    "[l_hard],$k_zol"
+                                    "$d1_east_terrace"
                                 ],
                                 "item_count": 1
                             }
@@ -69,12 +66,12 @@
                         ]
                     },
                     {
-                        "name": "Secret room chest",
+                        "name": "Crystal Room",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$k_zol, $crystal, emberseeds",
-                                    "[l_hard], $k_zol_h, $crystal, emberseeds"
+                                    "$d1_crystal_room"
                                 ],
                                 "item_count": 1
                             }
@@ -88,14 +85,12 @@
                         ]
                     },
                     {
-                        "name": "Wide room chest",
+                        "name": "Wide Room",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d1sk:2, $k_zol",
-                                    "d1sk:1, [d1sk:2], $k_zol",
-                                    "[l_hard], d1sk:2, $k_zol_h",
-                                    "[l_hard], d1sk:1, [d1sk:2], $k_zol_h"
+                                    "$d1_wide_room"
                                 ],
                                 "item_count": 1
                             }
@@ -109,14 +104,12 @@
                         ]
                     },
                     {
-                        "name": "Double button chest",
+                        "name": "Two-Buttons Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d1sk:2, $k_zol",
-                                    "d1sk:1, [d1sk:2], $k_zol",
-                                    "[l_hard], d1sk:2, $k_zol_h",
-                                    "[l_hard], d1sk:1, [d1sk:2], $k_zol_h"
+                                    "$d1_wide_room"
                                 ],
                                 "item_count": 1
                             }
@@ -130,14 +123,12 @@
                         ]
                     },
                     {
-                        "name": "Moving platform chest",
+                        "name": "One-Button Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d1sk:2, $k_zol",
-                                    "d1sk:1, [d1sk:2], $k_zol",
-                                    "[l_hard], d1sk:2, $k_zol_h",
-                                    "[l_hard], d1sk:1, [d1sk:2], $k_zol_h"
+                                    "$d1_wide_room"
                                 ],
                                 "item_count": 1
                             }
@@ -151,13 +142,51 @@
                         ]
                     },
                     {
-                        "name": "Underground item",
+                        "name": "Pot Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d1sk:3, $k_zol, $bush, $k_giantghini, emberseeds",
-                                    "[l_hard], d1sk:3, $k_zol_h, $bush, $k_giantghini_h, [$k_giantghini], emberseeds",
-                                    "$pot, emberseeds"
+                                    "$pot"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 344,
+                                "y": 1080
+                            }
+                        ]
+                    },
+                    {
+                        "name": "West Terrace",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$pot"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 56,
+                                "y": 1001
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Basement",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d1_basement",
+                                    "$d1_basement_h"
                                 ],
                                 "item_count": 1
                             }
@@ -176,50 +205,13 @@
                         ]
                     },
                     {
-                        "name": "West side item",
+                        "name": "Pumpkin Head",
                         "sections": [
                             {
+                                "name": "Boss",
                                 "access_rules": [
-                                    "$pot"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "d1",
-                                "x": 56,
-                                "y": 1001
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Pot item",
-                        "sections": [
-                            {
-                                "access_rules": [
-                                    "$pot"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "d1",
-                                "x": 344,
-                                "y": 1080
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Pumpkin Head reward",
-                        "sections": [
-                            {
-                                "access_rules": [
-                                    "d1bk, d1sk:2, $k_zol, $bush, $k_pumpkinhead",
-                                    "d1bk, d1sk:1, [d1sk:2], $k_zol, $bush, $k_pumpkinhead",
-                                    "[l_hard], d1bk, d1sk:2, $k_zol, $bush, d1bk, $k_pumpkinhead_h, [$k_pumpkinhead]",
-                                    "[l_hard], d1bk, d1sk:1, [d1sk:2], $k_zol, $bush, d1bk, $k_pumpkinhead_h, [$k_pumpkinhead]"
+                                    "$d1_boss",
+                                    "$d1_boss_h"
                                 ],
                                 "item_count": 1
                             }
@@ -236,11 +228,10 @@
                         "name": "Eternal Spirit",
                         "sections": [
                             {
+                                "name": "Essence",
                                 "access_rules": [
-                                    "d1bk, d1sk:2, $k_zol, $bush, $k_pumpkinhead",
-                                    "d1bk, d1sk:1, [d1sk:2], $k_zol, $bush, $k_pumpkinhead",
-                                    "[l_hard], d1bk, d1sk:2, $k_zol, $bush, d1bk, $k_pumpkinhead_h, [$k_pumpkinhead]",
-                                    "[l_hard], d1bk, d1sk:1, [d1sk:2], $k_zol, $bush, d1bk, $k_pumpkinhead_h, [$k_pumpkinhead]"
+                                    "$d1_boss",
+                                    "$d1_boss_h"
                                 ],
                                 "hosted_item": "d1"
                             }
@@ -260,12 +251,13 @@
                 "access_rules": [],
                 "children": [
                     {
-                        "name": "Bomb wall chest",
+                        "name": "(1F): Bombed Terrace",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$k_beetle, bombs",
-                                    "[l_hard], $k_beetle_h, bombs"
+                                    "$d2_bombed_terrace",
+                                    "[l_hard],$d2_bombed_terrace_h"
                                 ],
                                 "item_count": 1
                             }
@@ -279,14 +271,13 @@
                         ]
                     },
                     {
-                        "name": "Moblin drop",
+                        "name": "(1F): Moblin Drop",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$k_beetle, $k_normal",
-                                    "[l_hard], $k_beetle_h, $k_normal",
-                                    "[l_hard], $k_beetle, $k_normal_h",
-                                    "[l_hard], $k_beetle_h, $k_normal_h"
+                                    "$d2_moblin_drop",
+                                    "[l_hard],$d2_moblin_drop_h"
                                 ],
                                 "item_count": 1
                             }
@@ -300,14 +291,12 @@
                         ]
                     },
                     {
-                        "name": "Rope chest",
+                        "name": "(1F): Rope Room",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d2sk:4, $k_normal",
-                                    "d2sk:1, [d2sk:4], $k_normal",
-                                    "[l_hard], d2sk:4, $k_normal_h",
-                                    "[l_hard], d2sk:1, [d2sk:4], $k_normal_h"
+                                    "$d2_rope_room"
                                 ],
                                 "item_count": 1
                             }
@@ -321,14 +310,12 @@
                         ]
                     },
                     {
-                        "name": "Rope bomb wall chest",
+                        "name": "(1F): Ladder Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d2sk:4, $k_normal, bombs",
-                                    "d2sk:1, [d2sk:4], $k_normal, bombs",
-                                    "[l_hard], d2sk:4, $k_normal_h, bombs",
-                                    "[l_hard], d2sk:1, [d2sk:4], $k_normal_h, bombs"
+                                    "$d2_ladder_chest"
                                 ],
                                 "item_count": 1
                             }
@@ -342,20 +329,13 @@
                         ]
                     },
                     {
-                        "name": "After thwomp",
+                        "name": "(B1F): Thwomp Tunnel",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    // keyless, with feather
-                                    "$k_beetle, $k_swoop, feather",
-                                    "[l_hard], $k_beetle_h, $k_swoop, feather",
-                                    "[l_hard], $k_beetle, $k_swoop_h, feather",
-                                    "[l_hard], $k_beetle_h, $k_swoop_h, feather",
-                                    // vanilla route
-                                    "d2sk:2, $k_beetle, $k_swoop",
-                                    "[l_hard], d2sk:2, $k_beetle_h, $k_swoop",
-                                    "[l_hard], d2sk:2, $k_beetle, $k_swoop_h",
-                                    "[l_hard], d2sk:2, $k_beetle_h, $k_swoop_h"
+                                    "$d2_basement",
+                                    "[l_hard],$d2_basement_h"
                                 ],
                                 "item_count": 1
                             }
@@ -369,24 +349,13 @@
                         ]
                     },
                     {
-                        "name": "Thwomp shelf",
+                        "name": "(B1F): Thwomp Shelf",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    // keyless, with feather
-                                    "$k_beetle, $k_swoop, feather",
-                                    "$k_beetle_h, $k_swoop, feather",
-                                    "[l_hard], $k_beetle, $k_swoop_h, feather",
-                                    "[l_hard], $k_beetle_h, $k_swoop_h, feather",
-                                    // without feather, hard mode stuff with 2 keys
-                                    "[l_hard], d2sk:2, $k_beetle, $k_swoop, cane, bombs",
-                                    "d2sk:2, $k_beetle, $k_swoop, cane, $pegasus_satchel",
-                                    "[l_hard], d2sk:2, $k_beetle_h, $k_swoop, cane, bombs",
-                                    "[l_hard], d2sk:2, $k_beetle_h, $k_swoop, cane, $pegasus_satchel",
-                                    "[l_hard], d2sk:2, $k_beetle, $k_swoop_h, cane, bombs",
-                                    "[l_hard], d2sk:2, $k_beetle, $k_swoop_h, cane, $pegasus_satchel",
-                                    "[l_hard], d2sk:2, $k_beetle_h, $k_swoop_h, cane, bombs",
-                                    "[l_hard], d2sk:2, $k_beetle_h, $k_swoop_h, cane, $pegasus_satchel"
+                                    "$d2_thwomp_shelf",
+                                    "[l_hard],$d2_thwomp_shelf_h"
                                 ],
                                 "item_count": 1
                             }
@@ -400,15 +369,13 @@
                         ]
                     },
                     {
-                        "name": "Basement minecart bombwall chest",
+                        "name": "(B1F): Basement Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    // keyless, with feather
-                                    "$k_beetle, $k_swoop, feather, bombs, $lever_minecart",
-                                    "[l_hard], $k_beetle_h, $k_swoop, feather, bombs, $lever_minecart",
-                                    "[l_hard], $k_beetle, $k_swoop_h, feather, bombs, $lever_minecart",
-                                    "[l_hard], $k_beetle_h, $k_swoop_h, feather, bombs, $lever_minecart"
+                                    "$d2_basement_chest",
+                                    "[l_hard],$d2_basement_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -422,15 +389,13 @@
                         ]
                     },
                     {
-                        "name": "Color tiles drop",
+                        "name": "(B1F): Basement Drop",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    // keyless, with feather
-                                    "$k_beetle, $k_swoop, feather",
-                                    "[l_hard], $k_beetle_h, $k_swoop, feather",
-                                    "[l_hard], $k_beetle, $k_swoop_h, feather",
-                                    "[l_hard], $k_beetle_h, $k_swoop_h, feather"
+                                    "$d2_basement_drop",
+                                    "[l_hard],$d2_basement_drop_h"
                                 ],
                                 "item_count": 1
                             }
@@ -444,18 +409,13 @@
                         ]
                     },
                     {
-                        "name": "Moblin chest",
+                        "name": "(1F): Moblin Platform",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d2sk:3, $k_beetle, $k_swoop, feather",
-                                    "d2sk:1, [d2sk:3], $k_beetle, $k_swoop, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop, feather",
-                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop_h, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop_h, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop_h, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop_h, feather"
+                                    "$d2_moblin_platform",
+                                    "[l_hard],$d2_moblin_platform_h"
                                 ],
                                 "item_count": 1
                             }
@@ -469,44 +429,13 @@
                         ]
                     },
                     {
-                        "name": "Statue puzzle drop",
+                        "name": "(1F): Statue Puzzle",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    // normal, 1 key min 3 key logic
-                                    "d2sk:3, $k_beetle, $k_swoop, cane, feather",
-                                    "d2sk:1, [d2sk:3], $k_beetle, $k_swoop, cane, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop, cane, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop, cane, feather",
-                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop_h, cane, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop_h, cane, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop_h, cane, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop_h, cane, feather",
-                                    "d2sk:3, $k_beetle, $k_swoop, bracelet, feather",
-                                    "d2sk:1, [d2sk:3], $k_beetle, $k_swoop, bracelet, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop, bracelet, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop, bracelet, feather",
-                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop_h, bracelet, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop_h, bracelet, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop_h, bracelet, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop_h, bracelet, feather",
-                                    // moblin push strat, hard mode
-                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather"
+                                    "$d2_statue_puzzle",
+                                    "[l_hard],$d2_statue_puzzle_h"
                                 ]
                             }
                         ],
@@ -519,44 +448,13 @@
                         ]
                     },
                     {
-                        "name": "Color room",
+                        "name": "(1F): Color Room",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    // normal, 2 key min 5 key logic
-                                    "d2sk:5, $k_beetle, $k_swoop, cane, feather",
-                                    "d2sk:2, [d2sk:5], $k_beetle, $k_swoop, cane, feather",
-                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop, cane, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop, cane, feather",
-                                    "[l_hard], d2sk:5, $k_beetle, $k_swoop_h, cane, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, cane, feather",
-                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop_h, cane, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop_h, cane, feather",
-                                    "d2sk:5, $k_beetle, $k_swoop, bracelet, feather",
-                                    "d2sk:2, [d2sk:5], $k_beetle, $k_swoop, bracelet, feather",
-                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop, bracelet, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop, bracelet, feather",
-                                    "[l_hard], d2sk:5, $k_beetle, $k_swoop_h, bracelet, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, bracelet, feather",
-                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop_h, bracelet, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop_h, bracelet, feather",
-                                    // moblin push strat, hard mode
-                                    "[l_hard], d2sk:5, $k_beetle, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:5, $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:5, $k_beetle, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:5, $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather"
+                                    "$d2_color_room",
+                                    "[l_hard],$d2_color_room_h"
                                 ],
                                 "item_count": 1
                             }
@@ -573,78 +471,17 @@
                         "name": "Head Thwomp",
                         "sections": [
                             {
-                                "name": "Boss Reward",
+                                "name": "(1F): Boss",
                                 "access_rules": [
-                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, bombs, cane, feather",
-                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], bracelet, feather",
-                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather"
+                                    "$d2_boss",
+                                    "[l_hard],$d2_boss_h"
                                 ],
                                 "item_count": 1
                             },
                             {
                                 "name": "Get Bombs from Head Thwomp",
                                 "access_rules": [
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop, cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather"
+                                    "[l_hard],$d2_early_bombs"
                                 ],
                                 "hosted_item": "bombs"
                             }
@@ -666,39 +503,10 @@
                         "name": "Ancient Wood",
                         "sections": [
                             {
+                                "name": "Essence",
                                 "access_rules": [
-                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, cane, bombs, feather",
-                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], bracelet, feather",
-                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather"
+                                    "$d2_boss",
+                                    "[l_hard],$d2_boss"
                                 ],
                                 "hosted_item": "d2"
                             }
@@ -718,13 +526,12 @@
                 "access_rules": [],
                 "children": [
                     {
-                        "name": "Pols Voice chest",
+                        "name": "(1F): Pols Voice Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "bombs",
-                                    "echoes,d3sk:1,$scent_shooter",
-                                    "echoes,d3sk:1,hook1"
+                                    "$d3_pols_voice"
                                 ],
                                 "item_count": 1
                             }
@@ -738,12 +545,12 @@
                         ]
                     },
                     {
-                        "name": "East statues drop",
+                        "name": "(1F): Statue Drop",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "bombs, [$k_moldorm]",
-                                    "bombs, bracelet"
+                                    "$d3_statue_drop"
                                 ],
                                 "item_count": 1
                             }
@@ -757,11 +564,13 @@
                         ]
                     },
                     {
-                        "name": "Armos chest",
+                        "name": "(B1F): Conveyor Belt Room",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d3sk:1"
+                                    "$d3_conveyor_belt_room",
+                                    "[l_hard],$d3_conveyor_belt_room_h"
                                 ],
                                 "item_count": 1
                             }
@@ -775,11 +584,13 @@
                         ]
                     },
                     {
-                        "name": "Six blocks drop",
+                        "name": "(1F): Six Blocs Drop",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d3sk:1"
+                                    "$d3_six_blocK_drop",
+                                    "[l_hard],$d3_six_blocK_drop_h"
                                 ],
                                 "item_count": 1
                             }
@@ -793,11 +604,13 @@
                         ]
                     },
                     {
-                        "name": "Four Armos drop",
+                        "name": "(1F): Armos Drop",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d3sk:1"
+                                    "$d3_armos_drop",
+                                    "[l_hard],$d3_armos_drop"
                                 ],
                                 "item_count": 1
                             }
@@ -811,12 +624,14 @@
                         ]
                     },
                     {
-                        "name": "Bush room chest",
+                        "name": "(1F): Bush Beetle Room",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "d3sk:3, [$k_normal]",
-                                    "d3sk:2, [d3sk:3], [$k_normal]"
+                                    "d3sk:2, [d3sk:3], [$k_normal]",
+                                    "$d3_bush_beetle_room"
                                 ],
                                 "item_count": 1
                             }
@@ -830,12 +645,14 @@
                         ]
                     },
                     {
-                        "name": "Mimic room chest",
+                        "name": "(1F): Mimic Room",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "d3sk:4, [$k_normal]",
-                                    "d3sk:3, [d3sk:4], [$k_normal]"
+                                    "d3sk:3, [d3sk:4], [$k_normal]",
+                                    "$d3_mimic_room"
                                 ],
                                 "item_count": 1
                             }
@@ -849,14 +666,13 @@
                         ]
                     },
                     {
-                        "name": "Fallen spinner chest",
+                        "name": "(1F): Crossroad",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d3sk:1, shooter",
-                                    "d3sk:1, boomerang",
-                                    "[l_hard], d3sk:1, hook1, [shooter]",
-                                    "[l_hard], d3sk:1, hook1, [boomerang]"
+                                    "$d3_B1F_spinner",
+                                    "[l_hard],$d3_B1F_spinner_h"
                                 ],
                                 "item_count": 1
                             }
@@ -870,12 +686,13 @@
                         ]
                     },
                     {
-                        "name": "Torch chest",
+                        "name": "(B1F): Torch Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d3sk:1, shooter, emberseeds",
-                                    "[l_hard], d3sk:1, shooter, mysteryseeds, [emberseeds]"
+                                    "$d3_torch_chest",
+                                    "[l_hard],$d3_torch_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -889,22 +706,14 @@
                         ]
                     },
                     {
-                        "name": "Moldorm drop",
+                        "name": "(B1F): Moldorm Drop",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    // vanilla, through Subterror
-                                    "d3sk:1, shooter, $k_subterror, [$k_moldorm]",
-                                    "d3sk:1, boomerang, $k_subterror, [$k_moldorm]",
-                                    "[l_hard], d3sk:1, hook1, [shooter], $k_subterror, [$k_moldorm]",
-                                    "[l_hard], d3sk:1, hook1, [boomerang], $k_subterror, [$k_moldorm]",
-                                    // through bridge, 2 keys min 4 by logic
-                                    "d3sk:4, shooter",
-                                    "d3sk:2, [d3sk:4], shooter",
-                                    "[l_hard], d3sk:4, boomerang, feather, [shooter], [$jump3]",
-                                    "[l_hard], d3sk:2, [d3sk:4], boomerang, feather, [shooter], [$jump3]",
-                                    "[l_hard], d3sk:4, bracelet, ring_toss, feather, [shooter], [$jump3]",
-                                    "[l_hard], d3sk:2, [d3sk:4], bracelet, ring_toss, feather, [shooter], [$jump3]"
+                                    "$d3_moldorm_drop",
+                                    "[l_hard],$d3_moldorm_drop_h"
+                                    
                                 ],
                                 "item_count": 1
                             }
@@ -918,16 +727,13 @@
                         ]
                     },
                     {
-                        "name": "Bridge chest",
+                        "name": "(1F): Bridge Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d3sk:1, shooter",
-                                    "[l_hard], d3sk:1, $jump3",
-                                    "[l_hard], d3sk:1, boomerang, feather, [shooter]",
-                                    "[l_hard], d3sk:1, bracelet, ring_toss, feather, [shooter]",
-                                    "[l_hard], d3sk:1, boomerang, $pegasus_satchel [shooter]",
-                                    "[l_hard], d3sk:1, bracelet, ring_toss, $pegasus_satchel [shooter]"
+                                    "$d3_bridge_chest",
+                                    "[l_hard],$d3_bridge_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -941,15 +747,13 @@
                         ]
                     },
                     {
-                        "name": "Right side chest",
+                        "name": "(B1F): East",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d3sk:1, $k_subterror, shooter",
-                                    "[l_hard], d3sk:1, $k_subterror, sword, [shooter]"
-                                    // ???
-                                    //"d3sk:1, shovel, [$k_subterror], shooter",
-                                    //"d3sk:1, shovel, [$k_subterror], sword, [shooter]",
+                                    "$d3_B1F_east",
+                                    "[l_hard],$d3_B1F_east"
                                 ],
                                 "item_count": 1
                             }
@@ -963,44 +767,13 @@
                         ]
                     },
                     {
-                        "name": "Shadow Hag Reward",
+                        "name": "Shadow Hag",
                         "sections": [
                             {
+                                "name": "(B1F): Boss",
                                 "access_rules": [
-                                    // jumping from Subterror
-                                    // with Shooter
-                                    "d3bk, d3sk:1, $ember_shooter, $k_subterror, $jump3",
-                                    "[l_hard], d3bk, d3sk:1, $ember_shooter, $k_subterror, feather, [$jump3]",
-                                    "d3bk, d3sk:1, $scent_shooter, $k_subterror, $jump3",
-                                    "[l_hard], d3bk, d3sk:1, $scent_shooter, $k_subterror, feather, [$jump3]",
-                                    // satchel + boomerang
-                                    "d3bk, d3sk:1, $ember_satchel, $jump3, boomerang, $k_subterror",
-                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], $jump3, boomerang, $k_subterror",
-                                    "[l_hard], d3bk, d3sk:1, $ember_satchel, feather, [$jump3], boomerang, $k_subterror",
-                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], feather, [$jump3], boomerang, $k_subterror",
-                                    // satchel + sword (hard mode)
-                                    "[l_hard], d3bk, d3sk:1, $ember_satchel, feather, sword1, hook1, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], feather, sword1, hook1, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:4, $ember_satchel, feather, sword1, bracelet, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:4, $scent_satchel, [emberseeds], feather, sword1, bracelet, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], $ember_satchel, feather, sword1, bracelet, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], $scent_satchel, [emberseeds], feather, sword1, bracelet, [boomerang], $k_subterror",
-                                    // satchel + bomb jump to hit the switch (hard mode)
-                                    "[l_hard], d3bk, d3sk:1, $ember_satchel, $jump3, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], $jump3, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:1, $ember_satchel, feather, bombs, hook1, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], feather, bombs, hook1, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:4, $ember_satchel, feather, bombs, bracelet, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:4, $scent_satchel, [emberseeds], feather, bombs, bracelet, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], $ember_satchel, feather, bombs, bracelet, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], $scent_satchel, [emberseeds], feather, bombs, bracelet, [boomerang], $k_subterror",
-                                    // from the bridge area (much simpler)
-                                    "d3bk, d3sk:4, shooter",
-                                    "d3bk, d3sk:2, [d3sk:4], shooter",
-                                    "[l_hard], d3bk, d3sk:4, boomerang, feather, [shooter]",
-                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], boomerang, feather, [shooter]",
-                                    "[l_hard], d3bk, d3sk:4, boomerang, $pegasus_satchel, [shooter]",
-                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], boomerang, $pegasus_satchel, [shooter]"
+                                    "$d3_boss",
+                                    "[l_hard],$d3_boss_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1017,41 +790,10 @@
                         "name": "Echoing Howl",
                         "sections": [
                             {
+                                "name": "Essence",
                                 "access_rules": [
-                                    // jumping from Subterror
-                                    // with Shooter
-                                    "d3bk, d3sk:1, $ember_shooter, $k_subterror, $jump3",
-                                    "[l_hard], d3bk, d3sk:1, $ember_shooter, $k_subterror, feather, [$jump3]",
-                                    "d3bk, d3sk:1, $scent_shooter, $k_subterror, $jump3",
-                                    "[l_hard], d3bk, d3sk:1, $scent_shooter, $k_subterror, feather, [$jump3]",
-                                    // satchel + boomerang
-                                    "d3bk, d3sk:1, $ember_satchel, $jump3, boomerang, $k_subterror",
-                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], $jump3, boomerang, $k_subterror",
-                                    "[l_hard], d3bk, d3sk:1, $ember_satchel, feather, [$jump3], boomerang, $k_subterror",
-                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], feather, [$jump3], boomerang, $k_subterror",
-                                    // satchel + sword (hard mode)
-                                    "[l_hard], d3bk, d3sk:1, $ember_satchel, feather, sword1, hook1, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], feather, sword1, hook1, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:4, $ember_satchel, feather, sword1, bracelet, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:4, $scent_satchel, [emberseeds], feather, sword1, bracelet, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], $ember_satchel, feather, sword1, bracelet, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], $scent_satchel, [emberseeds], feather, sword1, bracelet, [boomerang], $k_subterror",
-                                    // satchel + bomb jump to hit the switch (hard mode)
-                                    "[l_hard], d3bk, d3sk:1, $ember_satchel, $jump3, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], $jump3, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:1, $ember_satchel, feather, bombs, hook1, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], feather, bombs, hook1, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:4, $ember_satchel, feather, bombs, bracelet, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:4, $scent_satchel, [emberseeds], feather, bombs, bracelet, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], $ember_satchel, feather, bombs, bracelet, [boomerang], $k_subterror",
-                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], $scent_satchel, [emberseeds], feather, bombs, bracelet, [boomerang], $k_subterror",
-                                    // from the bridge area (much simpler)
-                                    "d3bk, d3sk:4, shooter",
-                                    "d3bk, d3sk:2, [d3sk:4], shooter",
-                                    "[l_hard], d3bk, d3sk:4, boomerang, feather, [shooter]",
-                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], boomerang, feather, [shooter]",
-                                    "[l_hard], d3bk, d3sk:4, boomerang, $pegasus_satchel, [shooter]",
-                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], boomerang, $pegasus_satchel, [shooter]"
+                                    "$d3_boss",
+                                    "[l_hard],$d3_boss_h"
                                 ],
                                 "hosted_item": "d3"
                             }
@@ -1086,20 +828,16 @@
                 ]
             },
             {
-                "name": "Skull Dungeon [Radical!!!] (D4)",
+                "name": "Skull Dungeon (D4)",
                 "access_rules": [],
                 "children": [
                     {
-                        "name": "Zol chest",
+                        "name": "(1F): First Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$k_normal, feather",
-                                    "$k_normal, hook1",
-                                    "[l_hard], $k_normal_h, [$k_normal], feather",
-                                    "[l_hard], $k_normal_h, [$k_normal], hook1",
-                                    "[l_hard], $push_enemy, feather",
-                                    "[l_hard], $push_enemy, hook1"
+                                    "$d4_first_chest"
                                 ],
                                 "item_count": 1
                             }
@@ -1113,12 +851,12 @@
                         ]
                     },
                     {
-                        "name": "Cube chest",
+                        "name": "(1F): Cube Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$k_normal, feather",
-                                    "$push_enemy, feather"
+                                    "$d4_cube_chest"
                                 ],
                                 "item_count": 1
                             }
@@ -1132,11 +870,12 @@
                         ]
                     },
                     {
-                        "name": "Minecart chest",
+                        "name": "(1F): Minecart Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d4sk:1, feather, $lever"
+                                    "$d4_minecart_chest"
                                 ],
                                 "item_count": 1
                             }
@@ -1150,12 +889,13 @@
                         ]
                     },
                     {
-                        "name": "Moldorm switch chest",
+                        "name": "(1F): First Crystal Switch",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d4sk:1, feather, shooter",
-                                    "[l_hard], d4sk:1, feather, boomerang, [shooter]"
+                                    "$d4_first_crystal_switch",
+                                    "[l_hard], $d4_first_crystal_switch_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1169,14 +909,13 @@
                         ]
                     },
                     {
-                        "name": "Keese switch chest",
+                        "name": "(1F): Second Crystal Switch",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d4sk:2, feather, $lever, bracelet, $k_normal, shooter",
-                                    "[l_hard], d4sk:2, feather, $lever, bracelet, $k_normal_h, [$k_normal], shooter",
-                                    "[l_hard], d4sk:2, feather, $lever, bracelet, $k_normal, boomerang, [shooter]",
-                                    "[l_hard], d4sk:2, feather, $lever, bracelet, $k_normal_h, [$k_normal], boomerang, [shooter]"
+                                    "$d4_second_crystal_switch",
+                                    "[l_hard],$d4_second_crystal_switch_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1190,16 +929,12 @@
                         ]
                     },
                     {
-                        "name": "Color tiles drop",
+                        "name": "(1F): Color Tile Drop",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d4sk:3, feather, $lever, bracelet, [$k_normal], shooter, sword1",
-                                    "d4sk:3, feather, $lever, bracelet, [$k_normal], shooter, emberseeds",
-                                    "d4sk:3, feather, $lever, bracelet, [$k_normal], shooter, scentseeds",
-                                    "d4sk:3, feather, $lever, bracelet, [$k_normal], shooter, galeseeds",
-                                    "[l_hard], d4sk:3, feather, $lever, bracelet, $k_normal, boomerang, satchel, scentseeds, [shooter]",
-                                    "[l_hard], d4sk:3, feather, $lever, bracelet, $k_normal, boomerang, ring_peace, bombs, [shooter]"
+                                    "$d4_color_tile_drop"
                                 ],
                                 "item_count": 1
                             }
@@ -1213,26 +948,12 @@
                         ]
                     },
                     {
-                        "name": "Small floor puzzle reward",
+                        "name": "(1F): Small Floor Puzzle",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, bombs",
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, [sword1], bombs",
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, [sword1], bombs",
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, [hook1], bombs",
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, [hook1], bombs",
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, [$punch], bombs",
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, [$punch], bombs",
-                                    // Boomerang sequence breaks
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, satchel, scentseeds, bombs",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, ring_peace, bombs",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [emberseeds], [sword1], bombs",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [galeseeds], [sword1], bombs",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [emberseeds], [hook1], bombs",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [galeseeds], [hook1], bombs",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [emberseeds], [$punch], bombs",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [galeseeds], [$punch], bombs"
+                                    "$d4_small_floor_puzzle"
                                 ],
                                 "item_count": 1
                             }
@@ -1246,19 +967,13 @@
                         ]
                     },
                     {
-                        "name": "Big floor puzzle reward",
+                        "name": "(B1F): Large Floor Puzzle",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, hook1",
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, hook1",
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, hook1",
-                                    // Boomerang sequence breaks
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, satchel, scentseeds, hook1",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, ring_peace, bombs, hook1",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [emberseeds], hook1",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [scentseeds], hook1",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [galeseeds], hook1"
+                                    "$d4_large_floor_puzzle",
+                                    "[l_hard], $d4_large_floor_puzzle_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1272,19 +987,13 @@
                         ]
                     },
                     {
-                        "name": "Lava Pot Chest",
+                        "name": "(1F): Lava Pot Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "d4sk:5, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, hook1",
-                                    "d4sk:5, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, hook1",
-                                    "d4sk:5, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, hook1",
-                                    // Boomerang sequence breaks
-                                    "[l_hard], d4sk:5, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, satchel, scentseeds",
-                                    "[l_hard], d4sk:5, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, ring_peace, bombs",
-                                    "[l_hard], d4sk:5, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [emberseeds], hook1",
-                                    "[l_hard], d4sk:5, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [scentseeds], hook1",
-                                    "[l_hard], d4sk:5, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [galeseeds], hook1"
+                                    "$d4_lava_pot_chest",
+                                    "[l_hard], $d4_lava_pot_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1298,20 +1007,13 @@
                         ]
                     },
                     {
-                        "name": "Eyesoar Reward",
+                        "name": "Eyesoar",
                         "sections": [
                             {
+                                "name": "(B1F): Boss",
                                 "access_rules": [
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, hook1, sword1",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, hook1, ring_expert",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, hook1, sword1",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, hook1, ring_expert",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, hook1, sword1",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, hook1, ring_expert",
-                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, [emberseeds], hook1, boomerang",
-                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, satchel, scentseeds, hook1, boomerang",
-                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, ring_peace, bombs, hook1, boomerang",
-                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, [galeseeds], hook1, boomerang"
+                                    "$d4_boss",
+                                    "[l_hard], $d4_boss_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1328,17 +1030,10 @@
                         "name": "Burning Flame",
                         "sections": [
                             {
+                                "name": "Essence",
                                 "access_rules": [
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, hook1, sword1",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, hook1, ring_expert",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, hook1, sword1",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, hook1, ring_expert",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, hook1, sword1",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, hook1, ring_expert",
-                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, [emberseeds], hook1, boomerang",
-                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, satchel, scentseeds, hook1, boomerang",
-                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, ring_peace, bombs, hook1, boomerang",
-                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, [galeseeds], hook1, boomerang"
+                                    "$d4_boss",
+                                    "[l_hard], $d4_boss_h"
                                 ],
                                 "hosted_item": "d4"
                             }
@@ -1358,10 +1053,10 @@
                 "access_rules": [],
                 "children": [
                     {
-                        "name": "Like-Like Chest",
+                        "name": "(B1F): Like-Like Chest",
                         "sections": [
                             {
-                                "name": "(west blue pegs stairs)",
+                                "name": "",
                                 "access_rules": [
                                     "$d5_likelike",
                                     "[l_hard],$d5_likelike_h"
@@ -1378,9 +1073,10 @@
                         ]
                     },
                     {
-                        "name": "Eyes Chest",
+                        "name": "(1F): Eyes Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d5_eyes",
                                     "[l_hard],$d5_eyes_h"
@@ -1397,9 +1093,10 @@
                         ]
                     },
                     {
-                        "name": "Dark Room",
+                        "name": "(B1F): Dark Room",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d5_darkroom",
                                     "[l_hard],$d5_darkroom_h"
@@ -1416,9 +1113,10 @@
                         ]
                     },
                     {
-                        "name": "Two-Statue Puzzle",
+                        "name": "(B1F): Two-Statue Puzzle",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d5_2statue",
                                     "[l_hard],$d5_2statue_h"
@@ -1435,9 +1133,10 @@
                         ]
                     },
                     {
-                        "name": "Blue Peg Chest before Boss",
+                        "name": "(1F): Blue Peg Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d5_switchA",
                                     "[l_hard],$d5_switchA_h"
@@ -1454,9 +1153,10 @@
                         ]
                     },
                     {
-                        "name": "Diamonds Chest",
+                        "name": "(1F): Diamond Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d5_crossroads,hook1",
                                     "[l_hard],$d5_crossroads_h,hook1"
@@ -1473,12 +1173,13 @@
                         ]
                     },
                     {
-                        "name": "Three-Statue Puzzle",
+                        "name": "(1F): Three-Statue Puzzle",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d5_switchA,cane,d5sk:5",
-                                    "[l_hard],$d5_switchA_h,cane,d5sk:5"
+                                    "$d5_3statue",
+                                    "[l_hard],$d5_3statue_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1492,12 +1193,13 @@
                         ]
                     },
                     {
-                        "name": "Six-Statue Puzzle",
+                        "name": "(B1F): Six-Statue Puzzle",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d5_switchA,$ember_shooter,feather,d5sk:5",
-                                    "[l_hard],$d5_switchA_h,$ember_shooter,feather,d5sk:5"
+                                    "$d5_6statue",
+                                    "[l_hard],$d5_6statue"
                                 ],
                                 "item_count": 1
                             }
@@ -1511,9 +1213,10 @@
                         ]
                     },
                     {
-                        "name": "Red Peg Chest",
+                        "name": "(B1F): Red Peg Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d5_redpeg",
                                     "[l_hard],$d5_redpeg_h"
@@ -1530,12 +1233,13 @@
                         ]
                     },
                     {
-                        "name": "Owl Puzzle",
+                        "name": "(B1F): Owl Puzzle",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d5_redpeg",
-                                    "[l_hard],$d5_redpeg_h"
+                                    "$d5_owl_puzzle",
+                                    "[l_hard],$d5_owl_puzzle"
                                 ],
                                 "item_count": 1
                             }
@@ -1549,12 +1253,13 @@
                         ]
                     },
                     {
-                        "name": "Smog Reward",
+                        "name": "Smog",
                         "sections": [
                             {
+                                "name": "(1F): Boss",
                                 "access_rules": [
-                                    "$d5_switchA,d5bk,cane,sword",
-                                    "[l_hard],$d5_switchA_h,d5bk,cane,sword"
+                                    "$d5_boss",
+                                    "[l_hard],$d5_boss"
                                 ],
                                 "item_count": 1
                             }
@@ -1571,9 +1276,10 @@
                         "name": "Sacred Soil",
                         "sections": [
                             {
+                                "name": "Essence",
                                 "access_rules": [
-                                    "$d5_switchA,d5bk,cane,sword",
-                                    "[l_hard],$d5_switchA_h,d5bk,cane,sword"
+                                    "$d5_boss",
+                                    "[l_hard],$d5_boss"
                                 ],
                                 "hosted_item": "d5"
                             }
@@ -1593,9 +1299,10 @@
                 "access_rules": [],
                 "children": [
                     {
-                        "name": "Color Room",
+                        "name": "(1F): Color Room",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d6past_colorroom",
                                     "[l_hard],$d6past_colorroom_h"
@@ -1612,12 +1319,13 @@
                         ]
                     },
                     {
-                        "name": "Wizzrobe Chest",
+                        "name": "(1F): Wizzrobe",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$k_wizzrobe,bombs",
-                                    "[l_hard],$k_wizzrobe_h,bombs"
+                                    "[l_hard],$k_wizzrobe,bombs"
                                 ],
                                 "item_count": 1
                             }
@@ -1631,11 +1339,12 @@
                         ]
                     },
                     {
-                        "name": "Flooded Pool Chest",
+                        "name": "(1F): Pool Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "emberseeds,bombs,flippers"
+                                    "$d6past_pool_chest"
                                 ],
                                 "item_count": 1
                             }
@@ -1649,11 +1358,13 @@
                         ]
                     },
                     {
-                        "name": "Stalfos Chest",
+                        "name": "(1F): Stalfos Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d6past_stalfos"
+                                    "$d6past_stalfos",
+                                    "[l_hard],$d6past_stalfos_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1667,11 +1378,13 @@
                         ]
                     },
                     {
-                        "name": "Rope Chest",
+                        "name": "(B1F): Rope Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d6_openwall,mermaid"
+                                    "$d6past_rope_chest",
+                                    "[l_hard],$d6past_rope_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1685,9 +1398,10 @@
                         ]
                     },
                     {
-                        "name": "Underwater Spear Chest",
+                        "name": "(B1F): Spear Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d6past_spinner,mermaid"
                                 ],
@@ -1703,9 +1417,10 @@
                         ]
                     },
                     {
-                        "name": "Underwater Diamond Chest",
+                        "name": "(B1F): Diamond Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d6past_spinner,mermaid,hook1"
                                 ],
@@ -1721,9 +1436,10 @@
                         ]
                     },
                     {
-                        "name": "Octogon Reward",
+                        "name": "Octogon",
                         "sections": [
                             {
+                                "name": "(1F): Boss",
                                 "access_rules": [
                                     "$d6past_boss"
                                 ],
@@ -1742,6 +1458,7 @@
                         "name": "Lonely Peak",
                         "sections": [
                             {
+                                "name": "Essence",
                                 "access_rules": [
                                     "$d6past_boss"
                                 ],
@@ -1766,6 +1483,7 @@
                         "name": "Diamond Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "hook1"
                                 ],
@@ -1784,9 +1502,10 @@
                         "name": "Rope Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d6present_roperoom,$scent_satchel",
-                                    "[l_hard],$d6present_roperoom_h,$scent_satchel"
+                                    "$d6present_rope_chest",
+                                    "[l_hard],$d6present_rope_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1803,9 +1522,10 @@
                         "name": "Cube Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d6present_cube",
-                                    "[l_hard],$d6present_cube_h"
+                                    "$d6present_cube_chest",
+                                    "[l_hard],$d6present_cube_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1822,9 +1542,10 @@
                         "name": "Spinner Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d6present_spinner",
-                                    "[l_hard],$d6present_spinner_h"
+                                    "$d6present_spinner_chest",
+                                    "[l_hard],$d6present_spinner_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1841,8 +1562,10 @@
                         "name": "Beamos Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d6present_beamos"
+                                    "$d6present_beamos_chest",
+                                    "[l_hard],$d6present_beamos_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1856,12 +1579,13 @@
                         ]
                     },
                     {
-                        "name": "Rope RNG Chest",
+                        "name": "RNG Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d6present_rng",
-                                    "[l_hard],$d6present_rng_h"
+                                    "$d6present_rng_chest",
+                                    "[l_hard],$d6present_rng_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1878,8 +1602,10 @@
                         "name": "Channel Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d6present_channel"
+                                    "$d6present_channel_chest",
+                                    "[l_hard],$d6present_channel_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1896,9 +1622,10 @@
                         "name": "Vire Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d6present_vire",
-                                    "[l_hard],$d6present_vire_h"
+                                    "$d6present_vire_chest",
+                                    "[l_hard],$d6present_vire_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1915,14 +1642,14 @@
             },
             {
                 "name": "Jabu-Jabu's Belly (D7)",
-                "access_rules": [],
+                "access_rules": ["mermaid"],
                 "children": [
                     {
-                        "name": "Spike Chest",
+                        "name": "(2F): Spike Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d7_spike"
                                 ],
                                 "item_count": 1
                             }
@@ -1936,12 +1663,12 @@
                         ]
                     },
                     {
-                        "name": "Crab Chest",
+                        "name": "(1F): Crab Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d7_crab",
-                                    "[l_hard], $d7_crab_h"
+                                    "$d7_crab"
                                 ],
                                 "item_count": 1
                             }
@@ -1955,9 +1682,10 @@
                         ]
                     },
                     {
-                        "name": "Diamond Puzzle",
+                        "name": "(1F): Diamond Puzzle",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d7_diamondpuzzle"
                                 ],
@@ -1973,9 +1701,10 @@
                         ]
                     },
                     {
-                        "name": "Flower Room",
+                        "name": "(1F): Flower Room",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d7_flower"
                                 ],
@@ -1991,9 +1720,10 @@
                         ]
                     },
                     {
-                        "name": "Stairway Chest",
+                        "name": "(1F): Stairway Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d7_stairway"
                                 ],
@@ -2009,12 +1739,13 @@
                         ]
                     },
                     {
-                        "name": "Rightwing Moldorm Chest",
+                        "name": "(2F): Right Wing",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d7_stairway,$k_moldorm,mermaid",
-                                    "$d7_stairway,$k_moldorm,$floodd7"
+                                    "$d7_right_wing",
+                                    "[l_hard],$d7_right_wing_h"
                                 ],
                                 "item_count": 1
                             }
@@ -2028,9 +1759,10 @@
                         ]
                     },
                     {
-                        "name": "Boxed Chest",
+                        "name": "(1F): Boxed Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$draind7"
                                 ],
@@ -2046,9 +1778,10 @@
                         ]
                     },
                     {
-                        "name": "Cane & Diamond Puzzle",
+                        "name": "(1F): Cane|Diamond Puzzle",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$draind7,hook2,cane"
                                 ],
@@ -2064,9 +1797,10 @@
                         ]
                     },
                     {
-                        "name": "3F Terrace Chest",
+                        "name": "(3F): Terrace",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$floodd7"
                                 ],
@@ -2082,9 +1816,10 @@
                         ]
                     },
                     {
-                        "name": "Left Wing",
+                        "name": "(2F): Left Wing",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$floodd7"
                                 ],
@@ -2100,9 +1835,10 @@
                         ]
                     },
                     {
-                        "name": "Hallway Chest",
+                        "name": "(3F): Hallway Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d7_hallway"
                                 ],
@@ -2118,9 +1854,10 @@
                         ]
                     },
                     {
-                        "name": "Miniboss Chest",
+                        "name": "(1F): Miniboss Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d7_miniboss"
                                 ],
@@ -2136,11 +1873,12 @@
                         ]
                     },
                     {
-                        "name": "Post-Hallway Chest",
+                        "name": "(3F): Post-Hallway Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "hook2,d7sk:7"
+                                    "$floodd7,d7sk:7"
                                 ],
                                 "item_count": 1
                             }
@@ -2154,11 +1892,12 @@
                         ]
                     },
                     {
-                        "name": "Pot Island Chest",
+                        "name": "(1F): Island Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$draind7,hook1,[d7sk:7],d7sk:1"
+                                    "$d7_pot_island"
                                 ],
                                 "item_count": 1
                             }
@@ -2172,11 +1911,12 @@
                         ]
                     },
                     {
-                        "name": "Plasmarine Reward",
+                        "name": "Plasmarine",
                         "sections": [
                             {
+                                "name": "(2F): Boss",
                                 "access_rules": [
-                                    "mermaid,d7bk,$floodd7"
+                                    "$d7_boss"
                                 ],
                                 "item_count": 1
                             }
@@ -2193,8 +1933,9 @@
                         "name": "Rolling Sea",
                         "sections": [
                             {
+                                "name": "Essence",
                                 "access_rules": [
-                                    "mermaid,d7bk,$floodd7"
+                                    "$d7_boss"
                                 ],
                                 "hosted_item": "d7"
                             }
@@ -2214,12 +1955,12 @@
                 "access_rules": [],
                 "children": [
                     {
-                        "name": "First Chest",
+                        "name": "(1F): Single Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d8_first",
-                                    "[l_hard], $d8_first_h"
+                                    "$d8_first"
                                 ],
                                 "item_count": 1
                             }
@@ -2233,10 +1974,10 @@
                         ]
                     },
                     {
-                        "name": "Ghini Chest",
+                        "name": "(B2F): Ghini Chest",
                         "sections": [
                             {
-                                "name": "(kill ghinis and take stairs)",
+                                "name": "",
                                 "access_rules": [
                                     "$d8_ghini",
                                     "[l_hard], $d8_ghini_h"
@@ -2253,9 +1994,10 @@
                         ]
                     },
                     {
-                        "name": "B1F NW Chest",
+                        "name": "(B1F): NW Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d8_ghini",
                                     "[l_hard], $d8_ghini_h"
@@ -2272,9 +2014,10 @@
                         ]
                     },
                     {
-                        "name": "Blue Peg Chest",
+                        "name": "(B1F): Blue Peg Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d8_bluepeg",
                                     "[l_hard], $d8_bluepeg_h"
@@ -2291,9 +2034,10 @@
                         ]
                     },
                     {
-                        "name": "Blade Trap Chest",
+                        "name": "(B1F): Blade Trap",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d8_bluepeg",
                                     "[l_hard], $d8_bluepeg_h"
@@ -2310,9 +2054,10 @@
                         ]
                     },
                     {
-                        "name": "Sarcophagus Chest",
+                        "name": "(B1F): Sarcophagus Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d8_bluepeg,lift2",
                                     "[l_hard], $d8_bluepeg_h,lift2"
@@ -2329,9 +2074,10 @@
                         ]
                     },
                     {
-                        "name": "Stalfos Drop",
+                        "name": "(B1F): Stalfos",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d8_bluepeg",
                                     "[l_hard], $d8_bluepeg_h"
@@ -2348,9 +2094,10 @@
                         ]
                     },
                     {
-                        "name": "Maze Chest",
+                        "name": "(B2F): Maze Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d8_maze",
                                     "[l_hard], $d8_maze_h"
@@ -2367,9 +2114,10 @@
                         ]
                     },
                     {
-                        "name": "NW Slate",
+                        "name": "(B2F): NW Slate Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d8_maze",
                                     "[l_hard], $d8_maze_h"
@@ -2386,9 +2134,10 @@
                         ]
                     },
                     {
-                        "name": "NE Slate",
+                        "name": "(B2F): NE Slate Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d8_neslate",
                                     "[l_hard], $d8_neslate_h"
@@ -2405,9 +2154,10 @@
                         ]
                     },
                     {
-                        "name": "B3F Chest",
+                        "name": "(B3F): Single Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "$d8_maze,lift2",
                                     "[l_hard], $d8_maze_h,lift2"
@@ -2424,12 +2174,13 @@
                         ]
                     },
                     {
-                        "name": "Tile Room",
+                        "name": "(B2F): Tile Room",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d8_maze,lift2,feather",
-                                    "[l_hard], $d8_maze_h,lift2,feather"
+                                    "$d8_tileroom",
+                                    "[l_hard],$d8_tileroom_h"
                                 ],
                                 "item_count": 1
                             }
@@ -2443,12 +2194,13 @@
                         ]
                     },
                     {
-                        "name": "SE Slate",
+                        "name": "(B2F): SE Slate Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d8_maze,lift2,feather",
-                                    "[l_hard], $d8_maze_h,lift2,feather"
+                                    "$d8_tileroom",
+                                    "[l_hard],$d8_tileroom_h"
                                 ],
                                 "item_count": 1
                             }
@@ -2462,12 +2214,13 @@
                         ]
                     },
                     {
-                        "name": "Floor Puzzle",
+                        "name": "(B1F): Floor Puzzle",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d8_bluepeg, d8sk:5",
-                                    "[l_hard], $d8_bluepeg_h,d8sk:5"
+                                    "$d8_bluepeg,d8sk:5",
+                                    "[l_hard],$d8_bluepeg_h,d8sk:5"
                                 ],
                                 "item_count": 1
                             }
@@ -2481,12 +2234,13 @@
                         ]
                     },
                     {
-                        "name": "SW Slate",
+                        "name": "(B2F): SW Slate Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
-                                    "$d8_maze, d8sk:5, lift1",
-                                    "[l_hard], $d8_maze_h,d8sk:5, lift1"
+                                    "$d8_maze,d8sk:5,lift1",
+                                    "[l_hard],$d8_maze_h,d8sk:5,lift1"
                                 ],
                                 "item_count": 1
                             }
@@ -2500,12 +2254,13 @@
                         ]
                     },
                     {
-                        "name": "Ramrock Reward",
+                        "name": "Ramrock",
                         "sections": [
                             {
+                                "name": "(B3F): Boss",
                                 "access_rules": [
-                                    "$d8_maze,lift2,feather,d8bk,d8slate:4",
-                                    "[l_hard], $d8_maze_h,lift2,feather,d8bk,d8slate:4"
+                                    "$d8_boss",
+                                    "[l_hard],$d8_boss_h"
                                 ],
                                 "item_count": 1
                             }
@@ -2522,9 +2277,10 @@
                         "name": "Falling Star",
                         "sections": [
                             {
+                                "name": "Essence",
                                 "access_rules": [
-                                    "$d8_maze,lift2,feather,d8bk,d8slate:4",
-                                    "[l_hard], $d8_maze_h,lift2,feather,d8bk,d8slate:4"
+                                    "$d8_boss",
+                                    "[l_hard],$d8_boss_h"
                                 ],
                                 "hosted_item": "d8"
                             }

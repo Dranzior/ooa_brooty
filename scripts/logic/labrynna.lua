@@ -21,11 +21,11 @@ end
 function shore_present()
     return flute() or has("gloves") or (bush() and feather()) or (ages() and bush()) or
                ((bush() or flute() or echoes()) and (lift1() or mermaid()) or
-                   (currents() and (feather() or flippers() or raft())))
+                   (currents() and (feather() or flippers() or raft() or magicboom())))
 end
 
 function shore_present_h()
-    return shore_present() or (currents() and shooter())
+    return shore_present() or (currents() and (shooter() or slingshot2()))
 end
 
 function raft()
@@ -33,7 +33,7 @@ function raft()
 end
 
 function palace_chest()
-    return lynna_village() and (ages() or (bush_safe() and mermaid()))
+    return lynna_village() and (ages() or (bush() and mermaid()))
 end
 
 function palace_chest_h()
@@ -41,11 +41,11 @@ function palace_chest_h()
 end
 
 function rescue_nayru()
-    return palace_chest() and mystery() and hook1() and (sword() or punch_enemy())
+    return palace_chest() and mystery() and hook1() and (sword() or punch_enemy() or foolsore())
 end
 
 function rescue_nayru_h()
-    return palace_chest_h() and mystery() and hook1() and (sword() or punch_enemy())
+    return palace_chest_h() and mystery() and hook1() and (sword() or punch_enemy() or foolsore())
 end
 
 function maku_seed()
@@ -53,31 +53,35 @@ function maku_seed()
 end
 
 function balloon_guy()
-    return feather() and (sword() or boomerang()) and
+    return feather() and (sword() or boomerang() or foolsore() or rodofseasons()) and
                (currents() or has("gloves") or ricky_flute() or (shore_present() and any_shooter()))
 end
 
 function balloon_guy_h()
-    return feather() and (sword() or boomerang()) and (currents() or has("gloves") or ricky_flute() or
+    return feather() and (sword() or boomerang() or foolsore() or rodofseasons()) and (currents() or has("gloves") or ricky_flute() or
                (shore_present() and (any_shooter() or (boomerang() and (pegasus_satchel() or bombs())))))
 end
 
-function raft()
-    return lynna_village() and has("cheval") and has("chart")
-end
 
 -- yoll graveyard
-
 function graveyard()
-    return (ember() and use_seeds())
+    return use_ember()
+end
+
+function cheval_grave()
+    return use_ember() and k_switchhook()
+end
+
+function cheval_grave_h()
+    return use_ember() and bomb_jump3()
 end
 
 function syrup()
-    return graveyard() and has("gravekey") and (flippers() or bomb_jump2() or dimitri_flute() or hook2())
+    return graveyard() and has("gravekey") and (flippers() or bomb_jump2() or dimitri_flute() or hook2()) and rupeefarm()
 end
 
 function syrup_h()
-    return graveyard() and has("gravekey") and shovel() and (flippers() or bomb_jump2() or dimitri_flute() or hook2())
+    return graveyard() and has("gravekey") and shovel() and (flippers() or bomb_jump2() or dimitri_flute() or hook2()) and rupeefarm()
 end
 
 function d1_entrance()
@@ -95,8 +99,8 @@ function deku_forest()
 end
 
 function forest_tree()
-    return deku_forest() and seed_tree() and
-               (ember() or ages() or hook1() or gale_satchel() or feather())
+    return deku_forest() and (seed_tree()) and
+               (use_ember() or ages() or hook1() or gale_satchel() or feather())
 end
 
 function d2_entrance()
@@ -126,23 +130,25 @@ function tokaygame()
 end
 
 function crescenttree()
-    return crescentpast() and has("seedling") and seed_tree() and seed_item() and
-               (ages() or (lift1() and echoes()))
+    return crescentpast() and has("seedling") and (ages() or (lift1() and echoes()))
 end
 
 function crescenttree_h()
-    return crescentpast() and has("seedling") and seed_tree() and seed_item() and
-               (ages() or (lift1() and (echoes() or (gale_satchel() and mermaid()))))
+    return crescentpast() and has("seedling") and (ages() or (lift1() and (echoes() or (gale_satchel() and mermaid()))))
 end
 
 function crescentpresentwest()
     return dimitri_flute() or (lynna_city() and mermaid()) or
-               (crescentpast() and (currents() or (shovel() and echoes())))
+               ((has("raft") or (lynna_city() and mermaid())) and (currents() or (shovel() and echoes())))
 end
 
-function crescentpresentwest()
-    return dimitri_flute() or (lynna_city() and mermaid()) or
-               ((raft() or (lynna_city() and mermaid())) and (currents() or (shovel() and echoes())))
+--function crescentpresentwest()
+    --return dimitri_flute() or (lynna_city() and mermaid()) or
+               --((raft() or (lynna_city() and mermaid())) and (currents() or (shovel() and echoes())))
+--end
+
+function crescentpresenteast()
+    return (crescentpresentwest() and (bush() or currents())) or (lynna_village() and mermaid()) or raft()
 end
 
 function d3_entrance()
@@ -163,7 +169,7 @@ function moosh_nuun()
 end
 
 function nuun()
-    return lynna_city() and (currents() or (fairy_woods() and ember_shooter()))
+    return lynna_city() and (currents() or (fairy_woods() and ember() and shoot_seeds()))
 end
 
 function nuuncave()
@@ -172,7 +178,7 @@ function nuuncave()
 end
 
 function symmetrypresent()
-    return nuun() and (currents() or flute())
+    return nuun() and (currents() or flute() or (has("nuun_moosh") and cape() and bush() and pegasus_satchel()))
 end
 
 function symmetrytree()
@@ -184,38 +190,38 @@ function symmetrytree_h()
 end
 
 function symmetrypast()
-    return symmetrypresent() and (ages() or (bush_safe() and echoes()))
+    return symmetrypresent() and (ages() or (bush() and echoes()))
 end
 
 function restorationwall()
-    return ages() or (symmetrypast() and currents() and lift1() and flippers())
+    return ages() or (symmetrypast() and currents() and lift1() and (flippers() or (cape() and (pegasus_satchel() or (bombs() and has("l_hard"))))))
 end
 
 function wallpatch()
-    return restorationwall() and sword()
+    return restorationwall() and (sword() or foolsore() or rodofseasons())
 end
 
 function wallpatch_h()
-    return restorationwall() and (sword() or shield() or boomerand() or hook1() or scen() or shovel())
+    return restorationwall() and (sword() or foolsore() or rodofseasons() or shield() or boomerang() or hook1() or scent() or shovel())
 end
 
 function d4_entrance()
-    return symmetrypresent() and has("repairednut") and wallpatch()
+    return symmetrypresent() and has("repairednut")
 end
 
-function d4_entrance_h()
-    return symmetrypresent() and has("repairednut") and wallpatch_h()
-end
+--function d4_entrance_h()
+    --return symmetrypresent() and has("repairednut") and wallpatch_h()
+--end
 
 -- rolling ridge // fucking messy
 function west_ridge_present()
-    return (feather() or ages()) and ((hook1() and currents()) or -- From start
+    return (feather() or ages()) and (((cape() or hook1()) and currents()) or -- From start
                (lynna_village() and mermaid() and currents() and jump3()))
 end
 
 function west_ridge_past()
-    return (has("bombflower") and hook1() and -- From start
-    (feather() or ages())) or (west_ridge_present() and ages() or (lift1() and echoes())) -- From present ridge
+    return (has("bombflower") and (hook1() or cape()) and -- From start
+    (feather() or ages() or (west_ridge_present() and ages()) or (lift1() and echoes()))) -- From present ridge
 end
 
 -- zora village/zora seas
@@ -245,10 +251,10 @@ end
 
 -- d8 area
 function d8_entrance()
-    return crescentpast() and has("eyeball") and k_normal() and pot() and bombs() and cane() and mermaid() and feather()
+    return crescentpast() and has("eyeball") and pot() and bombs() and mermaid() and feather() and (k_normal() or magicboom() or rodofseasons())
 end
 
 function d8_entrance_h()
-    return crescentpast() and has("eyeball") and k_normal() and pot() and bombs() and mermaid() and feather()
+    return crescentpast() and has("eyeball") and pot() and bombs() and mermaid() and feather() and (k_normal() or magicboom() or rodofseasons() or cane())
 end
 

@@ -8,12 +8,11 @@
                 "name": "Start",
                 "children": [
                     {
-                        "name": "Starting Chest",
-                        "access_rules": [],
+                        "name": "Impa Gift",
                         "sections": [
                             {
-                                "item_count": 1,
-                                "access_rules": []
+                                "name": "",
+                                "item_count": 1
                             }
                         ],
                         "map_locations": [
@@ -26,11 +25,10 @@
                     },
                     {
                         "name": "Nayru's House",
-                        "access_rules": [],
                         "sections": [
                             {
-                                "item_count": 1,
-                                "access_rules": []
+                                "name": "",
+                                "item_count": 1
                             }
                         ],
                         "map_locations": [
@@ -43,22 +41,24 @@
                     }
                 ]
             },
+            //////////////
             {
-                "name": "Lynna/South Shore/Palace",
+                "name": "Lynna|South Shore|Palace",
                 "children": [
                     {
-                        "name": "South Lynna Tree",
+                        "name": "Lynna City Seed Tree",
                         "chest_unopened_img": "images/items/tree.png",
                         "chest_opened_img": "images/items/tree_gray.png",
                         "access_rules": [
                             "{$lynna_city}",
-                            "$use_seeds,sword",
+                            "$use_seeds,$seed_tree",
                             "$use_seeds,$punch_object",
-                            "$use_seeds,$dimitri_flute",
-                            "[l_hard],$use_seeds,$bush"
+                            "$use_seeds,$dimitri_flute"
+                            //"[l_hard],$use_seeds,$bush"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -72,16 +72,29 @@
                         ]
                     },
                     {
-                        "name": "Black Tower",
+                        "name": "Black Tower Worker",
                         "access_rules": [],
                         "sections": [
                             {
-                                "name": "Black Tower Worker",
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": [
                                     "$lynna_village"
                                 ]
-                            },
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 3330,
+                                "y": 928
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Black Tower Ending",
+                        "access_rules": [],
+                        "sections": [
                             {
                                 "name": "Fight Final Boss",
                                 "item_count": 1,
@@ -95,68 +108,67 @@
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 3380,
-                                "y": 928
+                                "x": 3400,
+                                "y": 928,
+                                "size": 70
                             }
                         ]
                     },
                     {
-                        "name": "Maku Tree (Present)",
+                        "name": "Maku Tree Gift",
                         "access_rules": [],
                         "sections": [
                             {
-                                "name": "Save Waifu",
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": [
-                                    "$maku_tree"
-                                ]
-                            },
-                            {
-                                "name": "Get Maku Seed for Go Mode",
-                                "hosted_item": "makuseed",
-                                "access_rules": [
-                                    "$maku_seed"
+                                    "$maku_tree",
+                                    "foundmakuroad,$k_normal,pathkey"
                                 ]
                             }
                         ],
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 1360,
+                                "x": 1335,
                                 "y": 453
                             }
                         ]
                     },
                     {
-                        "name": "Maku Tree (Past)",
+                        "name": "Get Maku Seed for Go Mode",
                         "access_rules": [],
                         "sections": [
                             {
-                                "name": "Maku Path Chest",
-                                "item_count": 1,
+                                "name": "",
+                                "hosted_item": "makuseed",
                                 "access_rules": [
-                                    "$maku_tree,$k_normal,pathkey",
-                                    "$maku_tree,shovel,pathkey",
-                                    "$lynna_village,shovel"
+                                    "$goal"
                                 ]
-                            },
+                            }
+                        ],
+                        "map_locations": [
                             {
-                                "name": "Did you get a key from the Path Chest? (Mark this)",
-                                "hosted_item": "pathkey",
-                                "access_rules": [
-                                    "$maku_tree,$k_normal",
-                                    "$maku_tree,shovel",
-                                    "$lynna_village,shovel"
-                                ]
-                            },
+                                "map": "map",
+                                "x": 1385,
+                                "y": 453,
+                                "size": 60
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Enter Maku Path (D0)",
+                        "access_rules": [
+                            "$maku_tree,pathkey,$k_normal",
+                            "$lynna_village,shovel"
+                        ],
+                        "sections": [
                             {
-                                "name": "Down the Stairs",
+                                "name": "",
                                 "item_count": 1,
-                                "access_rules": [
-                                    "$maku_tree,$k_normal",
-                                    "$maku_tree,shovel",
-                                    "$lynna_village,shovel,pathkey"
-                                ]
+                                "chest_unopened_img": "images/dungeons/d0_entrance.png",
+                                "chest_opened_img": "images/dungeons/d0_entrance.png",
+                                "access_rules": []
                             }
                         ],
                         "map_locations": [
@@ -168,13 +180,49 @@
                         ]
                     },
                     {
+                        "name": "Maku Path (Rear Entrance)",
+                        "access_rules": [],
+                        "visibility_rules": ["dungeon_er_on"],
+                        "sections": [
+                            {
+                                "name": "Key Chest",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$rescue_nayru,$k_normal,pathkey"
+                                ]
+                            },
+                            {
+                                "name": "Basement",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$rescue_nayru,$k_normal"
+                                ]
+                            },
+                            {
+                                "name": "Heart Piece",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$rescue_nayru,$k_normal"
+                                ]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 3650,
+                                "y": 495
+                            }
+                        ]
+                    },
+                    {
                         "name": "Lynna City Chest",
                         "access_rules": [
                             "currents",
-                            "emberseeds"
+                            "$ember,$use_seeds"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -195,6 +243,7 @@
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -208,19 +257,35 @@
                         ]
                     },
                     {
-                        "name": "Tingle",
+                        "name": "Tingle Present",
                         "access_rules": [
                             "$balloon_guy",
                             "[l_hard],$balloon_guy_h"
                         ],
                         "sections": [
                             {
-                                "name": "Tingle's Gift",
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
-                            },
+                            }
+                        ],
+                        "map_locations": [
                             {
-                                "name": "Bring 3 Seeds to Tingle",
+                                "map": "map",
+                                "x": 1471,
+                                "y": 950
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Tingle Upgrade",
+                        "access_rules": [
+                            "$balloon_guy",
+                            "[l_hard],$balloon_guy_h"
+                        ],
+                        "sections": [
+                            {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": [
                                     "$use_seeds,$seed_number:3"
@@ -230,7 +295,7 @@
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 1496,
+                                "x": 1521,
                                 "y": 950
                             }
                         ]
@@ -242,6 +307,7 @@
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "hosted_item": "raft",
                                 "access_rules": []
@@ -250,7 +316,7 @@
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 3547,
+                                "x": 3572,
                                 "y": 1308
                             }
                         ]
@@ -260,19 +326,27 @@
                         "access_rules": [],
                         "sections": [
                             {
-                                "name": "Buy a Shield (30 Rupees)",
-                                "hosted_item": "shield1",
+                                "name": "First Item",
+                                "item_count": 1,
                                 "access_rules": [
-                                    "$farm",
-                                    "{$lynna_city}"
+                                    "$lynna_city,$rupeefarm"
+                                    //"[l_hard],shovel"
                                 ]
                             },
                             {
-                                "name": "Shop Item (150 Rupees)",
+                                "name": "Second Item",
                                 "item_count": 1,
                                 "access_rules": [
-                                    "{$lynna_city}",
-                                    "[l_hard],shovel"
+                                    "$lynna_city,$rupeefarm"
+                                    //"[l_hard],shovel"
+                                ]
+                            },
+                            {
+                                "name": "Third Item",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$lynna_city,$rupeefarm"
+                                    //"[l_hard],shovel"
                                 ]
                             }
                         ],
@@ -285,14 +359,107 @@
                         ]
                     },
                     {
-                        "name": "Ambi's Palace Tree",
+                        "name": "Hidden Shop",
+                        "access_rules": [],
+                        "sections": [
+                            {
+                                "name": "First Item",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$lynna_city,song2,$rupeefarm"
+                                    //"[l_hard],shovel"
+                                ]
+                            },
+                            {
+                                "name": "Second Item",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$lynna_city,song2,$rupeefarm"
+                                    //"[l_hard],shovel"
+                                ]
+                            },
+                            {
+                                "name": "Third Item",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$lynna_city,song2,$rupeefarm"
+                                    //"[l_hard],shovel"
+                                ]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 1350,
+                                "y": 788
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Advance Shop",
+                        "visibility_rules": ["advanceshop"],
+                        "access_rules": [],
+                        "sections": [
+                            {
+                                "name": "First Item",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$lynna_village,$rupeefarm"
+                                ]
+                            },
+                            {
+                                "name": "Second Item",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$lynna_village,$rupeefarm"
+                                ]
+                            },
+                            {
+                                "name": "Third Item",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$lynna_village,$rupeefarm"
+                                ]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 3700,
+                                "y": 690
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Lynna Village Shooting Gallery",
+                        "access_rules": [
+                            "$has_sword"
+                        ],
+                        "sections": [
+                            {
+                                "name": "",
+                                "item_count": 1,
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 3660,
+                                "y": 690
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Ambi's Palace Seed Tree",
                         "access_rules": [
                             "{$lynna_village}",
-                            "$lynna_village,sword,$use_seeds",
+                            "$lynna_village,$seed_tree,$use_seeds",
                             "$lynna_village,$punch_object,$use_seeds"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "chest_unopened_img": "images/items/tree.png",
                                 "chest_opened_img": "images/items/tree_gray.png",
@@ -337,12 +504,13 @@
                         ]
                     },
                     {
-                        "name": "Mayor Plen's house",
+                        "name": "Mayor Plen's House",
                         "access_rules": [
                             "hook2"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -354,30 +522,217 @@
                                 "y": 663
                             }
                         ]
+                    },
+                    {
+                        "name": "Vasu's Gift",
+                        "sections": [
+                            {
+                                "name": "",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$lynna_village"
+                                ]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 1368,
+                                "y": 696
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Gasha Farmer",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$lynna_village"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 3180,
+                                "y": 595
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Postman Trade",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$lynna_village,poeclock"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 3563,
+                                "y": 690
+                            }
+                        ]
+                    },
+                    {
+                        "name": "The Toilet Hand Trade",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$lynna_village,stationary"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 3171,
+                                "y": 704
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Sad Boi Trade",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$lynna_village,funnyjoke"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 3419,
+                                "y": 670
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Rafton Trade",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$lynna_village,cheval,chart,magicoar"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 3522,
+                                "y": 1308
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Mamamu Yan Trade",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$lynna_city,doggiemask"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 1032,
+                                "y": 850
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Comedian Trade",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$lynna_city,mustache"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 1056,
+                                "y": 705
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Black Tower Heart Piece",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$lynna_village,shovel"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 3420,
+                                "y": 1064
+                            }
+                        ]
                     }
                 ]
             },
+            ////////////////
             {
                 "name": "Yoll Graveyard",
                 "children": [
                     {
-                        "name": "Cheval's Grave",
+                        "name": "Cheval's Test",
                         "access_rules": [
-                            "$graveyard,$k_switchhook",
-                            "[l_hard]$graveyard,$bomb_jump3",
-                            "[l_hard],$graveyard,$k_switchook_h"
+                            "$cheval_grave",
+                            "[l_hard],$cheval_grave_h"
                         ],
                         "sections": [
                             {
-                                "name": "Cheval's Test",
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": [
                                     "bracelet,feather",
                                     "bracelet,flippers"
                                 ]
-                            },
+                            }
+                        ],
+                        "map_locations": [
                             {
-                                "name": "Cheval's Invention",
+                                "map": "map",
+                                "x": 1775,
+                                "y": 680
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Cheval's Invention",
+                        "access_rules": [
+                            "$cheval_grave",
+                            "[l_hard],$cheval_grave_h"
+                        ],
+                        "sections": [
+                            {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": [
                                     "flippers"
@@ -387,18 +742,19 @@
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 1800,
+                                "x": 1825,
                                 "y": 680
                             }
                         ]
                     },
                     {
-                        "name": "Grave under the Tree",
+                        "name": "Grave Under The Tree",
                         "access_rules": [
                             "$graveyard"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -412,40 +768,100 @@
                         ]
                     },
                     {
-                        "name": "Maple's Shop",
+                        "name": "Yoll Graveyard Heart Piece",
+                        "access_rules": [
+                            "$graveyard,lift1"
+                        ],
+                        "sections": [
+                            {
+                                "name": "",
+                                "item_count": 1,
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 1800,
+                                "y": 1080
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Maple Trade",
+                        "access_rules": [
+                            "$k_normal,touchingbook"
+                        ],
+                        "sections": [
+                            {
+                                "name": "",
+                                "item_count": 1,
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 2175,
+                                "y": 670
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Syrup's Shop",
                         "access_rules": [],
                         "sections": [
                             {
-                                "name": "Get Magic Potion from Shop",
-                                "hosted_item": "potion",
+                                "name": "First",
+                                //"hosted_item": "potion",
+                                "item_count": 1,
                                 "access_rules": [
                                     "$syrup",
                                     "[l_hard],$syrup_h"
                                 ]
                             },
                             {
-                                "name": "Farm Magic Potion from Maple flying around",
-                                "hosted_item": "potion",
+                                "name": "Second",
+                                //"hosted_item": "potion",
+                                "item_count": 1,
                                 "access_rules": [
-                                    "[l_hard],$k_normal_h"
+                                    "$syrup",
+                                    "[l_hard],$syrup_h"
+                                ]
+                            },
+                            {
+                                "name": "Third",
+                                //"hosted_item": "potion",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$syrup",
+                                    "[l_hard],$syrup_h"
                                 ]
                             }
+                            //{
+                            //    "name": "Farm Magic Potion from Maple flying around",
+                            //    "hosted_item": "potion",
+                            //    "access_rules": [
+                            //        "[l_hard],$k_normal"
+                            //    ]
+                            //}
                         ],
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 2200,
+                                "x": 2225,
                                 "y": 670
                             }
                         ]
                     },
                     {
-                        "name": "Graveyard Poe",
+                        "name": "Graveyard Poe Trade",
                         "access_rules": [
                             "$graveyard,gravekey,bracelet"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -465,6 +881,7 @@
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "chest_unopened_img": "images/bosses/d1.png",
                                 "chest_opened_img": "images/bosses/d1.png",
@@ -485,6 +902,26 @@
                 "name": "Fairies' Woods",
                 "children": [
                     {
+                        "name": "Deku Forest Heart Piece",
+                        "access_rules": [
+                            "$deku_forest,$use_ember"
+                        ],
+                        "sections": [
+                            {
+                                "name": "",
+                                "item_count": 1,
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 2524,
+                                "y": 1176
+                            }
+                        ]
+                    },
+                    {
                         "name": "Fairie's Woods Chest",
                         "access_rules": [
                             "$woods_chest",
@@ -492,6 +929,7 @@
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -505,12 +943,13 @@
                         ]
                     },
                     {
-                        "name": "Deku Forest Cave - East",
+                        "name": "Deku Forest Cave East",
                         "access_rules": [
                             "$deku_forest"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -524,16 +963,17 @@
                         ]
                     },
                     {
-                        "name": "Deku Forest Cave - West",
+                        "name": "Deku Forest Cave West",
                         "access_rules": [
                             "$deku_forest,bracelet,feather",
                             "$deku_forest,bracelet,hook1",
-                            "$deku_forest,bracelet,emberseeds",
+                            "$deku_forest,bracelet,$use_ember",
                             "$deku_forest,bracelet,ages",
                             "$deku_forest,bracelet,$gale_satchel"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -547,13 +987,14 @@
                         ]
                     },
                     {
-                        "name": "Deku Forest Tree",
+                        "name": "Deku Forest Seed Tree",
                         "access_rules": [
                             "{$deku_forest}",
                             "$forest_tree, $use_seeds"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "chest_unopened_img": "images/items/tree.png",
                                 "chest_opened_img": "images/items/tree_gray.png",
@@ -575,6 +1016,7 @@
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -582,8 +1024,8 @@
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 2718,
-                                "y": 998
+                                "x": 2700,
+                                "y": 990
                             }
                         ]
                     },
@@ -592,12 +1034,13 @@
                         "access_rules": [
                             "[trick],$deku_forest,bracelet,feather",
                             "[trick],$deku_forest,bracelet,hook1",
-                            "[trick],$deku_forest,bracelet,ember",
+                            "[trick],$deku_forest,bracelet,$use_ember",
                             "[trick],$deku_forest,bracelet,ages",
                             "[trick],$deku_forest,bracelet,$gale_satchel"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "hosted_item": "shield1",
                                 "access_rules": []
                             }
@@ -615,12 +1058,13 @@
                         "access_rules": [
                             "[trick],$deku_forest,bracelet,feather",
                             "[trick],$deku_forest,bracelet,hook1",
-                            "[trick],$deku_forest,bracelet,ember",
+                            "[trick],$deku_forest,bracelet,$use_ember",
                             "[trick],$deku_forest,bracelet,ages",
                             "[trick],$deku_forest,bracelet,$gale_satchel"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "hosted_item": "shield1",
                                 "access_rules": []
                             }
@@ -640,6 +1084,7 @@
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "chest_unopened_img": "images/bosses/d2.png",
                                 "chest_opened_img": "images/bosses/d2.png",
@@ -654,24 +1099,64 @@
                             }
                         ]
                     },
+                    //{
+                    //    "name": "Enter Wing Dungeon Present (D2)",
+                    //    "access_rules": [
+                    //        "$deku_forest,currents"
+                    //    ],
+                    //    "sections": [
+                    //        {
+                    //            "item_count": 1,
+                    //            "chest_unopened_img": "images/bosses/d2.png",
+                    //            "chest_opened_img": "images/bosses/d2.png",
+                    //            "access_rules": []
+                    //        }
+                    //    ],
+                    //    "map_locations": [
+                    //        {
+                    //            "map": "map",
+                    //            "x": 568,
+                    //            "y": 1052
+                    //        }
+                    //    ]
+                    //},
                     {
-                        "name": "Enter Wing Dungeon Present (D2)",
+                        "name": "Happy Mask Salesman Trade",
                         "access_rules": [
-                            "$deku_forest,currents"
+                            "$fairy_woods,tastymeat"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
-                                "chest_unopened_img": "images/bosses/d2.png",
-                                "chest_opened_img": "images/bosses/d2.png",
                                 "access_rules": []
                             }
                         ],
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 568,
-                                "y": 1052
+                                "x": 512,
+                                "y": 723
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Restoration Wall Heart Piece",
+                        "access_rules": [
+                            "$deku_forest,$jump1,feather"
+                        ],
+                        "sections": [
+                            {
+                                "name": "",
+                                "item_count": 1,
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 2955,
+                                "y": 582
                             }
                         ]
                     }
@@ -681,12 +1166,38 @@
                 "name": "Crescent Island",
                 "children": [
                     {
+                        "name": "Tokay Market",
+                        "access_rules": [
+                            "$crescentpast"
+                        ],
+                        "sections": [
+                            {
+                                "name": "First Item",
+                                "item_count": 1,
+                                "access_rules": ["mysteryseeds"]
+                            },
+                            {
+                                "name": "Second Item",
+                                "item_count": 1,
+                                "access_rules": ["scentseeds"]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 4507,
+                                "y": 1300
+                            }
+                        ]
+                    },
+                    {
                         "name": "Tokay Crystal Cave",
                         "access_rules": [
                             "$tokaycrystalcave"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -706,6 +1217,7 @@
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -725,7 +1237,7 @@
                         ],
                         "sections": [
                             {
-                                "name": "Hungry Hungry Tokays!",
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -739,13 +1251,14 @@
                         ]
                     },
                     {
-                        "name": "Crescent Island Tree",
+                        "name": "Crescent Island Seed Tree",
                         "access_rules": [
                             "{$crescenttree,turninseedling}",
                             "$crescenttree,turninseedling,$use_seeds"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "chest_unopened_img": "images/items/tree.png",
                                 "chest_opened_img": "images/items/tree_gray.png",
@@ -767,6 +1280,7 @@
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "hosted_item": "turninseedling",
                                 "access_rules": []
                             }
@@ -786,6 +1300,7 @@
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "chest_unopened_img": "images/bosses/d3.png",
                                 "chest_opened_img": "images/bosses/d3.png"
                             }
@@ -805,6 +1320,7 @@
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -824,6 +1340,7 @@
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -843,6 +1360,7 @@
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -854,38 +1372,58 @@
                                 "y": 1719
                             }
                         ]
-                    }
-                ]
-            },
-            {
-                "name": "Nuun Highlands/Symmetry City/Talus Peaks",
-                "children": [
+                    },
                     {
-                        "name": "Check Nuun Highlands and talk to Foreman to start Carpenter Quest and build the Bridge!",
+                        "name": "Tokay Chef Trade",
                         "access_rules": [
-                            "$nuun"
+                            "$crescentpresenteast,stinkbag"
                         ],
                         "sections": [
                             {
-                                "name": "Note: Move down one screen and compare your screen to the ones in the `Animal Companion Maps` tab",
-                                "hosted_item": "carpenterboss",
+                                "name": "",
+                                "item_count": 1,
                                 "access_rules": []
                             }
                         ],
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 872,
-                                "y": 351
+                                "x": 2168,
+                                "y": 1694
                             }
                         ]
-                    },
+                    }
+                ]
+            },
+            {
+                "name": "Nuun Highlands|Symmetry City|Talus Peaks",
+                "children": [
+                    //{
+                    //    "name": "Check Nuun Highlands and talk to Foreman to start Carpenter Quest and build the Bridge!",
+                    //    "access_rules": [
+                    //        "$nuun"
+                    //    ],
+                    //    "sections": [
+                    //        {
+                    //            "name": "Note: Move down one screen and compare your screen to the ones in the `Animal Companion Maps` tab",
+                    //            "hosted_item": "carpenterboss",
+                    //            "access_rules": []
+                    //        }
+                    //    ],
+                    //    "map_locations": [
+                    //        {
+                    //            "map": "map",
+                    //            "x": 872,
+                    //            "y": 351
+                    //        }
+                    //    ]
+                    //},
                     // Moosh Carpenters
                     {
                         "name": "Carpenter 1",
                         "access_rules": [
-                            "$moosh_flute,carpenterboss",
-                            "nuun_moosh,currents,carpenterboss"
+                            "$moosh_flute",
+                            "nuun_moosh,currents"
                         ],
                         "sections": [
                             {
@@ -908,8 +1446,8 @@
                     {
                         "name": "Carpenter 2",
                         "access_rules": [
-                            "$moosh_flute,carpenterboss",
-                            "nuun_moosh,currents,carpenterboss"
+                            "$moosh_flute",
+                            "nuun_moosh,currents"
                         ],
                         "sections": [
                             {
@@ -932,8 +1470,8 @@
                     {
                         "name": "Carpenter 3",
                         "access_rules": [
-                            "$moosh_flute,carpenterboss",
-                            "nuun_moosh,currents,carpenterboss"
+                            "$moosh_flute",
+                            "nuun_moosh,currents"
                         ],
                         "sections": [
                             {
@@ -957,8 +1495,8 @@
                     {
                         "name": "Carpenter 1",
                         "access_rules": [
-                            "$ricky_flute,carpenterboss",
-                            "nuun_ricky,currents,carpenterboss"
+                            "$ricky_flute",
+                            "nuun_ricky,currents"
                         ],
                         "sections": [
                             {
@@ -981,8 +1519,8 @@
                     {
                         "name": "Carpenter 2",
                         "access_rules": [
-                            "$ricky_flute,carpenterboss",
-                            "nuun_ricky,currents,carpenterboss"
+                            "$ricky_flute",
+                            "nuun_ricky,currents"
                         ],
                         "sections": [
                             {
@@ -1005,8 +1543,8 @@
                     {
                         "name": "Carpenter 3",
                         "access_rules": [
-                            "$ricky_flute,carpenterboss",
-                            "nuun_ricky,currents,carpenterboss"
+                            "$ricky_flute",
+                            "nuun_ricky,currents"
                         ],
                         "sections": [
                             {
@@ -1030,8 +1568,8 @@
                     {
                         "name": "Carpenter 1",
                         "access_rules": [
-                            "$dimitri_flute,carpenterboss",
-                            "nuun_dimitri,currents,carpenterboss"
+                            "$dimitri_flute",
+                            "nuun_dimitri,currents"
                         ],
                         "sections": [
                             {
@@ -1054,8 +1592,8 @@
                     {
                         "name": "Carpenter 2",
                         "access_rules": [
-                            "$dimitri_flute,carpenterboss",
-                            "nuun_dimitri,currents,carpenterboss"
+                            "$dimitri_flute",
+                            "nuun_dimitri,currents"
                         ],
                         "sections": [
                             {
@@ -1078,8 +1616,8 @@
                     {
                         "name": "Carpenter 3",
                         "access_rules": [
-                            "$dimitri_flute,carpenterboss",
-                            "nuun_dimitri,currents,carpenterboss"
+                            "$dimitri_flute",
+                            "nuun_dimitri,currents"
                         ],
                         "sections": [
                             {
@@ -1100,16 +1638,14 @@
                         ]
                     },
                     {
-                        "name": "Nuun Cave (Check `Animal Companion Maps` Tab for exact location",
+                        "name": "Nuun Highlands Cave",
                         "access_rules": [
                             "$nuuncave"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
-                                "visibility_rules": [
-                                    "nuun_ricky"
-                                ],
                                 "access_rules": []
                             }
                         ],
@@ -1123,55 +1659,11 @@
                                 "map": "animal_regions",
                                 "x": 407,
                                 "y": 214
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Nuun Cave (Check `Animal Companion Maps` Tab for exact location",
-                        "access_rules": [
-                            "$nuuncave"
-                        ],
-                        "sections": [
-                            {
-                                "item_count": 1,
-                                "visibility_rules": [
-                                    "nuun_dimitri"
-                                ],
-                                "access_rules": []
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "map",
-                                "x": 1207,
-                                "y": 343
                             },
                             {
                                 "map": "animal_regions",
                                 "x": 831,
                                 "y": 278
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Nuun Cave (Check `Animal Companion Maps` Tab for exact location",
-                        "access_rules": [
-                            "$nuuncave"
-                        ],
-                        "sections": [
-                            {
-                                "item_count": 1,
-                                "visibility_rules": [
-                                    "nuun_moosh"
-                                ],
-                                "access_rules": []
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "map",
-                                "x": 1207,
-                                "y": 343
                             },
                             {
                                 "map": "animal_regions",
@@ -1181,16 +1673,18 @@
                         ]
                     },
                     {
-                        "name": "Symmetry City Tree",
+                        "name": "Symmetry City Seed Tree",
                         "access_rules": [
-                            "{$symmetrytree}",
+                            "{$symmetrypresent}",
                             "$symmetrytree, $use_seeds",
-                            "{[l_hard],$symmetrytree_h}",
                             "[l_hard],$symmetrytree_h, $use_seeds"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
+                                "chest_unopened_img": "images/items/tree.png",
+                                "chest_opened_img": "images/items/tree_gray.png",
                                 "access_rules": []
                             }
                         ],
@@ -1203,15 +1697,20 @@
                         ]
                     },
                     {
-                        "name": "Symmetry City Brothers",
+                        "name": "Symmetry City Main House",
                         "access_rules": [
                             "$symmetrypast"
                         ],
                         "sections": [
                             {
-                                "name": "first talk to a sister, then the two brothers to the NE/NW",
+                                "name": "Symmetry City Brothers",
                                 "item_count": 1,
                                 "access_rules": []
+                            },
+                            {
+                                "name": "Middle Man Trade",
+                                "item_count": 1,
+                                "access_rules": ["dumbbell"]
                             }
                         ],
                         "map_locations": [
@@ -1229,6 +1728,7 @@
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -1242,23 +1742,46 @@
                         ]
                     },
                     {
-                        "name": "Patch Tuninut",
+                        "name": "Patch Tuni Nut Ceremony",
                         "access_rules": [
                             "$wallpatch,tuninut",
                             "[l_hard],$wallpatch_h,tuninut"
                         ],
                         "sections": [
                             {
-                                "name": "Climb the wall to restore the tuninut",
-                                "hosted_item": "repairednut",
+                                "name": "",
+                                //"name": "Climb the wall to restore the tuninut",
+                                "item_count": 1,
                                 "access_rules": []
                             }
                         ],
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 2900,
-                                "y": 450
+                                "x": 2925,
+                                "y": 300
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Patch Broken Sword Ceremony",
+                        "access_rules": [
+                            "$wallpatch,brokensword",
+                            "[l_hard],$wallpatch_h,brokensword"
+                        ],
+                        "sections": [
+                            {
+                                "name": "",
+                                //"name": "Climb the wall to restore the tuninut",
+                                "item_count": 1,
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 2875,
+                                "y": 300
                             }
                         ]
                     },
@@ -1269,6 +1792,7 @@
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -1282,13 +1806,54 @@
                         ]
                     },
                     {
-                        "name": "Enter Skull Dungeon (D4)",
+                        "name": "Bomb Fairy",
                         "access_rules": [
-                            "$d4_entrance",
-                            "[l_hard],$d4_entrance_h"
+                            "$symmetrypast,song2,lift1,bombs",
+                            "$symmetrypast,ages,bombs"
                         ],
                         "sections": [
                             {
+                                "name": "",
+                                "item_count": 1,
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 104,
+                                "y": 694
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Symmetry City Heart Piece",
+                        "access_rules": [
+                            "$symmetrypast,song2"
+                        ],
+                        "sections": [
+                            {
+                                "name": "",
+                                "item_count": 1,
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 232,
+                                "y": 215
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Enter Skull Dungeon (D4)",
+                        "access_rules": [
+                            "$d4_entrance"
+                        ],
+                        "sections": [
+                            {
+                                "name": "",
                                 "chest_unopened_img": "images/bosses/d4.png",
                                 "chest_opened_img": "images/bosses/d4.png",
                                 "access_rules": []
@@ -1308,13 +1873,38 @@
                 "name": "Rolling Ridge West",
                 "children": [
                     {
-                        "name": "Free the Goron Elder",
+                        "name": "Old Zora Trade",
                         "access_rules": [
-                            "bombflower, feather, hook1",
-                            "bombflower, ages, hook1"
+                            "$lynna_village,ages,seaukulele",
+                            "$lynna_village,feather,hook1,seaukulele",
+                            "$lynna_village,feather,mermaid,seaukulele"
                         ],
                         "sections": [
                             {
+                                "name": "",
+                                "item_count": 1,
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 3980,
+                                "y": 687
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Goron Elder",
+                        "access_rules": [
+                            "bombflower, feather, hook1",
+                            "bombflower, ages, hook1",
+                            "bombflower, cape",
+                            "[l_hard], feather, magnet, bombflower"
+                        ],
+                        "sections": [
+                            {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -1334,20 +1924,27 @@
                         ],
                         "sections": [
                             {
-                                "name": "Goron's Hiding Place (Bombwall)",
+                                "name": "Goron's Hiding Place",
                                 "access_rules": [
                                     "bombs"
                                 ],
                                 "item_count": 1
                             },
                             {
-                                "name": "1F Terrace chest",
+                                "name": "Ridge Chest West Base On Terrace",
                                 "item_count": 1
                             },
                             {
-                                "name": "3F Surface stairs",
+                                "name": "Ridge West Surface Stair",
                                 "item_count": 1
                             },
+                            {
+                                "name": "Ridge West Heart Piece",
+                                "access_rules": [
+                                    "bombs"
+                                ],
+                                "item_count": 1
+                            }
                         ],
                         "map_locations": [
                             {
@@ -1363,7 +1960,7 @@
                         ]
                     },
                     {
-                        "name": "Rolling Ridge Tree (West)",
+                        "name": "Rolling Ridge West Seed Tree",
                         "access_rules": [
                             "{bombflower, feather, hook1, $seed_tree}",
                             "bombflower, feather, hook1, $use_seeds, $seed_tree",
@@ -1376,6 +1973,7 @@
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "chest_unopened_img": "images/items/tree.png",
                                 "chest_opened_img": "images/items/tree_gray.png",
                                 "access_rules": []
@@ -1392,23 +1990,24 @@
                     {
                         "name": "Moblin Keep",
                         "access_rules": [
-                            "$west_ridge_present",
+                            "$west_ridge_present"
                         ],
                         "sections": [
                             {
-                                "name": "Lower floor chest",
+                                "name": "Under Moblin Keep",
                                 "access_rules": [
                                     "feather, flippers"
                                 ],
                                 "item_count": 1
                             },
                             {
-                                "name": "Defeat the boss",
+                                "name": "Defeat Great Moblin",
                                 "access_rules": [
-                                    "$pegasus_satchel, bracelet"
+                                    "$pegasus_satchel, bracelet",
+                                    "cape, bracelet"
                                 ],
                                 "item_count": 1
-                            },
+                            }
                         ],
                         "map_locations": [
                             {
@@ -1423,13 +2022,16 @@
                         "access_rules": [
                             // Vanilla way, by beating Moblin Keep
                             "$west_ridge_present, $pegasus_satchel, bracelet, feather, crownkey",
+                            "$west_ridge_present, cape, bracelet, crownkey",
                             // From East Ridge
                             "$lynna_village, feather, mermaid, hook1, bracelet, currents, crownkey",
+                            "$lynna_village, $jump3, mermaid, bracelet, currents, crownkey",
                             "$lynna_village, ages, mermaid, hook1, crownkey",
                             "$lynna_village, ages, mermaid, $jump3, crownkey"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "chest_unopened_img": "images/bosses/d5.png",
                                 "chest_opened_img": "images/bosses/d5.png",
                                 "access_rules": []
@@ -1442,65 +2044,69 @@
                                 "y": 23
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
                 "name": "Rolling Ridge East (Present)",
                 "children": [
                     {
-                        "name": "Goron caves (present)",
+                        "name": "Goron caves (Present)",
                         "sections": [
                             {
-                                "name": "Goron Dancing",
+                                "name": "First Goron Dance",
                                 "access_rules": [
                                     //from Lynna, swimming
                                     "$lynna_village, feather, mermaid, currents",
                                     "$lynna_village, ages, mermaid",
                                     //from the upper cave
-                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather"
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather",
+                                    "$west_ridge_present, bracelet, cape"
                                 ],
                                 "item_count": 1
                             },
                             {
-                                "name": "Trade the Brisket with the stairs Goron",
+                                "name": "Trade Rock Brisket",
                                 "access_rules": [
                                     //from Lynna, swimming
                                     "$lynna_village, feather, mermaid, currents, emblem, brisket",
                                     "$lynna_village, ages, mermaid, emblem, brisket",
                                     //from the upper cave
-                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, emblem, brisket"
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, emblem, brisket",
+                                    "$west_ridge_present, $jump3, bracelet, emblem, brisket"
                                 ],
                                 "item_count": 1
                             },
                             {
-                                "name": "Diamonds Chest",
+                                "name": "Goron Diamond Cave",
                                 "access_rules": [
                                     //from Lynna, swimming
                                     "$lynna_village, feather, mermaid, currents, hook1",
+                                    "$lynna_village, mermaid, currents, cape",
                                     "$lynna_village, feather, mermaid, currents, emblem, $jump3",
                                     "$lynna_village, ages, mermaid, hook1",
                                     //from the upper cave, requires emblem
                                     "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1",
-                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, $jump3"
+                                    "$west_ridge_present, bracelet, feather, currents, $jump3"
                                 ],
                                 "item_count": 1
                             },
                             {
-                                "name": "Big Bang minigame",
+                                "name": "Big Bang Game",
                                 "access_rules": [
                                     //from Lynna, swimming
                                     "$lynna_village, feather, mermaid, currents, hook1, goronade",
+                                    "$lynna_village, mermaid, currents, cape, goronade",
                                     "$lynna_village, feather, mermaid, currents, emblem, goronade",
                                     "$lynna_village, ages, mermaid, hook1, goronade",
                                     //from the upper cave, requires emblem
                                     "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1, goronade",
-                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, $jump3, goronade"
+                                    "$west_ridge_present, bracelet, feather, currents, $jump3, goronade"
                                 ],
                                 "item_count": 1
                             },
                             {
-                                "name": "Highest floor chest",
+                                "name": "Ridge NE Cave Present",
                                 "access_rules": [
                                     //from Lynna, swimming
                                     "$lynna_village, feather, mermaid, currents, hook1",
@@ -1508,10 +2114,10 @@
                                     "$lynna_village, ages, mermaid, hook1",
                                     //from the upper cave, requires emblem
                                     "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1",
-                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, $jump3"
+                                    "$west_ridge_present, bracelet, feather, currents, $jump3"
                                 ],
                                 "item_count": 1
-                            },
+                            }
                         ],
                         "map_locations": [
                             {
@@ -1543,7 +2149,7 @@
                             {
                                 "name": "Second reward",
                                 "item_count": 1
-                            },
+                            }
                         ],
                         "map_locations": [
                             {
@@ -1554,16 +2160,17 @@
                         ]
                     },
                     {
-                        "name": "Left of D6 Entrance",
+                        "name": "Pool in D6 Entrance",
                         "access_rules": [
                             "$lynna_village, feather, mermaid, currents",
                             "$lynna_village, ages, mermaid"
                         ],
                         "sections": [
                             {
-                                "name": "Underwater chest",
+                                "name": "",
+                                //"name": "Underwater chest",
                                 "item_count": 1
-                            },
+                            }
                         ],
                         "map_locations": [
                             {
@@ -1580,10 +2187,12 @@
                             "d6keypresent, $lynna_village, feather, mermaid, currents",
                             "d6keypresent, $lynna_village, ages, mermaid",
                             //from the upper cave
-                            "d6keypresent, $west_ridge_present, $pegasus_satchel, bracelet, feather"
+                            "d6keypresent, $west_ridge_present, $pegasus_satchel, bracelet, feather",
+                            "d6keypresent, $west_ridge_present, $jump3, bracelet"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1
                             }
                         ],
@@ -1601,43 +2210,45 @@
                 "name": "Rolling Ridge East (Past)",
                 "children": [
                     {
-                        "name": "Goron caves (past)",
+                        "name": "Goron caves (Past)",
                         "sections": [
                             {
-                                "name": "Goron Dancing with the Letter",
+                                "name": "Goron Dance, With Letter",
                                 "access_rules": [
                                     //from Lynna, swimming
                                     "$lynna_village, feather, mermaid, letter",
                                     "$lynna_village, ages, mermaid, letter",
                                     //from the upper cave, requires emblem
-                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, letter"
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, letter",
+                                    "$west_ridge_present, $jump3, bracelet, echoes, letter"
                                 ],
                                 "item_count": 1
                             },
                             {
-                                "name": "Trade the Vase with the stairs Goron",
+                                "name": "Trade Goron Vase",
                                 "access_rules": [
                                     //from Lynna, swimming
                                     "$lynna_village, feather, mermaid, emblem, vase",
                                     "$lynna_village, ages, mermaid, emblem, vase",
                                     //from the upper cave, requires emblem
-                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, emblem, vase"
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, emblem, vase",
+                                    "$west_ridge_present, $jump3, bracelet, echoes, emblem, vase"
                                 ],
                                 "item_count": 1
                             },
                             {
-                                "name": "Bush Room Chest",
+                                "name": "Ridge Bush Cave",
                                 "access_rules": [
                                     //from Lynna, swimming
                                     "$lynna_village, feather, mermaid, hook1",
                                     "$lynna_village, ages, mermaid, hook1",
                                     //from the upper cave, requires emblem
-                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, hook1"
+                                    "$west_ridge_present, $jump3, bracelet, echoes, hook1"
                                 ],
                                 "item_count": 1
                             },
                             {
-                                "name": "Trade Lava Juice with the bush Goron",
+                                "name": "Trade Lava Juice",
                                 "access_rules": [
                                     //from Lynna, swimming
                                     "$lynna_village, feather, mermaid, hook1, lavajuice",
@@ -1645,10 +2256,11 @@
                                     "$lynna_village, ages, mermaid, hook1, lavajuice",
                                     //from the upper cave, requires emblem
                                     "$west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, hook1, lavajuice",
-                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, ages, lavajuice"
+                                    "$west_ridge_present, $jump3, bracelet, echoes, lavajuice",
+                                    "$west_ridge_present, $jump3, bracelet, ages, lavajuice"
                                 ],
                                 "item_count": 1
-                            },
+                            }
                         ],
                         "map_locations": [
                             {
@@ -1664,29 +2276,29 @@
                         ]
                     },
                     {
-                        "name": "East Ridge base",
+                        "name": "East Ridge Base",
                         "access_rules": [
                             //from Lynna, swimming
                             "$lynna_village, feather, mermaid",
                             "$lynna_village, ages, mermaid",
                             //from the upper cave, requires emblem
-                            "$west_ridge_present, $pegasus_satchel, bracelet, feather"
+                            "$west_ridge_present, $jump3, bracelet"
                         ],
                         "sections": [
                             {
-                                "name": "Bombs Chest",
+                                "name": "Ridge Base Past Bomb",
                                 "access_rules": [
                                     "bombs"
                                 ],
                                 "item_count": 1
                             },
                             {
-                                "name": "Diamonds Chest",
+                                "name": "Ridge Diamonds Past",
                                 "access_rules": [
-                                    "hook1"
+                                    "hook1","cape"
                                 ],
                                 "item_count": 1
-                            },
+                            }
                         ],
                         "map_locations": [
                             {
@@ -1702,16 +2314,17 @@
                         ]
                     },
                     {
-                        "name": "Goron Head Cave",
+                        "name": "Bomb Goron Head",
                         "access_rules": [
                             //from Lynna, swimming
                             "$lynna_village, feather, mermaid, hook1, bombs",
                             "$lynna_village, ages, mermaid, hook1, bombs",
                             //from the upper cave, requires emblem
-                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, bombs"
+                            "$west_ridge_present, $jump3, bracelet, bombs"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -1725,26 +2338,74 @@
                         ]
                     },
                     {
-                        "name": "Shooting gallery",
+                        "name": "Ridge Upper Heart Piece",
                         "access_rules": [
                             //from Lynna, swimming
-                            "$lynna_village, feather, mermaid, currents, hook1, sword, bracelet",
-                            "$lynna_village, ages, mermaid, hook1, sword",
+                            "$lynna_village, feather, mermaid, hook1, currents, $bush",
+                            "$lynna_village, ages, mermaid, hook1",
+                            //from the upper cave, requires emblem
+                            "$west_ridge_present, $jump3, bracelet, $bush, currents"
+                        ],
+                        "sections": [
+                            {
+                                "name": "",
+                                "item_count": 1,
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 2200,
+                                "y": 56
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Treasure Hunting Goron",
+                        "access_rules": [
+                            //from Lynna, swimming
+                            "$lynna_village, currents, feather, mermaid, hook1, bombsplus, $ember_satchel, lift1",
+                            "$lynna_village, ages, mermaid, hook1, bombsplus, $ember_satchel, lift1",
+                            //from the upper cave, requires emblem
+                            "$west_ridge_present, $jump3, bracelet, bombsplus, $ember_satchel"
+                        ],
+                        "sections": [
+                            {
+                                "name": "",
+                                "item_count": 1,
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 4219,
+                                "y": 37
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Goron Shooting Gallery",
+                        "access_rules": [
+                            //from Lynna, swimming
+                            "$lynna_village, feather, mermaid, currents, hook1, gallery, bracelet",
+                            "$lynna_village, ages, mermaid, hook1, gallery",
                             //from Moblin cave
-                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1, sword"
+                            "$west_ridge_present, $jump3, bracelet, currents, hook1, gallery"
                         ],
                         "sections": [
                             {
                                 "name": "100 points",
                                 "item_count": 1
-                            },
-                            {
-                                "name": "200 points\n(get bombs out of logic)",
-                                "access_rules": [
-                                    "[bombs]"
-                                ],
-                                "hosted_item": "bombs"
                             }
+                            //{
+                            //    "name": "200 points\n(get bombs out of logic)",
+                            //    "access_rules": [
+                            //        "[bombs]"
+                            //    ],
+                            //    "hosted_item": "bombs"
+                            //}
                         ],
                         "map_locations": [
                             {
@@ -1755,7 +2416,7 @@
                         ]
                     },
                     {
-                        "name": "East Rolling Ridge tree",
+                        "name": "Rolling Ridge East Seed Tree",
                         "color": "#ff7700",
                         "access_rules": [
                             //from Lynna, swimming
@@ -1768,13 +2429,14 @@
                             "{$lynna_village, feather, mermaid, emblem, satchel, galeseeds}",
                             "$lynna_village, feather, mermaid, emblem, satchel, galeseeds, $use_seeds, $seed_tree",
                             //from Moblin cave
-                            "{$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1}",
-                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1, $use_seeds, $seed_tree",
-                            "{$west_ridge_present, $pegasus_satchel, bracelet, feather, satchel, galeseeds}",
-                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, satchel, galeseeds, $use_seeds, $seed_tree"
+                            "{$west_ridge_present, $jump3, bracelet, currents, hook1}",
+                            "$west_ridge_present, $jump3, bracelet, currents, hook1, $use_seeds, $seed_tree",
+                            "{$west_ridge_present, $jump3, bracelet, satchel, galeseeds}",
+                            "$west_ridge_present, $jump3, bracelet, satchel, galeseeds, $use_seeds, $seed_tree"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [],
                                 "chest_unopened_img": "images/items/tree.png",
                                 "chest_opened_img": "images/items/tree_gray.png"
@@ -1795,10 +2457,11 @@
                             "d6keypast, $lynna_village, feather, mermaid",
                             "d6keypast, $lynna_village, ages, mermaid",
                             //from the upper cave, requires emblem?
-                            "d6keypast, $west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, flippers"
+                            "d6keypast, $west_ridge_present, $jump3, bracelet, echoes, flippers"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "chest_unopened_img": "images/bosses/d6.png",
                                 "chest_opened_img": "images/bosses/d6.png"
                             }
@@ -1814,16 +2477,17 @@
                 ]
             },
             {
-                "name": "Zora Village/Zora Seas",
+                "name": "Zora Village|Zora Seas",
                 "access_rules": [
                     "mermaid, ages, hook1"
                 ],
                 "children": [
                     {
-                        "name": "Isolated Chest",
+                        "name": "Zora Village Present Chest",
                         "access_rules": [],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -1837,13 +2501,14 @@
                         ]
                     },
                     {
-                        "name": "Zora Village Tree (Past & Present)",
+                        "name": "Zora Village Seed Tree",
                         "access_rules": [
                             "{$zoratree}",
                             "$zoratree, $use_seeds"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "chest_unopened_img": "images/items/tree.png",
                                 "chest_opened_img": "images/items/tree_gray.png"
                             }
@@ -1862,12 +2527,13 @@
                         ]
                     },
                     {
-                        "name": "Island Chest in the Sarcophagus",
+                        "name": "Zora NW Cave",
                         "access_rules": [
                             "bombs, lift2"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -1884,23 +2550,21 @@
                         "name": "Zora Palace (Present)",
                         "sections": [
                             {
-                                "name": "Entrance chest",
+                                "name": "Zora Palace Chest",
                                 "item_count": 1
                             },
                             {
-                                "name": "King Zora gift for curing him in the past",
+                                "name": "Zora King Gift",
                                 "access_rules": [
-                                    // Access to Syrup's Shop in Yoll Graveyard to buy a potion
-                                    "$use_seeds, emberseeds, [gravekey], flippers, curezora",
-                                    "$use_seeds, emberseeds, [gravekey], $jump3, curezora"
+                                    "curezora"
                                 ],
                                 "item_count": 1
                             },
                             {
                                 "name": "King Zora Permission to enter Jabu",
                                 "access_rules": [
-                                    "$use_seeds, emberseeds, [gravekey], flippers, curefairy, curezora",
-                                    "$use_seeds, emberseeds, [gravekey], $jump3, curefairy, curezora"
+                                    "curefairy, curezora",
+                                    "curefairy, curezora"
                                 ],
                                 "hosted_item": "enterjabu",
                                 "item_count": 0
@@ -1918,11 +2582,9 @@
                         "name": "Zora Palace (Past)",
                         "sections": [
                             {
-                                "name": "Cure King Zora in the past\n(use magic potion from Maple's shop)",
+                                "name": "Cure King Zora in the past",
                                 "access_rules": [
-                                    // Access to Syrup's Shop in Yoll Graveyard to buy a potion
-                                    "$use_seeds, emberseeds, [gravekey], flippers, potion",
-                                    "$use_seeds, emberseeds, [gravekey], $jump3, potion"
+                                    "potion"
                                 ],
                                 "hosted_item": "curezora"
                             }
@@ -1940,6 +2602,7 @@
                         "color": "#ff7700",
                         "sections": [
                             {
+                                "name": "",
                                 "hosted_item": "curefairy",
                                 "access_rules": [
                                     "powder"
@@ -1955,9 +2618,10 @@
                         ]
                     },
                     {
-                        "name": "Fairy's coast",
+                        "name": "Fairies' Coast Chest",
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1
                             }
                         ],
@@ -1970,12 +2634,13 @@
                         ]
                     },
                     {
-                        "name": "Library (present)",
+                        "name": "Library Present",
                         "access_rules": [
                             "librarykey"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1
                             }
                         ],
@@ -1988,12 +2653,13 @@
                         ]
                     },
                     {
-                        "name": "Library (past)",
+                        "name": "Library Past",
                         "access_rules": [
                             "librarykey"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": [
                                     "{}",
                                     "book",
@@ -2012,12 +2678,13 @@
                         ]
                     },
                     {
-                        "name": "Zora Seas South",
+                        "name": "Zora Seas Chest",
                         "access_rules": [
                             "curefairy"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1
                             }
                         ],
@@ -2030,12 +2697,13 @@
                         ]
                     },
                     {
-                        "name": "Under Fisher's Island",
+                        "name": "Fisher's Island Cave",
                         "access_rules": [
                             "hook2"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1
                             }
                         ],
@@ -2048,18 +2716,30 @@
                         ]
                     },
                     {
-                        "name": "Jabu-Jabu Area",
+                        "name": "Enter Jabu-Jabu's Belly (D7)",
                         "sections": [
                             {
-                                "name": "Enter Jabu-Jabu's Belly (D7)",
+                                "name": "",
                                 "access_rules": [
                                     "enterjabu"
                                 ],
                                 "chest_unopened_img": "images/bosses/d7.png",
                                 "chest_opened_img": "images/bosses/d7.png"
-                            },
+                            }
+                        ],
+                        "map_locations": [
                             {
-                                "name": "Zora Reward after collecting D7 Essence",
+                                "map": "map",
+                                "x": 56,
+                                "y": 1360
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Zora's Reward",
+                        "sections": [
+                            {
+                                "name": "",
                                 "access_rules": [
                                     "d7"
                                 ]
@@ -2069,23 +2749,24 @@
                             {
                                 "map": "map",
                                 "x": 56,
-                                "y": 1383
+                                "y": 1410
                             }
                         ]
                     }
                 ]
             },
             {
-                "name": "Sea of Storms/No Return",
+                "name": "Sea of Storms|No Return",
                 "access_rules": [],
                 "children": [
                     {
-                        "name": "Sea of Storms Underwater Cave",
+                        "name": "Sea of Storms Past",
                         "access_rules": [
                             "$lynna_village, mermaid, scale"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -2099,12 +2780,13 @@
                         ]
                     },
                     {
-                        "name": "Pirate Ship Captains Reward",
+                        "name": "Piratian Captain",
                         "access_rules": [
                             "$lynna_village, mermaid, scale"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -2118,13 +2800,14 @@
                         ]
                     },
                     {
-                        "name": "Sarcophagus Chest",
+                        "name": "Sea of No Return",
                         "access_rules": [
                             "$d8_entrance, lift2",
                             "[l_hard], $d8_entrance_h, lift2"
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -2145,6 +2828,7 @@
                         ],
                         "sections": [
                             {
+                                "name": "",
                                 "chest_unopened_img": "images/bosses/d8.png",
                                 "chest_opened_img": "images/bosses/d8.png"
                             }

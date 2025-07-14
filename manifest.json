@@ -5,36 +5,12 @@
   "package_uid": "ooa_brooty",
   "author": "Brooty",
   "variants": {
-    //"standard": {
-      //"display_name": "Map Tracker (Vertical)"
-      //"flags": [
-      //  "ap"
-      //]
-    //},
-    //"var_horizontal": {
-      //"display_name": "Map Tracker (Horizontal)"
-      //"flags": [
-      //  "ap"
-      //]
-     //},
-     "var_x-items": {
-      "display_name": "Map Tracker (Cross-Items)"
-      //"flags": [
-      //  "ap"
-      //]
-     },
-     "var_archipelago": {
-      "display_name": "Tracker compatible with Archipelago version",
+    "standard": {
+      "display_name": "Map Tracker (AP)",
       "flags": [
         "ap"
       ]
-     }
-    //"var_itemsonly": {
-     //"display_name": "Items Only"
-     //"flags": [
-     //  "ap"
-     //]
-    //}
+    }
   },
   "versions_url": "https://raw.githubusercontent.com/Br00ty/ooa_brooty/master/versions.json",
   "min_poptracker_version": "0.27.0"

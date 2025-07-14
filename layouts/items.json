@@ -2,26 +2,30 @@
   "items": {
     "type": "itemgrid",
     "h_alignment": "center",
-    "margin": "2,5,3,0",
-    "item_margin": "1,1",
-    "item_size": 36,
+    "margin": "1,5,3,0",
+    "item_margin": "-2,4",
+    "item_size": 39,
     "rows": [
       [
         "sword",
+        "bigsword",
         "shield1",
         "lift1",
         "shooter",
         "flippers",
         "cane",
+        //"rodofseasons",
         "shovel"
       ],
       [
         "feather",
         "hook1",
+        //"magnet",
+        //"slingshot",
         "bombs",
         "satchel",
         "boomerang",
-        "harp",
+        "echoes",
         "flute"
       ]
     ]
@@ -29,9 +33,9 @@
   "items2": {
     "type": "itemgrid",
     "h_alignment": "center",
-    "margin": "4,5,3,0",
-    "item_margin": "0,-1",
-    "item_size": 29,
+    "margin": "1,5,3,0",
+    "item_margin": "0,2",
+    "item_size": 31,
     "rows": [
       [
         "emberseeds",
@@ -50,8 +54,8 @@
     "type": "itemgrid",
     "h_alignment": "center",
     "margin": "3,5,3,0",
-    "item_margin": "1,1",
-    "item_size": 36,
+    "item_margin": "1,2",
+    "item_size": 38,
     "rows": [
       [
         "gloves",
@@ -73,27 +77,43 @@
       ],
       [
         "gravekey",
-        "tuninut",
+        "bothtuninuts",
         "crownkey",
         "d6keypast",
         "d6keypresent",
-        "powder",
+        "powderpotion",
         "eyeball"
       ]
     ]
   },
-  "settings_tab": {
+  "trade": {
     "type": "itemgrid",
-    "background": "#303841",
-    "orientation": "vertical",
     "h_alignment": "center",
-    "margin": "0,5,3,0",
-    "item_margin": "5,15",
-    "item_size": 55,
+    "margin": "1,5,3,0",
+    "item_margin": "0,4",
+    "item_size": 35,
     "rows": [
-      [
-        "companions","l_bas","dungeon_er_off"
-      ]
+        ["poeclock"],
+        ["stationary"],
+        ["stinkbag"],
+        ["tastymeat"],
+        ["doggiemask"],
+        ["dumbbell"]
+    ]
+  },
+  "trade2": {
+    "type": "itemgrid",
+    "h_alignment": "center",
+    "margin": "1,5,3,0",
+    "item_margin": "0,4",
+    "item_size": 35,
+    "rows": [
+        ["mustache"],
+        ["funnyjoke"],
+        ["touchingbook"],
+        ["magicoar"],
+        ["seaukulele"],
+        ["brokensword"]
     ]
   },
   "instruments": {
@@ -103,12 +123,33 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "-3,-2,-2,0",
+        "margin": "-3,-4,-2,0",
         "content": [
           {
             "type": "itemgrid",
             "item_margin": "3,0",
-            "item_size": 43,
+            "item_size": 38,
+            "dock": "left",
+            "rows": [
+              [
+                "",
+                "mrer",
+                "questionmark0",
+                "pathkey"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "-3,-4,-2,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "3,0",
+            "item_size": 38,
             "dock": "left",
             "rows": [
               [
@@ -130,7 +171,7 @@
             "type": "itemgrid",
             "dock": "left",
             "item_margin": "-6,-3",
-            "item_size": 19,
+            "item_size": 18,
             "rows": [
               [
                 "d1sk",
@@ -158,12 +199,12 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "-3,-2,-2,0",
+        "margin": "-3,-4,-2,0",
         "content": [
           {
             "type": "itemgrid",
             "item_margin": "3,0",
-            "item_size": 43,
+            "item_size": 38,
             "dock": "left",
             "rows": [
               [
@@ -185,7 +226,7 @@
             "type": "itemgrid",
             "dock": "left",
             "item_margin": "-6,-3",
-            "item_size": 19,
+            "item_size": 18,
             "rows": [
               [
                 "d3sk",
@@ -213,12 +254,12 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "-3,-2,-2,0",
+        "margin": "-3,-4,-2,0",
         "content": [
           {
             "type": "itemgrid",
             "item_margin": "3,0",
-            "item_size": 43,
+            "item_size": 38,
             "dock": "left",
             "rows": [
               [
@@ -241,7 +282,7 @@
             "type": "itemgrid",
             "dock": "left",
             "item_margin": "-6,-3",
-            "item_size": 19,
+            "item_size": 18,
             "rows": [
               [
                 "d5sk",
@@ -270,12 +311,12 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "-3,-2,-2,0",
+        "margin": "-3,-4,-2,0",
         "content": [
           {
             "type": "itemgrid",
             "item_margin": "3,0",
-            "item_size": 43,
+            "item_size": 38,
             "dock": "left",
             "rows": [
               [
@@ -297,7 +338,7 @@
             "type": "itemgrid",
             "dock": "left",
             "item_margin": "-6,-3",
-            "item_size": 19,
+            "item_size": 18,
             "rows": [
               [
                 "d7sk",
@@ -325,6 +366,168 @@
       }
     ]
   },
+  "settings_tab": {
+    "type": "itemgrid",
+    "background": "#303841",
+    "orientation": "vertical",
+    "h_alignment": "center",
+    "margin": "0,2",
+    "item_margin": "10,0",
+    "item_size": 44,
+    "rows": [
+      [
+        "companions"
+      ],
+      [
+        "allessence"
+      ],
+      [
+        "requiredslates"
+      ],
+      [
+        "l_bas"
+      ],
+      [
+        "dungeon_er_off"
+      ],
+      [
+        "advanceshop"
+      ]
+    ]
+  },
+  "entrance_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "background": "#303841",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,0,0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "5,0",
+            "item_size": 52,
+            "dock": "left",
+            "rows": [
+              [
+                "d1er",
+                "d2er",
+                "d3er",
+                "d4er"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,-10,0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "dock": "left",
+            "item_margin": "15,5",
+            "item_size": 32,
+            "rows": [
+              [
+                "question",
+                "question2",
+                "question3",
+                "question4"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,0,0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "5,-20",
+            "item_size": 52,
+            "dock": "left",
+            "rows": [
+              [
+                "d5er",
+                "d6older",
+                "d7er",
+                "d8er"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,-10,0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "dock": "left",
+            "item_margin": "15,25",
+            "item_size": 32,
+            "rows": [
+              [
+                "question5",
+                "question6",
+                "question7",
+                "question8"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,0,0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "5,-40",
+            "item_size": 52,
+            "dock": "left",
+            "rows": [
+              [
+                "",
+                "d6newer",
+                "",
+                ""
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,60,0,-8",
+        "content": [
+          {
+            "type": "itemgrid",
+            "dock": "left",
+            "item_margin": "15,-25",
+            "item_size": 32,
+            "rows": [
+              [
+                "",
+                "question6new",
+                "",
+                ""
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "item_grid": {
     "type": "array",
     "orientation": "vertical",
@@ -340,7 +543,13 @@
       {
         "type": "layout",
         "key": "items3"
-      },
+      }
+    ]
+  },
+  "instrument_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
       {
         "type": "layout",
         "key": "instruments"
@@ -354,6 +563,20 @@
       {
         "type": "layout",
         "key": "settings_tab"
+      }
+    ]
+  },
+  "trade_grid": {
+    "type": "array",
+    "orientation": "horizontal",
+    "content": [
+      {
+        "type": "layout",
+        "key": "trade"
+      },
+      {
+        "type": "layout",
+        "key": "trade2"
       }
     ]
   }

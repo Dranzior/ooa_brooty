@@ -6,7 +6,7 @@ local variant = Tracker.ActiveVariantUID
 -- check variant info
 IS_ITEMS_ONLY = variant:find("itemsonly")
 
-print("-- Example Tracker --")
+print("Archipelago Tracker")
 print("Loaded variant: ", variant)
 if ENABLE_DEBUG_LOG then
     print("Debug logging is enabled!")
@@ -18,6 +18,7 @@ ScriptHost:LoadScript("scripts/utils.lua")
 -- Logic
 ScriptHost:LoadScript("scripts/logic/logic.lua")
 ScriptHost:LoadScript("scripts/logic/dungeons.lua")
+ScriptHost:LoadScript("scripts/logic/dungeons_hard.lua")
 ScriptHost:LoadScript("scripts/logic/labrynna.lua")
 
 -- Custom Items
@@ -34,7 +35,7 @@ if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
     -- Locations
     Tracker:AddLocations("locations/overworld.json")
     Tracker:AddLocations("locations/dungeons.json")
-    Tracker:AddLocations("locations/dungeons_shuffle.json")
+    --Tracker:AddLocations("locations/dungeons_shuffle.json")
 end
 
 -- Layout

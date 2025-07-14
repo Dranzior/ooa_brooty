@@ -1,33 +1,37 @@
 ﻿{
     "tracker_broadcast": {
         "type": "array",
-        "background": "#FF000000",
+        "background": "#212121",
         "orientation": "vertical",
-        "margin": "1,1",
+        "margin": "1,10",
         "content": [
             {
                 "type": "itemgrid",
                 "h_alignment": "center",
-                "margin": "2,0,0,0",
-                "item_margin": "1,1",
-                "item_size": 36,
+                "margin": "3,0,0,0",
+                "item_margin": "-2,1",
+                "item_size": 37,
                 "rows": [
                     [
                         "sword",
+                        "bigsword",
                         "shield1",
                         "lift1",
                         "shooter",
                         "flippers",
                         "cane",
+                        //"rodofseasons",
                         "shovel"
                     ],
                     [
                         "feather",
                         "hook1",
+                        //"magnet",
+                        //"slingshot",
                         "bombs",
                         "satchel",
                         "boomerang",
-                        "harp",
+                        "echoes",
                         "flute"
                     ]
                 ]
@@ -78,11 +82,11 @@
                     ],
                     [
                         "gravekey",
-                        "tuninut",
+                        "bothtuninuts",
                         "crownkey",
                         "d6keypast",
                         "d6keypresent",
-                        "powder",
+                        "powderpotion",
                         "eyeball"
                     ]
                 ]
@@ -107,7 +111,30 @@
                 "type": "itemgrid",
                 "h_alignment": "center",
                 "v_alignment": "center",
-                "margin": "40,0,0,0",
+                "margin": "25,2,0,0",
+                "item_margin": "-1,0",
+                "item_size": 20,
+                "rows": [
+                    [
+                        "d1sk",
+                        "d1bk",
+                        "",
+                        "d2sk",
+                        "d2bk",
+                        "",
+                        "d3sk",
+                        "d3bk",
+                        "",
+                        "d4sk",
+                        "d4bk"
+                    ]
+                ]
+            },
+            {
+                "type": "itemgrid",
+                "h_alignment": "center",
+                "v_alignment": "center",
+                "margin": "40,2,0,0",
                 "item_margin": "5,0",
                 "item_size": 45,
                 "rows": [
@@ -116,6 +143,31 @@
                         "d6",
                         "d7",
                         "d8"
+                    ]
+                ]
+            },
+            {
+                "type": "itemgrid",
+                "h_alignment": "center",
+                "v_alignment": "center",
+                "margin": "50,2,0,0",
+                "item_margin": "-2,0",
+                "item_size": 20,
+                "rows": [
+                    [
+                        "d5sk",
+                        "d5bk",
+                        "",
+                        "d6_1sk",
+                        "d6_2sk",
+                        "d6bk",
+                        "",
+                        "d7sk",
+                        "d7bk",
+                        "",
+                        "d8sk",
+                        "d8slate",
+                        "d8bk"
                     ]
                 ]
             }
