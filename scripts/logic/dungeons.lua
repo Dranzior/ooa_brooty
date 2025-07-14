@@ -387,11 +387,11 @@ function d6present_cube_chest()
 end
 
 function d6present_spinner_chest()
-    return d6past_spinner() and d6present_hand_room() and (feather() or hook1()) and ((has("mermaidkey") and has("dungeon_er_off")) or (foundd6past()) and has("dungeon_er_on"))
+    return d6past_spinner() and d6present_hand_room() and (feather() or hook1()) and d6present_d6past_access()
 end
 
 function d6present_beamos_chest()
-    return d6_openwall() and ((has("mermaidkey") and has("dungeon_er_off")) or (foundd6past()) and has("dungeon_er_on")) and feather() and (flippers() or (hook1() and (has("d6_2sk",2) or has("d6_2mk"))))
+    return d6_openwall() and d6present_d6past_access() and feather() and (flippers() or (hook1() and (has("d6_2sk",2) or has("d6_2mk"))))
 end
 
 function d6present_rng_chest()
@@ -400,11 +400,15 @@ function d6present_rng_chest()
 end
 
 function d6present_channel_chest()
-    return d6_openwall() and hook1() and (has("d6_2sk",3) or has("d6_2mk")) and ((has("mermaidkey") and has("dungeon_er_off")) or (foundd6past()) and has("dungeon_er_on"))
+    return d6_openwall() and hook1() and (has("d6_2sk",3) or has("d6_2mk")) and d6present_d6past_access()
 end
 
 function d6present_vire_chest()
     return d6present_spinner_chest() and (has("d6_2sk",3) or has("d6_2mk")) and (sword() or foolsore() or expert()) and hook1()
+end
+
+function d6present_d6past_access()
+	return (has("d6keypast") and has("dungeon_er_off") and has("flippers")) or (foundd6past() and has("dungeon_er_on"))
 end
 
 -- d7
