@@ -206,7 +206,7 @@ function wallpatch_h()
 end
 
 function d4_entrance()
-    return symmetrypresent() and has("repairednut")
+    return symmetrypresent() and has("repairednut") and symmetrypast()
 end
 
 --function d4_entrance_h()
