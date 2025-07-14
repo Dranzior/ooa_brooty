@@ -165,7 +165,7 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "11,-7,-2,0",
+        "margin": "5,-7,-2,0",
         "content": [
           {
             "type": "itemgrid",
@@ -174,21 +174,24 @@
             "item_size": 18,
             "rows": [
               [
-                "d1sk",
+				"d1sk",
+				"",
+                "d1mk",
                 "",
                 "d1bk",
                 "",
                 "",
                 "",
-                "",
-                "",
-                "",
+				"",
+				"",
                 "",
                 "",
                 "",
                 "",
                 "",
                 "d2sk",
+                "",
+                "d2mk",
                 "",
                 "d2bk"
               ]
@@ -220,7 +223,7 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "11,-7,-2,0",
+        "margin": "5,-7,-2,0",
         "content": [
           {
             "type": "itemgrid",
@@ -231,6 +234,8 @@
               [
                 "d3sk",
                 "",
+				"d3mk",
+				"",
                 "d3bk",
                 "",
                 "",
@@ -242,8 +247,9 @@
                 "",
                 "",
                 "",
-                "",
                 "d4sk",
+				"",
+				"d4mk",
                 "",
                 "d4bk"
               ]
@@ -276,7 +282,7 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "11,-7,-2,0",
+        "margin": "5,-7,-2,0",
         "content": [
           {
             "type": "itemgrid",
@@ -286,6 +292,8 @@
             "rows": [
               [
                 "d5sk",
+				"",
+				"d5mk",
                 "",
                 "d5bk",
                 "",
@@ -299,8 +307,12 @@
                 "",
                 "",
                 "d6_1sk",
+				"",
+				"d6_1mk",
                 "",
                 "d6_2sk",
+				"",
+				"d6_2mk",
                 "",
                 "d6bk"
               ]
@@ -332,7 +344,7 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "11,-7,-2,0",
+        "margin": "5,-7,-2,0",
         "content": [
           {
             "type": "itemgrid",
@@ -342,6 +354,8 @@
             "rows": [
               [
                 "d7sk",
+				"",
+				"d7mk",
                 "",
                 "d7bk",
                 "",
@@ -355,6 +369,8 @@
                 "",
                 "",
                 "d8sk",
+				"",
+				"d8mk",
                 "",
                 "d8slate",
                 "",
