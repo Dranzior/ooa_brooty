@@ -98,7 +98,7 @@
             {
                 "name": "Spirit's Grave (D1)",
                 "access_rules": [
-                    "gravekey,dungeon_er_off","dungeon_er_on"
+                    "$d1_entrance,dungeon_er_off","dungeon_er_on"
                 ],
                 "children": [
                     {
