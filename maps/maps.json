@@ -12,6 +12,42 @@
     "img": "images/maps/animal_regions.png"
   },  
   {
+    "name": "animal_ricky",
+    "location_size": 20,
+    "location_border_thickness": 4,
+    "img": "images/maps/animal_ricky.png"
+  },
+  {
+    "name": "animal_ricky_past",
+    "location_size": 20,
+    "location_border_thickness": 4,
+    "img": "images/maps/animal_ricky_past.png"
+  },
+  {
+    "name": "animal_dimitri",
+    "location_size": 20,
+    "location_border_thickness": 4,
+    "img": "images/maps/animal_dimitri.png"
+  },
+  {
+    "name": "animal_dimitri_past",
+    "location_size": 20,
+    "location_border_thickness": 4,
+    "img": "images/maps/animal_dimitri_past.png"
+  },
+  {
+    "name": "animal_moosh",
+    "location_size": 20,
+    "location_border_thickness": 4,
+    "img": "images/maps/animal_moosh.png"
+  },
+  {
+    "name": "animal_moosh_past",
+    "location_size": 20,
+    "location_border_thickness": 4,
+    "img": "images/maps/animal_moosh_past.png"
+  },
+  {
     "name": "d1",
     "location_size": 32,
     "location_border_thickness": 6,

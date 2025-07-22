@@ -1672,6 +1672,11 @@
                                 "map": "animal_regions",
                                 "x": 1176,
                                 "y": 103
+                            },
+							{
+                                "map": "animal_moosh",
+                                "x": 216,
+                                "y": 103
                             }
                         ]
                     },
@@ -1696,6 +1701,11 @@
                                 "map": "animal_regions",
                                 "x": 1400,
                                 "y": 102
+                            },
+							{
+                                "map": "animal_moosh",
+                                "x": 440,
+                                "y": 102
                             }
                         ]
                     },
@@ -1719,6 +1729,11 @@
                             {
                                 "map": "animal_regions",
                                 "x": 1350,
+                                "y": 230
+                            },
+							{
+                                "map": "animal_moosh",
+                                "x": 390,
                                 "y": 230
                             }
                         ]
@@ -1745,6 +1760,11 @@
                                 "map": "animal_regions",
                                 "x": 231,
                                 "y": 6
+                            },
+							{
+                                "map": "animal_ricky",
+                                "x": 231,
+                                "y": 6
                             }
                         ]
                     },
@@ -1769,6 +1789,11 @@
                                 "map": "animal_regions",
                                 "x": 232,
                                 "y": 167
+                            },
+							{
+                                "map": "animal_ricky",
+                                "x": 232,
+                                "y": 167
                             }
                         ]
                     },
@@ -1791,8 +1816,13 @@
                         "map_locations": [
                             {
                                 "map": "animal_regions",
-                                "x": 393,
-                                "y": 231
+                                "x": 400,
+                                "y": 164
+                            },
+							{
+                                "map": "animal_ricky",
+                                "x": 400,
+                                "y": 164
                             }
                         ]
                     },
@@ -1818,6 +1848,11 @@
                                 "map": "animal_regions",
                                 "x": 872,
                                 "y": 70
+                            },
+							{
+                                "map": "animal_dimitri",
+                                "x": 392,
+                                "y": 70
                             }
                         ]
                     },
@@ -1842,6 +1877,11 @@
                                 "map": "animal_regions",
                                 "x": 919,
                                 "y": 344
+                            },
+							{
+                                "map": "animal_dimitri",
+                                "x": 439,
+                                "y": 344
                             }
                         ]
                     },
@@ -1865,6 +1905,11 @@
                             {
                                 "map": "animal_regions",
                                 "x": 712,
+                                "y": 166
+                            },
+							{
+                                "map": "animal_dimitri",
+                                "x": 232,
                                 "y": 166
                             }
                         ]
@@ -1900,6 +1945,21 @@
                             {
                                 "map": "animal_regions",
                                 "x": 1335,
+                                "y": 310
+                            },
+							{
+								"map": "animal_ricky",
+								"x": 407,
+								"y": 214
+							},
+                            {
+                                "map": "animal_dimitri",
+                                "x": 351,
+                                "y": 278
+                            },
+                            {
+                                "map": "animal_moosh",
+                                "x": 375,
                                 "y": 310
                             }
                         ]
