@@ -1,5 +1,6 @@
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/automation/Hint.lua")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
@@ -19,19 +20,12 @@ function onSetReply(key, value, _)
             Tracker:UiHint("ActivateTab", CURRENT_ROOM)
         end
     end
-    for long_name, short_name in pairs(data_storage_table) do
-        if key == slot_player .. ":" .. long_name then
-            Tracker:FindObjectForCode(short_name, ITEMS).Active = value
-        end
-    end
+	
+	Hint.Process(key, value)
 end
 
 function retrieved(key, value)
-    for long_name, short_name in pairs(data_storage_table) do
-        if key == "Slot:" .. Archipelago.PlayerNumber .. ":" .. long_name then
-            Tracker:FindObjectForCode(short_name, ITEMS).Active = value
-        end
-    end
+	Hint.Process(key, value)
 end
 
 function onClear(slot_data)
@@ -88,6 +82,9 @@ function onClear(slot_data)
             obj.Active = false
         end
     end
+	
+	Hint.Setup()
+	
     -- companions
     if slot_data["animal_companion"] then
         if slot_data["animal_companion"] == "Ricky" then
