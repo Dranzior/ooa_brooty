@@ -629,8 +629,8 @@
                             {
                                 "name": "",
                                 "access_rules": [
-                                    "d3sk:3, [$k_normal]",
-                                    "d3sk:2, [d3sk:3], [$k_normal]",
+                                    "$d3sk|3, [$k_normal]",
+                                    "$d3sk|2, [$d3sk|3], [$k_normal]",
                                     "$d3_bush_beetle_room"
                                 ],
                                 "item_count": 1
@@ -650,8 +650,8 @@
                             {
                                 "name": "",
                                 "access_rules": [
-                                    "d3sk:4, [$k_normal]",
-                                    "d3sk:3, [d3sk:4], [$k_normal]",
+                                    "$d3sk|4, [$k_normal]",
+                                    "$d3sk|3, [$d3sk|4], [$k_normal]",
                                     "$d3_mimic_room"
                                 ],
                                 "item_count": 1
@@ -812,7 +812,7 @@
                             {
                                 "name": "Respawnable bushes",
                                 "access_rules": [
-                                    "d3sk:1, $use_seeds, [scentseeds]"
+                                    "$d3sk|1, $use_seeds, [scentseeds]"
                                 ],
                                 "hosted_item": "scentseeds"
                             }
@@ -1878,7 +1878,7 @@
                             {
                                 "name": "",
                                 "access_rules": [
-                                    "$floodd7,d7sk:7"
+                                    "$floodd7,$d7sk|7"
                                 ],
                                 "item_count": 1
                             }
@@ -2219,8 +2219,8 @@
                             {
                                 "name": "",
                                 "access_rules": [
-                                    "$d8_bluepeg,d8sk:5",
-                                    "[l_hard],$d8_bluepeg_h,d8sk:5"
+                                    "$d8_bluepeg,$d8sk|5",
+                                    "[l_hard],$d8_bluepeg_h,$d8sk|5"
                                 ],
                                 "item_count": 1
                             }
@@ -2239,8 +2239,8 @@
                             {
                                 "name": "",
                                 "access_rules": [
-                                    "$d8_maze,d8sk:5,lift1",
-                                    "[l_hard],$d8_maze_h,d8sk:5,lift1"
+                                    "$d8_maze,$d8sk|5,lift1",
+                                    "[l_hard],$d8_maze_h,$d8sk|5,lift1"
                                 ],
                                 "item_count": 1
                             }

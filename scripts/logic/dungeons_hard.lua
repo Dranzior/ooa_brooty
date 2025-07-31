@@ -4,7 +4,7 @@ function d1_boss_h()
 end
 
 function d1_u_room_h()
-    return pot() or (d1_wide_room() and bush() and k_giantghini_h() and has("d1sk",3))
+    return pot() or (d1_wide_room() and bush() and k_giantghini_h() and d1sk(3))
 end
 
 function d1_basement_h()
@@ -21,7 +21,7 @@ function d2_moblin_drop_h()
 end
 
 function d2_enter_swoop_h()
-    return (k_spikedbeetle_h() and feather()) or has("d2sk",2)
+    return (k_spikedbeetle_h() and feather()) or d2sk(2)
 end
 
 function d2_basement_h()
@@ -41,7 +41,7 @@ function d2_basement_chest_h()
 end
 
 function d2_moblin_platform_h()
-    return d2_basement_h() and feather() and has("d2sk",3)
+    return d2_basement_h() and feather() and d2sk(3)
 end
 
 function d2_statue_puzzle_h()
@@ -49,7 +49,7 @@ function d2_statue_puzzle_h()
 end
 
 function d2_color_room_h()
-    return d2_statue_puzzle_h() and has("d2sk",5)
+    return d2_statue_puzzle_h() and d2sk(5)
 end
 
 function d2_boss_h()
@@ -62,11 +62,11 @@ end
 
 -- d3
 function d3_N_crystal_h()
-    return has("d3sk", 1) and (any_shooter() or any_hyper_slingshot() or boomerang() or hook1())
+    return d3sk(1) and (any_shooter() or any_hyper_slingshot() or boomerang() or hook1())
 end
 
 function d3_armos_drop_h()
-    return has("d3sk", 1) and (bombs() or bigsword() or cane() or magicboom() or (scent() and shoot_seeds()) or scent_satchel())
+    return d3sk(1) and (bombs() or bigsword() or cane() or magicboom() or (scent() and shoot_seeds()) or scent_satchel())
 end
 
 function d3_six_blocK_drop_h()
@@ -96,27 +96,27 @@ function d3_traverse2_h()
     return d3_traverse2() or
                (feather() and
                    (sword() or rodofseasons() or foolsore() or (bomb_jump2() and (ember() or scent() or mystery()))) and
-                   (jump3() or hook1() or slingshot() or (lift1() and has("d3sk", 3))))
+                   (jump3() or hook1() or slingshot() or (lift1() and d3sk(3))))
 end
 
 function d3_bridge_chest_h()
-    return has("d3sk", 1) and (d3_traverse1_h() or (d3_post_subterror() and has("d3sk", 4)) and (jump3() or feather()))
+    return d3sk(1) and (d3_traverse1_h() or (d3_post_subterror() and d3sk(4)) and (jump3() or feather()))
 end
 
 function d3_B1F_east_h()
     return d3_B1F_spinner_h() and k_subterror() and
-               (d3_W_crystal() or (has("d3sk", 3) and d3_traverse1() and (d3_traverse2() or jump3() or feather()))) and
+               (d3_W_crystal() or (d3sk(3) and d3_traverse1() and (d3_traverse2() or jump3() or feather()))) and
                (magicboom() or any_shooter() or sword())
 end
 
 function d3_post_subterror_h()
-    return d3_boss_door_h() or (d3_B1F_spinner_h() and k_subterror()) or (d3_traverse1_h() and has("d3sk", 3) and (jump3() or feather()))
+    return d3_boss_door_h() or (d3_B1F_spinner_h() and k_subterror()) or (d3_traverse1_h() and d3sk(3) and (jump3() or feather()))
 end
 
 function d3_boss_door_h()
     return ((((d3_B1F_spinner_h() and k_subterror()) or
-               (d3_traverse1_h() and has("d3sk", 3) and (jump3() or feather()))) and (jump3() or feather()) and
-               d3_traverse2_h())) or (has("d3sk", 3) and d3_traverse1_h() and d3_traverse2_h())
+               (d3_traverse1_h() and d3sk(3) and (jump3() or feather()))) and (jump3() or feather()) and
+               d3_traverse2_h())) or (d3sk(3) and d3_traverse1_h() and d3_traverse2_h())
 end
 
 function d3_moldorm_drop_h()
@@ -149,7 +149,7 @@ function d4_boss_h()
 end
 
 function d4_lava_pot_chest_h()
-    return d4_large_floor_puzzle_h() and lift1() and hook1() and has("d4sk",5)
+    return d4_large_floor_puzzle_h() and lift1() and hook1() and d4sk(5)
 end
 
 -- d5
@@ -184,20 +184,20 @@ function d5_boss_h()
 end
 
 function d5_crossroads_h()
-    return k_normal() and feather() and lift1() and has("d5sk", 2) and
+    return k_normal() and feather() and lift1() and d5sk(2) and
                (cane() or (pegasus_satchel() and cape()) or jump3() or (sword() and hook1()))
 end
 
 function d5_3statue_h()
-    return d5_switchA_h() and cane() and has("d5sk",5)
+    return d5_switchA_h() and cane() and d5sk(5)
 end
 
 function d5_6statue_h()
-    return d5_switchA_h() and ember_shooter() and feather() and has("d5sk",5)
+    return d5_switchA_h() and ember_shooter() and feather() and d5sk(5)
 end
 
 function d5_redpeg_h()
-    return d5_crossroads_h() and switch_far() and has("d5sk", 5)
+    return d5_crossroads_h() and switch_far() and d5sk(5)
 end
 
 function d5_owl_puzzle_h()
@@ -260,20 +260,20 @@ function d6present_spinner_chest_h()
 end
 
 function d6present_beamos_chest_h()
-    return d6_openwall_h() and feather() and (flippers() or (hook1() and has("d6_2sk",2))) and d6present_d6past_access()
+    return d6_openwall_h() and feather() and (flippers() or (hook1() and d6_2sk(2))) and d6present_d6past_access()
 end
 
 function d6present_rng_chest_h()
     return d6present_beamos_chest_h() and lift1() and (sword() or foolsore() or cane() or hook1() or punch_enemy()) and
-               has("d6_2sk", 3)
+               d6_2sk(3)
 end
 
 function d6present_channel_chest_h()
-    return d6_openwall_h() and hook1() and has("d6_2sk",3) and d6present_d6past_access()
+    return d6_openwall_h() and hook1() and d6_2sk(3) and d6present_d6past_access()
 end
 
 function d6present_vire_chest_h()
-    return d6present_spinner_chest_h() and has("d6_2sk",3) and hook1()
+    return d6present_spinner_chest_h() and d6_2sk(3) and hook1()
 end
 
 -- d7
@@ -283,15 +283,15 @@ end
 
 -- d8
 function d8_ghini_h()
-    return d8_first() and has("d8sk", 1) and hook1() and cane() and (shooter() or slingshot2()) and (ember() or mystery())
+    return d8_first() and d8sk(1) and hook1() and cane() and (shooter() or slingshot2()) and (ember() or mystery())
 end
 
 function d8_bluepeg_h()
-    return d8_ghini_h() and has("d8sk", 2)
+    return d8_ghini_h() and d8sk(2)
 end
 
 function d8_maze_h()
-    return d8_bluepeg_h() and feather() and (sword() or foolsore()) and has("d8sk",4)
+    return d8_bluepeg_h() and feather() and (sword() or foolsore()) and d8sk(4)
 end
 
 function d8_neslate_h()
