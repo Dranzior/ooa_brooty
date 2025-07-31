@@ -147,10 +147,6 @@ function rupeefarm()
   return sword() or shovel()
 end
 
---function essences()
-  --return (has("d1") and has("d2") and has("d3") and has("d4") and has("d5") and has("d6") and has("d7") and has("d8"))
---end
-
 function ricky_flute()
   return (flute() and has("nuun_ricky"))
 end

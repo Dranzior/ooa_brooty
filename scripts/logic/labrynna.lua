@@ -1,14 +1,3 @@
----[[
-function has(item, amount)
-    local count = Tracker:ProviderCountForCode(item)
-    amount = tonumber(amount)
-    if not amount then
-        return count > 0
-    else
-        return count >= amount
-    end
-end
-
 -- lynna / south shore / palace
 function lynna_city()
     return bush() or flute() or echoes() or (shore_present() and mermaid())
