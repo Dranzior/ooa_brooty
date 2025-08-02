@@ -1017,7 +1017,7 @@
                         "name": "Fairie's Woods Chest",
                         "access_rules": [
                             "$woods_chest",
-                            "[trick],$lynna_city,hook1"
+                            "[l_hard],$lynna_city,hook1"
                         ],
                         "sections": [
                             {
