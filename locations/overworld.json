@@ -101,7 +101,7 @@
                                 "chest_unopened_img": "images/bosses/veran.png",
                                 "chest_opened_img": "images/bosses/veran_gray.png",
                                 "access_rules": [
-                                    "makuseed"
+                                    "makuseed, $fight_veran"
                                 ]
                             }
                         ],

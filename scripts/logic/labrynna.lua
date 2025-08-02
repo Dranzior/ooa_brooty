@@ -37,8 +37,8 @@ function rescue_nayru_h()
     return palace_chest_h() and mystery() and hook1() and (sword() or punch_enemy() or foolsore())
 end
 
-function maku_seed()
-    return has("d1") and has("d2") and has("d3") and has("d4") and has("d5") and has("d6") and has("d7") and has("d8")
+function fight_veran()
+    return use_mystery() and hook1() and bombs() and (has_sword() or punch_enemy())
 end
 
 function balloon_guy()
