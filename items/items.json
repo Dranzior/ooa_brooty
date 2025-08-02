@@ -6,15 +6,15 @@
     "stages": [
       {
         "img": "images/items/sword1.png",
-        "codes": "sword, sword1, swordupgrade, gallery"
+        "codes": "sword, sword1, swordupgrade"
       },
       {
         "img": "images/items/sword2.png",
-        "codes": "swordupgrade, sword2, royalsword, gallery"
+        "codes": "swordupgrade, sword2, royalsword"
       },
       {
         "img": "images/items/Master Sword.png",
-        "codes": "swordupgrade, sword3, mastersword, gallery"
+        "codes": "swordupgrade, sword3, mastersword"
       }
     ]
   },

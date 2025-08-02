@@ -503,7 +503,7 @@ function d8_tileroom()
 end
 
 function d8_boss()
-    return has("d8bk") and d8_tileroom() and requiredslates() and has("gallery")
+    return has("d8bk") and d8_tileroom() and requiredslates() and has_sword()
 end
 
 function d8sk(amount)

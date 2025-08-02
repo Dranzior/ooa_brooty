@@ -2848,10 +2848,10 @@
                         "name": "Goron Shooting Gallery",
                         "access_rules": [
                             //from Lynna, swimming
-                            "$lynna_village, feather, mermaid, currents, hook1, gallery, bracelet",
-                            "$lynna_village, ages, mermaid, hook1, gallery",
+                            "$lynna_village, feather, mermaid, currents, hook1, $has_sword, bracelet",
+                            "$lynna_village, ages, mermaid, hook1, $has_sword",
                             //from Moblin cave
-                            "$west_ridge_present, $jump3, bracelet, currents, hook1, gallery"
+                            "$west_ridge_present, $jump3, bracelet, currents, hook1, $has_sword"
                         ],
                         "sections": [
                             {
