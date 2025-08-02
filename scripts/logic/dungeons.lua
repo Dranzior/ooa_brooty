@@ -25,7 +25,7 @@ function d1_wide_room()
 end
 
 function d1_boss()
-    return d1_wide_room() and bush() and has("d1bk") and k_pumpkinhead()
+    return d1_wide_room() and bush() and d1bk() and k_pumpkinhead()
 end
 
 function d1_u_room()
@@ -38,6 +38,10 @@ end
 
 function d1sk(amount)
 	return (has("d1sk", amount) or has("d1mk"))
+end
+
+function d1bk()
+	return has("d1bk") or (has("master_key_boss") and has("d1mk"))
 end
 
 -- d2
@@ -90,11 +94,15 @@ function d2_color_room()
 end
 
 function d2_boss()
-    return d2_color_room() and has("d2bk") and bombs()
+    return d2_color_room() and d2bk() and bombs()
 end
 
 function d2sk(amount)
 	return (has("d2sk", amount) or has("d2mk"))
+end
+
+function d2bk()
+	return has("d2bk") or (has("master_key_boss") and has("d2mk"))
 end
 
 -- d3
@@ -198,7 +206,7 @@ function d3_moldorm_drop()
 end
 
 function d3_boss()
-    return d3_boss_door() and has("d3bk") and (ember_shooter() or scent_shooter() or ember_satchel())
+    return d3_boss_door() and d3bk() and (ember_shooter() or scent_shooter() or ember_satchel())
 end
 
 function d3_bush_beetle_room()
@@ -211,6 +219,10 @@ end
 
 function d3sk(amount)
 	return (has("d3sk", amount) or has("d3mk"))
+end
+
+function d3bk()
+	return has("d3bk") or (has("master_key_boss") and has("d3mk"))
 end
 
 -- d4
@@ -271,7 +283,7 @@ function d4_large_floor_puzzle()
 end
 
 function d4_boss()
-    return d4_large_floor_puzzle() and has("d4bk") and hook1() and (sword() or foolsore() or boomerang() or punch_enemy())
+    return d4_large_floor_puzzle() and d4bk() and hook1() and (sword() or foolsore() or boomerang() or punch_enemy())
 end
 
 function d4_lava_pot_chest()
@@ -280,6 +292,10 @@ end
 
 function d4sk(amount)
 	return (has("d4sk", amount) or has("d4mk"))
+end
+
+function d4bk()
+	return has("d4bk") or (has("master_key_boss") and has("d4mk"))
 end
 
 -- d5
@@ -304,7 +320,7 @@ function d5_2statue()
 end
 
 function d5_boss()
-    return d5_switchA() and has("d5bk") and cane() and (sword() or foolsore())
+    return d5_switchA() and d5bk() and cane() and (sword() or foolsore())
 end
 
 function d5_crossroads()
@@ -329,6 +345,10 @@ end
 
 function d5sk(amount)
 	return (has("d5sk", amount) or has("d5mk"))
+end
+
+function d5bk()
+	return has("d5bk") or (has("master_key_boss") and has("d5mk"))
 end
 
 -- d6 past
@@ -361,12 +381,16 @@ function d6past_spinner()
 end
 
 function d6past_boss()
-    return d6past_spinner() and has("d6bk") and mermaid() and k_octogon() and d6_1sk(2) and
+    return d6past_spinner() and d6bk() and mermaid() and k_octogon() and d6_1sk(2) and
             (cape() or (d6_1sk(3) and (any_shooter() or magicboom())))
 end
 
 function d6_1sk(amount)
 	return (has("d6_1sk", amount) or has("d6_1mk"))
+end
+
+function d6bk()
+	return has("d6bk") or (has("master_key_boss") and has("d6_1mk"))
 end
 
 -- d6 present
@@ -458,7 +482,7 @@ function floodd7()
 end
 
 function d7_boss()
-    return has("d7bk") and floodd7()
+    return d7bk() and floodd7()
 end
 
 function d7_hallway()
@@ -475,6 +499,10 @@ end
 
 function d7sk(amount)
 	return (has("d7sk", amount) or has("d7mk"))
+end
+
+function d7bk()
+	return has("d7bk") or (has("master_key_boss") and has("d7mk"))
 end
 
 -- d8
@@ -503,11 +531,15 @@ function d8_tileroom()
 end
 
 function d8_boss()
-    return has("d8bk") and d8_tileroom() and requiredslates() and has_sword()
+    return d8bk() and d8_tileroom() and requiredslates() and has_sword()
 end
 
 function d8sk(amount)
 	return (has("d8sk", amount) or has("d8mk"))
+end
+
+function d8bk()
+	return has("d8bk") or (has("master_key_boss") and has("d8mk"))
 end
 
 -- functions to combine all dungeons for er rando

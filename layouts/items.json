@@ -392,22 +392,28 @@
     "item_size": 44,
     "rows": [
       [
-        "companions"
+        "companions",
+        "master_key"
       ],
       [
-        "allessence"
+        "allessence",
+        ""
       ],
       [
-        "requiredslates"
+        "requiredslates",
+        ""
       ],
       [
-        "l_bas"
+        "l_bas",
+        ""
       ],
       [
-        "dungeon_er_off"
+        "dungeon_er_off",
+        ""
       ],
       [
-        "advanceshop"
+        "advanceshop",
+        ""
       ]
     ]
   },

@@ -760,6 +760,24 @@
       }
     ]
   },
+  {
+    "name": "Master Key Settings",
+    "type": "progressive",
+    "allow_disabled": true,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "master_key_small,master_key",
+        "inherit_codes": false,
+        "img": "images/items/master_key.png"
+      },
+      {
+        "codes": "master_key_small,master_key_boss,master_key",
+        "inherit_codes": false,
+        "img": "images/items/master_key_boss.png"
+      }
+    ]
+  },
   // Tree Warp
   {
     "name": "Tree Warp?",
