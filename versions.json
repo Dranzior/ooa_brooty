@@ -1,6 +1,24 @@
 {
     "versions": [
         {
+            "package_version": "0.8.4",
+            "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.8.4/ooa.zip",
+            "sha256": "7dcb1948d66233bfb43139d449c7315a8c0374510aa4fce1af465e301e5a08f4",
+            "changelog": [
+                "NEW: New map for each animal companion, with a helper map for \"past -> present\" warp spot",
+                "NEW: Added AP hint highlight (code taken from OOS tracker)",
+                "NEW: Added a white outline on the cheesy mustache so its visible on the tracker background",
+                "NEW: Changed the '2' for the long switch hook sprite to be white to be visible on the tracker background",
+                "NEW: added setting to turn on \"master key\" to also count as boss key (not yet auto tracker, setting must be activated manually)",
+                "NEW: Fixes:",
+                "FIX: Fixed D1 check would be flagged green if you had gravekey but no access to graveyard",
+                "FIX: More fixes related to small key and master key",
+                "FIX: Fixed goron shooting and D8 boss requiring a sword but not counting big goron",
+                "FIX: Fixed a hard check in fairy wood looking for \"trick\" logic instead of \"l_hard\"",
+                "FIX: Fixed Veran to only turn green if you can actually beat her (use to be only checking for maku seed)"
+            ]
+        },
+		{
             "package_version": "0.8.3",
             "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.8.3/ooa.zip",
             "sha256": "8fc4bdbebd9a00c6f5ab6326e4947afcb276db0f76c548ac7f73d4cbce192967",
