@@ -332,8 +332,7 @@
             {
                 "name": "Wing Dungeon (D2)",
                 "access_rules": [
-                    "dungeon_er_off, $deku_forest,bombs",
-                    "dungeon_er_off, $deku_forest,currents",
+                    "dungeon_er_off, $d2_entrance",
                     "dungeon_er_on, $er_accessD2"
                 ],
                 "children": [
@@ -1144,12 +1143,7 @@
             {
                 "name": "Crown Dungeon (D5)",
                 "access_rules": [
-                    // Vanilla way, by beating Moblin Keep
-                    "dungeon_er_off, $west_ridge_present, $pegasus_satchel, bracelet, feather, crownkey",
-                    // From East Ridge
-                    "dungeon_er_off, $lynna_village, feather, mermaid, hook1, bracelet, currents, crownkey",
-                    "dungeon_er_off, $lynna_village, ages, mermaid, hook1, crownkey",
-                    "dungeon_er_off, $lynna_village, ages, mermaid, $jump3, crownkey",
+                    "dungeon_er_off, $d5_entrance",
                     "dungeon_er_on, $er_accessD5"
                 ],
                 "children": [
@@ -1398,11 +1392,7 @@
             {
                 "name": "Mermaid's Cave [Past] (D6)",
                 "access_rules": [
-                    //from Lynna, swimming
-                    "dungeon_er_off, d6keypast, $lynna_village, feather, mermaid",
-                    "dungeon_er_off, d6keypast, $lynna_village, ages, mermaid",
-                    //from the upper cave, requires emblem?
-                    "dungeon_er_off, d6keypast, $west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, flippers",
+                    "dungeon_er_off, $d6past_entrance",
                     "dungeon_er_on, $er_accessD6past"
                 ],
                 "children": [
@@ -1586,11 +1576,7 @@
             {
                 "name": "Mermaid's Cave [Present] (D6)",
                 "access_rules": [
-                    //from Lynna, swimming
-                    "dungeon_er_off,d6keypresent, $lynna_village, feather, mermaid, currents",
-                    "dungeon_er_off,d6keypresent, $lynna_village, ages, mermaid",
-                    //from the upper cave
-                    "dungeon_er_off,d6keypresent, $west_ridge_present, $pegasus_satchel, bracelet, feather",
+                    "dungeon_er_off,$d6present_entrance",
                     "dungeon_er_on, $er_accessD6present"
                 ],
                 "children": [
@@ -1758,7 +1744,7 @@
             {
                 "name": "Jabu-Jabu's Belly (D7)",
                 "access_rules": [
-                    "dungeon_er_off, enterjabu",
+                    "dungeon_er_off, $d7_entrance",
                     "dungeon_er_on, $er_accessD7"
                 ],
                 "children": [
@@ -2073,7 +2059,8 @@
                 "access_rules": [
                     "dungeon_er_off, $d8_entrance",
                     "dungeon_er_off, [l_hard], $d8_entrance_h",
-                    "dungeon_er_on, $er_accessD8"
+                    "dungeon_er_on, $er_accessD8",
+                    "dungeon_er_on, [l_hard], $er_accessD8_h"
                 ],
                 "children": [
                     {

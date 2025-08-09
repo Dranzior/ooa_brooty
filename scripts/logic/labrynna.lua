@@ -13,6 +13,10 @@ function shore_present()
                    (currents() and (feather() or flippers() or raft() or magicboom())))
 end
 
+function d0_entrance()
+    return lynna_village() and shovel()
+end
+
 function shore_present_h()
     return shore_present() or (currents() and (shooter() or slingshot2()))
 end
@@ -198,10 +202,6 @@ function d4_entrance()
     return symmetrypresent() and has("repairednut") and symmetrypast()
 end
 
---function d4_entrance_h()
-    --return symmetrypresent() and has("repairednut") and wallpatch_h()
---end
-
 -- rolling ridge // fucking messy
 function west_ridge_present()
     return (feather() or ages()) and (((cape() or hook1()) and currents()) or -- From start
@@ -211,6 +211,33 @@ end
 function west_ridge_past()
     return (has("bombflower") and (hook1() or cape()) and -- From start
     (feather() or ages() or (west_ridge_present() and ages()) or (lift1() and echoes()))) -- From present ridge
+end
+
+function d5_entrance()
+    return
+        -- Vanilla way, by beating Moblin Keep
+        (west_ridge_present() and pegasus_satchel() and has("bracelet") and has("feather") and has("crownkey")) or
+        -- From East Ridge
+        (lynna_village() and has("feather") and has("mermaid") and has("hook1") and has("bracelet") and has("currents") and has("crownkey")) or
+        (lynna_village() and has("ages") and has("mermaid") and has("hook1") and has("crownkey")) or
+        (lynna_village() and has("ages") and has("mermaid") and jump3() and has("crownkey"))
+end
+
+function d6past_entrance()
+    return
+        --from Lynna, swimming
+        (has("d6keypast") and lynna_village() and (has("feather") or has("ages")) and has("mermaid")) or
+        --from the upper cave, requires emblem?
+        (has("d6keypast") and west_ridge_present() and pegasus_satchel() and has("bracelet") and has("feather") and has("echoes") and has("flippers"))
+end
+
+function d6present_entrance()
+    return
+        --from Lynna, swimming
+        (has("d6keypresent") and lynna_village() and has("feather") and has("mermaid") and has("currents")) or
+        (has("d6keypresent") and lynna_village() and has("ages") and has("mermaid"))
+        --from the upper cave
+        (has("d6keypresent") and west_ridge_present() and pegasus_satchel() and has("bracelet") and has("feather"))
 end
 
 -- zora village/zora seas
@@ -231,7 +258,8 @@ function cleanseas()
 end
 
 function d7_entrance()
-    return kingzora() and cleanseas()
+    --return kingzora() and cleanseas()
+    return has("enterjabu")
 end
 
 function kingzora()

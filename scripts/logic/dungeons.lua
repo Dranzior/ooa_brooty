@@ -5,7 +5,7 @@ end
 
 function maku_frontEntrance()
     return
-        (has("dungeon_er_off") and lynna_village() and shovel()) or
+        (has("dungeon_er_off") and d0_entrance()) or
         (has("dungeon_er_on") and er_accessD0())
 end
 
@@ -555,20 +555,23 @@ function d8bk()
 end
 
 -- functions to combine all dungeons for er rando
-
-
 function er_access(dungeon)
     return
-        has("makupath"..dungeon) or
-        has("spiritsgrave"..dungeon) or
-        has("wingdungeonpast"..dungeon) or
-        has("moonlitgrotto"..dungeon) or
-        has("skulldungeon"..dungeon) or
-        has("crowndungeon"..dungeon) or
-        has("mermaidscavepast"..dungeon) or
-        has("mermaidscavepresent"..dungeon) or
-        has("jabujabusbelly"..dungeon) or
-        has("ancienttomb"..dungeon)
+        (has("makupath"..dungeon) and d0_entrance()) or
+        (has("spiritsgrave"..dungeon) and d1_entrance()) or
+        (has("wingdungeonpast"..dungeon) and d2_entrance()) or
+        (has("moonlitgrotto"..dungeon) and d3_entrance()) or
+        (has("skulldungeon"..dungeon) and d4_entrance()) or
+        (has("crowndungeon"..dungeon) and d5_entrance()) or
+        (has("mermaidscavepast"..dungeon) and d6past_entrance()) or
+        (has("mermaidscavepresent"..dungeon) and d6present_entrance()) or
+        (has("jabujabusbelly"..dungeon) and d7_entrance()) or
+        (has("ancienttomb"..dungeon) and d8_entrance())
+end
+
+function er_access_h(dungeon)
+    return er_access(dungeon) or
+    (has("ancienttomb"..dungeon) and d8_entrance_h())
 end
 
 function er_accessD0()
@@ -609,4 +612,8 @@ end
 
 function er_accessD8()
     return er_access(8)
+end
+
+function er_accessD8_h()
+    return er_access_h(8)
 end
