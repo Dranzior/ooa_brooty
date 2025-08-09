@@ -1,14 +1,24 @@
 -- maku path
+function maku_backEntrance()
+    return rescue_nayru() and k_normal()
+end
+
+function maku_frontEntrance()
+    return
+        (has("dungeon_er_off") and lynna_village() and shovel()) or
+        (has("dungeon_er_on") and er_accessD0())
+end
+
+function maku_front()
+    return maku_frontEntrance() or (maku_backEntrance() and has("pathkey"))
+end
+
+function maku_back()
+    return maku_backEntrance() or (maku_frontEntrance() and has("pathkey"))
+end
+
 function maku_tree()
-    return rescue_nayru() or (maku_basement() and has("pathkey") and k_normal())
-end
-
-function maku_basement()
-    return (rescue_nayru() or (lynna_village() and shovel()))
-end
-
-function maku_key_chest()
-    return (has("dungeon_er_on") and (foundmakupath() or (rescue_nayru() and k_normal() and has("pathkey"))))
+    return rescue_nayru() or (maku_back() and k_normal())
 end
 
 -- d1
@@ -445,7 +455,9 @@ function d6present_vire_chest()
 end
 
 function d6present_d6past_access()
-	return (has("d6keypast") and has("dungeon_er_off") and has("flippers")) or (foundd6past() and has("dungeon_er_on"))
+	return
+	    (has("dungeon_er_off") and has("d6keypast") and has("flippers")) or
+	    (has("dungeon_er_on") and er_accessD6past())
 end
 
 function d6_2sk(amount)
@@ -543,42 +555,58 @@ function d8bk()
 end
 
 -- functions to combine all dungeons for er rando
-function foundmakupath()
-    return has("makupath0") or has("spiritsgrave0") or has("wingdungeonpast0") or has("moonlitgrotto0") or has("skulldungeon0") or has("crowndungeon0") or has("mermaidscavepast0") or has("mermaidscavepresent0") or has("jabujabusbelly0") or has("ancienttomb0")
+
+
+function er_access(dungeon)
+    return
+        has("makupath"..dungeon) or
+        has("spiritsgrave"..dungeon) or
+        has("wingdungeonpast"..dungeon) or
+        has("moonlitgrotto"..dungeon) or
+        has("skulldungeon"..dungeon) or
+        has("crowndungeon"..dungeon) or
+        has("mermaidscavepast"..dungeon) or
+        has("mermaidscavepresent"..dungeon) or
+        has("jabujabusbelly"..dungeon) or
+        has("ancienttomb"..dungeon)
 end
 
-function foundd1()
-    return has("makupath1") or has("spiritsgrave1") or has("wingdungeonpast1") or has("moonlitgrotto1") or has("skulldungeon1") or has("crowndungeon1") or has("mermaidscavepast1") or has("mermaidscavepresent1") or has("jabujabusbelly1") or has("ancienttomb1")
+function er_accessD0()
+    return er_access(0)
 end
 
-function foundd2()
-    return has("makupath2") or has("spiritsgrave2") or has("wingdungeonpast2") or has("moonlitgrotto2") or has("skulldungeon2") or has("crowndungeon2") or has("mermaidscavepast2") or has("mermaidscavepresent2") or has("jabujabusbelly2") or has("ancienttomb2")
+function er_accessD1()
+    return er_access(1)
 end
 
-function foundd3()
-    return has("makupath3") or has("spiritsgrave3") or has("wingdungeonpast3") or has("moonlitgrotto3") or has("skulldungeon3") or has("crowndungeon3") or has("mermaidscavepast3") or has("mermaidscavepresent3") or has("jabujabusbelly3") or has("ancienttomb3")
+function er_accessD2()
+    return er_access(2)
 end
 
-function foundd4()
-    return has("makupath4") or has("spiritsgrave4") or has("wingdungeonpast4") or has("moonlitgrotto4") or has("skulldungeon4") or has("crowndungeon4") or has("mermaidscavepast4") or has("mermaidscavepresent4") or has("jabujabusbelly4") or has("ancienttomb4")
+function er_accessD3()
+    return er_access(3)
 end
 
-function foundd5()
-    return has("makupath5") or has("spiritsgrave5") or has("wingdungeonpast5") or has("moonlitgrotto5") or has("skulldungeon5") or has("crowndungeon5") or has("mermaidscavepast5") or has("mermaidscavepresent5") or has("jabujabusbelly5") or has("ancienttomb5")
+function er_accessD4()
+    return er_access(4)
 end
 
-function foundd6past()
-    return has("makupath6p") or has("spiritsgrave6p") or has("wingdungeonpast6p") or has("moonlitgrotto6p") or has("skulldungeon6p") or has("crowndungeon6p") or has("mermaidscavepast6p") or has("mermaidscavepresent6p") or has("jabujabusbelly6p") or has("ancienttomb6p")
+function er_accessD5()
+    return er_access(5)
 end
 
-function foundd6present()
-    return has("makupath6") or has("spiritsgrave6") or has("wingdungeonpast6") or has("moonlitgrotto6") or has("skulldungeon6") or has("crowndungeon6") or has("mermaidscavepast6") or has("mermaidscavepresent6") or has("jabujabusbelly6") or has("ancienttomb6")
+function er_accessD6past()
+    return er_access("6p")
 end
 
-function foundd7()
-    return has("makupath7") or has("spiritsgrave7") or has("wingdungeonpast7") or has("moonlitgrotto7") or has("skulldungeon7") or has("crowndungeon7") or has("mermaidscavepast7") or has("mermaidscavepresent7") or has("jabujabusbelly7") or has("ancienttomb7")
+function er_accessD6present()
+    return er_access("6")
 end
 
-function foundd8()
-    return has("makupath8") or has("spiritsgrave8") or has("wingdungeonpast8") or has("moonlitgrotto8") or has("skulldungeon8") or has("crowndungeon8") or has("mermaidscavepast8") or has("mermaidscavepresent8") or has("jabujabusbelly8") or has("ancienttomb8")
+function er_accessD7()
+    return er_access(7)
+end
+
+function er_accessD8()
+    return er_access(8)
 end

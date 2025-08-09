@@ -14,10 +14,7 @@
                                 "name": "",
                                 "item_count": 1,
                                 "access_rules": [
-                                    "$maku_tree,$k_normal,pathkey,dungeon_er_off",
-                                    "$maku_tree,shovel,pathkey,dungeon_er_off",
-                                    "$lynna_village,shovel,dungeon_er_off",
-                                    "$maku_key_chest"
+                                    "$maku_front"
                                 ]
                             }
                         ],
@@ -36,11 +33,7 @@
                                 "name": "",
                                 "item_count": 1,
                                 "access_rules": [
-                                    "$maku_tree,$k_normal,dungeon_er_off",
-                                    "$maku_tree,shovel,dungeon_er_off",
-                                    "$lynna_village,shovel,pathkey,dungeon_er_off",
-                                    "pathkey,dungeon_er_on",
-                                    "$rescue_nayru,$k_normal,dungeon_er_on"
+                                    "$maku_back"
                                 ]
                             }
                         ],
@@ -59,11 +52,7 @@
                                 "name": "",
                                 "item_count": 1,
                                 "access_rules": [
-                                    "$maku_tree,$k_normal,dungeon_er_off",
-                                    "$maku_tree,shovel,dungeon_er_off",
-                                    "$lynna_village,shovel,pathkey,dungeon_er_off",
-                                    "pathkey,dungeon_er_on",
-                                    "$rescue_nayru,$k_normal,dungeon_er_on"
+                                    "$maku_back"
                                 ]
                             }
                         ],
@@ -98,7 +87,8 @@
             {
                 "name": "Spirit's Grave (D1)",
                 "access_rules": [
-                    "$d1_entrance,dungeon_er_off","dungeon_er_on"
+                    "dungeon_er_off, $d1_entrance",
+                    "dungeon_er_on, $er_accessD1"
                 ],
                 "children": [
                     {
@@ -342,9 +332,9 @@
             {
                 "name": "Wing Dungeon (D2)",
                 "access_rules": [
-                    "dungeon_er_off,$deku_forest,bombs",
-                    "dungeon_er_off,$deku_forest,currents",
-                    "dungeon_er_on"
+                    "dungeon_er_off, $deku_forest,bombs",
+                    "dungeon_er_off, $deku_forest,currents",
+                    "dungeon_er_on, $er_accessD2"
                 ],
                 "children": [
                     {
@@ -621,9 +611,8 @@
             {
                 "name": "Moonlit Grotto (D3)",
                 "access_rules": [
-                    "dungeon_er_off,$d3_entrance",
-                    "dungeon_er_on",
-                    "dungeon_er_on"
+                    "dungeon_er_off, $d3_entrance",
+                    "dungeon_er_on, $er_accessD3"
                 ],
                 "children": [
                     {
@@ -931,8 +920,8 @@
             {
                 "name": "Skull Dungeon (D4)",
                 "access_rules": [
-                    "dungeon_er_off,$d4_entrance",
-                    "dungeon_er_on"
+                    "dungeon_er_off, $d4_entrance",
+                    "dungeon_er_on, $er_accessD4"
                 ],
                 "children": [
                     {
@@ -1156,12 +1145,12 @@
                 "name": "Crown Dungeon (D5)",
                 "access_rules": [
                     // Vanilla way, by beating Moblin Keep
-                    "dungeon_er_off,$west_ridge_present, $pegasus_satchel, bracelet, feather, crownkey",
+                    "dungeon_er_off, $west_ridge_present, $pegasus_satchel, bracelet, feather, crownkey",
                     // From East Ridge
-                    "dungeon_er_off,$lynna_village, feather, mermaid, hook1, bracelet, currents, crownkey",
-                    "dungeon_er_off,$lynna_village, ages, mermaid, hook1, crownkey",
-                    "dungeon_er_off,$lynna_village, ages, mermaid, $jump3, crownkey",
-                    "dungeon_er_on"
+                    "dungeon_er_off, $lynna_village, feather, mermaid, hook1, bracelet, currents, crownkey",
+                    "dungeon_er_off, $lynna_village, ages, mermaid, hook1, crownkey",
+                    "dungeon_er_off, $lynna_village, ages, mermaid, $jump3, crownkey",
+                    "dungeon_er_on, $er_accessD5"
                 ],
                 "children": [
                     {
@@ -1410,11 +1399,11 @@
                 "name": "Mermaid's Cave [Past] (D6)",
                 "access_rules": [
                     //from Lynna, swimming
-                    "dungeon_er_off,d6keypast, $lynna_village, feather, mermaid",
-                    "dungeon_er_off,d6keypast, $lynna_village, ages, mermaid",
+                    "dungeon_er_off, d6keypast, $lynna_village, feather, mermaid",
+                    "dungeon_er_off, d6keypast, $lynna_village, ages, mermaid",
                     //from the upper cave, requires emblem?
-                    "dungeon_er_off,d6keypast, $west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, flippers",
-                    "dungeon_er_on"
+                    "dungeon_er_off, d6keypast, $west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, flippers",
+                    "dungeon_er_on, $er_accessD6past"
                 ],
                 "children": [
                     {
@@ -1602,7 +1591,7 @@
                     "dungeon_er_off,d6keypresent, $lynna_village, ages, mermaid",
                     //from the upper cave
                     "dungeon_er_off,d6keypresent, $west_ridge_present, $pegasus_satchel, bracelet, feather",
-                    "dungeon_er_on"
+                    "dungeon_er_on, $er_accessD6present"
                 ],
                 "children": [
                     {
@@ -1769,8 +1758,8 @@
             {
                 "name": "Jabu-Jabu's Belly (D7)",
                 "access_rules": [
-                    "dungeon_er_off,enterjabu",
-                    "dungeon_er_on"
+                    "dungeon_er_off, enterjabu",
+                    "dungeon_er_on, $er_accessD7"
                 ],
                 "children": [
                     {
@@ -2082,9 +2071,9 @@
             {
                 "name": "Ancient Tomb (D8)",
                 "access_rules": [
-                    "dungeon_er_off,$d8_entrance",
-                    "dungeon_er_off,[l_hard], $d8_entrance_h",
-                    "dungeon_er_on"
+                    "dungeon_er_off, $d8_entrance",
+                    "dungeon_er_off, [l_hard], $d8_entrance_h",
+                    "dungeon_er_on, $er_accessD8"
                 ],
                 "children": [
                     {

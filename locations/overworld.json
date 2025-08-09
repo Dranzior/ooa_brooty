@@ -41,7 +41,6 @@
                     }
                 ]
             },
-            //////////////
             {
                 "name": "Lynna|South Shore|Palace",
                 "children": [
@@ -54,7 +53,6 @@
                             "$use_seeds,$seed_tree",
                             "$use_seeds,$punch_object",
                             "$use_seeds,$dimitri_flute"
-                            //"[l_hard],$use_seeds,$bush"
                         ],
                         "sections": [
                             {
@@ -159,8 +157,7 @@
                     {
                         "name": "Enter Maku Path (D0)",
                         "access_rules": [
-                            "$maku_tree,pathkey,$k_normal",
-                            "$lynna_village,shovel"
+                            "$d0_entrance"
                         ],
 						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
@@ -175,7 +172,8 @@
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 3700,
+                                "shape": "trapezoid",
+                                "x": 3650,
                                 "y": 457
                             }
                         ]
@@ -198,49 +196,13 @@
 							{
 								"name": "Have Maku Path Key?",
 								"ref": "Dungeons/Maku Path (D0)/Have Maku Path Key?/"
-							},
+							}
                         ],
                         "map_locations": [
                             {
-								"force_invisibility_rules": ["dungeon_er_on"],
                                 "map": "map",
                                 "x": 3700,
                                 "y": 457
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Maku Path (Rear Entrance)",
-                        "access_rules": [],
-                        "visibility_rules": ["dungeon_er_on"],
-                        "sections": [
-                            {
-                                "name": "Key Chest",
-                                "item_count": 1,
-                                "access_rules": [
-                                    "$rescue_nayru,$k_normal,pathkey"
-                                ]
-                            },
-                            {
-                                "name": "Basement",
-                                "item_count": 1,
-                                "access_rules": [
-                                    "$rescue_nayru,$k_normal"
-                                ]
-                            },
-                            {
-                                "name": "Heart Piece",
-                                "item_count": 1,
-                                "access_rules": [
-                                    "$rescue_nayru,$k_normal"
-                                ]
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "map",
-                                "x": 3650,
-                                "y": 495
                             }
                         ]
                     },
@@ -922,7 +884,8 @@
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 2184,
+                                "shape": "trapezoid",
+                                "x": 2134,
                                 "y": 1057
                             }
                         ]
@@ -981,7 +944,6 @@
 						],
 						"map_locations": [
                             {
-								"force_invisibility_rules": ["dungeon_er_on"],
                                 "map": "map",
                                 "x": 2184,
                                 "y": 1057
@@ -1187,7 +1149,8 @@
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 2908,
+                                "shape": "trapezoid",
+                                "x": 2858,
                                 "y": 1052
                             }
                         ]
@@ -1250,7 +1213,6 @@
 						],
 						"map_locations": [
                             {
-								"force_invisibility_rules": ["dungeon_er_on"],
                                 "map": "map",
                                 "x": 2908,
                                 "y": 1052
@@ -1467,7 +1429,8 @@
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 1688,
+                                "shape": "trapezoid",
+                                "x": 1638,
                                 "y": 1488
                             }
                         ]
@@ -1534,11 +1497,10 @@
 							{
 								"name": "Get scent seeds in D3's bridge rooms",
 								"ref": "Dungeons/Moonlit Grotto (D3)/Get scent seeds in D3's bridge rooms/Respawnable bushes"
-							},
+							}
                         ],
                         "map_locations": [
                             {
-								"force_invisibility_rules": ["dungeon_er_on"],
                                 "map": "map",
                                 "x": 1688,
                                 "y": 1488
@@ -2155,7 +2117,8 @@
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 559,
+                                "shape": "trapezoid",
+                                "x": 509,
                                 "y": 50
                             }
                         ]
@@ -2210,7 +2173,6 @@
                         ],
                         "map_locations": [
                             {
-								"force_invisibility_rules": ["dungeon_er_on"],
                                 "map": "map",
                                 "x": 559,
                                 "y": 50
@@ -2391,14 +2353,14 @@
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 1720,
+                                "shape": "trapezoid",
+                                "x": 1670,
                                 "y": 23
                             }
                         ]
                     },
 					{
                         "name": "Crown Dungeon (D5)",
-                        "visibility_rules": ["dungeon_er_on"],
                         "sections": [
                             {
 								"name": "(B1F): Like-Like Chest",
@@ -2451,7 +2413,6 @@
                         ],
                         "map_locations": [
                             {
-								"force_invisibility_rules": ["dungeon_er_on"],
                                 "map": "map",
                                 "x": 1720,
                                 "y": 23
@@ -2581,7 +2542,6 @@
                         "sections": [
                             {
                                 "name": "",
-                                //"name": "Underwater chest",
                                 "item_count": 1
                             }
                         ],
@@ -2613,7 +2573,8 @@
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 1991,
+                                "shape": "trapezoid",
+                                "x": 1941,
                                 "y": 439
                             }
                         ]
@@ -2656,7 +2617,6 @@
                         ],
                         "map_locations": [
                             {
-								"force_invisibility_rules": ["dungeon_er_on"],
                                 "map": "map",
                                 "x": 1991,
                                 "y": 439
@@ -2929,7 +2889,8 @@
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 4331,
+                                "shape": "trapezoid",
+                                "x": 4281,
                                 "y": 425
                             }
                         ]
@@ -2976,7 +2937,6 @@
                         ],
                         "map_locations": [
                             {
-								"force_invisibility_rules": ["dungeon_er_on"],
                                 "map": "map",
                                 "x": 4331,
                                 "y": 425
@@ -3240,7 +3200,8 @@
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 56,
+                                "shape": "trapezoid",
+                                "x": 106,
                                 "y": 1360
                             }
                         ]
@@ -3315,7 +3276,6 @@
                         ],
                         "map_locations": [
                             {
-								"force_invisibility_rules": ["dungeon_er_on"],
                                 "map": "map",
                                 "x": 56,
                                 "y": 1360
@@ -3424,7 +3384,8 @@
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 4339,
+                                "shape": "trapezoid",
+                                "x": 4289,
                                 "y": 662
                             }
                         ]
@@ -3503,7 +3464,6 @@
                         ],
                         "map_locations": [
                             {
-								"force_invisibility_rules": ["dungeon_er_on"],
                                 "map": "map",
                                 "x": 4339,
                                 "y": 662
