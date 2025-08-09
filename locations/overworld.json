@@ -1067,7 +1067,7 @@
                     {
                         "name": "Deku Forest Soldier",
                         "access_rules": [
-                            "$deku_forest,$mystery"
+                            "$deku_forest, $mystery, $use_seeds"
                         ],
                         "sections": [
                             {
