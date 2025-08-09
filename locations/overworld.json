@@ -2274,13 +2274,13 @@
                     {
                         "name": "Rolling Ridge West Seed Tree",
                         "access_rules": [
-                            "{bombflower, feather, hook1, $seed_tree}",
+                            "{bombflower, feather, hook1}",
                             "bombflower, feather, hook1, $use_seeds, $seed_tree",
-                            "{currents, feather, hook1, bracelet, $seed_tree}",
+                            "{currents, feather, hook1, bracelet}",
                             "currents, feather, hook1, $use_seeds, bracelet, $seed_tree",
-                            "{$west_ridge_present, bracelet, echoes, $seed_tree}",
+                            "{$west_ridge_present, bracelet, echoes}",
                             "$west_ridge_present, bracelet, echoes, $use_seeds, $seed_tree",
-                            "{$west_ridge_present, ages, $seed_tree}",
+                            "{$west_ridge_present, ages}",
                             "$west_ridge_present, ages, $use_seeds, $seed_tree"
                         ],
                         "sections": [
