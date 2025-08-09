@@ -270,6 +270,11 @@ function onLocation(location_id, location_name)
         obj = Tracker:FindObjectForCode("@Overworld/Lynna|South Shore|Palace/Maku Path (Rear Entrance)/Heart Piece")
         obj.AvailableChestCount = obj.AvailableChestCount - 1
     end
+    -- Link Rescuing Nayru to recieving her check
+    if location_name == "Rescue Nayru" then
+        obj = Tracker:FindObjectForCode("Nayru")
+        obj.Active = true
+    end
 end
 
 -- called when a locations is scouted

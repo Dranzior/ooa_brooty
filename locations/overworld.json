@@ -481,6 +481,7 @@
                             {
                                 "name": "Rescue Nayru",
                                 "item_count": 1,
+								"hosted_item": "Nayru",
                                 "access_rules": [
                                     "$rescue_nayru",
                                     "[l_hard],$rescue_nayru_h"

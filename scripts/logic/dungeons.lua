@@ -1,6 +1,6 @@
 -- maku path
 function maku_backEntrance()
-    return rescue_nayru() and k_normal()
+    return nayru_rescued() and k_normal()
 end
 
 function maku_frontEntrance()
@@ -18,7 +18,7 @@ function maku_back()
 end
 
 function maku_tree()
-    return rescue_nayru() or (maku_back() and k_normal())
+    return nayru_rescued() or (maku_back() and k_normal())
 end
 
 -- d1

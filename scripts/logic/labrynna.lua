@@ -45,6 +45,10 @@ function fight_veran()
     return use_mystery() and hook1() and bombs() and (has_sword() or punch_enemy())
 end
 
+function nayru_rescued()
+	return rescue_nayru() and has("Nayru")
+end
+
 function balloon_guy()
     return feather() and (sword() or boomerang() or foolsore() or rodofseasons()) and
                (currents() or has("gloves") or ricky_flute() or (shore_present() and any_shooter()))
@@ -54,7 +58,6 @@ function balloon_guy_h()
     return feather() and (sword() or boomerang() or foolsore() or rodofseasons()) and (currents() or has("gloves") or ricky_flute() or
                (shore_present() and (any_shooter() or (boomerang() and (pegasus_satchel() or bombs())))))
 end
-
 
 -- yoll graveyard
 function graveyard()

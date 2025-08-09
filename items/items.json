@@ -862,6 +862,13 @@
     "img": "images/items/raft.png",
     "codes": "raft"
   },
+  {
+    "name": "Nayru",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/Nayru.png",
+    "codes": "Nayru"
+  },
   // Potion to Cleanse the Seas
   {
     "name": "Fairy Powder",
