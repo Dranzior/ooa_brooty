@@ -6,15 +6,15 @@
     "stages": [
       {
         "img": "images/items/sword1.png",
-        "codes": "sword, sword1, swordupgrade"
+        "codes": "swordupgrade, Progressive Sword"
       },
       {
         "img": "images/items/sword2.png",
-        "codes": "swordupgrade, sword2, royalsword"
+        "codes": "swordupgrade, Progressive Sword"
       },
       {
         "img": "images/items/Master Sword.png",
-        "codes": "swordupgrade, sword3, mastersword"
+        "codes": "swordupgrade, Progressive Sword"
       }
     ]
   },
@@ -51,14 +51,14 @@
     "type": "toggle",
     "loop": true,
     "img": "images/items/shooter.png",
-    "codes": "shooter"
+    "codes": "shooter, Seed Shooter"
   },
   {
     "name": "Seed Satchel",
     "type": "toggle",
     "loop": true,
     "img": "images/items/satchel.png",
-    "codes": "satchel"
+    "codes": "satchel, Seed Satchel"
   },
   {
     "name": "Cane of Somaria",
@@ -124,6 +124,7 @@
   {
     "name": "Shield",
     "type": "progressive",
+    "codes": "Progressive Shield",
     "stages": [
       {
         "img": "images/items/shield1.png",
@@ -1771,7 +1772,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/items/goron sword.png",
-    "codes": "bigsword, sword, sword2"
+    "codes": "bigsword, Biggoron's Sword"
   },
   // TRADE ITEMS
   {

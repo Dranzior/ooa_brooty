@@ -49,10 +49,8 @@
                         "chest_unopened_img": "images/items/tree.png",
                         "chest_opened_img": "images/items/tree_gray.png",
                         "access_rules": [
-                            "{$lynna_city}",
-                            "$use_seeds,$seed_tree",
-                            "$use_seeds,$punch_object",
-                            "$use_seeds,$dimitri_flute"
+                            "^$CanReach|south_lynna_tree",
+                            "{^$CanReach|lynna_city}"
                         ],
                         "sections": [
                             {
