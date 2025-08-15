@@ -1,7 +1,34 @@
 [
-  //Key Items
   {
-    "name": "Sword",
+    "name": "Progressive Shield",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/shield1.png",
+        "codes": "shield, shield1, Progressive Shield"
+      },
+      {
+        "img": "images/items/shield2.png",
+        "codes": "shield2, Progressive Shield"
+      }
+    ]
+  },
+  {
+    "name": "Bombs (10)",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/bombs.png",
+        "codes": "bomb, bombs, Bombs (10)"
+      },
+      {
+        "img": "images/items/bombs_plus.png",
+        "codes": "bomb, bombs, bombplus, bombsplus, Bombs (10)"
+      }
+    ]
+  },
+  {
+    "name": "Progressive Sword",
     "type": "progressive",
     "stages": [
       {
@@ -19,32 +46,72 @@
     ]
   },
   {
-    "name": "Feather",
-    "type": "progressive",
-    "stages": [
-      {
-        "img": "images/items/feather.png",
-        "codes": "feather"
-      },
-      {
-        "img": "images/items/cape.png",
-        "codes": "cape"
-      }
-    ]
-  },
-  {
     "name": "Boomerang",
     "type": "progressive",
     "stages": [
       {
         "img": "images/items/boomerang.png",
-        "codes": "boomerang"
+        "codes": "boomerang, Boomerang"
       },
       {
         "img": "images/items/magicboomerang.png",
-        "codes": "magboom"
+        "codes": "magboom, Boomerang"
       }
     ]
+  },
+  {
+    "name": "Progressive Harp",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/song_echoes.png",
+        "codes": "echoes, song1, harpupgrade, Progressive Harp"
+      },
+      {
+        "img": "images/items/song_currents.png",
+        "codes": "currents, song2, harpupgrade, Progressive Harp"
+      },
+      {
+        "img": "images/items/song_ages.png",
+        "codes": "ages, song3, harpupgrade, Progressive Harp"
+      }
+    ]
+  },
+  {
+    "name": "Progressive Hook",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/switchhook1.png",
+        "codes": "hook1, hookupgrade, Progressive Hook"
+      },
+      {
+        "img": "images/items/switchhook2.png",
+        "codes": "hook2, hookupgrade, Progressive Hook"
+      }
+    ]
+  },
+  {
+    "name": "Cane of Somaria",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/somaria.png",
+    "codes": "Cane of Somaria, cane, somaria"
+  },
+  {
+    "name": "Biggoron's Sword",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/goron sword.png",
+    "codes": "bigsword, Biggoron's Sword"
+  },
+  //TODO - determine if ID should be split
+  {
+    "name": "Flute",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/flute.png",
+    "codes": "flute, ocarina"
   },
   {
     "name": "Seed Shooter",
@@ -54,6 +121,41 @@
     "codes": "shooter, Seed Shooter"
   },
   {
+    "name": "Shovel",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/shovel.png",
+    "codes": "shovel, Shovel"
+  },
+  {
+    "name": "Progressive Bracelet",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/powerbracelet.png",
+        "codes": "bracelet, bracelet1, lift1, liftupgrade, Progressive Bracelet"
+      },
+      {
+        "img": "images/items/powergloves.png",
+        "codes": "bracelet2, lift2, liftupgrade, Progressive Bracelet"
+      }
+    ]
+  },
+  {
+    "name": "Feather",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/feather.png",
+        "codes": "feather, Feather"
+      },
+      {
+        "img": "images/items/cape.png",
+        "codes": "cape, Feather"
+      }
+    ]
+  },
+  {
     "name": "Seed Satchel",
     "type": "toggle",
     "loop": true,
@@ -61,40 +163,556 @@
     "codes": "satchel, Seed Satchel"
   },
   {
-    "name": "Cane of Somaria",
+    "name": "Ember Seeds",
     "type": "toggle",
-    "loop": true,
-    "img": "images/items/somaria.png",
-    "codes": "cane, somaria"
+    "loop": false,
+    "img": "images/items/seedember.png",
+    "codes": "emberseeds, Ember Seeds"
   },
   {
-    "name": "Shovel",
+    "name": "Scent Seeds",
     "type": "toggle",
-    "loop": true,
-    "img": "images/items/shovel.png",
-    "codes": "shovel"
+    "loop": false,
+    "img": "images/items/seedscent.png",
+    "codes": "scentseeds, Scent Seeds"
   },
   {
-    "name": "Bombs",
+    "name": "Pegasus Seeds",
+    "type": "toggle",
+    "loop": false,
+    "img": "images/items/seedpegasus.png",
+    "codes": "pegasusseeds, Pegasus Seeds"
+  },
+  {
+    "name": "Gale Seeds",
+    "type": "toggle",
+    "loop": false,
+    "img": "images/items/seedgale.png",
+    "codes": "galeseeds, Gale Seeds"
+  },
+  {
+    "name": "Mystery Seeds",
+    "type": "toggle",
+    "loop": false,
+    "img": "images/items/seedmystery.png",
+    "codes": "mysteryseeds, Mystery Seeds"
+  },
+  // TODO RUPEES ?
+  {
+    "name": "Progressive Flippers",
     "type": "progressive",
     "stages": [
       {
-        "img": "images/items/bombs.png",
-        "codes": "bomb, bombs"
+        "img": "images/items/flippers.png",
+        "codes": "flippers, swim, swim1, swimupgrade, Progressive Flippers"
       },
       {
-        "img": "images/items/bombs_plus.png",
-        "codes": "bomb, bombs, bombplus, bombsplus"
+        "img": "images/items/mermaid.png",
+        "codes": "mermaid, swim2, swimupgrade, Progressive Flippers"
       }
     ]
   },
-  //{
-  //  "name": "Bombs",
-  //  "type": "toggle",
-  //  "loop": true,
-  //  "img": "images/items/bombs.png",
-  //  "codes": "bomb, bombs"
-  //},
+  {
+    "name": "King Zora's Potion",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/potion.png",
+    "codes": "potion, King Zora's Potion"
+  },
+  {
+    "name": "Small Key (Maku Path)",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/smallkey.png",
+    "codes": "pathkey, Small Key (Maku Path)"
+  },
+  {
+    "name": "Small Key (Spirit's Grave)",
+    "type": "consumable",
+    "codes": "d1sk, Small Key (Spirit's Grave)",
+    "max_quantity": 3,
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "Small Key (Wing Dungeon)",
+    "type": "consumable",
+    "codes": "d2sk, Small Key (Wing Dungeon)",
+    "max_quantity": 5,
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "Small Key (Moonlit Grotto)",
+    "type": "consumable",
+    "codes": "d3sk, Small Key (Moonlit Grotto)",
+    "max_quantity": 4,
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "Small Key (Skull Dungeon)",
+    "type": "consumable",
+    "codes": "d4sk, Small Key (Skull Dungeon)",
+    "max_quantity": 5,
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "Small Key (Crown Dungeon)",
+    "type": "consumable",
+    "codes": "d5sk, Small Key (Crown Dungeon)",
+    "max_quantity": 5,
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "Small Key (Mermaid's Cave Past)",
+    "type": "consumable",
+    "codes": "d6_1sk, Small Key (Mermaid's Cave Past)",
+    "max_quantity": 3,
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "Small Key (Mermaid's Cave Present)",
+    "type": "consumable",
+    "codes": "d6_2sk, Small Key (Mermaid's Cave Present)",
+    "max_quantity": 3,
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "Small Key (Jabu-Jabu's Belly)",
+    "type": "consumable",
+    "codes": "d7sk, Small Key (Jabu-Jabu's Belly)",
+    "max_quantity": 7,
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "Small Key (Ancient Tomb)",
+    "type": "consumable",
+    "codes": "d8sk, Small Key (Ancient Tomb)",
+    "max_quantity": 5,
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "Master Key (Spirit's Grave)",
+    "type": "toggle",
+    "codes": "d1mk, Master Key (Spirit's Grave)",
+    "img": "images/items/master_key.png"
+  },
+  {
+    "name": "Master Key (Wing Dungeon)",
+    "type": "toggle",
+    "codes": "d2mk, Master Key (Wing Dungeon)",
+    "img": "images/items/master_key.png"
+  },
+  {
+    "name": "Master Key (Moonlit Grotto)",
+    "type": "toggle",
+    "codes": "d3mk, Master Key (Moonlit Grotto)",
+    "img": "images/items/master_key.png"
+  },
+  {
+    "name": "Master Key (Skull Dungeon)",
+    "type": "toggle",
+    "codes": "d4mk, Master Key (Skull Dungeon)",
+    "img": "images/items/master_key.png"
+  },
+  {
+    "name": "Master Key (Crown Dungeon)",
+    "type": "toggle",
+    "codes": "d5mk, Master Key (Crown Dungeon)",
+    "img": "images/items/master_key.png"
+  },
+  {
+    "name": "Master Key (Mermaid's Cave Past)",
+    "type": "toggle",
+    "codes": "d6_1mk, Master Key (Mermaid's Cave Past)",
+    "img": "images/items/master_key.png"
+  },
+  {
+    "name": "Master Key (Mermaid's Cave Present)",
+    "type": "toggle",
+    "codes": "d6_2mk, Master Key (Mermaid's Cave Present)",
+    "img": "images/items/master_key.png"
+  },
+  {
+    "name": "Master Key (Jabu-Jabu's Belly)",
+    "type": "toggle",
+    "codes": "d7mk, Master Key (Jabu-Jabu's Belly)",
+    "img": "images/items/master_key.png"
+  },
+  {
+    "name": "Master Key (Ancient Tomb)",
+    "type": "toggle",
+    "codes": "d8mk, Master Key (Ancient Tomb)",
+    "img": "images/items/master_key.png"
+  },
+  {
+    "name": "Boss Key (Spirit's Grave)",
+    "type": "toggle",
+    "codes": "d1bk, Boss Key (Spirit's Grave)",
+    "img": "images/items/bosskey.png"
+  },
+  {
+    "name": "Boss Key (Wing Dungeon)",
+    "type": "toggle",
+    "codes": "d2bk, Boss Key (Wing Dungeon)",
+    "img": "images/items/bosskey.png"
+  },
+  {
+    "name": "Boss Key (Moonlit Grotto)",
+    "type": "toggle",
+    "codes": "d3bk, Boss Key (Moonlit Grotto)",
+    "img": "images/items/bosskey.png"
+  },
+  {
+    "name": "Boss Key (Skull Dungeon)",
+    "type": "toggle",
+    "codes": "d4bk, Boss Key (Skull Dungeon)",
+    "img": "images/items/bosskey.png"
+  },
+  {
+    "name": "Boss Key (Crown Dungeon)",
+    "type": "toggle",
+    "codes": "d5bk, Boss Key (Crown Dungeon)",
+    "img": "images/items/bosskey.png"
+  },
+  {
+    "name": "Boss Key (Mermaid's Cave)",
+    "type": "toggle",
+    "codes": "d6bk, Boss Key (Mermaid's Cave)",
+    "img": "images/items/bosskey.png"
+  },
+  {
+    "name": "Boss Key (Jabu-Jabu's Belly)",
+    "type": "toggle",
+    "codes": "d7bk, Boss Key (Jabu-Jabu's Belly)",
+    "img": "images/items/bosskey.png"
+  },
+  {
+    "name": "Boss Key (Ancient Tomb)",
+    "type": "toggle",
+    "codes": "d8bk, Boss Key (Ancient Tomb)",
+    "img": "images/items/bosskey.png"
+  },
+  {
+    "name": "Poe Clock",
+    "type": "toggle",
+    "img": "images/items/Poe Clock.png",
+    "codes": "poeclock, Poe Clock"
+  },
+  {
+    "name": "Stationary",
+    "type": "toggle",
+    "img": "images/items/Stationery.png",
+    "codes": "stationary, Stationary"
+  },
+  {
+    "name": "Stink Bag",
+    "type": "toggle",
+    "img": "images/items/Stink Bag.png",
+    "codes": "stinkbag, Stink Bag"
+  },
+  {
+    "name": "Tasty Meat",
+    "type": "toggle",
+    "img": "images/items/Tasty Meat.png",
+    "codes": "tastymeat, Tasty Meat"
+  },
+  {
+    "name": "Doggie Mask",
+    "type": "toggle",
+    "img": "images/items/Doggie Mask.png",
+    "codes": "doggiemask, Doggie Mask"
+  },
+  {
+    "name": "Dumbbell",
+    "type": "toggle",
+    "img": "images/items/Dumbbell.png",
+    "codes": "dumbbell, Dumbbell"
+  },
+  {
+    "name": "Cheesy Mustache",
+    "type": "toggle",
+    "img": "images/items/Cheesy Mustache.png",
+    "codes": "mustache, Cheesy Mustache"
+  },
+  {
+    "name": "Funny Joke",
+    "type": "toggle",
+    "img": "images/items/Funny Joke.png",
+    "codes": "funnyjoke, Funny Joke"
+  },
+  {
+    "name": "Touching Book",
+    "type": "toggle",
+    "img": "images/items/Touching Book.png",
+    "codes": "touchingbook, Touching Book"
+  },
+  {
+    "name": "Magic Oar",
+    "type": "toggle",
+    "img": "images/items/Magic Oar.png",
+    "codes": "magicoar, Magic Oar"
+  },
+  {
+    "name": "Sea Ukulele",
+    "type": "toggle",
+    "img": "images/items/Sea Ukelele.png",
+    "codes": "seaukulele, Sea Ukulele"
+  },
+  {
+    "name": "Broken Sword",
+    "type": "toggle",
+    "img": "images/items/Broken Sword.png",
+    "codes": "brokensword, Broken Sword"
+  },
+  {
+    "name": "Bomb Flower",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/bombflower.png",
+    "codes": "bombflower, Bomb Flower"
+  },
+  {
+    "name": "Book of Seals",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/book.png",
+    "codes": "book, Book of Seals"
+  },
+  {
+    "name": "Brother Emblem",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/emblem.png",
+    "codes": "emblem, goronemblem, Brother Emblem"
+  },
+  {
+    "name": "Cheval Rope",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/cheval.png",
+    "codes": "cheval, chevalrope, Cheval Rope"
+  },
+  {
+    "name": "Crown Key",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/keycrown.png",
+    "codes": "d5key, crownkey, Crown Key"
+  },
+  {
+    "name": "Fairy Powder",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/powder.png",
+    "codes": "powder, Fairy Powder"
+  },
+  {
+    "name": "Goron Vase",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/vase.png",
+    "codes": "vase, Goron Vase"
+  },
+  {
+    "name": "Goronade",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/goronade.png",
+    "codes": "goronade, Goronade"
+  },
+  {
+    "name": "Graveyard Key",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/keygraveyard.png",
+    "codes": "d1key, gravekey, Graveyard Key"
+  },
+  {
+    "name": "Island Chart",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/chart.png",
+    "codes": "chart, islandchart, Island Chart"
+  },
+  {
+    "name": "Lava Juice",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/lavajuice.png",
+    "codes": "lavajuice, Lava Juice"
+  },
+  {
+    "name": "Letter of Introduction",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/letter.png",
+    "codes": "letter, introduction, Letter of Introduction"
+  },
+  {
+    "name": "Library Key",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/keylibrary.png",
+    "codes": "librarykey, Library Key"
+  },
+  {
+    "name": "Mermaid Key",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/keymermaid.png",
+    "codes": "d6keypast, Mermaid Key"
+  },
+  {
+    "name": "Old Mermaid Key",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/keymermaid_old.png",
+    "codes": "d6keypresent, Old Mermaid Key"
+  },
+  {
+    "name": "Ricky's Gloves",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/gloves.png",
+    "codes": "gloves, rickygloves, Ricky's Gloves"
+  },
+  {
+    "name": "Rock Brisket",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/brisket.png",
+    "codes": "brisket, Rock Brisket"
+  },
+  {
+    "name": "Scent Seedling",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/seedling.png",
+    "codes": "seedling, Scent Seedling"
+  },
+  {
+    "name": "Slate",
+    "type": "consumable",
+    "codes": "d8slate, Slate",
+    "max_quantity": 4,
+    "img": "images/items/slate.png"
+  },
+  {
+    "name": "Tokay Eyeball",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/eyeball.png",
+    "codes": "eyeball, Tokay Eyeball"
+  },
+  {
+    "name": "Cracked Tuni Nut",
+    "type": "toggle",
+    "img": "images/items/tuninut.png",
+    "codes": "tuninut, Cracked Tuni Nut"
+  },
+  {
+    "name": "Tuni Nut",
+    "type": "toggle",
+    "img": "images/items/tuninut_repaired.png",
+    "codes": "repairednut, Tuni Nut"
+  },
+  {
+    "name": "Zora Scale",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/scale.png",
+    "codes": "scale, zorascale, Zora Scale"
+  },
+  {
+    "name": "Expert's Ring",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/ring_expert.png",
+    "codes": "ring_expert, Expert's Ring"
+  },
+  {
+    "name": "Toss Ring",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/ring_toss.png",
+    "codes": "ring_toss, Toss Ring"
+  },
+  {
+    "name": "Energy Ring",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/ring_energy.png",
+    "codes": "ring_energy, Energy Ring"
+  },
+  {
+    "name": "Peace Ring",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/ring_peace.png",
+    "codes": "ring_peace, Peace Ring"
+  },
+  {
+    "name": "Fist Ring",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/ring_fist.png",
+    "codes": "ring_fist, Fist Ring"
+  },
+  {
+    "name": "Eternal Spirit",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/essences/d1.png",
+    "codes": "d1, Eternal Spirit"
+  },
+  {
+    "name": "Ancient Wood",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/essences/d2.png",
+    "codes": "d2, Ancient Wood"
+  },
+  {
+    "name": "Echoing Howl",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/essences/d3.png",
+    "codes": "d3, Echoing Howl"
+  },
+  {
+    "name": "Burning Flame",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/essences/d4.png",
+    "codes": "d4,Burning Flame"
+  },
+  {
+    "name": "Sacred Soil",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/essences/d5.png",
+    "codes": "d5, Sacred Soil"
+  },
+  {
+    "name": "Lonely Peak",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/essences/d6.png",
+    "codes": "d6, Lonely Peak"
+  },
+  {
+    "name": "Rolling Sea",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/essences/d7.png",
+    "codes": "d7, Rolling Sea"
+  },
+  {
+    "name": "Falling Star",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/essences/d8.png",
+    "codes": "d8, Falling Star"
+  },
   {
     "name": "Flute",
     "type": "toggle",
@@ -102,254 +720,8 @@
     "img": "images/items/flute.png",
     "codes": "flute, ocarina"
   },
-  {
-    "name": "Harp",
-    "type": "progressive",
-    "allow_disabled": true,
-    "stages": [
-      {
-        "img": "images/items/song_echoes.png",
-        "codes": "echoes, song1, harpupgrade"
-      },
-      {
-        "img": "images/items/song_currents.png",
-        "codes": "currents, song2, harpupgrade"
-      },
-      {
-        "img": "images/items/song_ages.png",
-        "codes": "ages, song3, harpupgrade"
-      }
-    ]
-  },
-  {
-    "name": "Shield",
-    "type": "progressive",
-    "codes": "Progressive Shield",
-    "stages": [
-      {
-        "img": "images/items/shield1.png",
-        "codes": "shield, shield1"
-      },
-      {
-        "img": "images/items/shield2.png",
-        "codes": "shield2"
-      }
-    ]
-  },
-  {
-    "name": "Zora's Flippers/Mermaid Suit",
-    "type": "progressive",
-    "stages": [
-      {
-        "img": "images/items/flippers.png",
-        "codes": "flippers, swim, swim1, swimupgrade"
-      },
-      {
-        "img": "images/items/mermaid.png",
-        "codes": "mermaid, swim2, swimupgrade"
-      }
-    ]
-  },
-  {
-    "name": "Power Bracelet/Gloves",
-    "type": "progressive",
-    "stages": [
-      {
-        "img": "images/items/powerbracelet.png",
-        "codes": "bracelet, bracelet1, lift1, liftupgrade"
-      },
-      {
-        "img": "images/items/powergloves.png",
-        "codes": "bracelet2, lift2, liftupgrade"
-      }
-    ]
-  },
-  {
-    "name": "Switch Hook",
-    "type": "progressive",
-    "stages": [
-      {
-        "img": "images/items/switchhook1.png",
-        "codes": "hook1, hookupgrade"
-      },
-      {
-        "img": "images/items/switchhook2.png",
-        "codes": "hook2, hookupgrade"
-      }
-    ]
-  },
-  // Rings
-  {
-    "name": "Fist Ring",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/ring_fist.png",
-    "codes": "ring_fist"
-  },
-  {
-    "name": "Expert's Ring",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/ring_expert.png",
-    "codes": "ring_expert"
-  },
-  {
-    "name": "Energy Ring",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/ring_energy.png",
-    "codes": "ring_energy"
-  },
-  {
-    "name": "Toss Ring",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/ring_toss.png",
-    "codes": "ring_toss"
-  },
-  {
-    "name": "Peace Ring",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/ring_peace.png",
-    "codes": "ring_peace"
-  },
-  //Misc. Progression Items
-  {
-    "name": "Cheval Rope",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/cheval.png",
-    "codes": "cheval, chevalrope"
-  },
-  {
-    "name": "Island Chart",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/chart.png",
-    "codes": "chart, islandchart"
-  },
-  {
-    "name": "Ricky's Gloves",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/gloves.png",
-    "codes": "gloves, rickygloves"
-  },
-  {
-    "name": "Scent Seedling",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/seedling.png",
-    "codes": "seedling"
-  },
-  {
-    "name": "Bomb Flower",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/bombflower.png",
-    "codes": "bombflower"
-  },
-  {
-    "name": "Zora Scale",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/scale.png",
-    "codes": "scale, zorascale"
-  },
-  {
-    "name": "Goron Emblem",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/emblem.png",
-    "codes": "emblem, goronemblem"
-  },
-  {
-    "name": "Letter of Introduction",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/letter.png",
-    "codes": "letter, introduction"
-  },
-  {
-    "name": "Lava Juice",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/lavajuice.png",
-    "codes": "lavajuice"
-  },
-  {
-    "name": "Goron Vase",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/vase.png",
-    "codes": "vase"
-  },
-  {
-    "name": "Goronade",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/goronade.png",
-    "codes": "goronade"
-  },
-  {
-    "name": "Rock Brisket",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/brisket.png",
-    "codes": "brisket"
-  },
-  {
-    "name": "Library Key",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/keylibrary.png",
-    "codes": "librarykey"
-  },
-  {
-    "name": "Book of Seals",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/book.png",
-    "codes": "book"
-  },
-  // D1 Access
-  {
-    "name": "Graveyard Key",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/keygraveyard.png",
-    "codes": "d1key, gravekey"
-  },
-  // D4 Access
-  //{
-  //  "name": "Tuni Nut",
-  //  "type": "progressive",
-  //  "stages": [
-  //    {
-  //      "img": "images/items/tuninut.png",
-  //      "codes": "tuninut, tuniupgrade"
-  //    },
-  //    {
-  //      "img": "images/items/tuninut_repaired.png",
-  //      "codes": "repairednut, tuniupgrade"
-  //    }
-  //  ]
-  //},
-  {
-    "name": "Tuni Nut Broken",
-    "type": "toggle",
-    //"loop": true,
-    "img": "images/items/tuninut.png",
-    "codes": "tuninut"
-  },
-  {
-    "name": "Tuni Nut Repaired",
-    "type": "toggle",
-    //"loop": true,
-    "img": "images/items/tuninut_repaired.png",
-    "codes": "repairednut"
-  },
+
+  // COMBO
   {
     "name": "Both Tuni Nuts",
     "type": "composite_toggle",
@@ -379,132 +751,36 @@
       }
     ]
   },
-  // D5 Access
   {
-    "name": "Crown Key",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/keycrown.png",
-    "codes": "d5key, crownkey"
+    "name": "Powder/Potion",
+    "type": "composite_toggle",
+    "item_left": "powder",
+    "item_right": "potion",
+    "codes": "powderpotion",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/powderpotion_a.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/powderpotion_b.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/powderpotion_c.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/powderpotion_d.png"
+      }
+    ]
   },
-  // D6 Access (Past)
-  {
-    "name": "Mermaid Key",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/keymermaid.png",
-    "codes": "d6keypast"
-  },
-  // D6 Access (Present)
-  {
-    "name": "Old Mermaid Key",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/keymermaid_old.png",
-    "codes": "d6keypresent"
-  },
-  // D8 Access
-  {
-    "name": "Tokay Eyeball",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/eyeball.png",
-    "codes": "eyeball"
-  },
-  // Essences of Time
-  {
-    "name": "Eternal Spirit",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/essences/d1.png",
-    "codes": "d1"
-  },
-  {
-    "name": "Ancient Wood",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/essences/d2.png",
-    "codes": "d2"
-  },
-  {
-    "name": "Echoing Howl",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/essences/d3.png",
-    "codes": "d3"
-  },
-  {
-    "name": "Burning Flame",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/essences/d4.png",
-    "codes": "d4"
-  },
-  {
-    "name": "Sacred Soil",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/essences/d5.png",
-    "codes": "d5"
-  },
-  {
-    "name": "Lonely Peak",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/essences/d6.png",
-    "codes": "d6"
-  },
-  {
-    "name": "Rolling Sea",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/essences/d7.png",
-    "codes": "d7"
-  },
-  {
-    "name": "Falling Star",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/essences/d8.png",
-    "codes": "d8"
-  },
-  // Seeds
-  {
-    "name": "Ember Seeds",
-    "type": "toggle",
-    "loop": false,
-    "img": "images/items/seedember.png",
-    "codes": "emberseeds"
-  },
-  {
-    "name": "Mystery Seeds",
-    "type": "toggle",
-    "loop": false,
-    "img": "images/items/seedmystery.png",
-    "codes": "mysteryseeds"
-  },
-  {
-    "name": "Scent Seeds",
-    "type": "toggle",
-    "loop": false,
-    "img": "images/items/seedscent.png",
-    "codes": "scentseeds"
-  },
-  {
-    "name": "Pegasus Seeds",
-    "type": "toggle",
-    "loop": false,
-    "img": "images/items/seedpegasus.png",
-    "codes": "pegasusseeds"
-  },
-  {
-    "name": "Gale Seeds",
-    "type": "toggle",
-    "loop": false,
-    "img": "images/items/seedgale.png",
-    "codes": "galeseeds"
-  },
-  // Carpenters
+  // CARPENTER
   {
     "name": "Carpenter Boss",
     "type": "toggle",
@@ -528,179 +804,6 @@
     "type": "toggle",
     "img": "images/items/carpenter.png",
     "codes": "carpenter3"
-  },
-  // Dungeon Keys
-  {
-    "name": "D1 Small Keys",
-    "type": "consumable",
-    "codes": "d1sk",
-    "max_quantity": 3,
-    "img": "images/items/smallkey.png"
-  },
-  {
-    "name": "D2 Small Keys",
-    "type": "consumable",
-    "codes": "d2sk",
-    "max_quantity": 5,
-    "img": "images/items/smallkey.png"
-  },
-  {
-    "name": "D3 Small Keys",
-    "type": "consumable",
-    "codes": "d3sk",
-    "max_quantity": 4,
-    "img": "images/items/smallkey.png"
-  },
-  {
-    "name": "D4 Small Keys",
-    "type": "consumable",
-    "codes": "d4sk",
-    "max_quantity": 5,
-    "img": "images/items/smallkey.png"
-  },
-  {
-    "name": "D5 Small Keys",
-    "type": "consumable",
-    "codes": "d5sk",
-    "max_quantity": 5,
-    "img": "images/items/smallkey.png"
-  },
-  {
-    "name": "D6 Past Small Keys",
-    "type": "consumable",
-    "codes": "d6_1sk",
-    "max_quantity": 3,
-    "img": "images/items/smallkey.png"
-  },
-  {
-    "name": "D6 Present Small Keys",
-    "type": "consumable",
-    "codes": "d6_2sk",
-    "max_quantity": 3,
-    "img": "images/items/smallkey.png"
-  },
-  {
-    "name": "D7 Small Keys",
-    "type": "consumable",
-    "codes": "d7sk",
-    "max_quantity": 7,
-    "img": "images/items/smallkey.png"
-  },
-  {
-    "name": "D8 Small Keys",
-    "type": "consumable",
-    "codes": "d8sk",
-    "max_quantity": 5,
-    "img": "images/items/smallkey.png"
-  },
-  {
-    "name": "D1 Master Key",
-    "type": "toggle",
-    "codes": "d1mk",
-    "img": "images/items/master_key.png"
-  },
-  {
-    "name": "D2 Master Key",
-    "type": "toggle",
-    "codes": "d2mk",
-    "img": "images/items/master_key.png"
-  },
-  {
-    "name": "D3 Master Key",
-    "type": "toggle",
-    "codes": "d3mk",
-    "img": "images/items/master_key.png"
-  },
-  {
-    "name": "D4 Master Key",
-    "type": "toggle",
-    "codes": "d4mk",
-    "img": "images/items/master_key.png"
-  },
-  {
-    "name": "D5 Master Key",
-    "type": "toggle",
-    "codes": "d5mk",
-    "img": "images/items/master_key.png"
-  },
-  {
-    "name": "D6 Past Master Key",
-    "type": "toggle",
-    "codes": "d6_1mk",
-    "img": "images/items/master_key.png"
-  },
-  {
-    "name": "D6 Present Master Key",
-    "type": "toggle",
-    "codes": "d6_2mk",
-    "img": "images/items/master_key.png"
-  },
-  {
-    "name": "D7 Master Key",
-    "type": "toggle",
-    "codes": "d7mk",
-    "img": "images/items/master_key.png"
-  },
-  {
-    "name": "D8 Master Key",
-    "type": "toggle",
-    "codes": "d8mk",
-    "img": "images/items/master_key.png"
-  },
-  {
-    "name": "D8 Slates",
-    "type": "consumable",
-    "codes": "d8slate",
-    "max_quantity": 4,
-    "img": "images/items/slate.png"
-  },
-  {
-    "name": "D1 Boss Key",
-    "type": "toggle",
-    "codes": "d1bk",
-    "img": "images/items/bosskey.png"
-  },
-  {
-    "name": "D2 Boss Key",
-    "type": "toggle",
-    "codes": "d2bk",
-    "img": "images/items/bosskey.png"
-  },
-  {
-    "name": "D3 Boss Key",
-    "type": "toggle",
-    "codes": "d3bk",
-    "img": "images/items/bosskey.png"
-  },
-  {
-    "name": "D4 Boss Key",
-    "type": "toggle",
-    "codes": "d4bk",
-    "img": "images/items/bosskey.png"
-  },
-  {
-    "name": "D5 Boss Key",
-    "type": "toggle",
-    "codes": "d5bk",
-    "img": "images/items/bosskey.png"
-  },
-  {
-    "name": "D6 Boss Key",
-    "type": "toggle",
-    "codes": "d6bk",
-    "img": "images/items/bosskey.png"
-  },
-  {
-    "name": "D7 Boss Key",
-    "type": "toggle",
-    "codes": "d7bk",
-    "img": "images/items/bosskey.png"
-  },
-  {
-    "name": "D8 Boss Key",
-    "type": "toggle",
-    "codes": "d8bk",
-    "img": "images/items/bosskey.png"
   },
   // OPTIONS
   {
@@ -822,12 +925,6 @@
       }
     ]
   },
-  //{
-  //  "name": "Trick Logic",
-  //  "type": "toggle",
-  //  "loop": true,
-  //  "codes": "trick"
-  //},
   // Dungeon Entrance Rando Setting
   {
     "name": "Dungeon Entrance Rando?",
@@ -847,7 +944,8 @@
       }
     ]
   },
-  // GO MODE MAKU SEED
+
+  // OTHER TOGGLE
   {
     "name": "Maku Seed",
     "type": "toggle",
@@ -855,7 +953,6 @@
     "img": "images/items/makuseed.png",
     "codes": "makuseed"
   },
-  // RAFT
   {
     "name": "Raft",
     "type": "toggle",
@@ -870,51 +967,6 @@
     "img": "images/items/Nayru.png",
     "codes": "Nayru"
   },
-  // Potion to Cleanse the Seas
-  {
-    "name": "Fairy Powder",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/powder.png",
-    "codes": "powder"
-  },
-  {
-    "name": "Magic Potion",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/potion.png",
-    "codes": "potion"
-  },
-  {
-    "name": "Powder/Potion",
-    "type": "composite_toggle",
-    "item_left": "powder",
-    "item_right": "potion",
-    "codes": "powderpotion",
-    "images": [
-      {
-        "left": false,
-        "right": false,
-        "img": "images/items/powderpotion_a.png"
-      },
-      {
-        "left": true,
-        "right": false,
-        "img": "images/items/powderpotion_b.png"
-      },
-      {
-        "left": false,
-        "right": true,
-        "img": "images/items/powderpotion_c.png"
-      },
-      {
-        "left": true,
-        "right": true,
-        "img": "images/items/powderpotion_d.png"
-      }
-    ]
-  },
-  // Fairy Queen to Cleanse the Seas
   {
     "name": "Fairy Queen",
     "type": "toggle",
@@ -922,15 +974,6 @@
     "img": "images/items/greatfairy.png",
     "codes": "curefairy"
   },
-  // Maku Path Key
-  {
-    "name": "Maku Path Small Key",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/smallkey.png",
-    "codes": "pathkey"
-  },
-  // Turn in Seedling
   {
     "name": "Turn in Seedling to Crescent",
     "type": "toggle",
@@ -938,7 +981,6 @@
     "img": "images/items/seedling.png",
     "codes": "turninseedling"
   },
-  // King Zora/Jabu
   {
     "name": "King Zora",
     "type": "toggle",
@@ -953,12 +995,12 @@
     "img": "images/items/jabu.png",
     "codes": "enterjabu"
   },
+
   // Dungeon Entrances
   {
     "name": "Maku Road Entrance",
     "type": "toggle",
     "loop": true,
-    //"allow_disabled": false,
     "initial_active_state": true,
     "img": "images/dungeons/d0_entrance.png",
     "codes": "mrer"
@@ -1043,6 +1085,7 @@
     "img": "images/dungeons/d8_entrance.png",
     "codes": "d8er"
   },
+
   // Dungeon Texts (lots of duplicates here to make it work lol)
   {
     "name": "Maku Road Entrances",
@@ -1070,11 +1113,6 @@
         "inherit_codes": false,
         "img": "images/dungeons/d2_past_entrance.png"
       },
-      //{
-      //  "codes": "wingdungeonpresent0",
-      //  "inherit_codes": false,
-      //  "img": "images/dungeons/d2_entrance.png"
-      //},
       {
         "codes": "moonlitgrotto0",
         "inherit_codes": false,
@@ -1138,11 +1176,6 @@
         "inherit_codes": false,
         "img": "images/dungeons/d2_past_entrance.png"
       },
-      //{
-      //  "codes": "wingdungeonpresent1",
-      //  "inherit_codes": false,
-      //  "img": "images/dungeons/d2_entrance.png"
-      //},
       {
         "codes": "moonlitgrotto1",
         "inherit_codes": false,
@@ -1206,11 +1239,6 @@
         "inherit_codes": false,
         "img": "images/dungeons/d2_past_entrance.png"
       },
-      //{
-      //  "codes": "wingdungeonpresent2",
-      //  "inherit_codes": false,
-      //  "img": "images/dungeons/d2_entrance.png"
-      //},
       {
         "codes": "moonlitgrotto2",
         "inherit_codes": false,
@@ -1274,11 +1302,6 @@
         "inherit_codes": false,
         "img": "images/dungeons/d2_past_entrance.png"
       },
-      //{
-      //  "codes": "wingdungeonpresent3",
-      //  "inherit_codes": false,
-      //  "img": "images/dungeons/d2_entrance.png"
-      //},
       {
         "codes": "moonlitgrotto3",
         "inherit_codes": false,
@@ -1342,11 +1365,6 @@
         "inherit_codes": false,
         "img": "images/dungeons/d2_past_entrance.png"
       },
-      //{
-      //  "codes": "wingdungeonpresent4",
-      //  "inherit_codes": false,
-      //  "img": "images/dungeons/d2_entrance.png"
-      //},
       {
         "codes": "moonlitgrotto4",
         "inherit_codes": false,
@@ -1410,11 +1428,6 @@
         "inherit_codes": false,
         "img": "images/dungeons/d2_past_entrance.png"
       },
-      //{
-      //  "codes": "wingdungeonpresent5",
-      //  "inherit_codes": false,
-      //  "img": "images/dungeons/d2_entrance.png"
-      //},
       {
         "codes": "moonlitgrotto5",
         "inherit_codes": false,
@@ -1478,11 +1491,6 @@
         "inherit_codes": false,
         "img": "images/dungeons/d2_past_entrance.png"
       },
-      //{
-      //  "codes": "wingdungeonpresent6p",
-      //  "inherit_codes": false,
-      //  "img": "images/dungeons/d2_entrance.png"
-      //},
       {
         "codes": "moonlitgrotto6p",
         "inherit_codes": false,
@@ -1546,11 +1554,6 @@
         "inherit_codes": false,
         "img": "images/dungeons/d2_past_entrance.png"
       },
-      //{
-      //  "codes": "wingdungeonpresent6",
-      //  "inherit_codes": false,
-      //  "img": "images/dungeons/d2_entrance.png"
-      //},
       {
         "codes": "moonlitgrotto6",
         "inherit_codes": false,
@@ -1614,11 +1617,6 @@
         "inherit_codes": false,
         "img": "images/dungeons/d2_past_entrance.png"
       },
-      //{
-      //  "codes": "wingdungeonpresent7",
-      //  "inherit_codes": false,
-      //  "img": "images/dungeons/d2_entrance.png"
-      //},
       {
         "codes": "moonlitgrotto7",
         "inherit_codes": false,
@@ -1682,11 +1680,6 @@
         "inherit_codes": false,
         "img": "images/dungeons/d2_past_entrance.png"
       },
-      //{
-      //  "codes": "wingdungeonpresent8",
-      //  "inherit_codes": false,
-      //  "img": "images/dungeons/d2_entrance.png"
-      //},
       {
         "codes": "moonlitgrotto8",
         "inherit_codes": false,
@@ -1731,7 +1724,7 @@
     "img": "images/items/foundmakuroad.png",
     "codes": "foundmakuroad"
   },
-  // CROSS-ITEMS LIST
+  // CROSS-ITEMS LIST (REMOVE?)
   {
     "name": "Magnet Gloves",
     "type": "toggle",
@@ -1766,85 +1759,5 @@
     "loop": true,
     "img": "images/items/rodofseasons.png",
     "codes": "rodofseasons"
-  },
-  {
-    "name": "Biggoron's Sword",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/goron sword.png",
-    "codes": "bigsword, Biggoron's Sword"
-  },
-  // TRADE ITEMS
-  {
-    "name": "Poe Clock",
-    "type": "toggle",
-    "img": "images/items/Poe Clock.png",
-    "codes": "poeclock"
-  },
-  {
-    "name": "Stationary",
-    "type": "toggle",
-    "img": "images/items/Stationery.png",
-    "codes": "stationary"
-  },
-  {
-    "name": "Stink Bag",
-    "type": "toggle",
-    "img": "images/items/Stink Bag.png",
-    "codes": "stinkbag"
-  },
-  {
-    "name": "Tasty Meat",
-    "type": "toggle",
-    "img": "images/items/Tasty Meat.png",
-    "codes": "tastymeat"
-  },
-  {
-    "name": "Doggie Mask",
-    "type": "toggle",
-    "img": "images/items/Doggie Mask.png",
-    "codes": "doggiemask"
-  },
-  {
-    "name": "Dumbbell",
-    "type": "toggle",
-    "img": "images/items/Dumbbell.png",
-    "codes": "dumbbell"
-  },
-  {
-    "name": "Cheesy Mustache",
-    "type": "toggle",
-    "img": "images/items/Cheesy Mustache.png",
-    "codes": "mustache"
-  },
-  {
-    "name": "Funny Joke",
-    "type": "toggle",
-    "img": "images/items/Funny Joke.png",
-    "codes": "funnyjoke"
-  },
-  {
-    "name": "Touching Book",
-    "type": "toggle",
-    "img": "images/items/Touching Book.png",
-    "codes": "touchingbook"
-  },
-  {
-    "name": "Magic Oar",
-    "type": "toggle",
-    "img": "images/items/Magic Oar.png",
-    "codes": "magicoar"
-  },
-  {
-    "name": "Sea Ukulele",
-    "type": "toggle",
-    "img": "images/items/Sea Ukelele.png",
-    "codes": "seaukulele"
-  },
-  {
-    "name": "Broken Sword",
-    "type": "toggle",
-    "img": "images/items/Broken Sword.png",
-    "codes": "brokensword"
   }
 ]
