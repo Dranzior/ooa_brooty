@@ -1,3 +1,5 @@
+ScriptHost:LoadScript("scripts/logic/data_mapping.lua")
+
 IsStale = true
 Staleness = 0
 
@@ -146,11 +148,6 @@ end
 
 
 function StateChange()
-	-- print("StateChange stated", IsStale)
-	-- if (not IsStale) then
-	-- 	return
-	-- end
-	
 	-- fixes certain CanReach calls permanently marking locs as green, even after removing items
 	for _, location in pairs(NamedLocations) do
 		location.accessibility_level = 0
@@ -184,9 +181,16 @@ function CanReach(name)
 end
 
 function Has(item, amount)
-	if (amount == nil) then
-		amount = 1
+    if (amount == nil) then
+        amount = 1
+    end
+
+    -- Progressive item work a bit differently since the "amount" will actually act as the level
+    if (Progressive_item_codemapping[item] ~= nil) then
+        item = Progressive_item_codemapping[item] .. amount
+        amount = 1
 	end
+
 	local count = Tracker:ProviderCountForCode(item)
 	amount = tonumber(amount)
 	return count >= amount

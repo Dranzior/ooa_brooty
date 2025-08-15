@@ -258,23 +258,28 @@ function ooa_has_bombs(amount)
 end
 
 function ooa_has_flute()
-    return Any(
-        ooa_can_summon_ricky(),
-        ooa_can_summon_moosh(),
-        ooa_can_summon_dimitri()
-    )
+    return Has("Flute")
 end
 
 function ooa_can_summon_ricky()
-    return Has("Ricky's Flute")
+    return All(
+        ooa_has_flute(),
+        ooa_is_companion_ricky()
+    )
 end
 
 function ooa_can_summon_moosh()
-    return Has("Moosh's Flute")
+    return All(
+        ooa_has_flute(),
+        ooa_is_companion_moosh()
+    )
 end
 
 function ooa_can_summon_dimitri()
-    return Has("Dimitri's Flute")
+    return All(
+        ooa_has_flute(),
+        ooa_is_companion_dimitri()
+    )
 end
 
 function ooa_can_open_portal()

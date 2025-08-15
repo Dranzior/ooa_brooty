@@ -12,3 +12,14 @@ d6_past_entrance:connect_two_ways(enter_d6_past)
 d6_present_entrance:connect_two_ways(enter_d6_present)
 d7_entrance:connect_two_ways(enter_d7)
 d8_entrance:connect_two_ways(enter_d8)
+
+Carpenter = OoALocation.New("Carpenter")
+nuun:connect_one_way(Carpenter, function() return Any(
+    ooa_can_go_back_to_present(),
+    ooa_has_flute(),
+    All(
+        ooa_is_companion_moosh(),
+        ooa_can_break_bush(),
+        ooa_can_jump_3_wide_pit(false),
+        ooa_option_hard_logic())
+    ) end)

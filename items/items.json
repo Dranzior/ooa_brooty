@@ -5,7 +5,7 @@
     "stages": [
       {
         "img": "images/items/shield1.png",
-        "codes": "shield, shield1, Progressive Shield"
+        "codes": "shield1, shield, Progressive Shield"
       },
       {
         "img": "images/items/shield2.png",
@@ -33,15 +33,15 @@
     "stages": [
       {
         "img": "images/items/sword1.png",
-        "codes": "swordupgrade, Progressive Sword"
+        "codes": "sword1, swordupgrade, Progressive Sword"
       },
       {
         "img": "images/items/sword2.png",
-        "codes": "swordupgrade, Progressive Sword"
+        "codes": "sword2, swordupgrade, Progressive Sword"
       },
       {
         "img": "images/items/Master Sword.png",
-        "codes": "swordupgrade, Progressive Sword"
+        "codes": "sword3, swordupgrade, Progressive Sword"
       }
     ]
   },
@@ -105,13 +105,12 @@
     "img": "images/items/goron sword.png",
     "codes": "bigsword, Biggoron's Sword"
   },
-  //TODO - determine if ID should be split
   {
     "name": "Flute",
     "type": "toggle",
     "loop": true,
     "img": "images/items/flute.png",
-    "codes": "flute, ocarina"
+    "codes": "flute, Flute"
   },
   {
     "name": "Seed Shooter",
@@ -662,49 +661,49 @@
     "type": "toggle",
     "loop": true,
     "img": "images/essences/d1.png",
-    "codes": "d1, Eternal Spirit"
+    "codes": "_finished_d1, d1, Eternal Spirit"
   },
   {
     "name": "Ancient Wood",
     "type": "toggle",
     "loop": true,
     "img": "images/essences/d2.png",
-    "codes": "d2, Ancient Wood"
+    "codes": "_finished_d2, d2, Ancient Wood"
   },
   {
     "name": "Echoing Howl",
     "type": "toggle",
     "loop": true,
     "img": "images/essences/d3.png",
-    "codes": "d3, Echoing Howl"
+    "codes": "_finished_d3, d3, Echoing Howl"
   },
   {
     "name": "Burning Flame",
     "type": "toggle",
     "loop": true,
     "img": "images/essences/d4.png",
-    "codes": "d4,Burning Flame"
+    "codes": "_finished_d4, d4,Burning Flame"
   },
   {
     "name": "Sacred Soil",
     "type": "toggle",
     "loop": true,
     "img": "images/essences/d5.png",
-    "codes": "d5, Sacred Soil"
+    "codes": "_finished_d5, d5, Sacred Soil"
   },
   {
     "name": "Lonely Peak",
     "type": "toggle",
     "loop": true,
     "img": "images/essences/d6.png",
-    "codes": "d6, Lonely Peak"
+    "codes": "_finished_d6, d6, Lonely Peak"
   },
   {
     "name": "Rolling Sea",
     "type": "toggle",
     "loop": true,
     "img": "images/essences/d7.png",
-    "codes": "d7, Rolling Sea"
+    "codes": "_finished_d7, d7, Rolling Sea"
   },
   {
     "name": "Falling Star",
@@ -712,13 +711,6 @@
     "loop": true,
     "img": "images/essences/d8.png",
     "codes": "d8, Falling Star"
-  },
-  {
-    "name": "Flute",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/flute.png",
-    "codes": "flute, ocarina"
   },
 
   // COMBO

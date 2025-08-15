@@ -159,10 +159,9 @@
                         ]
                     },
                     {
-                        // TODO DUNGEON ENTRANCE
                         "name": "Enter Maku Path (D0)",
                         "access_rules": [
-                            "$d0_entrance"
+                            "^$CanReach|d0_entrance"
                         ],
 						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
@@ -806,10 +805,9 @@
                         ]
                     },
                     {
-                        // TODO DUNGEON ENTRANCE
                         "name": "Enter Spirit's Grave (D1)",
                         "access_rules": [
-                            "$d1_entrance"
+                            "^$CanReach|d1_entrance"
                         ],
 						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
@@ -1063,10 +1061,9 @@
                         ]
                     },
                     {
-                        // TODO
                         "name": "Enter Wing Dungeon Past (D2)",
                         "access_rules": [
-                            "$deku_forest,bombs"
+                            "^$CanReach|d2_past_entrance"
                         ],
 						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
@@ -1074,8 +1071,7 @@
                                 "name": "",
                                 "item_count": 1,
                                 "chest_unopened_img": "images/bosses/d2.png",
-                                "chest_opened_img": "images/bosses/d2.png",
-                                "access_rules": []
+                                "chest_opened_img": "images/bosses/d2.png"
                             }
                         ],
                         "map_locations": [
@@ -1320,10 +1316,9 @@
                         ]
                     },
                     {
-                        // TODO DUNGEON ENTRANCE
                         "name": "Enter Moonlit Grotto (D3)",
                         "access_rules": [
-                            "$d3_entrance"
+                            "^$CanReach|d3_entrance"
                         ],
 						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
@@ -1495,21 +1490,15 @@
             {
                 "name": "Nuun Highlands|Symmetry City|Talus Peaks",
                 "children": [
-                    // TODO CARPENTER
                     {
                         "name": "Carpenter 1",
                         "access_rules": [
-                            "$moosh_flute",
-                            "nuun_moosh,currents"
+                            "^$CanReach|Carpenter"
                         ],
                         "sections": [
                             {
                                 "name": "(4,7)",
-                                "visibility_rules": [
-                                    "nuun_moosh"
-                                ],
-                                "hosted_item": "carpenter1",
-                                "access_rules": []
+                                "hosted_item": "carpenter1"
                             }
                         ],
                         "map_locations": [
@@ -1522,23 +1511,38 @@
                                 "map": "animal_moosh",
                                 "x": 216,
                                 "y": 103
+                            },
+                            {
+                                "map": "animal_regions",
+                                "x": 231,
+                                "y": 6
+                            },
+                            {
+                                "map": "animal_ricky",
+                                "x": 231,
+                                "y": 6
+                            },
+                            {
+                                "map": "animal_regions",
+                                "x": 872,
+                                "y": 70
+                            },
+                            {
+                                "map": "animal_dimitri",
+                                "x": 392,
+                                "y": 70
                             }
                         ]
                     },
                     {
                         "name": "Carpenter 2",
                         "access_rules": [
-                            "$moosh_flute",
-                            "nuun_moosh,currents"
+                            "^$CanReach|Carpenter"
                         ],
                         "sections": [
                             {
                                 "name": "(5,7)",
-                                "visibility_rules": [
-                                    "nuun_moosh"
-                                ],
-                                "hosted_item": "carpenter2",
-                                "access_rules": []
+                                "hosted_item": "carpenter2"
                             }
                         ],
                         "map_locations": [
@@ -1551,23 +1555,38 @@
                                 "map": "animal_moosh",
                                 "x": 440,
                                 "y": 102
+                            },
+                            {
+                                "map": "animal_regions",
+                                "x": 232,
+                                "y": 167
+                            },
+                            {
+                                "map": "animal_ricky",
+                                "x": 232,
+                                "y": 167
+                            },
+                            {
+                                "map": "animal_regions",
+                                "x": 919,
+                                "y": 344
+                            },
+                            {
+                                "map": "animal_dimitri",
+                                "x": 439,
+                                "y": 344
                             }
                         ]
                     },
                     {
                         "name": "Carpenter 3",
                         "access_rules": [
-                            "$moosh_flute",
-                            "nuun_moosh,currents"
+                            "^$CanReach|Carpenter"
                         ],
                         "sections": [
                             {
                                 "name": "(8,7)",
-                                "visibility_rules": [
-                                    "nuun_moosh"
-                                ],
-                                "hosted_item": "carpenter3",
-                                "access_rules": []
+                                "hosted_item": "carpenter3"
                             }
                         ],
                         "map_locations": [
@@ -1580,179 +1599,23 @@
                                 "map": "animal_moosh",
                                 "x": 390,
                                 "y": 230
-                            }
-                        ]
-                    },
-                    // Ricky Carpenters
-                    {
-                        "name": "Carpenter 1",
-                        "access_rules": [
-                            "$ricky_flute",
-                            "nuun_ricky,currents"
-                        ],
-                        "sections": [
-                            {
-                                "name": "(4,3)",
-                                "visibility_rules": [
-                                    "nuun_ricky"
-                                ],
-                                "hosted_item": "carpenter1",
-                                "access_rules": []
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "animal_regions",
-                                "x": 231,
-                                "y": 6
                             },
-							{
-                                "map": "animal_ricky",
-                                "x": 231,
-                                "y": 6
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Carpenter 2",
-                        "access_rules": [
-                            "$ricky_flute",
-                            "nuun_ricky,currents"
-                        ],
-                        "sections": [
-                            {
-                                "name": "(4,7)",
-                                "visibility_rules": [
-                                    "nuun_ricky"
-                                ],
-                                "hosted_item": "carpenter2",
-                                "access_rules": []
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "animal_regions",
-                                "x": 232,
-                                "y": 167
-                            },
-							{
-                                "map": "animal_ricky",
-                                "x": 232,
-                                "y": 167
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Carpenter 3",
-                        "access_rules": [
-                            "$ricky_flute",
-                            "nuun_ricky,currents"
-                        ],
-                        "sections": [
-                            {
-                                "name": "(5,3)",
-                                "visibility_rules": [
-                                    "nuun_ricky"
-                                ],
-                                "hosted_item": "carpenter3",
-                                "access_rules": []
-                            }
-                        ],
-                        "map_locations": [
                             {
                                 "map": "animal_regions",
                                 "x": 400,
                                 "y": 164
                             },
-							{
+                            {
                                 "map": "animal_ricky",
                                 "x": 400,
                                 "y": 164
-                            }
-                        ]
-                    },
-                    // Dimitri Carpenters
-                    {
-                        "name": "Carpenter 1",
-                        "access_rules": [
-                            "$dimitri_flute",
-                            "nuun_dimitri,currents"
-                        ],
-                        "sections": [
-                            {
-                                "name": "(6,5)",
-                                "visibility_rules": [
-                                    "nuun_dimitri"
-                                ],
-                                "hosted_item": "carpenter1",
-                                "access_rules": []
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "animal_regions",
-                                "x": 872,
-                                "y": 70
                             },
-							{
-                                "map": "animal_dimitri",
-                                "x": 392,
-                                "y": 70
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Carpenter 2",
-                        "access_rules": [
-                            "$dimitri_flute",
-                            "nuun_dimitri,currents"
-                        ],
-                        "sections": [
-                            {
-                                "name": "(9,6)",
-                                "visibility_rules": [
-                                    "nuun_dimitri"
-                                ],
-                                "hosted_item": "carpenter2",
-                                "access_rules": []
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "animal_regions",
-                                "x": 919,
-                                "y": 344
-                            },
-							{
-                                "map": "animal_dimitri",
-                                "x": 439,
-                                "y": 344
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Carpenter 3",
-                        "access_rules": [
-                            "$dimitri_flute",
-                            "nuun_dimitri,currents"
-                        ],
-                        "sections": [
-                            {
-                                "name": "(5,3)",
-                                "visibility_rules": [
-                                    "nuun_dimitri"
-                                ],
-                                "hosted_item": "carpenter3",
-                                "access_rules": []
-                            }
-                        ],
-                        "map_locations": [
                             {
                                 "map": "animal_regions",
                                 "x": 712,
                                 "y": 166
                             },
-							{
+                            {
                                 "map": "animal_dimitri",
                                 "x": 232,
                                 "y": 166
@@ -1971,10 +1834,9 @@
                         ]
                     },
                     {
-                        // TODO DUNGEON ENTRANCES
                         "name": "Enter Skull Dungeon (D4)",
                         "access_rules": [
-                            "$d4_entrance"
+                            "^$CanReach|d4_entrance"
                         ],
 						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
@@ -2190,25 +2052,16 @@
                         ]
                     },
                     {
-                        // TODO DUNGEON ENTRANCE
                         "name": "Enter Crown Dungeon (D5)",
                         "access_rules": [
-                            // Vanilla way, by beating Moblin Keep
-                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, crownkey",
-                            "$west_ridge_present, cape, bracelet, crownkey",
-                            // From East Ridge
-                            "$lynna_village, feather, mermaid, hook1, bracelet, currents, crownkey",
-                            "$lynna_village, $jump3, mermaid, bracelet, currents, crownkey",
-                            "$lynna_village, ages, mermaid, hook1, crownkey",
-                            "$lynna_village, ages, mermaid, $jump3, crownkey"
+                            "^$CanReach|d5_entrance"
                         ],
 						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
                             {
                                 "name": "",
                                 "chest_unopened_img": "images/bosses/d5.png",
-                                "chest_opened_img": "images/bosses/d5.png",
-                                "access_rules": []
+                                "chest_opened_img": "images/bosses/d5.png"
                             }
                         ],
                         "map_locations": [
@@ -2383,15 +2236,9 @@
                         ]
                     },
                     {
-                        // TODO DUNGEON ENTRANCE
                         "name": "Enter Mermaid's Cave [Present] (D6)",
                         "access_rules": [
-                            //from Lynna, swimming
-                            "d6keypresent, $lynna_village, feather, mermaid, currents",
-                            "d6keypresent, $lynna_village, ages, mermaid",
-                            //from the upper cave
-                            "d6keypresent, $west_ridge_present, $pegasus_satchel, bracelet, feather",
-                            "d6keypresent, $west_ridge_present, $jump3, bracelet"
+                            "^$CanReach|d6_past_entrance"
                         ],
 						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
@@ -2641,14 +2488,9 @@
                         ]
                     },
                     {
-                        // TODO DUNGEON ENTRANCE
                         "name": "Enter Mermaid's Cave [Past] (D6)",
                         "access_rules": [
-                            //from Lynna, swimming
-                            "d6keypast, $lynna_village, feather, mermaid",
-                            "d6keypast, $lynna_village, ages, mermaid",
-                            //from the upper cave, requires emblem?
-                            "d6keypast, $west_ridge_present, $jump3, bracelet, echoes, flippers"
+                            "^$CanReach|d6_present_entrance"
                         ],
 						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
@@ -2902,14 +2744,12 @@
                     {
                         "name": "Library Past",
                         "access_rules": [
+                            "{^$CanReach|library_past}",
                             "^$CanReach|library_past"
                         ],
                         "sections": [
                             {
                                 "name": "",
-                                "access_rules": [
-                                    "{}"
-                                ],
                                 "item_count": 1
                             }
                         ],
@@ -2960,15 +2800,14 @@
                         ]
                     },
                     {
-                        // TODO DUNGEON ENTRANCE
                         "name": "Enter Jabu-Jabu's Belly (D7)",
-						"visibility_rules": ["dungeon_er_on"],
+                        "access_rules": [
+                            "^$CanReach|d7_entrance"
+                        ],
+                        "visibility_rules": ["dungeon_er_on"],
                         "sections": [
                             {
                                 "name": "",
-                                "access_rules": [
-                                    "enterjabu"
-                                ],
                                 "chest_unopened_img": "images/bosses/d7.png",
                                 "chest_opened_img": "images/bosses/d7.png"
                             }
@@ -3140,13 +2979,11 @@
                         ]
                     },
                     {
-                        // TODO DUNGEON ENTRANCE
                         "name": "Enter Ancient Tomb (D8)",
                         "access_rules": [
-                            "$d8_entrance",
-                            "[l_hard], $d8_entrance_h"
+                            "^$CanReach|d8_entrance"
                         ],
-						"visibility_rules": ["dungeon_er_on"],
+                        "visibility_rules": ["dungeon_er_on"],
                         "sections": [
                             {
                                 "name": "",
