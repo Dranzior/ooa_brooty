@@ -135,7 +135,7 @@ function ooa_has_boss_key(dungeon_id)
     )
 end
 
--- Options and generation predicates ###########################################
+-- Options and generation predicates
 
 function ooa_option_medium_logic()
     if Has("l_med") or Has("l_hard") then
@@ -166,7 +166,8 @@ function ooa_is_companion_dimitri()
 end
 
 function ooa_has_essences(target_count)
-    return essences() >= target_count
+-- TODO FIX THIS
+    return 8 >= target_count
 end
 
 function ooa_has_essences_for_maku_seed()
@@ -181,7 +182,7 @@ function ooa_has_enough_slates()
     return ooa_has_slates(Tracker:ProviderCountForCode("requiredslates"))
 end
 
--- Various item predicates ###########################################
+-- Various item predicates
 
 function ooa_has_rupees(amount)
     -- Rupee checks being quite approximative, being able to farm is a
@@ -189,8 +190,8 @@ function ooa_has_rupees(amount)
     if not ooa_can_farm_rupees() then
         return false
     end
-
-    rupees = Tracker:ProviderCountForCode("Rupees (1)")
+    rupees = amount --TODO Implement rupee logic
+    --rupees = Tracker:ProviderCountForCode("Rupees (1)")
     rupees = rupees + Tracker:ProviderCountForCode("Rupees (5)") * 5
     rupees = rupees + Tracker:ProviderCountForCode("Rupees (10)") * 10
     rupees = rupees + Tracker:ProviderCountForCode("Rupees (20)") * 20
@@ -288,7 +289,7 @@ function ooa_can_switch_past_and_present()
     return Has("Progressive Harp", 3)
 end
 
--- Jump-related predicates ###########################################
+-- Jump-related predicates
 
 function ooa_can_jump_1_wide_liquid(can_summon_companion)
     return Any(
@@ -378,7 +379,7 @@ function ooa_can_jump_4_wide_pit(can_summon_companion)
     )
 end
 
--- Seed-related predicates ###########################################
+-- Seed-related predicates
 
 function ooa_can_use_seeds()
     return ooa_has_seedshooter() or ooa_has_satchel()
@@ -490,7 +491,7 @@ function ooa_can_use_mystery_seeds()
     )
 end
 
--- Break / kill predicates ###########################################
+-- Break / kill predicates
 
 function ooa_can_break_bush(can_summon_companion)
     can_summon_companion = default(can_summon_companion, false)
@@ -511,7 +512,6 @@ function ooa_can_break_bush(can_summon_companion)
             )
         )
     )
-    print("TEST INFO"..var)
     return var
 end
 
@@ -818,7 +818,7 @@ function ooa_can_kill_spiked_beetle()
     )
 end
 
--- Action predicates ###########################################
+-- Action predicates
 
 function ooa_can_swim(can_summon_companion)
     return ooa_has_flippers() or (can_summon_companion and ooa_can_summon_dimitri())

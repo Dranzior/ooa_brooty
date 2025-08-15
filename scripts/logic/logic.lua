@@ -180,7 +180,6 @@ function CanReach(name)
 		end
 		return AccessibilityLevel.None
 	end
-    print("location "..name.." acessibility is "..location:accessibility())
 	return location:accessibility()
 end
 
@@ -189,7 +188,6 @@ function Has(item, amount)
 		amount = 1
 	end
 	local count = Tracker:ProviderCountForCode(item)
-	print("item name ".. item .. " count: "..count)
 	amount = tonumber(amount)
 	return count >= amount
 end
