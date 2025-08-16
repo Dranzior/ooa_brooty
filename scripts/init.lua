@@ -30,8 +30,8 @@ ScriptHost:LoadScript("scripts/logic/generated/d6.lua")
 ScriptHost:LoadScript("scripts/logic/generated/d7.lua")
 ScriptHost:LoadScript("scripts/logic/generated/d8.lua")
 
-ScriptHost:LoadScript("scripts/logic/dungeon_entrance.lua")
-ScriptHost:LoadScript("scripts/logic/overworld_custom_path.lua")
+ScriptHost:LoadScript("scripts/logic/custom_path/dungeon_entrance.lua")
+ScriptHost:LoadScript("scripts/logic/custom_path/overworld_custom_path.lua")
 
 StateChange()
 

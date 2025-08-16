@@ -589,18 +589,22 @@ function ooa_can_break_sign()
 end
 
 function ooa_can_harvest_tree(can_use_companion)
-    return All(
-        ooa_can_use_seeds(),
-        Any(
-            ooa_has_sword(),
-            ooa_can_punch(),
-            All(
-                can_use_companion,
-                ooa_option_medium_logic(),
-                ooa_can_summon_dimitri()
+    return Any(
+        All(
+            ooa_can_use_seeds(),
+            Any(
+                ooa_has_sword(),
+                ooa_can_punch(),
+                All(
+                    can_use_companion,
+                    ooa_option_medium_logic(),
+                    ooa_can_summon_dimitri()
+                )
             )
-        )
+        ),
+        AccessibilityLevel.Inspect -- If you can't harvest a tree, at least you should be able to scout it
     )
+
 end
 
 function ooa_can_push_enemy()

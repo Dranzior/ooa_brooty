@@ -52,17 +52,15 @@
                 "children": [
                     {
                         "name": "Lynna City Seed Tree",
-                        "chest_unopened_img": "images/items/tree.png",
-                        "chest_opened_img": "images/items/tree_gray.png",
+
                         "access_rules": [
-                            "^$CanReach|south_lynna_tree",
-                            "{^$CanReach|lynna_city}"
+                            "^$CanReach|south_lynna_tree"
                         ],
                         "sections": [
                             {
                                 "name": "",
-                                "item_count": 1,
-                                "access_rules": []
+                                "chest_unopened_img": "images/items/tree.png",
+                                "chest_opened_img": "images/items/tree_gray.png"
                             }
                         ],
                         "map_locations": [
@@ -407,16 +405,13 @@
                     {
                         "name": "Ambi's Palace: Seed Tree",
                         "access_rules": [
-                            "^$CanReach|ambis_palace_tree",
-                            "{^$CanReach|lynna_village}"
+                            "^$CanReach|ambis_palace_tree"
                         ],
                         "sections": [
                             {
                                 "name": "",
-                                "item_count": 1,
                                 "chest_unopened_img": "images/items/tree.png",
-                                "chest_opened_img": "images/items/tree_gray.png",
-                                "access_rules": []
+                                "chest_opened_img": "images/items/tree_gray.png"
                             }
                         ],
                         "map_locations": [
@@ -965,16 +960,13 @@
                     {
                         "name": "Deku Forest Seed Tree",
                         "access_rules": [
-                            "{$deku_forest}",
                             "^$CanReach|deku_forest_tree"
                         ],
                         "sections": [
                             {
                                 "name": "",
-                                "item_count": 1,
                                 "chest_unopened_img": "images/items/tree.png",
-                                "chest_opened_img": "images/items/tree_gray.png",
-                                "access_rules": []
+                                "chest_opened_img": "images/items/tree_gray.png"
                             }
                         ],
                         "map_locations": [
@@ -1270,13 +1262,11 @@
                     {
                         "name": "Crescent Island Seed Tree",
                         "access_rules": [
-                            "{$crescenttree,turninseedling}",
                             "^$CanReach|crescent_island_tree"
                         ],
                         "sections": [
                             {
                                 "name": "",
-                                "item_count": 1,
                                 "chest_unopened_img": "images/items/tree.png",
                                 "chest_opened_img": "images/items/tree_gray.png"
                             }
@@ -1667,13 +1657,11 @@
                     {
                         "name": "Symmetry City: Seed Tree",
                         "access_rules": [
-                            "{$symmetrypresent}",
                             "^$CanReach|symmetry_city_tree"
                         ],
                         "sections": [
                             {
                                 "name": "",
-                                "item_count": 1,
                                 "chest_unopened_img": "images/items/tree.png",
                                 "chest_opened_img": "images/items/tree_gray.png"
                             }
@@ -1997,10 +1985,6 @@
                     {
                         "name": "Rolling Ridge West: Seed Tree",
                         "access_rules": [
-                            "{bombflower, feather, hook1}",
-                            "{currents, feather, hook1, bracelet}",
-                            "{$west_ridge_present, bracelet, echoes}",
-                            "{$west_ridge_present, ages}",
                             "^$CanReach|ridge_west_tree"
                         ],
                         "sections": [
@@ -2452,22 +2436,12 @@
                     },
                     {
                         "name": "Rolling Ridge East: Seed Tree",
-                        "color": "#ff7700",
                         "access_rules": [
-                            //from Lynna, swimming
-                            "{$lynna_village, feather, mermaid, currents, hook1}",
-                            "{$lynna_village, ages, mermaid, hook1}",
-                            "{$lynna_village, feather, mermaid, hook1, satchel, galeseeds}",
-                            "{$lynna_village, feather, mermaid, emblem, satchel, galeseeds}",
-                            //from Moblin cave
-                            "{$west_ridge_present, $jump3, bracelet, currents, hook1}",
-                            "{$west_ridge_present, $jump3, bracelet, satchel, galeseeds}",
                             "^$CanReach|ridge_east_tree"
                         ],
                         "sections": [
                             {
                                 "name": "",
-                                "access_rules": [],
                                 "chest_unopened_img": "images/items/tree.png",
                                 "chest_opened_img": "images/items/tree_gray.png"
                             }
@@ -2577,7 +2551,6 @@
                     {
                         "name": "Zora Village: Seed Tree",
                         "access_rules": [
-                            "{$zoratree}",
                             "^$CanReach|zora_village_tree"
                         ],
                         "sections": [

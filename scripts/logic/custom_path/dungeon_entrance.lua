@@ -1,4 +1,3 @@
-
 -- Dungeon entrance connection TODO: support entrance shuffle
 d0_entrance:connect_two_ways(enter_d0)
 d1_entrance:connect_two_ways(enter_d1)
@@ -11,6 +10,3 @@ d6_past_entrance:connect_two_ways(enter_d6_past)
 d6_present_entrance:connect_two_ways(enter_d6_present)
 d7_entrance:connect_two_ways(enter_d7)
 d8_entrance:connect_two_ways(enter_d8)
-
-
-

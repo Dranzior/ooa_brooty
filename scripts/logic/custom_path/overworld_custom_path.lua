@@ -4,18 +4,19 @@ StartLocation:connect_one_way_entrance(Menu)
 
 -- Nuun Carpenters custom location
 Carpenter = OoALocation.New("Carpenter")
-nuun:connect_one_way(Carpenter, function() return Any(
-    ooa_can_go_back_to_present(),
-    ooa_has_flute(),
-    All(
-        ooa_is_companion_moosh(),
-        ooa_can_break_bush(),
-        ooa_can_jump_3_wide_pit(false),
-        ooa_option_hard_logic())
+nuun:connect_one_way(Carpenter, function()
+    return Any(
+        ooa_can_go_back_to_present(),
+        ooa_has_flute(),
+        All(
+            ooa_is_companion_moosh(),
+            ooa_can_break_bush(),
+            ooa_can_jump_3_wide_pit(false),
+            ooa_option_hard_logic())
     )
 end)
 
--- insert Toggles into logic
+-- Insert Toggles into logic
 Raft_toggle = OoALocation.New("Raft_toggle")
 raftons_raft:insertIntermediateAfterCheck(crescent_past_west, Raft_toggle, function() return Has("raft_toggle") end)
 
