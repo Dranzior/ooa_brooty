@@ -166,8 +166,13 @@ function ooa_is_companion_dimitri()
 end
 
 function ooa_has_essences(target_count)
--- TODO FIX THIS
-    return 8 >= target_count
+    essenceCount = 0
+    for var = 1, 8 do
+        if (Tracker:ProviderCountForCode("d" .. var) > 0) then
+            essenceCount = essenceCount + 1
+        end
+    end
+    return essenceCount >= target_count
 end
 
 function ooa_has_essences_for_maku_seed()

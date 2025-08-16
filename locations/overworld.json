@@ -93,18 +93,16 @@
                         ]
                     },
                     {
-                        // TODO CUSTOM TOGGLE
                         "name": "Black Tower Ending",
-                        "access_rules": [],
+                        "access_rules": [
+                            "^$CanReach|veran_beaten"
+                        ],
                         "sections": [
                             {
                                 "name": "Fight Final Boss",
                                 "item_count": 1,
                                 "chest_unopened_img": "images/bosses/veran.png",
-                                "chest_opened_img": "images/bosses/veran_gray.png",
-                                "access_rules": [
-                                    "makuseed, $fight_veran"
-                                ]
+                                "chest_opened_img": "images/bosses/veran_gray.png"
                             }
                         ],
                         "map_locations": [
@@ -137,16 +135,14 @@
                         ]
                     },
                     {
-                        // TODO CUSTOM TOGGLE
                         "name": "Get Maku Seed for Go Mode",
-                        "access_rules": [],
+                        "access_rules": [
+                            "^$CanReach|maku_seed"
+                        ],
                         "sections": [
                             {
                                 "name": "",
-                                "hosted_item": "makuseed",
-                                "access_rules": [
-                                    "$goal"
-                                ]
+                                "hosted_item": "makuseed_toggle"
                             }
                         ],
                         "map_locations": [
@@ -288,17 +284,15 @@
                         ]
                     },
                     {
-                        // TODO CUSTOM TOGGLE
                         "name": "Get Raft for Sea Travel!",
                         "access_rules": [
-                            "$raft"
+                            "^$CanReach|raftons_raft"
                         ],
                         "sections": [
                             {
                                 "name": "",
                                 "item_count": 0,
-                                "hosted_item": "raft",
-                                "access_rules": []
+                                "hosted_item": "raft_toggle"
                             }
                         ],
                         "map_locations": [
@@ -1296,15 +1290,14 @@
                         ]
                     },
                     {
-                        // TODO CUSTOM TRIGGER
                         "name": "Turn in Seedling to Tokay",
                         "access_rules": [
-                            "$crescenttree"
+                            "^$CanReach|TurningSeedling_toggle"
                         ],
                         "sections": [
                             {
                                 "name": "",
-                                "hosted_item": "turninseedling"
+                                "hosted_item": "turningseedling_toggle"
                             }
                         ],
                         "map_locations": [
@@ -2644,13 +2637,11 @@
                                 "item_count": 1
                             },
                             {
-                                // TODO CUSTOM TRIGGER
                                 "name": "King Zora Permission to enter Jabu",
                                 "access_rules": [
-                                    "curefairy, curezora",
-                                    "curefairy, curezora"
+                                    "^$CanReach|KingZoraPermission_toggle, curefairy_toggle"
                                 ],
-                                "hosted_item": "enterjabu",
+                                "hosted_item": "enterjabu_toggle",
                                 "item_count": 0
                             }
                         ],
@@ -2663,15 +2654,14 @@
                         ]
                     },
                     {
-                        // TODO CUSTOM TRIGGER
                         "name": "Cure King Zora in the past",
                         "access_rules": [
-                            "potion"
+                            "^$CanReach|CureKingZora_toggle"
                         ],
                         "sections": [
                             {
                                 "name": "",
-                                "hosted_item": "curezora"
+                                "hosted_item": "curezora_toggle"
                             }
                         ],
                         "map_locations": [
@@ -2683,16 +2673,15 @@
                         ]
                     },
                     {
-                        // TODO CUSTOM TRIGGER
                         "name": "Cure the cursed Fairy",
                         "color": "#ff7700",
                         "access_rules": [
-                            "powder"
+                            "^$CanReach|CureFairy_toggle"
                         ],
                         "sections": [
                             {
                                 "name": "",
-                                "hosted_item": "curefairy"
+                                "hosted_item": "curefairy_toggle"
                             }
                         ],
                         "map_locations": [

@@ -223,7 +223,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/items/smallkey.png",
-    "codes": "pathkey, Small Key (Maku Path)"
+    "codes": "pathkey, d0sk, Small Key (Maku Path)"
   },
   {
     "name": "Small Key (Spirit's Grave)",
@@ -943,14 +943,14 @@
     "type": "toggle",
     "loop": true,
     "img": "images/items/makuseed.png",
-    "codes": "makuseed"
+    "codes": "makuseed_toggle"
   },
   {
     "name": "Raft",
     "type": "toggle",
     "loop": true,
     "img": "images/items/raft.png",
-    "codes": "raft"
+    "codes": "raft_toggle"
   },
   {
     "name": "Nayru",
@@ -964,28 +964,28 @@
     "type": "toggle",
     "loop": true,
     "img": "images/items/greatfairy.png",
-    "codes": "curefairy"
+    "codes": "curefairy_toggle"
   },
   {
     "name": "Turn in Seedling to Crescent",
     "type": "toggle",
     "loop": true,
     "img": "images/items/seedling.png",
-    "codes": "turninseedling"
+    "codes": "turningseedling_toggle"
   },
   {
     "name": "King Zora",
     "type": "toggle",
     "loop": true,
     "img": "images/items/kingzora.png",
-    "codes": "curezora"
+    "codes": "curezora_toggle"
   },
   {
     "name": "Jabu Entrance",
     "type": "toggle",
     "loop": true,
     "img": "images/items/jabu.png",
-    "codes": "enterjabu"
+    "codes": "enterjabu_toggle"
   },
 
   // Dungeon Entrances

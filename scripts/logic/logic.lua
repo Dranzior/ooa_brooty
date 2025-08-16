@@ -95,6 +95,15 @@ function OoALocation:accessibility()
 	return self.accessibility_level
 end
 
+function OoALocation:insertIntermediateAfterCheck(oldExit, intermediate, rule)
+    intermediate:connect_one_way_entrance(oldExit, rule)
+    for _, exit in pairs(self.exits) do
+        if exit[1] == oldExit then
+            exit[1] = intermediate
+        end
+    end
+end
+
 function OoALocation:discover(accessibility)
 	local change = false
     if accessibility > self:accessibility() then
