@@ -146,9 +146,9 @@
                         "map_locations": [
                             {
                                 "map": "map",
+                                "shape": "diamond",
                                 "x": 1385,
-                                "y": 453,
-                                "size": 60
+                                "y": 453
                             }
                         ]
                     },
@@ -1489,31 +1489,37 @@
                         "map_locations": [
                             {
                                 "map": "animal_regions",
+                                "shape": "diamond",
                                 "x": 1176,
                                 "y": 103
                             },
 							{
                                 "map": "animal_moosh",
+                                "shape": "diamond",
                                 "x": 216,
                                 "y": 103
                             },
                             {
                                 "map": "animal_regions",
+                                "shape": "diamond",
                                 "x": 231,
                                 "y": 6
                             },
                             {
                                 "map": "animal_ricky",
+                                "shape": "diamond",
                                 "x": 231,
                                 "y": 6
                             },
                             {
                                 "map": "animal_regions",
+                                "shape": "diamond",
                                 "x": 872,
                                 "y": 70
                             },
                             {
                                 "map": "animal_dimitri",
+                                "shape": "diamond",
                                 "x": 392,
                                 "y": 70
                             }
@@ -1533,31 +1539,37 @@
                         "map_locations": [
                             {
                                 "map": "animal_regions",
+                                "shape": "diamond",
                                 "x": 1400,
                                 "y": 102
                             },
 							{
                                 "map": "animal_moosh",
+                                "shape": "diamond",
                                 "x": 440,
                                 "y": 102
                             },
                             {
                                 "map": "animal_regions",
+                                "shape": "diamond",
                                 "x": 232,
                                 "y": 167
                             },
                             {
                                 "map": "animal_ricky",
+                                "shape": "diamond",
                                 "x": 232,
                                 "y": 167
                             },
                             {
                                 "map": "animal_regions",
+                                "shape": "diamond",
                                 "x": 919,
                                 "y": 344
                             },
                             {
                                 "map": "animal_dimitri",
+                                "shape": "diamond",
                                 "x": 439,
                                 "y": 344
                             }
@@ -1577,31 +1589,37 @@
                         "map_locations": [
                             {
                                 "map": "animal_regions",
+                                "shape": "diamond",
                                 "x": 1350,
                                 "y": 230
                             },
 							{
                                 "map": "animal_moosh",
+                                "shape": "diamond",
                                 "x": 390,
                                 "y": 230
                             },
                             {
                                 "map": "animal_regions",
+                                "shape": "diamond",
                                 "x": 400,
                                 "y": 164
                             },
                             {
                                 "map": "animal_ricky",
+                                "shape": "diamond",
                                 "x": 400,
                                 "y": 164
                             },
                             {
                                 "map": "animal_regions",
+                                "shape": "diamond",
                                 "x": 712,
                                 "y": 166
                             },
                             {
                                 "map": "animal_dimitri",
+                                "shape": "diamond",
                                 "x": 232,
                                 "y": 166
                             }
