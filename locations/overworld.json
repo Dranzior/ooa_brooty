@@ -296,6 +296,7 @@
                         "map_locations": [
                             {
                                 "map": "map",
+                                "shape": "diamond",
                                 "x": 3572,
                                 "y": 1308
                             }
@@ -1187,7 +1188,7 @@
                                 ]
                             },
                             {
-                                "name": "Tokay Market #1",
+                                "name": "Tokay Market #2",
                                 "item_count": 1,
                                 "access_rules": [
                                     "^$CanReach|tokay_market_2"
@@ -1293,6 +1294,7 @@
                         "map_locations": [
                             {
                                 "map": "map",
+                                "shape": "diamond",
                                 "x": 4347,
                                 "y": 1334
                             }
@@ -1760,7 +1762,7 @@
                     {
                         "name": "Talus Peaks Chest",
                         "access_rules": [
-                            "^$CanReach|patch_broken_sword_ceremony"
+                            "^$CanReach|talus_peaks_chest"
                         ],
                         "sections": [
                             {
@@ -2514,7 +2516,15 @@
 							{
 								"name": "Lonely Peak",
 								"ref": "Dungeons/Mermaid's Cave [Past] (D6)/Lonely Peak/Essence"
-							}
+							},
+                            {
+                                "name": "Open Bomb Wall in Past",
+                                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/Open Bomb Wall in Past/Will open this wall in D6 present"
+                            },
+                            {
+                                "name": "Light up the torch in the past",
+                                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/Light up the torch in the past/Will expand the canal in D6 present"
+                            }
                         ],
                         "map_locations": [
                             {
@@ -2640,6 +2650,7 @@
                         "map_locations": [
                             {
                                 "map": "map",
+                                "shape": "diamond",
                                 "x": 2581,
                                 "y": 1386
                             }
@@ -2660,6 +2671,7 @@
                         "map_locations": [
                             {
                                 "map": "map",
+                                "shape": "diamond",
                                 "x": 2924,
                                 "y": 1335
                             }
@@ -2706,7 +2718,6 @@
                     {
                         "name": "Library Past",
                         "access_rules": [
-                            "{^$CanReach|library_past}",
                             "^$CanReach|library_past"
                         ],
                         "sections": [

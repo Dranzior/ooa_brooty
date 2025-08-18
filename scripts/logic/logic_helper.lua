@@ -604,7 +604,6 @@ function ooa_can_harvest_tree(can_use_companion)
         ),
         AccessibilityLevel.Inspect -- If you can't harvest a tree, at least you should be able to scout it
     )
-
 end
 
 function ooa_can_push_enemy()
@@ -617,13 +616,14 @@ end
 function ooa_can_kill_normal_enemy(can_kill_with_hook, pit_available)
     can_kill_with_hook = default(can_kill_with_hook, false)
     pit_available = default(pit_available, false)
-    -- If a pit is avaiable nearby, it can be used to put the enemies inside using
-    -- items that are usually non-lethal
-    if pit_available and ooa_can_push_enemy() then
-        return true
+
+    canPush = AccessibilityLevel.None
+    if pit_available then
+        canPush = ooa_can_push_enemy()
     end
 
     return Any(
+        canPush,
         ooa_has_sword(),
         ooa_can_kill_normal_using_satchel(),
         ooa_can_kill_normal_using_seedshooter(),
@@ -636,16 +636,23 @@ end
 
 function ooa_can_kill_moldorm(pit_available)
     pit_available = default(pit_available, false)
-    if pit_available and ooa_can_push_enemy() then
-        return true
+
+    canPush = AccessibilityLevel.None
+    if pit_available then
+        canPush = ooa_can_push_enemy()
     end
 
     return Any(
+        canPush,
         ooa_has_sword(),
         ooa_can_use_scent_seeds_offensively(),
         -- Not including mystery seed, because even in hard logic this is just pure torture
-        (ooa_option_medium_logic() and ooa_has_bombs(4)),
-        (ooa_option_medium_logic() and ooa_has_cane()),
+        All(
+            ooa_option_medium_logic(),
+            ooa_has_bombs(4)),
+        All(
+            ooa_option_medium_logic(),
+            ooa_has_cane()),
         ooa_can_punch(),
         ooa_has_switch_hook()
     )
@@ -653,11 +660,14 @@ end
 
 function ooa_can_kill_wizzrobes(pit_available)
     pit_available = default(pit_available, false)
-    if pit_available and ooa_can_push_enemy() then
-        return true
+
+    canPush = AccessibilityLevel.None
+    if pit_available then
+        canPush =  ooa_can_push_enemy()
     end
 
     return Any(
+        canPush,
         ooa_has_sword(),
         ooa_can_kill_normal_using_satchel(),
         ooa_can_kill_normal_using_seedshooter(),

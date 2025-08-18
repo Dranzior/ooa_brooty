@@ -16,6 +16,9 @@ nuun:connect_one_way(Carpenter, function()
     )
 end)
 
+-- Overworld scouting
+lynna_village:connect_one_way_entrance(black_tower_heartpiece, function() return AccessibilityLevel.Inspect end)
+
 -- Insert Toggles into logic
 Raft_toggle = OoALocation.New("Raft_toggle")
 raftons_raft:insertIntermediateAfterCheck(crescent_past_west, Raft_toggle, function() return Has("raft_toggle") end)

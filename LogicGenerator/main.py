@@ -28,8 +28,8 @@ def cleanup_function(function_code):
 
     # convert function name
     function_code = function_code.replace("state.has", "Has")
-    function_code = function_code.replace("all(", "All(")
-    function_code = function_code.replace("any(", "Any(")
+    function_code = re.sub("all *\\(", "All(", function_code)
+    function_code = re.sub("any *\\(", "Any(", function_code)
 
     # convert boolean to LUA
     function_code = function_code.replace("True", "true")
@@ -89,8 +89,10 @@ def write_path_list(filename):
 
 def write_location_list(filename):
     global location_set
+    location_list = list(location_set)
+    location_list.sort()
     with open(filename, "w") as file:
-        for location in location_set:
+        for location in location_list:
             if location != "":
                 file.write(location + " = OoALocation.New(\""+location+"\")\n")
     location_set = {""}

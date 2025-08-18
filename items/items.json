@@ -156,10 +156,17 @@
   },
   {
     "name": "Seed Satchel",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/satchel.png",
-    "codes": "satchel, Seed Satchel"
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/satchel.png",
+        "codes": "satchel, satchel1, Seed Satchel"
+      },
+      {
+        "img": "images/items/satchel_plus.png",
+        "codes": "satchel, satchel2, Seed Satchel"
+      }
+    ]
   },
   {
     "name": "Ember Seeds",
@@ -712,7 +719,6 @@
     "img": "images/essences/d8.png",
     "codes": "d8, Falling Star"
   },
-
   // COMBO
   {
     "name": "Both Tuni Nuts",
@@ -936,7 +942,6 @@
       }
     ]
   },
-
   // OTHER TOGGLE
   {
     "name": "Maku Seed",
@@ -987,7 +992,20 @@
     "img": "images/items/jabu.png",
     "codes": "enterjabu_toggle"
   },
-
+  {
+    "name": "d6 wall B bomber",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/d6_wall_b_open.png",
+    "codes": "_d6_wall_B_bombed"
+  },
+  {
+    "name": "d6 canal expanded",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/d6_canal_expanded.png",
+    "codes": "_d6_canal_expanded"
+  },
   // Dungeon Entrances
   {
     "name": "Maku Road Entrance",
@@ -1077,7 +1095,6 @@
     "img": "images/dungeons/d8_entrance.png",
     "codes": "d8er"
   },
-
   // Dungeon Texts (lots of duplicates here to make it work lol)
   {
     "name": "Maku Road Entrances",

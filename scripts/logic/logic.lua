@@ -1,4 +1,4 @@
-ScriptHost:LoadScript("scripts/logic/data_mapping.lua")
+HasItem_CustomBehavior = {}
 
 IsStale = true
 Staleness = 0
@@ -48,7 +48,7 @@ function OoALocation:connect_one_way(exit, rule, requiredExit)
 	end
 end
 
--- markes a 2-way connection between 2 locations. acts as a shortcut for 2 connect_one_way-calls 
+-- markes a 2-way connection between 2 locations. acts as a shortcut for 2 connect_one_way-calls
 function OoALocation:connect_two_ways(exit, rule)
 	self:connect_one_way(exit, rule)
 	exit:connect_one_way(self, rule)
@@ -155,7 +155,6 @@ function SetAsStale()
 	IsStale = true
 end
 
-
 function StateChange()
 	-- fixes certain CanReach calls permanently marking locs as green, even after removing items
 	for _, location in pairs(NamedLocations) do
@@ -163,7 +162,7 @@ function StateChange()
 	end
 	IsStale = false
 	Staleness = Staleness + 1
-	StartLocation:discover(AccessibilityLevel.Normal)
+    StartLocation:discover(AccessibilityLevel.Normal)
 end
 
 function CanReach(name)
@@ -194,10 +193,10 @@ function Has(item, amount)
         amount = 1
     end
 
-    -- Progressive item work a bit differently since the "amount" will actually act as the level
-    if (Progressive_item_codemapping[item] ~= nil) then
-        item = Progressive_item_codemapping[item] .. amount
-        amount = 1
+    -- Certain item check coming from the AP world don't map directly into the tracker
+    -- this allow to define custom logic for certain item name
+    if (HasItem_CustomBehavior[item] ~= nil) then
+        return HasItem_CustomBehavior[item](amount)
 	end
 
 	local count = Tracker:ProviderCountForCode(item)

@@ -18,6 +18,7 @@ ScriptHost:LoadScript("scripts/utils.lua")
 -- Logic Framework
 ScriptHost:LoadScript("scripts/logic/logic.lua")
 ScriptHost:LoadScript("scripts/logic/logic_helper.lua")
+ScriptHost:LoadScript("scripts/logic/CustomItemsBehavior.lua")
 ScriptHost:LoadScript("scripts/logic/generated/location_definitions.lua")
 ScriptHost:LoadScript("scripts/logic/generated/overworld.lua")
 ScriptHost:LoadScript("scripts/logic/generated/d0.lua")

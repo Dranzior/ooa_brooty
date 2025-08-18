@@ -50,7 +50,7 @@ d6_wall_B_bombed:connect_one_way_entrance(d6_boss,function() return All(
                 ooa_has_sword(),
                 All(
                     ooa_has_seedshooter(),
-                    any (
+                    Any(
                         ooa_has_scent_seeds(),
                         ooa_has_ember_seeds())),
                 ooa_can_punch())
