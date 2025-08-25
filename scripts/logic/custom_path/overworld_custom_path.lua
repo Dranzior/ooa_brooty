@@ -41,3 +41,6 @@ zora_king_gift:insertIntermediateAfterCheck(d7_entrance, KingZoraPermission_togg
 TurningSeedling_toggle = OoALocation.New("TurningSeedling_toggle")
 crescent_past_west:insertIntermediateAfterCheck(crescent_island_tree, TurningSeedling_toggle,
     function() return Has("turningseedling_toggle") end)
+
+NayruRescued_toggle = OoALocation.New("NayruRescued_toggle")
+rescue_nayru:insertIntermediateAfterCheck(maku_tree, NayruRescued_toggle, function() return Has("Nayru") end)
