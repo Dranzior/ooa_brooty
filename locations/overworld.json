@@ -2235,7 +2235,7 @@
                     {
                         "name": "Enter Mermaid's Cave [Present] (D6)",
                         "access_rules": [
-                            "^$CanReach|d6_past_entrance"
+                            "^$CanReach|d6_present_entrance"
                         ],
 						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
@@ -2477,7 +2477,7 @@
                     {
                         "name": "Enter Mermaid's Cave [Past] (D6)",
                         "access_rules": [
-                            "^$CanReach|d6_present_entrance"
+                            "^$CanReach|d6_past_entrance"
                         ],
 						"visibility_rules": ["dungeon_er_on"],
                         "sections": [
