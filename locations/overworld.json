@@ -2537,11 +2537,11 @@
 							},
                             {
                                 "name": "Open Bomb Wall in Past",
-                                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/Open Bomb Wall in Past/Will open this wall in D6 present"
+                                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/Bomb the northern wall/Will open this wall in D6 present"
                             },
                             {
                                 "name": "Light up the torch in the past",
-                                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/Light up the torch in the past/Will expand the canal in D6 present"
+                                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/Light up the torches/Will expand the canal in D6 present"
                             }
                         ],
                         "map_locations": [
