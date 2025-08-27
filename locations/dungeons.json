@@ -1477,7 +1477,7 @@
                         ]
                     },
                     {
-                        "name": "Open Bomb Wall in Past",
+                        "name": "Bomb the northern wall",
                         "access_rules": [
                             "^$CanReach|d6_wall_B_bombed"
                         ],
@@ -1497,7 +1497,7 @@
                         ]
                     },
                     {
-                        "name": "Light up the torch in the past",
+                        "name": "Light up the torches",
                         "access_rules": [
                             "^$CanReach|d6_canal_expanded"
                         ],

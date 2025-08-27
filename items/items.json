@@ -944,67 +944,67 @@
   },
   // OTHER TOGGLE
   {
-    "name": "Maku Seed",
+    "name": "Get Maku Seed for Go Mode",
     "type": "toggle",
     "loop": true,
     "img": "images/items/makuseed.png",
     "codes": "makuseed_toggle"
   },
   {
-    "name": "Raft",
+    "name": "Get Raft for Sea Travel!",
     "type": "toggle",
     "loop": true,
     "img": "images/items/raft.png",
     "codes": "raft_toggle"
   },
   {
-    "name": "Nayru",
+    "name": "Rescue Nayru",
     "type": "toggle",
     "loop": true,
     "img": "images/items/Nayru.png",
     "codes": "Nayru"
   },
   {
-    "name": "Fairy Queen",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/greatfairy.png",
-    "codes": "curefairy_toggle"
-  },
-  {
-    "name": "Turn in Seedling to Crescent",
+    "name": "Turn in Seedling to Tokay",
     "type": "toggle",
     "loop": true,
     "img": "images/items/seedling.png",
     "codes": "turningseedling_toggle"
   },
   {
-    "name": "King Zora",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/kingzora.png",
-    "codes": "curezora_toggle"
-  },
-  {
-    "name": "Jabu Entrance",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/jabu.png",
-    "codes": "enterjabu_toggle"
-  },
-  {
-    "name": "d6 wall B bomber",
+    "name": "Bomb the northern wall in Mermaid's Cave (Past)",
     "type": "toggle",
     "loop": true,
     "img": "images/items/d6_wall_b_open.png",
     "codes": "_d6_wall_B_bombed"
   },
   {
-    "name": "d6 canal expanded",
+    "name": "Light up the torches in Mermaid's Cave (Past)",
     "type": "toggle",
     "loop": true,
     "img": "images/items/d6_canal_expanded.png",
     "codes": "_d6_canal_expanded"
+  },
+  {
+    "name": "Cure King Zora in the past",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/kingzora_cure.png",
+    "codes": "curezora_toggle"
+  },
+  {
+    "name": "Cure the cursed Fairy",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/greatfairy.png",
+    "codes": "curefairy_toggle"
+  },
+  {
+    "name": "King Zora Permission to enter Jabu",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/kingzora_access.png",
+    "codes": "enterjabu_toggle"
   },
   // Dungeon Entrances
   {
@@ -1732,41 +1732,5 @@
     "loop": true,
     "img": "images/items/foundmakuroad.png",
     "codes": "foundmakuroad"
-  },
-  // CROSS-ITEMS LIST (REMOVE?)
-  {
-    "name": "Magnet Gloves",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/magglovess.png",
-    "codes": "magnet"
-  },
-  {
-    "name": "Fool's Ore",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/foolsore.png",
-    "codes": "foolsore"
-  },
-  {
-    "name": "Slingshot",
-    "type": "progressive",
-    "stages": [
-      {
-        "img": "images/items/slingshot.png",
-        "codes": "slingshot"
-      },
-      {
-        "img": "images/items/slingshot2.png",
-        "codes": "slingshot2"
-      }
-    ]
-  },
-  {
-    "name": "Rod of Seasons",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/rodofseasons.png",
-    "codes": "rodofseasons"
   }
 ]
