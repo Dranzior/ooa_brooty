@@ -15,27 +15,36 @@ end
 -- Utility Script for helper functions etc.
 ScriptHost:LoadScript("scripts/utils.lua")
 
--- Logic
+-- Logic Framework
 ScriptHost:LoadScript("scripts/logic/logic.lua")
-ScriptHost:LoadScript("scripts/logic/dungeons.lua")
-ScriptHost:LoadScript("scripts/logic/dungeons_hard.lua")
-ScriptHost:LoadScript("scripts/logic/labrynna.lua")
+ScriptHost:LoadScript("scripts/logic/logic_helper.lua")
+ScriptHost:LoadScript("scripts/logic/CustomItemsBehavior.lua")
+ScriptHost:LoadScript("scripts/logic/generated/location_definitions.lua")
+ScriptHost:LoadScript("scripts/logic/generated/overworld.lua")
+ScriptHost:LoadScript("scripts/logic/generated/d0.lua")
+ScriptHost:LoadScript("scripts/logic/generated/d1.lua")
+ScriptHost:LoadScript("scripts/logic/generated/d2.lua")
+ScriptHost:LoadScript("scripts/logic/generated/d3.lua")
+ScriptHost:LoadScript("scripts/logic/generated/d4.lua")
+ScriptHost:LoadScript("scripts/logic/generated/d5.lua")
+ScriptHost:LoadScript("scripts/logic/generated/d6.lua")
+ScriptHost:LoadScript("scripts/logic/generated/d7.lua")
+ScriptHost:LoadScript("scripts/logic/generated/d8.lua")
 
--- Custom Items
---ScriptHost:LoadScript("scripts/custom_items/class.lua")
---ScriptHost:LoadScript("scripts/custom_items/progressiveTogglePlus.lua")
---ScriptHost:LoadScript("scripts/custom_items/progressiveTogglePlusWrapper.lua")
+ScriptHost:LoadScript("scripts/logic/custom_path/dungeon_entrance.lua")
+ScriptHost:LoadScript("scripts/logic/custom_path/overworld_custom_path.lua")
+
+StateChange()
 
 -- Items
 Tracker:AddItems("items/items.json")
 
 if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
     -- Maps
-    Tracker:AddMaps("maps/maps.json")    
+    Tracker:AddMaps("maps/maps.json")
     -- Locations
     Tracker:AddLocations("locations/overworld.json")
     Tracker:AddLocations("locations/dungeons.json")
-    --Tracker:AddLocations("locations/dungeons_shuffle.json")
 end
 
 -- Layout

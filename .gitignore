@@ -3,3 +3,5 @@ todo.*
 *.xcf
 /.vscode/
 .idea/
+/LogicGenerator/ReferenceFiles/
+__pycache__

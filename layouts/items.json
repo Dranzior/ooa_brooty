@@ -7,21 +7,18 @@
     "item_size": 39,
     "rows": [
       [
-        "sword",
+        "swordupgrade",
         "bigsword",
         "shield1",
         "lift1",
         "shooter",
         "flippers",
         "cane",
-        //"rodofseasons",
         "shovel"
       ],
       [
         "feather",
         "hook1",
-        //"magnet",
-        //"slingshot",
         "bombs",
         "satchel",
         "boomerang",
@@ -93,12 +90,24 @@
     "item_margin": "0,4",
     "item_size": 35,
     "rows": [
-        ["poeclock"],
-        ["stationary"],
-        ["stinkbag"],
-        ["tastymeat"],
-        ["doggiemask"],
-        ["dumbbell"]
+      [
+        "poeclock"
+      ],
+      [
+        "stationary"
+      ],
+      [
+        "stinkbag"
+      ],
+      [
+        "tastymeat"
+      ],
+      [
+        "doggiemask"
+      ],
+      [
+        "dumbbell"
+      ]
     ]
   },
   "trade2": {
@@ -108,15 +117,27 @@
     "item_margin": "0,4",
     "item_size": 35,
     "rows": [
-        ["mustache"],
-        ["funnyjoke"],
-        ["touchingbook"],
-        ["magicoar"],
-        ["seaukulele"],
-        ["brokensword"]
+      [
+        "mustache"
+      ],
+      [
+        "funnyjoke"
+      ],
+      [
+        "touchingbook"
+      ],
+      [
+        "magicoar"
+      ],
+      [
+        "seaukulele"
+      ],
+      [
+        "brokensword"
+      ]
     ]
   },
-  "instruments": {
+  "dungeons": {
     "type": "array",
     "orientation": "vertical",
     "content": [
@@ -174,16 +195,16 @@
             "item_size": 18,
             "rows": [
               [
-				"d1sk",
-				"",
+                "d1sk",
+                "",
                 "d1mk",
                 "",
                 "d1bk",
                 "",
                 "",
                 "",
-				"",
-				"",
+                "",
+                "",
                 "",
                 "",
                 "",
@@ -234,8 +255,8 @@
               [
                 "d3sk",
                 "",
-				"d3mk",
-				"",
+                "d3mk",
+                "",
                 "d3bk",
                 "",
                 "",
@@ -248,8 +269,8 @@
                 "",
                 "",
                 "d4sk",
-				"",
-				"d4mk",
+                "",
+                "d4mk",
                 "",
                 "d4bk"
               ]
@@ -292,8 +313,8 @@
             "rows": [
               [
                 "d5sk",
-				"",
-				"d5mk",
+                "",
+                "d5mk",
                 "",
                 "d5bk",
                 "",
@@ -307,12 +328,12 @@
                 "",
                 "",
                 "d6_1sk",
-				"",
-				"d6_1mk",
+                "",
+                "d6_1mk",
                 "",
                 "d6_2sk",
-				"",
-				"d6_2mk",
+                "",
+                "d6_2mk",
                 "",
                 "d6bk"
               ]
@@ -354,8 +375,8 @@
             "rows": [
               [
                 "d7sk",
-				"",
-				"d7mk",
+                "",
+                "d7mk",
                 "",
                 "d7bk",
                 "",
@@ -369,8 +390,8 @@
                 "",
                 "",
                 "d8sk",
-				"",
-				"d8mk",
+                "",
+                "d8mk",
                 "",
                 "d8slate",
                 "",
@@ -414,6 +435,63 @@
       [
         "advanceshop",
         ""
+      ]
+    ]
+  },
+  "toggle_tab_D3": {
+    "type": "itemgrid",
+    "orientation": "vertical",
+    "h_alignment": "center",
+    "margin": "0,2",
+    "item_margin": "10,0",
+    "item_size": 44,
+    "rows": [
+      [
+        "raft_toggle",
+        "turningseedling_toggle"
+      ]
+    ]
+  },
+  "toggle_tab_D6": {
+    "type": "itemgrid",
+    "orientation": "vertical",
+    "h_alignment": "center",
+    "margin": "0,2",
+    "item_margin": "10,0",
+    "item_size": 44,
+    "rows": [
+      [
+        "_d6_wall_B_bombed",
+        "_d6_canal_expanded"
+      ]
+    ]
+  },
+  "toggle_tab_D7": {
+    "type": "itemgrid",
+    "orientation": "vertical",
+    "h_alignment": "center",
+    "margin": "0,2",
+    "item_margin": "10,0",
+    "item_size": 44,
+    "rows": [
+      [
+        "curezora_toggle",
+        "curefairy_toggle",
+        "enterjabu_toggle"
+      ]
+    ]
+  },
+  "toggle_tab_Others": {
+    "type": "itemgrid",
+    "orientation": "vertical",
+    "h_alignment": "center",
+    "margin": "0,2",
+    "item_margin": "10,0",
+    "item_size": 44,
+    "rows": [
+      [
+        "Nayru",
+        "makuseed_toggle"
       ]
     ]
   },
@@ -568,13 +646,13 @@
       }
     ]
   },
-  "instrument_grid": {
+  "dungeons_grid": {
     "type": "array",
     "orientation": "vertical",
     "content": [
       {
         "type": "layout",
-        "key": "instruments"
+        "key": "dungeons"
       }
     ]
   },
@@ -599,6 +677,53 @@
       {
         "type": "layout",
         "key": "trade2"
+      }
+    ]
+  },
+  "toggle_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "dock": "left",
+    "content": [
+      {
+        "type": "group",
+        "header": "Tokay Island",
+        "dock": "left",
+        "content": {
+          "type": "layout",
+          "v_alignment": "right",
+          "key": "toggle_tab_D3"
+        }
+      },
+      {
+        "type": "group",
+        "header": "Mermaid Cave Past",
+        "dock": "top",
+        "content": {
+          "type": "layout",
+          "v_alignment": "left",
+          "key": "toggle_tab_D6"
+        }
+      },
+      {
+        "type": "group",
+        "header": "Zora Seas/Village",
+        "dock": "top",
+        "content": {
+          "type": "layout",
+          "v_alignment": "left",
+          "key": "toggle_tab_D7"
+        }
+      },
+      {
+        "type": "group",
+        "header": "Other Story",
+        "dock": "top",
+        "content": {
+          "type": "layout",
+          "v_alignment": "left",
+          "key": "toggle_tab_Others"
+        }
       }
     ]
   }
