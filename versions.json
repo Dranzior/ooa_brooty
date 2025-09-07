@@ -2,7 +2,6 @@
     "versions": [
 		{
 			"package_version": "0.9.0",
-			"package_version": "0.8.4",
             "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.0/ooa.zip",
             "sha256": "c2be8b73fdd96945f9f94520463438ce32cc79c6d1cdd43cb6037e389f955f68",
             "changelog":[
