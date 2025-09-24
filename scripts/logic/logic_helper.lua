@@ -12,7 +12,10 @@ function ooa_has_sword(accept_biggoron)
     accept_biggoron = default(accept_biggoron, true)
     return Any(
         Has("Progressive Sword"),
-        accept_biggoron and Has("Biggoron's Sword")
+        All(
+            accept_biggoron,
+            Has("Biggoron's Sword")
+        )
     )
 end
 
@@ -94,7 +97,10 @@ end
 function ooa_has_mystery_seeds()
     return Any(
         Has("Mystery Seeds"),
-        (Has("_wild_mystery_seeds") and ooa_option_medium_logic())
+        All(
+            Has("_wild_mystery_seeds"),
+            ooa_option_medium_logic()
+        )
     )
 end
 
@@ -138,19 +144,18 @@ end
 -- Options and generation predicates
 
 function ooa_option_medium_logic()
-    if Has("l_med") or Has("l_hard") then
-        return AccessibilityLevel.Normal
-    else
-        return AccessibilityLevel.SequenceBreak
-    end
+    return Any(
+        Has("l_med"),
+        Has("l_hard"),
+        AccessibilityLevel.SequenceBreak
+    )
 end
 
 function ooa_option_hard_logic()
-    if Has("l_hard") then
-        return AccessibilityLevel.Normal
-    else
-        return AccessibilityLevel.SequenceBreak
-    end
+    return Any(
+        Has("l_hard"),
+        AccessibilityLevel.SequenceBreak
+    )
 end
 
 function ooa_is_companion_ricky()
@@ -220,7 +225,10 @@ end
 function ooa_can_farm_rupees()
     -- Having Ember Seeds and a weapon or a shovel is enough to guarantee that we can reach
     -- a significant amount of rupees
-    return ooa_has_sword() or ooa_has_shovel()
+    return Any(
+        ooa_has_sword(),
+        ooa_has_shovel()
+    )
 end
 
 
@@ -392,7 +400,10 @@ end
 -- Seed-related predicates
 
 function ooa_can_use_seeds()
-    return ooa_has_seedshooter() or ooa_has_satchel()
+    return Any(
+        ooa_has_seedshooter(),
+        ooa_has_satchel()
+    )
 end
 
 function ooa_has_seed_kind_count(count)
@@ -476,19 +487,19 @@ end
 
 function ooa_can_use_gale_seeds_offensively(ranged)
     ranged = default(ranged, false)
-    -- If we don't have gale seeds or aren't at least in medium logic, don't even try
-    if not ooa_has_gale_seeds() or not ooa_option_medium_logic() then
-        return false
-    end
 
-    return Any(
-        ooa_has_seedshooter(),
-        All(
-            not ranged,
-            ooa_has_satchel(),
-            Any(
-                ooa_option_hard_logic(),
-                ooa_has_feather()
+    return All(
+        ooa_has_gale_seeds(),
+        ooa_option_medium_logic(),
+        Any(
+            ooa_has_seedshooter(),
+            All(
+                (not ranged),
+                ooa_has_satchel(),
+                Any(
+                    ooa_option_hard_logic(),
+                    ooa_has_feather()
+                )
             )
         )
     )
@@ -510,7 +521,10 @@ function ooa_can_break_bush(can_summon_companion)
         ooa_has_sword(),
         ooa_has_bracelet(),
         ooa_has_switch_hook(),
-        (can_summon_companion and ooa_has_flute()),
+        All(
+            can_summon_companion,
+            ooa_has_flute()
+        ),
         All(
             -- Consumables need at least medium logic, since they need a good knowledge of the game
             -- not to be frustrating
@@ -518,7 +532,10 @@ function ooa_can_break_bush(can_summon_companion)
             Any(
                 ooa_has_bombs(2),
                 ooa_can_use_ember_seeds(false),
-                (ooa_has_seedshooter() and ooa_has_gale_seeds())
+                All(
+                    ooa_has_seedshooter(),
+                    ooa_has_gale_seeds()
+                )
             )
         )
     )
@@ -526,18 +543,24 @@ function ooa_can_break_bush(can_summon_companion)
 end
 
 function ooa_can_break_tingle_balloon()
-    return Any(
-        ooa_has_sword(),
-        ooa_has_boomerang()
-        --ooa_can_punch(state), ?
-    ) and ooa_has_feather()
+    return All(
+        Any(
+            ooa_has_sword(),
+            ooa_has_boomerang()
+            --ooa_can_punch(state), ?
+        ),
+        ooa_has_feather()
+    )
 end
 
 function ooa_can_harvest_regrowing_bush(Allow_bombs)
     Allow_bombs = default(Allow_bombs, true)
     return Any(
         ooa_has_sword(),
-        (Allow_bombs and ooa_has_bombs())
+        All(
+            Allow_bombs,
+            ooa_has_bombs()
+        )
     )
 end
 
@@ -553,7 +576,10 @@ end
 function ooa_can_break_flowers(can_summon_companion)
     return Any(
         ooa_has_sword(),
-        (can_summon_companion and ooa_has_flute()),
+        All(
+            can_summon_companion,
+            ooa_has_flute()
+        ),
         All(
             -- Consumables need at least medium logic, since they need a good knowledge of the game
             -- not to be frustrating
@@ -561,7 +587,10 @@ function ooa_can_break_flowers(can_summon_companion)
             Any(
                 ooa_has_bombs(2),
                 ooa_can_use_ember_seeds(false),
-                (ooa_has_seedshooter() and ooa_has_gale_seeds())
+                All(
+                    ooa_has_seedshooter(),
+                    ooa_has_gale_seeds()
+                )
             )
         )
     )
@@ -627,10 +656,19 @@ function ooa_can_kill_normal_enemy(can_kill_with_hook, pit_available)
         ooa_has_sword(),
         ooa_can_kill_normal_using_satchel(),
         ooa_can_kill_normal_using_seedshooter(),
-        (ooa_option_medium_logic() and ooa_has_bombs(4)),
-        (ooa_option_medium_logic() and ooa_has_cane()),
+        All(
+            ooa_option_medium_logic(),
+            ooa_has_bombs(4)
+        ),
+        All(
+            ooa_option_medium_logic(),
+            ooa_has_cane()
+        ),
         ooa_can_punch(),
-        can_kill_with_hook and ooa_has_switch_hook()
+        All(
+            can_kill_with_hook,
+            ooa_has_switch_hook()
+        )
     )
 end
 
@@ -671,7 +709,10 @@ function ooa_can_kill_wizzrobes(pit_available)
         ooa_has_sword(),
         ooa_can_kill_normal_using_satchel(),
         ooa_can_kill_normal_using_seedshooter(),
-        (ooa_option_medium_logic() and ooa_has_bombs(4)),
+        All(
+            ooa_option_medium_logic(),
+            ooa_has_bombs(4)
+        ),
         ooa_can_punch()
     )
 end
@@ -691,7 +732,10 @@ function ooa_can_kill_underwater(can_kill_with_hook)
         ooa_has_sword(),
         ooa_can_kill_normal_using_seedshooter(),
         ooa_can_punch(),
-        can_kill_with_hook and ooa_has_switch_hook()
+        All(
+            can_kill_with_hook,
+            ooa_has_switch_hook()
+        )
     )
 end
 
@@ -757,7 +801,10 @@ function ooa_can_kill_armored_enemy()
                 ooa_option_medium_logic()
             )
         ),
-        (ooa_option_medium_logic() and ooa_has_cane()),
+        All(
+            ooa_option_medium_logic(),
+            ooa_has_cane()
+        ),
         ooa_can_punch()
     )
 end
@@ -845,11 +892,23 @@ end
 -- Action predicates
 
 function ooa_can_swim(can_summon_companion)
-    return ooa_has_flippers() or (can_summon_companion and ooa_can_summon_dimitri())
+    return Any(
+        ooa_has_flippers(),
+        All(
+            can_summon_companion,
+            ooa_can_summon_dimitri()
+        )
+    )
 end
 
 function ooa_can_swim_deepwater(can_summon_companion)
-    return ooa_has_siren_suit() or (can_summon_companion and ooa_can_summon_dimitri())
+    return Any(
+        ooa_has_siren_suit(),
+        All(
+            can_summon_companion,
+            ooa_can_summon_dimitri()
+        )
+    )
 end
 
 function ooa_can_dive()
@@ -857,11 +916,23 @@ function ooa_can_dive()
 end
 
 function ooa_can_remove_rockslide(can_summon_companion)
-    return ooa_has_bombs() or (can_summon_companion and ooa_can_summon_ricky())
+    return Any(
+        ooa_has_bombs(),
+        All(
+            can_summon_companion,
+            ooa_can_summon_ricky()
+        )
+    )
 end
 
 function ooa_can_remove_dirt(can_summon_companion)
-    return ooa_has_shovel() or (can_summon_companion and ooa_has_flute())
+    return Any(
+        ooa_has_shovel(),
+        All(
+            can_summon_companion,
+            ooa_has_flute()
+        )
+    )
 end
 
 function ooa_can_meet_maple()
