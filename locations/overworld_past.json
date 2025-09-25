@@ -1,0 +1,1386 @@
+[
+  {
+    "name": "Overworld",
+    "chest_unopened_img": "images/items/chest_past.png",
+    "chest_opened_img": "images/items/chest_past_open.png",
+    "children": [
+      {
+        "name": "Nuun Highlands|Symmetry City|Talus Peaks",
+        "children": [
+          {
+            "name": "Symmetry City Main House",
+            "sections": [
+              {
+                "name": "Symmetry City Brothers",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReach|symmetry_city_brother"
+                ]
+              },
+              {
+                "name": "Middle Man Trade",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReach|symmetry_middle_man_trade"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2900,
+                "y": 192
+              }
+            ]
+          },
+          {
+            "name": "Tokkey's Composition",
+            "access_rules": [
+              "^$CanReach|tokkeys_composition"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2636,
+                "y": 23
+              }
+            ]
+          },
+          {
+            "name": "Patch Tuni Nut Ceremony",
+            "access_rules": [
+              "^$CanReach|patch_tuni_nut_ceremony"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2925,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "name": "Patch Broken Sword Ceremony",
+            "access_rules": [
+              "^$CanReach|patch_broken_sword_ceremony"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2875,
+                "y": 300
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rolling Ridge West",
+        "children": [
+          {
+            "name": "Old Zora Trade",
+            "access_rules": [
+              "^$CanReach|old_zora_trade"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1,
+                "access_rules": []
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3980,
+                "y": 687
+              }
+            ]
+          },
+          {
+            "name": "Goron Elder",
+            "access_rules": [
+              "^$CanReach|goron_elder"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3724,
+                "y": 295
+              }
+            ]
+          },
+          {
+            "name": "Rolling Ridge West: Seed Tree",
+            "access_rules": [
+              "^$CanReach|ridge_west_tree"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "chest_unopened_img": "images/items/tree.png",
+                "chest_opened_img": "images/items/tree_gray.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3683,
+                "y": 50
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rolling Ridge East (Past)",
+        "children": [
+          {
+            "name": "Goron caves (Past)",
+            "sections": [
+              {
+                "name": "Goron Dance, With Letter",
+                "access_rules": [
+                  "^$CanReach|goron_dance__with_letter"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Trade Goron Vase",
+                "access_rules": [
+                  "^$CanReach|trade_goron_vase"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Ridge Bush Cave",
+                "access_rules": [
+                  "^$CanReach|ridge_bush_cave"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Trade Lava Juice",
+                "access_rules": [
+                  "^$CanReach|trade_lava_juice"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 4540,
+                "y": 423
+              },
+              {
+                "map": "map",
+                "x": 4316,
+                "y": 199
+              }
+            ]
+          },
+          {
+            "name": "East Ridge Base",
+            "sections": [
+              {
+                "name": "Ridge Base Past Bomb",
+                "access_rules": [
+                  "^$CanReach|ridge_base_bomb_past"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Ridge Diamonds Past",
+                "access_rules": [
+                  "^$CanReach|ridge_diamonds_past"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 4156,
+                "y": 295
+              },
+              {
+                "map": "map",
+                "x": 4331,
+                "y": 87
+              }
+            ]
+          },
+          {
+            "name": "Bomb Goron Head",
+            "access_rules": [
+              "^$CanReach|bomb_goron_head"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 4460,
+                "y": 87
+              }
+            ]
+          },
+          {
+            "name": "Treasure Hunting Goron",
+            "access_rules": [
+              "^$CanReach|treasure_hunting_goron"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 4219,
+                "y": 37
+              }
+            ]
+          },
+          {
+            "name": "Goron Shooting Gallery Price",
+            "access_rules": [
+              "^$CanReach|goron_shooting_gallery_price"
+            ],
+            "sections": [
+              {
+                "name": "100 points",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 4475,
+                "y": 151
+              }
+            ]
+          },
+          {
+            "name": "Rolling Ridge East: Seed Tree",
+            "access_rules": [
+              "^$CanReach|ridge_east_tree"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "chest_unopened_img": "images/items/tree.png",
+                "chest_opened_img": "images/items/tree_gray.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 4532,
+                "y": 336
+              }
+            ]
+          },
+          {
+            "name": "Enter Mermaid's Cave [Past] (D6)",
+            "access_rules": [
+              "^$CanReach|d6_past_entrance"
+            ],
+            "visibility_rules": [
+              "dungeon_er_on"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "chest_unopened_img": "images/bosses/d6.png",
+                "chest_opened_img": "images/bosses/d6.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "shape": "trapezoid",
+                "x": 4281,
+                "y": 425
+              }
+            ]
+          },
+          {
+            "name": "Mermaid's Cave [Past] (D6)",
+            "sections": [
+              {
+                "name": "(1F): Color Room",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(1F): Color Room/"
+              },
+              {
+                "name": "(1F): Wizzrobe",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(1F): Wizzrobe/"
+              },
+              {
+                "name": "(1F): Pool Chest",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(1F): Pool Chest/"
+              },
+              {
+                "name": "(1F): Stalfos Chest",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(1F): Stalfos Chest/"
+              },
+              {
+                "name": "(B1F): Rope Chest",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(B1F): Rope Chest/"
+              },
+              {
+                "name": "(B1F): Spear Chest",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(B1F): Spear Chest/"
+              },
+              {
+                "name": "(B1F): Diamond Chest",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(B1F): Diamond Chest/"
+              },
+              {
+                "name": "Octogon",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/Octogon/(1F): Boss"
+              },
+              {
+                "name": "Lonely Peak",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/Lonely Peak/Essence"
+              },
+              {
+                "name": "Open Bomb Wall in Past",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/Bomb the northern wall/Will open this wall in D6 present"
+              },
+              {
+                "name": "Light up the torch in the past",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/Light up the torches/Will expand the canal in D6 present"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 4331,
+                "y": 425
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lynna|South Shore|Palace",
+        "children": [
+          {
+            "name": "Black Tower Worker",
+            "access_rules": [
+              "^$CanReach|black_tower_worker"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3330,
+                "y": 928
+              }
+            ]
+          },
+          {
+            "name": "Black Tower Ending",
+            "access_rules": [
+              "^$CanReach|veran_beaten"
+            ],
+            "sections": [
+              {
+                "name": "Fight Final Boss",
+                "item_count": 1,
+                "chest_unopened_img": "images/bosses/veran.png",
+                "chest_opened_img": "images/bosses/veran_gray.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3400,
+                "y": 928,
+                "size": 70
+              }
+            ]
+          },
+          {
+            "name": "Enter Maku Path (D0)",
+            "access_rules": [
+              "^$CanReach|d0_entrance"
+            ],
+            "visibility_rules": [
+              "dungeon_er_on"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1,
+                "chest_unopened_img": "images/dungeons/d0_entrance.png",
+                "chest_opened_img": "images/dungeons/d0_entrance.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "shape": "trapezoid",
+                "x": 3650,
+                "y": 457
+              }
+            ]
+          },
+          {
+            "name": "Maku Path (D0)",
+            "sections": [
+              {
+                "name": "Key Chest",
+                "ref": "Dungeons/Maku Path (D0)/Key Chest/"
+              },
+              {
+                "name": "Basement",
+                "ref": "Dungeons/Maku Path (D0)/Basement/"
+              },
+              {
+                "name": "Heart Piece",
+                "ref": "Dungeons/Maku Path (D0)/Heart Piece/"
+              },
+              {
+                "name": "Have Maku Path Key?",
+                "ref": "Dungeons/Maku Path (D0)/Have Maku Path Key?/"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3700,
+                "y": 457
+              }
+            ]
+          },
+          {
+            "name": "Get Raft for Sea Travel!",
+            "access_rules": [
+              "^$CanReach|raftons_raft"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 0,
+                "hosted_item": "raft_toggle"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "shape": "diamond",
+                "x": 3572,
+                "y": 1308
+              }
+            ]
+          },
+          {
+            "name": "Advance Shop",
+            "visibility_rules": [
+              "advanceshop"
+            ],
+            "access_rules": [
+              "^$CanReach|advance_shop"
+            ],
+            "sections": [
+              {
+                "name": "First Item",
+                "item_count": 1
+              },
+              {
+                "name": "Second Item",
+                "item_count": 1
+              },
+              {
+                "name": "Third Item",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3700,
+                "y": 690
+              }
+            ]
+          },
+          {
+            "name": "Lynna Village Shooting Gallery",
+            "access_rules": [
+              "^$CanReach|lynna_shooting_gallery"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3660,
+                "y": 690
+              }
+            ]
+          },
+          {
+            "name": "Ambi's Palace: Seed Tree",
+            "access_rules": [
+              "^$CanReach|ambis_palace_tree"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "chest_unopened_img": "images/items/tree.png",
+                "chest_opened_img": "images/items/tree_gray.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3236,
+                "y": 320
+              }
+            ]
+          },
+          {
+            "name": "Ambi's Palace",
+            "access_rules": [],
+            "sections": [
+              {
+                "name": "Ambi's Palace Chest",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReach|ambis_palace_chest"
+                ]
+              },
+              {
+                "name": "Rescue Nayru",
+                "item_count": 1,
+                "hosted_item": "Nayru",
+                "access_rules": [
+                  "^$CanReach|rescue_nayru"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3379,
+                "y": 12
+              }
+            ]
+          },
+          {
+            "name": "Gasha Farmer",
+            "access_rules": [
+              "^$CanReach|gasha_farmer"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3180,
+                "y": 595
+              }
+            ]
+          },
+          {
+            "name": "Postman Trade",
+            "access_rules": [
+              "^$CanReach|postman_trade"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3563,
+                "y": 690
+              }
+            ]
+          },
+          {
+            "name": "The Toilet Hand Trade",
+            "access_rules": [
+              "^$CanReach|toilet_hand_trade"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3171,
+                "y": 704
+              }
+            ]
+          },
+          {
+            "name": "Sad Boi Trade",
+            "access_rules": [
+              "^$CanReach|sad_boi_trade"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3419,
+                "y": 670
+              }
+            ]
+          },
+          {
+            "name": "Rafton Trade",
+            "access_rules": [
+              "^$CanReach|rafton_trade"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3522,
+                "y": 1308
+              }
+            ]
+          },
+          {
+            "name": "Black Tower Heart Piece",
+            "access_rules": [
+              "^$CanReach|black_tower_heartpiece"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3420,
+                "y": 1064
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sea of Storms|No Return",
+        "children": [
+          {
+            "name": "Sea of Storms Past",
+            "access_rules": [
+              "^$CanReach|sea_of_storms_past"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3551,
+                "y": 1620
+              }
+            ]
+          },
+          {
+            "name": "Piratian Captain",
+            "access_rules": [
+              "^$CanReach|piratian_captain"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3443,
+                "y": 1581
+              }
+            ]
+          },
+          {
+            "name": "Sea of No Return",
+            "access_rules": [
+              "^$CanReach|sea_of_no_return"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1,
+                "access_rules": []
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 4475,
+                "y": 835
+              }
+            ]
+          },
+          {
+            "name": "Enter Ancient Tomb (D8)",
+            "access_rules": [
+              "^$CanReach|d8_entrance"
+            ],
+            "visibility_rules": [
+              "dungeon_er_on"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "chest_unopened_img": "images/bosses/d8.png",
+                "chest_opened_img": "images/bosses/d8.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "shape": "trapezoid",
+                "x": 4289,
+                "y": 662
+              }
+            ]
+          },
+          {
+            "name": "Ancient Tomb (D8)",
+            "sections": [
+              {
+                "name": "(1F): Single Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(1F): Single Chest/"
+              },
+              {
+                "name": "(B2F): Ghini Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): Ghini Chest/"
+              },
+              {
+                "name": "(B1F): NW Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B1F): NW Chest/"
+              },
+              {
+                "name": "(B1F): Blue Peg Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B1F): Blue Peg Chest/"
+              },
+              {
+                "name": "(B1F): Blade Trap",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B1F): Blade Trap/"
+              },
+              {
+                "name": "(B1F): Sarcophagus Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B1F): Sarcophagus Chest/"
+              },
+              {
+                "name": "(B1F): Stalfos",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B1F): Stalfos/"
+              },
+              {
+                "name": "(B2F): Maze Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): Maze Chest/"
+              },
+              {
+                "name": "(B2F): NW Slate Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): NW Slate Chest/"
+              },
+              {
+                "name": "(B2F): NE Slate Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): NE Slate Chest/"
+              },
+              {
+                "name": "(B3F): Single Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B3F): Single Chest/"
+              },
+              {
+                "name": "(B2F): Tile Room",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): Tile Room/"
+              },
+              {
+                "name": "(B2F): SE Slate Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): SE Slate Chest/"
+              },
+              {
+                "name": "(B1F): Floor Puzzle",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B1F): Floor Puzzle/"
+              },
+              {
+                "name": "(B2F): SW Slate Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): SW Slate Chest/"
+              },
+              {
+                "name": "Ramrock",
+                "ref": "Dungeons/Ancient Tomb (D8)/Ramrock/(B3F): Boss"
+              },
+              {
+                "name": "Falling Star",
+                "ref": "Dungeons/Ancient Tomb (D8)/Falling Star/Essence"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 4339,
+                "y": 662
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fairies' Woods",
+        "children": [
+          {
+            "name": "Deku Forest Heart Piece",
+            "access_rules": [
+              "^$CanReach|deku_forest_heartpiece"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2524,
+                "y": 1176
+              }
+            ]
+          },
+          {
+            "name": "Deku Forest Cave East",
+            "access_rules": [
+              "^$CanReach|deku_forest_cave_east"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2731,
+                "y": 919
+              }
+            ]
+          },
+          {
+            "name": "Deku Forest Cave West",
+            "access_rules": [
+              "^$CanReach|deku_forest_cave_west"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2539,
+                "y": 936
+              }
+            ]
+          },
+          {
+            "name": "Deku Forest Seed Tree",
+            "access_rules": [
+              "^$CanReach|deku_forest_tree"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "chest_unopened_img": "images/items/tree.png",
+                "chest_opened_img": "images/items/tree_gray.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2420,
+                "y": 1072
+              }
+            ]
+          },
+          {
+            "name": "Deku Forest Soldier",
+            "access_rules": [
+              "^$CanReach|deku_forest_soldier"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2700,
+                "y": 990
+              }
+            ]
+          },
+          {
+            // TODO
+            "name": "Buy a Shield (10 Rupees)",
+            "access_rules": [
+              "[trick],$deku_forest,bracelet,feather",
+              "[trick],$deku_forest,bracelet,hook1",
+              "[trick],$deku_forest,bracelet,$use_ember",
+              "[trick],$deku_forest,bracelet,ages",
+              "[trick],$deku_forest,bracelet,$gale_satchel"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "hosted_item": "shield1",
+                "access_rules": []
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2396,
+                "y": 958
+              }
+            ]
+          },
+          {
+            // TODO
+            "name": "Buy a Shield (30 Rupees)",
+            "access_rules": [
+              "[trick],$deku_forest,bracelet,feather",
+              "[trick],$deku_forest,bracelet,hook1",
+              "[trick],$deku_forest,bracelet,$use_ember",
+              "[trick],$deku_forest,bracelet,ages",
+              "[trick],$deku_forest,bracelet,$gale_satchel"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "hosted_item": "shield1",
+                "access_rules": []
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2523,
+                "y": 1080
+              }
+            ]
+          },
+          {
+            "name": "Enter Wing Dungeon Past (D2)",
+            "access_rules": [
+              "^$CanReach|d2_past_entrance"
+            ],
+            "visibility_rules": [
+              "dungeon_er_on"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1,
+                "chest_unopened_img": "images/bosses/d2.png",
+                "chest_opened_img": "images/bosses/d2.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "shape": "trapezoid",
+                "x": 2858,
+                "y": 1052
+              }
+            ]
+          },
+          {
+            "name": "Wing Dungeon (D2)",
+            "sections": [
+              {
+                "name": "(1F): Bombed Terrace",
+                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Bombed Terrace/"
+              },
+              {
+                "name": "(1F): Moblin Drop",
+                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Moblin Drop/"
+              },
+              {
+                "name": "(1F): Rope Room",
+                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Rope Room/"
+              },
+              {
+                "name": "(1F): Ladder Chest",
+                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Ladder Chest/"
+              },
+              {
+                "name": "(B1F): Thwomp Tunnel",
+                "ref": "Dungeons/Wing Dungeon (D2)/(B1F): Thwomp Tunnel/"
+              },
+              {
+                "name": "(B1F): Thwomp Shelf",
+                "ref": "Dungeons/Wing Dungeon (D2)/(B1F): Thwomp Shelf/"
+              },
+              {
+                "name": "(B1F): Basement Chest",
+                "ref": "Dungeons/Wing Dungeon (D2)/(B1F): Basement Chest/"
+              },
+              {
+                "name": "(B1F): Basement Drop",
+                "ref": "Dungeons/Wing Dungeon (D2)/(B1F): Basement Drop/"
+              },
+              {
+                "name": "(1F): Moblin Platform",
+                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Moblin Platform/"
+              },
+              {
+                "name": "(1F): Statue Puzzle",
+                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Statue Puzzle/"
+              },
+              {
+                "name": "(1F): Color Room",
+                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Color Room/"
+              },
+              {
+                "name": "Head Thwomp",
+                "ref": "Dungeons/Wing Dungeon (D2)/Head Thwomp/(1F): Boss"
+              },
+              {
+                "name": "Ancient Wood",
+                "ref": "Dungeons/Wing Dungeon (D2)/Ancient Wood/Essence"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2908,
+                "y": 1052
+              }
+            ]
+          },
+          {
+            "name": "Restoration Wall Heart Piece",
+            "access_rules": [
+              "^$CanReach|restoration_wall_heartpiece"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2955,
+                "y": 582
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zora Village|Zora Seas",
+        "children": [
+          {
+            "name": "Cure King Zora in the past",
+            "access_rules": [
+              "^$CanReach|CureKingZora_toggle"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "hosted_item": "curezora_toggle"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "shape": "diamond",
+                "x": 2581,
+                "y": 1386
+              }
+            ]
+          },
+          {
+            "name": "Cure the cursed Fairy",
+            "color": "#ff7700",
+            "access_rules": [
+              "^$CanReach|CureFairy_toggle"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "hosted_item": "curefairy_toggle"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "shape": "diamond",
+                "x": 2924,
+                "y": 1335
+              }
+            ]
+          },
+          {
+            "name": "Library Past",
+            "access_rules": [
+              "^$CanReach|library_past"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3187,
+                "y": 1308
+              }
+            ]
+          },
+          {
+            "name": "Fisher's Island Cave",
+            "access_rules": [
+              "^$CanReach|fishers_island_cave"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3202,
+                "y": 1630
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Crescent Island",
+        "children": [
+          {
+            "name": "Tokay Market",
+            "sections": [
+              {
+                "name": "Tokay Market #1",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReach|tokay_market_1"
+                ]
+              },
+              {
+                "name": "Tokay Market #2",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReach|tokay_market_2"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 4507,
+                "y": 1300
+              }
+            ]
+          },
+          {
+            "name": "Tokay Crystal Cave",
+            "access_rules": [
+              "^$CanReach|tokay_crystal_cave"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 4124,
+                "y": 1412
+              }
+            ]
+          },
+          {
+            "name": "Tokay Bomb Cave",
+            "access_rules": [
+              "^$CanReach|tokay_bomb_cave"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 4444,
+                "y": 1559
+              }
+            ]
+          },
+          {
+            "name": "Wild Tokay Game",
+            "access_rules": [
+              "^$CanReach|wild_tokay_game"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 4444,
+                "y": 1431
+              }
+            ]
+          },
+          {
+            "name": "Turn in Seedling to Tokay",
+            "access_rules": [
+              "^$CanReach|TurningSeedling_toggle"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "hosted_item": "turningseedling_toggle"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "shape": "diamond",
+                "x": 4347,
+                "y": 1334
+              }
+            ]
+          },
+          {
+            "name": "Hidden Tokay Cave",
+            "access_rules": [
+              "^$CanReach|hidden_tokay_cave"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3915,
+                "y": 1735
+              }
+            ]
+          },
+          {
+            "name": "Tokay Pot Cave",
+            "access_rules": [
+              "^$CanReach|tokay_pot_cave"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 4443,
+                "y": 1719
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

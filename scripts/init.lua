@@ -43,7 +43,8 @@ if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
     -- Maps
     Tracker:AddMaps("maps/maps.json")
     -- Locations
-    Tracker:AddLocations("locations/overworld.json")
+    Tracker:AddLocations("locations/overworld_past.json")
+    Tracker:AddLocations("locations/overworld_present.json")
     Tracker:AddLocations("locations/dungeons.json")
 end
 

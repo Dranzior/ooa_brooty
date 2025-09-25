@@ -1,0 +1,1752 @@
+[
+  {
+    "name": "Overworld",
+    "chest_unopened_img": "images/items/chest_present.png",
+    "chest_opened_img": "images/items/chest_present_open.png",
+    "children": [
+      {
+        "name": "Nuun Highlands|Symmetry City|Talus Peaks",
+        "children": [
+          {
+            "name": "Carpenter 1",
+            "access_rules": [
+              "^$CanReach|Carpenter"
+            ],
+            "sections": [
+              {
+                "name": "(4,7)",
+                "hosted_item": "carpenter1"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "animal_regions",
+                "shape": "diamond",
+                "x": 1176,
+                "y": 103
+              },
+              {
+                "map": "animal_moosh",
+                "shape": "diamond",
+                "x": 216,
+                "y": 103
+              },
+              {
+                "map": "animal_regions",
+                "shape": "diamond",
+                "x": 231,
+                "y": 6
+              },
+              {
+                "map": "animal_ricky",
+                "shape": "diamond",
+                "x": 231,
+                "y": 6
+              },
+              {
+                "map": "animal_regions",
+                "shape": "diamond",
+                "x": 872,
+                "y": 70
+              },
+              {
+                "map": "animal_dimitri",
+                "shape": "diamond",
+                "x": 392,
+                "y": 70
+              }
+            ]
+          },
+          {
+            "name": "Carpenter 2",
+            "access_rules": [
+              "^$CanReach|Carpenter"
+            ],
+            "sections": [
+              {
+                "name": "(5,7)",
+                "hosted_item": "carpenter2"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "animal_regions",
+                "shape": "diamond",
+                "x": 1400,
+                "y": 102
+              },
+              {
+                "map": "animal_moosh",
+                "shape": "diamond",
+                "x": 440,
+                "y": 102
+              },
+              {
+                "map": "animal_regions",
+                "shape": "diamond",
+                "x": 232,
+                "y": 167
+              },
+              {
+                "map": "animal_ricky",
+                "shape": "diamond",
+                "x": 232,
+                "y": 167
+              },
+              {
+                "map": "animal_regions",
+                "shape": "diamond",
+                "x": 919,
+                "y": 344
+              },
+              {
+                "map": "animal_dimitri",
+                "shape": "diamond",
+                "x": 439,
+                "y": 344
+              }
+            ]
+          },
+          {
+            "name": "Carpenter 3",
+            "access_rules": [
+              "^$CanReach|Carpenter"
+            ],
+            "sections": [
+              {
+                "name": "(8,7)",
+                "hosted_item": "carpenter3"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "animal_regions",
+                "shape": "diamond",
+                "x": 1350,
+                "y": 230
+              },
+              {
+                "map": "animal_moosh",
+                "shape": "diamond",
+                "x": 390,
+                "y": 230
+              },
+              {
+                "map": "animal_regions",
+                "shape": "diamond",
+                "x": 400,
+                "y": 164
+              },
+              {
+                "map": "animal_ricky",
+                "shape": "diamond",
+                "x": 400,
+                "y": 164
+              },
+              {
+                "map": "animal_regions",
+                "shape": "diamond",
+                "x": 712,
+                "y": 166
+              },
+              {
+                "map": "animal_dimitri",
+                "shape": "diamond",
+                "x": 232,
+                "y": 166
+              }
+            ]
+          },
+          {
+            "name": "Nuun Highlands Cave",
+            "access_rules": [
+              "^$CanReach|nuun_highlands_cave"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1207,
+                "y": 343
+              },
+              {
+                "map": "animal_regions",
+                "x": 407,
+                "y": 214
+              },
+              {
+                "map": "animal_regions",
+                "x": 831,
+                "y": 278
+              },
+              {
+                "map": "animal_regions",
+                "x": 1335,
+                "y": 310
+              },
+              {
+                "map": "animal_ricky",
+                "x": 407,
+                "y": 214
+              },
+              {
+                "map": "animal_dimitri",
+                "x": 351,
+                "y": 278
+              },
+              {
+                "map": "animal_moosh",
+                "x": 375,
+                "y": 310
+              }
+            ]
+          },
+          {
+            "name": "Symmetry City: Seed Tree",
+            "access_rules": [
+              "^$CanReach|symmetry_city_tree"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "chest_unopened_img": "images/items/tree.png",
+                "chest_opened_img": "images/items/tree_gray.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 559,
+                "y": 192
+              }
+            ]
+          },
+          {
+            "name": "Talus Peaks Chest",
+            "access_rules": [
+              "^$CanReach|talus_peaks_chest"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 520,
+                "y": 791
+              }
+            ]
+          },
+          {
+            "name": "Bomb Fairy",
+            "access_rules": [
+              "^$CanReach|bomb_fairy"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 104,
+                "y": 694
+              }
+            ]
+          },
+          {
+            "name": "Symmetry City Heart Piece",
+            "access_rules": [
+              "^$CanReach|symmetry_city_heartpiece"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 232,
+                "y": 215
+              }
+            ]
+          },
+          {
+            "name": "Enter Skull Dungeon (D4)",
+            "access_rules": [
+              "^$CanReach|d4_entrance"
+            ],
+            "visibility_rules": [
+              "dungeon_er_on"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "chest_unopened_img": "images/bosses/d4.png",
+                "chest_opened_img": "images/bosses/d4.png",
+                "access_rules": []
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "shape": "trapezoid",
+                "x": 509,
+                "y": 50
+              }
+            ]
+          },
+          {
+            "name": "Skull Dungeon (D4)",
+            "sections": [
+              {
+                "name": "(1F): First Chest",
+                "ref": "Dungeons/Skull Dungeon (D4)/(1F): First Chest/"
+              },
+              {
+                "name": "(1F): Cube Chest",
+                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Cube Chest/"
+              },
+              {
+                "name": "(1F): Minecart Chest",
+                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Minecart Chest/"
+              },
+              {
+                "name": "(1F): First Crystal Switch",
+                "ref": "Dungeons/Skull Dungeon (D4)/(1F): First Crystal Switch/"
+              },
+              {
+                "name": "(1F): Second Crystal Switch",
+                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Second Crystal Switch/"
+              },
+              {
+                "name": "(1F): Color Tile Drop",
+                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Color Tile Drop/"
+              },
+              {
+                "name": "(1F): Small Floor Puzzle",
+                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Small Floor Puzzle/"
+              },
+              {
+                "name": "(B1F): Large Floor Puzzle",
+                "ref": "Dungeons/Skull Dungeon (D4)/(B1F): Large Floor Puzzle/"
+              },
+              {
+                "name": "(1F): Lava Pot Chest",
+                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Lava Pot Chest/"
+              },
+              {
+                "name": "Eyesoar",
+                "ref": "Dungeons/Skull Dungeon (D4)/Eyesoar/(B1F): Boss"
+              },
+              {
+                "name": "Burning Flame",
+                "ref": "Dungeons/Skull Dungeon (D4)/Burning Flame/Essence"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 559,
+                "y": 50
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rolling Ridge West",
+        "children": [
+          {
+            "name": "Rolling Ridge Entrance",
+            "sections": [
+              {
+                "name": "Goron's Hiding Place",
+                "access_rules": [
+                  "^$CanReach|gorons_hiding_place"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Ridge Chest West Base On Terrace",
+                "access_rules": [
+                  "^$CanReach|ridge_base_chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Ridge West Surface Stair",
+                "access_rules": [
+                  "^$CanReach|ridge_west_cave"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Ridge West Heart Piece",
+                "access_rules": [
+                  "^$CanReach|ridge_west_heartpiece"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1383,
+                "y": 295
+              },
+              {
+                "map": "map",
+                "x": 1351,
+                "y": 135
+              }
+            ]
+          },
+          {
+            "name": "Moblin Keep",
+            "sections": [
+              {
+                "name": "Under Moblin Keep",
+                "access_rules": [
+                  "^$CanReach|under_moblin_keep"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Defeat Great Moblin",
+                "access_rules": [
+                  "^$CanReach|defeat_great_moblin"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1528,
+                "y": 58
+              }
+            ]
+          },
+          {
+            "name": "Enter Crown Dungeon (D5)",
+            "access_rules": [
+              "^$CanReach|d5_entrance"
+            ],
+            "visibility_rules": [
+              "dungeon_er_on"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "chest_unopened_img": "images/bosses/d5.png",
+                "chest_opened_img": "images/bosses/d5.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "shape": "trapezoid",
+                "x": 1670,
+                "y": 23
+              }
+            ]
+          },
+          {
+            "name": "Crown Dungeon (D5)",
+            "sections": [
+              {
+                "name": "(B1F): Like-Like Chest",
+                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Like-Like Chest/"
+              },
+              {
+                "name": "(1F): Eyes Chest",
+                "ref": "Dungeons/Crown Dungeon (D5)/(1F): Eyes Chest/"
+              },
+              {
+                "name": "(B1F): Dark Room",
+                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Dark Room/"
+              },
+              {
+                "name": "(B1F): Two-Statue Puzzle",
+                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Two-Statue Puzzle/"
+              },
+              {
+                "name": "(1F): Blue Peg Chest",
+                "ref": "Dungeons/Crown Dungeon (D5)/(1F): Blue Peg Chest/"
+              },
+              {
+                "name": "(1F): Diamond Chest",
+                "ref": "Dungeons/Crown Dungeon (D5)/(1F): Diamond Chest/"
+              },
+              {
+                "name": "(1F): Three-Statue Puzzle",
+                "ref": "Dungeons/Crown Dungeon (D5)/(1F): Three-Statue Puzzle/"
+              },
+              {
+                "name": "(B1F): Six-Statue Puzzle",
+                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Six-Statue Puzzle/"
+              },
+              {
+                "name": "(B1F): Red Peg Chest",
+                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Red Peg Chest/"
+              },
+              {
+                "name": "(B1F): Owl Puzzle",
+                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Owl Puzzle/"
+              },
+              {
+                "name": "Smog",
+                "ref": "Dungeons/Crown Dungeon (D5)/Smog/(1F): Boss"
+              },
+              {
+                "name": "Sacred Soil",
+                "ref": "Dungeons/Crown Dungeon (D5)/Sacred Soil/Essence"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1720,
+                "y": 23
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rolling Ridge East (Present)",
+        "children": [
+          {
+            "name": "Goron caves (Present)",
+            "sections": [
+              {
+                "name": "First Goron Dance",
+                "access_rules": [
+                  "^$CanReach|first_goron_dance"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Trade Rock Brisket",
+                "access_rules": [
+                  "^$CanReach|trade_rock_brisket"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Goron Diamond Cave",
+                "access_rules": [
+                  "^$CanReach|goron_diamond_cave"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Big Bang Game",
+                "access_rules": [
+                  "^$CanReach|big_bang_game"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Ridge NE Cave Present",
+                "access_rules": [
+                  "^$CanReach|ridge_NE_cave_present"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2200,
+                "y": 423
+              },
+              {
+                "map": "map",
+                "x": 1976,
+                "y": 200
+              }
+            ]
+          },
+          {
+            "name": "Target Carts Minigame",
+            "sections": [
+              {
+                "name": "First reward",
+                "access_rules": [
+                  "^$CanReach|target_carts_1"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Second reward",
+                "access_rules": [
+                  "^$CanReach|target_carts_2"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2135,
+                "y": 151
+              }
+            ]
+          },
+          {
+            "name": "Ridge Upper Heart Piece",
+            "access_rules": [
+              "^$CanReach|ridge_upper_heartpiece"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2200,
+                "y": 56
+              }
+            ]
+          },
+          {
+            "name": "Pool in D6 Entrance",
+            "access_rules": [
+              "^$CanReach|pool_in_d6_entrance"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1935,
+                "y": 395
+              }
+            ]
+          },
+          {
+            "name": "Enter Mermaid's Cave [Present] (D6)",
+            "access_rules": [
+              "^$CanReach|d6_present_entrance"
+            ],
+            "visibility_rules": [
+              "dungeon_er_on"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "shape": "trapezoid",
+                "x": 1941,
+                "y": 439
+              }
+            ]
+          },
+          {
+            "name": "Mermaid's Cave [Present] (D6)",
+            "sections": [
+              {
+                "name": "Diamond Chest",
+                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Diamond Chest/"
+              },
+              {
+                "name": "Rope Chest",
+                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Rope Chest/"
+              },
+              {
+                "name": "Cube Chest",
+                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Cube Chest/"
+              },
+              {
+                "name": "Spinner Chest",
+                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Spinner Chest/"
+              },
+              {
+                "name": "Beamos Chest",
+                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Beamos Chest/"
+              },
+              {
+                "name": "RNG Chest",
+                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/RNG Chest/"
+              },
+              {
+                "name": "Channel Chest",
+                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Channel Chest/"
+              },
+              {
+                "name": "Vire Chest",
+                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Vire Chest/"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1991,
+                "y": 439
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lynna|South Shore|Palace",
+        "children": [
+          {
+            "name": "Lynna City Seed Tree",
+            "access_rules": [
+              "^$CanReach|south_lynna_tree"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "chest_unopened_img": "images/items/tree.png",
+                "chest_opened_img": "images/items/tree_gray.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1359,
+                "y": 960
+              }
+            ]
+          },
+          {
+            "name": "Maku Tree Gift",
+            "access_rules": [],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReach|maku_tree"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1335,
+                "y": 453
+              }
+            ]
+          },
+          {
+            "name": "Get Maku Seed for Go Mode",
+            "access_rules": [
+              "^$CanReach|maku_seed"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "hosted_item": "makuseed_toggle"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "shape": "diamond",
+                "x": 1385,
+                "y": 453
+              }
+            ]
+          },
+          {
+            "name": "Lynna City Chest",
+            "access_rules": [
+              "^$CanReach|lynna_city_chest"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1,
+                "access_rules": []
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1464,
+                "y": 600
+              }
+            ]
+          },
+          {
+            "name": "Shore Dirt Spot",
+            "access_rules": [
+              "^$CanReach|south_shore_dirt"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1,
+                "access_rules": []
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1353,
+                "y": 1192
+              }
+            ]
+          },
+          {
+            "name": "Tingle Present",
+            "access_rules": [
+              "^$CanReach|balloon_guys_gift"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1471,
+                "y": 950
+              }
+            ]
+          },
+          {
+            "name": "Tingle Upgrade",
+            "access_rules": [
+              "^$CanReach|balloon_guys_upgrade"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1521,
+                "y": 950
+              }
+            ]
+          },
+          {
+            "name": "Shop",
+            "access_rules": [
+              "^$CanReach|lynna_shop"
+            ],
+            "sections": [
+              {
+                "name": "First Item",
+                "item_count": 1
+              },
+              {
+                "name": "Second Item",
+                "item_count": 1
+              },
+              {
+                "name": "Third Item",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1400,
+                "y": 788
+              }
+            ]
+          },
+          {
+            "name": "Hidden Shop",
+            "access_rules": [
+              "^$CanReach|hidden_shop"
+            ],
+            "sections": [
+              {
+                "name": "First Item",
+                "item_count": 1
+              },
+              {
+                "name": "Second Item",
+                "item_count": 1
+              },
+              {
+                "name": "Third Item",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1350,
+                "y": 788
+              }
+            ]
+          },
+          {
+            "name": "Mayor Plen's House",
+            "access_rules": [
+              "^$CanReach|mayor_plens_house"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1,
+                "access_rules": []
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1224,
+                "y": 663
+              }
+            ]
+          },
+          {
+            "name": "Vasu's Gift",
+            "access_rules": [
+              "^$CanReach|vasus_gift"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1368,
+                "y": 696
+              }
+            ]
+          },
+          {
+            "name": "Mamamu Yan Trade",
+            "access_rules": [
+              "^$CanReach|mamamu_yan_trade"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1032,
+                "y": 850
+              }
+            ]
+          },
+          {
+            "name": "Comedian Trade",
+            "access_rules": [
+              "^$CanReach|lynna_city_comedian_trade"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1056,
+                "y": 705
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forest of Time",
+        "children": [
+          {
+            "name": "Impa Gift",
+            "access_rules": [
+              "^$CanReach|starting_item"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1494,
+                "y": 485
+              }
+            ]
+          },
+          {
+            "name": "Nayru's House",
+            "access_rules": [
+              "^$CanReach|nayrus_house"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1656,
+                "y": 414
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Yoll Graveyard",
+        "children": [
+          {
+            "name": "Cheval's Test",
+            "access_rules": [
+              "^$CanReach|chevals_test"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1775,
+                "y": 680
+              }
+            ]
+          },
+          {
+            "name": "Cheval's Invention",
+            "access_rules": [
+              "^$CanReach|chevals_invention"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1825,
+                "y": 680
+              }
+            ]
+          },
+          {
+            "name": "Grave Under The Tree",
+            "access_rules": [
+              "^$CanReach|grave_under_tree"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2104,
+                "y": 1128
+              }
+            ]
+          },
+          {
+            "name": "Yoll Graveyard Heart Piece",
+            "access_rules": [
+              "^$CanReach|yoll_graveyard_heartpiece"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1800,
+                "y": 1080
+              }
+            ]
+          },
+          {
+            "name": "Maple Trade",
+            "access_rules": [
+              "^$CanReach|maple_trade"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2175,
+                "y": 670
+              }
+            ]
+          },
+          {
+            "name": "Syrup's Shop",
+            "sections": [
+              {
+                "name": "Syrup Shop #1",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReach|syrup_shop"
+                ]
+              },
+              {
+                "name": "Syrup Shop #2",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReach|syrup_shop"
+                ]
+              },
+              {
+                "name": "Syrup Shop #3",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReach|syrup_shop"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2225,
+                "y": 670
+              }
+            ]
+          },
+          {
+            "name": "Graveyard Poe Trade",
+            "access_rules": [
+              "^$CanReach|graveyard_poe_trade"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2023,
+                "y": 950
+              }
+            ]
+          },
+          {
+            "name": "Enter Spirit's Grave (D1)",
+            "access_rules": [
+              "^$CanReach|d1_entrance"
+            ],
+            "visibility_rules": [
+              "dungeon_er_on"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1,
+                "chest_unopened_img": "images/bosses/d1.png",
+                "chest_opened_img": "images/bosses/d1.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "shape": "trapezoid",
+                "x": 2134,
+                "y": 1057
+              }
+            ]
+          },
+          {
+            "name": "Spirit's Grave (D1)",
+            "sections": [
+              {
+                "name": "East Terrace",
+                "ref": "Dungeons/Spirit's Grave (D1)/East Terrace/"
+              },
+              {
+                "name": "Ghini Drop",
+                "ref": "Dungeons/Spirit's Grave (D1)/Ghini Drop/"
+              },
+              {
+                "name": "Crossroad",
+                "ref": "Dungeons/Spirit's Grave (D1)/Crossroad/"
+              },
+              {
+                "name": "Crystal Room",
+                "ref": "Dungeons/Spirit's Grave (D1)/Crystal Room/"
+              },
+              {
+                "name": "Wide Room",
+                "ref": "Dungeons/Spirit's Grave (D1)/Wide Room/"
+              },
+              {
+                "name": "Two-Buttons Chest",
+                "ref": "Dungeons/Spirit's Grave (D1)/Two-Buttons Chest/"
+              },
+              {
+                "name": "One-Button Chest",
+                "ref": "Dungeons/Spirit's Grave (D1)/One-Button Chest/"
+              },
+              {
+                "name": "Pot Chest",
+                "ref": "Dungeons/Spirit's Grave (D1)/Pot Chest/"
+              },
+              {
+                "name": "West Terrace",
+                "ref": "Dungeons/Spirit's Grave (D1)/West Terrace/"
+              },
+              {
+                "name": "Basement",
+                "ref": "Dungeons/Spirit's Grave (D1)/Basement/"
+              },
+              {
+                "name": "Pumpkin Head",
+                "ref": "Dungeons/Spirit's Grave (D1)/Pumpkin Head/Boss"
+              },
+              {
+                "name": "Eternal Spirit",
+                "ref": "Dungeons/Spirit's Grave (D1)/Eternal Spirit/Essence"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2184,
+                "y": 1057
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fairies' Woods",
+        "children": [
+          {
+            "name": "Fairies' Woods Chest",
+            "access_rules": [
+              "^$CanReach|fairies_woods_chest"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 744,
+                "y": 1079
+              }
+            ]
+          },
+          {
+            "name": "Happy Mask Salesman Trade",
+            "access_rules": [
+              "^$CanReach|happy_mask_salesman_trade"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 512,
+                "y": 723
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zora Village|Zora Seas",
+        "children": [
+          {
+            "name": "Zora Village Present Chest",
+            "access_rules": [
+              "^$CanReach|zora_village_present"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 56,
+                "y": 1559
+              }
+            ]
+          },
+          {
+            "name": "Zora Village: Seed Tree",
+            "access_rules": [
+              "^$CanReach|zora_village_tree"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "chest_unopened_img": "images/items/tree.png",
+                "chest_opened_img": "images/items/tree_gray.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 256,
+                "y": 1584
+              },
+              {
+                "map": "map",
+                "x": 2596,
+                "y": 1584
+              }
+            ]
+          },
+          {
+            "name": "Zora NW Cave",
+            "access_rules": [
+              "^$CanReach|zora_NW_cave"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 56,
+                "y": 1287
+              }
+            ]
+          },
+          {
+            "name": "Zora Palace (Present)",
+            "sections": [
+              {
+                "name": "Zora Palace Chest",
+                "access_rules": [
+                  "^$CanReach|zora_palace_chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Zora King Gift",
+                "access_rules": [
+                  "^$CanReach|zora_king_gift"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "King Zora Permission to enter Jabu",
+                "access_rules": [
+                  "^$CanReach|KingZoraPermission_toggle, curefairy_toggle"
+                ],
+                "hosted_item": "enterjabu_toggle",
+                "item_count": 0
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 241,
+                "y": 1386
+              }
+            ]
+          },
+          {
+            "name": "Fairies' Coast Chest",
+            "access_rules": [
+              "^$CanReach|fairies_coast_chest"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 247,
+                "y": 1207
+              }
+            ]
+          },
+          {
+            "name": "Library Present",
+            "access_rules": [
+              "^$CanReach|library_present"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 847,
+                "y": 1308
+              }
+            ]
+          },
+          {
+            "name": "Zora Seas Chest",
+            "access_rules": [
+              "^$CanReach|zora_seas_chest"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 887,
+                "y": 1703
+              }
+            ]
+          },
+          {
+            "name": "Enter Jabu-Jabu's Belly (D7)",
+            "access_rules": [
+              "^$CanReach|d7_entrance"
+            ],
+            "visibility_rules": [
+              "dungeon_er_on"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "chest_unopened_img": "images/bosses/d7.png",
+                "chest_opened_img": "images/bosses/d7.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "shape": "trapezoid",
+                "x": 106,
+                "y": 1360
+              }
+            ]
+          },
+          {
+            "name": "Jabu-Jabu's Belly (D7)",
+            "sections": [
+              {
+                "name": "(2F): Spike Chest",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(2F): Spike Chest/"
+              },
+              {
+                "name": "(1F): Crab Chest",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Crab Chest/"
+              },
+              {
+                "name": "(1F): Diamond Puzzle",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Diamond Puzzle/"
+              },
+              {
+                "name": "(1F): Flower Room",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Flower Room/"
+              },
+              {
+                "name": "(1F): Stairway Chest",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Stairway Chest/"
+              },
+              {
+                "name": "(2F): Right Wing",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(2F): Right Wing/"
+              },
+              {
+                "name": "(1F): Boxed Chest",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Boxed Chest/"
+              },
+              {
+                "name": "(1F): Cane|Diamond Puzzle",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Cane|Diamond Puzzle/"
+              },
+              {
+                "name": "(3F): Terrace",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(3F): Terrace/"
+              },
+              {
+                "name": "(2F): Left Wing",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(2F): Left Wing/"
+              },
+              {
+                "name": "(3F): Hallway Chest",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(3F): Hallway Chest/"
+              },
+              {
+                "name": "(1F): Miniboss Chest",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Miniboss Chest/"
+              },
+              {
+                "name": "(3F): Post-Hallway Chest",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(3F): Post-Hallway Chest/"
+              },
+              {
+                "name": "(1F): Island Chest",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Island Chest/"
+              },
+              {
+                "name": "Plasmarine",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/Plasmarine/(2F): Boss"
+              },
+              {
+                "name": "Rolling Sea",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/Rolling Sea/Essence"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 56,
+                "y": 1360
+              }
+            ]
+          },
+          {
+            "name": "Zora's Reward",
+            "access_rules": [
+              "^$CanReach|zoras_reward"
+            ],
+            "sections": [
+              {
+                "name": ""
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 56,
+                "y": 1410
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Crescent Island",
+        "children": [
+          {
+            "name": "Crescent Island Seed Tree",
+            "access_rules": [
+              "^$CanReach|crescent_island_tree"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "chest_unopened_img": "images/items/tree.png",
+                "chest_opened_img": "images/items/tree_gray.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1984,
+                "y": 1343
+              }
+            ]
+          },
+          {
+            "name": "Enter Moonlit Grotto (D3)",
+            "access_rules": [
+              "^$CanReach|d3_entrance"
+            ],
+            "visibility_rules": [
+              "dungeon_er_on"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "chest_unopened_img": "images/bosses/d3.png",
+                "chest_opened_img": "images/bosses/d3.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "shape": "trapezoid",
+                "x": 1638,
+                "y": 1488
+              }
+            ]
+          },
+          {
+            "name": "Moonlit Grotto (D3)",
+            "sections": [
+              {
+                "name": "(1F): Pols Voice Chest",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Pols Voice Chest/"
+              },
+              {
+                "name": "(1F): Statue Drop",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Statue Drop/"
+              },
+              {
+                "name": "(B1F): Conveyor Belt Room",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Conveyor Belt Room/"
+              },
+              {
+                "name": "(1F): Six Blocs Drop",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Six Blocs Drop/"
+              },
+              {
+                "name": "(1F): Armos Drop",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Armos Drop/"
+              },
+              {
+                "name": "(1F): Bush Beetle Room",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Bush Beetle Room/"
+              },
+              {
+                "name": "(1F): Mimic Room",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Mimic Room/"
+              },
+              {
+                "name": "(1F): Crossroad",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Crossroad/"
+              },
+              {
+                "name": "(B1F): Torch Chest",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Torch Chest/"
+              },
+              {
+                "name": "(B1F): Moldorm Drop",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Moldorm Drop/"
+              },
+              {
+                "name": "(1F): Bridge Chest",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Bridge Chest/"
+              },
+              {
+                "name": "(B1F): East",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): East/"
+              },
+              {
+                "name": "Shadow Hag",
+                "ref": "Dungeons/Moonlit Grotto (D3)/Shadow Hag/(B1F): Boss"
+              },
+              {
+                "name": "Echoing Howl",
+                "ref": "Dungeons/Moonlit Grotto (D3)/Echoing Howl/Essence"
+              },
+              {
+                "name": "Get scent seeds in D3's bridge rooms",
+                "ref": "Dungeons/Moonlit Grotto (D3)/Get scent seeds in D3's bridge rooms/Respawnable bushes"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1688,
+                "y": 1488
+              }
+            ]
+          },
+          {
+            "name": "Under Crescent Island",
+            "access_rules": [
+              "^$CanReach|under_crescent_island"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1984,
+                "y": 1265
+              }
+            ]
+          },
+          {
+            "name": "Tokay Chef Trade",
+            "access_rules": [
+              "^$CanReach|tokay_chef_trade"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2168,
+                "y": 1694
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
