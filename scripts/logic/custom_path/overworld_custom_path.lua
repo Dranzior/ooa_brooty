@@ -44,3 +44,56 @@ crescent_past_west:insertIntermediateAfterCheck(crescent_island_tree, TurningSee
 
 NayruRescued_toggle = OoALocation.New("NayruRescued_toggle")
 rescue_nayru:insertIntermediateAfterCheck(maku_tree, NayruRescued_toggle, function() return Has("Nayru") end)
+
+-- Deku forest Deku salesman
+DekuForestShield40 = OoALocation.New("DekuForestShield40")
+deku_forest:connect_one_way(DekuForestShield40, function()
+    return All(
+        Any(
+            All(
+                ooa_can_use_ember_seeds(false),
+                ooa_has_bracelet()
+            ),
+            ooa_has_switch_hook(),
+            Has("Feather")
+        ),
+        AccessibilityLevel.SequenceBreak
+    )
+end)
+fairies_woods:connect_one_way(DekuForestShield40, function()
+    return All(
+        ooa_can_switch_past_and_present(),
+        AccessibilityLevel.SequenceBreak
+    )
+end)
+
+DekuForestShield80 = OoALocation.New("DekuForestShield80")
+deku_forest:connect_one_way(DekuForestShield80, function()
+    return All(
+        Any(
+            ooa_can_use_ember_seeds(false),
+            All(
+                ooa_has_switch_hook(),
+                ooa_has_bracelet()
+            ),
+            Has("Feather")
+        ),
+        AccessibilityLevel.SequenceBreak
+    )
+end)
+fairies_woods:connect_one_way(DekuForestShield80, function()
+    return All
+        (
+            ooa_can_switch_past_and_present(),
+            AccessibilityLevel.SequenceBreak
+        )
+end)
+
+DekuForestShield150 = OoALocation.New("DekuForestShield150")
+deku_forest:connect_one_way(DekuForestShield150, function() return AccessibilityLevel.SequenceBreak end)
+fairies_woods:connect_one_way(DekuForestShield150, function()
+    return All(
+        ooa_can_switch_past_and_present(),
+        AccessibilityLevel.SequenceBreak
+    )
+end)

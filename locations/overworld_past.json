@@ -992,13 +992,9 @@
             ]
           },
           {
-            // TODO
-            "name": "Buy a Shield (10 Rupees)",
+            "name": "Buy a Shield (40 Rupees)",
             "access_rules": [
-              "[trick],$deku_forest,bracelet,feather",
-              "[trick],$deku_forest,bracelet,hook1",
-              "[trick],$deku_forest,bracelet,$use_ember",
-              "[trick],$deku_forest,bracelet,ages",
+              "^$CanReach|DekuForestShield40",
               "[trick],$deku_forest,bracelet,$gale_satchel"
             ],
             "sections": [
@@ -1017,14 +1013,9 @@
             ]
           },
           {
-            // TODO
-            "name": "Buy a Shield (30 Rupees)",
+            "name": "Buy a Shield (80 Rupees)",
             "access_rules": [
-              "[trick],$deku_forest,bracelet,feather",
-              "[trick],$deku_forest,bracelet,hook1",
-              "[trick],$deku_forest,bracelet,$use_ember",
-              "[trick],$deku_forest,bracelet,ages",
-              "[trick],$deku_forest,bracelet,$gale_satchel"
+              "^$CanReach|DekuForestShield80"
             ],
             "sections": [
               {
@@ -1038,6 +1029,26 @@
                 "map": "map",
                 "x": 2523,
                 "y": 1080
+              }
+            ]
+          },
+          {
+            "name": "Buy a Shield (150 Rupees)",
+            "access_rules": [
+              "^$CanReach|DekuForestShield150"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "hosted_item": "shield1",
+                "access_rules": []
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2357,
+                "y": 1216
               }
             ]
           },
