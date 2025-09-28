@@ -198,12 +198,6 @@ end
 -- Various item predicates
 
 function ooa_has_rupees(amount)
-    -- Rupee checks being quite approximative, being able to farm is a
-    -- must-have to prevent any stupid lock
-    if not ooa_can_farm_rupees() then
-        return false
-    end
-
     rupees = Tracker:FindObjectForCode("RupeesCount").AcquiredCount
 
     -- Secret rooms inside D2 and D6 containing loads of rupees, but only in medium logic
@@ -216,10 +210,17 @@ function ooa_has_rupees(amount)
     end
 
     return Any(
-        rupees >= amount,
         All(
-            rupees + bonusRupees >= amount,
-            ooa_option_medium_logic()
+            -- Rupee checks being quite approximative, being able to farm is a
+            -- must-have to prevent any stupid lock
+            ooa_can_farm_rupees(),
+            Any(
+                rupees >= amount,
+                All(
+                    rupees + bonusRupees >= amount,
+                    ooa_option_medium_logic()
+                )
+            )
         ),
         AccessibilityLevel.Inspect
     )
