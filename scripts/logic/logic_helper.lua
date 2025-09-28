@@ -105,7 +105,10 @@ function ooa_has_mystery_seeds()
 end
 
 function ooa_has_gale_seeds()
-    return Has("Gale Seeds")
+    return All(
+        Has("Gale Seeds"),
+        AccessibilityLevel.SequenceBreak    -- Due to Gale not being set as progression in AP, they can never be the logical requirement
+    )
 end
 
 function ooa_has_small_keys(dungeon_id, amount)
