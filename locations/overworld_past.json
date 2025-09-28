@@ -995,7 +995,6 @@
             "name": "Buy a Shield (40 Rupees)",
             "access_rules": [
               "^$CanReach|DekuForestShield40",
-              "[trick],$deku_forest,bracelet,$gale_satchel"
             ],
             "sections": [
               {
