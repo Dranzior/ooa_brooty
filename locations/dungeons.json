@@ -840,13 +840,12 @@
             ]
           },
           {
-            // TODO
             "name": "Get scent seeds in D3's bridge rooms",
             "sections": [
               {
                 "name": "Respawnable bushes",
                 "access_rules": [
-                  "$d3sk|1, $use_seeds, [scentseeds]"
+                  "^$CanReach|D3ScentSeedBush"
                 ],
                 "hosted_item": "scentseeds"
               }

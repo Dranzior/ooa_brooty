@@ -97,3 +97,11 @@ fairies_woods:connect_one_way(DekuForestShield150, function()
         AccessibilityLevel.SequenceBreak
     )
 end)
+
+D3ScentSeedBush = OoALocation.New("D3ScentSeedBush")
+d3_pitfall:connect_one_way(D3ScentSeedBush, function()
+    return All(
+        ooa_can_harvest_regrowing_bush(),
+        AccessibilityLevel.SequenceBreak
+    )
+end)
