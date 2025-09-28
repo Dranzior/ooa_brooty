@@ -411,23 +411,35 @@ end
 
 function ooa_has_seed_kind_count(count)
     seedCount = 0
-    if ooa_has_ember_seeds() then
+    if Has("Ember Seeds") then
         seedCount = seedCount+1
     end
-    if ooa_has_mystery_seeds() then
+    if Has("Mystery Seeds") then
         seedCount = seedCount+1
     end
-    if ooa_has_scent_seeds() then
+    if Has("Scent Seeds") then
         seedCount = seedCount+1
     end
-    if ooa_has_pegasus_seeds() then
-        seedCount = seedCount+1
-    end
-    if ooa_has_gale_seeds() then
+    if Has("Pegasus Seeds") then
         seedCount = seedCount+1
     end
 
-    return seedCount >= count
+    if (seedCount >= count) then
+        return AccessibilityLevel.Normal
+    end
+
+    -- Gale seed is not considered Logic due to them being non-progressive in the APWorld
+    -- so we handle them independently for now
+
+    if Has("Gale Seeds") then
+        seedCount = seedCount+1
+    end
+
+    if (seedCount >= count) then
+        return AccessibilityLevel.SequenceBreak
+    else
+        return AccessibilityLevel.None
+    end
 end
 
 function ooa_can_use_ember_seeds(accept_mystery_seeds)
