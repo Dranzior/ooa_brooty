@@ -76,10 +76,10 @@
         "gravekey",
         "bothtuninuts",
         "crownkey",
-        "d6keypast",
-        "d6keypresent",
+        "d6keys",
         "powderpotion",
-        "eyeball"
+        "eyeball",
+        "rupees"
       ]
     ]
   },

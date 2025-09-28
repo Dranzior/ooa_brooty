@@ -203,26 +203,26 @@ function ooa_has_rupees(amount)
     if not ooa_can_farm_rupees() then
         return false
     end
-    rupees = amount --TODO Implement rupee logic
-    --rupees = Tracker:ProviderCountForCode("Rupees (1)")
-    rupees = rupees + Tracker:ProviderCountForCode("Rupees (5)") * 5
-    rupees = rupees + Tracker:ProviderCountForCode("Rupees (10)") * 10
-    rupees = rupees + Tracker:ProviderCountForCode("Rupees (20)") * 20
-    rupees = rupees + Tracker:ProviderCountForCode("Rupees (50)") * 50
-    rupees = rupees + Tracker:ProviderCountForCode("Rupees (100)") * 100
-    rupees = rupees + Tracker:ProviderCountForCode("Rupees (200)") * 200
+
+    rupees = Tracker:FindObjectForCode("RupeesCount").AcquiredCount
 
     -- Secret rooms inside D2 and D6 containing loads of rupees, but only in medium logic
-    if ooa_option_medium_logic() then
-        if Has("_reached_d2_rupee_room") then
-            rupees = rupees + 150
-        end
-        if Has("_reached_d6_rupee_room") then
-            rupees = rupees + 90
-        end
+    bonusRupees = 0
+    if Has("_reached_d2_rupee_room") then
+        bonusRupees = bonusRupees + 150
+    end
+    if Has("_reached_d6_rupee_room") then
+        bonusRupees = bonusRupees + 90
     end
 
-    return rupees >= amount
+    return Any(
+        rupees >= amount,
+        All(
+            rupees + bonusRupees >= amount,
+            ooa_option_medium_logic()
+        ),
+        AccessibilityLevel.Inspect
+    )
 end
 
 function ooa_can_farm_rupees()

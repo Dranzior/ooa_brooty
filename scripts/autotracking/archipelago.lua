@@ -206,7 +206,11 @@ function onItem(index, item_id, item_name, player_number)
                 obj.Active = true
             end
         elseif v[2] == "consumable" then
-            obj.AcquiredCount = obj.AcquiredCount + obj.Increment
+            local mult = 1
+            if (v[3]) then
+                mult = v[3]
+            end
+            obj.AcquiredCount = obj.AcquiredCount + (obj.Increment * mult)
         elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
             print(string.format("onItem: unknown item type %s for code %s", v[2], v[1]))
         end

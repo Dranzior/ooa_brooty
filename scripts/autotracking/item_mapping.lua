@@ -3,6 +3,7 @@ CURRENT_ITEM = nil
 BASE = 27022002000
 
 ITEM_MAPPING = {
+    -- INVENTORY
     [BASE + 0] = {"shield", "progressive"},
     [BASE + 1] = {"bomb", "progressive"},
     [BASE + 2] = {"swordupgrade", "progressive"},
@@ -12,11 +13,8 @@ ITEM_MAPPING = {
     [BASE + 6] = {"cane", "toggle"},
     [BASE + 7] = {"bigsword", "toggle"},
     [BASE + 8] = {"flute", "toggle"},
-    --[BASE + 8] = {"nuun_ricky", "progressive"},
     [BASE + 9] = {"flute", "toggle"},
-    --[BASE + 9] = {"nuun_dimitri", "progressive"},
     [BASE + 10] = {"flute", "toggle"},
-    --[BASE + 10] = {"nuun_moosh", "progressive"},
     [BASE + 11] = {"shooter", "toggle"},
     [BASE + 12] = {"shovel", "toggle"},
     [BASE + 13] = {"liftupgrade", "progressive"},
@@ -27,6 +25,16 @@ ITEM_MAPPING = {
     [BASE + 18] = {"pegasusseeds", "toggle"},
     [BASE + 19] = {"galeseeds", "toggle"},
     [BASE + 20] = {"mysteryseeds", "toggle"},
+    -- RUPEES
+    -- [BASE + 21] = {"rupees", "consumable"},  --   1 Rupee
+    [BASE + 22] = {"rupees", "consumable"},     --   5 Rupees
+    [BASE + 23] = {"rupees", "consumable", 2},  --  10 Rupees
+    [BASE + 24] = {"rupees", "consumable", 4},  --  20 Rupees
+    [BASE + 25] = {"rupees", "consumable", 6},  --  30 Rupees
+    [BASE + 26] = {"rupees", "consumable", 10}, --  50 Rupees
+    [BASE + 27] = {"rupees", "consumable", 20}, -- 100 Rupees
+    [BASE + 28] = {"rupees", "consumable", 40}, -- 200 Rupees
+    -- PASSIVE
     [BASE + 31] = {"swimupgrade", "progressive"},
     [BASE + 33] = {"potion", "toggle"},
     -- SMALL KEYS

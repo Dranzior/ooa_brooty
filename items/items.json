@@ -203,7 +203,14 @@
     "img": "images/items/seedmystery.png",
     "codes": "mysteryseeds, Mystery Seeds"
   },
-  // TODO RUPEES ?
+  {
+    "name": "Rupees",
+    "type": "consumable",
+    "codes": "rupees, RupeesCount",
+    "increment": 5,
+    "decrement": 5,
+    "img": "images/items/Rupee (Giant Red).png"
+  },
   {
     "name": "Progressive Flippers",
     "type": "progressive",
@@ -746,6 +753,35 @@
         "left": true,
         "right": true,
         "img": "images/items/bothtuni_d.png"
+      }
+    ]
+  },
+  {
+    "name": "D6 Keys",
+    "type": "composite_toggle",
+    "item_left": "d6keypast",
+    "item_right": "d6keypresent",
+    "codes": "d6keys",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/mermaidkeys_a.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/mermaidkeys_b.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/mermaidkeys_c.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/mermaidkeys_d.png"
       }
     ]
   },
