@@ -18,6 +18,10 @@ end)
 
 -- Overworld scouting
 lynna_village:connect_one_way_entrance(black_tower_heartpiece, function() return AccessibilityLevel.Inspect end)
+ridge_west_present:connect_one_way_entrance(ridge_west_heartpiece, function() return AccessibilityLevel.Inspect end)
+
+-- Missing from AP
+ridge_west_past_base:connect_one_way_entrance(ridge_west_present,function() return All(ooa_can_go_back_to_present(), AccessibilityLevel.SequenceBreak) end)
 
 -- Insert Toggles into logic
 Raft_toggle = OoALocation.New("Raft_toggle")
