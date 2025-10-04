@@ -1,6 +1,22 @@
 {
   "versions": [
     {
+      "package_version": "0.9.1",
+      "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.1/ooa.zip",
+      "sha256": "8921bc5c55f18ba936ef0c8cf439371024229170811689021334f95af26a5d95",
+      "changelog": [
+        "NEW: present chest no longer use past chest sprite",
+        "NEW: tracker now track rupee you have obtained and consider it for logic",
+        "FIX: replace many boolean check that were failing when applied to Accessibility type object",
+        "FIX: updated logic to get a shield from Deku salesman in deku forest",
+        "FIX: updated logic to get scent sceed from D3 bushes",
+        "FIX: make any gale seed check OOL to match .apworld logic",
+        "FIX: fixed the function that count the number of seed required for Tingle",
+        "FIX: added a path missing in the apworld to go from ridge base past to present before saving the goron elder",
+        "FIX: added scouting logic to ridge west heart piece"
+      ]
+    },
+    {
       "package_version": "0.9.0",
       "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.0/ooa.zip",
       "sha256": "c2be8b73fdd96945f9f94520463438ce32cc79c6d1cdd43cb6037e389f955f68",
