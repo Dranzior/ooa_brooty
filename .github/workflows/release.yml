@@ -1,0 +1,44 @@
+# Automate releases when a new release tag is created
+name: Release
+
+on:
+  # Triggers the workflow whenever a "version" tag is pushed
+  push:
+    tags: [ "[0-9]+.[0-9]+.[0-9]+" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  release:
+    permissions: write-all
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out repository
+      - uses: actions/checkout@v4
+
+      # Create artifacts
+      - name: create zip
+        run: |
+          zip -r ooa.zip . -x ".*" "source_images/*" "LogicGenerator/*" "versions.json"
+
+      # Create the new release
+      - name: create release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ github.ref_name }}
+          notes: ${{ github.event.inputs.message }}
+        run: |
+          gh release create "$tag" \
+            --repo="$GITHUB__REPOSITORY" \
+            --title="Oracle of Ages Map Tracker - $tag"
+      
+      # Add artifact to the newly created release
+      - name: upload artefact
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ github.ref_name }}
+        run: |
+          gh release upload "$tag"\
+            ooa.zip
