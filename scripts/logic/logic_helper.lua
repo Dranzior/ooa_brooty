@@ -200,27 +200,12 @@ end
 function ooa_has_rupees(amount)
     rupees = Tracker:FindObjectForCode("RupeesCount").AcquiredCount
 
-    -- Secret rooms inside D2 and D6 containing loads of rupees, but only in medium logic
-    bonusRupees = 0
-    if Has("_reached_d2_rupee_room") then
-        bonusRupees = bonusRupees + 150
-    end
-    if Has("_reached_d6_rupee_room") then
-        bonusRupees = bonusRupees + 90
-    end
-
     return Any(
         All(
             -- Rupee checks being quite approximative, being able to farm is a
             -- must-have to prevent any stupid lock
             ooa_can_farm_rupees(),
-            Any(
-                rupees >= amount,
-                All(
-                    rupees + bonusRupees >= amount,
-                    ooa_option_medium_logic()
-                )
-            )
+            rupees >= amount
         ),
         AccessibilityLevel.Inspect
     )
