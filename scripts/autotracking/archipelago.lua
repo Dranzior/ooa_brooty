@@ -140,8 +140,9 @@ function onClear(slot_data)
 end
 
 function updateDefaultSeed()
-    local satchel = Tracker:FindObjectForCode "seed satchel";
-    if (satchel and satchel.Active) then
+    local satchel = Tracker:FindObjectForCode("seed satchel")
+    local seedShooter = Tracker:FindObjectForCode("seed shooter")
+    if (satchel and satchel.Active) or (seedShooter and seedShooter.Active) then
         --starting seed
         if SLOT_DATA["default_seed"] then
             local obj = Tracker:FindObjectForCode("emberseeds")
