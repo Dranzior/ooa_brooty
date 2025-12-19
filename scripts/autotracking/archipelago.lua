@@ -1,12 +1,17 @@
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/automation/Hint.lua")
+ScriptHost:LoadScript("scripts/autotracking/automation/ManualLocation.lua")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 HOSTED = {}
+ALL_LOCATIONS = {}
+
+MANUAL_CHECKED = true
+ROOM_SEED = "default"
 
 function onSetReply(key, value, _)
     local slot_player = "Slot:" .. Archipelago.PlayerNumber
@@ -28,10 +33,51 @@ function retrieved(key, value)
 	Hint.Process(key, value)
 end
 
+function preOnClear()
+    PLAYER_ID = Archipelago.PlayerNumber or -1
+	TEAM_NUMBER = Archipelago.TeamNumber or 0
+    if Archipelago.PlayerNumber > -1 then
+        if #ALL_LOCATIONS > 0 then
+            ALL_LOCATIONS = {}
+        end
+        for _, value in pairs(Archipelago.MissingLocations) do
+            table.insert(ALL_LOCATIONS, #ALL_LOCATIONS + 1, value)
+        end
+
+        for _, value in pairs(Archipelago.CheckedLocations) do
+            table.insert(ALL_LOCATIONS, #ALL_LOCATIONS + 1, value)
+        end
+    end
+
+    local custom_storage_item = Tracker:FindObjectForCode("manual_location_storage")
+    local seed_base = (Archipelago.Seed or tostring(#ALL_LOCATIONS)).."_"..Archipelago.TeamNumber.."_"..Archipelago.PlayerNumber
+    if ROOM_SEED == "default" or ROOM_SEED ~= seed_base then -- seed is default or from previous connection
+
+        ROOM_SEED = seed_base
+        if #custom_storage_item.ItemState.MANUAL_LOCATIONS > 10 then
+            custom_storage_item.ItemState.MANUAL_LOCATIONS[custom_storage_item.ItemState.MANUAL_LOCATIONS_ORDER[1]] = nil
+            table.remove(custom_storage_item.ItemState.MANUAL_LOCATIONS_ORDER, 1)
+        end
+        if custom_storage_item.ItemState.MANUAL_LOCATIONS[ROOM_SEED] == nil then
+            custom_storage_item.ItemState.MANUAL_LOCATIONS[ROOM_SEED] = {}
+            table.insert(custom_storage_item.ItemState.MANUAL_LOCATIONS_ORDER, ROOM_SEED)
+        end
+    end
+end
+
 function onClear(slot_data)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
     end
+
+	MANUAL_CHECKED = false
+    local custom_storage_item = Tracker:FindObjectForCode("manual_location_storage")
+    if custom_storage_item == nil then
+        CreateLuaManualLocationStorage("manual_location_storage")
+        custom_storage_item = Tracker:FindObjectForCode("manual_location_storage")
+    end
+    preOnClear()
+
     SLOT_DATA = slot_data
     CUR_INDEX = -1
     -- reset locations
@@ -43,7 +89,11 @@ function onClear(slot_data)
             local obj = Tracker:FindObjectForCode(v[1])
             if obj then
                 if v[1]:sub(1, 1) == "@" then
-                    obj.AvailableChestCount = obj.ChestCount
+                    if custom_storage_item.ItemState.MANUAL_LOCATIONS[ROOM_SEED][obj.FullID] then
+						obj.AvailableChestCount = custom_storage_item.ItemState.MANUAL_LOCATIONS[ROOM_SEED][obj.FullID]
+					else
+						obj.AvailableChestCount = obj.ChestCount
+					end
                 else
                     obj.Active = false
                 end
@@ -137,6 +187,7 @@ function onClear(slot_data)
 
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
+    MANUAL_CHECKED = true
 end
 
 function updateDefaultSeed()
@@ -235,6 +286,7 @@ end
 
 -- called when a location gets cleared
 function onLocation(location_id, location_name)
+    MANUAL_CHECKED = false
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onLocation: %s, %s", location_id, location_name))
     end
@@ -272,6 +324,7 @@ function onLocation(location_id, location_name)
         obj = Tracker:FindObjectForCode("Nayru")
         obj.Active = true
     end
+    MANUAL_CHECKED = true
 end
 
 -- called when a locations is scouted
@@ -290,6 +343,29 @@ function onBounce(json)
     -- your code goes here
 end
 
+-- handler function for the custom lua item that stores manually marked off locations
+function LocationHandler(location)
+    if MANUAL_CHECKED then
+        local custom_storage_item = Tracker:FindObjectForCode("manual_location_storage")
+        if not custom_storage_item then
+            return
+        end
+        if Archipelago.PlayerNumber == -1 then -- not connected
+            if ROOM_SEED ~= "default" then -- seed is from previous connection
+                ROOM_SEED = "default"
+                custom_storage_item.ItemState.MANUAL_LOCATIONS["default"] = {}
+            else -- seed is default
+            end
+        end
+        local full_path = location.FullID
+        if location.AvailableChestCount < location.ChestCount then --add to list
+            custom_storage_item.ItemState.MANUAL_LOCATIONS[ROOM_SEED][full_path] = location.AvailableChestCount
+        else --remove from list or set back to max chestcount
+            custom_storage_item.ItemState.MANUAL_LOCATIONS[ROOM_SEED][full_path] = nil
+        end
+    end
+end
+
 -- add AP callbacks
 -- un-/comment as needed
 Archipelago:AddClearHandler("clear handler", onClear)
@@ -299,3 +375,4 @@ Archipelago:AddSetReplyHandler("set reply handler", onSetReply)
 -- Archipelago:AddScoutHandler("scout handler", onScout)
 -- Archipelago:AddBouncedHandler("bounce handler", onBounce)
 Archipelago:AddRetrievedHandler("retrieved", retrieved)
+ScriptHost:AddOnLocationSectionChangedHandler("location_section_change_handler", LocationHandler)
