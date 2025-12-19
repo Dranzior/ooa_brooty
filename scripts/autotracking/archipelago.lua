@@ -82,9 +82,9 @@ function onClear(slot_data)
             obj.Active = false
         end
     end
-	
-	Hint.Setup()
-	
+
+    Hint.Setup()
+
     -- companions
     if slot_data["animal_companion"] then
         if slot_data["animal_companion"] == "Ricky" then
@@ -95,7 +95,7 @@ function onClear(slot_data)
             Tracker:FindObjectForCode("companions").CurrentStage = 3
         end
     end
-    -- logic 
+    -- logic
     if slot_data["logic_difficulty"] then
         if slot_data["logic_difficulty"] == 0 then
             Tracker:FindObjectForCode("logic").CurrentStage = 0
@@ -128,45 +128,52 @@ function onClear(slot_data)
     if slot_data["required_slates"] then
         Tracker:FindObjectForCode("requiredslates").AcquiredCount = slot_data["required_slates"]
     end
-    --starting seed
-    if slot_data["default_seed"] then
-        local obj = Tracker:FindObjectForCode("emberseeds")
-        if obj then
-            obj.Active = slot_data["default_seed"] == "Ember Seeds"
-        end
-    end
-    if slot_data["default_seed"] then
-        local obj = Tracker:FindObjectForCode("scentseeds")
-        if obj then
-            obj.Active = slot_data["default_seed"] == "Scent Seeds"
-        end
-    end
-    if slot_data["default_seed"] then
-        local obj = Tracker:FindObjectForCode("pegasusseeds")
-        if obj then
-            obj.Active = slot_data["default_seed"] == "Pegasus Seeds"
-        end
-    end
-    if slot_data["default_seed"] then
-        local obj = Tracker:FindObjectForCode("galeseeds")
-        if obj then
-            obj.Active = slot_data["default_seed"] == "Gale Seeds"
-        end
-    end
-    if slot_data["default_seed"] then
-        local obj = Tracker:FindObjectForCode("mysteryseeds")
-        if obj then
-            obj.Active = slot_data["default_seed"] == "Mystery Seeds"
-        end
-    end
-    
+
+    updateDefaultSeed()
+
     if SLOT_DATA == nil then
         return
     end
-    
+
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
+end
 
+function updateDefaultSeed()
+    local satchel = Tracker:FindObjectForCode "seed satchel";
+    if (satchel and satchel.Active) then
+        --starting seed
+        if SLOT_DATA["default_seed"] then
+            local obj = Tracker:FindObjectForCode("emberseeds")
+            if obj and SLOT_DATA["default_seed"] == "Ember Seeds" then
+                obj.Active = true
+            end
+        end
+        if SLOT_DATA["default_seed"] then
+            local obj = Tracker:FindObjectForCode("scentseeds")
+            if obj and SLOT_DATA["default_seed"] == "Scent Seeds" then
+                obj.Active = true
+            end
+        end
+        if SLOT_DATA["default_seed"] then
+            local obj = Tracker:FindObjectForCode("pegasusseeds")
+            if obj and SLOT_DATA["default_seed"] == "Pegasus Seeds" then
+                obj.Active = true
+            end
+        end
+        if SLOT_DATA["default_seed"] then
+            local obj = Tracker:FindObjectForCode("galeseeds")
+            if obj and SLOT_DATA["default_seed"] == "Gale Seeds" then
+                obj.Active = true
+            end
+        end
+        if SLOT_DATA["default_seed"] then
+            local obj = Tracker:FindObjectForCode("mysteryseeds")
+            if obj and SLOT_DATA["default_seed"] == "Mystery Seeds" then
+                obj.Active = true
+            end
+        end
+    end
 end
 
 -- called when an item gets collected
@@ -217,27 +224,12 @@ function onItem(index, item_id, item_name, player_number)
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("onItem: could not find object for code %s", v[1]))
     end
-    -- track local items via snes interface
-    if is_local then
-        if LOCAL_ITEMS[v[1]] then
-            LOCAL_ITEMS[v[1]] = LOCAL_ITEMS[v[1]] + 1
-        else
-            LOCAL_ITEMS[v[1]] = 1
-        end
-    else
-        if GLOBAL_ITEMS[v[1]] then
-            GLOBAL_ITEMS[v[1]] = GLOBAL_ITEMS[v[1]] + 1
-        else
-            GLOBAL_ITEMS[v[1]] = 1
-        end
-    end
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
         print(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
     end
-    if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
-        -- add snes interface functions here for local item tracking
-    end
+
+    updateDefaultSeed()
 end
 
 -- called when a location gets cleared
