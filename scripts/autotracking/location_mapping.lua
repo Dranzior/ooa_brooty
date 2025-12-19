@@ -112,7 +112,7 @@ LOCATION_MAPPING = {
     [BASE + 100] = {"@Overworld/Fairies' Woods/Restoration Wall Heart Piece/"},
     [BASE + 101] = {"@Overworld/Nuun Highlands|Symmetry City|Talus Peaks/Symmetry City Heart Piece/"},
     [BASE + 102] = {"@Overworld/Rolling Ridge West/Rolling Ridge Entrance/Ridge West Heart Piece"},
-    [BASE + 103] = {"@Overworld/Rolling Ridge East (Past)/Ridge Upper Heart Piece/"},
+    [BASE + 103] = {"@Overworld/Rolling Ridge East (Present)/Ridge Upper Heart Piece/"},
     -- MAKU PATH
     [BASE + 104] = {"@Dungeons/Maku Path (D0)/Key Chest/" },
     [BASE + 105] = {"@Dungeons/Maku Path (D0)/Basement/" },
