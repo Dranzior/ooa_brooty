@@ -1,6 +1,16 @@
 {
   "versions": [
     {
+      "package_version": "0.9.2",
+      "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.2/ooa.zip",
+      "sha256": "aed2da26e9abd1bda2d43b52151bf2538b92df5979cb75f4578b95c036406b2c",
+      "changelog": [
+        "NEW: Manually checked location should now be kept when reconnecting to archipelago",
+        "FIX: Default seed now are only added once you get the Seed satchel or Seed shooter",
+        "FIX: Ridge Upper Heart Piece Autotrack correctly again",
+      ]
+    },
+    {
       "package_version": "0.9.1",
       "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.1/ooa.zip",
       "sha256": "8921bc5c55f18ba936ef0c8cf439371024229170811689021334f95af26a5d95",
