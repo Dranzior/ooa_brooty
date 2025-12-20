@@ -7,7 +7,7 @@
       "changelog": [
         "NEW: Manually checked location should now be kept when reconnecting to archipelago",
         "FIX: Default seed now are only added once you get the Seed satchel or Seed shooter",
-        "FIX: Ridge Upper Heart Piece Autotrack correctly again",
+        "FIX: Ridge Upper Heart Piece Autotrack correctly again"
       ]
     },
     {
