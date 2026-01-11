@@ -33,6 +33,7 @@ ScriptHost:LoadScript("scripts/logic/generated/d8.lua")
 
 ScriptHost:LoadScript("scripts/logic/custom_path/dungeon_entrance.lua")
 ScriptHost:LoadScript("scripts/logic/custom_path/overworld_custom_path.lua")
+ScriptHost:LoadScript("scripts/LayoutAdjustement.lua")
 
 StateChange()
 
@@ -53,6 +54,8 @@ Tracker:AddLayouts("layouts/items.json")
 Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 Tracker:AddLayouts("layouts/layouts.json")
+Tracker:AddLayouts("layouts/dungeonKeys/default.json")
+Tracker:AddLayouts("layouts/companionMap/default.json")
 
 -- AutoTracking for Poptracker
 ScriptHost:LoadScript("scripts/autotracking.lua")

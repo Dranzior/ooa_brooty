@@ -1,0 +1,26 @@
+{
+  "animal_map": {
+    "type": "array",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "style": "wrap",
+        "content": [
+          {
+            "type": "map",
+            "maps": [
+              "animal_ricky"
+            ]
+          },
+          {
+            "type": "map",
+            "maps": [
+              "animal_ricky_past"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

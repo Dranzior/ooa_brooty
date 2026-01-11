@@ -1,0 +1,128 @@
+{
+  "key_layouts_d1_d2": {
+    "type": "itemgrid",
+    "dock": "left",
+    "item_margin": "-6,-3",
+    "item_size": 18,
+    "rows": [
+      [
+        "d1sk",
+        "",
+        "",
+        "",
+        "d1bk",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "d2sk",
+        "",
+        "",
+        "",
+        "d2bk"
+      ]
+    ]
+  },
+  "key_layouts_d3_d4": {
+    "type": "itemgrid",
+    "dock": "left",
+    "item_margin": "-6,-3",
+    "item_size": 18,
+    "rows": [
+      [
+        "d3sk",
+        "",
+        "",
+        "",
+        "d3bk",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "d4sk",
+        "",
+        "",
+        "",
+        "d4bk"
+      ]
+    ]
+  },
+  "key_layouts_d5_d6": {
+    "type": "itemgrid",
+    "dock": "left",
+    "item_margin": "-6,-3",
+    "item_size": 18,
+    "rows": [
+      [
+        "d5sk",
+        "",
+        "",
+        "",
+        "d5bk",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "d6_1sk",
+        "",
+        "d6_2sk",
+        "",
+        "d6bk",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  "key_layouts_d7_d8": {
+    "type": "itemgrid",
+    "dock": "left",
+    "item_margin": "-6,-3",
+    "item_size": 18,
+    "rows": [
+      [
+        "d7sk",
+        "",
+        "",
+        "",
+        "d7bk",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "d8sk",
+        "",
+        "d8bk",
+        "",
+        "d8slate",
+        "",
+        ""
+      ]
+    ]
+  }
+}
