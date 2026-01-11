@@ -189,9 +189,17 @@
         "margin": "5,-7,-2,0",
         "content": [
           {
-              "type": "layout",
-              "key": "key_layouts_d1_d2"
-            }
+            "type": "layout",
+            "key": "key_layouts_d1"
+          },
+          {
+            "type": "canvas",
+            "width": 40
+          },
+          {
+            "type": "layout",
+            "key": "key_layouts_d2"
+          }
         ]
       },
       {
@@ -221,9 +229,17 @@
         "margin": "5,-7,-2,0",
         "content": [
           {
-              "type": "layout",
-              "key": "key_layouts_d3_d4"
-            }
+            "type": "layout",
+            "key": "key_layouts_d3"
+          },
+          {
+            "type": "canvas",
+            "width": 40
+          },
+          {
+            "type": "layout",
+            "key": "key_layouts_d4"
+          }
         ]
       },
       {
@@ -254,9 +270,17 @@
         "margin": "5,-7,-2,0",
         "content": [
           {
-              "type": "layout",
-              "key": "key_layouts_d5_d6"
-            }
+            "type": "layout",
+            "key": "key_layouts_d5"
+          },
+          {
+            "type": "canvas",
+            "width": 40
+          },
+          {
+            "type": "layout",
+            "key": "key_layouts_d6"
+          }
         ]
       },
       {
@@ -286,9 +310,17 @@
         "margin": "5,-7,-2,0",
         "content": [
           {
-              "type": "layout",
-              "key": "key_layouts_d7_d8"
-            }
+            "type": "layout",
+            "key": "key_layouts_d7"
+          },
+          {
+            "type": "canvas",
+            "width": 40
+          },
+          {
+            "type": "layout",
+            "key": "key_layouts_d8"
+          }
         ]
       }
     ]

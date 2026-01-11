@@ -1,5 +1,5 @@
 {
-  "key_layouts_d1_d2": {
+  "key_layouts_d1": {
     "type": "itemgrid",
     "dock": "left",
     "item_margin": "-6,-3",
@@ -10,17 +10,17 @@
         "",
         "d1mk",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        ""
+      ]
+    ]
+  },
+  "key_layouts_d2": {
+    "type": "itemgrid",
+    "dock": "left",
+    "item_margin": "-6,-3",
+    "item_size": 18,
+    "rows": [
+      [
         "",
         "",
         "d2mk",
@@ -29,7 +29,7 @@
       ]
     ]
   },
-  "key_layouts_d3_d4": {
+  "key_layouts_d3": {
     "type": "itemgrid",
     "dock": "left",
     "item_margin": "-6,-3",
@@ -40,17 +40,17 @@
         "",
         "d3mk",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        ""
+      ]
+    ]
+  },
+  "key_layouts_d4": {
+    "type": "itemgrid",
+    "dock": "left",
+    "item_margin": "-6,-3",
+    "item_size": 18,
+    "rows": [
+      [
         "",
         "",
         "d4mk",
@@ -59,7 +59,7 @@
       ]
     ]
   },
-  "key_layouts_d5_d6": {
+  "key_layouts_d5": {
     "type": "itemgrid",
     "dock": "left",
     "item_margin": "-6,-3",
@@ -70,30 +70,26 @@
         "",
         "d5mk",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "d6_1mk",
-        "",
-        "",
-        "",
-        "d6_2mk",
-        "",
-        "",
-        "",
         ""
       ]
     ]
   },
-  "key_layouts_d7_d8": {
+  "key_layouts_d6": {
+    "type": "itemgrid",
+    "dock": "left",
+    "item_margin": "-6,-3",
+    "item_size": 18,
+    "rows": [
+      [
+        "d6_1mk",
+        "",
+        "",
+        "",
+        "d6_2mk"
+      ]
+    ]
+  },
+  "key_layouts_d7": {
     "type": "itemgrid",
     "dock": "left",
     "item_margin": "-6,-3",
@@ -104,24 +100,22 @@
         "",
         "d7mk",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        ""
+      ]
+    ]
+  },
+  "key_layouts_d8": {
+    "type": "itemgrid",
+    "dock": "left",
+    "item_margin": "-6,-3",
+    "item_size": 18,
+    "rows": [
+      [
         "d8mk",
         "",
         "",
         "",
-        "d8slate",
-        "",
-        ""
+        "d8slate"
       ]
     ]
   }
