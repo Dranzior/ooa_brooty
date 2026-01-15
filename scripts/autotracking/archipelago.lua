@@ -178,6 +178,10 @@ function onClear(slot_data)
     if slot_data["required_slates"] then
         Tracker:FindObjectForCode("requiredslates").AcquiredCount = slot_data["required_slates"]
     end
+    --Lynna Gardener
+    if slot_data["lynna_gardener"] then
+        Tracker:FindObjectForCode("lynnagardener").CurrentStage = slot_data["lynna_gardener"]
+    end
 
     updateDefaultSeed()
 

@@ -916,6 +916,19 @@
       }
     ]
   },
+  {
+    "name": "Lynna Gardener",
+    "type": "progressive",
+    "allow_disabled": true,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "lynnagardener",
+        "inherit_codes": false,
+        "img": "images/items/Lynna Gardener.png"
+      }
+    ]
+  },
   // Tree Warp
   {
     "name": "Tree Warp?",

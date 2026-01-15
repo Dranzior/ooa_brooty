@@ -195,6 +195,10 @@ function ooa_has_enough_slates()
     return ooa_has_slates(Tracker:ProviderCountForCode("requiredslates"))
 end
 
+function ooa_option_lynna_gardener()
+    return Has("lynnagardener")
+end
+
 -- Various item predicates
 
 function ooa_has_rupees(amount)
