@@ -41,6 +41,7 @@ d5_switch_A:connect_one_way_entrance(d5_like_like_chest,function() return Any(
 d5_switch_A:connect_one_way_entrance(d5_eyes_chest,function() return Any(
             ooa_has_seedshooter(),
             All(
+                ooa_option_medium_logic(),
                 ooa_can_use_pegasus_seeds(),
                 ooa_has_feather(),
                 ooa_can_use_mystery_seeds(),
@@ -49,13 +50,14 @@ d5_switch_A:connect_one_way_entrance(d5_eyes_chest,function() return Any(
         ) end)
 d5_switch_A:connect_one_way_entrance(d5_two_statue_puzzle,function() return All(
             ooa_can_break_pot(),
-            Any(
-                ooa_has_cane(),
-                ooa_option_medium_logic()),
             ooa_has_feather(),
+            ooa_has_cane(),
             Any(
                 ooa_has_seedshooter(),
                 ooa_has_boomerang(),
+                All(
+                    ooa_can_jump_2_wide_pit(false),
+                    ooa_has_sword(false)),
                 All(
                     ooa_option_hard_logic(),
                     ooa_can_jump_2_wide_pit(false),
