@@ -105,10 +105,7 @@ function ooa_has_mystery_seeds()
 end
 
 function ooa_has_gale_seeds()
-    return All(
-        Has("Gale Seeds"),
-        AccessibilityLevel.SequenceBreak    -- Due to Gale not being set as progression in AP, they can never be the logical requirement
-    )
+    return Has("Gale Seeds")
 end
 
 function ooa_has_small_keys(dungeon_id, amount)
@@ -413,20 +410,12 @@ function ooa_has_seed_kind_count(count)
     if Has("Pegasus Seeds") then
         seedCount = seedCount+1
     end
-
-    if (seedCount >= count) then
-        return AccessibilityLevel.Normal
-    end
-
-    -- Gale seed is not considered Logic due to them being non-progressive in the APWorld
-    -- so we handle them independently for now
-
     if Has("Gale Seeds") then
         seedCount = seedCount+1
     end
 
     if (seedCount >= count) then
-        return AccessibilityLevel.SequenceBreak
+        return AccessibilityLevel.Normal
     else
         return AccessibilityLevel.None
     end
