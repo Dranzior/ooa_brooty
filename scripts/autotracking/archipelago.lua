@@ -182,6 +182,10 @@ function onClear(slot_data)
     if slot_data["lynna_gardener"] then
         Tracker:FindObjectForCode("lynnagardener").CurrentStage = slot_data["lynna_gardener"]
     end
+    --Master Key
+    if slot_data["master_keys"] then
+        Tracker:FindObjectForCode("master_key_small").CurrentStage = slot_data["master_keys"]
+    end
 
     updateDefaultSeed()
 
