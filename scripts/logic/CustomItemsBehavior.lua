@@ -12,6 +12,7 @@ HasItem_CustomBehavior["Progressive Bracelet"] = function(level) return HasProgr
 HasItem_CustomBehavior["Progressive Flippers"] = function(level) return HasProgressive("swim", level) end
 HasItem_CustomBehavior["Progressive Harp"] = function(level) return HasProgressive("song", level) end
 HasItem_CustomBehavior["Seed Satchel"] = function(level) return HasProgressive("satchel", level) end
+HasItem_CustomBehavior["Bombs (10)"] = function(level) return HasProgressive("bombs", level) end
 
 -- AP World use event, to handle crystals, recreating the underlying logic here
 -- Alternatively those could be converted to toggle, but untill we have some auto tracking for it, would just make it more annoying to track

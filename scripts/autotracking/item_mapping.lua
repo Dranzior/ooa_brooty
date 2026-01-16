@@ -5,7 +5,7 @@ BASE = 27022002000
 ITEM_MAPPING = {
     -- INVENTORY
     [BASE + 0] = {"shield", "progressive"},
-    [BASE + 1] = {"bomb", "progressive"},
+    [BASE + 1] = {"bombs", "progressive"},
     [BASE + 2] = {"swordupgrade", "progressive"},
     [BASE + 3] = {"boomerang", "progressive"},
     [BASE + 4] = {"harpupgrade", "progressive"},

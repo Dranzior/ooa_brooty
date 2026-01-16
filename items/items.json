@@ -18,12 +18,45 @@
     "type": "progressive",
     "stages": [
       {
-        "img": "images/items/bombs.png",
-        "codes": "bomb, bombs, Bombs (10)"
+        "disabled_img": "images/items/bomb.png",
+        "img": "images/items/bomb10.png",
+        "codes": "bombs, bombs1"
       },
       {
-        "img": "images/items/bombs_plus.png",
-        "codes": "bomb, bombs, bombplus, bombsplus, Bombs (10)"
+        "img": "images/items/bomb20.png",
+        "codes": "bombs, bombs2"
+      },
+      {
+        "img": "images/items/bomb30.png",
+        "codes": "bombs, bombs3"
+      },
+      {
+        "img": "images/items/bomb40.png",
+        "codes": "bombs, bombs4"
+      },
+      {
+        "img": "images/items/bomb50.png",
+        "codes": "bombs, bombs5"
+      },
+      {
+        "img": "images/items/bomb60.png",
+        "codes": "bombs, bombs6"
+      },
+      {
+        "img": "images/items/bomb70.png",
+        "codes": "bombs, bombs7"
+      },
+      {
+        "img": "images/items/bomb80.png",
+        "codes": "bombs, bombs8"
+      },
+      {
+        "img": "images/items/bomb90.png",
+        "codes": "bombs, bombs9"
+      },
+      {
+        "img": "images/items/bomb99.png",
+        "codes": "bombs, bombs10"
       }
     ]
   },
@@ -159,12 +192,17 @@
     "type": "progressive",
     "stages": [
       {
-        "img": "images/items/satchel.png",
+        "disabled_img": "images/items/satchel.png",
+        "img": "images/items/satchel1.png",
         "codes": "satchel, satchel1, Seed Satchel"
       },
       {
-        "img": "images/items/satchel_plus.png",
+        "img": "images/items/satchel2.png",
         "codes": "satchel, satchel2, Seed Satchel"
+      },
+      {
+        "img": "images/items/satchel3.png",
+        "codes": "satchel, satchel3, Seed Satchel"
       }
     ]
   },
