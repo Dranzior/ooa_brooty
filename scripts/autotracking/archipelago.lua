@@ -51,17 +51,14 @@ function preOnClear()
 
     local custom_storage_item = Tracker:FindObjectForCode("manual_location_storage")
     local seed_base = (Archipelago.Seed or tostring(#ALL_LOCATIONS)).."_"..Archipelago.TeamNumber.."_"..Archipelago.PlayerNumber
-    if ROOM_SEED == "default" or ROOM_SEED ~= seed_base then -- seed is default or from previous connection
-
-        ROOM_SEED = seed_base
-        if #custom_storage_item.ItemState.MANUAL_LOCATIONS > 10 then
-            custom_storage_item.ItemState.MANUAL_LOCATIONS[custom_storage_item.ItemState.MANUAL_LOCATIONS_ORDER[1]] = nil
-            table.remove(custom_storage_item.ItemState.MANUAL_LOCATIONS_ORDER, 1)
-        end
-        if custom_storage_item.ItemState.MANUAL_LOCATIONS[ROOM_SEED] == nil then
-            custom_storage_item.ItemState.MANUAL_LOCATIONS[ROOM_SEED] = {}
-            table.insert(custom_storage_item.ItemState.MANUAL_LOCATIONS_ORDER, ROOM_SEED)
-        end
+    ROOM_SEED = seed_base
+    if #custom_storage_item.ItemState.MANUAL_LOCATIONS > 10 then
+        custom_storage_item.ItemState.MANUAL_LOCATIONS[custom_storage_item.ItemState.MANUAL_LOCATIONS_ORDER[1]] = nil
+        table.remove(custom_storage_item.ItemState.MANUAL_LOCATIONS_ORDER, 1)
+    end
+    if custom_storage_item.ItemState.MANUAL_LOCATIONS[ROOM_SEED] == nil then
+        custom_storage_item.ItemState.MANUAL_LOCATIONS[ROOM_SEED] = {}
+        table.insert(custom_storage_item.ItemState.MANUAL_LOCATIONS_ORDER, ROOM_SEED)
     end
 end
 
