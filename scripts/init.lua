@@ -39,6 +39,7 @@ StateChange()
 
 -- Items
 Tracker:AddItems("items/items.json")
+Tracker:AddItems("items/settings.json")
 
 if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
     -- Maps
@@ -54,6 +55,7 @@ Tracker:AddLayouts("layouts/items.json")
 Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 Tracker:AddLayouts("layouts/layouts.json")
+Tracker:AddLayouts("layouts/settings.json")
 Tracker:AddLayouts("layouts/dungeonKeys/default.json")
 Tracker:AddLayouts("layouts/companionMap/default.json")
 

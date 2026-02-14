@@ -41,16 +41,6 @@
               }
             },
             {
-              "type": "group",
-              "header": "Settings",
-              "dock": "left",
-              "content": {
-                "type": "layout",
-                "v_alignment": "stretch",
-                "key": "settings_tab"
-              }
-            },
-            {
               "type": "container",
               "dock": "left",
               "content": {

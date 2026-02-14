@@ -1,0 +1,204 @@
+[
+  {
+    "name": "Advance Shop Label",
+    "type": "static",
+    "img": "images/settings/advanceshop.png",
+    "codes": "advanceshoplabel"
+  },
+  {
+    "name": "Advance Shop",
+    "type": "toggle",
+    "img": "images/settings/advanceshopon.png",
+    "disabled_img": "images/settings/advanceshopoff.png",
+    "disabled_img_mods": "none",
+    "codes": "advanceshop"
+  },
+  {
+    "name": "Required Slates Label",
+    "type": "static",
+    "img": "images/settings/slate.png",
+    "codes": "requiredslateslabel"
+  },
+  {
+    "name": "Required Slates",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "requiredslates",
+        "img": "images/settings/slate0.png"
+      },
+      {
+        "img": "images/settings/slate1.png"
+      },
+      {
+        "img": "images/settings/slate2.png"
+      },
+      {
+        "img": "images/settings/slate3.png"
+      },
+      {
+        "img": "images/settings/slate4.png"
+      }
+    ]
+  },
+  {
+    "name": "Required Essence Label",
+    "type": "static",
+    "img": "images/settings/essence.png",
+    "codes": "allessencelabel"
+  },
+  {
+    "name": "Required Essence",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "allessence",
+        "img": "images/settings/essence0.png"
+      },
+      {
+        "img": "images/settings/essence1.png"
+      },
+      {
+        "img": "images/settings/essence2.png"
+      },
+      {
+        "img": "images/settings/essence3.png"
+      },
+      {
+        "img": "images/settings/essence4.png"
+      },
+      {
+        "img": "images/settings/essence5.png"
+      },
+      {
+        "img": "images/settings/essence6.png"
+      },
+      {
+        "img": "images/settings/essence7.png"
+      },
+      {
+        "img": "images/settings/essence8.png"
+      }
+    ]
+  },
+  {
+    "name": "Animal Companion Label",
+    "type": "static",
+    "img": "images/settings/companion.png",
+    "codes": "companionslabel"
+  },
+  {
+    "name": "Animal Companion",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "companions",
+        "inherit_codes": false,
+        "img": "images/settings/unknowncompanion.png"
+      },
+      {
+        "codes": "nuun_ricky,companions",
+        "inherit_codes": false,
+        "img": "images/settings/ricky.png"
+      },
+      {
+        "codes": "nuun_dimitri,companions",
+        "inherit_codes": false,
+        "img": "images/settings/dimitri.png"
+      },
+      {
+        "codes": "nuun_moosh,companions",
+        "inherit_codes": false,
+        "img": "images/settings/moosh.png"
+      }
+    ]
+  },
+  {
+    "name": "Master Key Label",
+    "type": "static",
+    "img": "images/settings/masterkeys.png",
+    "codes": "master_keylabel"
+  },
+  {
+    "name": "Master Key",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "",
+        "inherit_codes": false,
+        "img": "images/settings/masterkeysoff.png"
+      },
+      {
+        "codes": "master_key_small,master_key",
+        "inherit_codes": false,
+        "img": "images/settings/masterkeyssmall.png"
+      },
+      {
+        "codes": "master_key_small,master_key_boss,master_key",
+        "inherit_codes": false,
+        "img": "images/settings/masterkeysboss.png"
+      }
+    ]
+  },
+  {
+    "name": "Logic Label",
+    "type": "static",
+    "img": "images/settings/logic.png",
+    "codes": "logiclabel"
+  },
+  {
+    "name": "Logic",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": "true",
+    "stages": [
+      {
+        "img": "images/settings/basic.png",
+        "codes": "l_bas, logic",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/medium.png",
+        "codes": "l_med, logic",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/hard.png",
+        "codes": "l_hard, logic",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Entrance Label",
+    "type": "static",
+    "img": "images/settings/entrance.png",
+    "codes": "dungeon_er_label"
+  },
+  {
+    "name": "Dungeon Entrance Rando?",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "dungeon_er_off",
+        "inherit_codes": false,
+        "img": "images/settings/vanilla.png"
+      },
+      {
+        "codes": "dungeon_er_on",
+        "inherit_codes": false,
+        "img": "images/settings/shuffled.png"
+      }
+    ]
+  }
+]

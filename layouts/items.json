@@ -325,41 +325,6 @@
       }
     ]
   },
-  "settings_tab": {
-    "type": "itemgrid",
-    "background": "#303841",
-    "orientation": "vertical",
-    "h_alignment": "center",
-    "margin": "0,2",
-    "item_margin": "10,0",
-    "item_size": 44,
-    "rows": [
-      [
-        "companions",
-        "master_key"
-      ],
-      [
-        "allessence",
-        ""
-      ],
-      [
-        "requiredslates",
-        ""
-      ],
-      [
-        "l_bas",
-        ""
-      ],
-      [
-        "dungeon_er_off",
-        ""
-      ],
-      [
-        "advanceshop",
-        ""
-      ]
-    ]
-  },
   "toggle_tab_D3": {
     "type": "itemgrid",
     "orientation": "vertical",
@@ -575,16 +540,6 @@
       {
         "type": "layout",
         "key": "dungeons"
-      }
-    ]
-  },
-  "settings_grid": {
-    "type": "array",
-    "orientation": "vertical",
-    "content": [
-      {
-        "type": "layout",
-        "key": "settings_tab"
       }
     ]
   },

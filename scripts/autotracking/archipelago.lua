@@ -162,7 +162,7 @@ function onClear(slot_data)
     end
     --essences
     if slot_data["required_essences"] then
-        Tracker:FindObjectForCode("allessence").AcquiredCount = slot_data["required_essences"]
+        Tracker:FindObjectForCode("allessence").CurrentStage = slot_data["required_essences"]
     end
     --advance_shop
     if slot_data["advance_shop"] then
@@ -173,7 +173,7 @@ function onClear(slot_data)
     end
     --slates
     if slot_data["required_slates"] then
-        Tracker:FindObjectForCode("requiredslates").AcquiredCount = slot_data["required_slates"]
+        Tracker:FindObjectForCode("requiredslates").CurrentStage = slot_data["required_slates"]
     end
 
     updateDefaultSeed()

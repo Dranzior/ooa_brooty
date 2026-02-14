@@ -4,7 +4,7 @@ import re
 import ReferenceFiles.OverworldLogic as OverworldLogic
 import ReferenceFiles.DungeonsLogic as DungeonLogic
 
-outputPath = "../scripts/logic/generated"
+outputPath = "../../scripts/logic/generated"
 
 location_set = {""}
 path_list = []

@@ -184,7 +184,7 @@ function ooa_has_essences(target_count)
 end
 
 function ooa_has_essences_for_maku_seed()
-    return ooa_has_essences(Tracker:ProviderCountForCode("allessence"))
+    return ooa_has_essences(Tracker:FindObjectForCode("allessence").CurrentStage)
 end
 
 function ooa_has_slates(target_count)
@@ -192,7 +192,7 @@ function ooa_has_slates(target_count)
 end
 
 function ooa_has_enough_slates()
-    return ooa_has_slates(Tracker:ProviderCountForCode("requiredslates"))
+    return ooa_has_slates(Tracker:FindObjectForCode("requiredslates").CurrentStage)
 end
 
 -- Various item predicates

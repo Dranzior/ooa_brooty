@@ -1,0 +1,20 @@
+{
+  "settings_popup": {
+    "type": "group",
+    "header": "Settings",
+    "dock": "bottom",
+    "content": {
+      "type": "itemgrid",
+      "h_alignment": "left",
+      "margin": "5, 15, 5, -25",
+      "item_size": 90,
+      "item_margin": "10,0",
+      "rows": [
+        ["companionslabel","companions", "dungeon_er_label","dungeon_er_off"],
+        ["allessencelabel","allessence", "advanceshoplabel","advanceshop"],
+        ["requiredslateslabel","requiredslates", "master_keylabel","master_key"],
+        ["logiclabel","logic"]
+      ]
+    }
+  }
+}
