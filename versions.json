@@ -3,7 +3,7 @@
     {
       "package_version": "0.9.3",
       "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.3/ooa.zip",
-      "sha256": "aed2da26e9abd1bda2d43b52151bf2538b92df5979cb75f4578b95c036406b2c",
+      "sha256": "d07ecc9b0819691bb5d88493e4baa609223a5ea6329975c4d52c61232e9e5f47",
       "changelog": [
         "NEW: Manually checked location should now be kept when reconnecting to archipelago",
         "NEW: New setting windows (no more setting in the main view)",
