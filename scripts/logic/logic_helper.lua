@@ -947,3 +947,7 @@ function ooa_can_toss_ring()
         Has("Toss Ring")
     )
 end
+
+function ooa_option_lynna_gardener()
+    return Has("lynna_gardener_on")
+end

@@ -1,4 +1,19 @@
 {
+    "key_layouts_d0": {
+    "type": "itemgrid",
+    "dock": "left",
+    "item_margin": "-6,-3",
+    "item_size": 18,
+    "rows": [
+      [
+        "",
+        "",
+        "pathkey",
+        "",
+        ""
+      ]
+    ]
+  },
   "key_layouts_d1": {
     "type": "itemgrid",
     "dock": "left",
@@ -116,6 +131,21 @@
         "",
         "",
         "d8slate"
+      ]
+    ]
+  },
+    "key_layouts_d11": {
+    "type": "itemgrid",
+    "dock": "left",
+    "item_margin": "-6,-3",
+    "item_size": 18,
+    "rows": [
+      [
+        "",
+        "",
+        "d11mk",
+        "",
+        ""
       ]
     ]
   }

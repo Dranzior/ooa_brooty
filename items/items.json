@@ -341,6 +341,13 @@
     "img": "images/items/smallkey.png"
   },
   {
+    "name": "Small Key (Hero's Cave)",
+    "type": "consumable",
+    "codes": "d11sk, Small Key (Hero's Cave)",
+    "max_quantity": 200,
+    "img": "images/items/smallkey.png"
+  },
+  {
     "name": "Master Key (Spirit's Grave)",
     "type": "toggle",
     "codes": "d1mk, Master Key (Spirit's Grave)",
@@ -392,6 +399,12 @@
     "name": "Master Key (Ancient Tomb)",
     "type": "toggle",
     "codes": "d8mk, Master Key (Ancient Tomb)",
+    "img": "images/items/master_key.png"
+  },
+  {
+    "name": "Master Key (Hero's Cave)",
+    "type": "toggle",
+    "codes": "d11mk, Master Key (Hero's Cave)",
     "img": "images/items/master_key.png"
   },
   {
@@ -452,7 +465,7 @@
     "name": "Stationary",
     "type": "toggle",
     "img": "images/items/Stationery.png",
-    "codes": "stationary, Stationary"
+    "codes": "stationary, Stationary, Stationery"
   },
   {
     "name": "Stink Bag",
@@ -1030,6 +1043,14 @@
     "img": "images/dungeons/d8_entrance.png",
     "codes": "d8er"
   },
+  {
+    "name": "D11 Entrance",
+    "type": "toggle",
+    "loop": true,
+    "initial_active_state": true,
+    "img": "images/dungeons/d11_entrance.png",
+    "codes": "d11er"
+  },
   // Dungeon Texts (lots of duplicates here to make it work lol)
   {
     "name": "Maku Road Entrances",
@@ -1091,6 +1112,11 @@
         "codes": "ancienttomb0",
         "inherit_codes": false,
         "img": "images/dungeons/d8_entrance.png"
+      },
+      {
+        "codes": "heroscave0",
+        "inherit_codes": false,
+        "img": "images/dungeons/d11_entrance.png"
       }
     ]
   },
@@ -1154,6 +1180,11 @@
         "codes": "ancienttomb1",
         "inherit_codes": false,
         "img": "images/dungeons/d8_entrance.png"
+      },
+      {
+        "codes": "heroscave1",
+        "inherit_codes": false,
+        "img": "images/dungeons/d11_entrance.png"
       }
     ]
   },
@@ -1217,6 +1248,11 @@
         "codes": "ancienttomb2",
         "inherit_codes": false,
         "img": "images/dungeons/d8_entrance.png"
+      },
+      {
+        "codes": "heroscave2",
+        "inherit_codes": false,
+        "img": "images/dungeons/d11_entrance.png"
       }
     ]
   },
@@ -1280,6 +1316,11 @@
         "codes": "ancienttomb3",
         "inherit_codes": false,
         "img": "images/dungeons/d8_entrance.png"
+      },
+      {
+        "codes": "heroscave3",
+        "inherit_codes": false,
+        "img": "images/dungeons/d11_entrance.png"
       }
     ]
   },
@@ -1343,6 +1384,11 @@
         "codes": "ancienttomb4",
         "inherit_codes": false,
         "img": "images/dungeons/d8_entrance.png"
+      },
+      {
+        "codes": "heroscave4",
+        "inherit_codes": false,
+        "img": "images/dungeons/d11_entrance.png"
       }
     ]
   },
@@ -1406,6 +1452,11 @@
         "codes": "ancienttomb5",
         "inherit_codes": false,
         "img": "images/dungeons/d8_entrance.png"
+      },
+      {
+        "codes": "heroscave5",
+        "inherit_codes": false,
+        "img": "images/dungeons/d11_entrance.png"
       }
     ]
   },
@@ -1469,6 +1520,11 @@
         "codes": "ancienttomb6p",
         "inherit_codes": false,
         "img": "images/dungeons/d8_entrance.png"
+      },
+      {
+        "codes": "heroscave6p",
+        "inherit_codes": false,
+        "img": "images/dungeons/d11_entrance.png"
       }
     ]
   },
@@ -1532,6 +1588,11 @@
         "codes": "ancienttomb6",
         "inherit_codes": false,
         "img": "images/dungeons/d8_entrance.png"
+      },
+      {
+        "codes": "heroscave6",
+        "inherit_codes": false,
+        "img": "images/dungeons/d11_entrance.png"
       }
     ]
   },
@@ -1595,6 +1656,11 @@
         "codes": "ancienttomb7",
         "inherit_codes": false,
         "img": "images/dungeons/d8_entrance.png"
+      },
+      {
+        "codes": "heroscave7",
+        "inherit_codes": false,
+        "img": "images/dungeons/d11_entrance.png"
       }
     ]
   },
@@ -1658,6 +1724,80 @@
         "codes": "ancienttomb8",
         "inherit_codes": false,
         "img": "images/dungeons/d8_entrance.png"
+      },
+      {
+        "codes": "heroscave8",
+        "inherit_codes": false,
+        "img": "images/dungeons/d11_entrance.png"
+      }
+    ]
+  },
+
+  {
+    "name": "D11 Dungeon Entrances",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "questionmark11",
+        "inherit_codes": false,
+        "img": "images/dungeons/questionlabel.png"
+      },
+      {
+        "codes": "makupath11",
+        "inherit_codes": false,
+        "img": "images/dungeons/d0_entrance.png"
+      },
+      {
+        "codes": "spiritsgrave11",
+        "inherit_codes": false,
+        "img": "images/dungeons/d1_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpast11",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_past_entrance.png"
+      },
+      {
+        "codes": "moonlitgrotto11",
+        "inherit_codes": false,
+        "img": "images/dungeons/d3_entrance.png"
+      },
+      {
+        "codes": "skulldungeon11",
+        "inherit_codes": false,
+        "img": "images/dungeons/d4_entrance.png"
+      },
+      {
+        "codes": "crowndungeon11",
+        "inherit_codes": false,
+        "img": "images/dungeons/d5_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepast11",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_past_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepresent11",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_present_entrance.png"
+      },
+      {
+        "codes": "jabujabusbelly11",
+        "inherit_codes": false,
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb11",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
+      },
+      {
+        "codes": "heroscave11",
+        "inherit_codes": false,
+        "img": "images/dungeons/d11_entrance.png"
       }
     ]
   },

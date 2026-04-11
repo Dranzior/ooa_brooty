@@ -1388,6 +1388,25 @@
                 "y": 1719
               }
             ]
+          },
+          {
+            "name": "Tokay Chicken Hut",
+            "access_rules": [
+              "^$CanReach|tokay_chicken_hut"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 4492,
+                "y": 1592
+              }
+            ]
           }
         ]
       }

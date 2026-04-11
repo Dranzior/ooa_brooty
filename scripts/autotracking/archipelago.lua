@@ -2,6 +2,7 @@ ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/automation/Hint.lua")
 ScriptHost:LoadScript("scripts/autotracking/automation/ManualLocation.lua")
+ScriptHost:LoadScript("scripts/autotracking/automation/Settings.lua")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
@@ -133,48 +134,7 @@ function onClear(slot_data)
     Hint.Setup()
 
     -- companions
-    if slot_data["animal_companion"] then
-        if slot_data["animal_companion"] == "Ricky" then
-            Tracker:FindObjectForCode("companions").CurrentStage = 1
-        elseif slot_data["animal_companion"] == "Dimitri" then
-            Tracker:FindObjectForCode("companions").CurrentStage = 2
-        elseif slot_data["animal_companion"] == "Moosh" then
-            Tracker:FindObjectForCode("companions").CurrentStage = 3
-        end
-    end
-    -- logic
-    if slot_data["logic_difficulty"] then
-        if slot_data["logic_difficulty"] == 0 then
-            Tracker:FindObjectForCode("logic").CurrentStage = 0
-        elseif slot_data["logic_difficulty"] == 1 then
-            Tracker:FindObjectForCode("logic").CurrentStage = 1
-        elseif slot_data["logic_difficulty"] == 2 then
-            Tracker:FindObjectForCode("logic").CurrentStage = 2
-        end
-    end
-    --dungeon er
-    if slot_data["shuffle_dungeons"] then
-        if slot_data["shuffle_dungeons"] == 0 then
-            Tracker:FindObjectForCode("dungeon_er_off").CurrentStage = 0
-        elseif slot_data["shuffle_dungeons"] == 1 then
-            Tracker:FindObjectForCode("dungeon_er_on").CurrentStage = 1
-        end
-    end
-    --essences
-    if slot_data["required_essences"] then
-        Tracker:FindObjectForCode("allessence").CurrentStage = slot_data["required_essences"]
-    end
-    --advance_shop
-    if slot_data["advance_shop"] then
-        local obj = Tracker:FindObjectForCode("advanceshop")
-        if obj then
-            obj.Active = slot_data["advance_shop"] == 1
-        end
-    end
-    --slates
-    if slot_data["required_slates"] then
-        Tracker:FindObjectForCode("requiredslates").CurrentStage = slot_data["required_slates"]
-    end
+    UpdateSettings(slot_data)
 
     updateDefaultSeed()
 

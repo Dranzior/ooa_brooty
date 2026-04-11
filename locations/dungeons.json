@@ -2328,6 +2328,282 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Hero's Cave",
+        "chest_unopened_img": "images/items/chest_present.png",
+        "chest_opened_img": "images/items/chest_present_open.png",
+        "visibility_rules": [
+          "heros_cave_on"
+        ],
+        "children": [
+          {
+            "name": "(1F): Pots Puzzle",
+            "access_rules": [
+              "^$CanReach|d11_pots_puzzle_1"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d11",
+                "x": 275,
+                "y": 380
+              }
+            ]
+          },
+          {
+            "name": "(1F): Statue Puzzle #1",
+            "access_rules": [
+              "^$CanReach|d11_statue_1_puzzle"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d11",
+                "x": 440,
+                "y": 395
+              }
+            ]
+          },
+          {
+            "name": "(1F): Bridge Puzzle #1",
+            "access_rules": [
+              "^$CanReach|d11_bridge_puzzle_1"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d11",
+                "x": 500,
+                "y": 291
+              }
+            ]
+          },
+          {
+            "name": "(1F): Shoot Eyes",
+            "access_rules": [
+              "^$CanReach|d11_shoot_eyes"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d11",
+                "x": 216,
+                "y": 231
+              }
+            ]
+          },
+          {
+            "name": "(1F): Statue Puzzle #2",
+            "access_rules": [
+              "^$CanReach|d11_statue_2_puzzle"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d11",
+                "x": 664,
+                "y": 574
+              }
+            ]
+          },
+          {
+            "name": "(1F): Pots Puzzle #2",
+            "access_rules": [
+              "^$CanReach|d11_pots_puzzle_2"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d11",
+                "x": 649,
+                "y": 425
+              }
+            ]
+          },
+          {
+            "name": "(1F): Statue Puzzle #3",
+            "access_rules": [
+              "^$CanReach|d11_statue_3_puzzle"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d11",
+                "x": 917,
+                "y": 395
+              }
+            ]
+          },
+          {
+            "name": "(1F): Bridge Puzzle #2",
+            "access_rules": [
+              "^$CanReach|d11_bridge_puzzle_2"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d11",
+                "x": 962,
+                "y": 291
+              }
+            ]
+          },
+          {
+            "name": "(1F): Color Room",
+            "access_rules": [
+              "^$CanReach|d11_color_room"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d11",
+                "x": 664,
+                "y": 231
+              }
+            ]
+          },
+          {
+            "name": "(1F): Water Puzzle",
+            "access_rules": [
+              "^$CanReach|d11_water_puzzle_1f"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d11",
+                "x": 664,
+                "y": 66
+              }
+            ]
+          },
+          {
+            "name": "(B1F): Water Puzzle",
+            "access_rules": [
+              "^$CanReach|d11_water_puzzle_b1f"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d11",
+                "x": 664,
+                "y": 948
+              }
+            ]
+          },
+          {
+            "name": "(B1F): Basement",
+            "access_rules": [
+              "^$CanReach|d11_basement"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d11",
+                "x": 171,
+                "y": 753
+              }
+            ]
+          },
+          {
+            "name": "(1F): Final Puzzle",
+            "access_rules": [
+              "^$CanReach|d11_minecart_room"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d11",
+                "x": 440,
+                "y": 37
+              }
+            ]
+          },
+          {
+            "name": "(1F): Completion Reward",
+            "access_rules": [
+              "^$CanReach|d11_reward"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d11",
+                "x": 887,
+                "y": 37
+              }
+            ]
+          }
+        ]
       }
     ]
   }

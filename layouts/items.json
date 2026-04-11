@@ -153,12 +153,31 @@
             "dock": "left",
             "rows": [
               [
-                "",
                 "mrer",
                 "questionmark0",
-                "pathkey"
+                "d11er",
+                "questionmark11"
               ]
             ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,-7,-2,0",
+        "content": [
+          {
+            "type": "layout",
+            "key": "key_layouts_d0"
+          },
+          {
+            "type": "canvas",
+            "width": 40
+          },
+          {
+            "type": "layout",
+            "key": "key_layouts_d11"
           }
         ]
       },

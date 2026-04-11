@@ -112,5 +112,11 @@
     "location_size": 28,
     "location_border_thickness": 6,
     "img": "images/maps/maku_path.png"
+  },
+  {
+    "name": "d11",
+    "location_size": 32,
+    "location_border_thickness": 6,
+    "img": "images/maps/d11.png"
   }
 ]

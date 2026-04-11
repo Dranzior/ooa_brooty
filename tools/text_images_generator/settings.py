@@ -43,6 +43,14 @@ image_lib = [
 [SETTING_DEFAULT_HALF_ORANGE, "ricky", "Ricky", "ricky"],
 [SETTING_DEFAULT_HALF_RED, "dimitri", "Dimitri", "dimitri"],
 [SETTING_DEFAULT_HALF_BLUE, "moosh", "Moosh", "moosh"],
+    #Lynna Gardener
+[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Lynna\nGardener", "lynnagardener"],
+[SETTING_DEFAULT_FULL_GREEN, SETTING_DEFAULT_IMAGE, "On", "lynnagardeneron"],
+[SETTING_DEFAULT_FULL_RED, SETTING_DEFAULT_IMAGE, "Off", "lynnagardeneroff"],
+    #Secret Locations
+[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Hero's Cave", "heroscave"],
+[SETTING_DEFAULT_FULL_GREEN, SETTING_DEFAULT_IMAGE, "On", "heroscaveon"],
+[SETTING_DEFAULT_FULL_RED, SETTING_DEFAULT_IMAGE, "Off", "heroscaveoff"],
 ]
 
 def generate_settings():

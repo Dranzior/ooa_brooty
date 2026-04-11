@@ -985,6 +985,102 @@
                 "y": 705
               }
             ]
+          },
+          {
+            "name": "Enter Hero's Cave",
+            "access_rules": [
+              "^$CanReach|d11_entrance"
+            ],
+            "visibility_rules": [
+              "dungeon_er_on,heros_cave_on"
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1,
+                "chest_unopened_img": "images/dungeons/d11_entrance.png",
+                "chest_opened_img": "images/dungeons/d11_entrance.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "shape": "trapezoid",
+                "x": 1365,
+                "y": 550
+              }
+            ]
+          },
+          {
+            "name": "Hero's Cave",
+            "visibility_rules": [
+              "heros_cave_on"
+            ],
+            "sections": [
+              {
+                "name": "(1F): Pots Puzzle",
+                "ref": "Dungeons/Hero's Cave/(1F): Pots Puzzle/"
+              },
+              {
+                "name": "(1F): Statue Puzzle #1",
+                "ref": "Dungeons/Hero's Cave/(1F): Statue Puzzle #1/"
+              },
+              {
+                "name": "(1F): Bridge Puzzle #1",
+                "ref": "Dungeons/Hero's Cave/(1F): Bridge Puzzle #1/"
+              },
+              {
+                "name": "(1F): Shoot Eyes",
+                "ref": "Dungeons/Hero's Cave/(1F): Shoot Eyes/"
+              },
+              {
+                "name": "(1F): Statue Puzzle #2",
+                "ref": "Dungeons/Hero's Cave/(1F): Statue Puzzle #2/"
+              },
+              {
+                "name": "(1F): Pots Puzzle #2",
+                "ref": "Dungeons/Hero's Cave/(1F): Pots Puzzle #2/"
+              },
+              {
+                "name": "(1F): Statue Puzzle #3",
+                "ref": "Dungeons/Hero's Cave/(1F): Statue Puzzle #3/"
+              },
+              {
+                "name": "(1F): Bridge Puzzle #2",
+                "ref": "Dungeons/Hero's Cave/(1F): Bridge Puzzle #2/"
+              },
+              {
+                "name": "(1F): Color Room",
+                "ref": "Dungeons/Hero's Cave/(1F): Color Room/"
+              },
+              {
+                "name": "(1F): Water Puzzle",
+                "ref": "Dungeons/Hero's Cave/(1F): Water Puzzle/"
+              },
+              {
+                "name": "(B1F): Water Puzzle",
+                "ref": "Dungeons/Hero's Cave/(B1F): Water Puzzle/"
+              },
+              {
+                "name": "(B1F): Basement",
+                "ref": "Dungeons/Hero's Cave/(B1F): Basement/"
+              },
+              {
+                "name": "(1F): Final Puzzle",
+                "ref": "Dungeons/Hero's Cave/(1F): Final Puzzle/"
+              },
+              {
+                "name": "(1F): Completion Reward",
+                "ref": "Dungeons/Hero's Cave/(1F): Completion Reward/"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1415,
+                "y": 550
+              }
+            ]
           }
         ]
       },

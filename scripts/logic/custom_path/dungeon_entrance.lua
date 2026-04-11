@@ -9,7 +9,8 @@ Dungeons = {
     { d6_past_entrance,    enter_d6_past,    "mermaidscavepast",    "6p" },
     { d6_present_entrance, enter_d6_present, "mermaidscavepresent", "6" },
     { d7_entrance,         enter_d7,         "jabujabusbelly",      "7" },
-    { d8_entrance,         enter_d8,         "ancienttomb",         "8" }
+    { d8_entrance,         enter_d8,         "ancienttomb",         "8" },
+    { d11_entrance,        enter_d11,        "heroscave",           "11" }
 }
 
 for _, entrance in ipairs(Dungeons) do
