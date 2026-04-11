@@ -465,7 +465,7 @@
     "name": "Stationary",
     "type": "toggle",
     "img": "images/items/Stationery.png",
-    "codes": "stationary, Stationary"
+    "codes": "stationary, Stationary, Stationery"
   },
   {
     "name": "Stink Bag",
@@ -1734,7 +1734,7 @@
   },
 
   {
-    "name": "D8 Dungeon Entrances",
+    "name": "D11 Dungeon Entrances",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
