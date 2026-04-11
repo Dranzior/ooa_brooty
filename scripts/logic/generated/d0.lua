@@ -2,5 +2,4 @@ enter_d0:connect_one_way_entrance(d0_key_chest,function() return ooa_can_kill_no
 enter_d0:connect_two_ways_entrance(d0_behind_the_door,function() return ooa_has_small_keys(0, 1) end)
 d0_behind_the_door:connect_one_way_entrance(d0_basement)
 d0_behind_the_door:connect_one_way_entrance(maku_path_heartpiece,function() return ooa_can_kill_normal_enemy() end)
-d0_behind_the_door:connect_one_way_entrance(d0_exit,function() return ooa_can_kill_normal_enemy() end)
-d0_exit:connect_one_way_entrance(d0_behind_the_door)
+d0_behind_the_door:connect_two_ways_entrance(d0_exit,function() return ooa_can_kill_normal_enemy() end)

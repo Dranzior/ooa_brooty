@@ -202,6 +202,15 @@
                       "d8"
                     ]
                   }
+                },
+                {
+                  "title": "Hero's Cave",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d11"
+                    ]
+                  }
                 }
               ]
             }

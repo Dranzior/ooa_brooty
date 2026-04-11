@@ -200,5 +200,53 @@
         "img": "images/settings/shuffled.png"
       }
     ]
+  },
+  {
+    "name": "Lynna Gardener Label",
+    "type": "static",
+    "img": "images/settings/lynnagardener.png",
+    "codes": "lynna_gardener_label"
+  },
+  {
+    "name": "Lynna Gardener",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "lynna_gardener, lynna_gardener_off",
+        "inherit_codes": false,
+        "img": "images/settings/lynnagardeneroff.png"
+      },
+      {
+        "codes": "lynna_gardener, lynna_gardener_on",
+        "inherit_codes": false,
+        "img": "images/settings/lynnagardeneron.png"
+      }
+    ]
+  },
+  {
+    "name": "Hero's Cave Label",
+    "type": "static",
+    "img": "images/settings/heroscave.png",
+    "codes": "heros_cave_label"
+  },
+  {
+    "name": "Hero's Cave",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "heros_cave, heros_cave_off",
+        "inherit_codes": false,
+        "img": "images/settings/heroscaveoff.png"
+      },
+      {
+        "codes": "heros_cave, heros_cave_on",
+        "inherit_codes": false,
+        "img": "images/settings/heroscaveon.png"
+      }
+    ]
   }
 ]

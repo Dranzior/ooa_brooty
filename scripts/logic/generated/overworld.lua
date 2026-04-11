@@ -1,11 +1,14 @@
 Menu:connect_one_way_entrance(forest_of_time)
-Menu:connect_one_way_entrance(maple_trade,function() return All(
+black_tower_worker:connect_one_way_entrance(maple_trade,function() return All(
             ooa_can_kill_normal_enemy(true),
             Has("Touching Book")
         ) end)
 forest_of_time:connect_one_way_entrance(starting_item)
 forest_of_time:connect_one_way_entrance(nayrus_house)
-forest_of_time:connect_two_ways_entrance(lynna_city,function() return ooa_can_break_bush() end)
+forest_of_time:connect_two_ways_entrance(lynna_city,function() return Any(
+            ooa_can_break_bush(),
+            ooa_option_lynna_gardener()
+        ) end)
 lynna_city:connect_one_way_entrance(south_lynna_tree,function() return ooa_can_harvest_tree(true) end)
 lynna_city:connect_one_way_entrance(lynna_city_chest,function() return ooa_can_use_ember_seeds(false) end)
 lynna_village:connect_one_way_entrance(lynna_city_chest,function() return ooa_can_go_back_to_present() end)
@@ -47,7 +50,7 @@ ambis_palace_chest:connect_one_way_entrance(rescue_nayru,function() return All(
             )
         ) end)
 lynna_village:connect_one_way_entrance(postman_trade,function() return Has("Poe Clock") end)
-lynna_village:connect_one_way_entrance(toilet_hand_trade,function() return Has("Stationary") end)
+lynna_village:connect_one_way_entrance(toilet_hand_trade,function() return Has("Stationery") end)
 lynna_village:connect_one_way_entrance(sad_boi_trade,function() return Has("Funny Joke") end)
 lynna_village:connect_one_way_entrance(raftons_raft,function() return All(
             Has("Cheval Rope"),
@@ -99,9 +102,10 @@ forest_of_time:connect_two_ways_entrance(shore_present,function() return Has("Ri
 lynna_city:connect_two_ways_entrance(shore_present,function() return Any(
             ooa_can_swim_deepwater(true),
             ooa_has_bracelet(),
-            ooa_can_go_back_to_present(),
             All(
-                ooa_can_break_bush(true),
+                Any(
+                    ooa_can_go_back_to_present(),
+                    ooa_can_break_bush(true)),
                 ooa_can_jump_1_wide_pit(true)
             )) end)
 shore_present:connect_one_way_entrance(south_shore_dirt,function() return ooa_can_remove_dirt(true) end)
@@ -195,9 +199,8 @@ crescent_past_west:connect_one_way_entrance(tokay_crystal_cave,function() return
 lynna_village:connect_two_ways_entrance(hidden_tokay_cave,function() return ooa_can_dive() end)
 crescent_past_west:connect_one_way_entrance(crescent_past_east,function() return ooa_can_break_bush() end)
 crescent_present_west:connect_one_way_entrance(crescent_past_east,function() return ooa_can_go_back_to_present() end)
-crescent_past_east:connect_one_way_entrance(tokay_bomb_cave,function() return All(
-            ooa_has_bracelet(),
-            ooa_has_bombs()) end)
+crescent_past_east:connect_one_way_entrance(tokay_chicken_hut,function() return ooa_has_bracelet() end)
+tokay_chicken_hut:connect_one_way_entrance(tokay_bomb_cave,function() return ooa_has_bombs() end)
 crescent_past_east:connect_one_way_entrance(wild_tokay_game,function() return All(
             ooa_has_bracelet(),
             ooa_has_bombs()) end)
@@ -323,6 +326,7 @@ lynna_village:connect_two_ways_entrance(ridge_west_past_base,function() return A
             Any(
                 ooa_can_jump_4_wide_pit(false),
                 ooa_has_switch_hook())) end)
+ridge_west_past_base:connect_one_way_entrance(ridge_west_present,function() return ooa_can_go_back_to_present() end)
 ridge_west_past_base:connect_one_way_entrance(goron_elder,function() return Has("Bomb Flower") end)
 ridge_west_present:connect_one_way_entrance(ridge_west_past,function() return All(
             ooa_can_open_portal(),
@@ -332,6 +336,7 @@ ridge_west_present:connect_one_way_entrance(ridge_west_heartpiece,function() ret
 goron_elder:connect_one_way_entrance(ridge_west_past)
 ridge_west_past:connect_one_way_entrance(ridge_west_past_base)
 ridge_west_past:connect_one_way_entrance(ridge_west_tree,function() return ooa_can_harvest_tree(false) end)
+ridge_west_present:connect_one_way_entrance(ridge_west_tree,function() return ooa_can_switch_past_and_present() end)
 ridge_west_past:connect_one_way_entrance(ridge_west_present,function() return ooa_can_go_back_to_present() end)
 ridge_upper_present:connect_one_way_entrance(ridge_west_present)
 ridge_west_present:connect_one_way_entrance(gorons_hiding_place,function() return ooa_has_bombs() end)
@@ -352,7 +357,7 @@ ridge_base_past_west:connect_two_ways_entrance(ridge_upper_past,function() retur
             ooa_has_switch_hook()) end)
 ridge_upper_present:connect_one_way_entrance(ridge_upper_past,function() return ooa_can_switch_past_and_present() end)
 ridge_upper_present:connect_one_way_entrance(treasure_hunting_goron,function() return All(
-            ooa_has_bombs(),
+            ooa_has_bombs(2),
             ooa_has_ember_seeds(),
             ooa_can_open_portal(),
             ooa_has_bracelet()
@@ -399,19 +404,13 @@ ridge_base_present:connect_two_ways_entrance(ridge_mid_present,function() return
                 ooa_has_switch_hook(),
                 ooa_can_jump_3_wide_pit(false))
         ) end)
+ridge_diamonds_past:connect_one_way_entrance(ridge_mid_past)
 ridge_mid_past:connect_one_way_entrance(ridge_mid_present,function() return ooa_can_go_back_to_present() end)
 ridge_mid_present:connect_two_ways_entrance(target_carts,function() return All(
             ooa_has_switch_hook(),
             Has("_access_cart")) end)
 goron_shooting_gallery:connect_one_way_entrance(target_carts,function() return ooa_can_go_back_to_present() end)
-target_carts:connect_two_ways_entrance(target_carts_1,function() return All(
-            ooa_has_seedshooter(),
-            Any(
-                ooa_has_ember_seeds(),
-                ooa_has_mystery_seeds(),
-                ooa_has_pegasus_seeds(),
-                ooa_has_scent_seeds())
-        ) end)
+target_carts:connect_two_ways_entrance(target_carts_1)
 target_carts_1:connect_two_ways_entrance(target_carts_2)
 ridge_mid_present:connect_two_ways_entrance(big_bang_game,function() return Has("Goronade") end)
 ridge_mid_present:connect_two_ways_entrance(goron_diamond_cave,function() return Any(
@@ -427,9 +426,12 @@ target_carts:connect_one_way_entrance(goron_shooting_gallery,function() return A
             ooa_has_bracelet()) end)
 ridge_mid_present:connect_one_way_entrance(goron_shooting_gallery,function() return ooa_can_switch_past_and_present() end)
 goron_shooting_gallery:connect_one_way_entrance(goron_shooting_gallery_price,function() return ooa_has_sword() end)
-ridge_mid_past:connect_one_way_entrance(ridge_east_tree,function() return All(
+ridge_mid_past:connect_one_way_entrance(ridge_east_tree,function() return Any(
             ooa_can_harvest_tree(false),
-            ooa_can_warp_using_gale_seeds()) end)
+            All(
+                ooa_option_medium_logic(),
+                ooa_can_warp_using_gale_seeds())
+        ) end)
 goron_shooting_gallery:connect_one_way_entrance(ridge_east_tree,function() return ooa_can_harvest_tree(false) end)
 ridge_mid_past:connect_one_way_entrance(trade_lava_juice,function() return Has("Lava Juice") end)
 ridge_mid_past:connect_one_way_entrance(ridge_bush_cave,function() return ooa_has_switch_hook() end)
@@ -479,3 +481,4 @@ crescent_past_west:connect_one_way_entrance(d8_entrance,function() return All(
                 )
             )) end)
 d8_entrance:connect_one_way_entrance(sea_of_no_return,function() return ooa_has_glove() end)
+lynna_city:connect_one_way_entrance(d11_entrance)
