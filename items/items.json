@@ -341,6 +341,13 @@
     "img": "images/items/smallkey.png"
   },
   {
+    "name": "Small Key (Hero's Cave)",
+    "type": "consumable",
+    "codes": "d11sk, Small Key (Hero's Cave)",
+    "max_quantity": 200,
+    "img": "images/items/smallkey.png"
+  },
+  {
     "name": "Master Key (Spirit's Grave)",
     "type": "toggle",
     "codes": "d1mk, Master Key (Spirit's Grave)",
@@ -392,6 +399,12 @@
     "name": "Master Key (Ancient Tomb)",
     "type": "toggle",
     "codes": "d8mk, Master Key (Ancient Tomb)",
+    "img": "images/items/master_key.png"
+  },
+  {
+    "name": "Master Key (Hero's Cave)",
+    "type": "toggle",
+    "codes": "d11mk, Master Key (Hero's Cave)",
     "img": "images/items/master_key.png"
   },
   {

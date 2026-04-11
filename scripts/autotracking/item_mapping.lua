@@ -50,7 +50,7 @@ ITEM_LISTING = {
     {"d6_2sk", "consumable"},
     {"d7sk", "consumable"},
     {"d8sk", "consumable"},
-    1, --Linked Hero Cave
+    {"d11sk", "consumable"},
     -- MASTER KEYS
     {"pathkey", "toggle"},
     {"d1mk", "toggle"},
@@ -62,7 +62,7 @@ ITEM_LISTING = {
     {"d6_2mk", "toggle"},
     {"d7mk", "toggle"},
     {"d8mk", "toggle"},
-    1, --Linked Hero Cave
+    {"d11mk", "toggle"},
     -- BOSS KEYS
     {"d1bk", "toggle"},
     {"d2bk", "toggle"},
