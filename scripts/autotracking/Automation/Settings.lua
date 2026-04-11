@@ -1,9 +1,3 @@
-local function printSlotData(slot_data)
-    for key, value in ipairs(slot_data) do
-        print("Slot Data Key: "..key.." have a value of ".. value)
-    end
-end
-
 local function updateAnimalCompanion(slot_data)
     if slot_data["animal_companion"] then
         if slot_data["animal_companion"] == "Ricky" then
