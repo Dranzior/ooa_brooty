@@ -344,7 +344,7 @@
     "name": "Small Key (Hero's Cave)",
     "type": "consumable",
     "codes": "d11sk, Small Key (Hero's Cave)",
-    "max_quantity": 200,
+    "max_quantity": 8,
     "img": "images/items/smallkey.png"
   },
   {
