@@ -97,9 +97,16 @@ def write_location_list(filename):
                 file.write(location + " = OoALocation.New(\""+location+"\")\n")
     location_set = {""}
 
+class Option:
+    class linkedHeroCave:
+        value = 1
+
+    linked_heros_cave = linkedHeroCave
+
 def process():
+    options = Option
     # Overworld
-    overworld = OverworldLogic.make_overworld_logic(0)
+    overworld = OverworldLogic.make_overworld_logic(0, options)
     build_content(overworld)
     write_path_list(outputPath + "/overworld.lua")
 
@@ -122,6 +129,8 @@ def process():
     write_path_list(outputPath + "/d7.lua")
     build_content(DungeonLogic.make_d8_logic(0))
     write_path_list(outputPath + "/d8.lua")
+    build_content(DungeonLogic.make_d11_logic(0))
+    write_path_list(outputPath + "/d11.lua")
 
 #    dungeon_entrances
 
