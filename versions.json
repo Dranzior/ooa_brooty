@@ -1,11 +1,26 @@
 {
   "versions": [
     {
+      "package_version": "0.9.3",
+      "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.3/ooa.zip",
+      "sha256": "aed2da26e9abd1bda2d43b52151bf2538b92df5979cb75f4578b95c036406b2c",
+      "changelog": [
+        "NEW: Manually checked location should now be kept when reconnecting to archipelago",
+        "NEW: New setting windows (no more setting in the main view)",
+        "NEW: Master Key setting will show/hide the key in the item list",
+        "NEW: Animal Companion setting will change which Nuun map is shown",
+        "NEW: Added more setting in those that are auto-tracked with AP",
+        "FIX: Some fix done on the broadcast view",
+        "FIX: Tracker can now correctly track the number of bomb/satchel upgrade you have",
+        "FIX: Fixed a bug where \"manually checked\" location would persist a reset"
+      ]
+    },
+    {
       "package_version": "0.9.2",
       "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.2/ooa.zip",
       "sha256": "aed2da26e9abd1bda2d43b52151bf2538b92df5979cb75f4578b95c036406b2c",
       "changelog": [
-        "NEW: Manually checked location should now be kept when reconnecting to archipelago",
+        "NEW: Should reflect most of the new content to APWorld 0.5.0",
         "FIX: Default seed now are only added once you get the Seed satchel or Seed shooter",
         "FIX: Ridge Upper Heart Piece Autotrack correctly again"
       ]
