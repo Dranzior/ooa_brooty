@@ -580,7 +580,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (1F): Pols Voice Chest",
                 "item_count": 1
               }
             ],
@@ -599,7 +599,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (1F): Statue Drop",
                 "item_count": 1
               }
             ],
@@ -618,7 +618,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (B1F): Conveyor Belt Room",
                 "item_count": 1
               }
             ],
@@ -637,7 +637,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (1F): Six Blocs Drop",
                 "item_count": 1
               }
             ],
@@ -656,7 +656,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (1F): Armos Drop",
                 "item_count": 1
               }
             ],
@@ -675,7 +675,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (1F): Bush Beetle Room",
                 "item_count": 1
               }
             ],
@@ -694,7 +694,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (1F): Mimic Room",
                 "item_count": 1
               }
             ],
@@ -713,7 +713,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (1F): Crossroad",
                 "item_count": 1
               }
             ],
@@ -732,7 +732,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (B1F): Torch Chest",
                 "item_count": 1
               }
             ],
@@ -751,7 +751,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (B1F): Moldorm Drop",
                 "item_count": 1
               }
             ],
@@ -770,7 +770,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (1F): Bridge Chest",
                 "item_count": 1
               }
             ],
@@ -789,7 +789,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (B1F): East",
                 "item_count": 1
               }
             ],
@@ -808,7 +808,7 @@
             ],
             "sections": [
               {
-                "name": "(B1F): Boss",
+                "name": "Moonlit Grotto (B1F): Boss",
                 "item_count": 1
               }
             ],
@@ -827,7 +827,7 @@
             ],
             "sections": [
               {
-                "name": "Essence",
+                "name": "Moonlit Grotto: Essence",
                 "hosted_item": "d3"
               }
             ],
@@ -872,7 +872,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Skull Dungeon (1F): First Chest",
                 "item_count": 1
               }
             ],
@@ -891,7 +891,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Skull Dungeon (1F): Cube Chest",
                 "item_count": 1
               }
             ],
@@ -910,7 +910,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Skull Dungeon (1F): Minecart Chest",
                 "item_count": 1
               }
             ],
@@ -929,7 +929,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Skull Dungeon (1F): First Crystal Switch",
                 "item_count": 1
               }
             ],
@@ -948,7 +948,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Skull Dungeon (1F): Second Crystal Switch",
                 "item_count": 1
               }
             ],
@@ -967,7 +967,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Skull Dungeon (1F): Color Tile Drop",
                 "item_count": 1
               }
             ],
@@ -986,7 +986,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Skull Dungeon (1F): Small Floor Puzzle",
                 "item_count": 1
               }
             ],
@@ -1005,7 +1005,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Skull Dungeon (B1F): Large Floor Puzzle",
                 "item_count": 1
               }
             ],
@@ -1024,7 +1024,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Skull Dungeon (1F): Lava Pot Chest",
                 "item_count": 1
               }
             ],
@@ -1043,7 +1043,7 @@
             ],
             "sections": [
               {
-                "name": "(B1F): Boss",
+                "name": "Skull Dungeon (B1F): Boss",
                 "item_count": 1
               }
             ],
@@ -1062,7 +1062,7 @@
             ],
             "sections": [
               {
-                "name": "Essence",
+                "name": "Skull Dungeon: Essence",
                 "hosted_item": "d4"
               }
             ],
@@ -1088,7 +1088,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (B1F): Like-Like Chest",
                 "item_count": 1
               }
             ],
@@ -1107,7 +1107,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (1F): Eyes Chest",
                 "item_count": 1
               }
             ],
@@ -1126,7 +1126,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (B1F): Dark Room",
                 "item_count": 1
               }
             ],
@@ -1145,7 +1145,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (B1F): Two-Statue Puzzle",
                 "item_count": 1
               }
             ],
@@ -1164,7 +1164,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (1F): Blue Peg Chest",
                 "item_count": 1
               }
             ],
@@ -1183,7 +1183,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (1F): Diamond Chest",
                 "item_count": 1
               }
             ],
@@ -1202,7 +1202,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (1F): Three-Statue Puzzle",
                 "item_count": 1
               }
             ],
@@ -1221,7 +1221,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (B1F): Six-Statue Puzzle",
                 "item_count": 1
               }
             ],
@@ -1240,7 +1240,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (B1F): Red Peg Chest",
                 "item_count": 1
               }
             ],
@@ -1259,7 +1259,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (B1F): Owl Puzzle",
                 "item_count": 1
               }
             ],
@@ -1278,7 +1278,7 @@
             ],
             "sections": [
               {
-                "name": "(1F): Boss",
+                "name": "Crown Dungeon (1F): Boss",
                 "item_count": 1
               }
             ],
@@ -1297,7 +1297,7 @@
             ],
             "sections": [
               {
-                "name": "Essence",
+                "name": "Crown Dungeon: Essence",
                 "hosted_item": "d5"
               }
             ],

@@ -137,48 +137,48 @@
             "name": "Skull Dungeon (D4)",
             "sections": [
               {
-                "name": "(1F): First Chest",
-                "ref": "Dungeons/Skull Dungeon (D4)/(1F): First Chest/"
+                "name": "Skull Dungeon (1F): First Chest",
+                "ref": "Dungeons/Skull Dungeon (D4)/(1F): First Chest/Skull Dungeon (1F): First Chest"
               },
               {
-                "name": "(1F): Cube Chest",
-                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Cube Chest/"
+                "name": "Skull Dungeon (1F): Cube Chest",
+                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Cube Chest/Skull Dungeon (1F): Cube Chest"
               },
               {
-                "name": "(1F): Minecart Chest",
-                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Minecart Chest/"
+                "name": "Skull Dungeon (1F): Minecart Chest",
+                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Minecart Chest/Skull Dungeon (1F): Minecart Chest"
               },
               {
-                "name": "(1F): First Crystal Switch",
-                "ref": "Dungeons/Skull Dungeon (D4)/(1F): First Crystal Switch/"
+                "name": "Skull Dungeon (1F): First Crystal Switch",
+                "ref": "Dungeons/Skull Dungeon (D4)/(1F): First Crystal Switch/Skull Dungeon (1F): First Crystal Switch"
               },
               {
-                "name": "(1F): Second Crystal Switch",
-                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Second Crystal Switch/"
+                "name": "Skull Dungeon (1F): Second Crystal Switch",
+                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Second Crystal Switch/Skull Dungeon (1F): Second Crystal Switch"
               },
               {
-                "name": "(1F): Color Tile Drop",
-                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Color Tile Drop/"
+                "name": "Skull Dungeon (1F): Color Tile Drop",
+                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Color Tile Drop/Skull Dungeon (1F): Color Tile Drop"
               },
               {
-                "name": "(1F): Small Floor Puzzle",
-                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Small Floor Puzzle/"
+                "name": "Skull Dungeon (1F): Small Floor Puzzle",
+                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Small Floor Puzzle/Skull Dungeon (1F): Small Floor Puzzle"
               },
               {
-                "name": "(B1F): Large Floor Puzzle",
-                "ref": "Dungeons/Skull Dungeon (D4)/(B1F): Large Floor Puzzle/"
+                "name": "Skull Dungeon (B1F): Large Floor Puzzle",
+                "ref": "Dungeons/Skull Dungeon (D4)/(B1F): Large Floor Puzzle/Skull Dungeon (B1F): Large Floor Puzzle"
               },
               {
-                "name": "(1F): Lava Pot Chest",
-                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Lava Pot Chest/"
+                "name": "Skull Dungeon (1F): Lava Pot Chest",
+                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Lava Pot Chest/Skull Dungeon (1F): Lava Pot Chest"
               },
               {
-                "name": "Eyesoar",
-                "ref": "Dungeons/Skull Dungeon (D4)/Eyesoar/(B1F): Boss"
+                "name": "Skull Dungeon (B1F): Boss",
+                "ref": "Dungeons/Skull Dungeon (D4)/Eyesoar/Skull Dungeon (B1F): Boss"
               },
               {
-                "name": "Burning Flame",
-                "ref": "Dungeons/Skull Dungeon (D4)/Burning Flame/Essence"
+                "name": "Skull Dungeon: Essence",
+                "ref": "Dungeons/Skull Dungeon (D4)/Burning Flame/Skull Dungeon: Essence"
               }
             ],
             "map_locations": [
@@ -632,52 +632,52 @@
             "name": "Crown Dungeon (D5)",
             "sections": [
               {
-                "name": "(B1F): Like-Like Chest",
-                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Like-Like Chest/"
+                "name": "Crown Dungeon (B1F): Like-Like Chest",
+                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Like-Like Chest/Crown Dungeon (B1F): Like-Like Chest"
               },
               {
-                "name": "(1F): Eyes Chest",
-                "ref": "Dungeons/Crown Dungeon (D5)/(1F): Eyes Chest/"
+                "name": "Crown Dungeon (1F): Eyes Chest",
+                "ref": "Dungeons/Crown Dungeon (D5)/(1F): Eyes Chest/Crown Dungeon (1F): Eyes Chest"
               },
               {
-                "name": "(B1F): Dark Room",
-                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Dark Room/"
+                "name": "Crown Dungeon (B1F): Dark Room",
+                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Dark Room/Crown Dungeon (B1F): Dark Room"
               },
               {
-                "name": "(B1F): Two-Statue Puzzle",
-                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Two-Statue Puzzle/"
+                "name": "Crown Dungeon (B1F): Two-Statue Puzzle",
+                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Two-Statue Puzzle/Crown Dungeon (B1F): Two-Statue Puzzle"
               },
               {
-                "name": "(1F): Blue Peg Chest",
-                "ref": "Dungeons/Crown Dungeon (D5)/(1F): Blue Peg Chest/"
+                "name": "Crown Dungeon (1F): Blue Peg Chest",
+                "ref": "Dungeons/Crown Dungeon (D5)/(1F): Blue Peg Chest/Crown Dungeon (1F): Blue Peg Chest"
               },
               {
-                "name": "(1F): Diamond Chest",
-                "ref": "Dungeons/Crown Dungeon (D5)/(1F): Diamond Chest/"
+                "name": "Crown Dungeon (1F): Diamond Chest",
+                "ref": "Dungeons/Crown Dungeon (D5)/(1F): Diamond Chest/Crown Dungeon (1F): Diamond Chest"
               },
               {
-                "name": "(1F): Three-Statue Puzzle",
-                "ref": "Dungeons/Crown Dungeon (D5)/(1F): Three-Statue Puzzle/"
+                "name": "Crown Dungeon (1F): Three-Statue Puzzle",
+                "ref": "Dungeons/Crown Dungeon (D5)/(1F): Three-Statue Puzzle/Crown Dungeon (1F): Three-Statue Puzzle"
               },
               {
-                "name": "(B1F): Six-Statue Puzzle",
-                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Six-Statue Puzzle/"
+                "name": "Crown Dungeon (B1F): Six-Statue Puzzle",
+                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Six-Statue Puzzle/Crown Dungeon (B1F): Six-Statue Puzzle"
               },
               {
-                "name": "(B1F): Red Peg Chest",
-                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Red Peg Chest/"
+                "name": "Crown Dungeon (B1F): Red Peg Chest",
+                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Red Peg Chest/Crown Dungeon (B1F): Red Peg Chest"
               },
               {
-                "name": "(B1F): Owl Puzzle",
-                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Owl Puzzle/"
+                "name": "Crown Dungeon (B1F): Owl Puzzle",
+                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Owl Puzzle/Crown Dungeon (B1F): Owl Puzzle"
               },
               {
-                "name": "Smog",
-                "ref": "Dungeons/Crown Dungeon (D5)/Smog/(1F): Boss"
+                "name": "Crown Dungeon (1F): Boss",
+                "ref": "Dungeons/Crown Dungeon (D5)/Smog/Crown Dungeon (1F): Boss"
               },
               {
-                "name": "Sacred Soil",
-                "ref": "Dungeons/Crown Dungeon (D5)/Sacred Soil/Essence"
+                "name": "Crown Dungeon: Essence",
+                "ref": "Dungeons/Crown Dungeon (D5)/Sacred Soil/Crown Dungeon: Essence"
               }
             ],
             "map_locations": [
@@ -1762,60 +1762,60 @@
             "name": "Moonlit Grotto (D3)",
             "sections": [
               {
-                "name": "(1F): Pols Voice Chest",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Pols Voice Chest/"
+                "name": "Moonlit Grotto (1F): Pols Voice Chest",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Pols Voice Chest/Moonlit Grotto (1F): Pols Voice Chest"
               },
               {
-                "name": "(1F): Statue Drop",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Statue Drop/"
+                "name": "Moonlit Grotto (1F): Statue Drop",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Statue Drop/Moonlit Grotto (1F): Statue Drop"
               },
               {
-                "name": "(B1F): Conveyor Belt Room",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Conveyor Belt Room/"
+                "name": "Moonlit Grotto (B1F): Conveyor Belt Room",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Conveyor Belt Room/Moonlit Grotto (B1F): Conveyor Belt Room"
               },
               {
-                "name": "(1F): Six Blocs Drop",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Six Blocs Drop/"
+                "name": "Moonlit Grotto (1F): Six Blocs Drop",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Six Blocs Drop/Moonlit Grotto (1F): Six Blocs Drop"
               },
               {
-                "name": "(1F): Armos Drop",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Armos Drop/"
+                "name": "Moonlit Grotto (1F): Armos Drop",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Armos Drop/Moonlit Grotto (1F): Armos Drop"
               },
               {
-                "name": "(1F): Bush Beetle Room",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Bush Beetle Room/"
+                "name": "Moonlit Grotto (1F): Bush Beetle Room",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Bush Beetle Room/Moonlit Grotto (1F): Bush Beetle Room"
               },
               {
-                "name": "(1F): Mimic Room",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Mimic Room/"
+                "name": "Moonlit Grotto (1F): Mimic Room",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Mimic Room/Moonlit Grotto (1F): Mimic Room"
               },
               {
-                "name": "(1F): Crossroad",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Crossroad/"
+                "name": "Moonlit Grotto (1F): Crossroad",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Crossroad/Moonlit Grotto (1F): Crossroad"
               },
               {
-                "name": "(B1F): Torch Chest",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Torch Chest/"
+                "name": "Moonlit Grotto (B1F): Torch Chest",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Torch Chest/Moonlit Grotto (B1F): Torch Chest"
               },
               {
-                "name": "(B1F): Moldorm Drop",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Moldorm Drop/"
+                "name": "Moonlit Grotto (B1F): Moldorm Drop",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Moldorm Drop/Moonlit Grotto (B1F): Moldorm Drop"
               },
               {
-                "name": "(1F): Bridge Chest",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Bridge Chest/"
+                "name": "Moonlit Grotto (1F): Bridge Chest",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Bridge Chest/Moonlit Grotto (1F): Bridge Chest"
               },
               {
-                "name": "(B1F): East",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): East/"
+                "name": "Moonlit Grotto (B1F): East",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): East/Moonlit Grotto (B1F): East"
               },
               {
-                "name": "Shadow Hag",
-                "ref": "Dungeons/Moonlit Grotto (D3)/Shadow Hag/(B1F): Boss"
+                "name": "Moonlit Grotto (B1F): Boss",
+                "ref": "Dungeons/Moonlit Grotto (D3)/Shadow Hag/Moonlit Grotto (B1F): Boss"
               },
               {
-                "name": "Echoing Howl",
-                "ref": "Dungeons/Moonlit Grotto (D3)/Echoing Howl/Essence"
+                "name": "Moonlit Grotto: Essence",
+                "ref": "Dungeons/Moonlit Grotto (D3)/Echoing Howl/Moonlit Grotto: Essence"
               },
               {
                 "name": "Get scent seeds in D3's bridge rooms",
