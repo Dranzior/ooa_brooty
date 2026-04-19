@@ -715,36 +715,36 @@
             "name": "Mermaid's Cave [Present] (D6)",
             "sections": [
               {
-                "name": "Diamond Chest",
-                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Diamond Chest/"
+                "name": "Mermaid's Cave (Present): Diamond Chest",
+                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Diamond Chest/Mermaid's Cave (Present): Diamond Chest"
               },
               {
-                "name": "Rope Chest",
-                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Rope Chest/"
+                "name": "Mermaid's Cave (Present): Rope Chest",
+                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Rope Chest/Mermaid's Cave (Present): Rope Chest"
               },
               {
-                "name": "Cube Chest",
-                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Cube Chest/"
+                "name": "Mermaid's Cave (Present): Cube Chest",
+                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Cube Chest/Mermaid's Cave (Present): Cube Chest"
               },
               {
-                "name": "Spinner Chest",
-                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Spinner Chest/"
+                "name": "Mermaid's Cave (Present): Spinner Chest",
+                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Spinner Chest/Mermaid's Cave (Present): Spinner Chest"
               },
               {
-                "name": "Beamos Chest",
-                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Beamos Chest/"
+                "name": "Mermaid's Cave (Present): Beamos Chest",
+                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Beamos Chest/Mermaid's Cave (Present): Beamos Chest"
               },
               {
-                "name": "RNG Chest",
-                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/RNG Chest/"
+                "name": "Mermaid's Cave (Present): RNG Chest",
+                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/RNG Chest/Mermaid's Cave (Present): RNG Chest"
               },
               {
-                "name": "Channel Chest",
-                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Channel Chest/"
+                "name": "Mermaid's Cave (Present): Channel Chest",
+                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Channel Chest/Mermaid's Cave (Present): Channel Chest"
               },
               {
-                "name": "Vire Chest",
-                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Vire Chest/"
+                "name": "Mermaid's Cave (Present): Vire Chest",
+                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Vire Chest/Mermaid's Cave (Present): Vire Chest"
               }
             ],
             "map_locations": [
@@ -1599,68 +1599,68 @@
             "name": "Jabu-Jabu's Belly (D7)",
             "sections": [
               {
-                "name": "(2F): Spike Chest",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(2F): Spike Chest/"
+                "name": "Jabu-Jabu's Belly (2F): Spike Chest",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(2F): Spike Chest/Jabu-Jabu's Belly (2F): Spike Chest"
               },
               {
-                "name": "(1F): Crab Chest",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Crab Chest/"
+                "name": "Jabu-Jabu's Belly (1F): Crab Chest",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Crab Chest/Jabu-Jabu's Belly (1F): Crab Chest"
               },
               {
-                "name": "(1F): Diamond Puzzle",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Diamond Puzzle/"
+                "name": "Jabu-Jabu's Belly (1F): Diamond Puzzle",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Diamond Puzzle/Jabu-Jabu's Belly (1F): Diamond Puzzle"
               },
               {
-                "name": "(1F): Flower Room",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Flower Room/"
+                "name": "Jabu-Jabu's Belly (1F): Flower Room",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Flower Room/Jabu-Jabu's Belly (1F): Flower Room"
               },
               {
-                "name": "(1F): Stairway Chest",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Stairway Chest/"
+                "name": "Jabu-Jabu's Belly (1F): Stairway Chest",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Stairway Chest/Jabu-Jabu's Belly (1F): Stairway Chest"
               },
               {
-                "name": "(2F): Right Wing",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(2F): Right Wing/"
+                "name": "Jabu-Jabu's Belly (2F): Right Wing",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(2F): Right Wing/Jabu-Jabu's Belly (2F): Right Wing"
               },
               {
-                "name": "(1F): Boxed Chest",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Boxed Chest/"
+                "name": "Jabu-Jabu's Belly (1F): Boxed Chest",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Boxed Chest/Jabu-Jabu's Belly (1F): Boxed Chest"
               },
               {
-                "name": "(1F): Cane|Diamond Puzzle",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Cane|Diamond Puzzle/"
+                "name": "Jabu-Jabu's Belly (1F): Cane|Diamond Puzzle",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Cane|Diamond Puzzle/Jabu-Jabu's Belly (1F): Cane|Diamond Puzzle"
               },
               {
-                "name": "(3F): Terrace",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(3F): Terrace/"
+                "name": "Jabu-Jabu's Belly (3F): Terrace",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(3F): Terrace/Jabu-Jabu's Belly (3F): Terrace"
               },
               {
-                "name": "(2F): Left Wing",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(2F): Left Wing/"
+                "name": "Jabu-Jabu's Belly (2F): Left Wing",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(2F): Left Wing/Jabu-Jabu's Belly (2F): Left Wing"
               },
               {
-                "name": "(3F): Hallway Chest",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(3F): Hallway Chest/"
+                "name": "Jabu-Jabu's Belly (3F): Hallway Chest",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(3F): Hallway Chest/Jabu-Jabu's Belly (3F): Hallway Chest"
               },
               {
-                "name": "(1F): Miniboss Chest",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Miniboss Chest/"
+                "name": "Jabu-Jabu's Belly (1F): Miniboss Chest",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Miniboss Chest/Jabu-Jabu's Belly (1F): Miniboss Chest"
               },
               {
-                "name": "(3F): Post-Hallway Chest",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(3F): Post-Hallway Chest/"
+                "name": "Jabu-Jabu's Belly (3F): Post-Hallway Chest",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(3F): Post-Hallway Chest/Jabu-Jabu's Belly (3F): Post-Hallway Chest"
               },
               {
-                "name": "(1F): Island Chest",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Island Chest/"
+                "name": "Jabu-Jabu's Belly (1F): Island Chest",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Island Chest/Jabu-Jabu's Belly (1F): Island Chest"
               },
               {
                 "name": "Plasmarine",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/Plasmarine/(2F): Boss"
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/Plasmarine/Jabu-Jabu's Belly (2F): Boss"
               },
               {
-                "name": "Rolling Sea",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/Rolling Sea/Essence"
+                "name": "Jabu-Jabu's Belly: Essence",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/Rolling Sea/Jabu-Jabu's Belly: Essence"
               }
             ],
             "map_locations": [

@@ -308,40 +308,40 @@
             "name": "Mermaid's Cave [Past] (D6)",
             "sections": [
               {
-                "name": "(1F): Color Room",
-                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(1F): Color Room/"
+                "name": "Mermaid's Cave (1F): Color Room",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(1F): Color Room/Mermaid's Cave (Past) (1F): Color Room"
               },
               {
-                "name": "(1F): Wizzrobe",
-                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(1F): Wizzrobe/"
+                "name": "Mermaid's Cave (1F): Wizzrobe",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(1F): Wizzrobe/Mermaid's Cave (Past) (1F): Wizzrobe"
               },
               {
-                "name": "(1F): Pool Chest",
-                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(1F): Pool Chest/"
+                "name": "Mermaid's Cave (1F): Pool Chest",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(1F): Pool Chest/Mermaid's Cave (Past) (1F): Pool Chest"
               },
               {
-                "name": "(1F): Stalfos Chest",
-                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(1F): Stalfos Chest/"
+                "name": "Mermaid's Cave (1F): Stalfos Chest",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(1F): Stalfos Chest/Mermaid's Cave (Past) (1F): Stalfos Chest"
               },
               {
-                "name": "(B1F): Rope Chest",
-                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(B1F): Rope Chest/"
+                "name": "Mermaid's Cave (B1F): Rope Chest",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(B1F): Rope Chest/Mermaid's Cave (Past) (B1F): Rope Chest"
               },
               {
-                "name": "(B1F): Spear Chest",
-                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(B1F): Spear Chest/"
+                "name": "Mermaid's Cave (B1F): Spear Chest",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(B1F): Spear Chest/Mermaid's Cave (Past) (B1F): Spear Chest"
               },
               {
-                "name": "(B1F): Diamond Chest",
-                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(B1F): Diamond Chest/"
+                "name": "Mermaid's Cave (B1F): Diamond Chest",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/(B1F): Diamond Chest/Mermaid's Cave (Past) (B1F): Diamond Chest"
               },
               {
-                "name": "Octogon",
-                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/Octogon/(1F): Boss"
+                "name": "Mermaid's Cave (Past) (1F): Boss",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/Octogon/Mermaid's Cave (Past) (1F): Boss"
               },
               {
-                "name": "Lonely Peak",
-                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/Lonely Peak/Essence"
+                "name": "Mermaid's Cave: Essence",
+                "ref": "Dungeons/Mermaid's Cave [Past] (D6)/Lonely Peak/Mermaid's Cave: Essence"
               },
               {
                 "name": "Open Bomb Wall in Past",
