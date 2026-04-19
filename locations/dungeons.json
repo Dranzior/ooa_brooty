@@ -2011,7 +2011,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (1F): Single Chest",
                 "item_count": 1
               }
             ],
@@ -2030,7 +2030,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B2F): Ghini Chest",
                 "item_count": 1
               }
             ],
@@ -2049,7 +2049,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B1F): NW Chest",
                 "item_count": 1
               }
             ],
@@ -2068,7 +2068,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B1F): Blue Peg Chest",
                 "item_count": 1
               }
             ],
@@ -2087,7 +2087,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B1F): Blade Trap",
                 "item_count": 1
               }
             ],
@@ -2106,7 +2106,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B1F): Sarcophagus Chest",
                 "item_count": 1
               }
             ],
@@ -2125,7 +2125,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B1F): Stalfos",
                 "item_count": 1
               }
             ],
@@ -2144,7 +2144,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B2F): Maze Chest",
                 "item_count": 1
               }
             ],
@@ -2163,7 +2163,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B2F): NW Slate Chest",
                 "item_count": 1
               }
             ],
@@ -2182,7 +2182,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B2F): NE Slate Chest",
                 "item_count": 1
               }
             ],
@@ -2201,7 +2201,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B3F): Single Chest",
                 "item_count": 1
               }
             ],
@@ -2220,7 +2220,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B2F): Tile Room",
                 "item_count": 1
               }
             ],
@@ -2239,7 +2239,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B2F): SE Slate Chest",
                 "item_count": 1
               }
             ],
@@ -2258,7 +2258,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B1F): Floor Puzzle",
                 "item_count": 1
               }
             ],
@@ -2277,7 +2277,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B2F): SW Slate Chest",
                 "item_count": 1
               }
             ],
@@ -2296,7 +2296,7 @@
             ],
             "sections": [
               {
-                "name": "(B3F): Boss",
+                "name": "Ancient Tomb (B3F): Boss",
                 "item_count": 1
               }
             ],
@@ -2315,7 +2315,7 @@
             ],
             "sections": [
               {
-                "name": "Essence",
+                "name": "Ancient Tomb: Essence",
                 "hosted_item": "d8"
               }
             ],
@@ -2344,7 +2344,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Pots Puzzle",
                 "item_count": 1
               }
             ],
@@ -2363,7 +2363,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Statue Puzzle #1",
                 "item_count": 1
               }
             ],
@@ -2382,7 +2382,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Bridge Puzzle #1",
                 "item_count": 1
               }
             ],
@@ -2401,7 +2401,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Shoot Eyes",
                 "item_count": 1
               }
             ],
@@ -2420,7 +2420,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Statue Puzzle #2",
                 "item_count": 1
               }
             ],
@@ -2439,7 +2439,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Pots Puzzle #2",
                 "item_count": 1
               }
             ],
@@ -2458,7 +2458,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Statue Puzzle #3",
                 "item_count": 1
               }
             ],
@@ -2477,7 +2477,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Bridge Puzzle #2",
                 "item_count": 1
               }
             ],
@@ -2496,7 +2496,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Color Room",
                 "item_count": 1
               }
             ],
@@ -2515,7 +2515,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Water Puzzle",
                 "item_count": 1
               }
             ],
@@ -2534,7 +2534,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (B1F): Water Puzzle",
                 "item_count": 1
               }
             ],
@@ -2553,7 +2553,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (B1F): Basement",
                 "item_count": 1
               }
             ],
@@ -2566,13 +2566,13 @@
             ]
           },
           {
-            "name": "(1F): Final Puzzle",
+            "name": "(1F): Minecart Room",
             "access_rules": [
               "^$CanReach|d11_minecart_room"
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Minecart Room",
                 "item_count": 1
               }
             ],
@@ -2591,7 +2591,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Completion Reward",
                 "item_count": 1
               }
             ],

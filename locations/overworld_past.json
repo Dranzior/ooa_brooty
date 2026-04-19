@@ -802,72 +802,72 @@
             "name": "Ancient Tomb (D8)",
             "sections": [
               {
-                "name": "(1F): Single Chest",
-                "ref": "Dungeons/Ancient Tomb (D8)/(1F): Single Chest/"
+                "name": "Ancient Tomb (1F): Single Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(1F): Single Chest/Ancient Tomb (1F): Single Chest"
               },
               {
-                "name": "(B2F): Ghini Chest",
-                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): Ghini Chest/"
+                "name": "Ancient Tomb (B2F): Ghini Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): Ghini Chest/Ancient Tomb (B2F): Ghini Chest"
               },
               {
-                "name": "(B1F): NW Chest",
-                "ref": "Dungeons/Ancient Tomb (D8)/(B1F): NW Chest/"
+                "name": "Ancient Tomb (B1F): NW Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B1F): NW Chest/Ancient Tomb (B1F): NW Chest"
               },
               {
-                "name": "(B1F): Blue Peg Chest",
-                "ref": "Dungeons/Ancient Tomb (D8)/(B1F): Blue Peg Chest/"
+                "name": "Ancient Tomb (B1F): Blue Peg Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B1F): Blue Peg Chest/Ancient Tomb (B1F): Blue Peg Chest"
               },
               {
-                "name": "(B1F): Blade Trap",
-                "ref": "Dungeons/Ancient Tomb (D8)/(B1F): Blade Trap/"
+                "name": "Ancient Tomb (B1F): Blade Trap",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B1F): Blade Trap/Ancient Tomb (B1F): Blade Trap"
               },
               {
-                "name": "(B1F): Sarcophagus Chest",
-                "ref": "Dungeons/Ancient Tomb (D8)/(B1F): Sarcophagus Chest/"
+                "name": "Ancient Tomb (B1F): Sarcophagus Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B1F): Sarcophagus Chest/Ancient Tomb (B1F): Sarcophagus Chest"
               },
               {
-                "name": "(B1F): Stalfos",
-                "ref": "Dungeons/Ancient Tomb (D8)/(B1F): Stalfos/"
+                "name": "Ancient Tomb (B1F): Stalfos",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B1F): Stalfos/Ancient Tomb (B1F): Stalfos"
               },
               {
-                "name": "(B2F): Maze Chest",
-                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): Maze Chest/"
+                "name": "Ancient Tomb (B2F): Maze Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): Maze Chest/Ancient Tomb (B2F): Maze Chest"
               },
               {
-                "name": "(B2F): NW Slate Chest",
-                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): NW Slate Chest/"
+                "name": "Ancient Tomb (B2F): NW Slate Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): NW Slate Chest/Ancient Tomb (B2F): NW Slate Chest"
               },
               {
-                "name": "(B2F): NE Slate Chest",
-                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): NE Slate Chest/"
+                "name": "Ancient Tomb (B2F): NE Slate Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): NE Slate Chest/Ancient Tomb (B2F): NE Slate Chest"
               },
               {
-                "name": "(B3F): Single Chest",
-                "ref": "Dungeons/Ancient Tomb (D8)/(B3F): Single Chest/"
+                "name": "Ancient Tomb (B3F): Single Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B3F): Single Chest/Ancient Tomb (B3F): Single Chest"
               },
               {
-                "name": "(B2F): Tile Room",
-                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): Tile Room/"
+                "name": "Ancient Tomb (B2F): Tile Room",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): Tile Room/Ancient Tomb (B2F): Tile Room"
               },
               {
-                "name": "(B2F): SE Slate Chest",
-                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): SE Slate Chest/"
+                "name": "Ancient Tomb (B2F): SE Slate Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): SE Slate Chest/Ancient Tomb (B2F): SE Slate Chest"
               },
               {
-                "name": "(B1F): Floor Puzzle",
-                "ref": "Dungeons/Ancient Tomb (D8)/(B1F): Floor Puzzle/"
+                "name": "Ancient Tomb (B1F): Floor Puzzle",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B1F): Floor Puzzle/Ancient Tomb (B1F): Floor Puzzle"
               },
               {
-                "name": "(B2F): SW Slate Chest",
-                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): SW Slate Chest/"
+                "name": "Ancient Tomb (B2F): SW Slate Chest",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): SW Slate Chest/Ancient Tomb (B2F): SW Slate Chest"
               },
               {
-                "name": "Ramrock",
-                "ref": "Dungeons/Ancient Tomb (D8)/Ramrock/(B3F): Boss"
+                "name": "Ancient Tomb (B3F): Boss",
+                "ref": "Dungeons/Ancient Tomb (D8)/Ramrock/Ancient Tomb (B3F): Boss"
               },
               {
-                "name": "Falling Star",
-                "ref": "Dungeons/Ancient Tomb (D8)/Falling Star/Essence"
+                "name": "Ancient Tomb: Essence",
+                "ref": "Dungeons/Ancient Tomb (D8)/Falling Star/Ancient Tomb: Essence"
               }
             ],
             "map_locations": [

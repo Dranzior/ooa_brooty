@@ -1019,60 +1019,60 @@
             ],
             "sections": [
               {
-                "name": "(1F): Pots Puzzle",
-                "ref": "Dungeons/Hero's Cave/(1F): Pots Puzzle/"
+                "name": "Linked Hero's Cave (1F): Pots Puzzle",
+                "ref": "Dungeons/Hero's Cave/(1F): Pots Puzzle/Linked Hero's Cave (1F): Pots Puzzle"
               },
               {
-                "name": "(1F): Statue Puzzle #1",
-                "ref": "Dungeons/Hero's Cave/(1F): Statue Puzzle #1/"
+                "name": "Linked Hero's Cave (1F): Statue Puzzle #1",
+                "ref": "Dungeons/Hero's Cave/(1F): Statue Puzzle #1/Linked Hero's Cave (1F): Statue Puzzle #1"
               },
               {
-                "name": "(1F): Bridge Puzzle #1",
-                "ref": "Dungeons/Hero's Cave/(1F): Bridge Puzzle #1/"
+                "name": "Linked Hero's Cave (1F): Bridge Puzzle #1",
+                "ref": "Dungeons/Hero's Cave/(1F): Bridge Puzzle #1/Linked Hero's Cave (1F): Bridge Puzzle #1"
               },
               {
-                "name": "(1F): Shoot Eyes",
-                "ref": "Dungeons/Hero's Cave/(1F): Shoot Eyes/"
+                "name": "Linked Hero's Cave (1F): Shoot Eyes",
+                "ref": "Dungeons/Hero's Cave/(1F): Shoot Eyes/Linked Hero's Cave (1F): Shoot Eyes"
               },
               {
-                "name": "(1F): Statue Puzzle #2",
-                "ref": "Dungeons/Hero's Cave/(1F): Statue Puzzle #2/"
+                "name": "Linked Hero's Cave (1F): Statue Puzzle #2",
+                "ref": "Dungeons/Hero's Cave/(1F): Statue Puzzle #2/Linked Hero's Cave (1F): Statue Puzzle #2"
               },
               {
-                "name": "(1F): Pots Puzzle #2",
-                "ref": "Dungeons/Hero's Cave/(1F): Pots Puzzle #2/"
+                "name": "Linked Hero's Cave (1F): Pots Puzzle #2",
+                "ref": "Dungeons/Hero's Cave/(1F): Pots Puzzle #2/Linked Hero's Cave (1F): Pots Puzzle #2"
               },
               {
-                "name": "(1F): Statue Puzzle #3",
-                "ref": "Dungeons/Hero's Cave/(1F): Statue Puzzle #3/"
+                "name": "Linked Hero's Cave (1F): Statue Puzzle #3",
+                "ref": "Dungeons/Hero's Cave/(1F): Statue Puzzle #3/Linked Hero's Cave (1F): Statue Puzzle #3"
               },
               {
-                "name": "(1F): Bridge Puzzle #2",
-                "ref": "Dungeons/Hero's Cave/(1F): Bridge Puzzle #2/"
+                "name": "Linked Hero's Cave (1F): Bridge Puzzle #2",
+                "ref": "Dungeons/Hero's Cave/(1F): Bridge Puzzle #2/Linked Hero's Cave (1F): Bridge Puzzle #2"
               },
               {
-                "name": "(1F): Color Room",
-                "ref": "Dungeons/Hero's Cave/(1F): Color Room/"
+                "name": "Linked Hero's Cave (1F): Color Room",
+                "ref": "Dungeons/Hero's Cave/(1F): Color Room/Linked Hero's Cave (1F): Color Room"
               },
               {
-                "name": "(1F): Water Puzzle",
-                "ref": "Dungeons/Hero's Cave/(1F): Water Puzzle/"
+                "name": "Linked Hero's Cave (1F): Water Puzzle",
+                "ref": "Dungeons/Hero's Cave/(1F): Water Puzzle/Linked Hero's Cave (1F): Water Puzzle"
               },
               {
-                "name": "(B1F): Water Puzzle",
-                "ref": "Dungeons/Hero's Cave/(B1F): Water Puzzle/"
+                "name": "Linked Hero's Cave (B1F): Water Puzzle",
+                "ref": "Dungeons/Hero's Cave/(B1F): Water Puzzle/Linked Hero's Cave (B1F): Water Puzzle"
               },
               {
-                "name": "(B1F): Basement",
-                "ref": "Dungeons/Hero's Cave/(B1F): Basement/"
+                "name": "Linked Hero's Cave (B1F): Basement",
+                "ref": "Dungeons/Hero's Cave/(B1F): Basement/Linked Hero's Cave (B1F): Basement"
               },
               {
-                "name": "(1F): Final Puzzle",
-                "ref": "Dungeons/Hero's Cave/(1F): Final Puzzle/"
+                "name": "Linked Hero's Cave (1F): Minecart Room",
+                "ref": "Dungeons/Hero's Cave/(1F): Final Puzzle/Linked Hero's Cave (1F): Minecart Room"
               },
               {
-                "name": "(1F): Completion Reward",
-                "ref": "Dungeons/Hero's Cave/(1F): Completion Reward/"
+                "name": "Linked Hero's Cave (1F): Completion Reward",
+                "ref": "Dungeons/Hero's Cave/(1F): Completion Reward/Linked Hero's Cave (1F): Completion Reward"
               }
             ],
             "map_locations": [
