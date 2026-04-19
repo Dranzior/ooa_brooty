@@ -665,20 +665,16 @@
             "name": "Maku Path (D0)",
             "sections": [
               {
-                "name": "Key Chest",
-                "ref": "Dungeons/Maku Path (D0)/Key Chest/"
+                "name": "Maku Path: Key Chest",
+                "ref": "Dungeons/Maku Path (D0)/Key Chest/Maku Path: Key Chest"
               },
               {
-                "name": "Basement",
-                "ref": "Dungeons/Maku Path (D0)/Basement/"
+                "name": "Maku Path: Basement",
+                "ref": "Dungeons/Maku Path (D0)/Basement/Maku Path: Basement"
               },
               {
-                "name": "Heart Piece",
-                "ref": "Dungeons/Maku Path (D0)/Heart Piece/"
-              },
-              {
-                "name": "Have Maku Path Key?",
-                "ref": "Dungeons/Maku Path (D0)/Have Maku Path Key?/"
+                "name": "Maku Path: Heart Piece",
+                "ref": "Dungeons/Maku Path (D0)/Heart Piece/Maku Path: Heart Piece"
               }
             ],
             "map_locations": [
@@ -1092,56 +1088,56 @@
             "name": "Wing Dungeon (D2)",
             "sections": [
               {
-                "name": "(1F): Bombed Terrace",
-                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Bombed Terrace/"
+                "name": "Wing Dungeon (1F): Bombed Terrace",
+                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Bombed Terrace/Wing Dungeon (1F): Bombed Terrace"
               },
               {
-                "name": "(1F): Moblin Drop",
-                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Moblin Drop/"
+                "name": "Wing Dungeon (1F): Moblin Drop",
+                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Moblin Drop/Wing Dungeon (1F): Moblin Drop"
               },
               {
-                "name": "(1F): Rope Room",
-                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Rope Room/"
+                "name": "Wing Dungeon (1F): Rope Room",
+                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Rope Room/Wing Dungeon (1F): Rope Room"
               },
               {
-                "name": "(1F): Ladder Chest",
-                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Ladder Chest/"
+                "name": "Wing Dungeon (1F): Ladder Chest",
+                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Ladder Chest/Wing Dungeon (1F): Ladder Chest"
               },
               {
-                "name": "(B1F): Thwomp Tunnel",
-                "ref": "Dungeons/Wing Dungeon (D2)/(B1F): Thwomp Tunnel/"
+                "name": "Wing Dungeon (B1F): Thwomp Tunnel",
+                "ref": "Dungeons/Wing Dungeon (D2)/(B1F): Thwomp Tunnel/Wing Dungeon (B1F): Thwomp Tunnel"
               },
               {
-                "name": "(B1F): Thwomp Shelf",
-                "ref": "Dungeons/Wing Dungeon (D2)/(B1F): Thwomp Shelf/"
+                "name": "Wing Dungeon (B1F): Thwomp Shelf",
+                "ref": "Dungeons/Wing Dungeon (D2)/(B1F): Thwomp Shelf/Wing Dungeon (B1F): Thwomp Shelf"
               },
               {
-                "name": "(B1F): Basement Chest",
-                "ref": "Dungeons/Wing Dungeon (D2)/(B1F): Basement Chest/"
+                "name": "Wing Dungeon (B1F): Basement Chest",
+                "ref": "Dungeons/Wing Dungeon (D2)/(B1F): Basement Chest/Wing Dungeon (B1F): Basement Chest"
               },
               {
-                "name": "(B1F): Basement Drop",
-                "ref": "Dungeons/Wing Dungeon (D2)/(B1F): Basement Drop/"
+                "name": "Wing Dungeon (B1F): Basement Drop",
+                "ref": "Dungeons/Wing Dungeon (D2)/(B1F): Basement Drop/Wing Dungeon (B1F): Basement Drop"
               },
               {
-                "name": "(1F): Moblin Platform",
-                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Moblin Platform/"
+                "name": "Wing Dungeon (1F): Moblin Platform",
+                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Moblin Platform/Wing Dungeon (1F): Moblin Platform"
               },
               {
-                "name": "(1F): Statue Puzzle",
-                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Statue Puzzle/"
+                "name": "Wing Dungeon (1F): Statue Puzzle",
+                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Statue Puzzle/Wing Dungeon (1F): Statue Puzzle"
               },
               {
-                "name": "(1F): Color Room",
-                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Color Room/"
+                "name": "Wing Dungeon (1F): Color Room",
+                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Color Room/Wing Dungeon (1F): Color Room"
               },
               {
-                "name": "Head Thwomp",
-                "ref": "Dungeons/Wing Dungeon (D2)/Head Thwomp/(1F): Boss"
+                "name": "Wing Dungeon (1F): Boss",
+                "ref": "Dungeons/Wing Dungeon (D2)/Head Thwomp/Wing Dungeon (1F): Boss"
               },
               {
-                "name": "Ancient Wood",
-                "ref": "Dungeons/Wing Dungeon (D2)/Ancient Wood/Essence"
+                "name": "Wing Dungeon: Essence",
+                "ref": "Dungeons/Wing Dungeon (D2)/Ancient Wood/Wing Dungeon: Essence"
               }
             ],
             "map_locations": [

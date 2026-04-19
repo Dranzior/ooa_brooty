@@ -1314,52 +1314,52 @@
             "name": "Spirit's Grave (D1)",
             "sections": [
               {
-                "name": "East Terrace",
-                "ref": "Dungeons/Spirit's Grave (D1)/East Terrace/"
+                "name": "Spirit's Grave: East Terrace",
+                "ref": "Dungeons/Spirit's Grave (D1)/East Terrace/Spirit's Grave: East Terrace"
               },
               {
-                "name": "Ghini Drop",
-                "ref": "Dungeons/Spirit's Grave (D1)/Ghini Drop/"
+                "name": "Spirit's Grave: Ghini Drop",
+                "ref": "Dungeons/Spirit's Grave (D1)/Ghini Drop/Spirit's Grave: Ghini Drop"
               },
               {
-                "name": "Crossroad",
-                "ref": "Dungeons/Spirit's Grave (D1)/Crossroad/"
+                "name": "Spirit's Grave: Crossroad",
+                "ref": "Dungeons/Spirit's Grave (D1)/Crossroad/Spirit's Grave: Crossroad"
               },
               {
-                "name": "Crystal Room",
-                "ref": "Dungeons/Spirit's Grave (D1)/Crystal Room/"
+                "name": "Spirit's Grave: Crystal Room",
+                "ref": "Dungeons/Spirit's Grave (D1)/Crystal Room/Spirit's Grave: Crystal Room"
               },
               {
-                "name": "Wide Room",
-                "ref": "Dungeons/Spirit's Grave (D1)/Wide Room/"
+                "name": "Spirit's Grave: Wide Room",
+                "ref": "Dungeons/Spirit's Grave (D1)/Wide Room/Spirit's Grave: Wide Room"
               },
               {
-                "name": "Two-Buttons Chest",
-                "ref": "Dungeons/Spirit's Grave (D1)/Two-Buttons Chest/"
+                "name": "Spirit's Grave: Two-Buttons Chest",
+                "ref": "Dungeons/Spirit's Grave (D1)/Two-Buttons Chest/Spirit's Grave: Two-Buttons Chest"
               },
               {
-                "name": "One-Button Chest",
-                "ref": "Dungeons/Spirit's Grave (D1)/One-Button Chest/"
+                "name": "Spirit's Grave: One-Button Chest",
+                "ref": "Dungeons/Spirit's Grave (D1)/One-Button Chest/Spirit's Grave: One-Button Chest"
               },
               {
-                "name": "Pot Chest",
-                "ref": "Dungeons/Spirit's Grave (D1)/Pot Chest/"
+                "name": "Spirit's Grave: Pot Chest",
+                "ref": "Dungeons/Spirit's Grave (D1)/Pot Chest/Spirit's Grave: Pot Chest"
               },
               {
-                "name": "West Terrace",
-                "ref": "Dungeons/Spirit's Grave (D1)/West Terrace/"
+                "name": "Spirit's Grave: West Terrace",
+                "ref": "Dungeons/Spirit's Grave (D1)/West Terrace/Spirit's Grave: West Terrace"
               },
               {
-                "name": "Basement",
-                "ref": "Dungeons/Spirit's Grave (D1)/Basement/"
+                "name": "Spirit's Grave: Basement",
+                "ref": "Dungeons/Spirit's Grave (D1)/Basement/Spirit's Grave: Basement"
               },
               {
-                "name": "Pumpkin Head",
-                "ref": "Dungeons/Spirit's Grave (D1)/Pumpkin Head/Boss"
+                "name": "Spirit's Grave: Boss",
+                "ref": "Dungeons/Spirit's Grave (D1)/Pumpkin Head/Spirit's Grave: Boss"
               },
               {
-                "name": "Eternal Spirit",
-                "ref": "Dungeons/Spirit's Grave (D1)/Eternal Spirit/Essence"
+                "name": "Spirit's Grave: Essence",
+                "ref": "Dungeons/Spirit's Grave (D1)/Eternal Spirit/Spirit's Grave: Essence"
               }
             ],
             "map_locations": [

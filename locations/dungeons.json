@@ -14,7 +14,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Maku Path: Key Chest",
                 "item_count": 1
               }
             ],
@@ -33,7 +33,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Maku Path: Basement",
                 "item_count": 1
               }
             ],
@@ -52,7 +52,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Maku Path: Heart Piece",
                 "item_count": 1
               }
             ],
@@ -78,7 +78,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: East Terrace",
                 "item_count": 1
               }
             ],
@@ -97,7 +97,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: Ghini Drop",
                 "item_count": 1
               }
             ],
@@ -116,7 +116,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: Crossroad",
                 "item_count": 1
               }
             ],
@@ -135,7 +135,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: Crystal Room",
                 "item_count": 1
               }
             ],
@@ -154,7 +154,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: Wide Room",
                 "item_count": 1
               }
             ],
@@ -173,7 +173,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: Two-Buttons Chest",
                 "item_count": 1
               }
             ],
@@ -192,7 +192,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: One-Button Chest",
                 "item_count": 1
               }
             ],
@@ -211,7 +211,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: Pot Chest",
                 "item_count": 1
               }
             ],
@@ -230,7 +230,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: West Terrace",
                 "item_count": 1
               }
             ],
@@ -249,7 +249,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: Basement",
                 "item_count": 1
               }
             ],
@@ -273,7 +273,7 @@
             ],
             "sections": [
               {
-                "name": "Boss",
+                "name": "Spirit's Grave: Boss",
                 "item_count": 1
               }
             ],
@@ -292,7 +292,7 @@
             ],
             "sections": [
               {
-                "name": "Essence",
+                "name": "Spirit's Grave: Essence",
                 "hosted_item": "d1"
               }
             ],
@@ -318,7 +318,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (1F): Bombed Terrace",
                 "item_count": 1
               }
             ],
@@ -337,7 +337,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (1F): Moblin Drop",
                 "item_count": 1
               }
             ],
@@ -356,7 +356,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (1F): Rope Room",
                 "item_count": 1
               }
             ],
@@ -375,7 +375,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (1F): Ladder Chest",
                 "item_count": 1
               }
             ],
@@ -394,7 +394,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (B1F): Thwomp Tunnel",
                 "item_count": 1
               }
             ],
@@ -413,7 +413,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (B1F): Thwomp Shelf",
                 "item_count": 1
               }
             ],
@@ -432,7 +432,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (B1F): Basement Chest",
                 "item_count": 1
               }
             ],
@@ -451,7 +451,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (B1F): Basement Drop",
                 "item_count": 1
               }
             ],
@@ -470,7 +470,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (1F): Moblin Platform",
                 "item_count": 1
               }
             ],
@@ -489,7 +489,7 @@
             ],
             "sections": [
               {
-                "name": ""
+                "name": "Wing Dungeon (1F): Statue Puzzle"
               }
             ],
             "map_locations": [
@@ -507,7 +507,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (1F): Color Room",
                 "item_count": 1
               }
             ],
@@ -526,7 +526,7 @@
             ],
             "sections": [
               {
-                "name": "(1F): Boss",
+                "name": "Wing Dungeon (1F): Boss",
                 "item_count": 1
               },
               {
@@ -554,7 +554,7 @@
             ],
             "sections": [
               {
-                "name": "Essence",
+                "name": "Wing Dungeon: Essence",
                 "hosted_item": "d2"
               }
             ],
