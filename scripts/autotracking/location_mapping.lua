@@ -188,7 +188,7 @@ LOCATION_LISTING = {
 	 { "@Dungeons/Jabu-Jabu's Belly (D7)/(1F): Island Chest/Jabu-Jabu's Belly (1F): Island Chest"},
 	 { "@Dungeons/Jabu-Jabu's Belly (D7)/(1F): Stairway Chest/Jabu-Jabu's Belly (1F): Stairway Chest"},
 	 { "@Dungeons/Jabu-Jabu's Belly (D7)/(1F): Miniboss Chest/Jabu-Jabu's Belly (1F): Miniboss Chest"},
-	 { "@Dungeons/Jabu-Jabu's Belly (D7)/(1F): Cane|Diamond Puzzle/Jabu-Jabu's Belly (1F): Cane|Diamond Puzzle"},
+	 { "@Dungeons/Jabu-Jabu's Belly (D7)/(1F): Cane and Diamond Puzzle/Jabu-Jabu's Belly (1F): Cane and Diamond Puzzle"},
 	 { "@Dungeons/Jabu-Jabu's Belly (D7)/(1F): Boxed Chest/Jabu-Jabu's Belly (1F): Boxed Chest"},
 	 { "@Dungeons/Jabu-Jabu's Belly (D7)/(1F): Flower Room/Jabu-Jabu's Belly (1F): Flower Room"},
 	 { "@Dungeons/Jabu-Jabu's Belly (D7)/(1F): Diamond Puzzle/Jabu-Jabu's Belly (1F): Diamond Puzzle"},
