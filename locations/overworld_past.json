@@ -594,7 +594,6 @@
               },
               {
                 "name": "Rescue Nayru",
-                "item_count": 1,
                 "hosted_item": "Nayru",
                 "access_rules": [
                   "^$CanReach|rescue_nayru"

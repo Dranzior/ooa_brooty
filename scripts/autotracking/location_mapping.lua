@@ -34,7 +34,7 @@ LOCATION_LISTING = {
     { "@Overworld/Lynna|South Shore|Palace/Black Tower Worker/" },
     { "@Overworld/Lynna|South Shore|Palace/Black Tower Heart Piece/" },
     { "@Overworld/Lynna|South Shore|Palace/Ambi's Palace/Ambi's Palace Chest" },
-    { "@Overworld/Lynna|South Shore|Palace/Ambi's Palace/Rescue Nayru" },
+    { "Nayru" },
 
     { "@Overworld/Fairies' Woods/Restoration Wall Heart Piece/" },
 
