@@ -163,6 +163,10 @@
             "name": "Goron caves (Past)",
             "sections": [
               {
+                "name": "First Goron Dance",
+                "ref": "Overworld/Rolling Ridge East (Present)/Goron caves (Present)/First Goron Dance"
+              },
+              {
                 "name": "Goron Dance, With Letter",
                 "access_rules": [
                   "^$CanReach|goron_dance__with_letter"
