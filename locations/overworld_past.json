@@ -111,6 +111,10 @@
             "name": "Goron caves",
             "sections": [
               {
+                "name": "Rolling Ridge Base (Present): First Goron Dance",
+                "ref": "Overworld/Rolling Ridge/Goron caves (Present)/Rolling Ridge Base (Present): First Goron Dance"
+              },
+              {
                 "name": "Rolling Ridge Base (Past): Goron Dance With Letter",
                 "access_rules": [
                   "^$CanReach|goron_dance__with_letter"
@@ -438,7 +442,6 @@
               },
               {
                 "name": "Ambi's Palace: Rescue Nayru",
-                "item_count": 1,
                 "hosted_item": "Nayru",
                 "access_rules": [
                   "^$CanReach|rescue_nayru"

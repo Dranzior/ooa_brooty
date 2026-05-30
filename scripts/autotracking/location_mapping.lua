@@ -32,7 +32,7 @@ LOCATION_LISTING = {
 	 { "@Overworld_Past/Lynna Village/Supervisor/Black Tower (Past): Supervisor"},
 	 { "@Overworld_Past/Lynna Village/Black Tower Heart Piece/Black Tower (Past): Heart Piece"},
 	 { "@Overworld_Past/Lynna Village/Ambi's Palace/Ambi's Palace: East Wing Chest"},
-	 { "@Overworld_Past/Lynna Village/Ambi's Palace/Ambi's Palace: Rescue Nayru"},
+	 { "Nayru"},
 	 { "@Overworld_Past/Lynna Village/Cave Near Restoration Wall/West Lynna: Cave Near Restoration Wall"},
 	 { "@Overworld/Lynna City/Dirt Pile/South Shore (Present): Dirt Pile"},
 	 { "@Overworld_Past/Lynna Village/Rafton Trade/South Shore (Past): Rafton Trade"},
