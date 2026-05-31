@@ -5,4 +5,5 @@ todo.*
 .idea/
 /tools/logic_generator/ReferenceFiles/
 __pycache__
-tools/location_mapper/ReferenceFiles/Locations.py
+tools/location_mapper/ReferenceFiles/
+*.bak
