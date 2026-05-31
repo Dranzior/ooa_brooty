@@ -1,151 +1,122 @@
 CURRENT_ITEM = nil
 
-BASE = 27022002000
+ITEM_MAPPING = {}
+-- INVENTORY
+ITEM_MAPPING[Progressive_Shield] = {"shield", "progressive"}
+ITEM_MAPPING[Bombs__10_] = {"bombs", "progressive"}
+ITEM_MAPPING[Progressive_Sword] = {"swordupgrade", "progressive"}
+ITEM_MAPPING[Boomerang] = {"boomerang", "progressive"}
+ITEM_MAPPING[Progressive_Harp] = {"harpupgrade", "progressive"}
+ITEM_MAPPING[Progressive_Hook] = {"hookupgrade", "progressive"}
+ITEM_MAPPING[Cane_of_Somaria] = {"cane", "toggle"}
+ITEM_MAPPING[Biggorons_Sword] = {"bigsword", "toggle"}
+ITEM_MAPPING[Bombchus__10_] = {"bombchus", "progressive"}
+ITEM_MAPPING[Rickys_Flute] = {"flute", "toggle"}
+ITEM_MAPPING[Dimitris_Flute] = {"flute", "toggle"}
+ITEM_MAPPING[Mooshs_Flute] = {"flute", "toggle"}
+ITEM_MAPPING[Seed_Shooter] = {"shooter", "toggle"}
+ITEM_MAPPING[Shovel] = {"shovel", "toggle"}
+ITEM_MAPPING[Progressive_Bracelet] = {"liftupgrade", "progressive"}
+ITEM_MAPPING[Feather] = {"feather", "progressive"}
+ITEM_MAPPING[Seed_Satchel] = {"satchel", "progressive"}
+ITEM_MAPPING[Ember_Seeds] = {"emberseeds", "toggle"}
+ITEM_MAPPING[Scent_Seeds] = {"scentseeds", "toggle"}
+ITEM_MAPPING[Pegasus_Seeds] = {"pegasusseeds", "toggle"}
+ITEM_MAPPING[Gale_Seeds] = {"galeseeds", "toggle"}
+ITEM_MAPPING[Mystery_Seeds] = {"mysteryseeds", "toggle"}
+-- RUPEES
+ITEM_MAPPING[Rupees__5_] = {"rupees", "consumable"}     --   5 Rupees
+ITEM_MAPPING[Rupees__10_] = {"rupees", "consumable", 2}  --  10 Rupees
+ITEM_MAPPING[Rupees__20_] = {"rupees", "consumable", 4}  --  20 Rupees
+ITEM_MAPPING[Rupees__30_] = {"rupees", "consumable", 6}  --  30 Rupees
+ITEM_MAPPING[Rupees__50_] = {"rupees", "consumable", 10} --  50 Rupees
+ITEM_MAPPING[Rupees__100_] = {"rupees", "consumable", 20} -- 100 Rupees
+ITEM_MAPPING[Rupees__200_] = {"rupees", "consumable", 40} -- 200 Rupees
+-- PASSIVE
+ITEM_MAPPING[Progressive_Flippers] = {"swimupgrade", "progressive"}
+ITEM_MAPPING[King_Zoras_Potion] = {"potion", "toggle"}
+-- SMALL KEYS
+ITEM_MAPPING[Small_Key__Maku_Path_] = {"pathkey", "toggle"}
+ITEM_MAPPING[Small_Key__Spirits_Grave_] = {"d1sk", "consumable"}
+ITEM_MAPPING[Small_Key__Wing_Dungeon_] = {"d2sk", "consumable"}
+ITEM_MAPPING[Small_Key__Moonlit_Grotto_] = {"d3sk", "consumable"}
+ITEM_MAPPING[Small_Key__Skull_Dungeon_] = {"d4sk", "consumable"}
+ITEM_MAPPING[Small_Key__Crown_Dungeon_] = {"d5sk", "consumable"}
+ITEM_MAPPING[Small_Key__Mermaids_Cave_Past_] = {"d6_1sk", "consumable"}
+ITEM_MAPPING[Small_Key__Mermaids_Cave_Present_] = {"d6_2sk", "consumable"}
+ITEM_MAPPING[Small_Key__Jabu_Jabus_Belly_] = {"d7sk", "consumable"}
+ITEM_MAPPING[Small_Key__Ancient_Tomb_] = {"d8sk", "consumable"}
+ITEM_MAPPING[Small_Key__Linked_Heros_Cave_] = {"d11sk", "consumable"}
+-- MASTER KEYS
+ITEM_MAPPING[Master_Key__Maku_Path_] = {"pathkey", "toggle"}
+ITEM_MAPPING[Master_Key__Spirits_Grave_] = {"d1mk", "toggle"}
+ITEM_MAPPING[Master_Key__Wing_Dungeon_] = {"d2mk", "toggle"}
+ITEM_MAPPING[Master_Key__Moonlit_Grotto_] = {"d3mk", "toggle"}
+ITEM_MAPPING[Master_Key__Skull_Dungeon_] = {"d4mk", "toggle"}
+ITEM_MAPPING[Master_Key__Crown_Dungeon_] = {"d5mk", "toggle"}
+ITEM_MAPPING[Master_Key__Mermaids_Cave_Past_] = {"d6_1mk", "toggle"}
+ITEM_MAPPING[Master_Key__Mermaids_Cave_Present_] = {"d6_2mk", "toggle"}
+ITEM_MAPPING[Master_Key__Jabu_Jabus_Belly_] = {"d7mk", "toggle"}
+ITEM_MAPPING[Master_Key__Ancient_Tomb_] = {"d8mk", "toggle"}
+ITEM_MAPPING[Master_Key__Linked_Heros_Cave_] = {"d11mk", "toggle"}
+-- BOSS KEYS
+ITEM_MAPPING[Boss_Key__Spirits_Grave_] = {"d1bk", "toggle"}
+ITEM_MAPPING[Boss_Key__Wing_Dungeon_] = {"d2bk", "toggle"}
+ITEM_MAPPING[Boss_Key__Moonlit_Grotto_] = {"d3bk", "toggle"}
+ITEM_MAPPING[Boss_Key__Skull_Dungeon_] = {"d4bk", "toggle"}
+ITEM_MAPPING[Boss_Key__Crown_Dungeon_] = {"d5bk", "toggle"}
+ITEM_MAPPING[Boss_Key__Mermaids_Cave_] = {"d6bk", "toggle"}
+ITEM_MAPPING[Boss_Key__Jabu_Jabus_Belly_] = {"d7bk", "toggle"}
+ITEM_MAPPING[Boss_Key__Ancient_Tomb_] = {"d8bk", "toggle"}
+-- TRADE
+ITEM_MAPPING[Poe_Clock] = {"poeclock", "toggle"}
+ITEM_MAPPING[Stationery] = {"stationary", "toggle"}
+ITEM_MAPPING[Stink_Bag] = {"stinkbag", "toggle"}
+ITEM_MAPPING[Tasty_Meat] = {"tastymeat", "toggle"}
+ITEM_MAPPING[Doggie_Mask] = {"doggiemask", "toggle"}
+ITEM_MAPPING[Dumbbell] = {"dumbbell", "toggle"}
+ITEM_MAPPING[Cheesy_Mustache] = {"mustache", "toggle"}
+ITEM_MAPPING[Funny_Joke] = {"funnyjoke", "toggle"}
+ITEM_MAPPING[Touching_Book] = {"touchingbook", "toggle"}
+ITEM_MAPPING[Magic_Oar] = {"magicoar", "toggle"}
+ITEM_MAPPING[Sea_Ukulele] = {"seaukulele", "toggle"}
+ITEM_MAPPING[Broken_Sword] = {"brokensword", "toggle"}
+-- RANDOM ITEMS
+ITEM_MAPPING[Bomb_Flower] = {"bombflower", "toggle"}
+ITEM_MAPPING[Book_of_Seals] = {"book", "toggle"}
+ITEM_MAPPING[Brother_Emblem] = {"emblem", "toggle"}
+ITEM_MAPPING[Cheval_Rope] = {"cheval", "toggle"}
+ITEM_MAPPING[Crown_Key] = {"crownkey", "toggle"}
+ITEM_MAPPING[Fairy_Powder] = {"powder", "toggle"}
+ITEM_MAPPING[Goron_Vase] = {"vase", "toggle"}
+ITEM_MAPPING[Goronade] = {"goronade", "toggle"}
+ITEM_MAPPING[Graveyard_Key] = {"gravekey", "toggle"}
+ITEM_MAPPING[Island_Chart] = {"chart", "toggle"}
+ITEM_MAPPING[Lava_Juice] = {"lavajuice", "toggle"}
+ITEM_MAPPING[Letter_of_Introduction] = {"introduction", "toggle"}
+ITEM_MAPPING[Library_Key] = {"librarykey", "toggle"}
+ITEM_MAPPING[Mermaid_Key] = {"d6keypast", "toggle"}
+ITEM_MAPPING[Old_Mermaid_Key] = {"d6keypresent", "toggle"}
+ITEM_MAPPING[Rickys_Gloves] = {"gloves", "toggle"}
+ITEM_MAPPING[Rock_Brisket] = {"brisket", "toggle"}
+ITEM_MAPPING[Scent_Seedling] = {"seedling", "toggle"}
+ITEM_MAPPING[Slate] = {"d8slate", "consumable"}
+ITEM_MAPPING[Tokay_Eyeball] = {"eyeball", "toggle"}
+ITEM_MAPPING[Cracked_Tuni_Nut] = {"tuninut", "toggle"}
+ITEM_MAPPING[Tuni_Nut] = {"repairednut", "toggle"}
+ITEM_MAPPING[Zora_Scale] = {"scale", "toggle"}
+-- RINGS
+ITEM_MAPPING[Experts_Ring] = {"ring_expert", "toggle"}
+ITEM_MAPPING[Toss_Ring] = {"ring_toss", "toggle"}
+ITEM_MAPPING[Energy_Ring] = {"ring_energy", "toggle"}
+ITEM_MAPPING[Fist_Ring] = {"ring_fist", "toggle"}
 
-ITEM_LISTING = {
-    -- INVENTORY
-    {"shield", "progressive"},
-    {"bombs", "progressive"},
-    {"swordupgrade", "progressive"},
-    {"boomerang", "progressive"},
-    {"harpupgrade", "progressive"},
-    {"hookupgrade", "progressive"},
-    {"cane", "toggle"},
-    {"bigsword", "toggle"},
-    {"bombchus", "progressive"},
-    {"flute", "toggle"},
-    {"flute", "toggle"},
-    {"flute", "toggle"},
-    {"shooter", "toggle"},
-    {"shovel", "toggle"},
-    {"liftupgrade", "progressive"},
-    {"feather", "progressive"},
-    {"satchel", "progressive"},
-    {"emberseeds", "toggle"},
-    {"scentseeds", "toggle"},
-    {"pegasusseeds", "toggle"},
-    {"galeseeds", "toggle"},
-    {"mysteryseeds", "toggle"},
-    -- RUPEES
-    1,
-    {"rupees", "consumable"},     --   5 Rupees
-    {"rupees", "consumable", 2},  --  10 Rupees
-    {"rupees", "consumable", 4},  --  20 Rupees
-    {"rupees", "consumable", 6},  --  30 Rupees
-    {"rupees", "consumable", 10}, --  50 Rupees
-    {"rupees", "consumable", 20}, -- 100 Rupees
-    {"rupees", "consumable", 40}, -- 200 Rupees
-    2,
-    -- PASSIVE
-    {"swimupgrade", "progressive"},
-    1,
-    {"potion", "toggle"},
-    -- SMALL KEYS
-    {"pathkey", "toggle"},
-    {"d1sk", "consumable"},
-    {"d2sk", "consumable"},
-    {"d3sk", "consumable"},
-    {"d4sk", "consumable"},
-    {"d5sk", "consumable"},
-    {"d6_1sk", "consumable"},
-    {"d6_2sk", "consumable"},
-    {"d7sk", "consumable"},
-    {"d8sk", "consumable"},
-    {"d11sk", "consumable"},
-    -- MASTER KEYS
-    {"pathkey", "toggle"},
-    {"d1mk", "toggle"},
-    {"d2mk", "toggle"},
-    {"d3mk", "toggle"},
-    {"d4mk", "toggle"},
-    {"d5mk", "toggle"},
-    {"d6_1mk", "toggle"},
-    {"d6_2mk", "toggle"},
-    {"d7mk", "toggle"},
-    {"d8mk", "toggle"},
-    {"d11mk", "toggle"},
-    -- BOSS KEYS
-    {"d1bk", "toggle"},
-    {"d2bk", "toggle"},
-    {"d3bk", "toggle"},
-    {"d4bk", "toggle"},
-    {"d5bk", "toggle"},
-    {"d6bk", "toggle"},
-    {"d7bk", "toggle"},
-    {"d8bk", "toggle"},
-    18, -- Map and Compass
-    1,
-    -- TRADE
-    {"poeclock", "toggle"},
-    {"stationary", "toggle"},
-    {"stinkbag", "toggle"},
-    {"tastymeat", "toggle"},
-    {"doggiemask", "toggle"},
-    {"dumbbell", "toggle"},
-    {"mustache", "toggle"},
-    {"funnyjoke", "toggle"},
-    {"touchingbook", "toggle"},
-    {"magicoar", "toggle"},
-    {"seaukulele", "toggle"},
-    {"brokensword", "toggle"},
-    -- RANDOM ITEMS
-    {"bombflower", "toggle"},
-    {"book", "toggle"},
-    {"emblem", "toggle"},
-    {"cheval", "toggle"},
-    {"crownkey", "toggle"},
-    {"powder", "toggle"},
-    {"vase", "toggle"},
-    {"goronade", "toggle"},
-    {"gravekey", "toggle"},
-    {"chart", "toggle"},
-    {"lavajuice", "toggle"},
-    {"introduction", "toggle"},
-    {"librarykey", "toggle"},
-    {"d6keypast", "toggle"},
-    {"d6keypresent", "toggle"},
-    {"gloves", "toggle"},
-    {"brisket", "toggle"},
-    {"seedling", "toggle"},
-    {"d8slate", "consumable"},
-    {"eyeball", "toggle"},
-    {"tuninut", "toggle"},
-    {"repairednut", "toggle"},
-    {"scale", "toggle"},
-    -- RINGS
-    11,
-    {"ring_expert", "toggle"},
-    6,
-    {"ring_toss", "toggle"},
-    30,
-    {"ring_energy", "toggle"},
-    11,
-    {"ring_fist", "toggle"},
-    2,
-    -- ESSENCE
-    {"d1", "toggle"},
-    {"d2", "toggle"},
-    {"d3", "toggle"},
-    {"d4", "toggle"},
-    {"d5", "toggle"},
-    {"d6", "toggle"},
-    {"d7", "toggle"},
-    {"d8", "toggle"}
-}
-
-function BuildItemMapping()
-    local item_mapping = {}
-    local currentIndex = BASE
-    for _, item in ipairs(ITEM_LISTING) do
-        if type(item) == "number" then
-            currentIndex = currentIndex + item
-        else
-            item_mapping[currentIndex] = item
-            currentIndex = currentIndex + 1
-        end
-    end
-
-    return item_mapping
-end
-
-ITEM_MAPPING = BuildItemMapping()
+-- ESSENCE
+ITEM_MAPPING[Eternal_Spirit] = {"d1", "toggle"}
+ITEM_MAPPING[Ancient_Wood] = {"d2", "toggle"}
+ITEM_MAPPING[Echoing_Howl] = {"d3", "toggle"}
+ITEM_MAPPING[Burning_Flame] = {"d4", "toggle"}
+ITEM_MAPPING[Sacred_Soil] = {"d5", "toggle"}
+ITEM_MAPPING[Lonely_Peak] = {"d6", "toggle"}
+ITEM_MAPPING[Rolling_Sea] = {"d7", "toggle"}
+ITEM_MAPPING[Falling_Star] = {"d8", "toggle"}
