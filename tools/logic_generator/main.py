@@ -1,13 +1,20 @@
+import sys
+
+sys.path.append(sys.argv[1])
+
 import inspect
 import re
 
-import ReferenceFiles.OverworldLogic as OverworldLogic
-import ReferenceFiles.DungeonsLogic as DungeonLogic
+import worlds.tloz_ooa.data.logic.OverworldLogic as OverworldLogic
+import worlds.tloz_ooa.data.logic.DungeonsLogic as DungeonLogic
+from worlds.tloz_ooa.Options import OracleOfAgesLinkedHerosCave, OracleOfAgesGashaLocations, \
+    OraclesIncludeSecretLocations, OracleOfAgesVasuRingChecksRequirement
 
 outputPath = "../../scripts/logic/generated"
 
 location_set = {""}
 path_list = []
+
 
 def fix_location_name(location_name):
     location_name = location_name.replace(" ", "_")
@@ -18,6 +25,7 @@ def fix_location_name(location_name):
     location_name = location_name.replace(")", "_")
     location_name = location_name.replace(",", "_")
     return location_name
+
 
 def cleanup_function(function_code):
     # Isolate the function and convert to a LUA function
@@ -55,8 +63,10 @@ def cleanup_function(function_code):
 
     return function_code
 
+
 def create_location(location):
     location_set.add(location)
+
 
 def create_path(source_location, destination, is_two_way, function):
     connector_function = "connect_two_ways_entrance" if is_two_way else "connect_one_way_entrance"
@@ -64,7 +74,8 @@ def create_path(source_location, destination, is_two_way, function):
         function_code = cleanup_function(inspect.getsource(function))
         path_list.append(source_location + ":" + connector_function + "(" + destination + "," + function_code + ")")
     else:
-        path_list.append(source_location + ":" + connector_function + "(" + destination+")")
+        path_list.append(source_location + ":" + connector_function + "(" + destination + ")")
+
 
 def process_entry(path):
     source_location = fix_location_name(path[0])
@@ -80,12 +91,14 @@ def build_content(content):
     for path in content:
         process_entry(path)
 
+
 def write_path_list(filename):
     global path_list
     with (open(filename, "w") as file):
         for line in path_list:
-            file.write(line+"\n")
+            file.write(line + "\n")
     path_list = []
+
 
 def write_location_list(filename):
     global location_set
@@ -94,17 +107,20 @@ def write_location_list(filename):
     with open(filename, "w") as file:
         for location in location_list:
             if location != "":
-                file.write(location + " = OoALocation.New(\""+location+"\")\n")
+                file.write(location + " = OoALocation.New(\"" + location + "\")\n")
     location_set = {""}
 
-class Option:
-    class linkedHeroCave:
-        value = 1
 
-    linked_heros_cave = linkedHeroCave
+class Option:
+    linked_heros_cave = OracleOfAgesLinkedHerosCave(1)
+    deterministic_gasha_locations = OracleOfAgesGashaLocations(0)
+    secret_locations = OraclesIncludeSecretLocations(True)
+    vasu_ring_checks_requirement = OracleOfAgesVasuRingChecksRequirement({"disable_entirely": False})
+
 
 def process():
     options = Option
+    options.linked_heros_cave = OracleOfAgesLinkedHerosCave(1)
     # Overworld
     overworld = OverworldLogic.make_overworld_logic(0, options)
     build_content(overworld)
@@ -132,9 +148,10 @@ def process():
     build_content(DungeonLogic.make_d11_logic(0))
     write_path_list(outputPath + "/d11.lua")
 
-#    dungeon_entrances
+    #    dungeon_entrances
 
     write_location_list(outputPath + "/location_definitions.lua")
+
 
 if __name__ == '__main__':
     process()

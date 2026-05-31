@@ -3,7 +3,5 @@ todo.*
 *.xcf
 /.vscode/
 .idea/
-/tools/logic_generator/ReferenceFiles/
 __pycache__
-tools/location_mapper/ReferenceFiles/
 *.bak
