@@ -110,6 +110,25 @@
             ]
           },
           {
+            "name": "Miniboss",
+            "access_rules": [ //TODO Access
+              "^$CanReach|"
+            ],
+            "sections": [
+              {
+                "name": "Spirit's Grave: Miniboss",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d1",
+                "x": 0, //TODO Location
+                "y": 0
+              }
+            ]
+          },
+          {
             "name": "Crossroad",
             "access_rules": [
               "^$CanReach|d1_crossroad"
@@ -501,6 +520,24 @@
             ]
           },
           {
+            "name": "(1F): Miniboss",
+            "access_rules": [//TODO Access,
+              "^$CanReach|"
+            ],
+            "sections": [
+              {
+                "name": "Wing Dungeon (1F): Miniboss"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d2",
+                "x": 0, //TODO Location
+                "y": 0
+              }
+            ]
+          },
+          {
             "name": "(1F): Color Room",
             "access_rules": [
               "^$CanReach|d2_color_room"
@@ -760,6 +797,25 @@
                 "map": "d3",
                 "x": 1815,
                 "y": 87
+              }
+            ]
+          },
+          {
+            "name": "(B1F): Miniboss",
+            "access_rules": [//TODO Access,
+              "^$CanReach|"
+            ],
+            "sections": [
+              {
+                "name": "Moonlit Grotto (B1F): Miniboss",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d3",
+                "x": 0, //TODO Location
+                "y": 0
               }
             ]
           },
@@ -1037,6 +1093,25 @@
             ]
           },
           {
+            "name": "(1F): Miniboss",
+            "access_rules": [//TODO Access,
+              "^$CanReach|"
+            ],
+            "sections": [
+              {
+                "name": "Skull Dungeon (1F): Miniboss",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d4",
+                "x": 0, //TODO Location
+                "y": 0
+              }
+            ]
+          },
+          {
             "name": "Eyesoar",
             "access_rules": [
               "^$CanReach|d4_boss"
@@ -1192,6 +1267,25 @@
                 "map": "d5",
                 "x": 1624,
                 "y": 489
+              }
+            ]
+          },
+          {
+            "name": "(1F): Miniboss",
+            "access_rules": [//TODO Access,
+              "^$CanReach|"
+            ],
+            "sections": [
+              {
+                "name": "Crown Dungeon (1F): Miniboss",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d5",
+                "x": 0, //TODO Location
+                "y": 0
               }
             ]
           },
@@ -1668,6 +1762,25 @@
             ]
           },
           {
+            "name": "Miniboss",
+            "access_rules": [//TODO Access,
+              "^$CanReach|"
+            ],
+            "sections": [
+              {
+                "name": "Mermaid's Cave (Present): Miniboss",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d6_2",
+                "x": 0, //TODO Location
+                "y": 0
+              }
+            ]
+          },
+          {
             "name": "Vire Chest",
             "access_rules": [
               "^$CanReach|d6_present_vire_chest"
@@ -1827,8 +1940,27 @@
             ]
           },
           {
+            "name": "(1F): Miniboss",
+            "access_rules": [//TODO Access,
+              "^$CanReach|"
+            ],
+            "sections": [
+              {
+                "name": "Jabu-Jabu's Belly (1F): Miniboss",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d7",
+                "x": 0, //TODO Location
+                "y": 0
+              }
+            ]
+          },
+          {
             "name": "(1F): Cane and Diamond Puzzle",
-            "access_rules": [
+            "access_rules": [ // TODO Access
               "^$CanReach|d7_cane_diamond_puzzle"
             ],
             "sections": [
@@ -2077,6 +2209,25 @@
                 "map": "d8",
                 "x": 648,
                 "y": 937
+              }
+            ]
+          },
+          {
+            "name": "(B2F): Miniboss",
+            "access_rules": [//TODO Access,
+              "^$CanReach|"
+            ],
+            "sections": [
+              {
+                "name": "Ancient Tomb (B2F): Miniboss",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d8",
+                "x": 0, //TODO Location
+                "y": 0
               }
             ]
           },

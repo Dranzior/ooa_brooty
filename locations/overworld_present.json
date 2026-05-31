@@ -605,6 +605,25 @@
             ]
           },
           {
+            "name": "Troy's Secret",
+            "access_rules": [ //TODO Access
+              "^$CanReach|"
+            ],
+            "sections": [
+              {
+                "name": "Rolling Ridge (Present): Troy's Secret",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map", //TODO Location
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          {
             "name": "Enter Crown Dungeon (D5)",
             "access_rules": [
               "^$CanReach|d5_entrance"
@@ -880,6 +899,11 @@
               {
                 "name": "Lynna City: Mayor Plen's House",
                 "item_count": 1
+              },
+              {
+                "name": "Lynna City: Mayor Plen's Secret",
+                //TODO check access rules
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -899,6 +923,16 @@
               {
                 "name": "Lynna City: Vasu's Gift",
                 "item_count": 1
+              },
+              {
+                "name": "Lynna City: Vasu's Slayers Ring Gift",
+                //TODO Logic
+                "item_count": 1
+              },
+              {
+                "name": "Lynna City: Lynna City: Vasu's Victory Ring Gift",
+                //TODO Logic
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -917,6 +951,11 @@
             "sections": [
               {
                 "name": "Lynna City: Mamamu Yan Trade",
+                "item_count": 1
+              },
+              {
+                "name": "Lynna City: Mamamu Yan Secret",
+                //TODO
                 "item_count": 1
               }
             ],
@@ -1082,6 +1121,27 @@
                 "y": 550
               }
             ]
+          },
+          {
+            "name": "Black Tower",
+            "access_rules": [
+              //TODO Access
+              "^$CanReach|"
+            ],
+            "sections": [
+              {
+                "name": "Black Tower (Present): Rescue Zelda",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                // TODO Location
+                "x": 0,
+                "y": 0
+              }
+            ]
           }
         ]
       },
@@ -1141,6 +1201,14 @@
                 "item_count": 1,
                 "access_rules": [
                   "^$CanReach|balloon_guys_upgrade"
+                ]
+              },
+              {
+                "name": "Forest of Time: Tingle Secret",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReach|"
+                  // TODO
                 ]
               }
             ],
@@ -1393,6 +1461,27 @@
                 "y": 1079
               }
             ]
+          },
+          {
+            "name": "Fairy Secret",
+            "access_rules": [
+              //TODO access
+              "^$CanReach|fairies_woods_chest"
+            ],
+            "sections": [
+              {
+                "name": "Fairies' Woods: Fairy Secret",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                //TODO location
+                "x": 0,
+                "y": 0
+              }
+            ]
           }
         ]
       },
@@ -1451,6 +1540,14 @@
                 "name": "Zora Village (Present): Zora King Gift",
                 "access_rules": [
                   "^$CanReach|zora_king_gift"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Zora Village (Present): King Zora's Secret",
+                "access_rules": [
+                  "^$CanReach|"
+                  // TODO Access
                 ],
                 "item_count": 1
               },
@@ -1517,6 +1614,10 @@
               {
                 "name": "Eyeglass Island Library (Present): Old Man",
                 "item_count": 1
+              },
+              {
+                "name": "Eyeglass Island Library (Past): Old Man's Secret",
+                "item_count": 1 // TODO Logic
               }
             ],
             "map_locations": [
@@ -1827,6 +1928,30 @@
                 "map": "map",
                 "x": 1688,
                 "y": 1488
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sea of Storms",
+        "children": [
+          {
+            "name": "Underwater Cave",
+            "access_rules": [
+              "^$CanReach|" //TODO Access
+            ],
+            "sections": [
+              {
+                "name": "Sea of Storms (Present): Underwater Cave",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 0, //TODO Location
+                "y": 0
               }
             ]
           }

@@ -23,6 +23,13 @@
                 "access_rules": [
                   "^$CanReach|symmetry_middle_man_trade"
                 ]
+              },
+              {
+                "name": "Symmetry Village: Sisters Secret",
+                "item_count": 1,
+                "access_rules": [ // TODO Access
+                  "^$CanReach|"
+                ]
               }
             ],
             "map_locations": [
@@ -241,6 +248,25 @@
                 "map": "map",
                 "x": 4475,
                 "y": 151
+              }
+            ]
+          },
+          {
+            "name": "Elder's Secret",
+            "access_rules": [ //TODO Access
+              "^$CanReach|"
+            ],
+            "sections": [
+              {
+                "name": "Rolling Ridge (Past): Elder's Secret",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 0, //TODO Location
+                "y": 0
               }
             ]
           },
@@ -1262,7 +1288,7 @@
           {
             "name": "Crystal Cave Chest",
             "access_rules": [
-              "^$CanReach|tokay_crystal_cave"
+              "^$CanReach|tokay_crystal_cave" //TODO check logic (renamed?)
             ],
             "sections": [
               {
@@ -1325,6 +1351,10 @@
               {
                 "name": "Crescent Island (Past): Wild Tokay Prize",
                 "item_count": 1
+              },
+              {
+                "name": "Crescent Island (Present): Wild Tokay Secret",
+                "item_count": 1 // TODO Access
               }
             ],
             "map_locations": [
@@ -1397,6 +1427,101 @@
                 "shape": "diamond",
                 "x": 4347,
                 "y": 1334
+              }
+            ]
+          },
+          {
+            "name": "Tokay's Stolen Shovel",
+            "access_rules": [ //TODO access,
+              "^$CanReach|"
+            ],
+            "sections": [
+              {
+                "name": "Crescent Island (Past): Tokay's Stolen Shovel",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 0, //TODO position
+                "y": 0
+              }
+            ]
+          },
+          {
+            "name": "Tokay's Stolen Sword",
+            "access_rules": [ //TODO access,
+              "^$CanReach|wild_tokay_game"
+            ],
+            "sections": [
+              {
+                "name": "Crescent Island (Past): Tokay's Stolen Sword",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 0, //TODO position
+                "y": 0
+              }
+            ]
+          },
+          {
+            "name": "Tokay's Stolen Satchel",
+            "access_rules": [ //TODO access,
+              "^$CanReach|wild_tokay_game"
+            ],
+            "sections": [
+              {
+                "name": "Crescent Island (Past): Tokay's Stolen Satchel",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 0, //TODO position
+                "y": 0
+              }
+            ]
+          },
+          {
+            "name": "Tokay's Stolen Flippers",
+            "access_rules": [ //TODO access,
+              "^$CanReach|wild_tokay_game"
+            ],
+            "sections": [
+              {
+                "name": "Crescent Island (Past): Tokay's Stolen Flippers",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 0, //TODO position
+                "y": 0
+              }
+            ]
+          },
+          {
+            "name": "Tokay's Stolen Harp",
+            "access_rules": [ //TODO access,
+              "^$CanReach|wild_tokay_game"
+            ],
+            "sections": [
+              {
+                "name": "Crescent Island (Past): Tokay's Stolen Harp",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 0, //TODO position
+                "y": 0
               }
             ]
           }

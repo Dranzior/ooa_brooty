@@ -12,6 +12,7 @@ ITEM_LISTING = {
     {"hookupgrade", "progressive"},
     {"cane", "toggle"},
     {"bigsword", "toggle"},
+    {"bombchus", "progressive"},
     {"flute", "toggle"},
     {"flute", "toggle"},
     {"flute", "toggle"},
