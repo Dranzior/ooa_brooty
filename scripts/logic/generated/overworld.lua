@@ -492,7 +492,7 @@ target_carts:connect_one_way_entrance(goron_shooting_gallery,function() return A
             ooa_has_bracelet()) end)
 ridge_mid_present:connect_one_way_entrance(goron_shooting_gallery,function() return ooa_can_switch_past_and_present() end)
 goron_shooting_gallery:connect_one_way_entrance(goron_shooting_gallery_price,function() return ooa_has_sword() end)
-ridge_mid_past:connect_one_way_entrance(ridge_east_tree,function() return Any(
+ridge_mid_past:connect_one_way_entrance(ridge_east_tree,function() return All(
             ooa_can_harvest_tree(false),
             ooa_option_medium_logic(),
             ooa_can_warp_using_gale_seeds()) end)
