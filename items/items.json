@@ -61,6 +61,53 @@
     ]
   },
   {
+    "name": "Bombchus (10)",
+    "type": "progressive",
+    "stages": [
+      {
+        "disabled_img": "images/items/bomb.png",
+        "img": "images/items/bombchu10.png",
+        "codes": "bombchus, bombchus1"
+      },
+      {
+        "img": "images/items/bomb20.png",
+        "codes": "bombchus, bombchus2"
+      },
+      {
+        "img": "images/items/bombchu30.png",
+        "codes": "bombchus, bombchus3"
+      },
+      {
+        "img": "images/items/bombchu40.png",
+        "codes": "bombchus, bombchus4"
+      },
+      {
+        "img": "images/items/bombchu50.png",
+        "codes": "bombchus, bombchus5"
+      },
+      {
+        "img": "images/items/bombchu60.png",
+        "codes": "bombchus, bombchus6"
+      },
+      {
+        "img": "images/items/bombchu70.png",
+        "codes": "bombchus, bombchus7"
+      },
+      {
+        "img": "images/items/bombchu80.png",
+        "codes": "bombchus, bombchus8"
+      },
+      {
+        "img": "images/items/bombchu90.png",
+        "codes": "bombchus, bombchus9"
+      },
+      {
+        "img": "images/items/bombchu99.png",
+        "codes": "bombchus, bombchus10"
+      }
+    ]
+  },
+  {
     "name": "Progressive Sword",
     "type": "progressive",
     "stages": [
