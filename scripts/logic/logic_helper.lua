@@ -225,6 +225,7 @@ function ooa_can_trigger_switch()
     return Any(
         ooa_has_boomerang(),
         ooa_has_bombs(),
+        ooa_has_bombchus(),
         ooa_has_seedshooter(),
         All(
             ooa_has_satchel(),
@@ -244,6 +245,7 @@ function ooa_can_trigger_far_switch()
     return Any(
         ooa_has_boomerang(),
         ooa_has_bombs(),
+        ooa_has_bombchus(),
         ooa_has_seedshooter(),
         ooa_has_switch_hook(),
         All(
@@ -257,6 +259,15 @@ end
 function ooa_has_bombs(amount)
     amount = default(amount, 1)
     return Has("Bombs (10)", amount)
+end
+
+function ooa_has_bombchus(amount)
+    amount = default(amount, 1)
+    return Has("Bombchus (10)", amount)
+end
+
+function ooa_has_explosives(amount)
+    return ooa_has_bombs(amount) or ooa_has_bombchus(amount)
 end
 
 function ooa_has_flute()
@@ -532,6 +543,7 @@ function ooa_can_break_bush(can_summon_companion)
             ooa_option_medium_logic(),
             Any(
                 ooa_has_bombs(2),
+                ooa_has_bombchus(),
                 ooa_can_use_ember_seeds(false),
                 All(
                     ooa_has_seedshooter(),
@@ -560,7 +572,10 @@ function ooa_can_harvest_regrowing_bush(Allow_bombs)
         ooa_has_sword(),
         All(
             Allow_bombs,
-            ooa_has_bombs()
+            Any(
+                ooa_has_bombs(),
+                ooa_has_bombchus()
+            )
         )
     )
 end
@@ -587,6 +602,7 @@ function ooa_can_break_flowers(can_summon_companion)
             ooa_option_medium_logic(),
             Any(
                 ooa_has_bombs(2),
+                ooa_has_bombchus(),
                 ooa_can_use_ember_seeds(false),
                 All(
                     ooa_has_seedshooter(),
@@ -604,7 +620,10 @@ function ooa_can_break_crystal()
         ooa_has_bracelet(),
         All(
             ooa_option_medium_logic(),
-            Has("Expert's Ring")
+            Any(
+                Has("Expert's Ring"),
+                ooa_has_bombchus()
+            )
         )
     )
 end
@@ -946,6 +965,10 @@ function ooa_can_toss_ring()
         ooa_has_bracelet(),
         Has("Toss Ring")
     )
+end
+
+function ooa_can_harvest_gasha(count)
+    return false    -- TODO
 end
 
 function ooa_option_lynna_gardener()
