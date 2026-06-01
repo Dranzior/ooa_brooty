@@ -235,7 +235,7 @@ crescent_past_middle:connect_one_way_entrance(tokay_stolen_harp,function() retur
             All(
                 ooa_can_jump_1_wide_pit(false),
                 ooa_has_bracelet(),
-                ooa_can_swim(false)),
+                ooa_can_swim(false))
             
         ) end)
 tokay_stolen_harp:connect_one_way_entrance(crescent_past_middle,function() return All(

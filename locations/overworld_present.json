@@ -111,7 +111,7 @@
           {
             "name": "Enter Skull Dungeon (D4)",
             "access_rules": [
-              "^$CanReach|d4_entrance"
+              "^$CanReach|outside_d4"
             ],
             "visibility_rules": [
               "dungeon_er_on"
@@ -556,6 +556,13 @@
                   "^$CanReach|target_carts_2"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Rolling Ridge (Present): Troy's Secret",
+                "access_rules": [
+                  "^$CanReach|troy_secret"
+                ],
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -605,28 +612,9 @@
             ]
           },
           {
-            "name": "Troy's Secret",
-            "access_rules": [ //TODO Access
-              "^$CanReach|"
-            ],
-            "sections": [
-              {
-                "name": "Rolling Ridge (Present): Troy's Secret",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "map", //TODO Location
-                "x": 0,
-                "y": 0
-              }
-            ]
-          },
-          {
             "name": "Enter Crown Dungeon (D5)",
             "access_rules": [
-              "^$CanReach|d5_entrance"
+              "^$CanReach|outside_d5"
             ],
             "visibility_rules": [
               "dungeon_er_on"
@@ -710,7 +698,7 @@
           {
             "name": "Enter Mermaid's Cave [Present] (D6)",
             "access_rules": [
-              "^$CanReach|d6_present_entrance"
+              "^$CanReach|outside_d6_present"
             ],
             "visibility_rules": [
               "dungeon_er_on"
@@ -892,17 +880,19 @@
           },
           {
             "name": "Mayor Plen's House",
-            "access_rules": [
-              "^$CanReach|mayor_plens_house"
-            ],
             "sections": [
               {
                 "name": "Lynna City: Mayor Plen's House",
+                "access_rules": [
+                  "^$CanReach|mayor_plens_house"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Lynna City: Mayor Plen's Secret",
-                //TODO check access rules
+                "access_rules": [
+                  "^$CanReach|mayor_plens_secret"
+                ],
                 "item_count": 1
               }
             ],
@@ -916,22 +906,26 @@
           },
           {
             "name": "Vasu's Gift",
-            "access_rules": [
-              "^$CanReach|vasus_gift"
-            ],
             "sections": [
               {
                 "name": "Lynna City: Vasu's Gift",
+                "access_rules": [
+                  "^$CanReach|vasus_gift"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Lynna City: Vasu's Slayers Ring Gift",
-                //TODO Logic
+                "access_rules": [
+                  "^$CanReach|vasus_slayers_ring_gift"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Lynna City: Vasu's Victory Ring Gift",
-                //TODO Logic
+                "access_rules": [
+                  "^$CanReach|vasus_victory_ring_gift"
+                ],
                 "item_count": 1
               }
             ],
@@ -945,17 +939,19 @@
           },
           {
             "name": "Mamamu Yan Trade",
-            "access_rules": [
-              "^$CanReach|mamamu_yan_trade"
-            ],
             "sections": [
               {
                 "name": "Lynna City: Mamamu Yan Trade",
+                "access_rules": [
+                  "^$CanReach|mamamu_yan_trade"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Lynna City: Mamamu Yan Secret",
-                //TODO
+                "access_rules": [
+                  "^$CanReach|mamamu_yan_secret"
+                ],
                 "item_count": 1
               }
             ],
@@ -1029,7 +1025,7 @@
           {
             "name": "Enter Hero's Cave",
             "access_rules": [
-              "^$CanReach|d11_entrance"
+              "^$CanReach|outside_d11"
             ],
             "visibility_rules": [
               "dungeon_er_on,heros_cave_on"
@@ -1124,22 +1120,20 @@
           },
           {
             "name": "Black Tower",
-            "access_rules": [
-              //TODO Access
-              "^$CanReach|"
-            ],
             "sections": [
               {
                 "name": "Black Tower (Present): Rescue Zelda",
+                "access_rules": [
+                  "^$CanReach|princess_zelda_rescue"
+                ],
                 "item_count": 1
               }
             ],
             "map_locations": [
               {
                 "map": "map",
-                // TODO Location
-                "x": 0,
-                "y": 0
+                "x": 1039,
+                "y": 973
               }
             ]
           }
@@ -1207,8 +1201,7 @@
                 "name": "Forest of Time: Tingle Secret",
                 "item_count": 1,
                 "access_rules": [
-                  "^$CanReach|"
-                  // TODO
+                  "^$CanReach|balloon_guys_secret"
                 ]
               }
             ],
@@ -1356,7 +1349,7 @@
           {
             "name": "Enter Spirit's Grave (D1)",
             "access_rules": [
-              "^$CanReach|d1_entrance"
+              "^$CanReach|outside_d1"
             ],
             "visibility_rules": [
               "dungeon_er_on"
@@ -1465,8 +1458,7 @@
           {
             "name": "Fairy Secret",
             "access_rules": [
-              //TODO access
-              "^$CanReach|fairies_woods_chest"
+              "^$CanReach|fairies_woods_secret"
             ],
             "sections": [
               {
@@ -1477,9 +1469,8 @@
             "map_locations": [
               {
                 "map": "map",
-                //TODO location
-                "x": 0,
-                "y": 0
+                "x": 319,
+                "y": 1084
               }
             ]
           }
@@ -1546,8 +1537,7 @@
               {
                 "name": "Zora Village (Present): King Zora's Secret",
                 "access_rules": [
-                  "^$CanReach|"
-                  // TODO Access
+                  "^$CanReach|king_zoras_secret"
                 ],
                 "item_count": 1
               },
@@ -1607,17 +1597,20 @@
           },
           {
             "name": "Old Man",
-            "access_rules": [
-              "^$CanReach|library_present"
-            ],
             "sections": [
               {
                 "name": "Eyeglass Island Library (Present): Old Man",
+                "access_rules": [
+                  "^$CanReach|library_present"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Eyeglass Island Library (Past): Old Man's Secret",
-                "item_count": 1 // TODO Logic
+                "access_rules": [
+                  "^$CanReach|library_secret"
+                ],
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -1675,7 +1668,7 @@
           {
             "name": "Enter Jabu-Jabu's Belly (D7)",
             "access_rules": [
-              "^$CanReach|d7_entrance"
+              "^$CanReach|outside_d7"
             ],
             "visibility_rules": [
               "dungeon_er_on"
@@ -1836,9 +1829,28 @@
             ]
           },
           {
+            "name": "Wild Tokay Secret",
+            "access_rules": [
+              "^$CanReach|wild_tokay_secret"
+            ],
+            "sections": [
+              {
+                "name": "Crescent Island (Present): Wild Tokay Secret",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2103,
+                "y": 1431
+              }
+            ]
+          },
+          {
             "name": "Enter Moonlit Grotto (D3)",
             "access_rules": [
-              "^$CanReach|d3_entrance"
+              "^$CanReach|outside_d3"
             ],
             "visibility_rules": [
               "dungeon_er_on"
@@ -1939,7 +1951,7 @@
           {
             "name": "Underwater Cave",
             "access_rules": [
-              "^$CanReach|" //TODO Access
+              "^$CanReach|sea_of_storms_past"
             ],
             "sections": [
               {
@@ -1950,8 +1962,8 @@
             "map_locations": [
               {
                 "map": "map",
-                "x": 0, //TODO Location
-                "y": 0
+                "x": 1175,
+                "y": 1469
               }
             ]
           }

@@ -111,8 +111,8 @@
           },
           {
             "name": "Miniboss",
-            "access_rules": [ //TODO Access
-              "^$CanReach|"
+            "access_rules": [
+              "^$CanReach|d1_miniboss"
             ],
             "sections": [
               {
@@ -123,8 +123,8 @@
             "map_locations": [
               {
                 "map": "d1",
-                "x": 0, //TODO Location
-                "y": 0
+                "x": 360,
+                "y": 612
               }
             ]
           },
@@ -521,8 +521,8 @@
           },
           {
             "name": "(1F): Miniboss",
-            "access_rules": [//TODO Access,
-              "^$CanReach|"
+            "access_rules": [
+              "^$CanReach|d2_miniboss"
             ],
             "sections": [
               {
@@ -532,8 +532,8 @@
             "map_locations": [
               {
                 "map": "d2",
-                "x": 0, //TODO Location
-                "y": 0
+                "x": 359,
+                "y": 88
               }
             ]
           },
@@ -802,8 +802,8 @@
           },
           {
             "name": "(B1F): Miniboss",
-            "access_rules": [//TODO Access,
-              "^$CanReach|"
+            "access_rules": [
+              "^$CanReach|d3_miniboss"
             ],
             "sections": [
               {
@@ -814,8 +814,8 @@
             "map_locations": [
               {
                 "map": "d3",
-                "x": 0, //TODO Location
-                "y": 0
+                "x": 2039,
+                "y": 268
               }
             ]
           },
@@ -1094,8 +1094,8 @@
           },
           {
             "name": "(1F): Miniboss",
-            "access_rules": [//TODO Access,
-              "^$CanReach|"
+            "access_rules": [
+              "^$CanReach|d4_miniboss"
             ],
             "sections": [
               {
@@ -1106,8 +1106,8 @@
             "map_locations": [
               {
                 "map": "d4",
-                "x": 0, //TODO Location
-                "y": 0
+                "x": 601,
+                "y": 615
               }
             ]
           },
@@ -1272,8 +1272,8 @@
           },
           {
             "name": "(1F): Miniboss",
-            "access_rules": [//TODO Access,
-              "^$CanReach|"
+            "access_rules": [
+              "^$CanReach|d5_miniboss"
             ],
             "sections": [
               {
@@ -1284,8 +1284,8 @@
             "map_locations": [
               {
                 "map": "d5",
-                "x": 0, //TODO Location
-                "y": 0
+                "x": 1558,
+                "y": 617
               }
             ]
           },
@@ -1763,8 +1763,8 @@
           },
           {
             "name": "Miniboss",
-            "access_rules": [//TODO Access,
-              "^$CanReach|"
+            "access_rules": [
+              "^$CanReach|d6_miniboss"
             ],
             "sections": [
               {
@@ -1775,8 +1775,8 @@
             "map_locations": [
               {
                 "map": "d6_2",
-                "x": 0, //TODO Location
-                "y": 0
+                "x": 599,
+                "y": 82
               }
             ]
           },
@@ -1941,8 +1941,8 @@
           },
           {
             "name": "(1F): Miniboss",
-            "access_rules": [//TODO Access,
-              "^$CanReach|"
+            "access_rules": [
+              "^$CanReach|d7_miniboss"
             ],
             "sections": [
               {
@@ -1953,15 +1953,15 @@
             "map_locations": [
               {
                 "map": "d7",
-                "x": 0, //TODO Location
-                "y": 0
+                "x": 2266,
+                "y": 1044
               }
             ]
           },
           {
             "name": "(1F): Cane and Diamond Puzzle",
-            "access_rules": [ // TODO Access
-              "^$CanReach|d7_cane_diamond_puzzle"
+            "access_rules": [
+              "^$CanReach|d7_cane_and_diamond_puzzle"
             ],
             "sections": [
               {
@@ -2214,8 +2214,8 @@
           },
           {
             "name": "(B2F): Miniboss",
-            "access_rules": [//TODO Access,
-              "^$CanReach|"
+            "access_rules": [
+              "^$CanReach|d8_miniboss"
             ],
             "sections": [
               {
@@ -2226,8 +2226,8 @@
             "map_locations": [
               {
                 "map": "d8",
-                "x": 0, //TODO Location
-                "y": 0
+                "x": 2279,
+                "y": 367
               }
             ]
           },

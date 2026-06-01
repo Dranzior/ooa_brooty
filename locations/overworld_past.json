@@ -27,8 +27,8 @@
               {
                 "name": "Symmetry Village: Sisters Secret",
                 "item_count": 1,
-                "access_rules": [ // TODO Access
-                  "^$CanReach|"
+                "access_rules": [
+                  "^$CanReach|symmetry_city_secret"
                 ]
               }
             ],
@@ -234,12 +234,16 @@
           },
           {
             "name": "Baseball",
-            "access_rules": [
-              "^$CanReach|goron_shooting_gallery_price"
-            ],
             "sections": [
               {
                 "name": "Rolling Ridge (Past): Baseball",
+                "item_count": 1
+              },
+              {
+                "name": "Rolling Ridge (Past): Elder's Secret",
+                "access_rules": [
+                  "^$CanReach|goron_shooting_gallery_price"
+                ],
                 "item_count": 1
               }
             ],
@@ -248,25 +252,6 @@
                 "map": "map",
                 "x": 4475,
                 "y": 151
-              }
-            ]
-          },
-          {
-            "name": "Elder's Secret",
-            "access_rules": [ //TODO Access
-              "^$CanReach|"
-            ],
-            "sections": [
-              {
-                "name": "Rolling Ridge (Past): Elder's Secret",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "map",
-                "x": 0, //TODO Location
-                "y": 0
               }
             ]
           },
@@ -313,7 +298,7 @@
           {
             "name": "Enter Mermaid's Cave [Past] (D6)",
             "access_rules": [
-              "^$CanReach|d6_past_entrance"
+              "^$CanReach|outside_d6_past"
             ],
             "visibility_rules": [
               "dungeon_er_on"
@@ -668,7 +653,7 @@
           {
             "name": "Enter Maku Path (D0)",
             "access_rules": [
-              "^$CanReach|d0_entrance"
+              "^$CanReach|outside_d0"
             ],
             "visibility_rules": [
               "dungeon_er_on"
@@ -806,7 +791,7 @@
           {
             "name": "Enter Ancient Tomb (D8)",
             "access_rules": [
-              "^$CanReach|d8_entrance"
+              "^$CanReach|outside_d8"
             ],
             "visibility_rules": [
               "dungeon_er_on"
@@ -1091,7 +1076,7 @@
           {
             "name": "Enter Wing Dungeon Past (D2)",
             "access_rules": [
-              "^$CanReach|d2_past_entrance"
+              "^$CanReach|outside_d2"
             ],
             "visibility_rules": [
               "dungeon_er_on"
@@ -1286,13 +1271,20 @@
             ]
           },
           {
-            "name": "Crystal Cave Chest",
-            "access_rules": [
-              "^$CanReach|tokay_crystal_cave" //TODO check logic (renamed?)
-            ],
+            "name": "Crystal Cave",
             "sections": [
               {
                 "name": "Crescent Island (Past): Crystal Cave Chest",
+                "access_rules": [
+                  "^$CanReach|tokay_crystal_cave_chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Crescent Island (Past): Tokay's Stolen Sword",
+                "access_rules": [
+                  "^$CanReach|tokay_stolen_sword"
+                ],
                 "item_count": 1
               }
             ],
@@ -1351,10 +1343,6 @@
               {
                 "name": "Crescent Island (Past): Wild Tokay Prize",
                 "item_count": 1
-              },
-              {
-                "name": "Crescent Island (Present): Wild Tokay Secret",
-                "item_count": 1 // TODO Access
               }
             ],
             "map_locations": [
@@ -1432,8 +1420,8 @@
           },
           {
             "name": "Tokay's Stolen Shovel",
-            "access_rules": [ //TODO access,
-              "^$CanReach|"
+            "access_rules": [
+              "^$CanReach|tokay_stolen_shovel"
             ],
             "sections": [
               {
@@ -1444,34 +1432,16 @@
             "map_locations": [
               {
                 "map": "map",
-                "x": 0, //TODO position
-                "y": 0
+                "x": 4172,
+                "y": 1591
               }
             ]
           },
-          {
-            "name": "Tokay's Stolen Sword",
-            "access_rules": [ //TODO access,
-              "^$CanReach|wild_tokay_game"
-            ],
-            "sections": [
-              {
-                "name": "Crescent Island (Past): Tokay's Stolen Sword",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "map",
-                "x": 0, //TODO position
-                "y": 0
-              }
-            ]
-          },
+
           {
             "name": "Tokay's Stolen Satchel",
-            "access_rules": [ //TODO access,
-              "^$CanReach|wild_tokay_game"
+            "access_rules": [
+              "^$CanReach|tokay_stolen_satchel"
             ],
             "sections": [
               {
@@ -1482,15 +1452,15 @@
             "map_locations": [
               {
                 "map": "map",
-                "x": 0, //TODO position
-                "y": 0
+                "x": 4218,
+                "y": 1478
               }
             ]
           },
           {
             "name": "Tokay's Stolen Flippers",
-            "access_rules": [ //TODO access,
-              "^$CanReach|wild_tokay_game"
+            "access_rules": [
+              "^$CanReach|tokay_stolen_flippers"
             ],
             "sections": [
               {
@@ -1501,15 +1471,15 @@
             "map_locations": [
               {
                 "map": "map",
-                "x": 0, //TODO position
-                "y": 0
+                "x": 4235,
+                "y": 1550
               }
             ]
           },
           {
             "name": "Tokay's Stolen Harp",
-            "access_rules": [ //TODO access,
-              "^$CanReach|wild_tokay_game"
+            "access_rules": [
+              "^$CanReach|tokay_stolen_harp"
             ],
             "sections": [
               {
@@ -1520,8 +1490,8 @@
             "map_locations": [
               {
                 "map": "map",
-                "x": 0, //TODO position
-                "y": 0
+                "x": 3964,
+                "y": 1688
               }
             ]
           }

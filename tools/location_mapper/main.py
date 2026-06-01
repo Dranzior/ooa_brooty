@@ -5,6 +5,7 @@ sys.path.append(sys.argv[1])
 from typing import Any
 
 import json
+import utilities
 
 import worlds.tloz_ooa.data.Locations as Locations
 import worlds.tloz_ooa.data.Items as Items
