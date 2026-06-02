@@ -12,7 +12,8 @@
       "rows": [
         ["companionslabel","companions", "dungeon_er_label","dungeon_er_off", "allessencelabel","allessence"],
         ["advanceshoplabel","advanceshop", "requiredslateslabel","requiredslates", "master_keylabel","master_key"],
-        ["logiclabel","logic", "lynna_gardener_label", "lynna_gardener", "heros_cave_label", "heros_cave"]
+        ["logiclabel","logic", "lynna_gardener_label", "lynna_gardener", "heros_cave_label", "heros_cave"],
+        ["secret_locations_label","secret_locations", "vasu_madness_label", "vasu_madness"]
       ]
     }
   }

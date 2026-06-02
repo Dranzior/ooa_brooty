@@ -248,5 +248,53 @@
         "img": "images/settings/heroscaveon.png"
       }
     ]
+  },
+  {
+    "name": "Secret Locations Label",
+    "type": "static",
+    "img": "images/settings/secretlocations.png",
+    "codes": "secret_locations_label"
+  },
+  {
+    "name": "Secret Locations",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "secret_locations, secret_locations_off",
+        "inherit_codes": false,
+        "img": "images/settings/secretlocationsoff.png"
+      },
+      {
+        "codes": "secret_locations, secret_locations_on",
+        "inherit_codes": false,
+        "img": "images/settings/secretlocationson.png"
+      }
+    ]
+  },
+  {
+    "name": "Vasu's Madness Label",
+    "type": "static",
+    "img": "images/settings/vasumadness.png",
+    "codes": "vasu_madness_label"
+  },
+  {
+    "name": "Vasu's Madness",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "vasu_madness, vasu_madness_off",
+        "inherit_codes": false,
+        "img": "images/settings/vasumadnessoff.png"
+      },
+      {
+        "codes": "vasu_madness, vasu_madness_on",
+        "inherit_codes": false,
+        "img": "images/settings/vasumadnesson.png"
+      }
+    ]
   }
 ]

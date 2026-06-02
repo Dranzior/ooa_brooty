@@ -562,6 +562,9 @@
                 "access_rules": [
                   "^$CanReach|troy_secret"
                 ],
+                "visibility_rules": [
+                  "secret_locations_on"
+                ],
                 "item_count": 1
               }
             ],
@@ -893,6 +896,9 @@
                 "access_rules": [
                   "^$CanReach|mayor_plens_secret"
                 ],
+                "visibility_rules": [
+                  "secret_locations_on"
+                ],
                 "item_count": 1
               }
             ],
@@ -918,6 +924,9 @@
                 "name": "Lynna City: Vasu's Slayers Ring Gift",
                 "access_rules": [
                   "^$CanReach|vasus_slayers_ring_gift"
+                ],
+                "visibility_rules": [
+                  "vasu_madness_on"
                 ],
                 "item_count": 1
               },
@@ -951,6 +960,9 @@
                 "name": "Lynna City: Mamamu Yan Secret",
                 "access_rules": [
                   "^$CanReach|mamamu_yan_secret"
+                ],
+                "visibility_rules": [
+                  "secret_locations_on"
                 ],
                 "item_count": 1
               }
@@ -1126,6 +1138,9 @@
                 "access_rules": [
                   "^$CanReach|princess_zelda_rescue"
                 ],
+                "visibility_rules": [
+                  "secret_locations_on"
+                ],
                 "item_count": 1
               }
             ],
@@ -1202,6 +1217,9 @@
                 "item_count": 1,
                 "access_rules": [
                   "^$CanReach|balloon_guys_secret"
+                ],
+                "visibility_rules": [
+                  "secret_locations_on"
                 ]
               }
             ],
@@ -1460,6 +1478,9 @@
             "access_rules": [
               "^$CanReach|fairies_woods_secret"
             ],
+            "visibility_rules": [
+              "secret_locations_on"
+            ],
             "sections": [
               {
                 "name": "Fairies' Woods: Fairy Secret",
@@ -1539,6 +1560,9 @@
                 "access_rules": [
                   "^$CanReach|king_zoras_secret"
                 ],
+                "visibility_rules": [
+                  "secret_locations_on"
+                ],
                 "item_count": 1
               },
               {
@@ -1609,6 +1633,9 @@
                 "name": "Eyeglass Island Library (Past): Old Man's Secret",
                 "access_rules": [
                   "^$CanReach|library_secret"
+                ],
+                "visibility_rules": [
+                  "secret_locations_on"
                 ],
                 "item_count": 1
               }
@@ -1833,6 +1860,9 @@
             "access_rules": [
               "^$CanReach|wild_tokay_secret"
             ],
+            "visibility_rules": [
+              "secret_locations_on"
+            ],
             "sections": [
               {
                 "name": "Crescent Island (Present): Wild Tokay Secret",
@@ -1952,6 +1982,9 @@
             "name": "Underwater Cave",
             "access_rules": [
               "^$CanReach|sea_of_storms_past"
+            ],
+            "visibility_rules": [
+              "secret_locations_on"
             ],
             "sections": [
               {

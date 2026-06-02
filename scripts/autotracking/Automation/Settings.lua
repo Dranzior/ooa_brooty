@@ -71,16 +71,36 @@ local function updateLinkedHeroCave(slot_data)
     end
 end
 
+local function updateSecretLocations(slot_data)
+    if slot_data["secret_locations"] then
+        Tracker:FindObjectForCode("secret_location").CurrentStage = slot_data["secret_locations"]
+    end
+end
+
+local function updateVasuMadness(slot_data)
+    if slot_data["vasu_madness"] then
+        if slot_data["vasu_madness"] == "false" then
+            Tracker:FindObjectForCode("vasu_madness").CurrentStage = 0
+            print("SET TO OFF")
+        else
+            Tracker:FindObjectForCode("vasu_madness").CurrentStage = 1
+            print("SET TO ON")
+        end
+    end
+end
+
 function UpdateSettings(slot_data)
-    updateAnimalCompanion(slot_data)
-    udpateLogic(slot_data)
-    updateDungeonEr(slot_data)
-    updateEssence(slot_data)
-    updateAdvanceShop(slot_data)
-    updateSlate(slot_data)
-    updateMasterKey(slot_data)
-    updateLynnaGardener(slot_data)
-    updateLinkedHeroCave(slot_data)
+    updateAnimalCompanion(slot_data["options"])
+    udpateLogic(slot_data["options"])
+    updateDungeonEr(slot_data["options"])
+    updateEssence(slot_data["options"])
+    updateAdvanceShop(slot_data["options"])
+    updateSlate(slot_data["options"])
+    updateMasterKey(slot_data["options"])
+    updateLynnaGardener(slot_data["options"])
+    updateLinkedHeroCave(slot_data["options"])
+    updateSecretLocations(slot_data["options"])
+    updateVasuMadness(slot_data)
 end
 
 

@@ -47,10 +47,18 @@ image_lib = [
 [SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Lynna\nGardener", "lynnagardener"],
 [SETTING_DEFAULT_FULL_GREEN, SETTING_DEFAULT_IMAGE, "On", "lynnagardeneron"],
 [SETTING_DEFAULT_FULL_RED, SETTING_DEFAULT_IMAGE, "Off", "lynnagardeneroff"],
-    #Secret Locations
+    #Hero's Cave
 [SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Hero's Cave", "heroscave"],
 [SETTING_DEFAULT_FULL_GREEN, SETTING_DEFAULT_IMAGE, "On", "heroscaveon"],
 [SETTING_DEFAULT_FULL_RED, SETTING_DEFAULT_IMAGE, "Off", "heroscaveoff"],
+    #Secret Locations
+[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Secret\nLocations", "secretlocations"],
+[SETTING_DEFAULT_FULL_GREEN, SETTING_DEFAULT_IMAGE, "On", "secretlocationson"],
+[SETTING_DEFAULT_FULL_RED, SETTING_DEFAULT_IMAGE, "Off", "secretlocationsoff"],
+    #Vasu's Madness
+[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Vasu's\nMadness", "vasumadness"],
+[SETTING_DEFAULT_FULL_GREEN, SETTING_DEFAULT_IMAGE, "On", "vasumadnesson"],
+[SETTING_DEFAULT_FULL_RED, SETTING_DEFAULT_IMAGE, "Off", "vasumadnessoff"],
 ]
 
 def generate_settings():

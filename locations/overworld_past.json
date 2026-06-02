@@ -29,6 +29,9 @@
                 "item_count": 1,
                 "access_rules": [
                   "^$CanReach|symmetry_city_secret"
+                ],
+                "visibility_rules": [
+                  "secret_locations_on"
                 ]
               }
             ],
@@ -237,12 +240,18 @@
             "sections": [
               {
                 "name": "Rolling Ridge (Past): Baseball",
+                "access_rules": [
+                  "^$CanReach|goron_shooting_gallery_price"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Rolling Ridge (Past): Elder's Secret",
                 "access_rules": [
-                  "^$CanReach|goron_shooting_gallery_price"
+                  "^$CanReach|elder_secret"
+                ],
+                "visibility_rules": [
+                  "secret_locations_on"
                 ],
                 "item_count": 1
               }
@@ -1437,7 +1446,6 @@
               }
             ]
           },
-
           {
             "name": "Tokay's Stolen Satchel",
             "access_rules": [
