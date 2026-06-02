@@ -65,12 +65,12 @@
     "type": "progressive",
     "stages": [
       {
-        "disabled_img": "images/items/bomb.png",
+        "disabled_img": "images/items/bombchu.png",
         "img": "images/items/bombchu10.png",
         "codes": "bombchus, bombchus1"
       },
       {
-        "img": "images/items/bomb20.png",
+        "img": "images/items/bombchu20.png",
         "codes": "bombchus, bombchus2"
       },
       {
