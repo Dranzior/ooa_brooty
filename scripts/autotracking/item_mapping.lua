@@ -1,3 +1,5 @@
+ScriptHost:LoadScript("scripts/autotracking/generated/item_define.lua")
+
 CURRENT_ITEM = nil
 
 ITEM_MAPPING = {}
