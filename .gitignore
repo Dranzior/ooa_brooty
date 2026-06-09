@@ -5,3 +5,4 @@ todo.*
 .idea/
 __pycache__
 *.bak
+.luarc.json
