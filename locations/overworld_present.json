@@ -142,7 +142,7 @@
             ]
           },
           {
-            "name": "Enter Skull Dungeon (D4)",
+            "name": "Check the entrance: Skull Dungeon (D4)",
             "access_rules": [
               "^$CanReach|outside_d4"
             ],
@@ -152,8 +152,8 @@
             "sections": [
               {
                 "name": "",
-                "chest_unopened_img": "images/bosses/d4.png",
-                "chest_opened_img": "images/bosses/d4.png",
+                "chest_unopened_img": "images/dungeons/d4_entrance.png",
+                "chest_opened_img": "images/dungeons/d4_entrance.png",
                 "access_rules": []
               }
             ],
@@ -681,7 +681,7 @@
             ]
           },
           {
-            "name": "Enter Crown Dungeon (D5)",
+            "name": "Check the entrance: Crown Dungeon (D5)",
             "access_rules": [
               "^$CanReach|outside_d5"
             ],
@@ -691,8 +691,8 @@
             "sections": [
               {
                 "name": "",
-                "chest_unopened_img": "images/bosses/d5.png",
-                "chest_opened_img": "images/bosses/d5.png"
+                "chest_unopened_img": "images/dungeons/d5_entrance.png",
+                "chest_opened_img": "images/dungeons/d5_entrance.png"
               }
             ],
             "map_locations": [
@@ -765,7 +765,7 @@
             ]
           },
           {
-            "name": "Enter Mermaid's Cave [Present] (D6)",
+            "name": "Check the entrance: Mermaid's Cave [Present] (D6)",
             "access_rules": [
               "^$CanReach|outside_d6_present"
             ],
@@ -775,6 +775,8 @@
             "sections": [
               {
                 "name": "",
+                "chest_unopened_img": "images/dungeons/D6_present_entrance.png",
+                "chest_opened_img": "images/dungeons/D6_present_entrance.png",
                 "item_count": 1
               }
             ],
@@ -1134,7 +1136,7 @@
             ]
           },
           {
-            "name": "Enter Hero's Cave",
+            "name": "Check the entrance: Hero's Cave",
             "access_rules": [
               "^$CanReach|outside_d11"
             ],
@@ -1464,7 +1466,7 @@
             ]
           },
           {
-            "name": "Enter Spirit's Grave (D1)",
+            "name": "Check the entrance: Spirit's Grave (D1)",
             "access_rules": [
               "^$CanReach|outside_d1"
             ],
@@ -1475,8 +1477,8 @@
               {
                 "name": "",
                 "item_count": 1,
-                "chest_unopened_img": "images/bosses/d1.png",
-                "chest_opened_img": "images/bosses/d1.png"
+                "chest_unopened_img": "images/dungeons/d1_entrance.png",
+                "chest_opened_img": "images/dungeons/d1_entrance.png"
               }
             ],
             "map_locations": [
@@ -1858,7 +1860,7 @@
             ]
           },
           {
-            "name": "Enter Jabu-Jabu's Belly (D7)",
+            "name": "Check the entrance: Jabu-Jabu's Belly (D7)",
             "access_rules": [
               "^$CanReach|outside_d7"
             ],
@@ -1868,8 +1870,8 @@
             "sections": [
               {
                 "name": "",
-                "chest_unopened_img": "images/bosses/d7.png",
-                "chest_opened_img": "images/bosses/d7.png"
+                "chest_unopened_img": "images/dungeons/d7_entrance.png",
+                "chest_opened_img": "images/dungeons/d7_entrance.png"
               }
             ],
             "map_locations": [
@@ -2043,7 +2045,7 @@
             ]
           },
           {
-            "name": "Enter Moonlit Grotto (D3)",
+            "name": "Check the entrance: Moonlit Grotto (D3)",
             "access_rules": [
               "^$CanReach|outside_d3"
             ],
@@ -2053,8 +2055,8 @@
             "sections": [
               {
                 "name": "",
-                "chest_unopened_img": "images/bosses/d3.png",
-                "chest_opened_img": "images/bosses/d3.png"
+                "chest_unopened_img": "images/dungeons/d3_entrance.png",
+                "chest_opened_img": "images/dungeons/d3_entrance.png"
               }
             ],
             "map_locations": [

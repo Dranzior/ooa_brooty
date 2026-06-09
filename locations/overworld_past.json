@@ -371,7 +371,7 @@
             ]
           },
           {
-            "name": "Enter Mermaid's Cave [Past] (D6)",
+            "name": "Check the entrance: Mermaid's Cave [Past] (D6)",
             "access_rules": [
               "^$CanReach|outside_d6_past"
             ],
@@ -381,8 +381,8 @@
             "sections": [
               {
                 "name": "",
-                "chest_unopened_img": "images/bosses/d6.png",
-                "chest_opened_img": "images/bosses/d6.png"
+                "chest_unopened_img": "images/dungeons/D6_past_entrance.png",
+                "chest_opened_img": "images/dungeons/D6_past_entrance.png"
               }
             ],
             "map_locations": [
@@ -939,7 +939,7 @@
             ]
           },
           {
-            "name": "Enter Maku Path (D0)",
+            "name": "Check the entrance: Maku Path (D0)",
             "access_rules": [
               "^$CanReach|outside_d0"
             ],
@@ -1143,7 +1143,7 @@
             ]
           },
           {
-            "name": "Enter Ancient Tomb (D8)",
+            "name": "Check the entrance: Ancient Tomb (D8)",
             "access_rules": [
               "^$CanReach|outside_d8"
             ],
@@ -1153,8 +1153,8 @@
             "sections": [
               {
                 "name": "",
-                "chest_unopened_img": "images/bosses/d8.png",
-                "chest_opened_img": "images/bosses/d8.png"
+                "chest_unopened_img": "images/dungeons/d8_entrance.png",
+                "chest_opened_img": "images/dungeons/d8_entrance.png"
               }
             ],
             "map_locations": [
@@ -1428,7 +1428,7 @@
             ]
           },
           {
-            "name": "Enter Wing Dungeon Past (D2)",
+            "name": "Check the entrance: Wing Dungeon Past (D2)",
             "access_rules": [
               "^$CanReach|outside_d2"
             ],
@@ -1439,8 +1439,8 @@
               {
                 "name": "",
                 "item_count": 1,
-                "chest_unopened_img": "images/bosses/d2.png",
-                "chest_opened_img": "images/bosses/d2.png"
+                "chest_unopened_img": "images/dungeons/d2_entrance.png",
+                "chest_opened_img": "images/dungeons/d2_entrance.png"
               }
             ],
             "map_locations": [
