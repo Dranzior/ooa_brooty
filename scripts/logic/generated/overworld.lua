@@ -473,6 +473,7 @@ ridge_base_present:connect_two_ways_entrance(ridge_mid_present,function() return
 ridge_diamonds_past:connect_one_way_entrance(ridge_mid_past)
 ridge_upper_past:connect_one_way_entrance(ridge_mid_past)
 ridge_mid_past:connect_one_way_entrance(ridge_mid_present,function() return ooa_can_go_back_to_present() end)
+ridge_mid_past:connect_one_way_entrance(ridge_move_vine_seed,function() return ooa_has_switch_hook() end)
 ridge_mid_present:connect_two_ways_entrance(target_carts,function() return All(
             ooa_has_switch_hook(),
             Has("_access_cart")) end)
@@ -496,8 +497,9 @@ ridge_mid_past:connect_one_way_entrance(ridge_east_tree,function() return All(
             ooa_can_harvest_tree(false),
             ooa_option_medium_logic(),
             ooa_can_warp_using_gale_seeds()) end)
-goron_shooting_gallery:connect_one_way_entrance(ridge_east_tree,function() return Any(
-            ooa_can_harvest_tree(false)) end)
+ridge_mid_present:connect_one_way_entrance(ridge_east_tree,function() return Any(
+            ooa_can_harvest_tree(false),
+            ooa_can_switch_past_and_present()) end)
 goron_shooting_gallery:connect_one_way_entrance(ridge_east_tree,function() return ooa_can_harvest_tree(false) end)
 ridge_mid_past:connect_one_way_entrance(trade_lava_juice,function() return Has("Lava Juice") end)
 ridge_mid_past:connect_one_way_entrance(ridge_bush_cave,function() return ooa_has_switch_hook() end)
