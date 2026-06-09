@@ -388,11 +388,6 @@
         "img": "images/settings/15gasha.png",
         "codes": "deterministic_gasha_locations, gashareq15",
         "inherit_codes": false
-      },
-      {
-        "img": "images/settings/16gasha.png",
-        "codes": "deterministic_gasha_locations, gashareq16",
-        "inherit_codes": false
       }
     ]
   }

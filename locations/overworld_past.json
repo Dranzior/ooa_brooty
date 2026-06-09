@@ -631,7 +631,7 @@
             "name": "Gasha Spots",
             "sections": [
               {
-                "name": "Gasha Spot #1",
+                "name": "Gasha Nut #1",
                 "visibility_rules": [
                   "^$CanSeeGasha|1"
                 ],
@@ -640,7 +640,7 @@
                 ]
               },
               {
-                "name": "Gasha Spot #2",
+                "name": "Gasha Nut #2",
                 "visibility_rules": [
                   "^$CanSeeGasha|2"
                 ],
@@ -649,7 +649,7 @@
                 ]
               },
               {
-                "name": "Gasha Spot #3",
+                "name": "Gasha Nut #3",
                 "visibility_rules": [
                   "^$CanSeeGasha|3"
                 ],
@@ -658,7 +658,7 @@
                 ]
               },
               {
-                "name": "Gasha Spot #4",
+                "name": "Gasha Nut #4",
                 "visibility_rules": [
                   "^$CanSeeGasha|4"
                 ],
@@ -667,7 +667,7 @@
                 ]
               },
               {
-                "name": "Gasha Spot #5",
+                "name": "Gasha Nut #5",
                 "visibility_rules": [
                   "^$CanSeeGasha|5"
                 ],
@@ -676,7 +676,7 @@
                 ]
               },
               {
-                "name": "Gasha Spot #6",
+                "name": "Gasha Nut #6",
                 "visibility_rules": [
                   "^$CanSeeGasha|6"
                 ],
@@ -685,7 +685,7 @@
                 ]
               },
               {
-                "name": "Gasha Spot #7",
+                "name": "Gasha Nut #7",
                 "visibility_rules": [
                   "^$CanSeeGasha|7"
                 ],
@@ -694,7 +694,7 @@
                 ]
               },
               {
-                "name": "Gasha Spot #8",
+                "name": "Gasha Nut #8",
                 "visibility_rules": [
                   "^$CanSeeGasha|8"
                 ],
@@ -703,7 +703,7 @@
                 ]
               },
               {
-                "name": "Gasha Spot #9",
+                "name": "Gasha Nut #9",
                 "visibility_rules": [
                   "^$CanSeeGasha|9"
                 ],
@@ -712,7 +712,7 @@
                 ]
               },
               {
-                "name": "Gasha Spot #10",
+                "name": "Gasha Nut #10",
                 "visibility_rules": [
                   "^$CanSeeGasha|10"
                 ],
@@ -721,7 +721,7 @@
                 ]
               },
               {
-                "name": "Gasha Spot #11",
+                "name": "Gasha Nut #11",
                 "visibility_rules": [
                   "^$CanSeeGasha|11"
                 ],
@@ -730,7 +730,7 @@
                 ]
               },
               {
-                "name": "Gasha Spot #12",
+                "name": "Gasha Nut #12",
                 "visibility_rules": [
                   "^$CanSeeGasha|12"
                 ],
@@ -739,7 +739,7 @@
                 ]
               },
               {
-                "name": "Gasha Spot #13",
+                "name": "Gasha Nut #13",
                 "visibility_rules": [
                   "^$CanSeeGasha|13"
                 ],
@@ -748,7 +748,7 @@
                 ]
               },
               {
-                "name": "Gasha Spot #14",
+                "name": "Gasha Nut #14",
                 "visibility_rules": [
                   "^$CanSeeGasha|14"
                 ],
@@ -757,7 +757,7 @@
                 ]
               },
               {
-                "name": "Gasha Spot #15",
+                "name": "Gasha Nut #15",
                 "visibility_rules": [
                   "^$CanSeeGasha|15"
                 ],
@@ -1602,6 +1602,9 @@
           },
           {
             "name": "Zora Village (Past): Spot",
+            "visibility_rules": [
+              "^$CanSeeGasha|1"
+            ],
             "sections": [
               {
                 "name": "Zora Village (Past): Spot",

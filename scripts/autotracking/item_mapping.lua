@@ -106,7 +106,8 @@ ITEM_MAPPING[Slate] = {"d8slate", "consumable"}
 ITEM_MAPPING[Tokay_Eyeball] = {"eyeball", "toggle"}
 ITEM_MAPPING[Cracked_Tuni_Nut] = {"tuninut", "toggle"}
 ITEM_MAPPING[Tuni_Nut] = {"repairednut", "toggle"}
-ITEM_MAPPING[Zora_Scale] = {"scale", "toggle"}
+ITEM_MAPPING[Zora_Scale] = { "scale", "toggle" }
+ITEM_MAPPING[Gasha_Seed] = { "gashaseeds", "consumable" }
 -- RINGS
 ITEM_MAPPING[Experts_Ring] = {"ring_expert", "toggle"}
 ITEM_MAPPING[Toss_Ring] = {"ring_toss", "toggle"}

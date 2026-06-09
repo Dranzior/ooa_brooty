@@ -58,7 +58,7 @@ end
 function GashasHarvested()
     local harvested = 0
     for i = 1, gasha_count do
-        local section = Tracker:FindObjectForCode("@Overworld_Past/Lynna Village/Gasha Spots/Gasha Spot #" .. i)
+        local section = Tracker:FindObjectForCode("@Overworld_Past/Lynna Village/Gasha Spots/Gasha Nut #" .. i)
         if (section ~= nil) then
             harvested = harvested + section.AvailableChestCount
         end
