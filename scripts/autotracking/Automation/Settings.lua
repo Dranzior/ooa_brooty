@@ -10,7 +10,7 @@ local function updateAnimalCompanion(slot_data)
     end
 end
 
-local function udpateLogic(slot_data)
+local function updateLogic(slot_data)
     if slot_data["logic_difficulty"] then
         if slot_data["logic_difficulty"] == 0 then
             Tracker:FindObjectForCode("logic").CurrentStage = 0
@@ -73,25 +73,27 @@ end
 
 local function updateSecretLocations(slot_data)
     if slot_data["secret_locations"] then
-        Tracker:FindObjectForCode("secret_location").CurrentStage = slot_data["secret_locations"]
+        Tracker:FindObjectForCode("secret_locations").CurrentStage = slot_data["secret_locations"]
     end
 end
 
 local function updateVasuMadness(slot_data)
     if slot_data["vasu_madness"] then
-        if slot_data["vasu_madness"] == "false" then
-            Tracker:FindObjectForCode("vasu_madness").CurrentStage = 0
-            print("SET TO OFF")
-        else
-            Tracker:FindObjectForCode("vasu_madness").CurrentStage = 1
-            print("SET TO ON")
-        end
+        Tracker:FindObjectForCode("vasu_madness").CurrentStage = 1
+    else
+        Tracker:FindObjectForCode("vasu_madness").CurrentStage = 0
+    end
+end
+
+local function updateGashaSeeds(slot_data)
+    if slot_data["deterministic_gasha_locations"] then
+        Tracker:FindObjectForCode("deterministic_gasha_locations").CurrentStage = slot_data["deterministic_gasha_locations"]
     end
 end
 
 function UpdateSettings(slot_data)
     updateAnimalCompanion(slot_data["options"])
-    udpateLogic(slot_data["options"])
+    updateLogic(slot_data["options"])
     updateDungeonEr(slot_data["options"])
     updateEssence(slot_data["options"])
     updateAdvanceShop(slot_data["options"])
@@ -101,6 +103,5 @@ function UpdateSettings(slot_data)
     updateLinkedHeroCave(slot_data["options"])
     updateSecretLocations(slot_data["options"])
     updateVasuMadness(slot_data)
+    updateGashaSeeds(slot_data["options"])
 end
-
-

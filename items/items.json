@@ -297,6 +297,15 @@
     "img": "images/items/Rupee (Giant Red).png"
   },
   {
+    "name": "Gasha Seeds",
+    "type": "consumable",
+    "codes": "gashaseeds",
+    "increment": 1,
+    "decrement": 1,
+    "max_quantity": 15,
+    "img": "images/items/Gasha Seed.png"
+  },
+  {
     "name": "Progressive Flippers",
     "type": "progressive",
     "stages": [

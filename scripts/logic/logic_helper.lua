@@ -968,7 +968,21 @@ function ooa_can_toss_ring()
 end
 
 function ooa_can_harvest_gasha(count)
-    return false    -- TODO
+    -- rules for being able to collect the nut
+    if (not ooa_has_sword()) then
+        return false
+    end
+    -- rules for how many available spots remain
+    local gashasHarvested = GashasHarvested()
+    local gashasPlanted = GashasPlanted()
+    if (gashasPlanted < tonumber(count)) then
+        return false
+    end
+    local gashaSetting = Tracker:FindObjectForCode("deterministic_gasha_locations")
+    if (gashaSetting == nil or gashasHarvested >= gashaSetting.CurrentStage) then
+        return false
+    end
+    return gashasPlanted > gashasHarvested
 end
 
 function ooa_option_lynna_gardener()

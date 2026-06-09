@@ -59,6 +59,25 @@ image_lib = [
 [SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Vasu's\nMadness", "vasumadness"],
 [SETTING_DEFAULT_FULL_GREEN, SETTING_DEFAULT_IMAGE, "On", "vasumadnesson"],
 [SETTING_DEFAULT_FULL_RED, SETTING_DEFAULT_IMAGE, "Off", "vasumadnessoff"],
+
+[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Gashas\nSeeds", "gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "0", "0gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "1", "1gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "2", "2gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "3", "3gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "4", "4gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "5", "5gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "6", "6gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "7", "7gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "8", "8gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "9", "9gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "10", "10gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "11", "11gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "12", "12gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "13", "13gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "14", "14gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "15", "15gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "16", "16gasha"]
 ]
 
 def generate_settings():

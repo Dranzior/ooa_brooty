@@ -296,5 +296,104 @@
         "img": "images/settings/vasumadnesson.png"
       }
     ]
+  },
+  {
+    "name": "Gasha Seeds Label",
+    "type": "static",
+    "img": "images/settings/gasha.png",
+    "codes": "gasha_label"
+  },
+  {
+    "name": "Gasha Seeds",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/settings/0gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq0",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/1gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq1",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/2gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq2",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/3gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq3",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/4gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq4",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/5gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq5",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/6gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq6",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/7gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq7",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/8gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq8",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/9gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq9",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/10gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq10",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/11gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq11",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/12gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq12",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/13gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq13",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/14gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq14",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/15gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq15",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/16gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq16",
+        "inherit_codes": false
+      }
+    ]
   }
 ]

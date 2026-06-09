@@ -82,6 +82,39 @@
                 "y": 694
               }
             ]
+          },
+          {
+            "name": "Talus Peak (Present): Spot",
+            "visibility_rules": [
+              "^$CanSeeGasha|1"
+            ],
+            "sections": [
+              {
+                "name": "Talus Peak (Present): Spot",
+                "chest_unopened_img": "images/items/gasha_spot.png",
+                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "access_rules": [
+                  "^$CanPlantGasha|talus_peak_present_spot"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Harvested",
+                "chest_unopened_img": "images/items/gasha_nut.png",
+                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "access_rules": [
+                  "^$HasPlanted|@Overworld/Talus Peaks/Talus Peak (Present): Spot/Talus Peak (Present): Spot"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 39,
+                "y": 470
+              }
+            ]
           }
         ]
       },
@@ -409,6 +442,39 @@
                 "map": "map",
                 "x": 512,
                 "y": 723
+              }
+            ]
+          },
+          {
+            "name": "Nuun Highlands: Spot",
+            "visibility_rules": [
+              "^$CanSeeGasha|1"
+            ],
+            "sections": [
+              {
+                "name": "Nuun Highlands: Spot",
+                "chest_unopened_img": "images/items/gasha_spot.png",
+                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "access_rules": [
+                  "^$CanPlantGasha|nuun_highlands_spot"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Harvested",
+                "chest_unopened_img": "images/items/gasha_nut.png",
+                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "access_rules": [
+                  "^$HasPlanted|@Overworld/Nuun Highlands/Nuun Highlands: Spot/Nuun Highlands: Spot"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 903,
+                "y": 39
               }
             ]
           }
@@ -762,6 +828,39 @@
                 "map": "map",
                 "x": 1991,
                 "y": 439
+              }
+            ]
+          },
+          {
+            "name": "Rolling Ridge (Present): Spot",
+            "visibility_rules": [
+              "^$CanSeeGasha|1"
+            ],
+            "sections": [
+              {
+                "name": "Rolling Ridge (Present): Spot",
+                "chest_unopened_img": "images/items/gasha_spot.png",
+                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "access_rules": [
+                  "^$CanPlantGasha|ridge_mid_present_spot"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Harvested",
+                "chest_unopened_img": "images/items/gasha_nut.png",
+                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "access_rules": [
+                  "^$HasPlanted|@Overworld/Rolling Ridge/Rolling Ridge (Present): Spot/Rolling Ridge (Present): Spot"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1991,
+                "y": 311
               }
             ]
           }
@@ -1448,6 +1547,39 @@
                 "y": 1057
               }
             ]
+          },
+          {
+            "name": "Yoll Graveyard: Spot",
+            "visibility_rules": [
+              "^$CanSeeGasha|1"
+            ],
+            "sections": [
+              {
+                "name": "Yoll Graveyard: Spot",
+                "chest_unopened_img": "images/items/gasha_spot.png",
+                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "access_rules": [
+                  "^$CanPlantGasha|yoll_graveyard_spot"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Harvested",
+                "chest_unopened_img": "images/items/gasha_nut.png",
+                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "access_rules": [
+                  "^$HasPlanted|@Overworld/Yoll Graveyard/Yoll Graveyard: Spot/Yoll Graveyard: Spot"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1863,
+                "y": 935
+              }
+            ]
           }
         ]
       },
@@ -1492,6 +1624,39 @@
                 "map": "map",
                 "x": 319,
                 "y": 1084
+              }
+            ]
+          },
+          {
+            "name": "Fairies' Woods: Spot",
+            "visibility_rules": [
+              "^$CanSeeGasha|1"
+            ],
+            "sections": [
+              {
+                "name": "Fairies' Woods: Spot",
+                "chest_unopened_img": "images/items/gasha_spot.png",
+                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "access_rules": [
+                  "^$CanPlantGasha|fairies_woods_spot"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Harvested",
+                "chest_unopened_img": "images/items/gasha_nut.png",
+                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "access_rules": [
+                  "^$HasPlanted|@Overworld/Fairies' Woods/Fairies' Woods: Spot/Fairies' Woods: Spot"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 23,
+                "y": 1255
               }
             ]
           }
@@ -1970,6 +2135,72 @@
                 "map": "map",
                 "x": 1688,
                 "y": 1488
+              }
+            ]
+          },
+          {
+            "name": "Crescent Island (Present): Vine Spot",
+            "visibility_rules": [
+              "^$CanSeeGasha|1"
+            ],
+            "sections": [
+              {
+                "name": "Crescent Island (Present): Vine Spot",
+                "chest_unopened_img": "images/items/gasha_spot.png",
+                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "access_rules": [
+                  "^$CanPlantGasha|crescent_present_vine_spot"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Harvested",
+                "chest_unopened_img": "images/items/gasha_nut.png",
+                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "access_rules": [
+                  "^$HasPlanted|@Overworld/Crescent Island/Crescent Island (Present): Vine Spot/Crescent Island (Present): Vine Spot"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1799,
+                "y": 1639
+              }
+            ]
+          },
+          {
+            "name": "Crescent Island (Present): Islet Spot",
+            "visibility_rules": [
+              "^$CanSeeGasha|1"
+            ],
+            "sections": [
+              {
+                "name": "Crescent Island (Present): Islet Spot",
+                "chest_unopened_img": "images/items/gasha_spot.png",
+                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "access_rules": [
+                  "^$CanPlantGasha|crescent_present_islet_spot"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Harvested",
+                "chest_unopened_img": "images/items/gasha_nut.png",
+                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "access_rules": [
+                  "^$HasPlanted|@Overworld/Crescent Island/Crescent Island (Present): Islet Spot/Crescent Island (Present): Islet Spot"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2183,
+                "y": 1335
               }
             ]
           }

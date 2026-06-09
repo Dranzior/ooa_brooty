@@ -92,6 +92,72 @@
                 "y": 300
               }
             ]
+          },
+          {
+            "name": "Talus Peak (Past): Spot",
+            "visibility_rules": [
+              "^$CanSeeGasha|1"
+            ],
+            "sections": [
+              {
+                "name": "Talus Peak (Past): Spot",
+                "chest_unopened_img": "images/items/gasha_spot.png",
+                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "access_rules": [
+                  "^$CanPlantGasha|talus_peak_past_spot"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Harvested",
+                "chest_unopened_img": "images/items/gasha_nut.png",
+                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "access_rules": [
+                  "^$HasPlanted|@Overworld_Past/Talus Peaks/Talus Peak (Past): Spot/Talus Peak (Past): Spot"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3067,
+                "y": 454
+              }
+            ]
+          },
+          {
+            "name": "Talus Lake (Past): Spot",
+            "visibility_rules": [
+              "^$CanSeeGasha|1"
+            ],
+            "sections": [
+              {
+                "name": "Talus Lake (Past): Spot",
+                "chest_unopened_img": "images/items/gasha_spot.png",
+                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "access_rules": [
+                  "^$CanPlantGasha|talus_lake_past_spot"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Harvested",
+                "chest_unopened_img": "images/items/gasha_nut.png",
+                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "access_rules": [
+                  "^$HasPlanted|@Overworld_Past/Talus Peaks/Talus Lake (Past): Spot/Talus Lake (Past): Spot"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2555,
+                "y": 38
+              }
+            ]
           }
         ]
       },
@@ -383,6 +449,72 @@
                 "y": 425
               }
             ]
+          },
+          {
+            "name": "Ridge West Base: Spot",
+            "visibility_rules": [
+              "^$CanSeeGasha|1"
+            ],
+            "sections": [
+              {
+                "name": "Ridge West Base: Spot",
+                "chest_unopened_img": "images/items/gasha_spot.png",
+                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "access_rules": [
+                  "^$CanPlantGasha|ridge_west_base_spot"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Harvested",
+                "chest_unopened_img": "images/items/gasha_nut.png",
+                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "access_rules": [
+                  "^$HasPlanted|@Overworld_Past/Rolling Ridge/Ridge West Base: Spot/Ridge West Base: Spot"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3675,
+                "y": 358
+              }
+            ]
+          },
+          {
+            "name": "Ridge West Upper: Spot",
+            "visibility_rules": [
+              "^$CanSeeGasha|1"
+            ],
+            "sections": [
+              {
+                "name": "Ridge West Upper: Spot",
+                "chest_unopened_img": "images/items/gasha_spot.png",
+                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "access_rules": [
+                  "^$CanPlantGasha|ridge_upper_past_spot"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Harvested",
+                "chest_unopened_img": "images/items/gasha_nut.png",
+                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "access_rules": [
+                  "^$HasPlanted|@Overworld_Past/Rolling Ridge/Ridge West Upper: Spot/Ridge West Upper: Spot"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 4043,
+                "y": 103
+              }
+            ]
           }
         ]
       },
@@ -491,6 +623,153 @@
               {
                 "map": "map",
                 "x": 3180,
+                "y": 595
+              }
+            ]
+          },
+          {
+            "name": "Gasha Spots",
+            "sections": [
+              {
+                "name": "Gasha Spot #1",
+                "visibility_rules": [
+                  "^$CanSeeGasha|1"
+                ],
+                "access_rules": [
+                  "^$ooa_can_harvest_gasha|1"
+                ]
+              },
+              {
+                "name": "Gasha Spot #2",
+                "visibility_rules": [
+                  "^$CanSeeGasha|2"
+                ],
+                "access_rules": [
+                  "^$ooa_can_harvest_gasha|2"
+                ]
+              },
+              {
+                "name": "Gasha Spot #3",
+                "visibility_rules": [
+                  "^$CanSeeGasha|3"
+                ],
+                "access_rules": [
+                  "^$ooa_can_harvest_gasha|3"
+                ]
+              },
+              {
+                "name": "Gasha Spot #4",
+                "visibility_rules": [
+                  "^$CanSeeGasha|4"
+                ],
+                "access_rules": [
+                  "^$ooa_can_harvest_gasha|4"
+                ]
+              },
+              {
+                "name": "Gasha Spot #5",
+                "visibility_rules": [
+                  "^$CanSeeGasha|5"
+                ],
+                "access_rules": [
+                  "^$ooa_can_harvest_gasha|5"
+                ]
+              },
+              {
+                "name": "Gasha Spot #6",
+                "visibility_rules": [
+                  "^$CanSeeGasha|6"
+                ],
+                "access_rules": [
+                  "^$ooa_can_harvest_gasha|6"
+                ]
+              },
+              {
+                "name": "Gasha Spot #7",
+                "visibility_rules": [
+                  "^$CanSeeGasha|7"
+                ],
+                "access_rules": [
+                  "^$ooa_can_harvest_gasha|7"
+                ]
+              },
+              {
+                "name": "Gasha Spot #8",
+                "visibility_rules": [
+                  "^$CanSeeGasha|8"
+                ],
+                "access_rules": [
+                  "^$ooa_can_harvest_gasha|8"
+                ]
+              },
+              {
+                "name": "Gasha Spot #9",
+                "visibility_rules": [
+                  "^$CanSeeGasha|9"
+                ],
+                "access_rules": [
+                  "^$ooa_can_harvest_gasha|9"
+                ]
+              },
+              {
+                "name": "Gasha Spot #10",
+                "visibility_rules": [
+                  "^$CanSeeGasha|10"
+                ],
+                "access_rules": [
+                  "^$ooa_can_harvest_gasha|10"
+                ]
+              },
+              {
+                "name": "Gasha Spot #11",
+                "visibility_rules": [
+                  "^$CanSeeGasha|11"
+                ],
+                "access_rules": [
+                  "^$ooa_can_harvest_gasha|11"
+                ]
+              },
+              {
+                "name": "Gasha Spot #12",
+                "visibility_rules": [
+                  "^$CanSeeGasha|12"
+                ],
+                "access_rules": [
+                  "^$ooa_can_harvest_gasha|12"
+                ]
+              },
+              {
+                "name": "Gasha Spot #13",
+                "visibility_rules": [
+                  "^$CanSeeGasha|13"
+                ],
+                "access_rules": [
+                  "^$ooa_can_harvest_gasha|13"
+                ]
+              },
+              {
+                "name": "Gasha Spot #14",
+                "visibility_rules": [
+                  "^$CanSeeGasha|14"
+                ],
+                "access_rules": [
+                  "^$ooa_can_harvest_gasha|14"
+                ]
+              },
+              {
+                "name": "Gasha Spot #15",
+                "visibility_rules": [
+                  "^$CanSeeGasha|15"
+                ],
+                "access_rules": [
+                  "^$ooa_can_harvest_gasha|15"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3240,
                 "y": 595
               }
             ]
@@ -726,6 +1005,72 @@
                 "shape": "diamond",
                 "x": 3572,
                 "y": 1308
+              }
+            ]
+          },
+          {
+            "name": "South Shore (Past): Spot",
+            "visibility_rules": [
+              "^$CanSeeGasha|1"
+            ],
+            "sections": [
+              {
+                "name": "South Shore (Past): Spot",
+                "chest_unopened_img": "images/items/gasha_spot.png",
+                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "access_rules": [
+                  "^$CanPlantGasha|south_shore_past_spot"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Harvested",
+                "chest_unopened_img": "images/items/gasha_nut.png",
+                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "access_rules": [
+                  "^$HasPlanted|@Overworld_Past/Lynna Village/South Shore (Past): Spot/South Shore (Past): Spot"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3163,
+                "y": 1206
+              }
+            ]
+          },
+          {
+            "name": "Lynna Village: Spot",
+            "visibility_rules": [
+              "^$CanSeeGasha|1"
+            ],
+            "sections": [
+              {
+                "name": "Lynna Village: Spot",
+                "chest_unopened_img": "images/items/gasha_spot.png",
+                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "access_rules": [
+                  "^$CanPlantGasha|lynna_village_toilet_spot"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Harvested",
+                "chest_unopened_img": "images/items/gasha_nut.png",
+                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "access_rules": [
+                  "^$HasPlanted|@Overworld_Past/Lynna Village/Lynna Village: Spot/Lynna Village: Spot"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3223,
+                "y": 679
               }
             ]
           }
@@ -1254,6 +1599,36 @@
                 "y": 1335
               }
             ]
+          },
+          {
+            "name": "Zora Village (Past): Spot",
+            "sections": [
+              {
+                "name": "Zora Village (Past): Spot",
+                "chest_unopened_img": "images/items/gasha_spot.png",
+                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "access_rules": [
+                  "^$CanPlantGasha|zora_village_past_spot"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Harvested",
+                "chest_unopened_img": "images/items/gasha_nut.png",
+                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "access_rules": [
+                  "^$HasPlanted|@Overworld_Past/Zora Seas/Zora Village (Past): Spot/Zora Village (Past): Spot"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 2363,
+                "y": 1718
+              }
+            ]
           }
         ]
       },
@@ -1500,6 +1875,39 @@
                 "map": "map",
                 "x": 3964,
                 "y": 1688
+              }
+            ]
+          },
+          {
+            "name": "Crescent Island (Past): Spot",
+            "visibility_rules": [
+              "^$CanSeeGasha|1"
+            ],
+            "sections": [
+              {
+                "name": "Crescent Island (Past): Spot",
+                "chest_unopened_img": "images/items/gasha_spot.png",
+                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "access_rules": [
+                  "^$CanPlantGasha|crescent_past_spot"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Harvested",
+                "chest_unopened_img": "images/items/gasha_nut.png",
+                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "access_rules": [
+                  "^$HasPlanted|@Overworld_Past/Crescent Island/Crescent Island (Past): Spot/Crescent Island (Past): Spot"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 3995,
+                "y": 1606
               }
             ]
           }
