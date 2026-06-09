@@ -323,7 +323,7 @@
     "name": "King Zora's Potion",
     "type": "toggle",
     "loop": true,
-    "img": "images/items/potion.png",
+    "img": "images/items/potion_kingzora.png",
     "codes": "potion, King Zora's Potion"
   },
   {
