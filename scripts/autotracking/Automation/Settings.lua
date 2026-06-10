@@ -87,7 +87,14 @@ end
 
 local function updateGashaSeeds(slot_data)
     if slot_data["deterministic_gasha_locations"] then
-        Tracker:FindObjectForCode("deterministic_gasha_locations").CurrentStage = slot_data["deterministic_gasha_locations"]
+        Tracker:FindObjectForCode("deterministic_gasha_locations").CurrentStage = slot_data
+            ["deterministic_gasha_locations"]
+    end
+end
+
+local function updateGoal(slot_data)
+    if slot_data["goal"] then
+        Tracker:FindObjectForCode("goal").CurrentStage = slot_data["goal"]
     end
 end
 
@@ -104,4 +111,5 @@ function UpdateSettings(slot_data)
     updateSecretLocations(slot_data["options"])
     updateVasuMadness(slot_data)
     updateGashaSeeds(slot_data["options"])
+    updateGoal(slot_data["options"])
 end

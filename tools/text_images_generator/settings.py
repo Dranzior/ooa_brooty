@@ -77,7 +77,8 @@ image_lib = [
 [SETTING_DEFAULT_HALF_WHITE, "gasha", "13", "13gasha"],
 [SETTING_DEFAULT_HALF_WHITE, "gasha", "14", "14gasha"],
 [SETTING_DEFAULT_HALF_WHITE, "gasha", "15", "15gasha"],
-[SETTING_DEFAULT_HALF_WHITE, "gasha", "16", "16gasha"]
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "16", "16gasha"],
+[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Goal", "goal"]
 ]
 
 def generate_settings():

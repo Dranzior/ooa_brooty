@@ -390,5 +390,29 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Goal Label",
+    "type": "static",
+    "img": "images/settings/goal.png",
+    "codes": "goal_label"
+  },
+  {
+    "name": "Goal",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "goal, goal_veran",
+        "inherit_codes": false,
+        "img": "images/settings/goal_veran.png"
+      },
+      {
+        "codes": "goal, goal_ganon",
+        "inherit_codes": false,
+        "img": "images/settings/goal_ganon.png"
+      }
+    ]
   }
 ]
