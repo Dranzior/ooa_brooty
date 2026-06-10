@@ -1,12 +1,6 @@
 local function updateAnimalCompanion(slot_data)
     if slot_data["animal_companion"] then
-        if slot_data["animal_companion"] == "Ricky" then
-            Tracker:FindObjectForCode("companions").CurrentStage = 1
-        elseif slot_data["animal_companion"] == "Dimitri" then
-            Tracker:FindObjectForCode("companions").CurrentStage = 2
-        elseif slot_data["animal_companion"] == "Moosh" then
-            Tracker:FindObjectForCode("companions").CurrentStage = 3
-        end
+        Tracker:FindObjectForCode("companions").CurrentStage = slot_data["animal_companion"] +1
     end
 end
 
