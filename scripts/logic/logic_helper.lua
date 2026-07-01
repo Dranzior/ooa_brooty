@@ -988,3 +988,21 @@ end
 function ooa_option_lynna_gardener()
     return Has("lynna_gardener_on")
 end
+
+function ooa_has_rupees_for_vasu()
+    amount = Tracker:FindObjectForCode("vasu_rupee_ring_check").AcquiredCount
+    rupees = Tracker:FindObjectForCode("RupeesCount").AcquiredCount
+
+    return Any(
+        All(
+            -- Rupee checks being quite approximative, being able to farm is a
+            -- must-have to prevent any stupid lock
+            ooa_can_farm_rupees(),
+            rupees >= amount
+        ),
+        All(
+            ooa_can_farm_rupees(),
+            AccessibilityLevel.SequenceBreak
+        )
+    )
+end

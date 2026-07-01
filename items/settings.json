@@ -274,28 +274,43 @@
     ]
   },
   {
-    "name": "Vasu's Madness Label",
+    "name": "Vasu's Ring Check Label",
     "type": "static",
     "img": "images/settings/vasumadness.png",
-    "codes": "vasu_madness_label"
+    "codes": "vasu_ring_check_label"
   },
   {
-    "name": "Vasu's Madness",
+    "name": "Vasu's Ring Check",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "codes": "vasu_madness, vasu_madness_off",
+        "codes": "vasu_ring_check, vasu_ring_check_off",
         "inherit_codes": false,
         "img": "images/settings/vasumadnessoff.png"
       },
       {
-        "codes": "vasu_madness, vasu_madness_on",
+        "codes": "vasu_ring_check, vasu_ring_check_on",
         "inherit_codes": false,
         "img": "images/settings/vasumadnesson.png"
       }
     ]
+  },
+  {
+    "name": "Vasu's Rupee Ring Check Label",
+    "type": "static",
+    "img": "images/settings/vasumadness.png",
+    "codes": "vasu_rupee_ring_check_label"
+  },
+  {
+    "name": "Vasu's Rupee Ring Check",
+    "type": "consumable",
+    "codes": "vasu_rupee_ring_check",
+    "initial_quantity": 1000,
+    "increment": 100,
+    "decrement": 100,
+    "img": "images/items/Rupee (Giant Red).png"
   },
   {
     "name": "Gasha Seeds Label",

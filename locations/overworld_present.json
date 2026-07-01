@@ -1027,7 +1027,7 @@
                   "^$CanReach|vasus_slayers_ring_gift"
                 ],
                 "visibility_rules": [
-                  "vasu_madness_on"
+                  "vasu_ring_check_on"
                 ],
                 "item_count": 1
               },
@@ -1035,6 +1035,16 @@
                 "name": "Lynna City: Vasu's Victory Ring Gift",
                 "access_rules": [
                   "^$CanReach|vasus_victory_ring_gift"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Lynna City: Vasu's Rupee Ring Gift",
+                "visibility_rules": [
+                  "vasu_ring_check_on"
+                ],
+                "access_rules": [
+                  "^$CanReach|vasus_rupee_ring_gift"
                 ],
                 "item_count": 1
               }

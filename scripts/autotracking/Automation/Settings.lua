@@ -72,10 +72,18 @@ local function updateSecretLocations(slot_data)
 end
 
 local function updateVasuMadness(slot_data)
-    if slot_data["vasu_madness"] then
-        Tracker:FindObjectForCode("vasu_madness").CurrentStage = 1
-    else
-        Tracker:FindObjectForCode("vasu_madness").CurrentStage = 0
+    print(dump_table(slot_data))
+    if slot_data["vasu_ring_checks_requirement"] then
+
+        local vasu_slot_data = slot_data["vasu_ring_checks_requirement"]
+        print(dump_table(vasu_slot_data))
+        if vasu_slot_data["disable_entirely"] then
+            Tracker:FindObjectForCode("vasu_ring_check").CurrentStage = 0
+        else
+            Tracker:FindObjectForCode("vasu_ring_check").CurrentStage = 1
+        end
+        Tracker:FindObjectForCode("vasu_rupee_ring_check").AcquiredCount = vasu_slot_data
+            ["rupee_requirement_for_rupee_ring_check"]
     end
 end
 
@@ -103,7 +111,7 @@ function UpdateSettings(slot_data)
     updateLynnaGardener(slot_data["options"])
     updateLinkedHeroCave(slot_data["options"])
     updateSecretLocations(slot_data["options"])
-    updateVasuMadness(slot_data)
+    updateVasuMadness(slot_data["options"])
     updateGashaSeeds(slot_data["options"])
     updateGoal(slot_data["options"])
 end
