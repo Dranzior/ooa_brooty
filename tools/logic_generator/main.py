@@ -46,6 +46,7 @@ def cleanup_function(function_code):
     # remove "state" and "player" parameter from every function call
     function_code = re.sub(",? *state *,? *", "", function_code)
     function_code = re.sub(",? *player *,? *", "", function_code)
+    function_code = re.sub(",? *options *,? *", "", function_code)
 
     # lua doesn't support have comma after last element of a list
     function_code = re.sub(", *\n? *]", "]", function_code)
