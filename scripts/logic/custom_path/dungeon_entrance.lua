@@ -1,5 +1,5 @@
 -- Build Dungeon entrance connection
-Dungeons = {
+local Dungeons = {
     { outside_d0,         inside_d0,         "makupath",            "0" },
     { outside_d1,         inside_d1,         "spiritsgrave",        "1" },
     { outside_d2,         inside_d2,         "wingdungeonpast",     "2" },

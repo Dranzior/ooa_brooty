@@ -72,11 +72,9 @@ local function updateSecretLocations(slot_data)
 end
 
 local function updateVasuMadness(slot_data)
-    print(dump_table(slot_data))
     if slot_data["vasu_ring_checks_requirement"] then
-
         local vasu_slot_data = slot_data["vasu_ring_checks_requirement"]
-        print(dump_table(vasu_slot_data))
+
         if vasu_slot_data["disable_entirely"] then
             Tracker:FindObjectForCode("vasu_ring_check").CurrentStage = 0
         else
