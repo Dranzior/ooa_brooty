@@ -22,10 +22,11 @@ outside_vasus_shop:connect_one_way(inside_vasus_shop)
 -- Overworld scouting
 lynna_village:connect_one_way_entrance(black_tower_heartpiece, function() return AccessibilityLevel.Inspect end)
 ridge_west_present:connect_one_way_entrance(ridge_west_heartpiece, function() return AccessibilityLevel.Inspect end)
+crescent_past_east:connect_one_way_entrance(tokay_chicken_hut, function() return AccessibilityLevel.Inspect end)
 
 -- Insert Toggles into logic
 Raft_toggle = OoALocation.New("Raft_toggle")
-raftons_raft:insertIntermediateAfterCheck(crescent_past_west, Raft_toggle, function() return Has("raft_toggle") end)
+raftons_raft:insertIntermediateAfterCheck(crescent_past_waters, Raft_toggle, function() return Has("raft_toggle") end)
 
 MakuSeed_toggle = OoALocation.New("MakuSeed_toggle")
 maku_seed:insertIntermediateAfterCheck(veran_beaten, MakuSeed_toggle, function() return Has("makuseed_toggle") end)
