@@ -142,27 +142,30 @@ function Map.process(json)
     if not json["data"] then
         return
     end
-    if json["data"]["Current Room"] then
-        local prevRoom = CurrentRoom
-        CurrentRoom = json["data"]["Current Room"]
-        if prevRoom == CurrentRoom or CurrentRoom == nil then
-            return
-        end
+    if not json["data"]["Current Room"] then
+        return
+    end
 
-        local region = CurrentRoom & 0xF00
-        local tile = CurrentRoom & 0x0FF
+    local prevRoom = CurrentRoom
+    CurrentRoom = json["data"]["Current Room"]
+    if prevRoom == CurrentRoom or CurrentRoom == nil then
+        return
+    end
+    local region = CurrentRoom & 0xF00
+    local tile = CurrentRoom & 0x0FF
 
-        if prevRoom == nil then
-            prevRoom = 0
-        end
+    if prevRoom == nil then
+        prevRoom = 0
+    end
 
-        map = MapLocationTracking[region][1]
+    local map = MapLocationTracking[region][1]
 
+    if (Has("autotab_on")) then
         local tabs = Map.GetMap(tile, map)
         for _, tab in ipairs(tabs) do
             Tracker:UiHint("ActivateTab", tab)
         end
-
-        Map.SetDungeonEntrance(tile, map, prevRoom)
     end
+
+    Map.SetDungeonEntrance(tile, map, prevRoom)
 end

@@ -429,5 +429,29 @@
         "img": "images/settings/goal_ganon.png"
       }
     ]
+  },
+  {
+    "name": "Auto Tab Label",
+    "type": "static",
+    "img": "images/settings/autotab.png",
+    "codes": "autotab_label"
+  },
+  {
+    "name": "Auto Tab",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "autotab, autotab_off",
+        "inherit_codes": false,
+        "img": "images/settings/autotaboff.png"
+      },
+      {
+        "codes": "autotab, autotab_on",
+        "inherit_codes": false,
+        "img": "images/settings/autotabon.png"
+      }
+    ]
   }
 ]

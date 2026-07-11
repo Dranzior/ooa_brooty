@@ -59,7 +59,7 @@ image_lib = [
 [SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Vasu's\nMadness", "vasumadness"],
 [SETTING_DEFAULT_FULL_GREEN, SETTING_DEFAULT_IMAGE, "On", "vasumadnesson"],
 [SETTING_DEFAULT_FULL_RED, SETTING_DEFAULT_IMAGE, "Off", "vasumadnessoff"],
-
+    #Gasha Seeds
 [SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Gashas\nSeeds", "gasha"],
 [SETTING_DEFAULT_HALF_WHITE, "gasha", "0", "0gasha"],
 [SETTING_DEFAULT_HALF_WHITE, "gasha", "1", "1gasha"],
@@ -78,7 +78,11 @@ image_lib = [
 [SETTING_DEFAULT_HALF_WHITE, "gasha", "14", "14gasha"],
 [SETTING_DEFAULT_HALF_WHITE, "gasha", "15", "15gasha"],
 [SETTING_DEFAULT_HALF_WHITE, "gasha", "16", "16gasha"],
-[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Goal", "goal"]
+[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Goal", "goal"],
+    #Auto Tabs
+[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Auto\nTab", "autotab"],
+[SETTING_DEFAULT_HALF_GREEN, SETTING_DEFAULT_IMAGE, "On", "autotabon"],
+[SETTING_DEFAULT_HALF_RED, SETTING_DEFAULT_IMAGE, "Off", "autotaboff"],
 ]
 
 def generate_settings():
