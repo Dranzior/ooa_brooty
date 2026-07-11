@@ -68,7 +68,9 @@ d3_B1F_spinner:connect_one_way_entrance(d3_torch_chest,function() return All(
 d3_pitfall:connect_two_ways_entrance(d3_crossing_bridge_room_1,function() return Any(
             ooa_has_seedshooter(),
             ooa_can_jump_3_wide_pit(false),
-            ooa_can_toss_ring(),
+            All(
+                ooa_option_medium_logic(),
+                ooa_can_toss_ring()),
             All(
                 ooa_option_hard_logic(),
                 ooa_has_boomerang()
@@ -78,6 +80,9 @@ d3_crossing_bridge_room_1:connect_two_ways_entrance(d3_between_two_bridge_room,f
 d3_between_two_bridge_room:connect_two_ways_entrance(d3_crossing_bridge_room_2,function() return Any(
             ooa_has_seedshooter(),
             ooa_can_jump_4_wide_pit(false),
+            All(
+                ooa_can_jump_3_wide_pit(false),
+                ooa_has_sword()),
             All(
                 ooa_option_hard_logic(),
                 ooa_has_feather(),
@@ -104,7 +109,7 @@ d3_between_two_bridge_room:connect_two_ways_entrance(d3_crossing_bridge_room_2,f
         ) end)
 d3_crossing_bridge_room_1:connect_one_way_entrance(d3_bridge_chest)
 d3_post_subterror:connect_two_ways_entrance(d3_between_two_bridge_room,function() return All(
-            ooa_can_jump_2_wide_pit(false)
+            ooa_can_jump_3_wide_pit(false)
         ) end)
 d3_B1F_spinner:connect_one_way_entrance(d3_miniboss,function() return All(
 

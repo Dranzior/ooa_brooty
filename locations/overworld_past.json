@@ -186,10 +186,10 @@
           {
             "name": "Goron caves",
             "sections": [
-              {
+              /*{
                 "name": "Rolling Ridge Base (Present): First Goron Dance",
                 "ref": "Overworld/Rolling Ridge/Goron caves (Present)/Rolling Ridge Base (Present): First Goron Dance"
-              },
+              }*/,
               {
                 "name": "Rolling Ridge Base (Past): Goron Dance With Letter",
                 "access_rules": [
@@ -205,7 +205,7 @@
                 "item_count": 1
               },
               {
-                "name": "Rolling Ridge (Present): Bush Cave Chest",
+                "name": "Rolling Ridge (Past): Bush Cave Chest",
                 "access_rules": [
                   "^$CanReach|ridge_bush_cave"
                 ],

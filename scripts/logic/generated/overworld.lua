@@ -462,7 +462,6 @@ ridge_base_past_west:connect_one_way_entrance(outside_d6_past,function() return 
             Has("Mermaid Key")
         ) end)
 ridge_base_past_west:connect_two_ways_entrance(ridge_base_past_east,function() return ooa_can_swim(false) end)
-ridge_base_past_east:connect_one_way_entrance(first_goron_dance,function() return ooa_has_rupees(10) end)
 ridge_base_past_east:connect_one_way_entrance(goron_dance__with_letter,function() return ooa_has_rupees(10) and Has("Letter of Introduction") end)
 ridge_base_past_east:connect_one_way_entrance(trade_goron_vase,function() return Has("Goron Vase") and Has("Brother Emblem") end)
 ridge_base_present:connect_two_ways_entrance(ridge_mid_present,function() return All(

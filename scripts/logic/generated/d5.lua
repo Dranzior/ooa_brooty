@@ -56,6 +56,7 @@ d5_switch_A:connect_one_way_entrance(d5_two_statue_puzzle,function() return All(
                 ooa_has_seedshooter(),
                 ooa_has_boomerang(),
                 All(
+                    ooa_option_medium_logic(),
                     ooa_can_jump_2_wide_pit(false),
                     ooa_has_sword(false)),
                 All(
