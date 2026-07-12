@@ -1,6 +1,17 @@
 {
   "versions": [
     {
+      "package_version": "0.9.4",
+      "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.4/ooa.zip",
+      "sha256": "9b58a1ac97307515377ec547d3d4bcb13e6e95c55796bd756952feee7675536a",
+      "changelog": [
+        "NEW: New location from APWorld 1.0.0",
+        "NEW: Updated logic from APWorld 1.0.0",
+        "NEW: Auto Tab while changing map",
+        "FIX: Rescue Nayru tracking should no longer break randomly"
+      ]
+    },
+    {
       "package_version": "0.9.3",
       "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.3/ooa.zip",
       "sha256": "d07ecc9b0819691bb5d88493e4baa609223a5ea6329975c4d52c61232e9e5f47",
