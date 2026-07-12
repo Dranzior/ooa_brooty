@@ -81,7 +81,8 @@
                                     {
                                       "type": "map",
                                       "maps": [
-                                        "map"
+                                        "present",
+                                        "past"
                                       ]
                                     }
                                   ]
@@ -126,7 +127,7 @@
                   "content": {
                     "type": "map",
                     "maps": [
-                      "d2"
+                      "d2_1", "d2_b1"
                     ]
                   }
                 },
@@ -135,7 +136,7 @@
                   "content": {
                     "type": "map",
                     "maps": [
-                      "d3"
+                      "d3_1","d3_b1"
                     ]
                   }
                 },

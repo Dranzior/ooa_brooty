@@ -37,8 +37,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 2900,
+                "map": "past",
+                "x": 560,
                 "y": 192
               }
             ]
@@ -61,8 +61,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 2636,
+                "map": "past",
+                "x": 296,
                 "y": 23
               }
             ]
@@ -87,8 +87,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 2925,
+                "map": "past",
+                "x": 585,
                 "y": 300
               }
             ]
@@ -120,8 +120,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3067,
+                "map": "past",
+                "x": 727,
                 "y": 454
               }
             ]
@@ -153,8 +153,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 2555,
+                "map": "past",
+                "x": 215,
                 "y": 38
               }
             ]
@@ -177,8 +177,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3724,
+                "map": "past",
+                "x": 1384,
                 "y": 295
               }
             ]
@@ -189,7 +189,7 @@
               /*{
                 "name": "Rolling Ridge Base (Present): First Goron Dance",
                 "ref": "Overworld/Rolling Ridge/Goron caves (Present)/Rolling Ridge Base (Present): First Goron Dance"
-              }*/,
+              },*/
               {
                 "name": "Rolling Ridge Base (Past): Goron Dance With Letter",
                 "access_rules": [
@@ -221,13 +221,13 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 4540,
+                "map": "past",
+                "x": 2200,
                 "y": 423
               },
               {
-                "map": "map",
-                "x": 4316,
+                "map": "past",
+                "x": 1976,
                 "y": 199
               }
             ]
@@ -252,13 +252,13 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 4156,
+                "map": "past",
+                "x": 1816,
                 "y": 295
               },
               {
-                "map": "map",
-                "x": 4331,
+                "map": "past",
+                "x": 1991,
                 "y": 87
               }
             ]
@@ -276,8 +276,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 4460,
+                "map": "past",
+                "x": 2120,
                 "y": 87
               }
             ]
@@ -295,8 +295,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 4219,
+                "map": "past",
+                "x": 1879,
                 "y": 37
               }
             ]
@@ -324,8 +324,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 4475,
+                "map": "past",
+                "x": 2135,
                 "y": 151
               }
             ]
@@ -344,8 +344,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3683,
+                "map": "past",
+                "x": 1343,
                 "y": 50
               }
             ]
@@ -364,8 +364,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 4532,
+                "map": "past",
+                "x": 2192,
                 "y": 336
               }
             ]
@@ -387,9 +387,9 @@
             ],
             "map_locations": [
               {
-                "map": "map",
+                "map": "past",
                 "shape": "trapezoid",
-                "x": 4281,
+                "x": 1941,
                 "y": 425
               }
             ]
@@ -444,8 +444,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 4331,
+                "map": "past",
+                "x": 1991,
                 "y": 425
               }
             ]
@@ -477,8 +477,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3675,
+                "map": "past",
+                "x": 1335,
                 "y": 358
               }
             ]
@@ -510,8 +510,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 4043,
+                "map": "past",
+                "x": 1703,
                 "y": 103
               }
             ]
@@ -548,8 +548,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3400,
+                "map": "past",
+                "x": 1060,
                 "y": 928,
                 "size": 70
               }
@@ -568,8 +568,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3330,
+                "map": "past",
+                "x": 990,
                 "y": 928
               }
             ]
@@ -587,8 +587,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3420,
+                "map": "past",
+                "x": 1080,
                 "y": 1064
               }
             ]
@@ -614,8 +614,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3379,
+                "map": "past",
+                "x": 1039,
                 "y": 12
               }
             ]
@@ -633,8 +633,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3180,
+                "map": "past",
+                "x": 840,
                 "y": 595
               }
             ]
@@ -780,8 +780,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3240,
+                "map": "past",
+                "x": 900,
                 "y": 595
               }
             ]
@@ -810,8 +810,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3700,
+                "map": "past",
+                "x": 1360,
                 "y": 690
               }
             ]
@@ -829,8 +829,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3660,
+                "map": "past",
+                "x": 1320,
                 "y": 690
               }
             ]
@@ -848,8 +848,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3563,
+                "map": "past",
+                "x": 1223,
                 "y": 690
               }
             ]
@@ -867,8 +867,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3171,
+                "map": "past",
+                "x": 831,
                 "y": 704
               }
             ]
@@ -886,8 +886,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3419,
+                "map": "past",
+                "x": 1079,
                 "y": 670
               }
             ]
@@ -906,8 +906,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3236,
+                "map": "past",
+                "x": 896,
                 "y": 320
               }
             ]
@@ -925,8 +925,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3522,
+                "map": "past",
+                "x": 1182,
                 "y": 1308
               }
             ]
@@ -944,8 +944,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 2955,
+                "map": "past",
+                "x": 615,
                 "y": 582
               }
             ]
@@ -968,9 +968,9 @@
             ],
             "map_locations": [
               {
-                "map": "map",
+                "map": "past",
                 "shape": "trapezoid",
-                "x": 3650,
+                "x": 1310,
                 "y": 457
               }
             ]
@@ -993,8 +993,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3700,
+                "map": "past",
+                "x": 1360,
                 "y": 457
               }
             ]
@@ -1013,9 +1013,9 @@
             ],
             "map_locations": [
               {
-                "map": "map",
+                "map": "past",
                 "shape": "diamond",
-                "x": 3572,
+                "x": 1232,
                 "y": 1308
               }
             ]
@@ -1047,8 +1047,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3163,
+                "map": "past",
+                "x": 823,
                 "y": 1206
               }
             ]
@@ -1080,8 +1080,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3223,
+                "map": "past",
+                "x": 883,
                 "y": 679
               }
             ]
@@ -1104,8 +1104,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3551,
+                "map": "past",
+                "x": 1211,
                 "y": 1620
               }
             ]
@@ -1123,8 +1123,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3443,
+                "map": "past",
+                "x": 1103,
                 "y": 1581
               }
             ]
@@ -1148,8 +1148,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 4475,
+                "map": "past",
+                "x": 2135,
                 "y": 835
               }
             ]
@@ -1171,9 +1171,9 @@
             ],
             "map_locations": [
               {
-                "map": "map",
+                "map": "past",
                 "shape": "trapezoid",
-                "x": 4289,
+                "x": 1949,
                 "y": 662
               }
             ]
@@ -1252,8 +1252,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 4339,
+                "map": "past",
+                "x": 1999,
                 "y": 662
               }
             ]
@@ -1272,8 +1272,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3980,
+                "map": "past",
+                "x": 1640,
                 "y": 687
               }
             ]
@@ -1296,8 +1296,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 2731,
+                "map": "past",
+                "x": 391,
                 "y": 919
               }
             ]
@@ -1315,8 +1315,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 2539,
+                "map": "past",
+                "x": 199,
                 "y": 936
               }
             ]
@@ -1334,8 +1334,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 2700,
+                "map": "past",
+                "x": 360,
                 "y": 990
               }
             ]
@@ -1353,8 +1353,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 2524,
+                "map": "past",
+                "x": 184,
                 "y": 1176
               }
             ]
@@ -1373,8 +1373,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 2420,
+                "map": "past",
+                "x": 80,
                 "y": 1072
               }
             ]
@@ -1393,8 +1393,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 2396,
+                "map": "past",
+                "x": 56,
                 "y": 958
               }
             ]
@@ -1413,8 +1413,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 2523,
+                "map": "past",
+                "x": 183,
                 "y": 1080
               }
             ]
@@ -1433,8 +1433,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 2357,
+                "map": "past",
+                "x": 17,
                 "y": 1216
               }
             ]
@@ -1457,9 +1457,9 @@
             ],
             "map_locations": [
               {
-                "map": "map",
+                "map": "past",
                 "shape": "trapezoid",
-                "x": 2858,
+                "x": 518,
                 "y": 1052
               }
             ]
@@ -1522,8 +1522,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 2908,
+                "map": "past",
+                "x": 568,
                 "y": 1052
               }
             ]
@@ -1546,8 +1546,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3187,
+                "map": "past",
+                "x": 847,
                 "y": 1308
               }
             ]
@@ -1565,8 +1565,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3202,
+                "map": "past",
+                "x": 862,
                 "y": 1630
               }
             ]
@@ -1584,9 +1584,9 @@
             ],
             "map_locations": [
               {
-                "map": "map",
+                "map": "past",
                 "shape": "diamond",
-                "x": 2581,
+                "x": 241,
                 "y": 1386
               }
             ]
@@ -1605,9 +1605,9 @@
             ],
             "map_locations": [
               {
-                "map": "map",
+                "map": "past",
                 "shape": "diamond",
-                "x": 2924,
+                "x": 584,
                 "y": 1335
               }
             ]
@@ -1639,8 +1639,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 2363,
+                "map": "past",
+                "x": 23,
                 "y": 1718
               }
             ]
@@ -1663,8 +1663,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3915,
+                "map": "past",
+                "x": 1575,
                 "y": 1735
               }
             ]
@@ -1689,8 +1689,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 4124,
+                "map": "past",
+                "x": 1784,
                 "y": 1412
               }
             ]
@@ -1708,8 +1708,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 4444,
+                "map": "past",
+                "x": 2104,
                 "y": 1559
               }
             ]
@@ -1727,8 +1727,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 4492,
+                "map": "past",
+                "x": 2152,
                 "y": 1592
               }
             ]
@@ -1746,8 +1746,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 4444,
+                "map": "past",
+                "x": 2104,
                 "y": 1431
               }
             ]
@@ -1772,8 +1772,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 4507,
+                "map": "past",
+                "x": 2167,
                 "y": 1300
               }
             ]
@@ -1791,8 +1791,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 4443,
+                "map": "past",
+                "x": 2103,
                 "y": 1719
               }
             ]
@@ -1810,9 +1810,9 @@
             ],
             "map_locations": [
               {
-                "map": "map",
+                "map": "past",
                 "shape": "diamond",
-                "x": 4347,
+                "x": 2007,
                 "y": 1334
               }
             ]
@@ -1830,8 +1830,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 4172,
+                "map": "past",
+                "x": 1832,
                 "y": 1591
               }
             ]
@@ -1849,8 +1849,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 4218,
+                "map": "past",
+                "x": 1878,
                 "y": 1478
               }
             ]
@@ -1868,8 +1868,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 4235,
+                "map": "past",
+                "x": 1895,
                 "y": 1550
               }
             ]
@@ -1887,8 +1887,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3964,
+                "map": "past",
+                "x": 1624,
                 "y": 1688
               }
             ]
@@ -1920,8 +1920,8 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 3995,
+                "map": "past",
+                "x": 1655,
                 "y": 1606
               }
             ]

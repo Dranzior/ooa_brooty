@@ -1,16 +1,22 @@
 [
   {
-    "name": "map",
+    "name": "present",
     "location_size": 37,
     "location_border_thickness": 9,
-    "img": "images/maps/worldmap.png"
+    "img": "images/maps/present.png"
+  },
+  {
+    "name": "past",
+    "location_size": 37,
+    "location_border_thickness": 9,
+    "img": "images/maps/past.png"
   },
   {
     "name": "animal_regions",
     "location_size": 20,
     "location_border_thickness": 4,
     "img": "images/maps/animal_regions.png"
-  },  
+  },
   {
     "name": "animal_ricky",
     "location_size": 20,
@@ -52,49 +58,73 @@
     "location_size": 32,
     "location_border_thickness": 6,
     "img": "images/maps/d1.png"
-  },  
+  },
   {
     "name": "d2",
     "location_size": 32,
     "location_border_thickness": 6,
     "img": "images/maps/d2.png"
-  },  
+  },
+  {
+    "name": "d2_1",
+    "location_size": 32,
+    "location_border_thickness": 6,
+    "img": "images/maps/d2/1F.png"
+  },
+  {
+    "name": "d2_b1",
+    "location_size": 32,
+    "location_border_thickness": 6,
+    "img": "images/maps/d2/B1F.png"
+  },
   {
     "name": "d3",
     "location_size": 26,
     "location_border_thickness": 5,
     "img": "images/maps/d3.png"
-  },  
+  },
+  {
+    "name": "d3_1",
+    "location_size": 26,
+    "location_border_thickness": 5,
+    "img": "images/maps/d3/1F.png"
+  },
+  {
+    "name": "d3_b1",
+    "location_size": 26,
+    "location_border_thickness": 5,
+    "img": "images/maps/d3/B1F.png"
+  },
   {
     "name": "d4",
     "location_size": 32,
     "location_border_thickness": 6,
     "img": "images/maps/d4.png"
-  },  
+  },
   {
     "name": "d5",
     "location_size": 32,
     "location_border_thickness": 6,
     "img": "images/maps/d5.png"
-  },  
+  },
   {
     "name": "d6_1",
     "location_size": 32,
     "location_border_thickness": 6,
     "img": "images/maps/d6_1.png"
-  },  
+  },
   {
     "name": "d6_2",
     "location_size": 32,
     "location_border_thickness": 6,
     "img": "images/maps/d6_2.png"
-  },  
+  },
   {
     "name": "d7",
     "location_size": 32,
     "location_border_thickness": 6,
     "img": "images/maps/d7.png"
-  },  
+  },
   {
     "name": "d8",
     "location_size": 32,
