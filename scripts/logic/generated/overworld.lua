@@ -652,5 +652,8 @@ crescent_present_east:connect_one_way_entrance(wild_tokay_secret,function() retu
 symmetry_past:connect_one_way_entrance(symmetry_city_secret,function() return Has("Tuni Nut") end)
 lynna_city:connect_one_way_entrance(princess_zelda_rescue,function() return ooa_has_feather() end)
 piratian_captain:connect_one_way_entrance(sea_of_storms_present,function() return ooa_can_go_back_to_present() end)
+sea_of_storms_present:connect_one_way_entrance(sea_of_storms_spot,function() return ooa_has_shovel() end)
 inside_vasus_shop:connect_one_way_entrance(vasus_rupee_ring_gift,function() return ooa_has_rupees_for_vasu() end)
-inside_vasus_shop:connect_one_way_entrance(vasus_slayers_ring_gift,function() return ooa_can_kill_normal_enemy() end)
+inside_vasus_shop:connect_one_way_entrance(vasus_slayers_ring_gift,function() return All(
+                ooa_can_kill_normal_enemy())
+             end)
