@@ -1,16 +1,10 @@
 local function updateAnimalCompanion(slot_data)
     if slot_data["animal_companion"] then
-        if slot_data["animal_companion"] == "Ricky" then
-            Tracker:FindObjectForCode("companions").CurrentStage = 1
-        elseif slot_data["animal_companion"] == "Dimitri" then
-            Tracker:FindObjectForCode("companions").CurrentStage = 2
-        elseif slot_data["animal_companion"] == "Moosh" then
-            Tracker:FindObjectForCode("companions").CurrentStage = 3
-        end
+        Tracker:FindObjectForCode("companions").CurrentStage = slot_data["animal_companion"] +1
     end
 end
 
-local function udpateLogic(slot_data)
+local function updateLogic(slot_data)
     if slot_data["logic_difficulty"] then
         if slot_data["logic_difficulty"] == 0 then
             Tracker:FindObjectForCode("logic").CurrentStage = 0
@@ -71,16 +65,51 @@ local function updateLinkedHeroCave(slot_data)
     end
 end
 
-function UpdateSettings(slot_data)
-    updateAnimalCompanion(slot_data)
-    udpateLogic(slot_data)
-    updateDungeonEr(slot_data)
-    updateEssence(slot_data)
-    updateAdvanceShop(slot_data)
-    updateSlate(slot_data)
-    updateMasterKey(slot_data)
-    updateLynnaGardener(slot_data)
-    updateLinkedHeroCave(slot_data)
+local function updateSecretLocations(slot_data)
+    if slot_data["secret_locations"] then
+        Tracker:FindObjectForCode("secret_locations").CurrentStage = slot_data["secret_locations"]
+    end
 end
 
+local function updateVasuMadness(slot_data)
+    if slot_data["vasu_ring_checks_requirement"] then
+        local vasu_slot_data = slot_data["vasu_ring_checks_requirement"]
 
+        if vasu_slot_data["disable_entirely"] then
+            Tracker:FindObjectForCode("vasu_ring_check").CurrentStage = 0
+        else
+            Tracker:FindObjectForCode("vasu_ring_check").CurrentStage = 1
+        end
+        Tracker:FindObjectForCode("vasu_rupee_ring_check").AcquiredCount = vasu_slot_data
+            ["rupee_requirement_for_rupee_ring_check"]
+    end
+end
+
+local function updateGashaSeeds(slot_data)
+    if slot_data["deterministic_gasha_locations"] then
+        Tracker:FindObjectForCode("deterministic_gasha_locations").CurrentStage = slot_data
+            ["deterministic_gasha_locations"]
+    end
+end
+
+local function updateGoal(slot_data)
+    if slot_data["goal"] then
+        Tracker:FindObjectForCode("goal").CurrentStage = slot_data["goal"]
+    end
+end
+
+function UpdateSettings(slot_data)
+    updateAnimalCompanion(slot_data["options"])
+    updateLogic(slot_data["options"])
+    updateDungeonEr(slot_data["options"])
+    updateEssence(slot_data["options"])
+    updateAdvanceShop(slot_data["options"])
+    updateSlate(slot_data["options"])
+    updateMasterKey(slot_data["options"])
+    updateLynnaGardener(slot_data["options"])
+    updateLinkedHeroCave(slot_data["options"])
+    updateSecretLocations(slot_data["options"])
+    updateVasuMadness(slot_data["options"])
+    updateGashaSeeds(slot_data["options"])
+    updateGoal(slot_data["options"])
+end

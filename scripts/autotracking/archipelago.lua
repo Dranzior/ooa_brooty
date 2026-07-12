@@ -3,6 +3,7 @@ ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/automation/Hint.lua")
 ScriptHost:LoadScript("scripts/autotracking/automation/ManualLocation.lua")
 ScriptHost:LoadScript("scripts/autotracking/automation/Settings.lua")
+ScriptHost:LoadScript("scripts/autotracking/automation/MapTracking.lua")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
@@ -287,12 +288,12 @@ function onScout(location_id, location_name, item_id, item_name, item_player)
     end
 end
 
--- called when a bounce message is received 
+-- called when a bounce message is received
 function onBounce(json)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onBounce: %s", dump_table(json)))
     end
-    -- your code goes here
+    Map.process(json)
 end
 
 -- handler function for the custom lua item that stores manually marked off locations
@@ -325,6 +326,6 @@ Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
 Archipelago:AddSetReplyHandler("set reply handler", onSetReply)
 -- Archipelago:AddScoutHandler("scout handler", onScout)
--- Archipelago:AddBouncedHandler("bounce handler", onBounce)
+Archipelago:AddBouncedHandler("bounce handler", onBounce)
 Archipelago:AddRetrievedHandler("retrieved", retrieved)
 ScriptHost:AddOnLocationSectionChangedHandler("location_section_change_handler", LocationHandler)

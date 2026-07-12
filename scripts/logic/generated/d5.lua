@@ -1,4 +1,4 @@
-enter_d5:connect_one_way_entrance(d5_switch_A,function() return All(
+inside_d5:connect_one_way_entrance(d5_switch_A,function() return All(
             ooa_can_kill_normal_enemy(),
             Any(
                 ooa_can_trigger_switch(),
@@ -56,6 +56,7 @@ d5_switch_A:connect_one_way_entrance(d5_two_statue_puzzle,function() return All(
                 ooa_has_seedshooter(),
                 ooa_has_boomerang(),
                 All(
+                    ooa_option_medium_logic(),
                     ooa_can_jump_2_wide_pit(false),
                     ooa_has_sword(false)),
                 All(
@@ -72,11 +73,12 @@ d5_switch_A:connect_one_way_entrance(d5_boss,function() return All(
             ooa_has_boss_key(5),
             ooa_has_cane(),
             ooa_has_sword()) end)
-d5_switch_A:connect_one_way_entrance(d5_crossroads,function() return All(
-            ooa_can_kill_normal_enemy(false),
+d5_switch_A:connect_one_way_entrance(d5_miniboss,function() return All(
             ooa_can_jump_2_wide_pit(false),
             ooa_has_bracelet(),
-            ooa_has_small_keys(5, 2),
+            ooa_has_small_keys(5, 2)) end)
+d5_miniboss:connect_one_way_entrance(d5_crossroads,function() return All(
+            ooa_can_kill_normal_enemy(false),
             Any(
                 ooa_has_cane(),
                 All(

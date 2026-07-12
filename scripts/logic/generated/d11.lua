@@ -1,4 +1,4 @@
-enter_d11:connect_one_way_entrance(d11_pots_puzzle_1,function() return All(
+inside_d11:connect_one_way_entrance(d11_pots_puzzle_1,function() return All(
 
             ooa_has_bracelet(),
             ooa_can_use_ember_seeds(true),
@@ -8,7 +8,10 @@ enter_d11:connect_one_way_entrance(d11_pots_puzzle_1,function() return All(
         ) end)
 d11_pots_puzzle_1:connect_one_way_entrance(d11_statue_1_puzzle,function() return All(
             ooa_has_small_keys(11, 1),
-            ooa_has_bombs(),
+            Any(
+                ooa_has_bombs(),
+                ooa_has_bombchus()
+            ),
             ooa_can_jump_2_wide_pit(false)
         ) end)
 d11_statue_1_puzzle:connect_one_way_entrance(d11_bridge_puzzle_1,function() return All(

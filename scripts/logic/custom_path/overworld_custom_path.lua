@@ -16,16 +16,17 @@ nuun:connect_one_way(Carpenter, function()
     )
 end)
 
+-- Entrance
+outside_vasus_shop:connect_one_way(inside_vasus_shop)
+
 -- Overworld scouting
 lynna_village:connect_one_way_entrance(black_tower_heartpiece, function() return AccessibilityLevel.Inspect end)
 ridge_west_present:connect_one_way_entrance(ridge_west_heartpiece, function() return AccessibilityLevel.Inspect end)
-
--- Missing from AP
-ridge_west_past_base:connect_one_way_entrance(ridge_west_present,function() return All(ooa_can_go_back_to_present(), AccessibilityLevel.SequenceBreak) end)
+crescent_past_east:connect_one_way_entrance(tokay_chicken_hut, function() return AccessibilityLevel.Inspect end)
 
 -- Insert Toggles into logic
 Raft_toggle = OoALocation.New("Raft_toggle")
-raftons_raft:insertIntermediateAfterCheck(crescent_past_west, Raft_toggle, function() return Has("raft_toggle") end)
+raftons_raft:insertIntermediateAfterCheck(crescent_past_waters, Raft_toggle, function() return Has("raft_toggle") end)
 
 MakuSeed_toggle = OoALocation.New("MakuSeed_toggle")
 maku_seed:insertIntermediateAfterCheck(veran_beaten, MakuSeed_toggle, function() return Has("makuseed_toggle") end)
@@ -39,7 +40,7 @@ zora_village:insertIntermediateAfterCheck(zora_seas_chest, CureFairy_toggle,
     function() return Has("curefairy_toggle") end)
 
 KingZoraPermission_toggle = OoALocation.New("KingZoraPermission_toggle")
-zora_king_gift:insertIntermediateAfterCheck(d7_entrance, KingZoraPermission_toggle,
+zora_king_gift:insertIntermediateAfterCheck(outside_d7, KingZoraPermission_toggle,
     function() return Has("enterjabu_toggle") and Has("curefairy_toggle") end)
 
 TurningSeedling_toggle = OoALocation.New("TurningSeedling_toggle")

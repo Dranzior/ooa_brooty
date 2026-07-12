@@ -62,4 +62,6 @@ Tracker:AddLayouts("layouts/companionMap/default.json")
 
 -- AutoTracking for Poptracker
 ScriptHost:LoadScript("scripts/autotracking.lua")
+-- Gashas Tree
+ScriptHost:LoadScript("scripts/logic/gashas.lua")
 

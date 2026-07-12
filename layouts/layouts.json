@@ -24,15 +24,6 @@
             },
             {
               "type": "group",
-              "header": "Trade",
-              "dock": "left",
-              "content": {
-                "type": "layout",
-                "key": "trade_grid"
-              }
-            },
-            {
-              "type": "group",
               "header": "Dungeons/Entrance Tracker",
               "dock": "left",
               "content": {

@@ -1,113 +1,131 @@
 ﻿{
   "dungeon_broadcast": {
-            "type": "array",
-            "orientation": "vertical",
-            "content": [
-              {
-                "type": "itemgrid",
-                "h_alignment": "center",
-                "v_alignment": "center",
-                "margin": "15,0,0,0",
-                "item_margin": "5,0",
-                "item_size": 45,
-                "rows": [
-                  [
-                    "d1",
-                    "d2",
-                    "d3",
-                    "d4"
-                  ]
-                ]
-              },
-              {
-                "type": "array",
-                "orientation": "horizontal",
-                "margin": "23,0,0,0",
-                "h_alignment": "stretch",
-                "content": [
-                  {
-                    "type": "layout",
-                    "key": "key_layouts_d1"
-                  },
-                  {
-                    "type": "canvas",
-                    "width": 5
-                  },
-                  {
-                    "type": "layout",
-                    "key": "key_layouts_d2"
-                  },
-                  {
-                    "type": "canvas",
-                    "width": 5
-                  },
-                  {
-                    "type": "layout",
-                    "key": "key_layouts_d3"
-                  },
-                  {
-                    "type": "canvas",
-                    "width": 5
-                  },
-                  {
-                    "type": "layout",
-                    "key": "key_layouts_d4"
-                  }
-                ]
-              },
-              {
-                "type": "itemgrid",
-                "h_alignment": "center",
-                "v_alignment": "center",
-                "margin": "40,2,0,0",
-                "item_margin": "5,0",
-                "item_size": 45,
-                "rows": [
-                  [
-                    "d5",
-                    "d6",
-                    "d7",
-                    "d8"
-                  ]
-                ]
-              },
-              {
-                "type": "array",
-                "orientation": "horizontal",
-                "margin": "48,0,0,0",
-                "h_alignment": "stretch",
-                "content": [
-                  {
-                    "type": "layout",
-                    "key": "key_layouts_d5"
-                  },
-                  {
-                    "type": "canvas",
-                    "width": 5
-                  },
-                  {
-                    "type": "layout",
-                    "key": "key_layouts_d6"
-                  },
-                  {
-                    "type": "canvas",
-                    "width": 5
-                  },
-                  {
-                    "type": "layout",
-                    "key": "key_layouts_d7"
-                  },
-                  {
-                    "type": "canvas",
-                    "width": 5
-                  },
-                  {
-                    "type": "layout",
-                    "key": "key_layouts_d8"
-                  }
-                ]
-              }
-            ]
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "margin": "15,0,0,0",
+        "item_margin": "5,0",
+        "item_size": 45,
+        "rows": [
+          [
+            "mrer",
+            "d1",
+            "d2",
+            "d3",
+            "d4"
+          ]
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "23,0,0,0",
+        "h_alignment": "stretch",
+        "content": [
+          {
+            "type": "layout",
+            "key": "key_layouts_d0"
+          },
+          {
+            "type": "canvas",
+            "width": 5
+          },
+          {
+            "type": "layout",
+            "key": "key_layouts_d1"
+          },
+          {
+            "type": "canvas",
+            "width": 5
+          },
+          {
+            "type": "layout",
+            "key": "key_layouts_d2"
+          },
+          {
+            "type": "canvas",
+            "width": 5
+          },
+          {
+            "type": "layout",
+            "key": "key_layouts_d3"
+          },
+          {
+            "type": "canvas",
+            "width": 5
+          },
+          {
+            "type": "layout",
+            "key": "key_layouts_d4"
+          }
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "margin": "40,2,0,0",
+        "item_margin": "5,0",
+        "item_size": 45,
+        "rows": [
+          [
+            "d11er",
+            "d5",
+            "d6",
+            "d7",
+            "d8"
+          ]
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "48,0,0,0",
+        "h_alignment": "stretch",
+        "content": [
+          {
+            "type": "layout",
+            "key": "key_layouts_d11"
+          },
+          {
+            "type": "canvas",
+            "width": 5
+          },
+          {
+            "type": "layout",
+            "key": "key_layouts_d5"
+          },
+          {
+            "type": "canvas",
+            "width": 5
+          },
+          {
+            "type": "layout",
+            "key": "key_layouts_d6"
+          },
+          {
+            "type": "canvas",
+            "width": 5
+          },
+          {
+            "type": "layout",
+            "key": "key_layouts_d7"
+          },
+          {
+            "type": "canvas",
+            "width": 5
+          },
+          {
+            "type": "layout",
+            "key": "key_layouts_d8"
+          }
+        ]
+      }
+    ]
   },
   "tracker_broadcast": {
     "type": "array",
@@ -122,10 +140,6 @@
           {
             "type": "layout",
             "key": "item_grid"
-          },
-          {
-            "type": "layout",
-            "key": "trade_grid"
           }
         ]
       },
@@ -134,15 +148,8 @@
         "orientation": "horizontal",
         "content": [
           {
-            "type": "layout", "key": "dungeon_broadcast"
-          },
-          {
-            "type": "itemgrid", "rows": [
-              [
-                "mrer",
-                "pathkey"
-              ]
-            ]
+            "type": "layout",
+            "key": "dungeon_broadcast"
           }
         ]
       }

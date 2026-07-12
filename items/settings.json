@@ -248,5 +248,210 @@
         "img": "images/settings/heroscaveon.png"
       }
     ]
+  },
+  {
+    "name": "Secret Locations Label",
+    "type": "static",
+    "img": "images/settings/secretlocations.png",
+    "codes": "secret_locations_label"
+  },
+  {
+    "name": "Secret Locations",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "secret_locations, secret_locations_off",
+        "inherit_codes": false,
+        "img": "images/settings/secretlocationsoff.png"
+      },
+      {
+        "codes": "secret_locations, secret_locations_on",
+        "inherit_codes": false,
+        "img": "images/settings/secretlocationson.png"
+      }
+    ]
+  },
+  {
+    "name": "Vasu's Ring Check Label",
+    "type": "static",
+    "img": "images/settings/vasumadness.png",
+    "codes": "vasu_ring_check_label"
+  },
+  {
+    "name": "Vasu's Ring Check",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "vasu_ring_check, vasu_ring_check_off",
+        "inherit_codes": false,
+        "img": "images/settings/vasumadnessoff.png"
+      },
+      {
+        "codes": "vasu_ring_check, vasu_ring_check_on",
+        "inherit_codes": false,
+        "img": "images/settings/vasumadnesson.png"
+      }
+    ]
+  },
+  {
+    "name": "Vasu's Rupee Ring Check Label",
+    "type": "static",
+    "img": "images/settings/vasumadness.png",
+    "codes": "vasu_rupee_ring_check_label"
+  },
+  {
+    "name": "Vasu's Rupee Ring Check",
+    "type": "consumable",
+    "codes": "vasu_rupee_ring_check",
+    "initial_quantity": 1000,
+    "increment": 100,
+    "decrement": 100,
+    "img": "images/items/Rupee (Giant Red).png"
+  },
+  {
+    "name": "Gasha Seeds Label",
+    "type": "static",
+    "img": "images/settings/gasha.png",
+    "codes": "gasha_label"
+  },
+  {
+    "name": "Gasha Seeds",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/settings/0gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq0",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/1gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq1",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/2gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq2",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/3gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq3",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/4gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq4",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/5gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq5",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/6gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq6",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/7gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq7",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/8gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq8",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/9gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq9",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/10gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq10",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/11gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq11",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/12gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq12",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/13gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq13",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/14gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq14",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/15gasha.png",
+        "codes": "deterministic_gasha_locations, gashareq15",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Goal Label",
+    "type": "static",
+    "img": "images/settings/goal.png",
+    "codes": "goal_label"
+  },
+  {
+    "name": "Goal",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "goal, goal_veran",
+        "inherit_codes": false,
+        "img": "images/settings/goal_veran.png"
+      },
+      {
+        "codes": "goal, goal_ganon",
+        "inherit_codes": false,
+        "img": "images/settings/goal_ganon.png"
+      }
+    ]
+  },
+  {
+    "name": "Auto Tab Label",
+    "type": "static",
+    "img": "images/settings/autotab.png",
+    "codes": "autotab_label"
+  },
+  {
+    "name": "Auto Tab",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "autotab, autotab_off",
+        "inherit_codes": false,
+        "img": "images/settings/autotaboff.png"
+      },
+      {
+        "codes": "autotab, autotab_on",
+        "inherit_codes": false,
+        "img": "images/settings/autotabon.png"
+      }
+    ]
   }
 ]

@@ -14,7 +14,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Maku Path: Key Chest",
                 "item_count": 1
               }
             ],
@@ -33,7 +33,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Maku Path: Basement",
                 "item_count": 1
               }
             ],
@@ -52,7 +52,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Maku Path: Heart Piece",
                 "item_count": 1
               }
             ],
@@ -78,7 +78,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: East Terrace",
                 "item_count": 1
               }
             ],
@@ -97,7 +97,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: Ghini Drop",
                 "item_count": 1
               }
             ],
@@ -110,13 +110,32 @@
             ]
           },
           {
+            "name": "Miniboss",
+            "access_rules": [
+              "^$CanReach|d1_miniboss"
+            ],
+            "sections": [
+              {
+                "name": "Spirit's Grave: Miniboss",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d1",
+                "x": 360,
+                "y": 612
+              }
+            ]
+          },
+          {
             "name": "Crossroad",
             "access_rules": [
               "^$CanReach|d1_crossroad"
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: Crossroad",
                 "item_count": 1
               }
             ],
@@ -135,7 +154,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: Crystal Room",
                 "item_count": 1
               }
             ],
@@ -154,7 +173,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: Wide Room",
                 "item_count": 1
               }
             ],
@@ -173,7 +192,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: Two-Buttons Chest",
                 "item_count": 1
               }
             ],
@@ -192,7 +211,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: One-Button Chest",
                 "item_count": 1
               }
             ],
@@ -211,7 +230,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: Pot Chest",
                 "item_count": 1
               }
             ],
@@ -230,7 +249,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: West Terrace",
                 "item_count": 1
               }
             ],
@@ -249,7 +268,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Spirit's Grave: Basement",
                 "item_count": 1
               }
             ],
@@ -273,7 +292,7 @@
             ],
             "sections": [
               {
-                "name": "Boss",
+                "name": "Spirit's Grave: Boss",
                 "item_count": 1
               }
             ],
@@ -292,7 +311,7 @@
             ],
             "sections": [
               {
-                "name": "Essence",
+                "name": "Spirit's Grave: Essence",
                 "hosted_item": "d1"
               }
             ],
@@ -318,7 +337,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (1F): Bombed Terrace",
                 "item_count": 1
               }
             ],
@@ -337,7 +356,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (1F): Moblin Drop",
                 "item_count": 1
               }
             ],
@@ -356,7 +375,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (1F): Rope Room",
                 "item_count": 1
               }
             ],
@@ -375,7 +394,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (1F): Ladder Chest",
                 "item_count": 1
               }
             ],
@@ -394,7 +413,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (B1F): Thwomp Tunnel",
                 "item_count": 1
               }
             ],
@@ -413,7 +432,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (B1F): Thwomp Shelf",
                 "item_count": 1
               }
             ],
@@ -432,7 +451,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (B1F): Basement Chest",
                 "item_count": 1
               }
             ],
@@ -451,7 +470,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (B1F): Basement Drop",
                 "item_count": 1
               }
             ],
@@ -470,7 +489,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (1F): Moblin Platform",
                 "item_count": 1
               }
             ],
@@ -489,7 +508,7 @@
             ],
             "sections": [
               {
-                "name": ""
+                "name": "Wing Dungeon (1F): Statue Puzzle"
               }
             ],
             "map_locations": [
@@ -501,13 +520,31 @@
             ]
           },
           {
+            "name": "(1F): Miniboss",
+            "access_rules": [
+              "^$CanReach|d2_miniboss"
+            ],
+            "sections": [
+              {
+                "name": "Wing Dungeon (1F): Miniboss"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d2",
+                "x": 359,
+                "y": 88
+              }
+            ]
+          },
+          {
             "name": "(1F): Color Room",
             "access_rules": [
               "^$CanReach|d2_color_room"
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Wing Dungeon (1F): Color Room",
                 "item_count": 1
               }
             ],
@@ -526,7 +563,7 @@
             ],
             "sections": [
               {
-                "name": "(1F): Boss",
+                "name": "Wing Dungeon (1F): Boss",
                 "item_count": 1
               },
               {
@@ -554,7 +591,7 @@
             ],
             "sections": [
               {
-                "name": "Essence",
+                "name": "Wing Dungeon: Essence",
                 "hosted_item": "d2"
               }
             ],
@@ -580,7 +617,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (1F): Pols Voice Chest",
                 "item_count": 1
               }
             ],
@@ -599,7 +636,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (1F): Statue Drop",
                 "item_count": 1
               }
             ],
@@ -618,7 +655,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (B1F): Conveyor Belt Room",
                 "item_count": 1
               }
             ],
@@ -637,7 +674,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (1F): Six Blocs Drop",
                 "item_count": 1
               }
             ],
@@ -656,7 +693,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (1F): Armos Drop",
                 "item_count": 1
               }
             ],
@@ -675,7 +712,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (1F): Bush Beetle Room",
                 "item_count": 1
               }
             ],
@@ -694,7 +731,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (1F): Mimic Room",
                 "item_count": 1
               }
             ],
@@ -713,7 +750,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (1F): Crossroad",
                 "item_count": 1
               }
             ],
@@ -732,7 +769,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (B1F): Torch Chest",
                 "item_count": 1
               }
             ],
@@ -751,7 +788,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (B1F): Moldorm Drop",
                 "item_count": 1
               }
             ],
@@ -764,13 +801,32 @@
             ]
           },
           {
+            "name": "(B1F): Miniboss",
+            "access_rules": [
+              "^$CanReach|d3_miniboss"
+            ],
+            "sections": [
+              {
+                "name": "Moonlit Grotto (B1F): Miniboss",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d3",
+                "x": 2039,
+                "y": 268
+              }
+            ]
+          },
+          {
             "name": "(B1F): Bridge Chest",
             "access_rules": [
               "^$CanReach|d3_bridge_chest"
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (1F): Bridge Chest",
                 "item_count": 1
               }
             ],
@@ -789,7 +845,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Moonlit Grotto (B1F): East",
                 "item_count": 1
               }
             ],
@@ -808,7 +864,7 @@
             ],
             "sections": [
               {
-                "name": "(B1F): Boss",
+                "name": "Moonlit Grotto (B1F): Boss",
                 "item_count": 1
               }
             ],
@@ -827,7 +883,7 @@
             ],
             "sections": [
               {
-                "name": "Essence",
+                "name": "Moonlit Grotto: Essence",
                 "hosted_item": "d3"
               }
             ],
@@ -872,7 +928,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Skull Dungeon (1F): First Chest",
                 "item_count": 1
               }
             ],
@@ -891,7 +947,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Skull Dungeon (1F): Cube Chest",
                 "item_count": 1
               }
             ],
@@ -910,7 +966,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Skull Dungeon (1F): Minecart Chest",
                 "item_count": 1
               }
             ],
@@ -929,7 +985,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Skull Dungeon (1F): First Crystal Switch",
                 "item_count": 1
               }
             ],
@@ -948,7 +1004,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Skull Dungeon (1F): Second Crystal Switch",
                 "item_count": 1
               }
             ],
@@ -967,7 +1023,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Skull Dungeon (1F): Color Tile Drop",
                 "item_count": 1
               }
             ],
@@ -986,7 +1042,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Skull Dungeon (1F): Small Floor Puzzle",
                 "item_count": 1
               }
             ],
@@ -1005,7 +1061,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Skull Dungeon (B1F): Large Floor Puzzle",
                 "item_count": 1
               }
             ],
@@ -1024,7 +1080,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Skull Dungeon (1F): Lava Pot Chest",
                 "item_count": 1
               }
             ],
@@ -1037,13 +1093,32 @@
             ]
           },
           {
+            "name": "(1F): Miniboss",
+            "access_rules": [
+              "^$CanReach|d4_miniboss"
+            ],
+            "sections": [
+              {
+                "name": "Skull Dungeon (1F): Miniboss",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d4",
+                "x": 601,
+                "y": 615
+              }
+            ]
+          },
+          {
             "name": "Eyesoar",
             "access_rules": [
               "^$CanReach|d4_boss"
             ],
             "sections": [
               {
-                "name": "(B1F): Boss",
+                "name": "Skull Dungeon (B1F): Boss",
                 "item_count": 1
               }
             ],
@@ -1062,7 +1137,7 @@
             ],
             "sections": [
               {
-                "name": "Essence",
+                "name": "Skull Dungeon: Essence",
                 "hosted_item": "d4"
               }
             ],
@@ -1088,7 +1163,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (B1F): Like-Like Chest",
                 "item_count": 1
               }
             ],
@@ -1107,7 +1182,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (1F): Eyes Chest",
                 "item_count": 1
               }
             ],
@@ -1126,7 +1201,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (B1F): Dark Room",
                 "item_count": 1
               }
             ],
@@ -1145,7 +1220,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (B1F): Two-Statue Puzzle",
                 "item_count": 1
               }
             ],
@@ -1164,7 +1239,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (1F): Blue Peg Chest",
                 "item_count": 1
               }
             ],
@@ -1183,7 +1258,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (1F): Diamond Chest",
                 "item_count": 1
               }
             ],
@@ -1196,13 +1271,32 @@
             ]
           },
           {
+            "name": "(1F): Miniboss",
+            "access_rules": [
+              "^$CanReach|d5_miniboss"
+            ],
+            "sections": [
+              {
+                "name": "Crown Dungeon (1F): Miniboss",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d5",
+                "x": 1558,
+                "y": 617
+              }
+            ]
+          },
+          {
             "name": "(1F): Three-Statue Puzzle",
             "access_rules": [
               "^$CanReach|d5_three_statue_puzzle"
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (1F): Three-Statue Puzzle",
                 "item_count": 1
               }
             ],
@@ -1221,7 +1315,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (B1F): Six-Statue Puzzle",
                 "item_count": 1
               }
             ],
@@ -1240,7 +1334,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (B1F): Red Peg Chest",
                 "item_count": 1
               }
             ],
@@ -1259,7 +1353,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Crown Dungeon (B1F): Owl Puzzle",
                 "item_count": 1
               }
             ],
@@ -1278,7 +1372,7 @@
             ],
             "sections": [
               {
-                "name": "(1F): Boss",
+                "name": "Crown Dungeon (1F): Boss",
                 "item_count": 1
               }
             ],
@@ -1297,7 +1391,7 @@
             ],
             "sections": [
               {
-                "name": "Essence",
+                "name": "Crown Dungeon: Essence",
                 "hosted_item": "d5"
               }
             ],
@@ -1323,7 +1417,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Mermaid's Cave (Past) (1F): Color Room",
                 "item_count": 1
               }
             ],
@@ -1342,7 +1436,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Mermaid's Cave (Past) (1F): Wizzrobe",
                 "item_count": 1
               }
             ],
@@ -1361,7 +1455,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Mermaid's Cave (Past) (1F): Pool Chest",
                 "item_count": 1
               }
             ],
@@ -1380,7 +1474,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Mermaid's Cave (Past) (1F): Stalfos Chest",
                 "item_count": 1
               }
             ],
@@ -1399,7 +1493,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Mermaid's Cave (Past) (B1F): Rope Chest",
                 "item_count": 1
               }
             ],
@@ -1418,7 +1512,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Mermaid's Cave (Past) (B1F): Spear Chest",
                 "item_count": 1
               }
             ],
@@ -1437,7 +1531,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Mermaid's Cave (Past) (B1F): Diamond Chest",
                 "item_count": 1
               }
             ],
@@ -1456,7 +1550,7 @@
             ],
             "sections": [
               {
-                "name": "(1F): Boss",
+                "name": "Mermaid's Cave (Past) (1F): Boss",
                 "item_count": 1
               }
             ],
@@ -1475,7 +1569,7 @@
             ],
             "sections": [
               {
-                "name": "Essence",
+                "name": "Mermaid's Cave: Essence",
                 "hosted_item": "d6"
               }
             ],
@@ -1541,7 +1635,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Mermaid's Cave (Present): Diamond Chest",
                 "item_count": 1
               }
             ],
@@ -1560,7 +1654,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Mermaid's Cave (Present): Rope Chest",
                 "item_count": 1
               }
             ],
@@ -1579,7 +1673,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Mermaid's Cave (Present): Cube Chest",
                 "item_count": 1
               }
             ],
@@ -1598,7 +1692,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Mermaid's Cave (Present): Spinner Chest",
                 "item_count": 1
               }
             ],
@@ -1617,7 +1711,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Mermaid's Cave (Present): Beamos Chest",
                 "item_count": 1
               }
             ],
@@ -1636,7 +1730,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Mermaid's Cave (Present): RNG Chest",
                 "item_count": 1
               }
             ],
@@ -1655,7 +1749,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Mermaid's Cave (Present): Channel Chest",
                 "item_count": 1
               }
             ],
@@ -1668,13 +1762,32 @@
             ]
           },
           {
+            "name": "Miniboss",
+            "access_rules": [
+              "^$CanReach|d6_miniboss"
+            ],
+            "sections": [
+              {
+                "name": "Mermaid's Cave (Present): Miniboss",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d6_2",
+                "x": 599,
+                "y": 82
+              }
+            ]
+          },
+          {
             "name": "Vire Chest",
             "access_rules": [
               "^$CanReach|d6_present_vire_chest"
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Mermaid's Cave (Present): Vire Chest",
                 "item_count": 1
               }
             ],
@@ -1700,7 +1813,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Jabu-Jabu's Belly (2F): Spike Chest",
                 "item_count": 1
               }
             ],
@@ -1719,7 +1832,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Jabu-Jabu's Belly (1F): Crab Chest",
                 "item_count": 1
               }
             ],
@@ -1738,7 +1851,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Jabu-Jabu's Belly (1F): Diamond Puzzle",
                 "item_count": 1
               }
             ],
@@ -1757,7 +1870,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Jabu-Jabu's Belly (1F): Flower Room",
                 "item_count": 1
               }
             ],
@@ -1776,7 +1889,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Jabu-Jabu's Belly (1F): Stairway Chest",
                 "item_count": 1
               }
             ],
@@ -1795,7 +1908,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Jabu-Jabu's Belly (2F): Right Wing",
                 "item_count": 1
               }
             ],
@@ -1814,7 +1927,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Jabu-Jabu's Belly (1F): Boxed Chest",
                 "item_count": 1
               }
             ],
@@ -1827,13 +1940,32 @@
             ]
           },
           {
-            "name": "(1F): Cane|Diamond Puzzle",
+            "name": "(1F): Miniboss",
             "access_rules": [
-              "^$CanReach|d7_cane_diamond_puzzle"
+              "^$CanReach|d7_miniboss"
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Jabu-Jabu's Belly (1F): Miniboss",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d7",
+                "x": 2266,
+                "y": 1044
+              }
+            ]
+          },
+          {
+            "name": "(1F): Cane and Diamond Puzzle",
+            "access_rules": [
+              "^$CanReach|d7_cane_and_diamond_puzzle"
+            ],
+            "sections": [
+              {
+                "name": "Jabu-Jabu's Belly (1F): Cane and Diamond Puzzle",
                 "item_count": 1
               }
             ],
@@ -1852,7 +1984,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Jabu-Jabu's Belly (3F): Terrace",
                 "item_count": 1
               }
             ],
@@ -1871,7 +2003,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Jabu-Jabu's Belly (2F): Left Wing",
                 "item_count": 1
               }
             ],
@@ -1890,7 +2022,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Jabu-Jabu's Belly (3F): Hallway Chest",
                 "item_count": 1
               }
             ],
@@ -1909,7 +2041,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Jabu-Jabu's Belly (1F): Miniboss Chest",
                 "item_count": 1
               }
             ],
@@ -1928,7 +2060,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Jabu-Jabu's Belly (3F): Post-Hallway Chest",
                 "item_count": 1
               }
             ],
@@ -1947,7 +2079,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Jabu-Jabu's Belly (1F): Island Chest",
                 "item_count": 1
               }
             ],
@@ -1966,7 +2098,7 @@
             ],
             "sections": [
               {
-                "name": "(2F): Boss",
+                "name": "Jabu-Jabu's Belly (2F): Boss",
                 "item_count": 1
               }
             ],
@@ -1985,7 +2117,7 @@
             ],
             "sections": [
               {
-                "name": "Essence",
+                "name": "Jabu-Jabu's Belly: Essence",
                 "hosted_item": "d7"
               }
             ],
@@ -2011,7 +2143,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (1F): Single Chest",
                 "item_count": 1
               }
             ],
@@ -2030,7 +2162,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B2F): Ghini Chest",
                 "item_count": 1
               }
             ],
@@ -2049,7 +2181,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B1F): NW Chest",
                 "item_count": 1
               }
             ],
@@ -2068,7 +2200,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B1F): Blue Peg Chest",
                 "item_count": 1
               }
             ],
@@ -2081,13 +2213,32 @@
             ]
           },
           {
+            "name": "(B2F): Miniboss",
+            "access_rules": [
+              "^$CanReach|d8_miniboss"
+            ],
+            "sections": [
+              {
+                "name": "Ancient Tomb (B2F): Miniboss",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "d8",
+                "x": 2279,
+                "y": 367
+              }
+            ]
+          },
+          {
             "name": "(B1F): Blade Trap",
             "access_rules": [
               "^$CanReach|d8_blade_trap"
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B1F): Blade Trap",
                 "item_count": 1
               }
             ],
@@ -2106,7 +2257,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B1F): Sarcophagus Chest",
                 "item_count": 1
               }
             ],
@@ -2125,7 +2276,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B1F): Stalfos",
                 "item_count": 1
               }
             ],
@@ -2144,7 +2295,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B2F): Maze Chest",
                 "item_count": 1
               }
             ],
@@ -2163,7 +2314,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B2F): NW Slate Chest",
                 "item_count": 1
               }
             ],
@@ -2182,7 +2333,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B2F): NE Slate Chest",
                 "item_count": 1
               }
             ],
@@ -2201,7 +2352,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B3F): Single Chest",
                 "item_count": 1
               }
             ],
@@ -2220,7 +2371,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B2F): Tile Room",
                 "item_count": 1
               }
             ],
@@ -2239,7 +2390,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B2F): SE Slate Chest",
                 "item_count": 1
               }
             ],
@@ -2258,7 +2409,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B1F): Floor Puzzle",
                 "item_count": 1
               }
             ],
@@ -2277,7 +2428,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Ancient Tomb (B2F): SW Slate Chest",
                 "item_count": 1
               }
             ],
@@ -2296,7 +2447,7 @@
             ],
             "sections": [
               {
-                "name": "(B3F): Boss",
+                "name": "Ancient Tomb (B3F): Boss",
                 "item_count": 1
               }
             ],
@@ -2315,7 +2466,7 @@
             ],
             "sections": [
               {
-                "name": "Essence",
+                "name": "Ancient Tomb: Essence",
                 "hosted_item": "d8"
               }
             ],
@@ -2344,7 +2495,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Pots Puzzle",
                 "item_count": 1
               }
             ],
@@ -2363,7 +2514,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Statue Puzzle #1",
                 "item_count": 1
               }
             ],
@@ -2382,7 +2533,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Bridge Puzzle #1",
                 "item_count": 1
               }
             ],
@@ -2401,7 +2552,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Shoot Eyes",
                 "item_count": 1
               }
             ],
@@ -2420,7 +2571,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Statue Puzzle #2",
                 "item_count": 1
               }
             ],
@@ -2439,7 +2590,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Pots Puzzle #2",
                 "item_count": 1
               }
             ],
@@ -2458,7 +2609,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Statue Puzzle #3",
                 "item_count": 1
               }
             ],
@@ -2477,7 +2628,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Bridge Puzzle #2",
                 "item_count": 1
               }
             ],
@@ -2496,7 +2647,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Color Room",
                 "item_count": 1
               }
             ],
@@ -2515,7 +2666,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Water Puzzle",
                 "item_count": 1
               }
             ],
@@ -2534,7 +2685,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (B1F): Water Puzzle",
                 "item_count": 1
               }
             ],
@@ -2553,7 +2704,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (B1F): Basement",
                 "item_count": 1
               }
             ],
@@ -2566,13 +2717,13 @@
             ]
           },
           {
-            "name": "(1F): Final Puzzle",
+            "name": "(1F): Minecart Room",
             "access_rules": [
               "^$CanReach|d11_minecart_room"
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Minecart Room",
                 "item_count": 1
               }
             ],
@@ -2591,7 +2742,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Linked Hero's Cave (1F): Completion Reward",
                 "item_count": 1
               }
             ],

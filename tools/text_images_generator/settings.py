@@ -47,10 +47,42 @@ image_lib = [
 [SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Lynna\nGardener", "lynnagardener"],
 [SETTING_DEFAULT_FULL_GREEN, SETTING_DEFAULT_IMAGE, "On", "lynnagardeneron"],
 [SETTING_DEFAULT_FULL_RED, SETTING_DEFAULT_IMAGE, "Off", "lynnagardeneroff"],
-    #Secret Locations
+    #Hero's Cave
 [SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Hero's Cave", "heroscave"],
 [SETTING_DEFAULT_FULL_GREEN, SETTING_DEFAULT_IMAGE, "On", "heroscaveon"],
 [SETTING_DEFAULT_FULL_RED, SETTING_DEFAULT_IMAGE, "Off", "heroscaveoff"],
+    #Secret Locations
+[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Secret\nLocations", "secretlocations"],
+[SETTING_DEFAULT_FULL_GREEN, SETTING_DEFAULT_IMAGE, "On", "secretlocationson"],
+[SETTING_DEFAULT_FULL_RED, SETTING_DEFAULT_IMAGE, "Off", "secretlocationsoff"],
+    #Vasu's Madness
+[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Vasu's\nMadness", "vasumadness"],
+[SETTING_DEFAULT_FULL_GREEN, SETTING_DEFAULT_IMAGE, "On", "vasumadnesson"],
+[SETTING_DEFAULT_FULL_RED, SETTING_DEFAULT_IMAGE, "Off", "vasumadnessoff"],
+    #Gasha Seeds
+[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Gashas\nSeeds", "gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "0", "0gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "1", "1gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "2", "2gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "3", "3gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "4", "4gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "5", "5gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "6", "6gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "7", "7gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "8", "8gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "9", "9gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "10", "10gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "11", "11gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "12", "12gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "13", "13gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "14", "14gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "15", "15gasha"],
+[SETTING_DEFAULT_HALF_WHITE, "gasha", "16", "16gasha"],
+[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Goal", "goal"],
+    #Auto Tabs
+[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Auto\nTab", "autotab"],
+[SETTING_DEFAULT_HALF_GREEN, SETTING_DEFAULT_IMAGE, "On", "autotabon"],
+[SETTING_DEFAULT_HALF_RED, SETTING_DEFAULT_IMAGE, "Off", "autotaboff"],
 ]
 
 def generate_settings():
