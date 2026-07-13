@@ -135,11 +135,25 @@
     "content": [
       {
         "type": "array",
-        "orientation": "horizontal",
+        "orientation": "vertical",
         "content": [
           {
+            "type": "array",
+            "orientation": "horizontal",
+            "content": [
+              {
+                "type": "layout",
+                "key": "items"
+              },
+              {
+                "type": "layout",
+                "key": "rings_v"
+              }
+            ]
+          },
+          {
             "type": "layout",
-            "key": "item_grid"
+            "key": "items2"
           }
         ]
       },
