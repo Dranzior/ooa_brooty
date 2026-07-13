@@ -22,6 +22,7 @@ function CreateGashaMap()
     AddToGashaMap("@Overworld/Crescent Island/Crescent Island (Present): Vine Spot/Crescent Island (Present): Vine Spot")
     AddToGashaMap("@Overworld_Past/Rolling Ridge/Ridge West Upper: Spot/Ridge West Upper: Spot")
     AddToGashaMap("@Overworld/Crescent Island/Crescent Island (Present): Islet Spot/Crescent Island (Present): Islet Spot")
+    AddToGashaMap("@Overworld/Sea of Storms/Sea of Storms: Spot/Sea of Storms: Spot")
 end
 
 CreateGashaMap()
