@@ -431,6 +431,30 @@
     ]
   },
   {
+    "name": "Minibosses Label",
+    "type": "static",
+    "img": "images/settings/minibosses.png",
+    "codes": "minibosses_label"
+  },
+  {
+    "name": "Minibosses",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "minibosses, minibosses_off",
+        "inherit_codes": false,
+        "img": "images/settings/minibossesoff.png"
+      },
+      {
+        "codes": "minibosses, minibosses_on",
+        "inherit_codes": false,
+        "img": "images/settings/minibosseson.png"
+      }
+    ]
+  },
+  {
     "name": "Auto Tab Label",
     "type": "static",
     "img": "images/settings/autotab.png",

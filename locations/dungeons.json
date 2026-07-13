@@ -114,6 +114,9 @@
             "access_rules": [
               "^$CanReach|d1_miniboss"
             ],
+            "visibility_rules": [
+              "minibosses_on"
+            ],
             "sections": [
               {
                 "name": "Spirit's Grave: Miniboss",
@@ -524,6 +527,9 @@
             "access_rules": [
               "^$CanReach|d2_miniboss"
             ],
+            "visibility_rules": [
+              "minibosses_on"
+            ],
             "sections": [
               {
                 "name": "Wing Dungeon (1F): Miniboss"
@@ -804,6 +810,9 @@
             "name": "(B1F): Miniboss",
             "access_rules": [
               "^$CanReach|d3_miniboss"
+            ],
+            "visibility_rules": [
+              "minibosses_on"
             ],
             "sections": [
               {
@@ -1097,6 +1106,9 @@
             "access_rules": [
               "^$CanReach|d4_miniboss"
             ],
+            "visibility_rules": [
+              "minibosses_on"
+            ],
             "sections": [
               {
                 "name": "Skull Dungeon (1F): Miniboss",
@@ -1274,6 +1286,9 @@
             "name": "(1F): Miniboss",
             "access_rules": [
               "^$CanReach|d5_miniboss"
+            ],
+            "visibility_rules": [
+              "minibosses_on"
             ],
             "sections": [
               {
@@ -1766,6 +1781,9 @@
             "access_rules": [
               "^$CanReach|d6_miniboss"
             ],
+            "visibility_rules": [
+              "minibosses_on"
+            ],
             "sections": [
               {
                 "name": "Mermaid's Cave (Present): Miniboss",
@@ -1943,6 +1961,9 @@
             "name": "(1F): Miniboss",
             "access_rules": [
               "^$CanReach|d7_miniboss"
+            ],
+            "visibility_rules": [
+              "minibosses_on"
             ],
             "sections": [
               {
@@ -2216,6 +2237,9 @@
             "name": "(B2F): Miniboss",
             "access_rules": [
               "^$CanReach|d8_miniboss"
+            ],
+            "visibility_rules": [
+              "minibosses_on"
             ],
             "sections": [
               {

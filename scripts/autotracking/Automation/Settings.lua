@@ -98,6 +98,12 @@ local function updateGoal(slot_data)
     end
 end
 
+local function updateMinibosses(slot_data)
+    if slot_data["miniboss_locations"] then
+        Tracker:FindObjectForCode("minibosses").CurrentStage = slot_data["miniboss_locations"]
+    end
+end
+
 function UpdateSettings(slot_data)
     updateAnimalCompanion(slot_data["options"])
     updateLogic(slot_data["options"])
@@ -112,4 +118,5 @@ function UpdateSettings(slot_data)
     updateVasuMadness(slot_data["options"])
     updateGashaSeeds(slot_data["options"])
     updateGoal(slot_data["options"])
+    updateMinibosses(slot_data["options"])
 end

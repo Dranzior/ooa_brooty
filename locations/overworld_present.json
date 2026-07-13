@@ -206,6 +206,10 @@
                 "ref": "Dungeons/Skull Dungeon (D4)/(1F): Lava Pot Chest/Skull Dungeon (1F): Lava Pot Chest"
               },
               {
+                "name": "Skull Dungeon (1F): Miniboss",
+                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Miniboss/Skull Dungeon (1F): Miniboss"
+              },
+              {
                 "name": "Skull Dungeon (B1F): Boss",
                 "ref": "Dungeons/Skull Dungeon (D4)/Eyesoar/Skull Dungeon (B1F): Boss"
               },
@@ -736,6 +740,10 @@
                 "ref": "Dungeons/Crown Dungeon (D5)/(1F): Three-Statue Puzzle/Crown Dungeon (1F): Three-Statue Puzzle"
               },
               {
+                "name": "Crown Dungeon (1F): Miniboss",
+                "ref": "Dungeons/Crown Dungeon (D5)/(1F): Miniboss/Crown Dungeon (1F): Miniboss"
+              },
+              {
                 "name": "Crown Dungeon (B1F): Six-Statue Puzzle",
                 "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Six-Statue Puzzle/Crown Dungeon (B1F): Six-Statue Puzzle"
               },
@@ -819,6 +827,10 @@
               {
                 "name": "Mermaid's Cave (Present): Channel Chest",
                 "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Channel Chest/Mermaid's Cave (Present): Channel Chest"
+              },
+              {
+                "name": "Mermaid's Cave (Present): Miniboss",
+                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Miniboss/Mermaid's Cave (Present): Miniboss"
               },
               {
                 "name": "Mermaid's Cave (Present): Vire Chest",
@@ -1512,6 +1524,10 @@
                 "ref": "Dungeons/Spirit's Grave (D1)/Ghini Drop/Spirit's Grave: Ghini Drop"
               },
               {
+                "name": "Spirit's Grave: Miniboss",
+                "ref": "Dungeons/Spirit's Grave (D1)/Miniboss/Spirit's Grave: Miniboss"
+              },
+              {
                 "name": "Spirit's Grave: Crossroad",
                 "ref": "Dungeons/Spirit's Grave (D1)/Crossroad/Spirit's Grave: Crossroad"
               },
@@ -1925,6 +1941,10 @@
                 "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Boxed Chest/Jabu-Jabu's Belly (1F): Boxed Chest"
               },
               {
+                "name": "Jabu-Jabu's Belly (1F): Miniboss",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Miniboss/Jabu-Jabu's Belly (1F): Miniboss"
+              },
+              {
                 "name": "Jabu-Jabu's Belly (1F): Cane and Diamond Puzzle",
                 "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Cane and Diamond Puzzle/Jabu-Jabu's Belly (1F): Cane and Diamond Puzzle"
               },
@@ -2120,6 +2140,10 @@
               {
                 "name": "Moonlit Grotto (B1F): Moldorm Drop",
                 "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Moldorm Drop/Moonlit Grotto (B1F): Moldorm Drop"
+              },
+              {
+                "name": "Moonlit Grotto (B1F): Miniboss",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Miniboss/Moonlit Grotto (B1F): Miniboss"
               },
               {
                 "name": "Moonlit Grotto (1F): Bridge Chest",

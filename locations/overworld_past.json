@@ -1198,6 +1198,10 @@
                 "ref": "Dungeons/Ancient Tomb (D8)/(B1F): Blue Peg Chest/Ancient Tomb (B1F): Blue Peg Chest"
               },
               {
+                "name": "Ancient Tomb (B2F): Miniboss",
+                "ref": "Dungeons/Ancient Tomb (D8)/(B2F): Miniboss/Ancient Tomb (B2F): Miniboss"
+              },
+              {
                 "name": "Ancient Tomb (B1F): Blade Trap",
                 "ref": "Dungeons/Ancient Tomb (D8)/(B1F): Blade Trap/Ancient Tomb (B1F): Blade Trap"
               },
@@ -1506,6 +1510,10 @@
               {
                 "name": "Wing Dungeon (1F): Statue Puzzle",
                 "ref": "Dungeons/Wing Dungeon (D2)/(1F): Statue Puzzle/Wing Dungeon (1F): Statue Puzzle"
+              },
+              {
+                "name": "Wing Dungeon (1F): Miniboss",
+                "ref": "Dungeons/Wing Dungeon (D2)/(1F): Miniboss/Wing Dungeon (1F): Miniboss"
               },
               {
                 "name": "Wing Dungeon (1F): Color Room",
