@@ -52,6 +52,8 @@ local DungeonMap04 = {
 
     { 0x99, 0xA6, { "Crown Dungeon" },  "d5" }, -- Floor X
     { 0xA7, 0xBF, { "Crown Dungeon" },  "d5" }, -- Floor X
+
+    { 0xC1, 0xCF, { "Hero's Cave" },              "d11" },        -- Floor X
 }
 
 local DungeonMap05 = {
@@ -66,8 +68,6 @@ local DungeonMap05 = {
     { 0x7B, 0x96, { "Ancient Tomb" },             "d8" },         -- Floor X
     { 0x97, 0xA6, { "Ancient Tomb" },             "d8" },         -- Floor X
     { 0xA7, 0xAA, { "Ancient Tomb" },             "d8" },         -- Floor X
-
-    { 0xC1, 0xCF, { "Hero's Cave" },              "d11" },        -- Floor X
 }
 
 local MapLocationTracking =
