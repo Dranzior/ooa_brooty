@@ -1,6 +1,18 @@
 {
   "versions": [
     {
+      "package_version": "0.9.5",
+      "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.5/ooa.zip",
+      "sha256": "f7558e4109a39bca07a55781944c6cdba7a5279d8569d90f525a551ade22433d",
+      "changelog": [
+        "NEW: Better broadcast view",
+        "NEW: Gasha and Event Autotracking",
+        "FIX: Hero's cave autotracking",
+		"FIX: Moved some check to better represent their locations",
+		"FIX: Added a setting for miniboss location"
+      ]
+    },
+	{
       "package_version": "0.9.4",
       "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.4/ooa.zip",
       "sha256": "9b58a1ac97307515377ec547d3d4bcb13e6e95c55796bd756952feee7675536a",
