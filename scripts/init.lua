@@ -43,6 +43,7 @@ Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/settings.json")
 Tracker:AddItems("items/gashas_harvested.json")
 Tracker:AddItems("items/gashas_spot.json")
+Tracker:AddItems("items/dungeon_entrance.json")
 
 if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
     -- Maps

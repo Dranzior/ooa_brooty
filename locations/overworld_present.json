@@ -151,9 +151,7 @@
             "sections": [
               {
                 "name": "",
-                "chest_unopened_img": "images/dungeons/d4_entrance.png",
-                "chest_opened_img": "images/dungeons/d4_entrance.png",
-                "access_rules": []
+                "hosted_item": "skulldungeon"
               }
             ],
             "map_locations": [
@@ -693,8 +691,7 @@
             "sections": [
               {
                 "name": "",
-                "chest_unopened_img": "images/dungeons/d5_entrance.png",
-                "chest_opened_img": "images/dungeons/d5_entrance.png"
+                "hosted_item": "crowndungeon"
               }
             ],
             "map_locations": [
@@ -781,9 +778,7 @@
             "sections": [
               {
                 "name": "",
-                "chest_unopened_img": "images/dungeons/D6_present_entrance.png",
-                "chest_opened_img": "images/dungeons/D6_present_entrance.png",
-                "item_count": 1
+                "hosted_item": "mermaidscavepresent"
               }
             ],
             "map_locations": [
@@ -1165,9 +1160,7 @@
             "sections": [
               {
                 "name": "",
-                "item_count": 1,
-                "chest_unopened_img": "images/dungeons/d11_entrance.png",
-                "chest_opened_img": "images/dungeons/d11_entrance.png"
+                "hosted_item": "heroscave"
               }
             ],
             "map_locations": [
@@ -1495,9 +1488,7 @@
             "sections": [
               {
                 "name": "",
-                "item_count": 1,
-                "chest_unopened_img": "images/dungeons/d1_entrance.png",
-                "chest_opened_img": "images/dungeons/d1_entrance.png"
+                "hosted_item": "spiritsgrave"
               }
             ],
             "map_locations": [
@@ -1891,8 +1882,7 @@
             "sections": [
               {
                 "name": "",
-                "chest_unopened_img": "images/dungeons/d7_entrance.png",
-                "chest_opened_img": "images/dungeons/d7_entrance.png"
+                "hosted_item": "jabujabusbelly"
               }
             ],
             "map_locations": [
@@ -2080,8 +2070,7 @@
             "sections": [
               {
                 "name": "",
-                "chest_unopened_img": "images/dungeons/d3_entrance.png",
-                "chest_opened_img": "images/dungeons/d3_entrance.png"
+                "hosted_item": "moonlitgrotto"
               }
             ],
             "map_locations": [

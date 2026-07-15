@@ -134,6 +134,7 @@ function Map.SetDungeonEntrance(tile, map, prevRoom)
                 end
             end
             Tracker:FindObjectForCode(entranceKey .. insideKey).CurrentStage = entranceId
+            Tracker:FindObjectForCode(entranceKey).Active = true
         end
     end
 end

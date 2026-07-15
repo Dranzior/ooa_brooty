@@ -392,8 +392,7 @@
             "sections": [
               {
                 "name": "",
-                "chest_unopened_img": "images/dungeons/D6_past_entrance.png",
-                "chest_opened_img": "images/dungeons/D6_past_entrance.png"
+                "hosted_item": "mermaidscavepast"
               }
             ],
             "map_locations": [
@@ -970,9 +969,7 @@
             "sections": [
               {
                 "name": "",
-                "item_count": 1,
-                "chest_unopened_img": "images/dungeons/d0_entrance.png",
-                "chest_opened_img": "images/dungeons/d0_entrance.png"
+                "hosted_item": "makupath"
               }
             ],
             "map_locations": [
@@ -1172,8 +1169,7 @@
             "sections": [
               {
                 "name": "",
-                "chest_unopened_img": "images/dungeons/d8_entrance.png",
-                "chest_opened_img": "images/dungeons/d8_entrance.png"
+                "hosted_item": "ancienttomb"
               }
             ],
             "map_locations": [
@@ -1461,9 +1457,7 @@
             "sections": [
               {
                 "name": "",
-                "item_count": 1,
-                "chest_unopened_img": "images/dungeons/d2_entrance.png",
-                "chest_opened_img": "images/dungeons/d2_entrance.png"
+                "hosted_item": "wingdungeonpast"
               }
             ],
             "map_locations": [
