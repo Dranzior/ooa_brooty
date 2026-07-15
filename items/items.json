@@ -952,14 +952,14 @@
     "type": "toggle",
     "loop": true,
     "img": "images/items/makuseed.png",
-    "codes": "makuseed_toggle"
+    "codes": "makuseed_toggle, ObtainedMakuSeed"
   },
   {
     "name": "Get Raft for Sea Travel!",
     "type": "toggle",
     "loop": true,
     "img": "images/items/raft.png",
-    "codes": "raft_toggle"
+    "codes": "raft_toggle, RaftUnlocked"
   },
   {
     "name": "Rescue Nayru",
@@ -973,42 +973,42 @@
     "type": "toggle",
     "loop": true,
     "img": "images/items/seedling.png",
-    "codes": "turningseedling_toggle"
+    "codes": "turningseedling_toggle, PlantedScentSeed"
   },
   {
     "name": "Bomb the northern wall in Mermaid's Cave (Past)",
     "type": "toggle",
     "loop": true,
     "img": "images/items/d6_wall_b_open.png",
-    "codes": "_d6_wall_B_bombed"
+    "codes": "_d6_wall_B_bombed, D6NorthWallBombed"
   },
   {
     "name": "Light up the torches in Mermaid's Cave (Past)",
     "type": "toggle",
     "loop": true,
     "img": "images/items/d6_canal_expanded.png",
-    "codes": "_d6_canal_expanded"
+    "codes": "_d6_canal_expanded, D6TorchesLit"
   },
   {
     "name": "Cure King Zora in the past",
     "type": "toggle",
     "loop": true,
     "img": "images/items/kingzora_cure.png",
-    "codes": "curezora_toggle"
+    "codes": "curezora_toggle, CuredKingZora"
   },
   {
     "name": "Cure the cursed Fairy",
     "type": "toggle",
     "loop": true,
     "img": "images/items/greatfairy.png",
-    "codes": "curefairy_toggle"
+    "codes": "curefairy_toggle, CuredFairy"
   },
   {
     "name": "King Zora Permission to enter Jabu",
     "type": "toggle",
     "loop": true,
     "img": "images/items/kingzora_access.png",
-    "codes": "enterjabu_toggle"
+    "codes": "enterjabu_toggle, JabuJabuPermission"
   },
   // Dungeon Entrances
   {

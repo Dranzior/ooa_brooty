@@ -91,21 +91,20 @@
             "sections": [
               {
                 "name": "Talus Peak (Present): Spot",
-                "chest_unopened_img": "images/items/gasha_spot.png",
-                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "hosted_item": "PlantedTalusPeeks(Present)GashaSpot",
                 "access_rules": [
                   "^$CanPlantGasha|talus_peak_present_spot"
                 ],
-                "item_count": 1
+                "visibility_rules": [
+                  "^$HideIfCollected|HarvestedTalusPeeks(Present)GashaSpot"
+                ]
               },
               {
                 "name": "Harvested",
-                "chest_unopened_img": "images/items/gasha_nut.png",
-                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "hosted_item": "HarvestedTalusPeeks(Present)GashaSpot",
                 "access_rules": [
-                  "^$HasPlanted|@Overworld/Talus Peaks/Talus Peak (Present): Spot/Talus Peak (Present): Spot"
-                ],
-                "item_count": 1
+                  "^$HasPlanted|PlantedTalusPeeks(Present)GashaSpot"
+                ]
               }
             ],
             "map_locations": [
@@ -457,21 +456,20 @@
             "sections": [
               {
                 "name": "Nuun Highlands: Spot",
-                "chest_unopened_img": "images/items/gasha_spot.png",
-                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "hosted_item": "PlantedNuunHighlandsGashaSpot",
                 "access_rules": [
                   "^$CanPlantGasha|nuun_highlands_spot"
                 ],
-                "item_count": 1
+                "visibility_rules": [
+                  "^$HideIfCollected|HarvestedNuunHighlandsGashaSpot"
+                ]
               },
               {
                 "name": "Harvested",
-                "chest_unopened_img": "images/items/gasha_nut.png",
-                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "hosted_item": "HarvestedNuunHighlandsGashaSpot",
                 "access_rules": [
-                  "^$HasPlanted|@Overworld/Nuun Highlands/Nuun Highlands: Spot/Nuun Highlands: Spot"
-                ],
-                "item_count": 1
+                  "^$HasPlanted|PlantedNuunHighlandsGashaSpot"
+                ]
               }
             ],
             "map_locations": [
@@ -853,21 +851,20 @@
             "sections": [
               {
                 "name": "Rolling Ridge (Present): Spot",
-                "chest_unopened_img": "images/items/gasha_spot.png",
-                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "hosted_item": "PlantedRollingRidge(PresentEast)GashaSpot",
                 "access_rules": [
                   "^$CanPlantGasha|ridge_mid_present_spot"
                 ],
-                "item_count": 1
+                "visibility_rules": [
+                  "^$HideIfCollected|HarvestedRollingRidge(PresentEast)GashaSpot"
+                ]
               },
               {
                 "name": "Harvested",
-                "chest_unopened_img": "images/items/gasha_nut.png",
-                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "hosted_item": "HarvestedRollingRidge(PresentEast)GashaSpot",
                 "access_rules": [
-                  "^$HasPlanted|@Overworld/Rolling Ridge/Rolling Ridge (Present): Spot/Rolling Ridge (Present): Spot"
-                ],
-                "item_count": 1
+                  "^$HasPlanted|PlantedRollingRidge(PresentEast)GashaSpot"
+                ]
               }
             ],
             "map_locations": [
@@ -1584,21 +1581,20 @@
             "sections": [
               {
                 "name": "Yoll Graveyard: Spot",
-                "chest_unopened_img": "images/items/gasha_spot.png",
-                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "hosted_item": "PlantedYollGraveyardGashaSpot",
                 "access_rules": [
                   "^$CanPlantGasha|yoll_graveyard_spot"
                 ],
-                "item_count": 1
+                "visibility_rules": [
+                  "^$HideIfCollected|HarvestedYollGraveyardGashaSpot"
+                ]
               },
               {
                 "name": "Harvested",
-                "chest_unopened_img": "images/items/gasha_nut.png",
-                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "hosted_item": "HarvestedYollGraveyardGashaSpot",
                 "access_rules": [
-                  "^$HasPlanted|@Overworld/Yoll Graveyard/Yoll Graveyard: Spot/Yoll Graveyard: Spot"
-                ],
-                "item_count": 1
+                  "^$HasPlanted|PlantedYollGraveyardGashaSpot"
+                ]
               }
             ],
             "map_locations": [
@@ -1663,21 +1659,20 @@
             "sections": [
               {
                 "name": "Fairies' Woods: Spot",
-                "chest_unopened_img": "images/items/gasha_spot.png",
-                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "hosted_item": "PlantedFairies'WoodsGashaSpot",
                 "access_rules": [
                   "^$CanPlantGasha|fairies_woods_spot"
                 ],
-                "item_count": 1
+                "visibility_rules": [
+                  "^$HideIfCollected|HarvestedFairies'WoodsGashaSpot"
+                ]
               },
               {
                 "name": "Harvested",
-                "chest_unopened_img": "images/items/gasha_nut.png",
-                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "hosted_item": "HarvestedFairies'WoodsGashaSpot",
                 "access_rules": [
-                  "^$HasPlanted|@Overworld/Fairies' Woods/Fairies' Woods: Spot/Fairies' Woods: Spot"
-                ],
-                "item_count": 1
+                  "^$HasPlanted|PlantedFairies'WoodsGashaSpot"
+                ]
               }
             ],
             "map_locations": [
@@ -2182,21 +2177,20 @@
             "sections": [
               {
                 "name": "Crescent Island (Present): Vine Spot",
-                "chest_unopened_img": "images/items/gasha_spot.png",
-                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "hosted_item": "PlantedCrescentIslandWest(Present)GashaSpot",
                 "access_rules": [
                   "^$CanPlantGasha|crescent_present_vine_spot"
                 ],
-                "item_count": 1
+                "visibility_rules": [
+                  "^$HideIfCollected|HarvestedCrescentIslandWest(Present)GashaSpot"
+                ]
               },
               {
                 "name": "Harvested",
-                "chest_unopened_img": "images/items/gasha_nut.png",
-                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "hosted_item": "HarvestedCrescentIslandWest(Present)GashaSpot",
                 "access_rules": [
-                  "^$HasPlanted|@Overworld/Crescent Island/Crescent Island (Present): Vine Spot/Crescent Island (Present): Vine Spot"
-                ],
-                "item_count": 1
+                  "^$HasPlanted|PlantedCrescentIslandWest(Present)GashaSpot"
+                ]
               }
             ],
             "map_locations": [
@@ -2215,21 +2209,20 @@
             "sections": [
               {
                 "name": "Crescent Island (Present): Islet Spot",
-                "chest_unopened_img": "images/items/gasha_spot.png",
-                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "hosted_item": "PlantedCrescentIslandEast(Present)GashaSpot",
                 "access_rules": [
                   "^$CanPlantGasha|crescent_present_islet_spot"
                 ],
-                "item_count": 1
+                "visibility_rules": [
+                  "^$HideIfCollected|HarvestedCrescentIslandEast(Present)GashaSpot"
+                ]
               },
               {
                 "name": "Harvested",
-                "chest_unopened_img": "images/items/gasha_nut.png",
-                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "hosted_item": "HarvestedCrescentIslandEast(Present)GashaSpot",
                 "access_rules": [
-                  "^$HasPlanted|@Overworld/Crescent Island/Crescent Island (Present): Islet Spot/Crescent Island (Present): Islet Spot"
-                ],
-                "item_count": 1
+                  "^$HasPlanted|PlantedCrescentIslandEast(Present)GashaSpot"
+                ]
               }
             ],
             "map_locations": [
@@ -2275,21 +2268,20 @@
             "sections": [
               {
                 "name": "Sea of Storms: Spot",
-                "chest_unopened_img": "images/items/gasha_spot.png",
-                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "hosted_item": "PlantedSeaofStorms(Present)GashaSpot",
                 "access_rules": [
                   "^$CanPlantGasha|sea_of_storms_spot"
                 ],
-                "item_count": 1
+                "visibility_rules": [
+                  "^$HideIfCollected|HarvestedSeaofStorms(Present)GashaSpot"
+                ]
               },
               {
                 "name": "Harvested",
-                "chest_unopened_img": "images/items/gasha_nut.png",
-                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "hosted_item": "HarvestedSeaofStorms(Present)GashaSpot",
                 "access_rules": [
-                  "^$HasPlanted|@Overworld/Sea of Storms/Sea of Storms: Spot/Sea of Storms: Spot"
-                ],
-                "item_count": 1
+                  "^$HasPlanted|PlantedSeaofStorms(Present)GashaSpot"
+                ]
               }
             ],
             "map_locations": [

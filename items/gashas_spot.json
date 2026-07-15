@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Planted Lynna Village Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_spot.png",
+    "codes": "PlantedLynnaVillageGashaSpot"
+  },
+  {
+    "name": "Planted Fairies' Woods Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_spot.png",
+    "codes": "PlantedFairies'WoodsGashaSpot"
+  },
+  {
+    "name": "Planted Southern Shore Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_spot.png",
+    "codes": "PlantedSouthernShoreGashaSpot"
+  },
+  {
+    "name": "Planted Sea of Storms (Present) Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_spot.png",
+    "codes": "PlantedSeaofStorms(Present)GashaSpot"
+  },
+  {
+    "name": "Planted Zora Vilage Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_spot.png",
+    "codes": "PlantedZoraVilageGashaSpot"
+  },
+  {
+    "name": "Planted Deku Forest Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_spot.png",
+    "codes": "PlantedDekuForestGashaSpot"
+  },
+  {
+    "name": "Planted Crescent Island East (Present) Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_spot.png",
+    "codes": "PlantedCrescentIslandEast(Present)GashaSpot"
+  },
+  {
+    "name": "Planted Talus Peeks (Past) Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_spot.png",
+    "codes": "PlantedTalusPeeks(Past)GashaSpot"
+  },
+  {
+    "name": "Planted Rolling Ridge (Past, Upper) Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_spot.png",
+    "codes": "PlantedRollingRidge(PastUpper)GashaSpot"
+  },
+  {
+    "name": "Planted Nuun Highlands Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_spot.png",
+    "codes": "PlantedNuunHighlandsGashaSpot"
+  },
+  {
+    "name": "Planted Yoll Graveyard Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_spot.png",
+    "codes": "PlantedYollGraveyardGashaSpot"
+  },
+  {
+    "name": "Planted Talus Peeks (Present) Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_spot.png",
+    "codes": "PlantedTalusPeeks(Present)GashaSpot"
+  },
+  {
+    "name": "Planted Rolling Ridge (Present, East) Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_spot.png",
+    "codes": "PlantedRollingRidge(PresentEast)GashaSpot"
+  },
+  {
+    "name": "Planted Rolling Ridge (Past, West) Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_spot.png",
+    "codes": "PlantedRollingRidge(PastWest)GashaSpot"
+  },
+  {
+    "name": "Planted Crescent Island West (Past) Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_spot.png",
+    "codes": "PlantedCrescentIslandWest(Past)GashaSpot"
+  },
+  {
+    "name": "Planted Crescent Island West (Present) Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_spot.png",
+    "codes": "PlantedCrescentIslandWest(Present)GashaSpot"
+  }
+]

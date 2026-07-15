@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Harvested Deku Forest Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_nut.png",
+    "codes": "HarvestedDekuForestGashaSpot"
+  },
+  {
+    "name": "Harvested Southern Shore Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_nut.png",
+    "codes": "HarvestedSouthernShoreGashaSpot"
+  },
+  {
+    "name": "Harvested Lynna Village Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_nut.png",
+    "codes": "HarvestedLynnaVillageGashaSpot"
+  },
+  {
+    "name": "Harvested Talus Peeks (Present) Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_nut.png",
+    "codes": "HarvestedTalusPeeks(Present)GashaSpot"
+  },
+  {
+    "name": "Harvested Zora Vilage Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_nut.png",
+    "codes": "HarvestedZoraVilageGashaSpot"
+  },
+  {
+    "name": "Harvested Rolling Ridge (Present, East) Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_nut.png",
+    "codes": "HarvestedRollingRidge(PresentEast)GashaSpot"
+  },
+  {
+    "name": "Harvested Crescent Island West (Present) Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_nut.png",
+    "codes": "HarvestedCrescentIslandWest(Present)GashaSpot"
+  },
+  {
+    "name": "Harvested Rolling Ridge (Past, Upper) Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_nut.png",
+    "codes": "HarvestedRollingRidge(PastUpper)GashaSpot"
+  },
+  {
+    "name": "Harvested Talus Peeks (Past) Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_nut.png",
+    "codes": "HarvestedTalusPeeks(Past)GashaSpot"
+  },
+  {
+    "name": "Harvested Nuun Highlands Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_nut.png",
+    "codes": "HarvestedNuunHighlandsGashaSpot"
+  },
+  {
+    "name": "Harvested Sea of Storms (Present) Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_nut.png",
+    "codes": "HarvestedSeaofStorms(Present)GashaSpot"
+  },
+  {
+    "name": "Harvested Crescent Island West (Past) Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_nut.png",
+    "codes": "HarvestedCrescentIslandWest(Past)GashaSpot"
+  },
+  {
+    "name": "Harvested Yoll Graveyard Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_nut.png",
+    "codes": "HarvestedYollGraveyardGashaSpot"
+  },
+  {
+    "name": "Harvested Crescent Island East (Present) Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_nut.png",
+    "codes": "HarvestedCrescentIslandEast(Present)GashaSpot"
+  },
+  {
+    "name": "Harvested Fairies' Woods Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_nut.png",
+    "codes": "HarvestedFairies'WoodsGashaSpot"
+  },
+  {
+    "name": "Harvested Rolling Ridge (Past, West) Gasha Spot",
+    "type": "toggle",
+    "img": "images/items/gasha_nut.png",
+    "codes": "HarvestedRollingRidge(PastWest)GashaSpot"
+  }
+]

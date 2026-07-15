@@ -1,5 +1,6 @@
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/automation/Events.lua")
 ScriptHost:LoadScript("scripts/autotracking/automation/Hint.lua")
 ScriptHost:LoadScript("scripts/autotracking/automation/ManualLocation.lua")
 ScriptHost:LoadScript("scripts/autotracking/automation/Settings.lua")
@@ -16,23 +17,19 @@ MANUAL_CHECKED = true
 ROOM_SEED = "default"
 
 function onSetReply(key, value, _)
-    local slot_player = "Slot:" .. Archipelago.PlayerNumber
-    if key == slot_player .. ":Current Map" then
-        if Tracker:FindObjectForCode("auto_tab").CurrentStage == 1 then
-            if TABS_MAPPING[value] then
-                CURRENT_ROOM = TABS_MAPPING[value]
-            else
-                CURRENT_ROOM = CURRENT_ROOM_ADDRESS
-            end
-            Tracker:UiHint("ActivateTab", CURRENT_ROOM)
-        end
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("called onSetReply: %s -- %s", key, dump_table(value)))
     end
-	
-	Hint.Process(key, value)
+    Hint.Process(key, value)
+	Events.process(key, value)
 end
 
 function retrieved(key, value)
-	Hint.Process(key, value)
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("called retrieved: %s -- %s", key, dump_table(value)))
+    end
+    Hint.Process(key, value)
+	Events.process(key, value)
 end
 
 function preOnClear()
