@@ -559,8 +559,8 @@ function ooa_can_break_tingle_balloon()
     return All(
         Any(
             ooa_has_sword(),
-            ooa_has_boomerang()
-            --ooa_can_punch(state), ?
+            ooa_has_boomerang(),
+            ooa_can_punch()
         ),
         ooa_has_feather()
     )
@@ -643,11 +643,14 @@ function ooa_can_harvest_tree(can_use_companion)
             ooa_can_use_seeds(),
             Any(
                 ooa_has_sword(),
-                ooa_can_punch(),
                 All(
                     can_use_companion,
                     ooa_option_medium_logic(),
                     ooa_can_summon_dimitri()
+                ),
+                All(
+                    ooa_can_punch(),
+                    ooa_option_medium_logic
                 )
             )
         ),
