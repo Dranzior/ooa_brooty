@@ -6,6 +6,7 @@ d1_east_terrace:connect_one_way_entrance(d1_crystal_room,function() return All(
             ooa_can_break_crystal()
         ) end)
 inside_d1:connect_one_way_entrance(d1_west_terrace,function() return ooa_can_break_pot() end)
+d1_west_terrace:connect_one_way_entrance(d1_basement,function() return ooa_can_use_ember_seeds(true) end)
 inside_d1:connect_one_way_entrance(d1_pot_chest,function() return ooa_can_break_pot() end)
 d1_ghini_drop:connect_one_way_entrance(d1_wide_room,function() return ooa_has_small_keys(1, 2) end)
 d1_wide_room:connect_one_way_entrance(d1_two_button_chest)
@@ -14,10 +15,13 @@ d1_wide_room:connect_one_way_entrance(d1_boss,function() return All(
             ooa_has_boss_key(1),
             ooa_has_bracelet(),
             ooa_generic_boss_and_miniboss_kill()) end)
-d1_wide_room:connect_one_way_entrance(d1_miniboss,function() return All(
-            ooa_can_break_bush(),
-            ooa_generic_boss_and_miniboss_kill(),
-            ooa_has_small_keys(1, 3)
+d1_wide_room:connect_two_ways_entrance(d1_miniboss,function() return All(
+                ooa_can_break_bush(),
+                ooa_generic_boss_and_miniboss_kill(),
+                ooa_has_small_keys(1, 2)
         ) end)
-d1_west_terrace:connect_one_way_entrance(d1_miniboss,function() return ooa_has_small_keys(1, 1) end)
-d1_miniboss:connect_one_way_entrance(d1_basement,function() return ooa_can_use_ember_seeds(true) end)
+d1_west_terrace:connect_one_way_entrance(d1_miniboss,function() return ooa_has_small_keys(1, 2) end)
+d1_miniboss:connect_one_way_entrance(d1_basement,function() return All(
+            ooa_has_small_keys(1, 3),
+            ooa_can_use_ember_seeds(true)
+        ) end)
