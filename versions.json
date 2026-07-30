@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "package_version": "0.9.6",
+      "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.6/ooa.zip",
+      "sha256": "1c688dca12a7045e21e3bb9a561aee84f85130a27d5b55feec58cf65f7d318b8",
+      "changelog": [
+        "FIX: Implemented Logic Fixed made in the APWorld between 1.0.0 and 1.0.2",
+        "FIX: Fixed Target Cart vanilla route not working in the tracker"
+      ]
+    },
+    {
       "package_version": "0.9.5",
       "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.5/ooa.zip",
       "sha256": "f7558e4109a39bca07a55781944c6cdba7a5279d8569d90f525a551ade22433d",
