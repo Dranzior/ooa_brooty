@@ -467,14 +467,14 @@
     "loop": true,
     "stages": [
       {
-        "codes": "autotab, autotab_off",
-        "inherit_codes": false,
-        "img": "images/settings/autotaboff.png"
-      },
-      {
         "codes": "autotab, autotab_on",
         "inherit_codes": false,
         "img": "images/settings/autotabon.png"
+      },
+      {
+        "codes": "autotab, autotab_off",
+        "inherit_codes": false,
+        "img": "images/settings/autotaboff.png"
       }
     ]
   }
