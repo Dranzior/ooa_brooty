@@ -146,39 +146,34 @@ function onClear(slot_data)
 end
 
 function updateDefaultSeed()
+    local defaultSeed = SLOT_DATA["options"]["default_seed"]
     local satchel = Tracker:FindObjectForCode("seed satchel")
     local seedShooter = Tracker:FindObjectForCode("seed shooter")
-    if (satchel and satchel.Active) or (seedShooter and seedShooter.Active) then
+    if defaultSeed and ((satchel and satchel.Active) or (seedShooter and seedShooter.Active)) then
         --starting seed
-        if SLOT_DATA["default_seed"] then
-            local obj = Tracker:FindObjectForCode("emberseeds")
-            if obj and SLOT_DATA["default_seed"] == "Ember Seeds" then
-                obj.Active = true
-            end
+        local obj = Tracker:FindObjectForCode("emberseeds")
+        if obj and defaultSeed == 0 then
+            obj.Active = true
         end
-        if SLOT_DATA["default_seed"] then
-            local obj = Tracker:FindObjectForCode("scentseeds")
-            if obj and SLOT_DATA["default_seed"] == "Scent Seeds" then
-                obj.Active = true
-            end
+
+        local obj = Tracker:FindObjectForCode("scentseeds")
+        if obj and defaultSeed == 1 then
+            obj.Active = true
         end
-        if SLOT_DATA["default_seed"] then
-            local obj = Tracker:FindObjectForCode("pegasusseeds")
-            if obj and SLOT_DATA["default_seed"] == "Pegasus Seeds" then
-                obj.Active = true
-            end
+
+        local obj = Tracker:FindObjectForCode("pegasusseeds")
+        if obj and defaultSeed == 2 then
+            obj.Active = true
         end
-        if SLOT_DATA["default_seed"] then
-            local obj = Tracker:FindObjectForCode("galeseeds")
-            if obj and SLOT_DATA["default_seed"] == "Gale Seeds" then
-                obj.Active = true
-            end
+
+        local obj = Tracker:FindObjectForCode("galeseeds")
+        if obj and defaultSeed == 3 then
+            obj.Active = true
         end
-        if SLOT_DATA["default_seed"] then
-            local obj = Tracker:FindObjectForCode("mysteryseeds")
-            if obj and SLOT_DATA["default_seed"] == "Mystery Seeds" then
-                obj.Active = true
-            end
+
+        local obj = Tracker:FindObjectForCode("mysteryseeds")
+        if obj and defaultSeed == 4 then
+            obj.Active = true
         end
     end
 end
