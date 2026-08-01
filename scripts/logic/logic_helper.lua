@@ -763,41 +763,35 @@ function ooa_can_kill_underwater(can_kill_with_hook)
 end
 
 function ooa_can_kill_normal_using_satchel()
-    -- Expect a 50+ seed satchel to ensure we can chain dungeon rooms to some extent if that's our only kill option
-    if not ooa_has_satchel(2) then
-        return false
-    end
-
-    return Any(
-        -- Casual logic => only ember
-        ooa_has_ember_seeds(),
-        All(
-            -- Medium logic => Allow scent or gale+feather
-            ooa_option_medium_logic(),
-            Any(
-                ooa_has_scent_seeds(),
-                ooa_has_mystery_seeds(),
-                All(
-                    ooa_has_gale_seeds(),
-                    ooa_has_feather()
+    return All(
+        ooa_can_fight_using_seed(),
+        Any(
+            -- Casual logic => only ember
+            ooa_has_ember_seeds(),
+            All(
+                -- Medium logic => Allow scent or gale+feather
+                ooa_option_medium_logic(),
+                Any(
+                    ooa_has_scent_seeds(),
+                    ooa_has_mystery_seeds(),
+                    All(
+                        ooa_has_gale_seeds(),
+                        ooa_has_feather()
+                    )
                 )
+            ),
+            All(
+                -- Hard logic => Allow gale without feather
+                ooa_option_hard_logic(),
+                ooa_has_gale_seeds()
             )
-        ),
-        All(
-            -- Hard logic => Allow gale without feather
-            ooa_option_hard_logic(),
-            ooa_has_gale_seeds()
         )
     )
 end
 
 function ooa_can_kill_normal_using_seedshooter()
-    -- Expect a 50+ seed satchel to ensure we can chain dungeon rooms to some extent if that's our only kill option
-    if not ooa_has_satchel(2) then
-        return false
-    end
-
     return All(
+        ooa_can_fight_using_seed(),
         ooa_has_seedshooter(),
         Any(
             ooa_has_ember_seeds(),
@@ -817,7 +811,7 @@ function ooa_can_kill_armored_enemy()
     return Any(
         ooa_has_sword(),
         All(
-            ooa_has_satchel(2),  -- Expect a 50+ seeds satchel to be able to chain rooms in dungeons
+            ooa_can_fight_using_seed(),
             ooa_has_scent_seeds(),
             Any(
                 ooa_has_seedshooter(),
@@ -1005,6 +999,20 @@ function ooa_has_rupees_for_vasu()
         ),
         All(
             ooa_can_farm_rupees(),
+            AccessibilityLevel.SequenceBreak
+        )
+    )
+end
+
+function ooa_can_fight_using_seed()
+    return Any(
+        ooa_has_satchel(2), -- Logic Expect a 50+ seeds satchel to be able to chain rooms in dungeons
+        All(
+            ooa_has_satchel(),
+            AccessibilityLevel.SequenceBreak
+        ),
+        All(
+            ooa_has_seedshooter(),
             AccessibilityLevel.SequenceBreak
         )
     )
