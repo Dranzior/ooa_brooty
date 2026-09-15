@@ -2230,7 +2230,7 @@
           {
             "name": "Underwater Cave",
             "access_rules": [
-              "^$CanReach|sea_of_storms_past"
+              "^$CanReach|sea_of_storms_present"
             ],
             "visibility_rules": [
               "secret_locations_on"
