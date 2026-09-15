@@ -38,10 +38,6 @@ function GashasPlanted()
 end
 
 function CanPlantGasha(location)
-    -- rules for being able to collect the nut
-    if (not ooa_has_sword()) then
-        return false
-    end
     -- rules for how many available spots remain
     local ownedGashas = Tracker:ProviderCountForCode("gashaseeds")
     local gashasPlanted = GashasPlanted()
@@ -72,7 +68,7 @@ function HasPlanted(code)
     if (section == nil) then
         return false
     end
-    return section.Active
+    return ooa_has_sword()
 end
 
 function CanSeeGasha(count)
