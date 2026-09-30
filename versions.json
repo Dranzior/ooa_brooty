@@ -1,6 +1,14 @@
 {
   "versions": [
     {
+      "package_version": "0.9.10",
+      "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.10/ooa.zip",
+      "sha256": "f4590604cc70de9134d9a1d6745e5db72109ed32c2ebe3ba6214fe7ec2146814",
+      "changelog": [
+        "FIX: Fixed error while parsing logic after getting fist or expert ring."
+      ]
+    },
+    {
       "package_version": "0.9.9",
       "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.9/ooa.zip",
       "sha256": "35b82c12c91ccb834f3467f41933a0e417f4e5d8b88af105fed2d07394811425",
