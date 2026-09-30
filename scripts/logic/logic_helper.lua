@@ -638,8 +638,7 @@ function ooa_can_harvest_tree(can_use_companion)
                     ooa_can_summon_dimitri()
                 ),
                 All(
-                    ooa_can_punch(),
-                    ooa_option_medium_logic
+                    ooa_can_punch()
                 )
             )
         ),
