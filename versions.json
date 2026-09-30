@@ -1,6 +1,23 @@
 {
   "versions": [
     {
+      "package_version": "0.9.9",
+      "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.9/ooa.zip",
+      "sha256": "35b82c12c91ccb834f3467f41933a0e417f4e5d8b88af105fed2d07394811425",
+      "changelog": [
+        "CHANGES: Auto Tab now default to ON",
+        "CHANGES: The forest Gasha spot have been slightly move to not overlap with the cave in Zora village",
+        "MINOR: Applied logic from the APWorld 1.1.2",
+        "MINOR: Gale seed are now considered in logic (following the APWorld to mark them as progression)",
+        "MINOR: Fighting with 1 seed bag is now considered OOL (was red, now is yellow)",
+        "FIX: Fixed autotracking of starting seed",
+        "FIX: Fixed some logic changes in predicate",
+        "FIX: Sea of storm present logic was checking for the wrong region",
+        "FIX: Gasha seed where shown as collectable witouth a sword",
+        "FIX: Pedestal reward now longer have essence as hosted item (was causing issue with placed essence)"
+      ]
+    },
+    {
       "package_version": "0.9.6",
       "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.6/ooa.zip",
       "sha256": "1c688dca12a7045e21e3bb9a561aee84f85130a27d5b55feec58cf65f7d318b8",
