@@ -68,7 +68,7 @@ function HasPlanted(code)
     if (section == nil) then
         return false
     end
-    return ooa_has_sword()
+    return All(section.Active, ooa_has_sword())
 end
 
 function CanSeeGasha(count)

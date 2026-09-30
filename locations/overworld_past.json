@@ -1642,8 +1642,7 @@
                 "hosted_item": "HarvestedZoraVilageGashaSpot",
                 "access_rules": [
                   "^$HasPlanted|PlantedZoraVilageGashaSpot"
-                ],
-                "item_count": 1
+                ]
               }
             ],
             "map_locations": [
