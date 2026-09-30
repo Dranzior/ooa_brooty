@@ -89,7 +89,7 @@ d6_present_handmaster_room:connect_one_way_entrance(d6_present_cube_chest,functi
             ooa_has_switch_hook(),
             Any(
                 ooa_has_bombs(),
-                ooa_has_bombchus()
+                ooa_has_bombchus(2)
             ),
             Any(
                 ooa_option_hard_logic(),

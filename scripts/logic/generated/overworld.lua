@@ -413,6 +413,7 @@ ridge_base_past_west:connect_two_ways_entrance(ridge_upper_past,function() retur
 ridge_upper_present:connect_one_way_entrance(ridge_upper_past,function() return ooa_can_switch_past_and_present() end)
 ridge_upper_present:connect_one_way_entrance(treasure_hunting_goron,function() return All(
             ooa_has_bombs(2),
+            ooa_has_satchel(),
             ooa_has_ember_seeds(),
             Any(
                 All(
@@ -597,7 +598,9 @@ deku_forest:connect_one_way_entrance(fairies_woods_spot,function() return All(
         ) end)
 nuun__ricky_:connect_one_way_entrance(nuun_highlands_top,function() return Any(
             ooa_can_summon_ricky(),
-            ooa_can_go_back_to_present(),
+            All(
+                ooa_can_go_back_to_present(),
+                ooa_option_medium_logic()),
             All(
 
                 ooa_can_jump_1_wide_pit(false),
@@ -617,14 +620,18 @@ nuun__ricky_:connect_one_way_entrance(nuun_highlands_top,function() return Any(
         ) end)
 nuun__moosh_:connect_one_way_entrance(nuun_highlands_top,function() return Any(
             ooa_can_summon_moosh(),
-            ooa_can_go_back_to_present(),
+            All(
+                ooa_can_go_back_to_present(),
+                ooa_option_medium_logic()),
             All(
                 ooa_can_break_bush(),
                 ooa_can_jump_3_wide_pit(false))
         ) end)
 nuun__dimitri_:connect_one_way_entrance(nuun_highlands_top,function() return Any(
             ooa_can_summon_dimitri(),
-            ooa_can_go_back_to_present(),
+            All(
+                ooa_can_go_back_to_present(),
+                ooa_option_medium_logic()),
             All(
                 Has("Swimmer's Ring"),
                 ooa_can_swim(false),
