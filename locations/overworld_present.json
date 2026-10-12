@@ -91,21 +91,20 @@
             "sections": [
               {
                 "name": "Talus Peak (Present): Spot",
-                "chest_unopened_img": "images/items/gasha_spot.png",
-                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "hosted_item": "PlantedTalusPeeks(Present)GashaSpot",
                 "access_rules": [
                   "^$CanPlantGasha|talus_peak_present_spot"
                 ],
-                "item_count": 1
+                "visibility_rules": [
+                  "^$HideIfCollected|HarvestedTalusPeeks(Present)GashaSpot"
+                ]
               },
               {
                 "name": "Harvested",
-                "chest_unopened_img": "images/items/gasha_nut.png",
-                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "hosted_item": "HarvestedTalusPeeks(Present)GashaSpot",
                 "access_rules": [
-                  "^$HasPlanted|@Overworld/Talus Peaks/Talus Peak (Present): Spot/Talus Peak (Present): Spot"
-                ],
-                "item_count": 1
+                  "^$HasPlanted|PlantedTalusPeeks(Present)GashaSpot"
+                ]
               }
             ],
             "map_locations": [
@@ -152,9 +151,7 @@
             "sections": [
               {
                 "name": "",
-                "chest_unopened_img": "images/dungeons/d4_entrance.png",
-                "chest_opened_img": "images/dungeons/d4_entrance.png",
-                "access_rules": []
+                "hosted_item": "skulldungeon"
               }
             ],
             "map_locations": [
@@ -204,6 +201,10 @@
               {
                 "name": "Skull Dungeon (1F): Lava Pot Chest",
                 "ref": "Dungeons/Skull Dungeon (D4)/(1F): Lava Pot Chest/Skull Dungeon (1F): Lava Pot Chest"
+              },
+              {
+                "name": "Skull Dungeon (1F): Miniboss",
+                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Miniboss/Skull Dungeon (1F): Miniboss"
               },
               {
                 "name": "Skull Dungeon (B1F): Boss",
@@ -453,21 +454,20 @@
             "sections": [
               {
                 "name": "Nuun Highlands: Spot",
-                "chest_unopened_img": "images/items/gasha_spot.png",
-                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "hosted_item": "PlantedNuunHighlandsGashaSpot",
                 "access_rules": [
                   "^$CanPlantGasha|nuun_highlands_spot"
                 ],
-                "item_count": 1
+                "visibility_rules": [
+                  "^$HideIfCollected|HarvestedNuunHighlandsGashaSpot"
+                ]
               },
               {
                 "name": "Harvested",
-                "chest_unopened_img": "images/items/gasha_nut.png",
-                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "hosted_item": "HarvestedNuunHighlandsGashaSpot",
                 "access_rules": [
-                  "^$HasPlanted|@Overworld/Nuun Highlands/Nuun Highlands: Spot/Nuun Highlands: Spot"
-                ],
-                "item_count": 1
+                  "^$HasPlanted|PlantedNuunHighlandsGashaSpot"
+                ]
               }
             ],
             "map_locations": [
@@ -691,8 +691,7 @@
             "sections": [
               {
                 "name": "",
-                "chest_unopened_img": "images/dungeons/d5_entrance.png",
-                "chest_opened_img": "images/dungeons/d5_entrance.png"
+                "hosted_item": "crowndungeon"
               }
             ],
             "map_locations": [
@@ -736,6 +735,10 @@
                 "ref": "Dungeons/Crown Dungeon (D5)/(1F): Three-Statue Puzzle/Crown Dungeon (1F): Three-Statue Puzzle"
               },
               {
+                "name": "Crown Dungeon (1F): Miniboss",
+                "ref": "Dungeons/Crown Dungeon (D5)/(1F): Miniboss/Crown Dungeon (1F): Miniboss"
+              },
+              {
                 "name": "Crown Dungeon (B1F): Six-Statue Puzzle",
                 "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Six-Statue Puzzle/Crown Dungeon (B1F): Six-Statue Puzzle"
               },
@@ -775,9 +778,7 @@
             "sections": [
               {
                 "name": "",
-                "chest_unopened_img": "images/dungeons/D6_present_entrance.png",
-                "chest_opened_img": "images/dungeons/D6_present_entrance.png",
-                "item_count": 1
+                "hosted_item": "mermaidscavepresent"
               }
             ],
             "map_locations": [
@@ -821,6 +822,10 @@
                 "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Channel Chest/Mermaid's Cave (Present): Channel Chest"
               },
               {
+                "name": "Mermaid's Cave (Present): Miniboss",
+                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Miniboss/Mermaid's Cave (Present): Miniboss"
+              },
+              {
                 "name": "Mermaid's Cave (Present): Vire Chest",
                 "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Vire Chest/Mermaid's Cave (Present): Vire Chest"
               }
@@ -841,21 +846,20 @@
             "sections": [
               {
                 "name": "Rolling Ridge (Present): Spot",
-                "chest_unopened_img": "images/items/gasha_spot.png",
-                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "hosted_item": "PlantedRollingRidge(PresentEast)GashaSpot",
                 "access_rules": [
                   "^$CanPlantGasha|ridge_mid_present_spot"
                 ],
-                "item_count": 1
+                "visibility_rules": [
+                  "^$HideIfCollected|HarvestedRollingRidge(PresentEast)GashaSpot"
+                ]
               },
               {
                 "name": "Harvested",
-                "chest_unopened_img": "images/items/gasha_nut.png",
-                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "hosted_item": "HarvestedRollingRidge(PresentEast)GashaSpot",
                 "access_rules": [
-                  "^$HasPlanted|@Overworld/Rolling Ridge/Rolling Ridge (Present): Spot/Rolling Ridge (Present): Spot"
-                ],
-                "item_count": 1
+                  "^$HasPlanted|PlantedRollingRidge(PresentEast)GashaSpot"
+                ]
               }
             ],
             "map_locations": [
@@ -1156,9 +1160,7 @@
             "sections": [
               {
                 "name": "",
-                "item_count": 1,
-                "chest_unopened_img": "images/dungeons/d11_entrance.png",
-                "chest_opened_img": "images/dungeons/d11_entrance.png"
+                "hosted_item": "heroscave"
               }
             ],
             "map_locations": [
@@ -1486,9 +1488,7 @@
             "sections": [
               {
                 "name": "",
-                "item_count": 1,
-                "chest_unopened_img": "images/dungeons/d1_entrance.png",
-                "chest_opened_img": "images/dungeons/d1_entrance.png"
+                "hosted_item": "spiritsgrave"
               }
             ],
             "map_locations": [
@@ -1510,6 +1510,10 @@
               {
                 "name": "Spirit's Grave: Ghini Drop",
                 "ref": "Dungeons/Spirit's Grave (D1)/Ghini Drop/Spirit's Grave: Ghini Drop"
+              },
+              {
+                "name": "Spirit's Grave: Miniboss",
+                "ref": "Dungeons/Spirit's Grave (D1)/Miniboss/Spirit's Grave: Miniboss"
               },
               {
                 "name": "Spirit's Grave: Crossroad",
@@ -1568,21 +1572,20 @@
             "sections": [
               {
                 "name": "Yoll Graveyard: Spot",
-                "chest_unopened_img": "images/items/gasha_spot.png",
-                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "hosted_item": "PlantedYollGraveyardGashaSpot",
                 "access_rules": [
                   "^$CanPlantGasha|yoll_graveyard_spot"
                 ],
-                "item_count": 1
+                "visibility_rules": [
+                  "^$HideIfCollected|HarvestedYollGraveyardGashaSpot"
+                ]
               },
               {
                 "name": "Harvested",
-                "chest_unopened_img": "images/items/gasha_nut.png",
-                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "hosted_item": "HarvestedYollGraveyardGashaSpot",
                 "access_rules": [
-                  "^$HasPlanted|@Overworld/Yoll Graveyard/Yoll Graveyard: Spot/Yoll Graveyard: Spot"
-                ],
-                "item_count": 1
+                  "^$HasPlanted|PlantedYollGraveyardGashaSpot"
+                ]
               }
             ],
             "map_locations": [
@@ -1634,8 +1637,8 @@
             "map_locations": [
               {
                 "map": "present",
-                "x": 319,
-                "y": 1084
+                "x": 71,
+                "y": 967
               }
             ]
           },
@@ -1647,28 +1650,27 @@
             "sections": [
               {
                 "name": "Fairies' Woods: Spot",
-                "chest_unopened_img": "images/items/gasha_spot.png",
-                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "hosted_item": "PlantedFairies'WoodsGashaSpot",
                 "access_rules": [
                   "^$CanPlantGasha|fairies_woods_spot"
                 ],
-                "item_count": 1
+                "visibility_rules": [
+                  "^$HideIfCollected|HarvestedFairies'WoodsGashaSpot"
+                ]
               },
               {
                 "name": "Harvested",
-                "chest_unopened_img": "images/items/gasha_nut.png",
-                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "hosted_item": "HarvestedFairies'WoodsGashaSpot",
                 "access_rules": [
-                  "^$HasPlanted|@Overworld/Fairies' Woods/Fairies' Woods: Spot/Fairies' Woods: Spot"
-                ],
-                "item_count": 1
+                  "^$HasPlanted|PlantedFairies'WoodsGashaSpot"
+                ]
               }
             ],
             "map_locations": [
               {
                 "map": "present",
                 "x": 23,
-                "y": 1255
+                "y": 1235
               }
             ]
           }
@@ -1880,8 +1882,7 @@
             "sections": [
               {
                 "name": "",
-                "chest_unopened_img": "images/dungeons/d7_entrance.png",
-                "chest_opened_img": "images/dungeons/d7_entrance.png"
+                "hosted_item": "jabujabusbelly"
               }
             ],
             "map_locations": [
@@ -1923,6 +1924,10 @@
               {
                 "name": "Jabu-Jabu's Belly (1F): Boxed Chest",
                 "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Boxed Chest/Jabu-Jabu's Belly (1F): Boxed Chest"
+              },
+              {
+                "name": "Jabu-Jabu's Belly (1F): Miniboss",
+                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Miniboss/Jabu-Jabu's Belly (1F): Miniboss"
               },
               {
                 "name": "Jabu-Jabu's Belly (1F): Cane and Diamond Puzzle",
@@ -2065,8 +2070,7 @@
             "sections": [
               {
                 "name": "",
-                "chest_unopened_img": "images/dungeons/d3_entrance.png",
-                "chest_opened_img": "images/dungeons/d3_entrance.png"
+                "hosted_item": "moonlitgrotto"
               }
             ],
             "map_locations": [
@@ -2122,6 +2126,10 @@
                 "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Moldorm Drop/Moonlit Grotto (B1F): Moldorm Drop"
               },
               {
+                "name": "Moonlit Grotto (B1F): Miniboss",
+                "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Miniboss/Moonlit Grotto (B1F): Miniboss"
+              },
+              {
                 "name": "Moonlit Grotto (1F): Bridge Chest",
                 "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Bridge Chest/Moonlit Grotto (1F): Bridge Chest"
               },
@@ -2158,21 +2166,20 @@
             "sections": [
               {
                 "name": "Crescent Island (Present): Vine Spot",
-                "chest_unopened_img": "images/items/gasha_spot.png",
-                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "hosted_item": "PlantedCrescentIslandWest(Present)GashaSpot",
                 "access_rules": [
                   "^$CanPlantGasha|crescent_present_vine_spot"
                 ],
-                "item_count": 1
+                "visibility_rules": [
+                  "^$HideIfCollected|HarvestedCrescentIslandWest(Present)GashaSpot"
+                ]
               },
               {
                 "name": "Harvested",
-                "chest_unopened_img": "images/items/gasha_nut.png",
-                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "hosted_item": "HarvestedCrescentIslandWest(Present)GashaSpot",
                 "access_rules": [
-                  "^$HasPlanted|@Overworld/Crescent Island/Crescent Island (Present): Vine Spot/Crescent Island (Present): Vine Spot"
-                ],
-                "item_count": 1
+                  "^$HasPlanted|PlantedCrescentIslandWest(Present)GashaSpot"
+                ]
               }
             ],
             "map_locations": [
@@ -2191,21 +2198,20 @@
             "sections": [
               {
                 "name": "Crescent Island (Present): Islet Spot",
-                "chest_unopened_img": "images/items/gasha_spot.png",
-                "chest_opened_img": "images/items/gasha_spot_gray.png",
+                "hosted_item": "PlantedCrescentIslandEast(Present)GashaSpot",
                 "access_rules": [
                   "^$CanPlantGasha|crescent_present_islet_spot"
                 ],
-                "item_count": 1
+                "visibility_rules": [
+                  "^$HideIfCollected|HarvestedCrescentIslandEast(Present)GashaSpot"
+                ]
               },
               {
                 "name": "Harvested",
-                "chest_unopened_img": "images/items/gasha_nut.png",
-                "chest_opened_img": "images/items/gasha_nut_gray.png",
+                "hosted_item": "HarvestedCrescentIslandEast(Present)GashaSpot",
                 "access_rules": [
-                  "^$HasPlanted|@Overworld/Crescent Island/Crescent Island (Present): Islet Spot/Crescent Island (Present): Islet Spot"
-                ],
-                "item_count": 1
+                  "^$HasPlanted|PlantedCrescentIslandEast(Present)GashaSpot"
+                ]
               }
             ],
             "map_locations": [
@@ -2224,7 +2230,7 @@
           {
             "name": "Underwater Cave",
             "access_rules": [
-              "^$CanReach|sea_of_storms_past"
+              "^$CanReach|sea_of_storms_present"
             ],
             "visibility_rules": [
               "secret_locations_on"
@@ -2240,6 +2246,38 @@
                 "map": "present",
                 "x": 1175,
                 "y": 1469
+              }
+            ]
+          },
+          {
+            "name": "Sea of Storms: Spot",
+            "visibility_rules": [
+              "^$CanSeeGasha|1"
+            ],
+            "sections": [
+              {
+                "name": "Sea of Storms: Spot",
+                "hosted_item": "PlantedSeaofStorms(Present)GashaSpot",
+                "access_rules": [
+                  "^$CanPlantGasha|sea_of_storms_spot"
+                ],
+                "visibility_rules": [
+                  "^$HideIfCollected|HarvestedSeaofStorms(Present)GashaSpot"
+                ]
+              },
+              {
+                "name": "Harvested",
+                "hosted_item": "HarvestedSeaofStorms(Present)GashaSpot",
+                "access_rules": [
+                  "^$HasPlanted|PlantedSeaofStorms(Present)GashaSpot"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "map",
+                "x": 1207,
+                "y": 1703
               }
             ]
           }

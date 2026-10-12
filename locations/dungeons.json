@@ -114,6 +114,9 @@
             "access_rules": [
               "^$CanReach|d1_miniboss"
             ],
+            "visibility_rules": [
+              "minibosses_on"
+            ],
             "sections": [
               {
                 "name": "Spirit's Grave: Miniboss",
@@ -311,8 +314,7 @@
             ],
             "sections": [
               {
-                "name": "Spirit's Grave: Essence",
-                "hosted_item": "d1"
+                "name": "Spirit's Grave: Essence"
               }
             ],
             "map_locations": [
@@ -524,6 +526,9 @@
             "access_rules": [
               "^$CanReach|d2_miniboss"
             ],
+            "visibility_rules": [
+              "minibosses_on"
+            ],
             "sections": [
               {
                 "name": "Wing Dungeon (1F): Miniboss"
@@ -591,8 +596,7 @@
             ],
             "sections": [
               {
-                "name": "Wing Dungeon: Essence",
-                "hosted_item": "d2"
+                "name": "Wing Dungeon: Essence"
               }
             ],
             "map_locations": [
@@ -805,6 +809,9 @@
             "access_rules": [
               "^$CanReach|d3_miniboss"
             ],
+            "visibility_rules": [
+              "minibosses_on"
+            ],
             "sections": [
               {
                 "name": "Moonlit Grotto (B1F): Miniboss",
@@ -883,8 +890,7 @@
             ],
             "sections": [
               {
-                "name": "Moonlit Grotto: Essence",
-                "hosted_item": "d3"
+                "name": "Moonlit Grotto: Essence"
               }
             ],
             "map_locations": [
@@ -1097,6 +1103,9 @@
             "access_rules": [
               "^$CanReach|d4_miniboss"
             ],
+            "visibility_rules": [
+              "minibosses_on"
+            ],
             "sections": [
               {
                 "name": "Skull Dungeon (1F): Miniboss",
@@ -1137,8 +1146,7 @@
             ],
             "sections": [
               {
-                "name": "Skull Dungeon: Essence",
-                "hosted_item": "d4"
+                "name": "Skull Dungeon: Essence"
               }
             ],
             "map_locations": [
@@ -1275,6 +1283,9 @@
             "access_rules": [
               "^$CanReach|d5_miniboss"
             ],
+            "visibility_rules": [
+              "minibosses_on"
+            ],
             "sections": [
               {
                 "name": "Crown Dungeon (1F): Miniboss",
@@ -1391,8 +1402,7 @@
             ],
             "sections": [
               {
-                "name": "Crown Dungeon: Essence",
-                "hosted_item": "d5"
+                "name": "Crown Dungeon: Essence"
               }
             ],
             "map_locations": [
@@ -1569,8 +1579,7 @@
             ],
             "sections": [
               {
-                "name": "Mermaid's Cave: Essence",
-                "hosted_item": "d6"
+                "name": "Mermaid's Cave: Essence"
               }
             ],
             "map_locations": [
@@ -1766,6 +1775,9 @@
             "access_rules": [
               "^$CanReach|d6_miniboss"
             ],
+            "visibility_rules": [
+              "minibosses_on"
+            ],
             "sections": [
               {
                 "name": "Mermaid's Cave (Present): Miniboss",
@@ -1944,6 +1956,9 @@
             "access_rules": [
               "^$CanReach|d7_miniboss"
             ],
+            "visibility_rules": [
+              "minibosses_on"
+            ],
             "sections": [
               {
                 "name": "Jabu-Jabu's Belly (1F): Miniboss",
@@ -2117,8 +2132,7 @@
             ],
             "sections": [
               {
-                "name": "Jabu-Jabu's Belly: Essence",
-                "hosted_item": "d7"
+                "name": "Jabu-Jabu's Belly: Essence"
               }
             ],
             "map_locations": [
@@ -2216,6 +2230,9 @@
             "name": "(B2F): Miniboss",
             "access_rules": [
               "^$CanReach|d8_miniboss"
+            ],
+            "visibility_rules": [
+              "minibosses_on"
             ],
             "sections": [
               {
@@ -2466,8 +2483,7 @@
             ],
             "sections": [
               {
-                "name": "Ancient Tomb: Essence",
-                "hosted_item": "d8"
+                "name": "Ancient Tomb: Essence"
               }
             ],
             "map_locations": [

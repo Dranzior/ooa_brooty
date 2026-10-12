@@ -1,35 +1,36 @@
 local gasha_count = 15
 
-GashaIDToLocation = {}
+GashaIDToItem = {}
 
 function AddToGashaMap(location)
-    GashaIDToLocation[location] = Tracker:FindObjectForCode(location)
+    GashaIDToItem[location] = Tracker:FindObjectForCode(location)
 end
 
 function CreateGashaMap()
-    AddToGashaMap("@Overworld_Past/Talus Peaks/Talus Peak (Past): Spot/Talus Peak (Past): Spot")
-    AddToGashaMap("@Overworld_Past/Talus Peaks/Talus Lake (Past): Spot/Talus Lake (Past): Spot")
-    AddToGashaMap("@Overworld_Past/Rolling Ridge/Ridge West Base: Spot/Ridge West Base: Spot")
-    AddToGashaMap("@Overworld_Past/Lynna Village/South Shore (Past): Spot/South Shore (Past): Spot")
-    AddToGashaMap("@Overworld_Past/Lynna Village/Lynna Village: Spot/Lynna Village: Spot")
-    AddToGashaMap("@Overworld_Past/Zora Seas/Zora Village (Past): Spot/Zora Village (Past): Spot")
-    AddToGashaMap("@Overworld_Past/Crescent Island/Crescent Island (Past): Spot/Crescent Island (Past): Spot")
-    AddToGashaMap("@Overworld/Talus Peaks/Talus Peak (Present): Spot/Talus Peak (Present): Spot")
-    AddToGashaMap("@Overworld/Nuun Highlands/Nuun Highlands: Spot/Nuun Highlands: Spot")
-    AddToGashaMap("@Overworld/Rolling Ridge/Rolling Ridge (Present): Spot/Rolling Ridge (Present): Spot")
-    AddToGashaMap("@Overworld/Yoll Graveyard/Yoll Graveyard: Spot/Yoll Graveyard: Spot")
-    AddToGashaMap("@Overworld/Fairies' Woods/Fairies' Woods: Spot/Fairies' Woods: Spot")
-    AddToGashaMap("@Overworld/Crescent Island/Crescent Island (Present): Vine Spot/Crescent Island (Present): Vine Spot")
-    AddToGashaMap("@Overworld_Past/Rolling Ridge/Ridge West Upper: Spot/Ridge West Upper: Spot")
-    AddToGashaMap("@Overworld/Crescent Island/Crescent Island (Present): Islet Spot/Crescent Island (Present): Islet Spot")
+    AddToGashaMap("PlantedLynnaVillageGashaSpot")
+    AddToGashaMap("PlantedFairies'WoodsGashaSpot")
+    AddToGashaMap("PlantedSouthernShoreGashaSpot")
+    AddToGashaMap("PlantedSeaofStorms(Present)GashaSpot")
+    AddToGashaMap("PlantedZoraVilageGashaSpot")
+    AddToGashaMap("PlantedDekuForestGashaSpot")
+    AddToGashaMap("PlantedCrescentIslandEast(Present)GashaSpot")
+    AddToGashaMap("PlantedTalusPeeks(Past)GashaSpot")
+    AddToGashaMap("PlantedRollingRidge(PastUpper)GashaSpot")
+    AddToGashaMap("PlantedNuunHighlandsGashaSpot")
+    AddToGashaMap("PlantedYollGraveyardGashaSpot")
+    AddToGashaMap("PlantedTalusPeeks(Present)GashaSpot")
+    AddToGashaMap("PlantedRollingRidge(PresentEast)GashaSpot")
+    AddToGashaMap("PlantedRollingRidge(PastWest)GashaSpot")
+    AddToGashaMap("PlantedCrescentIslandWest(Past)GashaSpot")
+    AddToGashaMap("PlantedCrescentIslandWest(Present)GashaSpot")
 end
 
 CreateGashaMap()
 
 function GashasPlanted()
     local n = 0
-    for _, loc in pairs(GashaIDToLocation) do
-        if (loc.AccessibilityLevel == AccessibilityLevel.Cleared) then
+    for _, item in pairs(GashaIDToItem) do
+        if (item.Active) then
             n = n + 1
         end
     end
@@ -37,10 +38,6 @@ function GashasPlanted()
 end
 
 function CanPlantGasha(location)
-    -- rules for being able to collect the nut
-    if (not ooa_has_sword()) then
-        return false
-    end
     -- rules for how many available spots remain
     local ownedGashas = Tracker:ProviderCountForCode("gashaseeds")
     local gashasPlanted = GashasPlanted()
@@ -71,11 +68,19 @@ function HasPlanted(code)
     if (section == nil) then
         return false
     end
-    return section.ChestCount - section.AvailableChestCount ~= 0
+    return All(section.Active, ooa_has_sword())
 end
 
 function CanSeeGasha(count)
     local gashaSetting = Tracker:FindObjectForCode("deterministic_gasha_locations")
     return gashaSetting ~= nil and gashaSetting.CurrentStage >= tonumber(count) and
-    GashasHarvested() < gashaSetting.CurrentStage
+        GashasHarvested() < gashaSetting.CurrentStage
+end
+
+function HideIfCollected(code)
+    local section = Tracker:FindObjectForCode(code)
+    if (section == nil) then
+        return true
+    end
+    return not section.Active
 end

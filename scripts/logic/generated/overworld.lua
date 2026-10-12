@@ -235,8 +235,7 @@ crescent_past_middle:connect_one_way_entrance(tokay_stolen_harp,function() retur
             All(
                 ooa_can_jump_1_wide_pit(false),
                 ooa_has_bracelet(),
-                ooa_can_swim(false)
-            )
+                ooa_can_swim(false))
             
         ) end)
 tokay_stolen_harp:connect_one_way_entrance(crescent_past_middle,function() return All(
@@ -414,6 +413,7 @@ ridge_base_past_west:connect_two_ways_entrance(ridge_upper_past,function() retur
 ridge_upper_present:connect_one_way_entrance(ridge_upper_past,function() return ooa_can_switch_past_and_present() end)
 ridge_upper_present:connect_one_way_entrance(treasure_hunting_goron,function() return All(
             ooa_has_bombs(2),
+            ooa_has_satchel(),
             ooa_has_ember_seeds(),
             Any(
                 All(
@@ -497,7 +497,7 @@ ridge_mid_past:connect_one_way_entrance(ridge_east_tree,function() return All(
             ooa_can_harvest_tree(false),
             ooa_option_medium_logic(),
             ooa_can_warp_using_gale_seeds()) end)
-ridge_mid_present:connect_one_way_entrance(ridge_east_tree,function() return Any(
+ridge_mid_present:connect_one_way_entrance(ridge_east_tree,function() return All(
             ooa_can_harvest_tree(false),
             ooa_can_switch_past_and_present()) end)
 goron_shooting_gallery:connect_one_way_entrance(ridge_east_tree,function() return ooa_can_harvest_tree(false) end)
@@ -594,11 +594,13 @@ talus_peaks:connect_one_way_entrance(talus_peak_present_spot,function() return A
         ) end)
 deku_forest:connect_one_way_entrance(fairies_woods_spot,function() return All(
             ooa_can_break_bush(false),
-            ooa_can_switch_past_and_present()
+            ooa_can_go_back_to_present()
         ) end)
 nuun__ricky_:connect_one_way_entrance(nuun_highlands_top,function() return Any(
             ooa_can_summon_ricky(),
-            ooa_can_go_back_to_present(),
+            All(
+                ooa_can_go_back_to_present(),
+                ooa_option_medium_logic()),
             All(
 
                 ooa_can_jump_1_wide_pit(false),
@@ -618,14 +620,18 @@ nuun__ricky_:connect_one_way_entrance(nuun_highlands_top,function() return Any(
         ) end)
 nuun__moosh_:connect_one_way_entrance(nuun_highlands_top,function() return Any(
             ooa_can_summon_moosh(),
-            ooa_can_go_back_to_present(),
+            All(
+                ooa_can_go_back_to_present(),
+                ooa_option_medium_logic()),
             All(
                 ooa_can_break_bush(),
                 ooa_can_jump_3_wide_pit(false))
         ) end)
 nuun__dimitri_:connect_one_way_entrance(nuun_highlands_top,function() return Any(
             ooa_can_summon_dimitri(),
-            ooa_can_go_back_to_present(),
+            All(
+                ooa_can_go_back_to_present(),
+                ooa_option_medium_logic()),
             All(
                 Has("Swimmer's Ring"),
                 ooa_can_swim(false),
@@ -642,7 +648,10 @@ crescent_present_east:connect_one_way_entrance(crescent_present_vine_spot,functi
 lynna_city:connect_one_way_entrance(outside_d11)
 lynna_city:connect_one_way_entrance(mayor_plens_secret)
 mamamu_yan_trade:connect_one_way_entrance(mamamu_yan_secret,function() return ooa_has_bracelet() end)
-zoras_reward:connect_one_way_entrance(king_zoras_secret)
+zoras_reward:connect_one_way_entrance(king_zoras_secret,function() return All(
+                Has("King Zora's Potion"),
+                Has("Fairy Powder")
+            ) end)
 goron_shooting_gallery:connect_one_way_entrance(elder_secret)
 target_carts:connect_one_way_entrance(troy_secret)
 library_past:connect_one_way_entrance(library_secret)

@@ -1,6 +1,59 @@
 {
   "versions": [
     {
+      "package_version": "0.9.11",
+      "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.11/ooa.zip",
+      "sha256": "8b5ed3369034238d08179913e923b198b0b1e1c28d3adea5d673d932f722e03c",
+      "changelog": [
+        "CHORE: added platform to manifest"
+      ]
+    },{
+      "package_version": "0.9.10",
+      "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.10/ooa.zip",
+      "sha256": "f4590604cc70de9134d9a1d6745e5db72109ed32c2ebe3ba6214fe7ec2146814",
+      "changelog": [
+        "FIX: Fixed error while parsing logic after getting fist or expert ring."
+      ]
+    },
+    {
+      "package_version": "0.9.9",
+      "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.9/ooa.zip",
+      "sha256": "35b82c12c91ccb834f3467f41933a0e417f4e5d8b88af105fed2d07394811425",
+      "changelog": [
+        "CHANGES: Auto Tab now default to ON",
+        "CHANGES: The forest Gasha spot have been slightly move to not overlap with the cave in Zora village",
+        "MINOR: Applied logic from the APWorld 1.1.2",
+        "MINOR: Gale seed are now considered in logic (following the APWorld to mark them as progression)",
+        "MINOR: Fighting with 1 seed bag is now considered OOL (was red, now is yellow)",
+        "FIX: Fixed autotracking of starting seed",
+        "FIX: Fixed some logic changes in predicate",
+        "FIX: Sea of storm present logic was checking for the wrong region",
+        "FIX: Gasha seed where shown as collectable witouth a sword",
+        "FIX: Pedestal reward now longer have essence as hosted item (was causing issue with placed essence)"
+      ]
+    },
+    {
+      "package_version": "0.9.6",
+      "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.6/ooa.zip",
+      "sha256": "1c688dca12a7045e21e3bb9a561aee84f85130a27d5b55feec58cf65f7d318b8",
+      "changelog": [
+        "FIX: Implemented Logic Fixed made in the APWorld between 1.0.0 and 1.0.2",
+        "FIX: Fixed Target Cart vanilla route not working in the tracker"
+      ]
+    },
+    {
+      "package_version": "0.9.5",
+      "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.5/ooa.zip",
+      "sha256": "f7558e4109a39bca07a55781944c6cdba7a5279d8569d90f525a551ade22433d",
+      "changelog": [
+        "NEW: Better broadcast view",
+        "NEW: Gasha and Event Autotracking",
+        "FIX: Hero's cave autotracking",
+		"FIX: Moved some check to better represent their locations",
+		"FIX: Added a setting for miniboss location"
+      ]
+    },
+	{
       "package_version": "0.9.4",
       "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.4/ooa.zip",
       "sha256": "9b58a1ac97307515377ec547d3d4bcb13e6e95c55796bd756952feee7675536a",

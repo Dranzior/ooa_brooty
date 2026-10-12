@@ -48,7 +48,7 @@ image_lib = [
 [SETTING_DEFAULT_FULL_GREEN, SETTING_DEFAULT_IMAGE, "On", "lynnagardeneron"],
 [SETTING_DEFAULT_FULL_RED, SETTING_DEFAULT_IMAGE, "Off", "lynnagardeneroff"],
     #Hero's Cave
-[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Hero's Cave", "heroscave"],
+[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Hero's\nCave", "heroscave"],
 [SETTING_DEFAULT_FULL_GREEN, SETTING_DEFAULT_IMAGE, "On", "heroscaveon"],
 [SETTING_DEFAULT_FULL_RED, SETTING_DEFAULT_IMAGE, "Off", "heroscaveoff"],
     #Secret Locations
@@ -56,7 +56,7 @@ image_lib = [
 [SETTING_DEFAULT_FULL_GREEN, SETTING_DEFAULT_IMAGE, "On", "secretlocationson"],
 [SETTING_DEFAULT_FULL_RED, SETTING_DEFAULT_IMAGE, "Off", "secretlocationsoff"],
     #Vasu's Madness
-[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Vasu's\nMadness", "vasumadness"],
+[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Vasu\nRing", "vasumadness"],
 [SETTING_DEFAULT_FULL_GREEN, SETTING_DEFAULT_IMAGE, "On", "vasumadnesson"],
 [SETTING_DEFAULT_FULL_RED, SETTING_DEFAULT_IMAGE, "Off", "vasumadnessoff"],
     #Gasha Seeds
@@ -83,6 +83,10 @@ image_lib = [
 [SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Auto\nTab", "autotab"],
 [SETTING_DEFAULT_HALF_GREEN, SETTING_DEFAULT_IMAGE, "On", "autotabon"],
 [SETTING_DEFAULT_HALF_RED, SETTING_DEFAULT_IMAGE, "Off", "autotaboff"],
+    #
+[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Minibosses\nLocations", "minibosses"],
+[SETTING_DEFAULT_HALF_GREEN, SETTING_DEFAULT_IMAGE, "On", "minibosseson"],
+[SETTING_DEFAULT_HALF_RED, SETTING_DEFAULT_IMAGE, "Off", "minibossesoff"],
 ]
 
 def generate_settings():

@@ -1,0 +1,68 @@
+[
+  {
+    "name": "makupath",
+    "type": "toggle",
+    "img": "images/dungeons/d0_entrance.png",
+    "codes": "makupath"
+  },
+  {
+    "name": "spiritsgrave",
+    "type": "toggle",
+    "img": "images/dungeons/d1_entrance.png",
+    "codes": "spiritsgrave"
+  },
+  {
+    "name": "wingdungeonpast",
+    "type": "toggle",
+    "img": "images/dungeons/d2_entrance.png",
+    "codes": "wingdungeonpast"
+  },
+  {
+    "name": "moonlitgrotto",
+    "type": "toggle",
+    "img": "images/dungeons/d3_entrance.png",
+    "codes": "moonlitgrotto"
+  },
+  {
+    "name": "skulldungeon",
+    "type": "toggle",
+    "img": "images/dungeons/d4_entrance.png",
+    "codes": "skulldungeon"
+  },
+  {
+    "name": "crowndungeon",
+    "type": "toggle",
+    "img": "images/dungeons/d5_entrance.png",
+    "codes": "crowndungeon"
+  },
+  {
+    "name": "mermaidscavepast",
+    "type": "toggle",
+    "img": "images/dungeons/d6_past_entrance.png",
+    "codes": "mermaidscavepast"
+  },
+  {
+    "name": "mermaidscavepresent",
+    "type": "toggle",
+    "img": "images/dungeons/d6_entrance.png",
+    "codes": "mermaidscavepresent"
+  },
+  {
+    "name": "jabujabusbelly",
+    "type": "toggle",
+    "img": "images/dungeons/d7_entrance.png",
+    "codes": "jabujabusbelly"
+  },
+  {
+    "name": "ancienttomb",
+    "type": "toggle",
+    "img": "images/dungeons/d11_entrance.png",
+    "codes": "ancienttomb"
+  },
+  {
+    "name": "heroscave",
+    "type": "toggle",
+    "img": "images/dungeons/d0_entrance.png",
+    "codes": "heroscave"
+  }
+]

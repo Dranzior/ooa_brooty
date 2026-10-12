@@ -1,5 +1,6 @@
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/automation/Events.lua")
 ScriptHost:LoadScript("scripts/autotracking/automation/Hint.lua")
 ScriptHost:LoadScript("scripts/autotracking/automation/ManualLocation.lua")
 ScriptHost:LoadScript("scripts/autotracking/automation/Settings.lua")
@@ -16,23 +17,19 @@ MANUAL_CHECKED = true
 ROOM_SEED = "default"
 
 function onSetReply(key, value, _)
-    local slot_player = "Slot:" .. Archipelago.PlayerNumber
-    if key == slot_player .. ":Current Map" then
-        if Tracker:FindObjectForCode("auto_tab").CurrentStage == 1 then
-            if TABS_MAPPING[value] then
-                CURRENT_ROOM = TABS_MAPPING[value]
-            else
-                CURRENT_ROOM = CURRENT_ROOM_ADDRESS
-            end
-            Tracker:UiHint("ActivateTab", CURRENT_ROOM)
-        end
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("called onSetReply: %s -- %s", key, dump_table(value)))
     end
-	
-	Hint.Process(key, value)
+    Hint.Process(key, value)
+	Events.process(key, value)
 end
 
 function retrieved(key, value)
-	Hint.Process(key, value)
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("called retrieved: %s -- %s", key, dump_table(value)))
+    end
+    Hint.Process(key, value)
+	Events.process(key, value)
 end
 
 function preOnClear()
@@ -149,39 +146,34 @@ function onClear(slot_data)
 end
 
 function updateDefaultSeed()
+    local defaultSeed = SLOT_DATA["options"]["default_seed"]
     local satchel = Tracker:FindObjectForCode("seed satchel")
     local seedShooter = Tracker:FindObjectForCode("seed shooter")
-    if (satchel and satchel.Active) or (seedShooter and seedShooter.Active) then
+    if defaultSeed and ((satchel and satchel.Active) or (seedShooter and seedShooter.Active)) then
         --starting seed
-        if SLOT_DATA["default_seed"] then
-            local obj = Tracker:FindObjectForCode("emberseeds")
-            if obj and SLOT_DATA["default_seed"] == "Ember Seeds" then
-                obj.Active = true
-            end
+        local obj = Tracker:FindObjectForCode("emberseeds")
+        if obj and defaultSeed == 0 then
+            obj.Active = true
         end
-        if SLOT_DATA["default_seed"] then
-            local obj = Tracker:FindObjectForCode("scentseeds")
-            if obj and SLOT_DATA["default_seed"] == "Scent Seeds" then
-                obj.Active = true
-            end
+
+        local obj = Tracker:FindObjectForCode("scentseeds")
+        if obj and defaultSeed == 1 then
+            obj.Active = true
         end
-        if SLOT_DATA["default_seed"] then
-            local obj = Tracker:FindObjectForCode("pegasusseeds")
-            if obj and SLOT_DATA["default_seed"] == "Pegasus Seeds" then
-                obj.Active = true
-            end
+
+        local obj = Tracker:FindObjectForCode("pegasusseeds")
+        if obj and defaultSeed == 2 then
+            obj.Active = true
         end
-        if SLOT_DATA["default_seed"] then
-            local obj = Tracker:FindObjectForCode("galeseeds")
-            if obj and SLOT_DATA["default_seed"] == "Gale Seeds" then
-                obj.Active = true
-            end
+
+        local obj = Tracker:FindObjectForCode("galeseeds")
+        if obj and defaultSeed == 3 then
+            obj.Active = true
         end
-        if SLOT_DATA["default_seed"] then
-            local obj = Tracker:FindObjectForCode("mysteryseeds")
-            if obj and SLOT_DATA["default_seed"] == "Mystery Seeds" then
-                obj.Active = true
-            end
+
+        local obj = Tracker:FindObjectForCode("mysteryseeds")
+        if obj and defaultSeed == 4 then
+            obj.Active = true
         end
     end
 end

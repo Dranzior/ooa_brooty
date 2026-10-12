@@ -105,10 +105,7 @@ function ooa_has_mystery_seeds()
 end
 
 function ooa_has_gale_seeds()
-    return All(
-        Has("Gale Seeds"),
-        AccessibilityLevel.SequenceBreak    -- Due to Gale not being set as progression in AP, they can never be the logical requirement
-    )
+    return Has("Gale Seeds")
 end
 
 function ooa_has_small_keys(dungeon_id, amount)
@@ -418,6 +415,9 @@ function ooa_has_seed_kind_count(count)
         seedCount = seedCount+1
     end
     if Has("Pegasus Seeds") then
+        seedCount = seedCount + 1
+    end
+    if Has("Gale Seeds") then
         seedCount = seedCount+1
     end
 
@@ -425,18 +425,7 @@ function ooa_has_seed_kind_count(count)
         return AccessibilityLevel.Normal
     end
 
-    -- Gale seed is not considered Logic due to them being non-progressive in the APWorld
-    -- so we handle them independently for now
-
-    if Has("Gale Seeds") then
-        seedCount = seedCount+1
-    end
-
-    if (seedCount >= count) then
-        return AccessibilityLevel.SequenceBreak
-    else
-        return AccessibilityLevel.None
-    end
+    return AccessibilityLevel.None
 end
 
 function ooa_can_use_ember_seeds(accept_mystery_seeds)
@@ -559,8 +548,8 @@ function ooa_can_break_tingle_balloon()
     return All(
         Any(
             ooa_has_sword(),
-            ooa_has_boomerang()
-            --ooa_can_punch(state), ?
+            ooa_has_boomerang(),
+            ooa_can_punch()
         ),
         ooa_has_feather()
     )
@@ -643,11 +632,13 @@ function ooa_can_harvest_tree(can_use_companion)
             ooa_can_use_seeds(),
             Any(
                 ooa_has_sword(),
-                ooa_can_punch(),
                 All(
                     can_use_companion,
                     ooa_option_medium_logic(),
                     ooa_can_summon_dimitri()
+                ),
+                All(
+                    ooa_can_punch()
                 )
             )
         ),
@@ -760,41 +751,35 @@ function ooa_can_kill_underwater(can_kill_with_hook)
 end
 
 function ooa_can_kill_normal_using_satchel()
-    -- Expect a 50+ seed satchel to ensure we can chain dungeon rooms to some extent if that's our only kill option
-    if not ooa_has_satchel(2) then
-        return false
-    end
-
-    return Any(
-        -- Casual logic => only ember
-        ooa_has_ember_seeds(),
-        All(
-            -- Medium logic => Allow scent or gale+feather
-            ooa_option_medium_logic(),
-            Any(
-                ooa_has_scent_seeds(),
-                ooa_has_mystery_seeds(),
-                All(
-                    ooa_has_gale_seeds(),
-                    ooa_has_feather()
+    return All(
+        ooa_can_fight_using_seed(),
+        Any(
+            -- Casual logic => only ember
+            ooa_has_ember_seeds(),
+            All(
+                -- Medium logic => Allow scent or gale+feather
+                ooa_option_medium_logic(),
+                Any(
+                    ooa_has_scent_seeds(),
+                    ooa_has_mystery_seeds(),
+                    All(
+                        ooa_has_gale_seeds(),
+                        ooa_has_feather()
+                    )
                 )
+            ),
+            All(
+                -- Hard logic => Allow gale without feather
+                ooa_option_hard_logic(),
+                ooa_has_gale_seeds()
             )
-        ),
-        All(
-            -- Hard logic => Allow gale without feather
-            ooa_option_hard_logic(),
-            ooa_has_gale_seeds()
         )
     )
 end
 
 function ooa_can_kill_normal_using_seedshooter()
-    -- Expect a 50+ seed satchel to ensure we can chain dungeon rooms to some extent if that's our only kill option
-    if not ooa_has_satchel(2) then
-        return false
-    end
-
     return All(
+        ooa_can_fight_using_seed(),
         ooa_has_seedshooter(),
         Any(
             ooa_has_ember_seeds(),
@@ -814,7 +799,7 @@ function ooa_can_kill_armored_enemy()
     return Any(
         ooa_has_sword(),
         All(
-            ooa_has_satchel(2),  -- Expect a 50+ seeds satchel to be able to chain rooms in dungeons
+            ooa_can_fight_using_seed(),
             ooa_has_scent_seeds(),
             Any(
                 ooa_has_seedshooter(),
@@ -968,10 +953,6 @@ function ooa_can_toss_ring()
 end
 
 function ooa_can_harvest_gasha(count)
-    -- rules for being able to collect the nut
-    if (not ooa_has_sword()) then
-        return false
-    end
     -- rules for how many available spots remain
     local gashasHarvested = GashasHarvested()
     local gashasPlanted = GashasPlanted()
@@ -982,7 +963,10 @@ function ooa_can_harvest_gasha(count)
     if (gashaSetting == nil or gashasHarvested >= gashaSetting.CurrentStage) then
         return false
     end
-    return gashasPlanted > gashasHarvested
+    return All(
+        ooa_has_sword(),
+        (gashasPlanted > gashasHarvested)
+    )
 end
 
 function ooa_option_lynna_gardener()
@@ -1002,6 +986,20 @@ function ooa_has_rupees_for_vasu()
         ),
         All(
             ooa_can_farm_rupees(),
+            AccessibilityLevel.SequenceBreak
+        )
+    )
+end
+
+function ooa_can_fight_using_seed()
+    return Any(
+        ooa_has_satchel(2), -- Logic Expect a 50+ seeds satchel to be able to chain rooms in dungeons
+        All(
+            ooa_has_satchel(),
+            AccessibilityLevel.SequenceBreak
+        ),
+        All(
+            ooa_has_seedshooter(),
             AccessibilityLevel.SequenceBreak
         )
     )

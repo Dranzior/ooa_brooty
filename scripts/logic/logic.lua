@@ -212,18 +212,29 @@ function BoolToAccess(result)
 	end
 end
 
+---@param ... boolean|string|function|accessibilityLevel
+---@return accessibilityLevel
 function All(...)
 	local args = { ... }
 	local min = AccessibilityLevel.Normal
 	for _, access in ipairs(args) do
+		-- process rules
+		if type(access) == "function" then
+			access = access()
+		elseif type(access) == "string" then
+			access = BoolToAccess(Has(access))
+		end
 		if type(access) == "boolean" then
 			access = BoolToAccess(access)
 		end
 
+		-- if change...
 		if access < min then
 			if access == AccessibilityLevel.None then
+				-- can't change any more, return
 				return AccessibilityLevel.None
 			else
+				-- update to new value
 				min = access
 			end
 		end
@@ -231,19 +242,29 @@ function All(...)
 	return min
 end
 
+---@param ... boolean|string|function|accessibilityLevel
+---@return accessibilityLevel
 function Any(...)
 	local args = { ... }
 	local max = AccessibilityLevel.None
-	-- print("any", args)
 	for _, access in ipairs(args) do
-		-- print(i, v)
+		-- process rules
+		if type(access) == "function" then
+			access = access()
+		elseif type(access) == "string" then
+			access = BoolToAccess(Has(access))
+		end
 		if type(access) == "boolean" then
 			access = BoolToAccess(access)
 		end
+
+		-- if change...
 		if access > max then
 			if access == AccessibilityLevel.Normal then
+				-- can't change any more, return
 				return AccessibilityLevel.Normal
 			else
+				-- update to new value
 				max = access
 			end
 		end

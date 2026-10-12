@@ -17,7 +17,7 @@ function Hint.Setup()
 
 	if Archipelago.PlayerNumber > -1 then
 		HINTS_ID = "_read_hints_"..TEAM_NUMBER.."_"..PLAYER_ID
-		DATA_STORAGE_ID = "OoS_"..TEAM_NUMBER.."_"..PLAYER_ID
+		DATA_STORAGE_ID = "OoA_"..TEAM_NUMBER.."_"..PLAYER_ID
 
 		if Highlight then
 			Archipelago:SetNotify({HINTS_ID, DATA_STORAGE_ID})
