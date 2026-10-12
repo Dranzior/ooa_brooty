@@ -1,0 +1,278 @@
+[
+  {
+    "name": "Hero's Cave",
+    "chest_unopened_img": "images/items/chest_present.png",
+    "chest_opened_img": "images/items/chest_present_open.png",
+    "visibility_rules": [
+      "heros_cave_on"
+    ],
+    "children": [
+      {
+        "name": "(1F): Pots Puzzle",
+        "access_rules": [
+          "^$CanReach|d11_pots_puzzle_1"
+        ],
+        "sections": [
+          {
+            "name": "Linked Hero's Cave (1F): Pots Puzzle",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d11_1",
+            "x": 183,
+            "y": 409
+          }
+        ]
+      },
+      {
+        "name": "(1F): Statue Puzzle #1",
+        "access_rules": [
+          "^$CanReach|d11_statue_1_puzzle"
+        ],
+        "sections": [
+          {
+            "name": "Linked Hero's Cave (1F): Statue Puzzle #1",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d11_1",
+            "x": 358,
+            "y": 419
+          }
+        ]
+      },
+      {
+        "name": "(1F): Bridge Puzzle #1",
+        "access_rules": [
+          "^$CanReach|d11_bridge_puzzle_1"
+        ],
+        "sections": [
+          {
+            "name": "Linked Hero's Cave (1F): Bridge Puzzle #1",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d11_1",
+            "x": 424,
+            "y": 312
+          }
+        ]
+      },
+      {
+        "name": "(1F): Shoot Eyes",
+        "access_rules": [
+          "^$CanReach|d11_shoot_eyes"
+        ],
+        "sections": [
+          {
+            "name": "Linked Hero's Cave (1F): Shoot Eyes",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d11_1",
+            "x": 119,
+            "y": 247
+          }
+        ]
+      },
+      {
+        "name": "(1F): Statue Puzzle #2",
+        "access_rules": [
+          "^$CanReach|d11_statue_2_puzzle"
+        ],
+        "sections": [
+          {
+            "name": "Linked Hero's Cave (1F): Statue Puzzle #2",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d11_1",
+            "x": 598,
+            "y": 616
+          }
+        ]
+      },
+      {
+        "name": "(1F): Pots Puzzle #2",
+        "access_rules": [
+          "^$CanReach|d11_pots_puzzle_2"
+        ],
+        "sections": [
+          {
+            "name": "Linked Hero's Cave (1F): Pots Puzzle #2",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d11_1",
+            "x": 575,
+            "y": 460
+          }
+        ]
+      },
+      {
+        "name": "(1F): Statue Puzzle #3",
+        "access_rules": [
+          "^$CanReach|d11_statue_3_puzzle"
+        ],
+        "sections": [
+          {
+            "name": "Linked Hero's Cave (1F): Statue Puzzle #3",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d11_1",
+            "x": 871,
+            "y": 423
+          }
+        ]
+      },
+      {
+        "name": "(1F): Bridge Puzzle #2",
+        "access_rules": [
+          "^$CanReach|d11_bridge_puzzle_2"
+        ],
+        "sections": [
+          {
+            "name": "Linked Hero's Cave (1F): Bridge Puzzle #2",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d11_1",
+            "x": 921,
+            "y": 310
+          }
+        ]
+      },
+      {
+        "name": "(1F): Color Room",
+        "access_rules": [
+          "^$CanReach|d11_color_room"
+        ],
+        "sections": [
+          {
+            "name": "Linked Hero's Cave (1F): Color Room",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d11_1",
+            "x": 601,
+            "y": 248
+          }
+        ]
+      },
+      {
+        "name": "(1F): Water Puzzle",
+        "access_rules": [
+          "^$CanReach|d11_water_puzzle_1f"
+        ],
+        "sections": [
+          {
+            "name": "Linked Hero's Cave (1F): Water Puzzle",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d11_1",
+            "x": 600,
+            "y": 72
+          }
+        ]
+      },
+      {
+        "name": "(B1F): Water Puzzle",
+        "access_rules": [
+          "^$CanReach|d11_water_puzzle_b1f"
+        ],
+        "sections": [
+          {
+            "name": "Linked Hero's Cave (B1F): Water Puzzle",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d11_1",
+            "x": 840,
+            "y": 602
+          }
+        ]
+      },
+      {
+        "name": "(B1F): Basement",
+        "access_rules": [
+          "^$CanReach|d11_basement"
+        ],
+        "sections": [
+          {
+            "name": "Linked Hero's Cave (B1F): Basement",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d11_1",
+            "x": 419,
+            "y": 599
+          }
+        ]
+      },
+      {
+        "name": "(1F): Minecart Room",
+        "access_rules": [
+          "^$CanReach|d11_minecart_room"
+        ],
+        "sections": [
+          {
+            "name": "Linked Hero's Cave (1F): Minecart Room",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d11_1",
+            "x": 362,
+            "y": 41
+          }
+        ]
+      },
+      {
+        "name": "(1F): Completion Reward",
+        "access_rules": [
+          "^$CanReach|d11_reward"
+        ],
+        "sections": [
+          {
+            "name": "Linked Hero's Cave (1F): Completion Reward",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d11_1",
+            "x": 839,
+            "y": 40
+          }
+        ]
+      }
+    ]
+  }
+]

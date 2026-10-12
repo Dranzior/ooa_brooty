@@ -1,0 +1,334 @@
+[
+  {
+    "name": "Jabu-Jabu's Belly (D7)",
+    "chest_unopened_img": "images/items/chest_present.png",
+    "chest_opened_img": "images/items/chest_present_open.png",
+    "children": [
+      {
+        "name": "(2F): Spike Chest",
+        "access_rules": [
+          "^$CanReach|d7_spike_chest"
+        ],
+        "sections": [
+          {
+            "name": "Jabu-Jabu's Belly (2F): Spike Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d7_2",
+            "x": 281,
+            "y": 600
+          }
+        ]
+      },
+      {
+        "name": "(1F): Crab Chest",
+        "access_rules": [
+          "^$CanReach|d7_crab_chest"
+        ],
+        "sections": [
+          {
+            "name": "Jabu-Jabu's Belly (1F): Crab Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d7_1",
+            "x": 599,
+            "y": 599
+          }
+        ]
+      },
+      {
+        "name": "(1F): Diamond Puzzle",
+        "access_rules": [
+          "^$CanReach|d7_diamond_puzzle"
+        ],
+        "sections": [
+          {
+            "name": "Jabu-Jabu's Belly (1F): Diamond Puzzle",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d7_1",
+            "x": 377,
+            "y": 789
+          }
+        ]
+      },
+      {
+        "name": "(1F): Flower Room",
+        "access_rules": [
+          "^$CanReach|d7_flower_room"
+        ],
+        "sections": [
+          {
+            "name": "Jabu-Jabu's Belly (1F): Flower Room",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d7_1",
+            "x": 151,
+            "y": 246
+          }
+        ]
+      },
+      {
+        "name": "(1F): Stairway Chest",
+        "access_rules": [
+          "^$CanReach|d7_stairway_chest"
+        ],
+        "sections": [
+          {
+            "name": "Jabu-Jabu's Belly (1F): Stairway Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d7_1",
+            "x": 614,
+            "y": 199
+          }
+        ]
+      },
+      {
+        "name": "(2F): Right Wing",
+        "access_rules": [
+          "^$CanReach|d7_right_wing"
+        ],
+        "sections": [
+          {
+            "name": "Jabu-Jabu's Belly (2F): Right Wing",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d7_2",
+            "x": 1322,
+            "y": 440
+          }
+        ]
+      },
+      {
+        "name": "(1F): Boxed Chest",
+        "access_rules": [
+          "^$CanReach|d7_boxed_chest"
+        ],
+        "sections": [
+          {
+            "name": "Jabu-Jabu's Belly (1F): Boxed Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d7_1",
+            "x": 363,
+            "y": 440
+          }
+        ]
+      },
+      {
+        "name": "(1F): Miniboss",
+        "access_rules": [
+          "^$CanReach|d7_miniboss"
+        ],
+        "visibility_rules": [
+          "minibosses_on"
+        ],
+        "sections": [
+          {
+            "name": "Jabu-Jabu's Belly (1F): Miniboss",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d7_1",
+            "x": 830,
+            "y": 80
+          }
+        ]
+      },
+      {
+        "name": "(1F): Cane and Diamond Puzzle",
+        "access_rules": [
+          "^$CanReach|d7_cane_and_diamond_puzzle"
+        ],
+        "sections": [
+          {
+            "name": "Jabu-Jabu's Belly (1F): Cane and Diamond Puzzle",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d7_1",
+            "x": 378,
+            "y": 566
+          }
+        ]
+      },
+      {
+        "name": "(3F): Terrace",
+        "access_rules": [
+          "^$CanReach|d7_terrace"
+        ],
+        "sections": [
+          {
+            "name": "Jabu-Jabu's Belly (3F): Terrace",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d7_3",
+            "x": 679,
+            "y": 636
+          }
+        ]
+      },
+      {
+        "name": "(2F): Left Wing",
+        "access_rules": [
+          "^$CanReach|d7_left_wing"
+        ],
+        "sections": [
+          {
+            "name": "Jabu-Jabu's Belly (2F): Left Wing",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d7_2",
+            "x": 104,
+            "y": 440
+          }
+        ]
+      },
+      {
+        "name": "(3F): Hallway Chest",
+        "access_rules": [
+          "^$CanReach|d7_hallway_chest"
+        ],
+        "sections": [
+          {
+            "name": "Jabu-Jabu's Belly (3F): Hallway Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d7_3",
+            "x": 357,
+            "y": 39
+          }
+        ]
+      },
+      {
+        "name": "(1F): Miniboss Chest",
+        "access_rules": [
+          "^$CanReach|d7_miniboss_chest"
+        ],
+        "sections": [
+          {
+            "name": "Jabu-Jabu's Belly (1F): Miniboss Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d7_1",
+            "x": 760,
+            "y": 200
+          }
+        ]
+      },
+      {
+        "name": "(3F): Post-Hallway Chest",
+        "access_rules": [
+          "^$CanReach|d7_post_hallway_chest"
+        ],
+        "sections": [
+          {
+            "name": "Jabu-Jabu's Belly (3F): Post-Hallway Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d7_3",
+            "x": 840,
+            "y": 88
+          }
+        ]
+      },
+      {
+        "name": "(1F): Island Chest",
+        "access_rules": [
+          "^$CanReach|d7_island_chest"
+        ],
+        "sections": [
+          {
+            "name": "Jabu-Jabu's Belly (1F): Island Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d7_1",
+            "x": 263,
+            "y": 232
+          }
+        ]
+      },
+      {
+        "name": "Plasmarine",
+        "access_rules": [
+          "^$CanReach|d7_boss"
+        ],
+        "sections": [
+          {
+            "name": "Jabu-Jabu's Belly (2F): Boss",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d7_2",
+            "x": 838,
+            "y": 435
+          }
+        ]
+      },
+      {
+        "name": "Rolling Sea",
+        "access_rules": [
+          "^$CanReach|d7_boss"
+        ],
+        "sections": [
+          {
+            "name": "Jabu-Jabu's Belly: Essence"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d7_2",
+            "x": 581,
+            "y": 389
+          }
+        ]
+      }
+    ]
+  }
+]

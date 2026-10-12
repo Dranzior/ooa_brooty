@@ -51,7 +51,16 @@ if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
     -- Locations
     Tracker:AddLocations("locations/overworld_past.json")
     Tracker:AddLocations("locations/overworld_present.json")
-    Tracker:AddLocations("locations/dungeons.json")
+    Tracker:AddLocations("locations/maku_path.json")
+    Tracker:AddLocations("locations/spirits_grave.json")
+    Tracker:AddLocations("locations/wing_dungeon.json")
+    Tracker:AddLocations("locations/moonlit_grotto.json")
+    Tracker:AddLocations("locations/skull_dungeon.json")
+    Tracker:AddLocations("locations/crown_dungeon.json")
+    Tracker:AddLocations("locations/mermaids_cave.json")
+    Tracker:AddLocations("locations/jabu-jabus_belly.json")
+    Tracker:AddLocations("locations/ancient_tomb.json")
+    Tracker:AddLocations("locations/heros_cave.json")
 end
 
 -- Layout

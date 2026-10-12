@@ -1,0 +1,239 @@
+[
+  {
+    "name": "Skull Dungeon (D4)",
+    "chest_unopened_img": "images/items/chest_present.png",
+    "chest_opened_img": "images/items/chest_present_open.png",
+    "children": [
+      {
+        "name": "(1F): First Chest",
+        "access_rules": [
+          "^$CanReach|d4_first_chest"
+        ],
+        "sections": [
+          {
+            "name": "Skull Dungeon (1F): First Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d4_1",
+            "x": 261,
+            "y": 952
+          }
+        ]
+      },
+      {
+        "name": "(1F): Cube Chest",
+        "access_rules": [
+          "^$CanReach|d4_cube_chest"
+        ],
+        "sections": [
+          {
+            "name": "Skull Dungeon (1F): Cube Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d4_1",
+            "x": 313,
+            "y": 1195
+          }
+        ]
+      },
+      {
+        "name": "(1F): Minecart Chest",
+        "access_rules": [
+          "^$CanReach|d4_minecart_chest"
+        ],
+        "sections": [
+          {
+            "name": "Skull Dungeon (1F): Minecart Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d4_1",
+            "x": 1319,
+            "y": 969
+          }
+        ]
+      },
+      {
+        "name": "(1F): First Crystal Switch",
+        "access_rules": [
+          "^$CanReach|d4_first_crystal_switch"
+        ],
+        "sections": [
+          {
+            "name": "Skull Dungeon (1F): First Crystal Switch",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d4_1",
+            "x": 1241,
+            "y": 1158
+          }
+        ]
+      },
+      {
+        "name": "(1F): Second Crystal Switch",
+        "access_rules": [
+          "^$CanReach|d4_second_crystal_switch"
+        ],
+        "sections": [
+          {
+            "name": "Skull Dungeon (1F): Second Crystal Switch",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d4_1",
+            "x": 1034,
+            "y": 90
+          }
+        ]
+      },
+      {
+        "name": "(1F): Color Tile Drop",
+        "access_rules": [
+          "^$CanReach|d4_color_tile_drop"
+        ],
+        "sections": [
+          {
+            "name": "Skull Dungeon (1F): Color Tile Drop",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d4_1",
+            "x": 345,
+            "y": 444
+          }
+        ]
+      },
+      {
+        "name": "(1F): Small Floor Puzzle",
+        "access_rules": [
+          "^$CanReach|d4_small_floor_puzzle"
+        ],
+        "sections": [
+          {
+            "name": "Skull Dungeon (1F): Small Floor Puzzle",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d4_1",
+            "x": 809,
+            "y": 808
+          }
+        ]
+      },
+      {
+        "name": "(B1F): Large Floor Puzzle",
+        "access_rules": [
+          "^$CanReach|d4_large_floor_puzzle"
+        ],
+        "sections": [
+          {
+            "name": "Skull Dungeon (B1F): Large Floor Puzzle",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d4_B1",
+            "x": 360,
+            "y": 457
+          }
+        ]
+      },
+      {
+        "name": "(1F): Lava Pot Chest",
+        "access_rules": [
+          "^$CanReach|d4_lava_pot_chest"
+        ],
+        "sections": [
+          {
+            "name": "Skull Dungeon (1F): Lava Pot Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d4_1",
+            "x": 150,
+            "y": 405
+          }
+        ]
+      },
+      {
+        "name": "(1F): Miniboss",
+        "access_rules": [
+          "^$CanReach|d4_miniboss"
+        ],
+        "visibility_rules": [
+          "minibosses_on"
+        ],
+        "sections": [
+          {
+            "name": "Skull Dungeon (1F): Miniboss",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d4_1",
+            "x": 601,
+            "y": 615
+          }
+        ]
+      },
+      {
+        "name": "Eyesoar",
+        "access_rules": [
+          "^$CanReach|d4_boss"
+        ],
+        "sections": [
+          {
+            "name": "Skull Dungeon (B1F): Boss",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d4_B1",
+            "x": 118,
+            "y": 264
+          }
+        ]
+      },
+      {
+        "name": "Burning Flame",
+        "access_rules": [
+          "^$CanReach|d4_boss"
+        ],
+        "sections": [
+          {
+            "name": "Skull Dungeon: Essence"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d4_B1",
+            "x": 118,
+            "y": 34
+          }
+        ]
+      }
+    ]
+  }
+]

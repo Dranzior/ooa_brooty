@@ -1,0 +1,353 @@
+[
+  {
+    "name": "Ancient Tomb (D8)",
+    "chest_unopened_img": "images/items/chest_past.png",
+    "chest_opened_img": "images/items/chest_past_open.png",
+    "children": [
+      {
+        "name": "(1F): Single Chest",
+        "access_rules": [
+          "^$CanReach|d8_1f_single_chest"
+        ],
+        "sections": [
+          {
+            "name": "Ancient Tomb (1F): Single Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d8_1",
+            "x": 214,
+            "y": 105
+          }
+        ]
+      },
+      {
+        "name": "(B2F): Ghini Chest",
+        "access_rules": [
+          "^$CanReach|d8_ghini_chest"
+        ],
+        "sections": [
+          {
+            "name": "Ancient Tomb (B2F): Ghini Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d8_B2",
+            "x": 421,
+            "y": 377
+          }
+        ]
+      },
+      {
+        "name": "(B1F): NW Chest",
+        "access_rules": [
+          "^$CanReach|d8_nw_chest"
+        ],
+        "sections": [
+          {
+            "name": "Ancient Tomb (B1F): NW Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d8_B1",
+            "x": 107,
+            "y": 26
+          }
+        ]
+      },
+      {
+        "name": "(B1F): Blue Peg Chest",
+        "access_rules": [
+          "^$CanReach|d8_blue_peg_chest"
+        ],
+        "sections": [
+          {
+            "name": "Ancient Tomb (B1F): Blue Peg Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d8_B1",
+            "x": 407,
+            "y": 551
+          }
+        ]
+      },
+      {
+        "name": "(B2F): Miniboss",
+        "access_rules": [
+          "^$CanReach|d8_miniboss"
+        ],
+        "visibility_rules": [
+          "minibosses_on"
+        ],
+        "sections": [
+          {
+            "name": "Ancient Tomb (B2F): Miniboss",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d8_B2",
+            "x": 837,
+            "y": 261
+          }
+        ]
+      },
+      {
+        "name": "(B1F): Blade Trap",
+        "access_rules": [
+          "^$CanReach|d8_blade_trap"
+        ],
+        "sections": [
+          {
+            "name": "Ancient Tomb (B1F): Blade Trap",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d8_B1",
+            "x": 216,
+            "y": 552
+          }
+        ]
+      },
+      {
+        "name": "(B1F): Sarcophagus Chest",
+        "access_rules": [
+          "^$CanReach|d8_sarcophagus_chest"
+        ],
+        "sections": [
+          {
+            "name": "Ancient Tomb (B1F): Sarcophagus Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d8_B1",
+            "x": 201,
+            "y": 393
+          }
+        ]
+      },
+      {
+        "name": "(B1F): Stalfos",
+        "access_rules": [
+          "^$CanReach|d8_stalfos"
+        ],
+        "sections": [
+          {
+            "name": "Ancient Tomb (B1F): Stalfos",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d8_B1",
+            "x": 366,
+            "y": 102
+          }
+        ]
+      },
+      {
+        "name": "(B2F): Maze Chest",
+        "access_rules": [
+          "^$CanReach|d8_maze_chest"
+        ],
+        "sections": [
+          {
+            "name": "Ancient Tomb (B2F): Maze Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d8_B2",
+            "x": 103,
+            "y": 24
+          }
+        ]
+      },
+      {
+        "name": "(B2F): NW Slate Chest",
+        "access_rules": [
+          "^$CanReach|d8_nw_slate_chest"
+        ],
+        "sections": [
+          {
+            "name": "Ancient Tomb (B2F): NW Slate Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d8_B2",
+            "x": 362,
+            "y": 38
+          }
+        ]
+      },
+      {
+        "name": "(B2F): NE Slate Chest",
+        "access_rules": [
+          "^$CanReach|d8_ne_slate_chest"
+        ],
+        "sections": [
+          {
+            "name": "Ancient Tomb (B2F): NE Slate Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d8_B2",
+            "x": 1320,
+            "y": 42
+          }
+        ]
+      },
+      {
+        "name": "(B3F): Single Chest",
+        "access_rules": [
+          "^$CanReach|d8_b3f_single_chest"
+        ],
+        "sections": [
+          {
+            "name": "Ancient Tomb (B3F): Single Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d8_B3",
+            "x": 39,
+            "y": 378
+          }
+        ]
+      },
+      {
+        "name": "(B2F): Tile Room",
+        "access_rules": [
+          "^$CanReach|d8_tile_room"
+        ],
+        "sections": [
+          {
+            "name": "Ancient Tomb (B2F): Tile Room",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d8_B2",
+            "x": 1079,
+            "y": 743
+          }
+        ]
+      },
+      {
+        "name": "(B2F): SE Slate Chest",
+        "access_rules": [
+          "^$CanReach|d8_se_slate_chest"
+        ],
+        "sections": [
+          {
+            "name": "Ancient Tomb (B2F): SE Slate Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d8_B2",
+            "x": 1320,
+            "y": 745
+          }
+        ]
+      },
+      {
+        "name": "(B1F): Floor Puzzle",
+        "access_rules": [
+          "^$CanReach|d8_floor_puzzle"
+        ],
+        "sections": [
+          {
+            "name": "Ancient Tomb (B1F): Floor Puzzle",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d8_B1",
+            "x": 839,
+            "y": 602
+          }
+        ]
+      },
+      {
+        "name": "(B2F): SW Slate Chest",
+        "access_rules": [
+          "^$CanReach|d8_sw_slate_chest"
+        ],
+        "sections": [
+          {
+            "name": "Ancient Tomb (B2F): SW Slate Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d8_B2",
+            "x": 330,
+            "y": 922
+          }
+        ]
+      },
+      {
+        "name": "Ramrock",
+        "access_rules": [
+          "^$CanReach|d8_boss"
+        ],
+        "sections": [
+          {
+            "name": "Ancient Tomb (B3F): Boss",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d8_B3",
+            "x": 359,
+            "y": 282
+          }
+        ]
+      },
+      {
+        "name": "Falling Star",
+        "access_rules": [
+          "^$CanReach|d8_boss"
+        ],
+        "sections": [
+          {
+            "name": "Ancient Tomb: Essence"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d8_B3",
+            "x": 119,
+            "y": 209
+          }
+        ]
+      }
+    ]
+  }
+]
