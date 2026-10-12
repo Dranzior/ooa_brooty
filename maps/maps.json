@@ -54,16 +54,10 @@
     "img": "images/maps/animal_moosh_past.png"
   },
   {
-    "name": "d1",
+    "name": "d1_1",
     "location_size": 32,
     "location_border_thickness": 6,
-    "img": "images/maps/d1.png"
-  },
-  {
-    "name": "d2",
-    "location_size": 32,
-    "location_border_thickness": 6,
-    "img": "images/maps/d2.png"
+    "img": "images/maps/d1/1F.png"
   },
   {
     "name": "d2_1",
@@ -72,81 +66,129 @@
     "img": "images/maps/d2/1F.png"
   },
   {
-    "name": "d2_b1",
+    "name": "d2_B1",
     "location_size": 32,
     "location_border_thickness": 6,
-    "img": "images/maps/d2/B1F.png"
-  },
-  {
-    "name": "d3",
-    "location_size": 26,
-    "location_border_thickness": 5,
-    "img": "images/maps/d3.png"
+    "img": "images/maps/d2/B1.png"
   },
   {
     "name": "d3_1",
-    "location_size": 26,
-    "location_border_thickness": 5,
+    "location_size": 32,
+    "location_border_thickness": 6,
+    "img": "images/maps/d3/1F.png"
+  },
+  {
+    "name": "d3_B1",
+    "location_size": 32,
+    "location_border_thickness": 6,
+    "img": "images/maps/d3/B1.png"
+  },
+  {
+    "name": "d3_1",
+    "location_size": 32,
+    "location_border_thickness": 6,
     "img": "images/maps/d3/1F.png"
   },
   {
     "name": "d3_b1",
-    "location_size": 26,
-    "location_border_thickness": 5,
+    "location_size": 32,
+    "location_border_thickness": 6,
     "img": "images/maps/d3/B1F.png"
   },
   {
-    "name": "d4",
+    "name": "d4_1",
     "location_size": 32,
     "location_border_thickness": 6,
-    "img": "images/maps/d4.png"
+    "img": "images/maps/d4/1F.png"
   },
   {
-    "name": "d5",
+    "name": "d4_B1",
     "location_size": 32,
     "location_border_thickness": 6,
-    "img": "images/maps/d5.png"
+    "img": "images/maps/d4/B1.png"
   },
   {
-    "name": "d6_1",
+    "name": "d5_1",
     "location_size": 32,
     "location_border_thickness": 6,
-    "img": "images/maps/d6_1.png"
+    "img": "images/maps/d5/1F.png"
   },
   {
-    "name": "d6_2",
+    "name": "d5_B1",
     "location_size": 32,
     "location_border_thickness": 6,
-    "img": "images/maps/d6_2.png"
+    "img": "images/maps/d5/B1.png"
   },
   {
-    "name": "d7",
+    "name": "d6_Past_1",
     "location_size": 32,
     "location_border_thickness": 6,
-    "img": "images/maps/d7.png"
+    "img": "images/maps/d6_Past/1F.png"
   },
   {
-    "name": "d8",
+    "name": "d6_Past_B1",
     "location_size": 32,
     "location_border_thickness": 6,
-    "img": "images/maps/d8.png"
+    "img": "images/maps/d6_Past/B1.png"
   },
   {
-    "name": "gridmaps",
-    "location_size": 28,
-    "location_border_thickness": 6,
-    "img": "images/maps/gridmaps.png"
-  },
-  {
-    "name": "d0",
-    "location_size": 28,
-    "location_border_thickness": 6,
-    "img": "images/maps/maku_path.png"
-  },
-  {
-    "name": "d11",
+    "name": "d6_Present_1",
     "location_size": 32,
     "location_border_thickness": 6,
-    "img": "images/maps/d11.png"
+    "img": "images/maps/d6_Present/1F.png"
+  },
+  {
+    "name": "d7_1",
+    "location_size": 32,
+    "location_border_thickness": 6,
+    "img": "images/maps/d7/1F.png"
+  },
+  {
+    "name": "d7_2",
+    "location_size": 32,
+    "location_border_thickness": 6,
+    "img": "images/maps/d7/2F.png"
+  },
+  {
+    "name": "d7_3",
+    "location_size": 32,
+    "location_border_thickness": 6,
+    "img": "images/maps/d7/3F.png"
+  },
+  {
+    "name": "d8_1",
+    "location_size": 32,
+    "location_border_thickness": 6,
+    "img": "images/maps/d8/1F.png"
+  },
+  {
+    "name": "d8_B1",
+    "location_size": 32,
+    "location_border_thickness": 6,
+    "img": "images/maps/d8/B1.png"
+  },
+  {
+    "name": "d8_B2",
+    "location_size": 32,
+    "location_border_thickness": 6,
+    "img": "images/maps/d8/B2.png"
+  },
+  {
+    "name": "d8_B3",
+    "location_size": 32,
+    "location_border_thickness": 6,
+    "img": "images/maps/d8/B3.png"
+  },
+  {
+    "name": "d0_1",
+    "location_size": 32,
+    "location_border_thickness": 6,
+    "img": "images/maps/d0/1F.png"
+  },
+  {
+    "name": "d11_1",
+    "location_size": 32,
+    "location_border_thickness": 6,
+    "img": "images/maps/d11/1F.png"
   }
 ]
