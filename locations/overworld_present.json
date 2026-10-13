@@ -168,51 +168,51 @@
             "sections": [
               {
                 "name": "Skull Dungeon (1F): First Chest",
-                "ref": "Dungeons/Skull Dungeon (D4)/(1F): First Chest/Skull Dungeon (1F): First Chest"
+                "ref": "Skull Dungeon (D4)/(1F): First Chest/Skull Dungeon (1F): First Chest"
               },
               {
                 "name": "Skull Dungeon (1F): Cube Chest",
-                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Cube Chest/Skull Dungeon (1F): Cube Chest"
+                "ref": "Skull Dungeon (D4)/(1F): Cube Chest/Skull Dungeon (1F): Cube Chest"
               },
               {
                 "name": "Skull Dungeon (1F): Minecart Chest",
-                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Minecart Chest/Skull Dungeon (1F): Minecart Chest"
+                "ref": "Skull Dungeon (D4)/(1F): Minecart Chest/Skull Dungeon (1F): Minecart Chest"
               },
               {
                 "name": "Skull Dungeon (1F): First Crystal Switch",
-                "ref": "Dungeons/Skull Dungeon (D4)/(1F): First Crystal Switch/Skull Dungeon (1F): First Crystal Switch"
+                "ref": "Skull Dungeon (D4)/(1F): First Crystal Switch/Skull Dungeon (1F): First Crystal Switch"
               },
               {
                 "name": "Skull Dungeon (1F): Second Crystal Switch",
-                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Second Crystal Switch/Skull Dungeon (1F): Second Crystal Switch"
+                "ref": "Skull Dungeon (D4)/(1F): Second Crystal Switch/Skull Dungeon (1F): Second Crystal Switch"
               },
               {
                 "name": "Skull Dungeon (1F): Color Tile Drop",
-                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Color Tile Drop/Skull Dungeon (1F): Color Tile Drop"
+                "ref": "Skull Dungeon (D4)/(1F): Color Tile Drop/Skull Dungeon (1F): Color Tile Drop"
               },
               {
                 "name": "Skull Dungeon (1F): Small Floor Puzzle",
-                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Small Floor Puzzle/Skull Dungeon (1F): Small Floor Puzzle"
+                "ref": "Skull Dungeon (D4)/(1F): Small Floor Puzzle/Skull Dungeon (1F): Small Floor Puzzle"
               },
               {
                 "name": "Skull Dungeon (B1F): Large Floor Puzzle",
-                "ref": "Dungeons/Skull Dungeon (D4)/(B1F): Large Floor Puzzle/Skull Dungeon (B1F): Large Floor Puzzle"
+                "ref": "Skull Dungeon (D4)/(B1F): Large Floor Puzzle/Skull Dungeon (B1F): Large Floor Puzzle"
               },
               {
                 "name": "Skull Dungeon (1F): Lava Pot Chest",
-                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Lava Pot Chest/Skull Dungeon (1F): Lava Pot Chest"
+                "ref": "Skull Dungeon (D4)/(1F): Lava Pot Chest/Skull Dungeon (1F): Lava Pot Chest"
               },
               {
                 "name": "Skull Dungeon (1F): Miniboss",
-                "ref": "Dungeons/Skull Dungeon (D4)/(1F): Miniboss/Skull Dungeon (1F): Miniboss"
+                "ref": "Skull Dungeon (D4)/(1F): Miniboss/Skull Dungeon (1F): Miniboss"
               },
               {
                 "name": "Skull Dungeon (B1F): Boss",
-                "ref": "Dungeons/Skull Dungeon (D4)/Eyesoar/Skull Dungeon (B1F): Boss"
+                "ref": "Skull Dungeon (D4)/Eyesoar/Skull Dungeon (B1F): Boss"
               },
               {
                 "name": "Skull Dungeon: Essence",
-                "ref": "Dungeons/Skull Dungeon (D4)/Burning Flame/Skull Dungeon: Essence"
+                "ref": "Skull Dungeon (D4)/Burning Flame/Skull Dungeon: Essence"
               }
             ],
             "map_locations": [
@@ -708,55 +708,55 @@
             "sections": [
               {
                 "name": "Crown Dungeon (B1F): Like-Like Chest",
-                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Like-Like Chest/Crown Dungeon (B1F): Like-Like Chest"
+                "ref": "Crown Dungeon (D5)/(B1F): Like-Like Chest/Crown Dungeon (B1F): Like-Like Chest"
               },
               {
                 "name": "Crown Dungeon (1F): Eyes Chest",
-                "ref": "Dungeons/Crown Dungeon (D5)/(1F): Eyes Chest/Crown Dungeon (1F): Eyes Chest"
+                "ref": "Crown Dungeon (D5)/(1F): Eyes Chest/Crown Dungeon (1F): Eyes Chest"
               },
               {
                 "name": "Crown Dungeon (B1F): Dark Room",
-                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Dark Room/Crown Dungeon (B1F): Dark Room"
+                "ref": "Crown Dungeon (D5)/(B1F): Dark Room/Crown Dungeon (B1F): Dark Room"
               },
               {
                 "name": "Crown Dungeon (B1F): Two-Statue Puzzle",
-                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Two-Statue Puzzle/Crown Dungeon (B1F): Two-Statue Puzzle"
+                "ref": "Crown Dungeon (D5)/(B1F): Two-Statue Puzzle/Crown Dungeon (B1F): Two-Statue Puzzle"
               },
               {
                 "name": "Crown Dungeon (1F): Blue Peg Chest",
-                "ref": "Dungeons/Crown Dungeon (D5)/(1F): Blue Peg Chest/Crown Dungeon (1F): Blue Peg Chest"
+                "ref": "Crown Dungeon (D5)/(1F): Blue Peg Chest/Crown Dungeon (1F): Blue Peg Chest"
               },
               {
                 "name": "Crown Dungeon (1F): Diamond Chest",
-                "ref": "Dungeons/Crown Dungeon (D5)/(1F): Diamond Chest/Crown Dungeon (1F): Diamond Chest"
+                "ref": "Crown Dungeon (D5)/(1F): Diamond Chest/Crown Dungeon (1F): Diamond Chest"
               },
               {
                 "name": "Crown Dungeon (1F): Three-Statue Puzzle",
-                "ref": "Dungeons/Crown Dungeon (D5)/(1F): Three-Statue Puzzle/Crown Dungeon (1F): Three-Statue Puzzle"
+                "ref": "Crown Dungeon (D5)/(1F): Three-Statue Puzzle/Crown Dungeon (1F): Three-Statue Puzzle"
               },
               {
                 "name": "Crown Dungeon (1F): Miniboss",
-                "ref": "Dungeons/Crown Dungeon (D5)/(1F): Miniboss/Crown Dungeon (1F): Miniboss"
+                "ref": "Crown Dungeon (D5)/(1F): Miniboss/Crown Dungeon (1F): Miniboss"
               },
               {
                 "name": "Crown Dungeon (B1F): Six-Statue Puzzle",
-                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Six-Statue Puzzle/Crown Dungeon (B1F): Six-Statue Puzzle"
+                "ref": "Crown Dungeon (D5)/(B1F): Six-Statue Puzzle/Crown Dungeon (B1F): Six-Statue Puzzle"
               },
               {
                 "name": "Crown Dungeon (B1F): Red Peg Chest",
-                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Red Peg Chest/Crown Dungeon (B1F): Red Peg Chest"
+                "ref": "Crown Dungeon (D5)/(B1F): Red Peg Chest/Crown Dungeon (B1F): Red Peg Chest"
               },
               {
                 "name": "Crown Dungeon (B1F): Owl Puzzle",
-                "ref": "Dungeons/Crown Dungeon (D5)/(B1F): Owl Puzzle/Crown Dungeon (B1F): Owl Puzzle"
+                "ref": "Crown Dungeon (D5)/(B1F): Owl Puzzle/Crown Dungeon (B1F): Owl Puzzle"
               },
               {
                 "name": "Crown Dungeon (1F): Boss",
-                "ref": "Dungeons/Crown Dungeon (D5)/Smog/Crown Dungeon (1F): Boss"
+                "ref": "Crown Dungeon (D5)/Smog/Crown Dungeon (1F): Boss"
               },
               {
                 "name": "Crown Dungeon: Essence",
-                "ref": "Dungeons/Crown Dungeon (D5)/Sacred Soil/Crown Dungeon: Essence"
+                "ref": "Crown Dungeon (D5)/Sacred Soil/Crown Dungeon: Essence"
               }
             ],
             "map_locations": [
@@ -795,39 +795,39 @@
             "sections": [
               {
                 "name": "Mermaid's Cave (Present): Diamond Chest",
-                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Diamond Chest/Mermaid's Cave (Present): Diamond Chest"
+                "ref": "Mermaid's Cave [Present] (D6)/Diamond Chest/Mermaid's Cave (Present): Diamond Chest"
               },
               {
                 "name": "Mermaid's Cave (Present): Rope Chest",
-                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Rope Chest/Mermaid's Cave (Present): Rope Chest"
+                "ref": "Mermaid's Cave [Present] (D6)/Rope Chest/Mermaid's Cave (Present): Rope Chest"
               },
               {
                 "name": "Mermaid's Cave (Present): Cube Chest",
-                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Cube Chest/Mermaid's Cave (Present): Cube Chest"
+                "ref": "Mermaid's Cave [Present] (D6)/Cube Chest/Mermaid's Cave (Present): Cube Chest"
               },
               {
                 "name": "Mermaid's Cave (Present): Spinner Chest",
-                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Spinner Chest/Mermaid's Cave (Present): Spinner Chest"
+                "ref": "Mermaid's Cave [Present] (D6)/Spinner Chest/Mermaid's Cave (Present): Spinner Chest"
               },
               {
                 "name": "Mermaid's Cave (Present): Beamos Chest",
-                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Beamos Chest/Mermaid's Cave (Present): Beamos Chest"
+                "ref": "Mermaid's Cave [Present] (D6)/Beamos Chest/Mermaid's Cave (Present): Beamos Chest"
               },
               {
                 "name": "Mermaid's Cave (Present): RNG Chest",
-                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/RNG Chest/Mermaid's Cave (Present): RNG Chest"
+                "ref": "Mermaid's Cave [Present] (D6)/RNG Chest/Mermaid's Cave (Present): RNG Chest"
               },
               {
                 "name": "Mermaid's Cave (Present): Channel Chest",
-                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Channel Chest/Mermaid's Cave (Present): Channel Chest"
+                "ref": "Mermaid's Cave [Present] (D6)/Channel Chest/Mermaid's Cave (Present): Channel Chest"
               },
               {
                 "name": "Mermaid's Cave (Present): Miniboss",
-                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Miniboss/Mermaid's Cave (Present): Miniboss"
+                "ref": "Mermaid's Cave [Present] (D6)/Miniboss/Mermaid's Cave (Present): Miniboss"
               },
               {
                 "name": "Mermaid's Cave (Present): Vire Chest",
-                "ref": "Dungeons/Mermaid's Cave [Present] (D6)/Vire Chest/Mermaid's Cave (Present): Vire Chest"
+                "ref": "Mermaid's Cave [Present] (D6)/Vire Chest/Mermaid's Cave (Present): Vire Chest"
               }
             ],
             "map_locations": [
@@ -1180,59 +1180,59 @@
             "sections": [
               {
                 "name": "Linked Hero's Cave (1F): Pots Puzzle",
-                "ref": "Dungeons/Hero's Cave/(1F): Pots Puzzle/Linked Hero's Cave (1F): Pots Puzzle"
+                "ref": "Hero's Cave/(1F): Pots Puzzle/Linked Hero's Cave (1F): Pots Puzzle"
               },
               {
                 "name": "Linked Hero's Cave (1F): Statue Puzzle #1",
-                "ref": "Dungeons/Hero's Cave/(1F): Statue Puzzle #1/Linked Hero's Cave (1F): Statue Puzzle #1"
+                "ref": "Hero's Cave/(1F): Statue Puzzle #1/Linked Hero's Cave (1F): Statue Puzzle #1"
               },
               {
                 "name": "Linked Hero's Cave (1F): Bridge Puzzle #1",
-                "ref": "Dungeons/Hero's Cave/(1F): Bridge Puzzle #1/Linked Hero's Cave (1F): Bridge Puzzle #1"
+                "ref": "Hero's Cave/(1F): Bridge Puzzle #1/Linked Hero's Cave (1F): Bridge Puzzle #1"
               },
               {
                 "name": "Linked Hero's Cave (1F): Shoot Eyes",
-                "ref": "Dungeons/Hero's Cave/(1F): Shoot Eyes/Linked Hero's Cave (1F): Shoot Eyes"
+                "ref": "Hero's Cave/(1F): Shoot Eyes/Linked Hero's Cave (1F): Shoot Eyes"
               },
               {
                 "name": "Linked Hero's Cave (1F): Statue Puzzle #2",
-                "ref": "Dungeons/Hero's Cave/(1F): Statue Puzzle #2/Linked Hero's Cave (1F): Statue Puzzle #2"
+                "ref": "Hero's Cave/(1F): Statue Puzzle #2/Linked Hero's Cave (1F): Statue Puzzle #2"
               },
               {
                 "name": "Linked Hero's Cave (1F): Pots Puzzle #2",
-                "ref": "Dungeons/Hero's Cave/(1F): Pots Puzzle #2/Linked Hero's Cave (1F): Pots Puzzle #2"
+                "ref": "Hero's Cave/(1F): Pots Puzzle #2/Linked Hero's Cave (1F): Pots Puzzle #2"
               },
               {
                 "name": "Linked Hero's Cave (1F): Statue Puzzle #3",
-                "ref": "Dungeons/Hero's Cave/(1F): Statue Puzzle #3/Linked Hero's Cave (1F): Statue Puzzle #3"
+                "ref": "Hero's Cave/(1F): Statue Puzzle #3/Linked Hero's Cave (1F): Statue Puzzle #3"
               },
               {
                 "name": "Linked Hero's Cave (1F): Bridge Puzzle #2",
-                "ref": "Dungeons/Hero's Cave/(1F): Bridge Puzzle #2/Linked Hero's Cave (1F): Bridge Puzzle #2"
+                "ref": "Hero's Cave/(1F): Bridge Puzzle #2/Linked Hero's Cave (1F): Bridge Puzzle #2"
               },
               {
                 "name": "Linked Hero's Cave (1F): Color Room",
-                "ref": "Dungeons/Hero's Cave/(1F): Color Room/Linked Hero's Cave (1F): Color Room"
+                "ref": "Hero's Cave/(1F): Color Room/Linked Hero's Cave (1F): Color Room"
               },
               {
                 "name": "Linked Hero's Cave (1F): Water Puzzle",
-                "ref": "Dungeons/Hero's Cave/(1F): Water Puzzle/Linked Hero's Cave (1F): Water Puzzle"
+                "ref": "Hero's Cave/(1F): Water Puzzle/Linked Hero's Cave (1F): Water Puzzle"
               },
               {
                 "name": "Linked Hero's Cave (B1F): Water Puzzle",
-                "ref": "Dungeons/Hero's Cave/(B1F): Water Puzzle/Linked Hero's Cave (B1F): Water Puzzle"
+                "ref": "Hero's Cave/(B1F): Water Puzzle/Linked Hero's Cave (B1F): Water Puzzle"
               },
               {
                 "name": "Linked Hero's Cave (B1F): Basement",
-                "ref": "Dungeons/Hero's Cave/(B1F): Basement/Linked Hero's Cave (B1F): Basement"
+                "ref": "Hero's Cave/(B1F): Basement/Linked Hero's Cave (B1F): Basement"
               },
               {
                 "name": "Linked Hero's Cave (1F): Minecart Room",
-                "ref": "Dungeons/Hero's Cave/(1F): Minecart Room/Linked Hero's Cave (1F): Minecart Room"
+                "ref": "Hero's Cave/(1F): Minecart Room/Linked Hero's Cave (1F): Minecart Room"
               },
               {
                 "name": "Linked Hero's Cave (1F): Completion Reward",
-                "ref": "Dungeons/Hero's Cave/(1F): Completion Reward/Linked Hero's Cave (1F): Completion Reward"
+                "ref": "Hero's Cave/(1F): Completion Reward/Linked Hero's Cave (1F): Completion Reward"
               }
             ],
             "map_locations": [
@@ -1505,55 +1505,55 @@
             "sections": [
               {
                 "name": "Spirit's Grave: East Terrace",
-                "ref": "Dungeons/Spirit's Grave (D1)/East Terrace/Spirit's Grave: East Terrace"
+                "ref": "Spirit's Grave (D1)/East Terrace/Spirit's Grave: East Terrace"
               },
               {
                 "name": "Spirit's Grave: Ghini Drop",
-                "ref": "Dungeons/Spirit's Grave (D1)/Ghini Drop/Spirit's Grave: Ghini Drop"
+                "ref": "Spirit's Grave (D1)/Ghini Drop/Spirit's Grave: Ghini Drop"
               },
               {
                 "name": "Spirit's Grave: Miniboss",
-                "ref": "Dungeons/Spirit's Grave (D1)/Miniboss/Spirit's Grave: Miniboss"
+                "ref": "Spirit's Grave (D1)/Miniboss/Spirit's Grave: Miniboss"
               },
               {
                 "name": "Spirit's Grave: Crossroad",
-                "ref": "Dungeons/Spirit's Grave (D1)/Crossroad/Spirit's Grave: Crossroad"
+                "ref": "Spirit's Grave (D1)/Crossroad/Spirit's Grave: Crossroad"
               },
               {
                 "name": "Spirit's Grave: Crystal Room",
-                "ref": "Dungeons/Spirit's Grave (D1)/Crystal Room/Spirit's Grave: Crystal Room"
+                "ref": "Spirit's Grave (D1)/Crystal Room/Spirit's Grave: Crystal Room"
               },
               {
                 "name": "Spirit's Grave: Wide Room",
-                "ref": "Dungeons/Spirit's Grave (D1)/Wide Room/Spirit's Grave: Wide Room"
+                "ref": "Spirit's Grave (D1)/Wide Room/Spirit's Grave: Wide Room"
               },
               {
                 "name": "Spirit's Grave: Two-Buttons Chest",
-                "ref": "Dungeons/Spirit's Grave (D1)/Two-Buttons Chest/Spirit's Grave: Two-Buttons Chest"
+                "ref": "Spirit's Grave (D1)/Two-Buttons Chest/Spirit's Grave: Two-Buttons Chest"
               },
               {
                 "name": "Spirit's Grave: One-Button Chest",
-                "ref": "Dungeons/Spirit's Grave (D1)/One-Button Chest/Spirit's Grave: One-Button Chest"
+                "ref": "Spirit's Grave (D1)/One-Button Chest/Spirit's Grave: One-Button Chest"
               },
               {
                 "name": "Spirit's Grave: Pot Chest",
-                "ref": "Dungeons/Spirit's Grave (D1)/Pot Chest/Spirit's Grave: Pot Chest"
+                "ref": "Spirit's Grave (D1)/Pot Chest/Spirit's Grave: Pot Chest"
               },
               {
                 "name": "Spirit's Grave: West Terrace",
-                "ref": "Dungeons/Spirit's Grave (D1)/West Terrace/Spirit's Grave: West Terrace"
+                "ref": "Spirit's Grave (D1)/West Terrace/Spirit's Grave: West Terrace"
               },
               {
                 "name": "Spirit's Grave: Basement",
-                "ref": "Dungeons/Spirit's Grave (D1)/Basement/Spirit's Grave: Basement"
+                "ref": "Spirit's Grave (D1)/Basement/Spirit's Grave: Basement"
               },
               {
                 "name": "Spirit's Grave: Boss",
-                "ref": "Dungeons/Spirit's Grave (D1)/Pumpkin Head/Spirit's Grave: Boss"
+                "ref": "Spirit's Grave (D1)/Pumpkin Head/Spirit's Grave: Boss"
               },
               {
                 "name": "Spirit's Grave: Essence",
-                "ref": "Dungeons/Spirit's Grave (D1)/Eternal Spirit/Spirit's Grave: Essence"
+                "ref": "Spirit's Grave (D1)/Eternal Spirit/Spirit's Grave: Essence"
               }
             ],
             "map_locations": [
@@ -1899,71 +1899,71 @@
             "sections": [
               {
                 "name": "Jabu-Jabu's Belly (2F): Spike Chest",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(2F): Spike Chest/Jabu-Jabu's Belly (2F): Spike Chest"
+                "ref": "Jabu-Jabu's Belly (D7)/(2F): Spike Chest/Jabu-Jabu's Belly (2F): Spike Chest"
               },
               {
                 "name": "Jabu-Jabu's Belly (1F): Crab Chest",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Crab Chest/Jabu-Jabu's Belly (1F): Crab Chest"
+                "ref": "Jabu-Jabu's Belly (D7)/(1F): Crab Chest/Jabu-Jabu's Belly (1F): Crab Chest"
               },
               {
                 "name": "Jabu-Jabu's Belly (1F): Diamond Puzzle",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Diamond Puzzle/Jabu-Jabu's Belly (1F): Diamond Puzzle"
+                "ref": "Jabu-Jabu's Belly (D7)/(1F): Diamond Puzzle/Jabu-Jabu's Belly (1F): Diamond Puzzle"
               },
               {
                 "name": "Jabu-Jabu's Belly (1F): Flower Room",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Flower Room/Jabu-Jabu's Belly (1F): Flower Room"
+                "ref": "Jabu-Jabu's Belly (D7)/(1F): Flower Room/Jabu-Jabu's Belly (1F): Flower Room"
               },
               {
                 "name": "Jabu-Jabu's Belly (1F): Stairway Chest",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Stairway Chest/Jabu-Jabu's Belly (1F): Stairway Chest"
+                "ref": "Jabu-Jabu's Belly (D7)/(1F): Stairway Chest/Jabu-Jabu's Belly (1F): Stairway Chest"
               },
               {
                 "name": "Jabu-Jabu's Belly (2F): Right Wing",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(2F): Right Wing/Jabu-Jabu's Belly (2F): Right Wing"
+                "ref": "Jabu-Jabu's Belly (D7)/(2F): Right Wing/Jabu-Jabu's Belly (2F): Right Wing"
               },
               {
                 "name": "Jabu-Jabu's Belly (1F): Boxed Chest",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Boxed Chest/Jabu-Jabu's Belly (1F): Boxed Chest"
+                "ref": "Jabu-Jabu's Belly (D7)/(1F): Boxed Chest/Jabu-Jabu's Belly (1F): Boxed Chest"
               },
               {
                 "name": "Jabu-Jabu's Belly (1F): Miniboss",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Miniboss/Jabu-Jabu's Belly (1F): Miniboss"
+                "ref": "Jabu-Jabu's Belly (D7)/(1F): Miniboss/Jabu-Jabu's Belly (1F): Miniboss"
               },
               {
                 "name": "Jabu-Jabu's Belly (1F): Cane and Diamond Puzzle",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Cane and Diamond Puzzle/Jabu-Jabu's Belly (1F): Cane and Diamond Puzzle"
+                "ref": "Jabu-Jabu's Belly (D7)/(1F): Cane and Diamond Puzzle/Jabu-Jabu's Belly (1F): Cane and Diamond Puzzle"
               },
               {
                 "name": "Jabu-Jabu's Belly (3F): Terrace",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(3F): Terrace/Jabu-Jabu's Belly (3F): Terrace"
+                "ref": "Jabu-Jabu's Belly (D7)/(3F): Terrace/Jabu-Jabu's Belly (3F): Terrace"
               },
               {
                 "name": "Jabu-Jabu's Belly (2F): Left Wing",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(2F): Left Wing/Jabu-Jabu's Belly (2F): Left Wing"
+                "ref": "Jabu-Jabu's Belly (D7)/(2F): Left Wing/Jabu-Jabu's Belly (2F): Left Wing"
               },
               {
                 "name": "Jabu-Jabu's Belly (3F): Hallway Chest",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(3F): Hallway Chest/Jabu-Jabu's Belly (3F): Hallway Chest"
+                "ref": "Jabu-Jabu's Belly (D7)/(3F): Hallway Chest/Jabu-Jabu's Belly (3F): Hallway Chest"
               },
               {
                 "name": "Jabu-Jabu's Belly (1F): Miniboss Chest",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Miniboss Chest/Jabu-Jabu's Belly (1F): Miniboss Chest"
+                "ref": "Jabu-Jabu's Belly (D7)/(1F): Miniboss Chest/Jabu-Jabu's Belly (1F): Miniboss Chest"
               },
               {
                 "name": "Jabu-Jabu's Belly (3F): Post-Hallway Chest",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(3F): Post-Hallway Chest/Jabu-Jabu's Belly (3F): Post-Hallway Chest"
+                "ref": "Jabu-Jabu's Belly (D7)/(3F): Post-Hallway Chest/Jabu-Jabu's Belly (3F): Post-Hallway Chest"
               },
               {
                 "name": "Jabu-Jabu's Belly (1F): Island Chest",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/(1F): Island Chest/Jabu-Jabu's Belly (1F): Island Chest"
+                "ref": "Jabu-Jabu's Belly (D7)/(1F): Island Chest/Jabu-Jabu's Belly (1F): Island Chest"
               },
               {
                 "name": "Plasmarine",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/Plasmarine/Jabu-Jabu's Belly (2F): Boss"
+                "ref": "Jabu-Jabu's Belly (D7)/Plasmarine/Jabu-Jabu's Belly (2F): Boss"
               },
               {
                 "name": "Jabu-Jabu's Belly: Essence",
-                "ref": "Dungeons/Jabu-Jabu's Belly (D7)/Rolling Sea/Jabu-Jabu's Belly: Essence"
+                "ref": "Jabu-Jabu's Belly (D7)/Rolling Sea/Jabu-Jabu's Belly: Essence"
               }
             ],
             "map_locations": [
@@ -2087,67 +2087,67 @@
             "sections": [
               {
                 "name": "Moonlit Grotto (1F): Pols Voice Chest",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Pols Voice Chest/Moonlit Grotto (1F): Pols Voice Chest"
+                "ref": "Moonlit Grotto (D3)/(1F): Pols Voice Chest/Moonlit Grotto (1F): Pols Voice Chest"
               },
               {
                 "name": "Moonlit Grotto (1F): Statue Drop",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Statue Drop/Moonlit Grotto (1F): Statue Drop"
+                "ref": "Moonlit Grotto (D3)/(1F): Statue Drop/Moonlit Grotto (1F): Statue Drop"
               },
               {
                 "name": "Moonlit Grotto (B1F): Conveyor Belt Room",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Conveyor Belt Room/Moonlit Grotto (B1F): Conveyor Belt Room"
+                "ref": "Moonlit Grotto (D3)/(B1F): Conveyor Belt Room/Moonlit Grotto (B1F): Conveyor Belt Room"
               },
               {
                 "name": "Moonlit Grotto (1F): Six Blocs Drop",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Six Blocs Drop/Moonlit Grotto (1F): Six Blocs Drop"
+                "ref": "Moonlit Grotto (D3)/(1F): Six Blocs Drop/Moonlit Grotto (1F): Six Blocs Drop"
               },
               {
                 "name": "Moonlit Grotto (1F): Armos Drop",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Armos Drop/Moonlit Grotto (1F): Armos Drop"
+                "ref": "Moonlit Grotto (D3)/(1F): Armos Drop/Moonlit Grotto (1F): Armos Drop"
               },
               {
                 "name": "Moonlit Grotto (1F): Bush Beetle Room",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Bush Beetle Room/Moonlit Grotto (1F): Bush Beetle Room"
+                "ref": "Moonlit Grotto (D3)/(1F): Bush Beetle Room/Moonlit Grotto (1F): Bush Beetle Room"
               },
               {
                 "name": "Moonlit Grotto (1F): Mimic Room",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Mimic Room/Moonlit Grotto (1F): Mimic Room"
+                "ref": "Moonlit Grotto (D3)/(1F): Mimic Room/Moonlit Grotto (1F): Mimic Room"
               },
               {
                 "name": "Moonlit Grotto (1F): Crossroad",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Crossroad/Moonlit Grotto (1F): Crossroad"
+                "ref": "Moonlit Grotto (D3)/(1F): Crossroad/Moonlit Grotto (1F): Crossroad"
               },
               {
                 "name": "Moonlit Grotto (B1F): Torch Chest",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Torch Chest/Moonlit Grotto (B1F): Torch Chest"
+                "ref": "Moonlit Grotto (D3)/(B1F): Torch Chest/Moonlit Grotto (B1F): Torch Chest"
               },
               {
                 "name": "Moonlit Grotto (B1F): Moldorm Drop",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Moldorm Drop/Moonlit Grotto (B1F): Moldorm Drop"
+                "ref": "Moonlit Grotto (D3)/(B1F): Moldorm Drop/Moonlit Grotto (B1F): Moldorm Drop"
               },
               {
                 "name": "Moonlit Grotto (B1F): Miniboss",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): Miniboss/Moonlit Grotto (B1F): Miniboss"
+                "ref": "Moonlit Grotto (D3)/(B1F): Miniboss/Moonlit Grotto (B1F): Miniboss"
               },
               {
                 "name": "Moonlit Grotto (1F): Bridge Chest",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(1F): Bridge Chest/Moonlit Grotto (1F): Bridge Chest"
+                "ref": "Moonlit Grotto (D3)/(1F): Bridge Chest/Moonlit Grotto (1F): Bridge Chest"
               },
               {
                 "name": "Moonlit Grotto (B1F): East",
-                "ref": "Dungeons/Moonlit Grotto (D3)/(B1F): East/Moonlit Grotto (B1F): East"
+                "ref": "Moonlit Grotto (D3)/(B1F): East/Moonlit Grotto (B1F): East"
               },
               {
                 "name": "Moonlit Grotto (B1F): Boss",
-                "ref": "Dungeons/Moonlit Grotto (D3)/Shadow Hag/Moonlit Grotto (B1F): Boss"
+                "ref": "Moonlit Grotto (D3)/Shadow Hag/Moonlit Grotto (B1F): Boss"
               },
               {
                 "name": "Moonlit Grotto: Essence",
-                "ref": "Dungeons/Moonlit Grotto (D3)/Echoing Howl/Moonlit Grotto: Essence"
+                "ref": "Moonlit Grotto (D3)/Echoing Howl/Moonlit Grotto: Essence"
               },
               {
                 "name": "Get scent seeds in D3's bridge rooms",
-                "ref": "Dungeons/Moonlit Grotto (D3)/Get scent seeds in D3's bridge rooms/Respawnable bushes"
+                "ref": "Moonlit Grotto (D3)/Get scent seeds in D3's bridge rooms/Respawnable bushes"
               }
             ],
             "map_locations": [
