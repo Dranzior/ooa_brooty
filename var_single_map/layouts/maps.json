@@ -1,0 +1,298 @@
+{
+  "maps": {
+    "type": "dock",
+    "content": [
+      {
+        "type": "tabbed",
+        "dock": "top",
+        "tabs": [
+          {
+            "title": "Overworld (Tabs)",
+            "content": {
+              "type": "container",
+              "content": [
+                {
+                  "type": "tabbed",
+                  "tabs": [
+                    {
+                      "title": "Present",
+                      "content": {
+                        "type": "map",
+                        "maps": [
+                          "present"
+                        ]
+                      }
+                    },
+                    {
+                      "title": "Past",
+                      "content": {
+                        "type": "map",
+                        "maps": [
+                          "past"
+                        ]
+                      }
+                    },
+                    {
+                      "title": "Animal Companion Maps",
+                      "icon": "",
+                      "type": "container",
+                      "content": {
+                        "type": "layout",
+                        "key": "animal_map"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "title": "Maku Path",
+            "content": {
+              "type": "map",
+              "maps": [
+                "d0_1"
+              ]
+            }
+          },
+          {
+            "title": "Spirit's Grave",
+            "content": {
+              "type": "map",
+              "maps": [
+                "d1_1"
+              ]
+            }
+          },
+          {
+            "title": "Wing Dungeon",
+            "content": {
+              "type": "tabbed",
+              "tabs": [
+                {
+                  "title": "1F",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d2_1"
+                    ]
+                  }
+                },
+                {
+                  "title": "B1F",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d2_B1"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "title": "Moonlit Grotto",
+            "content": {
+              "type": "tabbed",
+              "tabs": [
+                {
+                  "title": "1F",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d3_1"
+                    ]
+                  }
+                },
+                {
+                  "title": "B1F",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d3_B1"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "title": "Skull Dungeon",
+            "content": {
+              "type": "tabbed",
+              "tabs": [
+                {
+                  "title": "1F",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d4_1"
+                    ]
+                  }
+                },
+                {
+                  "title": "B1F",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d4_B1"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "title": "Crown Dungeon",
+            "content": {
+              "type": "tabbed",
+              "tabs": [
+                {
+                  "title": "1F",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d5_1"
+                    ]
+                  }
+                },
+                {
+                  "title": "B1F",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d5_B1"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "title": "Mermaid's Cave (Past)",
+            "content": {
+              "type": "tabbed",
+              "tabs": [
+                {
+                  "title": "1F",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d6_Past_1"
+                    ]
+                  }
+                },
+                {
+                  "title": "B1",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d6_Past_B1"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "title": "Mermaid's Cave (Present)",
+            "content": {
+              "type": "map",
+              "maps": [
+                "d6_Present_1"
+              ]
+            }
+          },
+          {
+            "title": "Jabu-Jabu's Belly",
+            "content": {
+              "type": "tabbed",
+              "tabs": [
+                {
+                  "title": "F1",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d7_1"
+                    ]
+                  }
+                },
+                {
+                  "title": "F2",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d7_2"
+                    ]
+                  }
+                },
+                {
+                  "title": "F3",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d7_3"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "title": "Ancient Tomb",
+            "content": {
+              "type": "tabbed",
+              "tabs": [
+                {
+                  "title": "F1",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d8_1"
+                    ]
+                  }
+                },
+                {
+                  "title": "B1F",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d8_B1"
+                    ]
+                  }
+                },
+                {
+                  "title": "B2F",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d8_B2"
+                    ]
+                  }
+                },
+                {
+                  "title": "B3F",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d8_B3"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "title": "Hero's Cave",
+            "content": {
+              "type": "map",
+              "maps": [
+                "d11_1"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

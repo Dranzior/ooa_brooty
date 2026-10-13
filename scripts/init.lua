@@ -65,6 +65,7 @@ end
 
 -- Layout
 Tracker:AddLayouts("layouts/items.json")
+Tracker:AddLayouts("layouts/maps.json")
 Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 Tracker:AddLayouts("layouts/layouts.json")
