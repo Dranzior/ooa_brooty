@@ -16,12 +16,12 @@ jobs:
 
     steps:
       # Checks-out repository
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       # Create artifacts
       - name: create zip
         run: |
-          zip -r ooa.zip . -x ".*" "source_images/*" "LogicGenerator/*" "versions.json"
+          zip -r ooa.zip . -x ".*" "source_images/*" "tools/*" "versions.json" 
 
       # Create the new release
       - name: create release
