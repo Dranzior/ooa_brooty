@@ -1,0 +1,534 @@
+[
+  {
+    "name": "Overworld_Past_Entrances",
+    "chest_unopened_img": "images/items/chest_past.png",
+    "chest_opened_img": "images/items/chest_past_open.png",
+    "children": [
+      {
+        "name": "Symmetry Village",
+        "children": [
+          {
+            "name": "past top left symmetry house",
+            "sections": [
+              {
+                "name": "past top left symmetry house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|past top left symmetry house"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "past top right symmetry house",
+            "sections": [
+              {
+                "name": "past top right symmetry house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|past top right symmetry house"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "symmetry town hall",
+            "sections": [
+              {
+                "name": "symmetry town hall",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|symmetry town hall"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "past bottom left symmetry house",
+            "sections": [
+              {
+                "name": "past bottom left symmetry house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|past bottom left symmetry house"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "past bottom right symmetry house",
+            "sections": [
+              {
+                "name": "past bottom right symmetry house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|past bottom right symmetry house"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Talus Peaks",
+        "children": [
+          {
+            "name": "tokkey dive spot",
+            "sections": [
+              {
+                "name": "tokkey dive spot",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|tokkey dive spot"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "talus waterfall cave front",
+            "sections": [
+              {
+                "name": "talus waterfall cave front",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|talus waterfall cave front"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "talus waterfall cave right",
+            "sections": [
+              {
+                "name": "talus waterfall cave right",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|talus waterfall cave right"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "talus waterfall cave left",
+            "sections": [
+              {
+                "name": "talus waterfall cave left",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|talus waterfall cave left"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rolling Ridge",
+        "children": [
+        ]
+      },
+      {
+        "name": "Lynna Village",
+        "children": [
+          {
+            "name": "town shooting gallery",
+            "sections": [
+              {
+                "name": "town shooting gallery",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|town shooting gallery"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "advance shop",
+            "sections": [
+              {
+                "name": "advance shop",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|advance shop"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "postman house",
+            "sections": [
+              {
+                "name": "postman house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|postman house"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "sad boi house",
+            "sections": [
+              {
+                "name": "sad boi house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|sad boi house"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "gasha farmer house",
+            "sections": [
+              {
+                "name": "gasha farmer house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|gasha farmer house"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "toilet hand house",
+            "sections": [
+              {
+                "name": "toilet hand house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|toilet hand house"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "palace front door",
+            "sections": [
+              {
+                "name": "palace front door",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|palace front door"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "palace left door",
+            "sections": [
+              {
+                "name": "palace left door",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|palace left door"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "palace right door",
+            "sections": [
+              {
+                "name": "palace right door",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|palace right door"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "palace secret entrance",
+            "sections": [
+              {
+                "name": "palace secret entrance",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|palace secret entrance"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "rafton house left",
+            "sections": [
+              {
+                "name": "rafton house left",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|rafton house left"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "rafton house right",
+            "sections": [
+              {
+                "name": "rafton house right",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|rafton house right"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "d0",
+            "sections": [
+              {
+                "name": "d0",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|d0"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "advisor house",
+            "sections": [
+              {
+                "name": "advisor house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|advisor house"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "cheval house",
+            "sections": [
+              {
+                "name": "cheval house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|cheval house"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sea of Storms",
+        "children": [
+        ]
+      },
+      {
+        "name": "Sea of no Return",
+        "children": [
+        ]
+      },
+      {
+        "name": "Deku Forest",
+        "children": [
+          {
+            "name": "deku forest push block cave stairs",
+            "sections": [
+              {
+                "name": "deku forest push block cave stairs",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|deku forest push block cave stairs"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "deku forest heart cave stairs",
+            "sections": [
+              {
+                "name": "deku forest heart cave stairs",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|deku forest heart cave stairs"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "deku forest heart cave bush stairs",
+            "sections": [
+              {
+                "name": "deku forest heart cave bush stairs",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|deku forest heart cave bush stairs"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "restoration wall base cave",
+            "sections": [
+              {
+                "name": "restoration wall base cave",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|restoration wall base cave"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "mystery seed cave front stairs",
+            "sections": [
+              {
+                "name": "mystery seed cave front stairs",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|mystery seed cave front stairs"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "mystery seed cave back left stairs",
+            "sections": [
+              {
+                "name": "mystery seed cave back left stairs",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|mystery seed cave back left stairs"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "mystery seed cave back right stairs",
+            "sections": [
+              {
+                "name": "mystery seed cave back right stairs",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|mystery seed cave back right stairs"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "d2",
+            "sections": [
+              {
+                "name": "d2",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|d2"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zora Seas",
+        "children": [
+        ]
+      },
+      {
+        "name": "Crescent Island",
+        "children": [
+          {
+            "name": "lost shield tokay cave",
+            "sections": [
+              {
+                "name": "lost shield tokay cave",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|lost shield tokay cave"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "crystal tokay cave",
+            "sections": [
+              {
+                "name": "crystal tokay cave",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|crystal tokay cave"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "past chicken hut stairs",
+            "sections": [
+              {
+                "name": "past chicken hut stairs",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|past chicken hut stairs"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "wild tokay game",
+            "sections": [
+              {
+                "name": "wild tokay game",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|wild tokay game"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "past chicken hut front",
+            "sections": [
+              {
+                "name": "past chicken hut front",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|past chicken hut front"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "long hook pot cave",
+            "sections": [
+              {
+                "name": "long hook pot cave",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|long hook pot cave"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "tokay shop",
+            "sections": [
+              {
+                "name": "tokay shop",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|tokay shop"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "flipper tokay bomb cave",
+            "sections": [
+              {
+                "name": "flipper tokay bomb cave",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|flipper tokay bomb cave"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

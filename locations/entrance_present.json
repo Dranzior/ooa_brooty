@@ -1,0 +1,448 @@
+[
+  {
+    "name": "Overworld_entrance",
+    "chest_unopened_img": "images/items/chest_present.png",
+    "chest_opened_img": "images/items/chest_present_open.png",
+    "children": [
+      {
+        "name": "Talus Peaks",
+        "children": [
+        ]
+      },
+      {
+        "name": "Symmetry City",
+        "children": [
+          {
+            "name": "d4",
+            "sections": [
+              {
+                "name": "d4",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|d4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "present top left symmetry house",
+            "sections": [
+              {
+                "name": "present top left symmetry house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|present top left symmetry house"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "present top right symmetry house",
+            "sections": [
+              {
+                "name": "present top right symmetry house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|present top right symmetry house"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "present bottom left symmetry house",
+            "sections": [
+              {
+                "name": "present bottom left symmetry house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|present bottom left symmetry house"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "present bottom right symmetry hous",
+            "sections": [
+              {
+                "name": "present bottom right symmetry hous",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|present bottom right symmetry hous"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Nuun Highlands",
+        "children": [
+          {
+            "name": "nuun fairy cave",
+            "sections": [
+              {
+                "name": "nuun fairy cave",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|nuun fairy cave"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rolling Ridge",
+        "children": [
+        ]
+      },
+      {
+        "name": "Lynna City",
+        "children": [
+          {
+            "name": "lynna city shop",
+            "sections": [
+              {
+                "name": "lynna city shop",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|lynna city shop"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "hidden entrance shop",
+            "sections": [
+              {
+                "name": "hidden entrance shop",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|hidden entrance shop"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "mayor's house",
+            "sections": [
+              {
+                "name": "mayor's house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|mayor's house"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "mamamu yan house",
+            "sections": [
+              {
+                "name": "mamamu yan house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|mamamu yan house"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "vasu's shop",
+            "sections": [
+              {
+                "name": "vasu's shop",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|vasu's shop"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "petrified kid's house",
+            "sections": [
+              {
+                "name": "petrified kid's house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|petrified kid's house"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "know it all birds house",
+            "sections": [
+              {
+                "name": "know it all birds house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|know it all birds house"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "troy's house",
+            "sections": [
+              {
+                "name": "troy's house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|troy's house"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "left bippin blossom door",
+            "sections": [
+              {
+                "name": "left bippin blossom door",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|left bippin blossom door"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "right bippin blossom door",
+            "sections": [
+              {
+                "name": "right bippin blossom door",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|right bippin blossom door"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "black tower ruins",
+            "sections": [
+              {
+                "name": "black tower ruins",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|black tower ruins"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forest of Time",
+        "children": [
+          {
+            "name": "nayru's house",
+            "sections": [
+              {
+                "name": "nayru's house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|nayru's house"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "lower tingle cave",
+            "sections": [
+              {
+                "name": "lower tingle cave",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|lower tingle cave"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "upper tingle stairs",
+            "sections": [
+              {
+                "name": "upper tingle stairs",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|upper tingle stairs"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Yoll Graveyard",
+        "children": [
+          {
+            "name": "cheval grave",
+            "sections": [
+              {
+                "name": "cheval grave",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|cheval grave"
+                ]
+              },
+              {
+                "name": "grave under the tree",
+                "sections": [
+                  {
+                    "name": "grave under the tree",
+                    "item_count": 1,
+                    "access_rules": [
+                      "^$CanReachOutside|grave under the tree"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "syrup hut",
+                "sections": [
+                  {
+                    "name": "syrup hut",
+                    "item_count": 1,
+                    "access_rules": [
+                      "^$CanReachOutside|syrup hut"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "poe grave",
+                "sections": [
+                  {
+                    "name": "poe grave",
+                    "item_count": 1,
+                    "access_rules": [
+                      "^$CanReachOutside|poe grave"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "d1",
+                "sections": [
+                  {
+                    "name": "d1",
+                    "item_count": 1,
+                    "access_rules": [
+                      "^$CanReachOutside|d1"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fairies' Woods",
+        "children": [
+          {
+            "name": "happy mask shop",
+            "sections": [
+              {
+                "name": "happy mask shop",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|happy mask shop"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zora Seas",
+        "children": [
+        ]
+      },
+      {
+        "name": "Crescent Island",
+        "children": [
+          {
+            "name": "d3",
+            "sections": [
+              {
+                "name": "d3",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|d3"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "southern fairy cave",
+            "sections": [
+              {
+                "name": "southern fairy cave",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|southern fairy cave"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "underwater maze cave",
+            "sections": [
+              {
+                "name": "underwater maze cave",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|underwater maze cave"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "tokay chef house",
+            "sections": [
+              {
+                "name": "tokay chef house",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|tokay chef house"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "wild tokay museum",
+            "sections": [
+              {
+                "name": "wild tokay museum",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|wild tokay museum"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "present chicken hut",
+            "sections": [
+              {
+                "name": "present chicken hut",
+                "item_count": 1,
+                "access_rules": [
+                  "^$CanReachOutside|present chicken hut"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sea of Storms",
+        "children": [
+        ]
+      }
+    ]
+  }
+]
