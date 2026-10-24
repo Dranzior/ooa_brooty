@@ -11,6 +11,18 @@
     "location_border_thickness": 9,
     "img": "images/maps/past.png"
   },
+    {
+    "name": "present_entrance",
+    "location_size": 37,
+    "location_border_thickness": 9,
+    "img": "images/maps/present.png"
+  },
+  {
+    "name": "past_entrance",
+    "location_size": 37,
+    "location_border_thickness": 9,
+    "img": "images/maps/past.png"
+  },
   {
     "name": "animal_regions",
     "location_size": 20,
