@@ -1295,13 +1295,13 @@
             ]
           },
           {
-            "name": "Nayru's House",
+            "name": "Nayru's House Harp Spot",
             "access_rules": [
               "^$CanReach|nayrus_house"
             ],
             "sections": [
               {
-                "name": "Forest of Time: Nayru's House",
+                "name": "Forest of Time: Nayru's House Harp Spot",
                 "item_count": 1
               }
             ],
