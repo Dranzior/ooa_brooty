@@ -1,0 +1,263 @@
+[
+  {
+    "name": "Spirit's Grave (D1)",
+    "chest_unopened_img": "images/items/chest_present.png",
+    "chest_opened_img": "images/items/chest_present_open.png",
+    "children": [
+      {
+        "name": "East Terrace",
+        "access_rules": [
+          "^$CanReach|d1_east_terrace"
+        ],
+        "sections": [
+          {
+            "name": "Spirit's Grave: East Terrace",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d1_1",
+            "x": 759,
+            "y": 1083
+          }
+        ]
+      },
+      {
+        "name": "Ghini Drop",
+        "access_rules": [
+          "^$CanReach|d1_ghini_drop"
+        ],
+        "sections": [
+          {
+            "name": "Spirit's Grave: Ghini Drop",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d1_1",
+            "x": 1014,
+            "y": 793
+          }
+        ]
+      },
+      {
+        "name": "Miniboss",
+        "access_rules": [
+          "^$CanReach|d1_miniboss"
+        ],
+        "visibility_rules": [
+          "minibosses_on"
+        ],
+        "sections": [
+          {
+            "name": "Spirit's Grave: Miniboss",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d1_1",
+            "x": 369,
+            "y": 612
+          }
+        ]
+      },
+      {
+        "name": "Crossroad",
+        "access_rules": [
+          "^$CanReach|d1_crossroad"
+        ],
+        "sections": [
+          {
+            "name": "Spirit's Grave: Crossroad",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d1_1",
+            "x": 777,
+            "y": 791
+          }
+        ]
+      },
+      {
+        "name": "Crystal Room",
+        "access_rules": [
+          "^$CanReach|d1_crystal_room"
+        ],
+        "sections": [
+          {
+            "name": "Spirit's Grave: Crystal Room",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d1_1",
+            "x": 632,
+            "y": 793
+          }
+        ]
+      },
+      {
+        "name": "Wide Room",
+        "access_rules": [
+          "^$CanReach|d1_wide_room"
+        ],
+        "sections": [
+          {
+            "name": "Spirit's Grave: Wide Room",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d1_1",
+            "x": 921,
+            "y": 567
+          }
+        ]
+      },
+      {
+        "name": "Two-Buttons Chest",
+        "access_rules": [
+          "^$CanReach|d1_two_button_chest"
+        ],
+        "sections": [
+          {
+            "name": "Spirit's Grave: Two-Buttons Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d1_1",
+            "x": 838,
+            "y": 373
+          }
+        ]
+      },
+      {
+        "name": "One-Button Chest",
+        "access_rules": [
+          "^$CanReach|d1_one_button_chest"
+        ],
+        "sections": [
+          {
+            "name": "Spirit's Grave: One-Button Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d1_1",
+            "x": 644,
+            "y": 438
+          }
+        ]
+      },
+      {
+        "name": "Pot Chest",
+        "access_rules": [
+          "^$CanReach|d1_pot_chest"
+        ],
+        "sections": [
+          {
+            "name": "Spirit's Grave: Pot Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d1_1",
+            "x": 345,
+            "y": 1083
+          }
+        ]
+      },
+      {
+        "name": "West Terrace",
+        "access_rules": [
+          "^$CanReach|d1_west_terrace"
+        ],
+        "sections": [
+          {
+            "name": "Spirit's Grave: West Terrace",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d1_1",
+            "x": 55,
+            "y": 1002
+          }
+        ]
+      },
+      {
+        "name": "Basement",
+        "access_rules": [
+          "^$CanReach|d1_basement"
+        ],
+        "sections": [
+          {
+            "name": "Spirit's Grave: Basement",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d1_1",
+            "x": 87,
+            "y": 87
+          },
+          {
+            "map": "d1_1",
+            "x": 186,
+            "y": 746
+          }
+        ]
+      },
+      {
+        "name": "Pumpkin Head",
+        "access_rules": [
+          "^$CanReach|d1_boss"
+        ],
+        "sections": [
+          {
+            "name": "Spirit's Grave: Boss",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d1_1",
+            "x": 599,
+            "y": 262
+          }
+        ]
+      },
+      {
+        "name": "Eternal Spirit",
+        "access_rules": [
+          "^$CanReach|d1_boss"
+        ],
+        "sections": [
+          {
+            "name": "Spirit's Grave: Essence"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d1_1",
+            "x": 597,
+            "y": 36
+          }
+        ]
+      }
+    ]
+  }
+]

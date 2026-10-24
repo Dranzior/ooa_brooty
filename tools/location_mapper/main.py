@@ -57,9 +57,46 @@ def parse_recursive(element, path):
 
 
 def create_location_path_mapping():
-    json_file = open('../../locations/dungeons.json')
-    dungeons = json.load(json_file)
-    parse_recursive(dungeons[0], "")
+    json_file = open('../../locations/maku_path.json')
+    maku_path = json.load(json_file)
+    parse_recursive(maku_path[0], "")
+
+    json_file = open('../../locations/spirits_grave.json')
+    spirits_grave = json.load(json_file)
+    parse_recursive(spirits_grave[0], "")
+
+    json_file = open('../../locations/wing_dungeon.json')
+    wing_dungeon = json.load(json_file)
+    parse_recursive(wing_dungeon[0], "")
+
+    json_file = open('../../locations/moonlit_grotto.json')
+    moonlit_grotto = json.load(json_file)
+    parse_recursive(moonlit_grotto[0], "")
+
+    json_file = open('../../locations/skull_dungeon.json')
+    skull_dungeon = json.load(json_file)
+    parse_recursive(skull_dungeon[0], "")
+
+    json_file = open('../../locations/crown_dungeon.json')
+    crown_dungeon = json.load(json_file)
+    parse_recursive(crown_dungeon[0], "")
+
+    json_file = open('../../locations/mermaids_cave.json')
+    mermaids_cave = json.load(json_file)
+    parse_recursive(mermaids_cave[0], "")
+    parse_recursive(mermaids_cave[1], "")
+
+    json_file = open('../../locations/jabu-jabus_belly.json')
+    jabu_jabus_belly = json.load(json_file)
+    parse_recursive(jabu_jabus_belly[0], "")
+
+    json_file = open('../../locations/ancient_tomb.json')
+    ancient_tomb = json.load(json_file)
+    parse_recursive(ancient_tomb[0], "")
+
+    json_file = open('../../locations/heros_cave.json')
+    heros_cave = json.load(json_file)
+    parse_recursive(heros_cave[0], "")
 
     json_file = open('../../locations/overworld_past.json')
     past = json.load(json_file)

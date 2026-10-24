@@ -1,0 +1,71 @@
+[
+  {
+    "name": "Maku Path (D0)",
+    "chest_unopened_img": "images/items/chest_past.png",
+    "chest_opened_img": "images/items/chest_past_open.png",
+    "children": [
+      {
+        "name": "Key Chest",
+        "access_rules": [
+          "^$CanReach|d0_key_chest"
+        ],
+        "sections": [
+          {
+            "name": "Maku Path: Key Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d0_1",
+            "x": 600,
+            "y": 88
+          }
+        ]
+      },
+      {
+        "name": "Basement",
+        "access_rules": [
+          "^$CanReach|d0_basement"
+        ],
+        "sections": [
+          {
+            "name": "Maku Path: Basement",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d0_1",
+            "x": 136,
+            "y": 427
+          },
+          {
+            "map": "d0_1",
+            "x": 167,
+            "y": 199
+          }
+        ]
+      },
+      {
+        "name": "Heart Piece",
+        "access_rules": [
+          "^$CanReach|maku_path_heartpiece"
+        ],
+        "sections": [
+          {
+            "name": "Maku Path: Heart Piece",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d0_1",
+            "x": 70,
+            "y": 54
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,315 @@
+[
+  {
+    "name": "Moonlit Grotto (D3)",
+    "chest_unopened_img": "images/items/chest_present.png",
+    "chest_opened_img": "images/items/chest_present_open.png",
+    "children": [
+      {
+        "name": "(1F): Pols Voice Chest",
+        "access_rules": [
+          "^$CanReach|d3_pols_voice_chest"
+        ],
+        "sections": [
+          {
+            "name": "Moonlit Grotto (1F): Pols Voice Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d3_1",
+            "x": 376,
+            "y": 968
+          }
+        ]
+      },
+      {
+        "name": "(1F): Statue Drop",
+        "access_rules": [
+          "^$CanReach|d3_statue_drop"
+        ],
+        "sections": [
+          {
+            "name": "Moonlit Grotto (1F): Statue Drop",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d3_1",
+            "x": 1143,
+            "y": 615
+          }
+        ]
+      },
+      {
+        "name": "(B1F): Conveyor Belt Room",
+        "access_rules": [
+          "^$CanReach|d3_conveyor_belt_room"
+        ],
+        "sections": [
+          {
+            "name": "Moonlit Grotto (B1F): Conveyor Belt Room",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d3_B1",
+            "x": 392,
+            "y": 984
+          }
+        ]
+      },
+      {
+        "name": "(1F): Six Blocs Drop",
+        "access_rules": [
+          "^$CanReach|d3_six_blocs_drop"
+        ],
+        "sections": [
+          {
+            "name": "Moonlit Grotto (1F): Six Blocs Drop",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d3_1",
+            "x": 183,
+            "y": 984
+          }
+        ]
+      },
+      {
+        "name": "(1F): Armos Drop",
+        "access_rules": [
+          "^$CanReach|d3_armos_drop"
+        ],
+        "sections": [
+          {
+            "name": "Moonlit Grotto (1F): Armos Drop",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d3_1",
+            "x": 1047,
+            "y": 439
+          }
+        ]
+      },
+      {
+        "name": "(1F): Bush Beetle Room",
+        "access_rules": [
+          "^$CanReach|d3_bush_beetle_room"
+        ],
+        "sections": [
+          {
+            "name": "Moonlit Grotto (1F): Bush Beetle Room",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d3_1",
+            "x": 600,
+            "y": 392
+          }
+        ]
+      },
+      {
+        "name": "(1F): Mimic Room",
+        "access_rules": [
+          "^$CanReach|d3_mimic_room"
+        ],
+        "sections": [
+          {
+            "name": "Moonlit Grotto (1F): Mimic Room",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d3_1",
+            "x": 392,
+            "y": 88
+          }
+        ]
+      },
+      {
+        "name": "(1F): Crossroad",
+        "access_rules": [
+          "^$CanReach|d3_crossroad"
+        ],
+        "sections": [
+          {
+            "name": "Moonlit Grotto (1F): Crossroad",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d3_1",
+            "x": 840,
+            "y": 615
+          }
+        ]
+      },
+      {
+        "name": "(B1F): Torch Chest",
+        "access_rules": [
+          "^$CanReach|d3_torch_chest"
+        ],
+        "sections": [
+          {
+            "name": "Moonlit Grotto (B1F): Torch Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d3_B1",
+            "x": 920,
+            "y": 776
+          }
+        ]
+      },
+      {
+        "name": "(B1F): Moldorm Drop",
+        "access_rules": [
+          "^$CanReach|d3_moldorm_drop"
+        ],
+        "sections": [
+          {
+            "name": "Moonlit Grotto (B1F): Moldorm Drop",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d3_B1",
+            "x": 615,
+            "y": 87
+          }
+        ]
+      },
+      {
+        "name": "(B1F): Miniboss",
+        "access_rules": [
+          "^$CanReach|d3_miniboss"
+        ],
+        "visibility_rules": [
+          "minibosses_on"
+        ],
+        "sections": [
+          {
+            "name": "Moonlit Grotto (B1F): Miniboss",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d3_B1",
+            "x": 839,
+            "y": 268
+          }
+        ]
+      },
+      {
+        "name": "(B1F): Bridge Chest",
+        "access_rules": [
+          "^$CanReach|d3_bridge_chest"
+        ],
+        "sections": [
+          {
+            "name": "Moonlit Grotto (1F): Bridge Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d3_B1",
+            "x": 679,
+            "y": 488
+          }
+        ]
+      },
+      {
+        "name": "(B1F): East",
+        "access_rules": [
+          "^$CanReach|d3_B1F_east"
+        ],
+        "sections": [
+          {
+            "name": "Moonlit Grotto (B1F): East",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d3_B1",
+            "x": 1096,
+            "y": 392
+          }
+        ]
+      },
+      {
+        "name": "Shadow Hag",
+        "access_rules": [
+          "^$CanReach|d3_boss"
+        ],
+        "sections": [
+          {
+            "name": "Moonlit Grotto (B1F): Boss",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d3_B1",
+            "x": 358,
+            "y": 85
+          }
+        ]
+      },
+      {
+        "name": "Echoing Howl",
+        "access_rules": [
+          "^$CanReach|d3_boss"
+        ],
+        "sections": [
+          {
+            "name": "Moonlit Grotto: Essence"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d3_B1",
+            "x": 119,
+            "y": 32
+          }
+        ]
+      },
+      {
+        "name": "Get scent seeds in D3's bridge rooms",
+        "sections": [
+          {
+            "name": "Respawnable bushes",
+            "access_rules": [
+              "^$CanReach|D3ScentSeedBush"
+            ],
+            "hosted_item": "scentseeds"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "d3_B1",
+            "x": 511,
+            "y": 375
+          }
+        ]
+      }
+    ]
+  }
+]

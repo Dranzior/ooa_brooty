@@ -11,6 +11,12 @@
       "flags": [
         "ap"
       ]
+    },
+	"var_single_map": {
+      "display_name": "Map Tracker (AP)",
+      "flags": [
+        "ap"
+      ]
     }
   },
   "versions_url": "https://raw.githubusercontent.com/Dranzior/ooa_brooty/master/versions.json",
