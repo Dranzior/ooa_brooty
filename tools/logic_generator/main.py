@@ -8,7 +8,7 @@ import re
 import worlds.tloz_ooa.data.logic.OverworldLogic as OverworldLogic
 import worlds.tloz_ooa.data.logic.DungeonsLogic as DungeonLogic
 from worlds.tloz_ooa.Options import OracleOfAgesLinkedHerosCave, OracleOfAgesGashaLocations, \
-    OraclesIncludeSecretLocations, OracleOfAgesVasuRingChecksRequirement
+    OraclesIncludeSecretLocations, OracleOfAgesVasuRings_Enabled, OracleOfAgesVasuRings_RupeeCount
 
 outputPath = "../../scripts/logic/generated"
 
@@ -29,7 +29,7 @@ def fix_location_name(location_name):
 
 def cleanup_function(function_code):
     # Isolate the function and convert to a LUA function
-    function_code = re.sub(".*lambda state:", "function() return", function_code)
+    function_code = re.sub(".*lambda *state:", "function() return", function_code)
 
     # strip comments
     function_code = re.sub(" *#.*", "", function_code)
@@ -43,14 +43,21 @@ def cleanup_function(function_code):
     function_code = function_code.replace("True", "true")
     function_code = function_code.replace("False", "false")
 
+    # replace some specific call for their LUA equivalent
+    function_code = re.sub("options\\.secret_locations", "Has(\"secret_locations_on\")", function_code)
+    function_code = re.sub("options\\.advance_shop", "Has(\"advanceshop\")", function_code)
+    function_code = re.sub("OracleOfAgesGoal\\.option_collect_maku_seed", "Has(\"option_collect_maku_seed\")", function_code)
+    function_code = re.sub("OracleOfAgesGoal\\.option_beat_veran", "Has(\"option_beat_veran\")", function_code)
+    function_code = re.sub("OracleOfAgesGoal\\.option_beat_ganon", "Has(\"option_beat_ganon\")", function_code)
+    function_code = re.sub("ooa_has_rupees\\(state, player, rupee_requirement\\)", "ooa_has_rupees_for_vasu()", function_code)
+
     # remove "state" and "player" parameter from every function call
     function_code = re.sub(",? *state *,? *", "", function_code)
     function_code = re.sub(",? *player *,? *", "", function_code)
-    function_code = re.sub(",? *options *,? *", "", function_code)
 
     # lua doesn't support have comma after last element of a list
-    function_code = re.sub(", *\n? *]", "]", function_code)
-    function_code = re.sub(", *\n? *\\)", ")", function_code)
+    function_code = re.sub(", *\n* *]", "]", function_code)
+    function_code = re.sub(", *\n* *\\)", ")", function_code)
 
     # remove the ending of each line
     function_code = function_code.replace("],", "")
@@ -116,7 +123,8 @@ class Option:
     linked_heros_cave = OracleOfAgesLinkedHerosCave(1)
     deterministic_gasha_locations = OracleOfAgesGashaLocations(0)
     secret_locations = OraclesIncludeSecretLocations(True)
-    vasu_ring_checks_requirement = OracleOfAgesVasuRingChecksRequirement({"disable_entirely": False})
+    vasu_additional_rings = OracleOfAgesVasuRings_Enabled(True)
+    vasu_rupee_ring_requirement = OracleOfAgesVasuRings_RupeeCount(1)
 
 
 def process():

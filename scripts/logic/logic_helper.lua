@@ -853,9 +853,14 @@ function ooa_can_trigger_lever()
     return Any(
         ooa_can_trigger_lever_from_minecart(),
         All(
-            ooa_option_medium_logic(),
-            ooa_has_shovel()
-        )
+            ooa_has_satchel(),
+            Any(
+                ooa_can_use_scent_seeds_for_smell(),
+                ooa_can_use_mystery_seeds(),
+                ooa_can_use_ember_seeds()
+            )
+        ),
+        ooa_has_switch_hook()
     )
 end
 
@@ -863,8 +868,6 @@ function ooa_can_trigger_lever_from_minecart()
     return Any(
         ooa_has_sword(),
         ooa_has_boomerang(),
-        ooa_can_use_scent_seeds_offensively(),
-        ooa_can_use_mystery_seeds(),
         ooa_has_seedshooter() -- Any seed works using slingshot
     )
 end
@@ -1003,4 +1006,29 @@ function ooa_can_fight_using_seed()
             AccessibilityLevel.SequenceBreak
         )
     )
+end
+
+function ooa_can_buy_from_shop()
+    rupee_requirement = min(state.multiworld.worlds[player].total_shop_prices * 0.5, 1000)  -- TODO NOW
+    return ooa_has_rupees(rupee_requirement)
+end
+
+function ooa_goal_is(goal)
+    return state.multiworld.worlds[player].options.goal == goal -- TODO NOW
+end
+
+function ooa_ER_inside_lock_fully_blocked()
+    return false    -- TODO WITH ER
+end
+
+function ooa_ER_inside_lock_fully_open()
+    return true     -- TODO WITH ER
+end
+
+function ooa_can_travel_underwater()
+    return ooa_has_siren_suit() or ooa_option_suitless_underwater()
+end
+
+function ooa_option_suitless_underwater()
+    return false
 end

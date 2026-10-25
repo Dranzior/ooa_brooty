@@ -19,7 +19,12 @@ d4_minecart_A:connect_one_way_entrance(d4_first_crystal_switch,function() return
                 ooa_has_boomerang()
             )
         ) end)
-d4_minecart_A:connect_one_way_entrance(d4_minecart_chest,function() return ooa_can_trigger_lever() end)
+d4_minecart_A:connect_one_way_entrance(d4_minecart_chest,function() return Any(
+            ooa_can_trigger_lever(),
+            All(
+                ooa_option_hard_logic(),
+                ooa_has_bracelet())
+        ) end)
 d4_minecart_A:connect_one_way_entrance(d4_minecart_B,function() return All(
             ooa_can_trigger_lever_from_minecart(),
             ooa_has_bracelet(),
