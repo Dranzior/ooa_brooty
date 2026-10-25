@@ -1,19 +1,19 @@
 ﻿{
   "name": "Oracle of Ages Randomizer",
   "game_name": "Oracle of Ages",
-  "package_version": "0.9.11",
+  "package_version": "0.9.12",
   "package_uid": "ooa_brooty",
   "platform": "gbc",
   "author": "Brooty, Dranzior",
   "variants": {
     "standard": {
-      "display_name": "Map Tracker (AP)",
+      "display_name": "Map Tracker (AP) - 0.9.12",
       "flags": [
         "ap"
       ]
     },
 	"var_single_map": {
-      "display_name": "Map Tracker (AP)",
+      "display_name": "Map Tracker (AP) - Compact - 0.9.12",
       "flags": [
         "ap"
       ]
