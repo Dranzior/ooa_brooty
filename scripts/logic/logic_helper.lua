@@ -1009,7 +1009,7 @@ function ooa_can_fight_using_seed()
 end
 
 function ooa_can_buy_from_shop()
-    rupee_requirement = Tracker:FindObjectForCode("total_shop_price").AcquiredCount
+    rupee_requirement = math.min(Tracker:FindObjectForCode("total_shop_price").AcquiredCount * 0.5, 1000)
     return ooa_has_rupees(rupee_requirement)
 end
 

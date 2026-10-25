@@ -134,19 +134,20 @@ end
 local function getTotalShopCost(slot_data)
     local total = 0
     if slot_data["shop_costs"] then
-        total = total + getCost(slot_data, "syrupShop1")
-        total = total + getCost(slot_data, "syrupShop2")
-        total = total + getCost(slot_data, "syrupShop3")
-        total = total + getCost(slot_data, "advanceShop1")
-        total = total + getCost(slot_data, "advanceShop2")
-        total = total + getCost(slot_data, "advanceShop3")
-        total = total + getCost(slot_data, "lynnaShop1")
-        total = total + getCost(slot_data, "lynnaShop2")
-        total = total + getCost(slot_data, "lynnaShop3")
-        total = total + getCost(slot_data, "hiddenShop1")
-        total = total + getCost(slot_data, "hiddenShop2")
-        total = total + getCost(slot_data, "hiddenShop3")
-
+        shop_data = slot_data["shop_costs"]
+        total = total + getCost(shop_data, "syrupShop1")
+        total = total + getCost(shop_data, "syrupShop2")
+        total = total + getCost(shop_data, "syrupShop3")
+        total = total + getCost(shop_data, "advanceShop1")
+        total = total + getCost(shop_data, "advanceShop2")
+        total = total + getCost(shop_data, "advanceShop3")
+        total = total + getCost(shop_data, "lynnaShop1")
+        total = total + getCost(shop_data, "lynnaShop2")
+        total = total + getCost(shop_data, "lynnaShop3")
+        total = total + getCost(shop_data, "hiddenShop1")
+        total = total + getCost(shop_data, "hiddenShop2")
+        total = total + getCost(shop_data, "hiddenShop3")
+        print(total)
         Tracker:FindObjectForCode("total_shop_price").AcquiredCount = total
     end
 end
