@@ -948,7 +948,7 @@
   },
   // OTHER TOGGLE
   {
-    "name": "Get Maku Seed for Go Mode",
+    "name": "Get Maku Seed",
     "type": "toggle",
     "loop": true,
     "img": "images/items/makuseed.png",
@@ -959,7 +959,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/items/raft.png",
-    "codes": "raft_toggle, RaftUnlocked"
+    "codes": "raft_toggle, _raft_built"
   },
   {
     "name": "Rescue Nayru",
@@ -994,21 +994,21 @@
     "type": "toggle",
     "loop": true,
     "img": "images/items/kingzora_cure.png",
-    "codes": "curezora_toggle, CuredKingZora"
+    "codes": "curezora_toggle, _saved_king_zora"
   },
   {
     "name": "Cure the cursed Fairy",
     "type": "toggle",
     "loop": true,
     "img": "images/items/greatfairy.png",
-    "codes": "curefairy_toggle, CuredFairy"
+    "codes": "curefairy_toggle, _sea_cleaned"
   },
   {
     "name": "King Zora Permission to enter Jabu",
     "type": "toggle",
     "loop": true,
     "img": "images/items/kingzora_access.png",
-    "codes": "enterjabu_toggle, JabuJabuPermission"
+    "codes": "enterjabu_toggle, _got_permission_from_king_zora"
   },
   // Dungeon Entrances
   {

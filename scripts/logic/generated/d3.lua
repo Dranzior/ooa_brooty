@@ -80,12 +80,17 @@ d3_crossing_bridge_room_1:connect_two_ways_entrance(d3_between_two_bridge_room,f
 d3_between_two_bridge_room:connect_two_ways_entrance(d3_crossing_bridge_room_2,function() return Any(
             ooa_has_seedshooter(),
             ooa_can_jump_4_wide_pit(false),
+
             All(
                 ooa_can_jump_3_wide_pit(false),
-                ooa_has_sword()),
+                ooa_has_sword(),
+                ooa_option_medium_logic()),
+
+
             All(
                 ooa_option_hard_logic(),
                 ooa_has_feather(),
+
                 Any(
                     ooa_has_sword(),
                     All(
@@ -97,6 +102,8 @@ d3_between_two_bridge_room:connect_two_ways_entrance(d3_crossing_bridge_room_2,f
                             ooa_can_use_ember_seeds(true),
                             ooa_can_use_scent_seeds_offensively()
                         ))),
+
+
                 Any(
                     ooa_can_jump_3_wide_pit(false),
                     ooa_has_switch_hook(),

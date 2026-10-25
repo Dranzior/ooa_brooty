@@ -20,13 +20,13 @@
             ],
             "map_locations": [
               {
-                "map": "map",
-                "x": 2699,
+                "map": "past",
+                "x": 359,
                 "y": 40
               },
               {
-                "map": "map",
-                "x": 3099,
+                "map": "past",
+                "x": 759,
                 "y": 40
               }
             ]
@@ -536,6 +536,9 @@
                 "name": "Fight Veran",
                 "access_rules": [
                   "^$CanReach|veran_beaten"
+                ],
+                "visibility_rules": [
+                  "goal_ganon", "goal_veran"
                 ],
                 "item_count": 1,
                 "chest_unopened_img": "images/bosses/veran.png",
@@ -1545,7 +1548,7 @@
           {
             "name": "Old Man",
             "access_rules": [
-              "^$CanReach|library_past"
+              "^$CanReach|library_past_old_man"
             ],
             "sections": [
               {
@@ -1583,7 +1586,7 @@
           {
             "name": "Cure King Zora in the past",
             "access_rules": [
-              "^$CanReach|CureKingZora_toggle"
+              "^$CanReach|king_zoras_saved"
             ],
             "sections": [
               {
@@ -1604,7 +1607,7 @@
             "name": "Cure the cursed Fairy",
             "color": "#ff7700",
             "access_rules": [
-              "^$CanReach|CureFairy_toggle"
+              "^$CanReach|sea_cleaned"
             ],
             "sections": [
               {
