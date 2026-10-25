@@ -116,8 +116,8 @@ function ooa_has_small_keys(dungeon_id, amount)
         dungeon_id = "6_1"
     end
     amount = default(amount, 1)
-    return (Has("d"..dungeon_id.."sk", amount) or
-            Has("d"..dungeon_id.."mk"))
+    return (Has("d" .. dungeon_id .. "sk", amount) or
+        Has("d" .. dungeon_id .. "mk"))
 end
 
 function ooa_has_boss_key(dungeon_id)
@@ -136,7 +136,7 @@ function ooa_has_boss_key(dungeon_id)
         Has("d" .. dungeon_id .. "bk"),
         All(
             Has("master_key_boss"),
-            Has("d"..dungeon_id.."mk")
+            Has("d" .. dungeon_id .. "mk")
         )
     )
 end
@@ -199,8 +199,8 @@ function ooa_has_rupees(amount)
 
     return Any(
         All(
-            -- Rupee checks being quite approximative, being able to farm is a
-            -- must-have to prevent any stupid lock
+        -- Rupee checks being quite approximative, being able to farm is a
+        -- must-have to prevent any stupid lock
             ooa_can_farm_rupees(),
             rupees >= amount
         ),
@@ -264,6 +264,10 @@ function ooa_has_bombchus(amount)
 end
 
 function ooa_has_explosives(amount)
+    if not amount then
+        amount = 1
+    end
+
     return ooa_has_bombs(amount) or ooa_has_bombchus(amount)
 end
 
@@ -324,7 +328,7 @@ function ooa_can_jump_2_wide_liquid()
             ooa_can_use_pegasus_seeds()
         ),
         All(
-            -- Hard logic expects bomb jumps over 2-wide liquids
+        -- Hard logic expects bomb jumps over 2-wide liquids
             ooa_option_hard_logic(),
             ooa_has_feather(),
             ooa_has_bombs()
@@ -361,7 +365,7 @@ function ooa_can_jump_2_wide_pit(can_summon_companion)
         All(
             ooa_has_feather(),
             Any(
-                -- Medium logic expects player to be able to jump above 2-wide pits without pegasus seeds
+            -- Medium logic expects player to be able to jump above 2-wide pits without pegasus seeds
                 ooa_option_medium_logic(),
                 ooa_can_use_pegasus_seeds()
             )
@@ -406,19 +410,19 @@ end
 function ooa_has_seed_kind_count(count)
     seedCount = 0
     if Has("Ember Seeds") then
-        seedCount = seedCount+1
+        seedCount = seedCount + 1
     end
     if Has("Mystery Seeds") then
-        seedCount = seedCount+1
+        seedCount = seedCount + 1
     end
     if Has("Scent Seeds") then
-        seedCount = seedCount+1
+        seedCount = seedCount + 1
     end
     if Has("Pegasus Seeds") then
         seedCount = seedCount + 1
     end
     if Has("Gale Seeds") then
-        seedCount = seedCount+1
+        seedCount = seedCount + 1
     end
 
     if (seedCount >= count) then
@@ -434,8 +438,8 @@ function ooa_can_use_ember_seeds(accept_mystery_seeds)
         Any(
             ooa_has_ember_seeds(),
             All(
-                -- Medium logic expects the player to know they can use mystery seeds
-                -- to randomly get the ember effect in some cases
+            -- Medium logic expects the player to know they can use mystery seeds
+            -- to randomly get the ember effect in some cases
                 accept_mystery_seeds,
                 ooa_option_medium_logic(),
                 ooa_has_mystery_seeds()
@@ -466,7 +470,7 @@ end
 
 function ooa_can_use_pegasus_seeds()
     return All(
-        -- Unlike other seeds, pegasus only have an interesting effect with the satchel
+    -- Unlike other seeds, pegasus only have an interesting effect with the satchel
         ooa_has_satchel(),
         ooa_has_pegasus_seeds()
     )
@@ -518,7 +522,7 @@ end
 function ooa_can_break_bush(can_summon_companion)
     can_summon_companion = default(can_summon_companion, false)
 
-    var= Any(
+    var = Any(
         ooa_has_sword(),
         ooa_has_bracelet(),
         ooa_has_switch_hook(),
@@ -527,8 +531,8 @@ function ooa_can_break_bush(can_summon_companion)
             ooa_has_flute()
         ),
         All(
-            -- Consumables need at least medium logic, since they need a good knowledge of the game
-            -- not to be frustrating
+        -- Consumables need at least medium logic, since they need a good knowledge of the game
+        -- not to be frustrating
             ooa_option_medium_logic(),
             Any(
                 ooa_has_bombs(2),
@@ -586,8 +590,8 @@ function ooa_can_break_flowers(can_summon_companion)
             ooa_has_flute()
         ),
         All(
-            -- Consumables need at least medium logic, since they need a good knowledge of the game
-            -- not to be frustrating
+        -- Consumables need at least medium logic, since they need a good knowledge of the game
+        -- not to be frustrating
             ooa_option_medium_logic(),
             Any(
                 ooa_has_bombs(2),
@@ -648,7 +652,7 @@ end
 
 function ooa_can_push_enemy()
     return Any(
-        --ooa_has_rod(state),
+    --ooa_has_rod(state),
         ooa_has_shield()
     )
 end
@@ -712,7 +716,7 @@ function ooa_can_kill_wizzrobes(pit_available)
 
     canPush = AccessibilityLevel.None
     if pit_available then
-        canPush =  ooa_can_push_enemy()
+        canPush = ooa_can_push_enemy()
     end
 
     return Any(
@@ -754,10 +758,10 @@ function ooa_can_kill_normal_using_satchel()
     return All(
         ooa_can_fight_using_seed(),
         Any(
-            -- Casual logic => only ember
+        -- Casual logic => only ember
             ooa_has_ember_seeds(),
             All(
-                -- Medium logic => Allow scent or gale+feather
+            -- Medium logic => Allow scent or gale+feather
                 ooa_option_medium_logic(),
                 Any(
                     ooa_has_scent_seeds(),
@@ -769,7 +773,7 @@ function ooa_can_kill_normal_using_satchel()
                 )
             ),
             All(
-                -- Hard logic => Allow gale without feather
+            -- Hard logic => Allow gale without feather
                 ooa_option_hard_logic(),
                 ooa_has_gale_seeds()
             )
@@ -835,7 +839,7 @@ function ooa_can_kill_armos(ranged)
     return Any(
         ooa_has_bombs(),
         ooa_can_use_scent_seeds_offensively()
-        -- magic boomrang
+    -- magic boomrang
     )
 end
 
@@ -884,7 +888,7 @@ end
 
 function ooa_can_kill_spiked_beetle()
     return Any(
-        All(  -- Regular flip + kill
+        All( -- Regular flip + kill
             ooa_can_flip_spiked_beetle(),
             Any(
                 ooa_has_sword(),
@@ -982,8 +986,8 @@ function ooa_has_rupees_for_vasu()
 
     return Any(
         All(
-            -- Rupee checks being quite approximative, being able to farm is a
-            -- must-have to prevent any stupid lock
+        -- Rupee checks being quite approximative, being able to farm is a
+        -- must-have to prevent any stupid lock
             ooa_can_farm_rupees(),
             rupees >= amount
         ),
@@ -1018,11 +1022,11 @@ function ooa_goal_is(goal)
 end
 
 function ooa_ER_inside_lock_fully_blocked()
-    return false    -- TODO WITH ER
+    return false -- TODO WITH ER
 end
 
 function ooa_ER_inside_lock_fully_open()
-    return true     -- TODO WITH ER
+    return true -- TODO WITH ER
 end
 
 function ooa_can_travel_underwater()
