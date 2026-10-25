@@ -994,21 +994,21 @@
     "type": "toggle",
     "loop": true,
     "img": "images/items/kingzora_cure.png",
-    "codes": "curezora_toggle, _saved_king_zora"
+    "codes": "curezora_toggle, CuredKingZora, _saved_king_zora"
   },
   {
     "name": "Cure the cursed Fairy",
     "type": "toggle",
     "loop": true,
     "img": "images/items/greatfairy.png",
-    "codes": "curefairy_toggle, _sea_cleaned"
+    "codes": "curefairy_toggle, CuredFairy, _sea_cleaned"
   },
   {
     "name": "King Zora Permission to enter Jabu",
     "type": "toggle",
     "loop": true,
     "img": "images/items/kingzora_access.png",
-    "codes": "enterjabu_toggle, _got_permission_from_king_zora"
+    "codes": "enterjabu_toggle, JabuJabuPermission, _got_permission_from_king_zora"
   },
   // Dungeon Entrances
   {
