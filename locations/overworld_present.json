@@ -503,7 +503,7 @@
               {
                 "name": "Rolling Ridge (Present): West Stairs Cave Chest",
                 "access_rules": [
-                  "^$CanReach|ridge_west_cave"
+                  "^$CanReach|ridge_west_cave_chest"
                 ],
                 "item_count": 1
               },
@@ -1297,7 +1297,7 @@
           {
             "name": "Nayru's House Harp Spot",
             "access_rules": [
-              "^$CanReach|nayrus_house"
+              "^$CanReach|nayrus_house_harp_spot"
             ],
             "sections": [
               {
@@ -1395,7 +1395,7 @@
           {
             "name": "Grave Under The Tree",
             "access_rules": [
-              "^$CanReach|grave_under_tree"
+              "^$CanReach|drop_under_tree"
             ],
             "sections": [
               {
@@ -1752,7 +1752,7 @@
               {
                 "name": "King Zora Permission to enter Jabu",
                 "access_rules": [
-                  "^$CanReach|KingZoraPermission_toggle, curefairy_toggle"
+                  "^$CanReach|king_zoras_permission"
                 ],
                 "hosted_item": "enterjabu_toggle",
                 "item_count": 0
@@ -1809,7 +1809,7 @@
               {
                 "name": "Eyeglass Island Library (Present): Old Man",
                 "access_rules": [
-                  "^$CanReach|library_present"
+                  "^$CanReach|library_present_old_man"
                 ],
                 "item_count": 1
               },

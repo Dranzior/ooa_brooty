@@ -1548,7 +1548,7 @@
           {
             "name": "Old Man",
             "access_rules": [
-              "^$CanReach|library_past"
+              "^$CanReach|library_past_old_man"
             ],
             "sections": [
               {
@@ -1586,7 +1586,7 @@
           {
             "name": "Cure King Zora in the past",
             "access_rules": [
-              "^$CanReach|CureKingZora_toggle"
+              "^$CanReach|king_zoras_saved"
             ],
             "sections": [
               {
@@ -1607,7 +1607,7 @@
             "name": "Cure the cursed Fairy",
             "color": "#ff7700",
             "access_rules": [
-              "^$CanReach|CureFairy_toggle"
+              "^$CanReach|sea_cleaned"
             ],
             "sections": [
               {
