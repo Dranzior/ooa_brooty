@@ -966,7 +966,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/items/Nayru.png",
-    "codes": "Nayru"
+    "codes": "Nayru, SavedNayru"
   },
   {
     "name": "Turn in Seedling to Tokay",

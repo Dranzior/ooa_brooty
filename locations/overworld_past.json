@@ -617,6 +617,12 @@
               },
               {
                 "name": "Ambi's Palace: Rescue Nayru",
+                "access_rules": [
+                  "^$CanReach|rescue_nayru"
+                ]
+              },
+              {
+                "name": "Nayru Rescued",
                 "hosted_item": "Nayru",
                 "access_rules": [
                   "^$CanReach|rescue_nayru"
