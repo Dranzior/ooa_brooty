@@ -20,6 +20,14 @@ end)
 ridge_move_vine_seed:connect_one_way(outside_target_carts, function() return ooa_can_go_back_to_present() end)
 place_tuni_nut:connect_one_way(outside_d4)
 open_library:connect_one_way(outside_present_library)
+redirect_waterfall:connect_one_way_entrance(bomb_fairy, function() return ooa_has_bombs() end)
+redirect_waterfall:connect_one_way_entrance(restoration_wall, function() return All(
+    ooa_can_open_portal(),
+    Any(
+        ooa_can_swim(false),
+        ooa_can_jump_3_wide_liquid()
+    )
+) end)
 
 -- Overworld scouting
 lynna_village:connect_one_way_entrance(black_tower_heartpiece, function() return AccessibilityLevel.Inspect end)
