@@ -537,6 +537,9 @@
                 "access_rules": [
                   "^$CanReach|veran_beaten"
                 ],
+                "visibility_rules": [
+                  "goal_ganon", "goal_veran"
+                ],
                 "item_count": 1,
                 "chest_unopened_img": "images/bosses/veran.png",
                 "chest_opened_img": "images/bosses/veran_gray.png"

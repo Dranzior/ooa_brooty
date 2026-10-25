@@ -46,9 +46,9 @@ def cleanup_function(function_code):
     # replace some specific call for their LUA equivalent
     function_code = re.sub("options\\.secret_locations", "Has(\"secret_locations_on\")", function_code)
     function_code = re.sub("options\\.advance_shop", "Has(\"advanceshop\")", function_code)
-    function_code = re.sub("OracleOfAgesGoal\\.option_collect_maku_seed", "Has(\"option_collect_maku_seed\")", function_code)
-    function_code = re.sub("OracleOfAgesGoal\\.option_beat_veran", "Has(\"option_beat_veran\")", function_code)
-    function_code = re.sub("OracleOfAgesGoal\\.option_beat_ganon", "Has(\"option_beat_ganon\")", function_code)
+    function_code = re.sub("OracleOfAgesGoal\\.option_collect_maku_seed", "\"goal_makuseed\"", function_code)
+    function_code = re.sub("OracleOfAgesGoal\\.option_beat_veran", "\"goal_veran\"", function_code)
+    function_code = re.sub("OracleOfAgesGoal\\.option_beat_ganon", "\"goal_ganon\"", function_code)
     function_code = re.sub("ooa_has_rupees\\(state, player, rupee_requirement\\)", "ooa_has_rupees_for_vasu()", function_code)
 
     # remove "state" and "player" parameter from every function call

@@ -149,9 +149,9 @@ veran_beaten:connect_one_way_entrance(ganon_beaten,function() return Any(
                 )
             )
         ) end)
-maku_seed:connect_one_way_entrance(beaten_game,function() return ooa_goal_is(Has("option_collect_maku_seed")) end)
-veran_beaten:connect_one_way_entrance(beaten_game,function() return ooa_goal_is(Has("option_beat_veran")) end)
-ganon_beaten:connect_one_way_entrance(beaten_game,function() return ooa_goal_is(Has("option_beat_ganon")) end)
+maku_seed:connect_one_way_entrance(beaten_game,function() return ooa_goal_is("goal_makuseed") end)
+veran_beaten:connect_one_way_entrance(beaten_game,function() return ooa_goal_is("goal_veran") end)
+ganon_beaten:connect_one_way_entrance(beaten_game,function() return ooa_goal_is("goal_ganon") end)
 forest_of_time:connect_two_ways_entrance(shore_present,function() return Has("Ricky's Gloves") end)
 lynna_city:connect_two_ways_entrance(shore_present,function() return Any(
             ooa_can_swim_deepwater(true),

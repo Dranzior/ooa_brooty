@@ -948,7 +948,7 @@
   },
   // OTHER TOGGLE
   {
-    "name": "Get Maku Seed for Go Mode",
+    "name": "Get Maku Seed",
     "type": "toggle",
     "loop": true,
     "img": "images/items/makuseed.png",

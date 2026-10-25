@@ -1135,7 +1135,7 @@
             ]
           },
           {
-            "name": "Get Maku Seed for Go Mode",
+            "name": "Get Maku Seed",
             "access_rules": [
               "^$CanReach|maku_seed"
             ],

@@ -1009,12 +1009,12 @@ function ooa_can_fight_using_seed()
 end
 
 function ooa_can_buy_from_shop()
-    rupee_requirement = min(state.multiworld.worlds[player].total_shop_prices * 0.5, 1000)  -- TODO NOW
+    rupee_requirement = Tracker:FindObjectForCode("total_shop_price").AcquiredCount
     return ooa_has_rupees(rupee_requirement)
 end
 
 function ooa_goal_is(goal)
-    return state.multiworld.worlds[player].options.goal == goal -- TODO NOW
+    return Has(goal)
 end
 
 function ooa_ER_inside_lock_fully_blocked()

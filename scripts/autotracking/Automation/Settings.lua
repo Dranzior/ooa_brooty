@@ -123,6 +123,34 @@ local function updateMinibosses(slot_data)
     end
 end
 
+local function getCost(slot_data, slot)
+    if slot_data[slot] then
+        return slot_data[slot]
+    else
+        return 0
+    end
+end
+
+local function getTotalShopCost(slot_data)
+    local total = 0
+    if slot_data["shop_costs"] then
+        total = total + getCost(slot_data, "syrupShop1")
+        total = total + getCost(slot_data, "syrupShop2")
+        total = total + getCost(slot_data, "syrupShop3")
+        total = total + getCost(slot_data, "advanceShop1")
+        total = total + getCost(slot_data, "advanceShop2")
+        total = total + getCost(slot_data, "advanceShop3")
+        total = total + getCost(slot_data, "lynnaShop1")
+        total = total + getCost(slot_data, "lynnaShop2")
+        total = total + getCost(slot_data, "lynnaShop3")
+        total = total + getCost(slot_data, "hiddenShop1")
+        total = total + getCost(slot_data, "hiddenShop2")
+        total = total + getCost(slot_data, "hiddenShop3")
+
+        Tracker:FindObjectForCode("total_shop_price").AcquiredCount = total
+    end
+end
+
 function UpdateSettings(slot_data)
     updateAnimalCompanion(slot_data["options"])
     updateLogic(slot_data["options"])
@@ -140,4 +168,5 @@ function UpdateSettings(slot_data)
     updateGashaSeeds(slot_data["options"])
     updateGoal(slot_data["options"])
     updateMinibosses(slot_data["options"])
+    getTotalShopCost(slot_data)
 end
