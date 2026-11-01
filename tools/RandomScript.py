@@ -1,12 +1,33 @@
-import re
+import sys
 
-def offset(value):
-    return r'"x": ' + str(int(value.group(1)) - 2340) + ','
+sys.path.append(sys.argv[1])
 
-with open('../locations/overworld_past.json', 'r') as file:
-  filedata = file.read()
+from typing import Any
 
-result = re.sub(r'"x":[ \t]*(\d+),', offset, filedata)
+import json
+import utilities
 
-with open('NEW.json', 'w') as file:
-  file.write(result)
+import worlds.tloz_ooa.data.Entrances as Entrances
+
+outputPath = "../scripts/logic/generated"
+
+def fix_location_name(location_name):
+    location_name = location_name.replace(" ", "_")
+    location_name = location_name.replace("'", "")
+    location_name = location_name.replace("-", "_")
+    location_name = location_name.replace("/", "_")
+    location_name = location_name.replace("(", "_")
+    location_name = location_name.replace(")", "_")
+    location_name = location_name.replace(",", "_")
+    return location_name
+
+if __name__ == '__main__':
+    result = ""
+    warps = Entrances.WARPS_DATA
+    for name in warps:
+        name = fix_location_name(name)
+        result = result + "outside_" + name + ":connect_two_ways(inside_"+name+")\n"
+
+
+    with open(outputPath + "/entrances.lua", "w") as file:
+        file.write(result)

@@ -1,13 +1,27 @@
 {
   "versions": [
     {
+      "package_version": "0.9.12",
+      "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.12/ooa.zip",
+      "sha256": "7802ab0b09ef0a3276749a934671c0ea24cee27ec176b622e621d824b3cffe0f",
+      "changelog": [
+        "CHANGES: Implement the major logic rework from the APWorld 2.0.0",
+        "CHANGES: Rescuing nayru location and the story flag are now 2 different location, so collect won't mess the story flag",
+        "NEW: settings Total Shop Price (used to determine if shop location are in logic)",
+        "NEW: Maku Seed can now be set as your goal (which will hide veran and ganon location on the black tower when enabled)",
+        "MINOR: Added autotracking for new/modified setting (old setting should still work too)",
+        "MINOR: Updated some location name to match them being modified on the APWorld side"
+      ]
+    },
+    {
       "package_version": "0.9.11",
       "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.11/ooa.zip",
       "sha256": "8b5ed3369034238d08179913e923b198b0b1e1c28d3adea5d673d932f722e03c",
       "changelog": [
         "CHORE: added platform to manifest"
       ]
-    },{
+    },
+    {
       "package_version": "0.9.10",
       "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.10/ooa.zip",
       "sha256": "f4590604cc70de9134d9a1d6745e5db72109ed32c2ebe3ba6214fe7ec2146814",
@@ -49,11 +63,11 @@
         "NEW: Better broadcast view",
         "NEW: Gasha and Event Autotracking",
         "FIX: Hero's cave autotracking",
-		"FIX: Moved some check to better represent their locations",
-		"FIX: Added a setting for miniboss location"
+        "FIX: Moved some check to better represent their locations",
+        "FIX: Added a setting for miniboss location"
       ]
     },
-	{
+    {
       "package_version": "0.9.4",
       "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.4/ooa.zip",
       "sha256": "9b58a1ac97307515377ec547d3d4bcb13e6e95c55796bd756952feee7675536a",

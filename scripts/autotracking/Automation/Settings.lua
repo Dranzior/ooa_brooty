@@ -1,6 +1,6 @@
 local function updateAnimalCompanion(slot_data)
     if slot_data["animal_companion"] then
-        Tracker:FindObjectForCode("companions").CurrentStage = slot_data["animal_companion"] +1
+        Tracker:FindObjectForCode("companions").CurrentStage = slot_data["animal_companion"] + 1
     end
 end
 
@@ -17,6 +17,16 @@ local function updateLogic(slot_data)
 end
 
 local function updateDungeonEr(slot_data)
+    if slot_data["randomized_entrances"] then
+        if next(slot_data["randomized_entrances"]) == nil then
+            Tracker:FindObjectForCode("dungeon_er_off").CurrentStage = 0
+        else
+            Tracker:FindObjectForCode("dungeon_er_on").CurrentStage = 1
+        end
+    end
+end
+
+local function updateDungeonErOLD(slot_data)
     if slot_data["shuffle_dungeons"] then
         if slot_data["shuffle_dungeons"] == 0 then
             Tracker:FindObjectForCode("dungeon_er_off").CurrentStage = 0
@@ -72,6 +82,15 @@ local function updateSecretLocations(slot_data)
 end
 
 local function updateVasuMadness(slot_data)
+    if slot_data["vasu_additional_rings"] then
+        Tracker:FindObjectForCode("vasu_ring_check").CurrentStage = slot_data["vasu_additional_rings"]
+    end
+    if slot_data["vasu_rupee_ring_requirement"] then
+        Tracker:FindObjectForCode("vasu_rupee_ring_check").AcquiredCount = slot_data["vasu_rupee_ring_requirement"]
+    end
+end
+
+local function updateVasuMadnessOLD(slot_data)
     if slot_data["vasu_ring_checks_requirement"] then
         local vasu_slot_data = slot_data["vasu_ring_checks_requirement"]
 
@@ -104,10 +123,40 @@ local function updateMinibosses(slot_data)
     end
 end
 
+local function getCost(slot_data, slot)
+    if slot_data[slot] then
+        return slot_data[slot]
+    else
+        return 0
+    end
+end
+
+local function getTotalShopCost(slot_data)
+    local total = 0
+    if slot_data["shop_costs"] then
+        shop_data = slot_data["shop_costs"]
+        total = total + getCost(shop_data, "syrupShop1")
+        total = total + getCost(shop_data, "syrupShop2")
+        total = total + getCost(shop_data, "syrupShop3")
+        total = total + getCost(shop_data, "advanceShop1")
+        total = total + getCost(shop_data, "advanceShop2")
+        total = total + getCost(shop_data, "advanceShop3")
+        total = total + getCost(shop_data, "lynnaShop1")
+        total = total + getCost(shop_data, "lynnaShop2")
+        total = total + getCost(shop_data, "lynnaShop3")
+        total = total + getCost(shop_data, "hiddenShop1")
+        total = total + getCost(shop_data, "hiddenShop2")
+        total = total + getCost(shop_data, "hiddenShop3")
+        print(total)
+        Tracker:FindObjectForCode("total_shop_price").AcquiredCount = total
+    end
+end
+
 function UpdateSettings(slot_data)
     updateAnimalCompanion(slot_data["options"])
     updateLogic(slot_data["options"])
-    updateDungeonEr(slot_data["options"])
+    updateDungeonEr(slot_data)
+    updateDungeonErOLD(slot_data["options"])
     updateEssence(slot_data["options"])
     updateAdvanceShop(slot_data["options"])
     updateSlate(slot_data["options"])
@@ -116,7 +165,9 @@ function UpdateSettings(slot_data)
     updateLinkedHeroCave(slot_data["options"])
     updateSecretLocations(slot_data["options"])
     updateVasuMadness(slot_data["options"])
+    updateVasuMadnessOLD(slot_data["options"])
     updateGashaSeeds(slot_data["options"])
     updateGoal(slot_data["options"])
     updateMinibosses(slot_data["options"])
+    getTotalShopCost(slot_data)
 end

@@ -16,10 +16,20 @@ d8_1f_single_chest:connect_one_way_entrance(d8_nw_chest,function() return All(
             ooa_has_seedshooter()) end)
 d8_nw_chest:connect_one_way_entrance(d8_ghini_chest,function() return ooa_can_kill_normal_enemy() end)
 d8_ghini_chest:connect_one_way_entrance(d8_blue_peg_chest,function() return ooa_has_small_keys(8, 2) end)
-d8_blue_peg_chest:connect_one_way_entrance(d8_blade_trap)
+d8_blue_peg_chest:connect_one_way_entrance(d8_blade_trap,function() return Any(
+            All(
+                ooa_has_feather(),
+                ooa_can_use_pegasus_seeds()),
+            All(
+                Any(
+                    ooa_has_feather(),
+                    ooa_can_use_pegasus_seeds()),
+                ooa_option_medium_logic()),
+            ooa_option_hard_logic()) end)
 d8_blue_peg_chest:connect_one_way_entrance(d8_sarcophagus_chest,function() return ooa_has_glove() end)
 d8_blue_peg_chest:connect_one_way_entrance(d8_stalfos,function() return ooa_can_kill_stalfos() end)
 d8_blue_peg_chest:connect_one_way_entrance(d8_miniboss,function() return All(
+            ooa_has_feather(),
             ooa_has_sword(),
             ooa_has_small_keys(8, 4)
         ) end)

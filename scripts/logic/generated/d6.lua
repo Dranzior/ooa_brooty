@@ -75,7 +75,13 @@ d6_present_orb_room:connect_one_way_entrance(d6_present_rope_chest,function() re
                     ooa_has_sword()),
                 ooa_can_jump_3_wide_pit(false)
             ),
-            ooa_can_use_scent_seeds_for_smell()
+
+            Any(
+                ooa_can_use_scent_seeds_for_smell(),
+                All(
+                    ooa_has_bombchus(),
+                    ooa_option_hard_logic())
+            )
         ) end)
 d6_present_orb_room:connect_one_way_entrance(d6_present_handmaster_room,function() return Any(
             ooa_has_seedshooter(),

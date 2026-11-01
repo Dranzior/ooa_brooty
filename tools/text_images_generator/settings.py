@@ -83,10 +83,12 @@ image_lib = [
 [SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Auto\nTab", "autotab"],
 [SETTING_DEFAULT_HALF_GREEN, SETTING_DEFAULT_IMAGE, "On", "autotabon"],
 [SETTING_DEFAULT_HALF_RED, SETTING_DEFAULT_IMAGE, "Off", "autotaboff"],
-    #
+    #Minibosses
 [SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Minibosses\nLocations", "minibosses"],
 [SETTING_DEFAULT_HALF_GREEN, SETTING_DEFAULT_IMAGE, "On", "minibosseson"],
 [SETTING_DEFAULT_HALF_RED, SETTING_DEFAULT_IMAGE, "Off", "minibossesoff"],
+    #Shop cost
+[SETTING_DEFAULT_FULL_YELLOW, SETTING_DEFAULT_IMAGE, "Total Shop\nPrice", "totalshopprice"]
 ]
 
 def generate_settings():

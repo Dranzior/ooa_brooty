@@ -427,6 +427,11 @@
         "codes": "goal, goal_ganon",
         "inherit_codes": false,
         "img": "images/settings/goal_ganon.png"
+      },
+      {
+        "codes": "goal, goal_makuseed",
+        "inherit_codes": false,
+        "img": "images/settings/goal_seed.png"
       }
     ]
   },
@@ -477,5 +482,20 @@
         "img": "images/settings/autotaboff.png"
       }
     ]
+  },
+  {
+    "name": "Total Shop Price Label",
+    "type": "static",
+    "img": "images/settings/totalshopprice.png",
+    "codes": "total_shop_price_label"
+  },
+  {
+    "name": "Total Shop Price",
+    "type": "consumable",
+    "codes": "total_shop_price",
+    "initial_quantity": 1000,
+    "increment": 100,
+    "decrement": 100,
+    "img": "images/items/Rupee (Giant Red).png"
   }
 ]
