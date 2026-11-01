@@ -1,856 +1,1444 @@
 [
-  {
-    "name": "Overworld_entrance",
-    "chest_unopened_img": "images/items/chest_present.png",
-    "chest_opened_img": "images/items/chest_present_open.png",
-    "children": [
-      {
-        "name": "Talus Peaks",
+    {
+        "name": "Overworld_entrance",
+        "chest_unopened_img": "images/items/chest_present.png",
+        "chest_opened_img": "images/items/chest_present_open.png",
         "children": [
+            {
+                "name": "Talus Peaks"
+            },
+            {
+                "name": "Symmetry City",
+                "children": [
+                    {
+                        "name": "d4",
+                        "sections": [
+                            {
+                                "name": "d4",
+                                "access_rules": [
+                                    "^$CanReachOutside|d4"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 559,
+                                "y": 59,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present top left symmetry house",
+                        "sections": [
+                            {
+                                "name": "present top left symmetry house",
+                                "access_rules": [
+                                    "^$CanReachOutside|present top left symmetry house"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 359,
+                                "y": 43,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present top right symmetry house",
+                        "sections": [
+                            {
+                                "name": "present top right symmetry house",
+                                "access_rules": [
+                                    "^$CanReachOutside|present top right symmetry house"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 759,
+                                "y": 41,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present bottom left symmetry house",
+                        "sections": [
+                            {
+                                "name": "present bottom left symmetry house",
+                                "access_rules": [
+                                    "^$CanReachOutside|present bottom left symmetry house"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 407,
+                                "y": 185,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present bottom right symmetry hous",
+                        "sections": [
+                            {
+                                "name": "present bottom right symmetry hous",
+                                "access_rules": [
+                                    "^$CanReachOutside|present bottom right symmetry hous"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 711,
+                                "y": 186,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Nuun Highlands",
+                "children": [
+                    {
+                        "name": "nuun fairy cave",
+                        "sections": [
+                            {
+                                "name": "nuun fairy cave",
+                                "access_rules": [
+                                    "^$CanReachOutside|nuun fairy cave"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1095,
+                                "y": 72,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Rolling Ridge",
+                "children": [
+                    {
+                        "name": "present goron city lower",
+                        "sections": [
+                            {
+                                "name": "present goron city lower",
+                                "access_rules": [
+                                    "^$CanReachOutside|present goron city lower"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1383,
+                                "y": 296,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present goron city upper",
+                        "sections": [
+                            {
+                                "name": "present goron city upper",
+                                "access_rules": [
+                                    "^$CanReachOutside|present goron city upper"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1352,
+                                "y": 138,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present goron city stairs",
+                        "sections": [
+                            {
+                                "name": "present goron city stairs",
+                                "access_rules": [
+                                    "^$CanReachOutside|present goron city stairs"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1303,
+                                "y": 168,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present west ridge fairy cave",
+                        "sections": [
+                            {
+                                "name": "present west ridge fairy cave",
+                                "access_rules": [
+                                    "^$CanReachOutside|present west ridge fairy cave"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1862,
+                                "y": 183,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "moblin keep sewer exit",
+                        "sections": [
+                            {
+                                "name": "moblin keep sewer exit",
+                                "access_rules": [
+                                    "^$CanReachOutside|moblin keep sewer exit"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1496,
+                                "y": 71,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "cave behind moblin keep front",
+                        "sections": [
+                            {
+                                "name": "cave behind moblin keep front",
+                                "access_rules": [
+                                    "^$CanReachOutside|cave behind moblin keep front"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1558,
+                                "y": 57,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "cave behind moblin keep back",
+                        "sections": [
+                            {
+                                "name": "cave behind moblin keep back",
+                                "access_rules": [
+                                    "^$CanReachOutside|cave behind moblin keep back"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1784,
+                                "y": 73,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crown ledge to upper ridge cave front",
+                        "sections": [
+                            {
+                                "name": "crown ledge to upper ridge cave front",
+                                "access_rules": [
+                                    "^$CanReachOutside|crown ledge to upper ridge cave front"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1815,
+                                "y": 73,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crown ledge to upper ridge cave back",
+                        "sections": [
+                            {
+                                "name": "crown ledge to upper ridge cave back",
+                                "access_rules": [
+                                    "^$CanReachOutside|crown ledge to upper ridge cave back"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1895,
+                                "y": 136,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "empty cave by echo portal under rock",
+                        "sections": [
+                            {
+                                "name": "empty cave by echo portal under rock",
+                                "access_rules": [
+                                    "^$CanReachOutside|empty cave by echo portal under rock"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1880,
+                                "y": 40,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present east ridge upper to lower cave top",
+                        "sections": [
+                            {
+                                "name": "present east ridge upper to lower cave top",
+                                "access_rules": [
+                                    "^$CanReachOutside|present east ridge upper to lower cave top"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1992,
+                                "y": 87,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present east ridge upper to lower cave base",
+                        "sections": [
+                            {
+                                "name": "present east ridge upper to lower cave base",
+                                "access_rules": [
+                                    "^$CanReachOutside|present east ridge upper to lower cave base"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1817,
+                                "y": 295,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "upper ridge present northeast cave left",
+                        "sections": [
+                            {
+                                "name": "upper ridge present northeast cave left",
+                                "access_rules": [
+                                    "^$CanReachOutside|upper ridge present northeast cave left"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 2120,
+                                "y": 72,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "upper ridge present northeast cave right",
+                        "sections": [
+                            {
+                                "name": "upper ridge present northeast cave right",
+                                "access_rules": [
+                                    "^$CanReachOutside|upper ridge present northeast cave right"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 2168,
+                                "y": 72,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present goron dance hall lower",
+                        "sections": [
+                            {
+                                "name": "present goron dance hall lower",
+                                "access_rules": [
+                                    "^$CanReachOutside|present goron dance hall lower"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 2200,
+                                "y": 424,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present goron dance hall middle",
+                        "sections": [
+                            {
+                                "name": "present goron dance hall middle",
+                                "access_rules": [
+                                    "^$CanReachOutside|present goron dance hall middle"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1976,
+                                "y": 200,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present east ridge base fairy cave",
+                        "sections": [
+                            {
+                                "name": "present east ridge base fairy cave",
+                                "access_rules": [
+                                    "^$CanReachOutside|present east ridge base fairy cave"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 2135,
+                                "y": 408,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present mermaid cave front porch",
+                        "sections": [
+                            {
+                                "name": "present mermaid cave front porch",
+                                "access_rules": [
+                                    "^$CanReachOutside|present mermaid cave front porch"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1992,
+                                "y": 441,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "greedy old man bush",
+                        "sections": [
+                            {
+                                "name": "greedy old man bush",
+                                "access_rules": [
+                                    "^$CanReachOutside|greedy old man bush"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 2215,
+                                "y": 568,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "empty cave left of target carts",
+                        "sections": [
+                            {
+                                "name": "empty cave left of target carts",
+                                "access_rules": [
+                                    "^$CanReachOutside|empty cave left of target carts"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 2040,
+                                "y": 184,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "empty cave right of target carts",
+                        "sections": [
+                            {
+                                "name": "empty cave right of target carts",
+                                "access_rules": [
+                                    "^$CanReachOutside|empty cave right of target carts"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 2199,
+                                "y": 167,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "target carts",
+                        "sections": [
+                            {
+                                "name": "target carts",
+                                "access_rules": [
+                                    "^$CanReachOutside|target carts"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 2134,
+                                "y": 153,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "d5",
+                        "sections": [
+                            {
+                                "name": "d5",
+                                "access_rules": [
+                                    "^$CanReachOutside|d5"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1719,
+                                "y": 24,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Lynna City",
+                "children": [
+                    {
+                        "name": "lynna city shop",
+                        "sections": [
+                            {
+                                "name": "lynna city shop",
+                                "access_rules": [
+                                    "^$CanReachOutside|lynna city shop"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1399,
+                                "y": 812,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "hidden entrance shop",
+                        "sections": [
+                            {
+                                "name": "hidden entrance shop",
+                                "access_rules": [
+                                    "^$CanReachOutside|hidden entrance shop"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1368,
+                                "y": 811,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "mayor's house",
+                        "sections": [
+                            {
+                                "name": "mayor's house",
+                                "access_rules": [
+                                    "^$CanReachOutside|mayor's house"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1209,
+                                "y": 682,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "mamamu yan house",
+                        "sections": [
+                            {
+                                "name": "mamamu yan house",
+                                "access_rules": [
+                                    "^$CanReachOutside|mamamu yan house"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1032,
+                                "y": 859,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "vasu's shop",
+                        "sections": [
+                            {
+                                "name": "vasu's shop",
+                                "access_rules": [
+                                    "^$CanReachOutside|vasu's shop"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1368,
+                                "y": 716,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "petrified kid's house",
+                        "sections": [
+                            {
+                                "name": "petrified kid's house",
+                                "access_rules": [
+                                    "^$CanReachOutside|petrified kid's house"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1096,
+                                "y": 681,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "know it all birds house",
+                        "sections": [
+                            {
+                                "name": "know it all birds house",
+                                "access_rules": [
+                                    "^$CanReachOutside|know it all birds house"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 840,
+                                "y": 715,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "troy's house",
+                        "sections": [
+                            {
+                                "name": "troy's house",
+                                "access_rules": [
+                                    "^$CanReachOutside|troy's house"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 840,
+                                "y": 603,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "left bippin blossom door",
+                        "sections": [
+                            {
+                                "name": "left bippin blossom door",
+                                "access_rules": [
+                                    "^$CanReachOutside|left bippin blossom door"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1209,
+                                "y": 554,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "right bippin blossom door",
+                        "sections": [
+                            {
+                                "name": "right bippin blossom door",
+                                "access_rules": [
+                                    "^$CanReachOutside|right bippin blossom door"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1242,
+                                "y": 555,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "black tower ruins",
+                        "sections": [
+                            {
+                                "name": "black tower ruins",
+                                "access_rules": [
+                                    "^$CanReachOutside|black tower ruins"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1040,
+                                "y": 968,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "happy mask shop",
+                        "sections": [
+                            {
+                                "name": "happy mask shop",
+                                "access_rules": [
+                                    "^$CanReachOutside|happy mask shop"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 511,
+                                "y": 731,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "d11",
+                        "sections": [
+                            {
+                                "name": "d11",
+                                "access_rules": [
+                                    "^$CanReachOutside|d11"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1416,
+                                "y": 553,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Forest of Time",
+                "children": [
+                    {
+                        "name": "nayru's house",
+                        "sections": [
+                            {
+                                "name": "nayru's house",
+                                "access_rules": [
+                                    "^$CanReachOutside|nayru's house"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1655,
+                                "y": 424,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "lower tingle cave",
+                        "sections": [
+                            {
+                                "name": "lower tingle cave",
+                                "access_rules": [
+                                    "^$CanReachOutside|lower tingle cave"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1528,
+                                "y": 1096,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "upper tingle stairs",
+                        "sections": [
+                            {
+                                "name": "upper tingle stairs",
+                                "access_rules": [
+                                    "^$CanReachOutside|upper tingle stairs"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1462,
+                                "y": 921,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Yoll Graveyard",
+                "children": [
+                    {
+                        "name": "cheval grave",
+                        "sections": [
+                            {
+                                "name": "cheval grave",
+                                "access_rules": [
+                                    "^$CanReachOutside|cheval grave"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1800,
+                                "y": 680,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "grave under the tree",
+                        "sections": [
+                            {
+                                "name": "grave under the tree",
+                                "access_rules": [
+                                    "^$CanReachOutside|grave under the tree"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 2101,
+                                "y": 1129,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "syrup hut",
+                        "sections": [
+                            {
+                                "name": "syrup hut",
+                                "access_rules": [
+                                    "^$CanReachOutside|syrup hut"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 2200,
+                                "y": 679,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "poe grave",
+                        "sections": [
+                            {
+                                "name": "poe grave",
+                                "access_rules": [
+                                    "^$CanReachOutside|poe grave"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 2009,
+                                "y": 937,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "d1",
+                        "sections": [
+                            {
+                                "name": "d1",
+                                "access_rules": [
+                                    "^$CanReachOutside|d1"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 2182,
+                                "y": 1064,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Fairies' Woods"
+            },
+            {
+                "name": "Zora Seas",
+                "children": [
+                    {
+                        "name": "present underwater sea of storms cave",
+                        "sections": [
+                            {
+                                "name": "present underwater sea of storms cave",
+                                "access_rules": [
+                                    "^$CanReachOutside|present underwater sea of storms cave"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1175,
+                                "y": 1475,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present drifting island house",
+                        "sections": [
+                            {
+                                "name": "present drifting island house",
+                                "access_rules": [
+                                    "^$CanReachOutside|present drifting island house"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 856,
+                                "y": 1595,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present underwater zora duplex left",
+                        "sections": [
+                            {
+                                "name": "present underwater zora duplex left",
+                                "access_rules": [
+                                    "^$CanReachOutside|present underwater zora duplex left"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 33,
+                                "y": 1726,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present underwater zora duplex right",
+                        "sections": [
+                            {
+                                "name": "present underwater zora duplex right",
+                                "access_rules": [
+                                    "^$CanReachOutside|present underwater zora duplex right"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 94,
+                                "y": 1723,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present underwater zora house",
+                        "sections": [
+                            {
+                                "name": "present underwater zora house",
+                                "access_rules": [
+                                    "^$CanReachOutside|present underwater zora house"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 254,
+                                "y": 1618,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present zora palace",
+                        "sections": [
+                            {
+                                "name": "present zora palace",
+                                "access_rules": [
+                                    "^$CanReachOutside|present zora palace"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 238,
+                                "y": 1399,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "zora crypt cave",
+                        "sections": [
+                            {
+                                "name": "zora crypt cave",
+                                "access_rules": [
+                                    "^$CanReachOutside|zora crypt cave"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 58,
+                                "y": 1289,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present fairy queen cave",
+                        "sections": [
+                            {
+                                "name": "present fairy queen cave",
+                                "access_rules": [
+                                    "^$CanReachOutside|present fairy queen cave"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 520,
+                                "y": 1335,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present library",
+                        "sections": [
+                            {
+                                "name": "present library",
+                                "access_rules": [
+                                    "^$CanReachOutside|present library"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 849,
+                                "y": 1324,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "d7",
+                        "sections": [
+                            {
+                                "name": "d7",
+                                "access_rules": [
+                                    "^$CanReachOutside|d7"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 74,
+                                "y": 1403,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Crescent Island",
+                "children": [
+                    {
+                        "name": "d3",
+                        "sections": [
+                            {
+                                "name": "d3",
+                                "access_rules": [
+                                    "^$CanReachOutside|d3"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1686,
+                                "y": 1498,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "southern fairy cave",
+                        "sections": [
+                            {
+                                "name": "southern fairy cave",
+                                "access_rules": [
+                                    "^$CanReachOutside|southern fairy cave"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1704,
+                                "y": 1675,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "underwater maze cave",
+                        "sections": [
+                            {
+                                "name": "underwater maze cave",
+                                "access_rules": [
+                                    "^$CanReachOutside|underwater maze cave"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 1980,
+                                "y": 1264,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "tokay chef house",
+                        "sections": [
+                            {
+                                "name": "tokay chef house",
+                                "access_rules": [
+                                    "^$CanReachOutside|tokay chef house"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 2167,
+                                "y": 1704,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "wild tokay museum",
+                        "sections": [
+                            {
+                                "name": "wild tokay museum",
+                                "access_rules": [
+                                    "^$CanReachOutside|wild tokay museum"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 2103,
+                                "y": 1432,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "present chicken hut",
+                        "sections": [
+                            {
+                                "name": "present chicken hut",
+                                "access_rules": [
+                                    "^$CanReachOutside|present chicken hut"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "present_entrance",
+                                "x": 2120,
+                                "y": 1623,
+                                "size": 10,
+                                "shape": "rect"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Sea of Storms"
+            }
         ]
-      },
-      {
-        "name": "Symmetry City",
-        "children": [
-          {
-            "name": "d4",
-            "sections": [
-              {
-                "name": "d4",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|d4"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present top left symmetry house",
-            "sections": [
-              {
-                "name": "present top left symmetry house",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present top left symmetry house"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present top right symmetry house",
-            "sections": [
-              {
-                "name": "present top right symmetry house",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present top right symmetry house"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present bottom left symmetry house",
-            "sections": [
-              {
-                "name": "present bottom left symmetry house",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present bottom left symmetry house"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present bottom right symmetry hous",
-            "sections": [
-              {
-                "name": "present bottom right symmetry hous",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present bottom right symmetry hous"
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Nuun Highlands",
-        "children": [
-          {
-            "name": "nuun fairy cave",
-            "sections": [
-              {
-                "name": "nuun fairy cave",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|nuun fairy cave"
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Rolling Ridge",
-        "children": [
-          {
-            "name": "present goron city lower",
-            "sections": [
-              {
-                "name": "present goron city lower",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present goron city lower"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present goron city upper",
-            "sections": [
-              {
-                "name": "present goron city upper",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present goron city upper"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present goron city stairs",
-            "sections": [
-              {
-                "name": "present goron city stairs",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present goron city stairs"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present west ridge fairy cave",
-            "sections": [
-              {
-                "name": "present west ridge fairy cave",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present west ridge fairy cave"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "moblin keep sewer exit",
-            "sections": [
-              {
-                "name": "moblin keep sewer exit",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|moblin keep sewer exit"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "cave behind moblin keep front",
-            "sections": [
-              {
-                "name": "cave behind moblin keep front",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|cave behind moblin keep front"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "cave behind moblin keep back",
-            "sections": [
-              {
-                "name": "cave behind moblin keep back",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|cave behind moblin keep back"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "crown ledge to upper ridge cave front",
-            "sections": [
-              {
-                "name": "crown ledge to upper ridge cave front",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|crown ledge to upper ridge cave front"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "crown ledge to upper ridge cave back",
-            "sections": [
-              {
-                "name": "crown ledge to upper ridge cave back",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|crown ledge to upper ridge cave back"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "empty cave by echo portal under rock",
-            "sections": [
-              {
-                "name": "empty cave by echo portal under rock",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|empty cave by echo portal under rock"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present east ridge upper to lower cave top",
-            "sections": [
-              {
-                "name": "present east ridge upper to lower cave top",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present east ridge upper to lower cave top"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present east ridge upper to lower cave base",
-            "sections": [
-              {
-                "name": "present east ridge upper to lower cave base",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present east ridge upper to lower cave base"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "upper ridge present northeast cave left",
-            "sections": [
-              {
-                "name": "upper ridge present northeast cave left",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|upper ridge present northeast cave left"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "upper ridge present northeast cave right",
-            "sections": [
-              {
-                "name": "upper ridge present northeast cave right",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|upper ridge present northeast cave right"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present goron dance hall lower",
-            "sections": [
-              {
-                "name": "present goron dance hall lower",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present goron dance hall lower"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present goron dance hall middle",
-            "sections": [
-              {
-                "name": "present goron dance hall middle",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present goron dance hall middle"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present east ridge base fairy cave",
-            "sections": [
-              {
-                "name": "present east ridge base fairy cave",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present east ridge base fairy cave"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present mermaid cave front porch",
-            "sections": [
-              {
-                "name": "present mermaid cave front porch",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present mermaid cave front porch"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "greedy old man bush",
-            "sections": [
-              {
-                "name": "greedy old man bush",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|greedy old man bush"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "empty cave left of target carts",
-            "sections": [
-              {
-                "name": "empty cave left of target carts",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|empty cave left of target carts"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "empty cave right of target carts",
-            "sections": [
-              {
-                "name": "empty cave right of target carts",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|empty cave right of target carts"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "target carts",
-            "sections": [
-              {
-                "name": "target carts",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|target carts"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "d5",
-            "sections": [
-              {
-                "name": "d5",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|d5"
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Lynna City",
-        "children": [
-          {
-            "name": "lynna city shop",
-            "sections": [
-              {
-                "name": "lynna city shop",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|lynna city shop"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "hidden entrance shop",
-            "sections": [
-              {
-                "name": "hidden entrance shop",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|hidden entrance shop"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "mayor's house",
-            "sections": [
-              {
-                "name": "mayor's house",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|mayor's house"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "mamamu yan house",
-            "sections": [
-              {
-                "name": "mamamu yan house",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|mamamu yan house"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "vasu's shop",
-            "sections": [
-              {
-                "name": "vasu's shop",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|vasu's shop"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "petrified kid's house",
-            "sections": [
-              {
-                "name": "petrified kid's house",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|petrified kid's house"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "know it all birds house",
-            "sections": [
-              {
-                "name": "know it all birds house",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|know it all birds house"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "troy's house",
-            "sections": [
-              {
-                "name": "troy's house",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|troy's house"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "left bippin blossom door",
-            "sections": [
-              {
-                "name": "left bippin blossom door",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|left bippin blossom door"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "right bippin blossom door",
-            "sections": [
-              {
-                "name": "right bippin blossom door",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|right bippin blossom door"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "black tower ruins",
-            "sections": [
-              {
-                "name": "black tower ruins",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|black tower ruins"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "happy mask shop",
-            "sections": [
-              {
-                "name": "happy mask shop",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|happy mask shop"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "d11",
-            "sections": [
-              {
-                "name": "d11",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|d11"
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Forest of Time",
-        "children": [
-          {
-            "name": "nayru's house",
-            "sections": [
-              {
-                "name": "nayru's house",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|nayru's house"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "lower tingle cave",
-            "sections": [
-              {
-                "name": "lower tingle cave",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|lower tingle cave"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "upper tingle stairs",
-            "sections": [
-              {
-                "name": "upper tingle stairs",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|upper tingle stairs"
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Yoll Graveyard",
-        "children": [
-          {
-            "name": "cheval grave",
-            "sections": [
-              {
-                "name": "cheval grave",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|cheval grave"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "grave under the tree",
-            "sections": [
-              {
-                "name": "grave under the tree",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|grave under the tree"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "syrup hut",
-            "sections": [
-              {
-                "name": "syrup hut",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|syrup hut"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "poe grave",
-            "sections": [
-              {
-                "name": "poe grave",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|poe grave"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "d1",
-            "sections": [
-              {
-                "name": "d1",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|d1"
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Fairies' Woods",
-        "children": [
-        ]
-      },
-      {
-        "name": "Zora Seas",
-        "children": [
-          {
-            "name": "present underwater sea of storms cave",
-            "sections": [
-              {
-                "name": "present underwater sea of storms cave",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present underwater sea of storms cave"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present drifting island house",
-            "sections": [
-              {
-                "name": "present drifting island house",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present drifting island house"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present underwater zora duplex left",
-            "sections": [
-              {
-                "name": "present underwater zora duplex left",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present underwater zora duplex left"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present underwater zora duplex right",
-            "sections": [
-              {
-                "name": "present underwater zora duplex right",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present underwater zora duplex right"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present underwater zora house",
-            "sections": [
-              {
-                "name": "present underwater zora house",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present underwater zora house"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present zora palace",
-            "sections": [
-              {
-                "name": "present zora palace",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present zora palace"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "zora crypt cave",
-            "sections": [
-              {
-                "name": "zora crypt cave",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|zora crypt cave"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present fairy queen cave",
-            "sections": [
-              {
-                "name": "present fairy queen cave",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present fairy queen cave"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present library",
-            "sections": [
-              {
-                "name": "present library",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present library"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "d7",
-            "sections": [
-              {
-                "name": "d7",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|d7"
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Crescent Island",
-        "children": [
-          {
-            "name": "d3",
-            "sections": [
-              {
-                "name": "d3",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|d3"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "southern fairy cave",
-            "sections": [
-              {
-                "name": "southern fairy cave",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|southern fairy cave"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "underwater maze cave",
-            "sections": [
-              {
-                "name": "underwater maze cave",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|underwater maze cave"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "tokay chef house",
-            "sections": [
-              {
-                "name": "tokay chef house",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|tokay chef house"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "wild tokay museum",
-            "sections": [
-              {
-                "name": "wild tokay museum",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|wild tokay museum"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "present chicken hut",
-            "sections": [
-              {
-                "name": "present chicken hut",
-                "item_count": 1,
-                "access_rules": [
-                  "^$CanReachOutside|present chicken hut"
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Sea of Storms",
-        "children": [
-        ]
-      }
-    ]
-  }
+    }
 ]
