@@ -166,26 +166,30 @@ function StateChange()
 end
 
 function CanReach(name)
-	if IsStale then
-		StateChange()
-	end
+    if IsStale then
+        StateChange()
+    end
 
-	local location
-	if type(name) == "table" then
-		location = NamedLocations[name.name]
-	else
-		location = NamedLocations[name]
-	end
+    local location
+    if type(name) == "table" then
+        location = NamedLocations[name.name]
+    else
+        location = NamedLocations[name]
+    end
 
-	if location == nil then
-		if type(name) == "table" then
-			print("Unknown location: " .. tostring(name.name))
-		else
-			print("Unknown location: " .. tostring(name))
-		end
-		return AccessibilityLevel.None
-	end
-	return location:accessibility()
+    if location == nil then
+        if type(name) == "table" then
+            print("Unknown location: " .. tostring(name.name))
+        else
+            print("Unknown location: " .. tostring(name))
+        end
+        return AccessibilityLevel.None
+    end
+    return location:accessibility()
+end
+
+function CanReachOutside(name)
+    return CanReach("outside_" .. name)
 end
 
 function Has(item, amount)

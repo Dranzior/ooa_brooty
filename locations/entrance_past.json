@@ -1,1545 +1,1403 @@
 [
-    {
-        "name": "Overworld_Past_Entrances",
-        "chest_unopened_img": "images/items/chest_past.png",
-        "chest_opened_img": "images/items/chest_past_open.png",
+  {
+    "name": "Overworld_Past_Entrances",
+    "chest_unopened_img": "images/items/chest_past.png",
+    "chest_opened_img": "images/items/chest_past_open.png",
+    "children": [
+      {
+        "name": "Symmetry Village",
         "children": [
-            {
-                "name": "Symmetry Village",
-                "children": [
-                    {
-                        "name": "past top left symmetry house",
-                        "sections": [
-                            {
-                                "name": "past top left symmetry house",
-                                "access_rules": [
-                                    "^$CanReachOutside|past top left symmetry house"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 359,
-                                "y": 42,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "past top right symmetry house",
-                        "sections": [
-                            {
-                                "name": "past top right symmetry house",
-                                "access_rules": [
-                                    "^$CanReachOutside|past top right symmetry house"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 760,
-                                "y": 43,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "symmetry town hall",
-                        "sections": [
-                            {
-                                "name": "symmetry town hall",
-                                "access_rules": [
-                                    "^$CanReachOutside|symmetry town hall"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 558,
-                                "y": 222,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "past bottom left symmetry house",
-                        "sections": [
-                            {
-                                "name": "past bottom left symmetry house",
-                                "access_rules": [
-                                    "^$CanReachOutside|past bottom left symmetry house"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 408,
-                                "y": 188,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "past bottom right symmetry house",
-                        "sections": [
-                            {
-                                "name": "past bottom right symmetry house",
-                                "access_rules": [
-                                    "^$CanReachOutside|past bottom right symmetry house"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 713,
-                                "y": 187,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Talus Peaks",
-                "children": [
-                    {
-                        "name": "tokkey dive spot",
-                        "sections": [
-                            {
-                                "name": "tokkey dive spot",
-                                "access_rules": [
-                                    "^$CanReachOutside|tokkey dive spot"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 298,
-                                "y": 25,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "talus waterfall cave front",
-                        "sections": [
-                            {
-                                "name": "talus waterfall cave front",
-                                "access_rules": [
-                                    "^$CanReachOutside|talus waterfall cave front"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 240,
-                                "y": 662,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "talus waterfall cave right",
-                        "sections": [
-                            {
-                                "name": "talus waterfall cave right",
-                                "access_rules": [
-                                    "^$CanReachOutside|talus waterfall cave right"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 280,
-                                "y": 602,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "talus waterfall cave left",
-                        "sections": [
-                            {
-                                "name": "talus waterfall cave left",
-                                "access_rules": [
-                                    "^$CanReachOutside|talus waterfall cave left"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 182,
-                                "y": 600,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "patch cave",
-                        "sections": [
-                            {
-                                "name": "patch cave",
-                                "access_rules": [
-                                    "^$CanReachOutside|patch cave"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 560,
-                                "y": 265,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "restoration wall base cave",
-                        "sections": [
-                            {
-                                "name": "restoration wall base cave",
-                                "access_rules": [
-                                    "^$CanReachOutside|restoration wall base cave"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 617,
-                                "y": 585,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Rolling Ridge",
-                "children": [
-                    {
-                        "name": "old zora cave",
-                        "sections": [
-                            {
-                                "name": "old zora cave",
-                                "access_rules": [
-                                    "^$CanReachOutside|old zora cave"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1624,
-                                "y": 697,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "past goron city lower",
-                        "sections": [
-                            {
-                                "name": "past goron city lower",
-                                "access_rules": [
-                                    "^$CanReachOutside|past goron city lower"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1384,
-                                "y": 297,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "past goron city upper",
-                        "sections": [
-                            {
-                                "name": "past goron city upper",
-                                "access_rules": [
-                                    "^$CanReachOutside|past goron city upper"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1352,
-                                "y": 135,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "past behind moblin keep cave",
-                        "sections": [
-                            {
-                                "name": "past behind moblin keep cave",
-                                "access_rules": [
-                                    "^$CanReachOutside|past behind moblin keep cave"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1528,
-                                "y": 56,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "treasure hunting goron cave",
-                        "sections": [
-                            {
-                                "name": "treasure hunting goron cave",
-                                "access_rules": [
-                                    "^$CanReachOutside|treasure hunting goron cave"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1880,
-                                "y": 42,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "cave left of treasure hunting goron",
-                        "sections": [
-                            {
-                                "name": "cave left of treasure hunting goron",
-                                "access_rules": [
-                                    "^$CanReachOutside|cave left of treasure hunting goron"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1785,
-                                "y": 72,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "goron face bomb cave",
-                        "sections": [
-                            {
-                                "name": "goron face bomb cave",
-                                "access_rules": [
-                                    "^$CanReachOutside|goron face bomb cave"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 2120,
-                                "y": 88,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "east ridge lower to upper cave top",
-                        "sections": [
-                            {
-                                "name": "east ridge lower to upper cave top",
-                                "access_rules": [
-                                    "^$CanReachOutside|east ridge lower to upper cave top"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1990,
-                                "y": 89,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "east ridge lower to upper cave base",
-                        "sections": [
-                            {
-                                "name": "east ridge lower to upper cave base",
-                                "access_rules": [
-                                    "^$CanReachOutside|east ridge lower to upper cave base"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1816,
-                                "y": 297,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "past mermaid cave front porch",
-                        "sections": [
-                            {
-                                "name": "past mermaid cave front porch",
-                                "access_rules": [
-                                    "^$CanReachOutside|past mermaid cave front porch"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1990,
-                                "y": 439,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "past goron dance hall lower",
-                        "sections": [
-                            {
-                                "name": "past goron dance hall lower",
-                                "access_rules": [
-                                    "^$CanReachOutside|past goron dance hall lower"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 2200,
-                                "y": 425,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "past goron dance hall middle",
-                        "sections": [
-                            {
-                                "name": "past goron dance hall middle",
-                                "access_rules": [
-                                    "^$CanReachOutside|past goron dance hall middle"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1976,
-                                "y": 201,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "goron shooting gallery",
-                        "sections": [
-                            {
-                                "name": "goron shooting gallery",
-                                "access_rules": [
-                                    "^$CanReachOutside|goron shooting gallery"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 2135,
-                                "y": 152,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "past east ridge fairy cave",
-                        "sections": [
-                            {
-                                "name": "past east ridge fairy cave",
-                                "access_rules": [
-                                    "^$CanReachOutside|past east ridge fairy cave"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 2200,
-                                "y": 263,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "generous old man bush",
-                        "sections": [
-                            {
-                                "name": "generous old man bush",
-                                "access_rules": [
-                                    "^$CanReachOutside|generous old man bush"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 2216,
-                                "y": 568,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Lynna Village",
-                "children": [
-                    {
-                        "name": "town shooting gallery",
-                        "sections": [
-                            {
-                                "name": "town shooting gallery",
-                                "access_rules": [
-                                    "^$CanReachOutside|town shooting gallery"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1319,
-                                "y": 698,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "advance shop",
-                        "sections": [
-                            {
-                                "name": "advance shop",
-                                "access_rules": [
-                                    "^$CanReachOutside|advance shop"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1367,
-                                "y": 698,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "postman house",
-                        "sections": [
-                            {
-                                "name": "postman house",
-                                "access_rules": [
-                                    "^$CanReachOutside|postman house"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1224,
-                                "y": 699,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "sad boi house",
-                        "sections": [
-                            {
-                                "name": "sad boi house",
-                                "access_rules": [
-                                    "^$CanReachOutside|sad boi house"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1078,
-                                "y": 683,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "gasha farmer house",
-                        "sections": [
-                            {
-                                "name": "gasha farmer house",
-                                "access_rules": [
-                                    "^$CanReachOutside|gasha farmer house"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 840,
-                                "y": 601,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "toilet hand house",
-                        "sections": [
-                            {
-                                "name": "toilet hand house",
-                                "access_rules": [
-                                    "^$CanReachOutside|toilet hand house"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 823,
-                                "y": 717,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "palace front door",
-                        "sections": [
-                            {
-                                "name": "palace front door",
-                                "access_rules": [
-                                    "^$CanReachOutside|palace front door"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1040,
-                                "y": 26,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "palace left door",
-                        "sections": [
-                            {
-                                "name": "palace left door",
-                                "access_rules": [
-                                    "^$CanReachOutside|palace left door"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 855,
-                                "y": 29,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "palace right door",
-                        "sections": [
-                            {
-                                "name": "palace right door",
-                                "access_rules": [
-                                    "^$CanReachOutside|palace right door"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1224,
-                                "y": 24,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "palace secret entrance",
-                        "sections": [
-                            {
-                                "name": "palace secret entrance",
-                                "access_rules": [
-                                    "^$CanReachOutside|palace secret entrance"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1239,
-                                "y": 329,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "rafton house left",
-                        "sections": [
-                            {
-                                "name": "rafton house left",
-                                "access_rules": [
-                                    "^$CanReachOutside|rafton house left"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1192,
-                                "y": 1324,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "rafton house right",
-                        "sections": [
-                            {
-                                "name": "rafton house right",
-                                "access_rules": [
-                                    "^$CanReachOutside|rafton house right"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1225,
-                                "y": 1325,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "d0",
-                        "sections": [
-                            {
-                                "name": "d0",
-                                "access_rules": [
-                                    "^$CanReachOutside|d0"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1305,
-                                "y": 554,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "advisor house",
-                        "sections": [
-                            {
-                                "name": "advisor house",
-                                "access_rules": [
-                                    "^$CanReachOutside|advisor house"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1031,
-                                "y": 858,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "cheval house",
-                        "sections": [
-                            {
-                                "name": "cheval house",
-                                "access_rules": [
-                                    "^$CanReachOutside|cheval house"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1559,
-                                "y": 923,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Sea of Storms",
-                "children": [
-                    {
-                        "name": "past underwater sea of storms cave",
-                        "sections": [
-                            {
-                                "name": "past underwater sea of storms cave",
-                                "access_rules": [
-                                    "^$CanReachOutside|past underwater sea of storms cave"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1223,
-                                "y": 1619,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Sea of no Return",
-                "children": [
-                    {
-                        "name": "d8",
-                        "sections": [
-                            {
-                                "name": "d8",
-                                "access_rules": [
-                                    "^$CanReachOutside|d8"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 2000,
-                                "y": 667,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Deku Forest",
-                "children": [
-                    {
-                        "name": "deku forest push block cave stairs",
-                        "sections": [
-                            {
-                                "name": "deku forest push block cave stairs",
-                                "access_rules": [
-                                    "^$CanReachOutside|deku forest push block cave stairs"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 392,
-                                "y": 920,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "deku forest heart cave stairs",
-                        "sections": [
-                            {
-                                "name": "deku forest heart cave stairs",
-                                "access_rules": [
-                                    "^$CanReachOutside|deku forest heart cave stairs"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 759,
-                                "y": 952,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "deku forest heart cave bush stairs",
-                        "sections": [
-                            {
-                                "name": "deku forest heart cave bush stairs",
-                                "access_rules": [
-                                    "^$CanReachOutside|deku forest heart cave bush stairs"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 184,
-                                "y": 1178,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "mystery seed cave front stairs",
-                        "sections": [
-                            {
-                                "name": "mystery seed cave front stairs",
-                                "access_rules": [
-                                    "^$CanReachOutside|mystery seed cave front stairs"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 199,
-                                "y": 937,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "mystery seed cave back left stairs",
-                        "sections": [
-                            {
-                                "name": "mystery seed cave back left stairs",
-                                "access_rules": [
-                                    "^$CanReachOutside|mystery seed cave back left stairs"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 40,
-                                "y": 936,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "mystery seed cave back right stairs",
-                        "sections": [
-                            {
-                                "name": "mystery seed cave back right stairs",
-                                "access_rules": [
-                                    "^$CanReachOutside|mystery seed cave back right stairs"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 118,
-                                "y": 935,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "d2",
-                        "sections": [
-                            {
-                                "name": "d2",
-                                "access_rules": [
-                                    "^$CanReachOutside|d2"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 567,
-                                "y": 1066,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Zora Seas",
-                "children": [
-                    {
-                        "name": "past underwater drifting island cave",
-                        "sections": [
-                            {
-                                "name": "past underwater drifting island cave",
-                                "access_rules": [
-                                    "^$CanReachOutside|past underwater drifting island cave"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 867,
-                                "y": 1634,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "past drifting island house",
-                        "sections": [
-                            {
-                                "name": "past drifting island house",
-                                "access_rules": [
-                                    "^$CanReachOutside|past drifting island house"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 936,
-                                "y": 1595,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "past underwater zora duplex left",
-                        "sections": [
-                            {
-                                "name": "past underwater zora duplex left",
-                                "access_rules": [
-                                    "^$CanReachOutside|past underwater zora duplex left"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 27,
-                                "y": 1751,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "past underwater zora duplex right",
-                        "sections": [
-                            {
-                                "name": "past underwater zora duplex right",
-                                "access_rules": [
-                                    "^$CanReachOutside|past underwater zora duplex right"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 82,
-                                "y": 1748,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "past underwater zora house",
-                        "sections": [
-                            {
-                                "name": "past underwater zora house",
-                                "access_rules": [
-                                    "^$CanReachOutside|past underwater zora house"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 256,
-                                "y": 1622,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "past zora palace",
-                        "sections": [
-                            {
-                                "name": "past zora palace",
-                                "access_rules": [
-                                    "^$CanReachOutside|past zora palace"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 239,
-                                "y": 1395,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "past fairy queen cave",
-                        "sections": [
-                            {
-                                "name": "past fairy queen cave",
-                                "access_rules": [
-                                    "^$CanReachOutside|past fairy queen cave"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 585,
-                                "y": 1334,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "past library",
-                        "sections": [
-                            {
-                                "name": "past library",
-                                "access_rules": [
-                                    "^$CanReachOutside|past library"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 849,
-                                "y": 1323,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Crescent Island",
-                "children": [
-                    {
-                        "name": "lost shield tokay cave",
-                        "sections": [
-                            {
-                                "name": "lost shield tokay cave",
-                                "access_rules": [
-                                    "^$CanReachOutside|lost shield tokay cave"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1576,
-                                "y": 1736,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "hero trials cave",
-                        "sections": [
-                            {
-                                "name": "hero trials cave",
-                                "access_rules": [
-                                    "^$CanReachOutside|hero trials cave"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1687,
-                                "y": 1498,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "crystal tokay cave",
-                        "sections": [
-                            {
-                                "name": "crystal tokay cave",
-                                "access_rules": [
-                                    "^$CanReachOutside|crystal tokay cave"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1784,
-                                "y": 1414,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "flipper tokay cave stairs",
-                        "sections": [
-                            {
-                                "name": "flipper tokay cave stairs",
-                                "access_rules": [
-                                    "^$CanReachOutside|flipper tokay cave stairs"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1943,
-                                "y": 1476,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "flipper tokay bomb cave",
-                        "sections": [
-                            {
-                                "name": "flipper tokay bomb cave",
-                                "access_rules": [
-                                    "^$CanReachOutside|flipper tokay bomb cave"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1895,
-                                "y": 1545,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "crescent pot grotto right",
-                        "sections": [
-                            {
-                                "name": "crescent pot grotto right",
-                                "access_rules": [
-                                    "^$CanReachOutside|crescent pot grotto right"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1784,
-                                "y": 1674,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "crescent pot grotto left",
-                        "sections": [
-                            {
-                                "name": "crescent pot grotto left",
-                                "access_rules": [
-                                    "^$CanReachOutside|crescent pot grotto left"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 1703,
-                                "y": 1674,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "long hook pot cave",
-                        "sections": [
-                            {
-                                "name": "long hook pot cave",
-                                "access_rules": [
-                                    "^$CanReachOutside|long hook pot cave"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 2104,
-                                "y": 1721,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "past chicken hut stairs",
-                        "sections": [
-                            {
-                                "name": "past chicken hut stairs",
-                                "access_rules": [
-                                    "^$CanReachOutside|past chicken hut stairs"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 2103,
-                                "y": 1562,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "past chicken hut front",
-                        "sections": [
-                            {
-                                "name": "past chicken hut front",
-                                "access_rules": [
-                                    "^$CanReachOutside|past chicken hut front"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 2152,
-                                "y": 1592,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "wild tokay game",
-                        "sections": [
-                            {
-                                "name": "wild tokay game",
-                                "access_rules": [
-                                    "^$CanReachOutside|wild tokay game"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 2104,
-                                "y": 1432,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "tokay shop",
-                        "sections": [
-                            {
-                                "name": "tokay shop",
-                                "access_rules": [
-                                    "^$CanReachOutside|tokay shop"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 2170,
-                                "y": 1306,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "underwater hero trials cave",
-                        "sections": [
-                            {
-                                "name": "underwater hero trials cave",
-                                "access_rules": [
-                                    "^$CanReachOutside|underwater hero trials cave"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "past_entrance",
-                                "x": 2005,
-                                "y": 1115,
-                                "size": 10,
-                                "shape": "rect"
-                            }
-                        ]
-                    }
-                ]
-            }
+          {
+            "name": "past top left symmetry house",
+            "sections": [
+              {
+                "name": "past top left symmetry house",
+                "access_rules": [
+                  "^$CanReachOutside|past_top_left_symmetry_house"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 359,
+                "y": 42
+              }
+            ]
+          },
+          {
+            "name": "past top right symmetry house",
+            "sections": [
+              {
+                "name": "past top right symmetry house",
+                "access_rules": [
+                  "^$CanReachOutside|past_top_right_symmetry_house"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 760,
+                "y": 43
+              }
+            ]
+          },
+          {
+            "name": "symmetry town hall",
+            "sections": [
+              {
+                "name": "symmetry town hall",
+                "access_rules": [
+                  "^$CanReachOutside|symmetry_town_hall"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 558,
+                "y": 222
+              }
+            ]
+          },
+          {
+            "name": "past bottom left symmetry house",
+            "sections": [
+              {
+                "name": "past bottom left symmetry house",
+                "access_rules": [
+                  "^$CanReachOutside|past_bottom_left_symmetry_house"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 408,
+                "y": 188
+              }
+            ]
+          },
+          {
+            "name": "past bottom right symmetry house",
+            "sections": [
+              {
+                "name": "past bottom right symmetry house",
+                "access_rules": [
+                  "^$CanReachOutside|past_bottom_right_symmetry_house"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 713,
+                "y": 187
+              }
+            ]
+          }
         ]
-    }
+      },
+      {
+        "name": "Talus Peaks",
+        "children": [
+          {
+            "name": "tokkey dive spot",
+            "sections": [
+              {
+                "name": "tokkey dive spot",
+                "access_rules": [
+                  "^$CanReachOutside|tokkey_dive_spot"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 298,
+                "y": 25
+              }
+            ]
+          },
+          {
+            "name": "talus waterfall cave front",
+            "sections": [
+              {
+                "name": "talus waterfall cave front",
+                "access_rules": [
+                  "^$CanReachOutside|talus_waterfall_cave_front"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 240,
+                "y": 662
+              }
+            ]
+          },
+          {
+            "name": "talus waterfall cave right",
+            "sections": [
+              {
+                "name": "talus waterfall cave right",
+                "access_rules": [
+                  "^$CanReachOutside|talus_waterfall_cave_right"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 280,
+                "y": 602
+              }
+            ]
+          },
+          {
+            "name": "talus waterfall cave left",
+            "sections": [
+              {
+                "name": "talus waterfall cave left",
+                "access_rules": [
+                  "^$CanReachOutside|talus_waterfall_cave_left"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 182,
+                "y": 600
+              }
+            ]
+          },
+          {
+            "name": "patch cave",
+            "sections": [
+              {
+                "name": "patch cave",
+                "access_rules": [
+                  "^$CanReachOutside|patch_cave"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 560,
+                "y": 265
+              }
+            ]
+          },
+          {
+            "name": "restoration wall base cave",
+            "sections": [
+              {
+                "name": "restoration wall base cave",
+                "access_rules": [
+                  "^$CanReachOutside|restoration_wall_base_cave"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 617,
+                "y": 585
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rolling Ridge",
+        "children": [
+          {
+            "name": "old zora cave",
+            "sections": [
+              {
+                "name": "old zora cave",
+                "access_rules": [
+                  "^$CanReachOutside|old_zora_cave"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1624,
+                "y": 697
+              }
+            ]
+          },
+          {
+            "name": "past goron city lower",
+            "sections": [
+              {
+                "name": "past goron city lower",
+                "access_rules": [
+                  "^$CanReachOutside|past_goron_city_lower"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1384,
+                "y": 297
+              }
+            ]
+          },
+          {
+            "name": "past goron city upper",
+            "sections": [
+              {
+                "name": "past goron city upper",
+                "access_rules": [
+                  "^$CanReachOutside|past_goron_city_upper"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1352,
+                "y": 135
+              }
+            ]
+          },
+          {
+            "name": "past behind moblin keep cave",
+            "sections": [
+              {
+                "name": "past behind moblin keep cave",
+                "access_rules": [
+                  "^$CanReachOutside|past_behind_moblin_keep_cave"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1528,
+                "y": 56
+              }
+            ]
+          },
+          {
+            "name": "treasure hunting goron cave",
+            "sections": [
+              {
+                "name": "treasure hunting goron cave",
+                "access_rules": [
+                  "^$CanReachOutside|treasure_hunting_goron_cave"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1880,
+                "y": 42
+              }
+            ]
+          },
+          {
+            "name": "cave left of treasure hunting goron",
+            "sections": [
+              {
+                "name": "cave left of treasure hunting goron",
+                "access_rules": [
+                  "^$CanReachOutside|cave_left_of_treasure_hunting_goron"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1785,
+                "y": 72
+              }
+            ]
+          },
+          {
+            "name": "goron face bomb cave",
+            "sections": [
+              {
+                "name": "goron face bomb cave",
+                "access_rules": [
+                  "^$CanReachOutside|goron_face_bomb_cave"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 2120,
+                "y": 88
+              }
+            ]
+          },
+          {
+            "name": "east ridge lower to upper cave top",
+            "sections": [
+              {
+                "name": "east ridge lower to upper cave top",
+                "access_rules": [
+                  "^$CanReachOutside|east_ridge_lower_to_upper_cave_top"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1990,
+                "y": 89
+              }
+            ]
+          },
+          {
+            "name": "east ridge lower to upper cave base",
+            "sections": [
+              {
+                "name": "east ridge lower to upper cave base",
+                "access_rules": [
+                  "^$CanReachOutside|east_ridge_lower_to_upper_cave_base"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1816,
+                "y": 297
+              }
+            ]
+          },
+          {
+            "name": "past mermaid cave front porch",
+            "sections": [
+              {
+                "name": "past mermaid cave front porch",
+                "access_rules": [
+                  "^$CanReachOutside|past_mermaid_cave_front_porch"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1990,
+                "y": 439
+              }
+            ]
+          },
+          {
+            "name": "past goron dance hall lower",
+            "sections": [
+              {
+                "name": "past goron dance hall lower",
+                "access_rules": [
+                  "^$CanReachOutside|past_goron_dance_hall_lower"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 2200,
+                "y": 425
+              }
+            ]
+          },
+          {
+            "name": "past goron dance hall middle",
+            "sections": [
+              {
+                "name": "past goron dance hall middle",
+                "access_rules": [
+                  "^$CanReachOutside|past_goron_dance_hall_middle"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1976,
+                "y": 201
+              }
+            ]
+          },
+          {
+            "name": "goron shooting gallery",
+            "sections": [
+              {
+                "name": "goron shooting gallery",
+                "access_rules": [
+                  "^$CanReachOutside|goron_shooting_gallery"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 2135,
+                "y": 152
+              }
+            ]
+          },
+          {
+            "name": "past east ridge fairy cave",
+            "sections": [
+              {
+                "name": "past east ridge fairy cave",
+                "access_rules": [
+                  "^$CanReachOutside|past_east_ridge_fairy_cave"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 2200,
+                "y": 263
+              }
+            ]
+          },
+          {
+            "name": "generous old man bush",
+            "sections": [
+              {
+                "name": "generous old man bush",
+                "access_rules": [
+                  "^$CanReachOutside|generous_old_man_bush"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 2216,
+                "y": 568
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lynna Village",
+        "children": [
+          {
+            "name": "town shooting gallery",
+            "sections": [
+              {
+                "name": "town shooting gallery",
+                "access_rules": [
+                  "^$CanReachOutside|town_shooting_gallery"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1319,
+                "y": 698
+              }
+            ]
+          },
+          {
+            "name": "advance shop",
+            "sections": [
+              {
+                "name": "advance shop",
+                "access_rules": [
+                  "^$CanReachOutside|advance_shop"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1367,
+                "y": 698
+              }
+            ]
+          },
+          {
+            "name": "postman house",
+            "sections": [
+              {
+                "name": "postman house",
+                "access_rules": [
+                  "^$CanReachOutside|postman_house"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1224,
+                "y": 699
+              }
+            ]
+          },
+          {
+            "name": "sad boi house",
+            "sections": [
+              {
+                "name": "sad boi house",
+                "access_rules": [
+                  "^$CanReachOutside|sad_boi_house"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1078,
+                "y": 683
+              }
+            ]
+          },
+          {
+            "name": "gasha farmer house",
+            "sections": [
+              {
+                "name": "gasha farmer house",
+                "access_rules": [
+                  "^$CanReachOutside|gasha_farmer_house"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 840,
+                "y": 601
+              }
+            ]
+          },
+          {
+            "name": "toilet hand house",
+            "sections": [
+              {
+                "name": "toilet hand house",
+                "access_rules": [
+                  "^$CanReachOutside|toilet_hand_house"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 823,
+                "y": 717
+              }
+            ]
+          },
+          {
+            "name": "palace front door",
+            "sections": [
+              {
+                "name": "palace front door",
+                "access_rules": [
+                  "^$CanReachOutside|palace_front_door"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1040,
+                "y": 26
+              }
+            ]
+          },
+          {
+            "name": "palace left door",
+            "sections": [
+              {
+                "name": "palace left door",
+                "access_rules": [
+                  "^$CanReachOutside|palace_left_door"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 855,
+                "y": 29
+              }
+            ]
+          },
+          {
+            "name": "palace right door",
+            "sections": [
+              {
+                "name": "palace right door",
+                "access_rules": [
+                  "^$CanReachOutside|palace_right_door"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1224,
+                "y": 24
+              }
+            ]
+          },
+          {
+            "name": "palace secret entrance",
+            "sections": [
+              {
+                "name": "palace secret entrance",
+                "access_rules": [
+                  "^$CanReachOutside|palace_secret_entrance"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1239,
+                "y": 329
+              }
+            ]
+          },
+          {
+            "name": "rafton house left",
+            "sections": [
+              {
+                "name": "rafton house left",
+                "access_rules": [
+                  "^$CanReachOutside|rafton_house_left"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1192,
+                "y": 1324
+              }
+            ]
+          },
+          {
+            "name": "rafton house right",
+            "sections": [
+              {
+                "name": "rafton house right",
+                "access_rules": [
+                  "^$CanReachOutside|rafton_house_right"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1225,
+                "y": 1325
+              }
+            ]
+          },
+          {
+            "name": "d0",
+            "sections": [
+              {
+                "name": "d0",
+                "access_rules": [
+                  "^$CanReachOutside|d0"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1305,
+                "y": 554
+              }
+            ]
+          },
+          {
+            "name": "advisor house",
+            "sections": [
+              {
+                "name": "advisor house",
+                "access_rules": [
+                  "^$CanReachOutside|advisor_house"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1031,
+                "y": 858
+              }
+            ]
+          },
+          {
+            "name": "cheval house",
+            "sections": [
+              {
+                "name": "cheval house",
+                "access_rules": [
+                  "^$CanReachOutside|cheval_house"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1559,
+                "y": 923
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sea of Storms",
+        "children": [
+          {
+            "name": "past underwater sea of storms cave",
+            "sections": [
+              {
+                "name": "past underwater sea of storms cave",
+                "access_rules": [
+                  "^$CanReachOutside|past_underwater_sea_of_storms_cave"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1223,
+                "y": 1619
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sea of no Return",
+        "children": [
+          {
+            "name": "d8",
+            "sections": [
+              {
+                "name": "d8",
+                "access_rules": [
+                  "^$CanReachOutside|d8"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 2000,
+                "y": 667
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Deku Forest",
+        "children": [
+          {
+            "name": "deku forest push block cave stairs",
+            "sections": [
+              {
+                "name": "deku forest push block cave stairs",
+                "access_rules": [
+                  "^$CanReachOutside|deku_forest_push_block_cave_stairs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 392,
+                "y": 920
+              }
+            ]
+          },
+          {
+            "name": "deku forest heart cave stairs",
+            "sections": [
+              {
+                "name": "deku forest heart cave stairs",
+                "access_rules": [
+                  "^$CanReachOutside|deku_forest_heart_cave_stairs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 759,
+                "y": 952
+              }
+            ]
+          },
+          {
+            "name": "deku forest heart cave bush stairs",
+            "sections": [
+              {
+                "name": "deku forest heart cave bush stairs",
+                "access_rules": [
+                  "^$CanReachOutside|deku_forest_heart_cave_bush_stairs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 184,
+                "y": 1178
+              }
+            ]
+          },
+          {
+            "name": "mystery seed cave front stairs",
+            "sections": [
+              {
+                "name": "mystery seed cave front stairs",
+                "access_rules": [
+                  "^$CanReachOutside|mystery_seed_cave_front_stairs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 199,
+                "y": 937
+              }
+            ]
+          },
+          {
+            "name": "mystery seed cave back left stairs",
+            "sections": [
+              {
+                "name": "mystery seed cave back left stairs",
+                "access_rules": [
+                  "^$CanReachOutside|mystery_seed_cave_back_left_stairs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 40,
+                "y": 936
+              }
+            ]
+          },
+          {
+            "name": "mystery seed cave back right stairs",
+            "sections": [
+              {
+                "name": "mystery seed cave back right stairs",
+                "access_rules": [
+                  "^$CanReachOutside|mystery_seed_cave_back_right_stairs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 118,
+                "y": 935
+              }
+            ]
+          },
+          {
+            "name": "d2",
+            "sections": [
+              {
+                "name": "d2",
+                "access_rules": [
+                  "^$CanReachOutside|d2"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 567,
+                "y": 1066
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zora Seas",
+        "children": [
+          {
+            "name": "past underwater drifting island cave",
+            "sections": [
+              {
+                "name": "past underwater drifting island cave",
+                "access_rules": [
+                  "^$CanReachOutside|past_underwater_drifting_island_cave"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 867,
+                "y": 1634
+              }
+            ]
+          },
+          {
+            "name": "past drifting island house",
+            "sections": [
+              {
+                "name": "past drifting island house",
+                "access_rules": [
+                  "^$CanReachOutside|past_drifting_island_house"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 936,
+                "y": 1595
+              }
+            ]
+          },
+          {
+            "name": "past underwater zora duplex left",
+            "sections": [
+              {
+                "name": "past underwater zora duplex left",
+                "access_rules": [
+                  "^$CanReachOutside|past_underwater_zora_duplex_left"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 27,
+                "y": 1751
+              }
+            ]
+          },
+          {
+            "name": "past underwater zora duplex right",
+            "sections": [
+              {
+                "name": "past underwater zora duplex right",
+                "access_rules": [
+                  "^$CanReachOutside|past_underwater_zora_duplex_right"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 82,
+                "y": 1748
+              }
+            ]
+          },
+          {
+            "name": "past underwater zora house",
+            "sections": [
+              {
+                "name": "past underwater zora house",
+                "access_rules": [
+                  "^$CanReachOutside|past_underwater_zora_house"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 256,
+                "y": 1622
+              }
+            ]
+          },
+          {
+            "name": "past zora palace",
+            "sections": [
+              {
+                "name": "past zora palace",
+                "access_rules": [
+                  "^$CanReachOutside|past_zora_palace"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 239,
+                "y": 1395
+              }
+            ]
+          },
+          {
+            "name": "past fairy queen cave",
+            "sections": [
+              {
+                "name": "past fairy queen cave",
+                "access_rules": [
+                  "^$CanReachOutside|past_fairy_queen_cave"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 585,
+                "y": 1334
+              }
+            ]
+          },
+          {
+            "name": "past library",
+            "sections": [
+              {
+                "name": "past library",
+                "access_rules": [
+                  "^$CanReachOutside|past_library"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 849,
+                "y": 1323
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Crescent Island",
+        "children": [
+          {
+            "name": "lost shield tokay cave",
+            "sections": [
+              {
+                "name": "lost shield tokay cave",
+                "access_rules": [
+                  "^$CanReachOutside|lost_shield_tokay_cave"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1576,
+                "y": 1736
+              }
+            ]
+          },
+          {
+            "name": "hero trials cave",
+            "sections": [
+              {
+                "name": "hero trials cave",
+                "access_rules": [
+                  "^$CanReachOutside|hero_trials_cave"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1687,
+                "y": 1498
+              }
+            ]
+          },
+          {
+            "name": "crystal tokay cave",
+            "sections": [
+              {
+                "name": "crystal tokay cave",
+                "access_rules": [
+                  "^$CanReachOutside|crystal_tokay_cave"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1784,
+                "y": 1414
+              }
+            ]
+          },
+          {
+            "name": "flipper tokay cave stairs",
+            "sections": [
+              {
+                "name": "flipper tokay cave stairs",
+                "access_rules": [
+                  "^$CanReachOutside|flipper_tokay_cave_stairs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1943,
+                "y": 1476
+              }
+            ]
+          },
+          {
+            "name": "flipper tokay bomb cave",
+            "sections": [
+              {
+                "name": "flipper tokay bomb cave",
+                "access_rules": [
+                  "^$CanReachOutside|flipper_tokay_bomb_cave"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1895,
+                "y": 1545
+              }
+            ]
+          },
+          {
+            "name": "crescent pot grotto right",
+            "sections": [
+              {
+                "name": "crescent pot grotto right",
+                "access_rules": [
+                  "^$CanReachOutside|crescent_pot_grotto_right"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1784,
+                "y": 1674
+              }
+            ]
+          },
+          {
+            "name": "crescent pot grotto left",
+            "sections": [
+              {
+                "name": "crescent pot grotto left",
+                "access_rules": [
+                  "^$CanReachOutside|crescent_pot_grotto_left"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 1703,
+                "y": 1674
+              }
+            ]
+          },
+          {
+            "name": "long hook pot cave",
+            "sections": [
+              {
+                "name": "long hook pot cave",
+                "access_rules": [
+                  "^$CanReachOutside|long_hook_pot_cave"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 2104,
+                "y": 1721
+              }
+            ]
+          },
+          {
+            "name": "past chicken hut stairs",
+            "sections": [
+              {
+                "name": "past chicken hut stairs",
+                "access_rules": [
+                  "^$CanReachOutside|past_chicken_hut_stairs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 2103,
+                "y": 1562
+              }
+            ]
+          },
+          {
+            "name": "past chicken hut front",
+            "sections": [
+              {
+                "name": "past chicken hut front",
+                "access_rules": [
+                  "^$CanReachOutside|past_chicken_hut_front"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 2152,
+                "y": 1592
+              }
+            ]
+          },
+          {
+            "name": "wild tokay game",
+            "sections": [
+              {
+                "name": "wild tokay game",
+                "access_rules": [
+                  "^$CanReachOutside|wild_tokay_game"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 2104,
+                "y": 1432
+              }
+            ]
+          },
+          {
+            "name": "tokay shop",
+            "sections": [
+              {
+                "name": "tokay shop",
+                "access_rules": [
+                  "^$CanReachOutside|tokay_shop"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 2170,
+                "y": 1306
+              }
+            ]
+          },
+          {
+            "name": "underwater hero trials cave",
+            "sections": [
+              {
+                "name": "underwater hero trials cave",
+                "access_rules": [
+                  "^$CanReachOutside|underwater_hero_trials_cave"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past_entrance",
+                "x": 2005,
+                "y": 1115
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 ]
