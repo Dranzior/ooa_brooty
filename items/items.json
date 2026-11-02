@@ -959,7 +959,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/items/raft.png",
-    "codes": "raft_toggle, _raft_built"
+    "codes": "raft_toggle, _raft_built, RaftUnlocked"
   },
   {
     "name": "Rescue Nayru",

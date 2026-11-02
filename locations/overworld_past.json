@@ -1065,7 +1065,7 @@
           {
             "name": "Get Raft for Sea Travel!",
             "access_rules": [
-              "^$CanReach|raftons_raft"
+              "^$CanReach|build_raft"
             ],
             "sections": [
               {
