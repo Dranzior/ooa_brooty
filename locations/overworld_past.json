@@ -50,6 +50,13 @@
                 "visibility_rules": [
                   "secret_locations_on"
                 ]
+              },
+              {
+                "name": "Place Tuni-Nut",
+                "hosted_item": "TuniNutPlaced",
+                "access_rules": [
+                  "^$CanReach|place_tuni_nut"
+                ]
               }
             ],
             "map_locations": [
@@ -107,6 +114,26 @@
                 "map": "past",
                 "x": 585,
                 "y": 300
+              }
+            ]
+          },
+          {
+            "name": "Redirect Waterfall",
+            "access_rules": [
+              "^$CanReach|redirect_waterfall"
+            ],
+            "sections": [
+              {
+                "name": "Redirect Waterfall",
+                "hosted_item": "WaterfallRedirected"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past",
+                "shape": "diamond",
+                "x": 231,
+                "y": 615
               }
             ]
           },
@@ -461,6 +488,26 @@
             ]
           },
           {
+            "name": "Move Vine Seed",
+            "access_rules": [
+              "^$CanReach|ridge_move_vine_seed"
+            ],
+            "sections": [
+              {
+                "name": "Move Vine Seed",
+                "hosted_item": "RollingRidgeVineMoved"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past",
+                "shape": "diamond",
+                "x": 2039,
+                "y": 279
+              }
+            ]
+          },
+          {
             "name": "Ridge West Base: Spot",
             "visibility_rules": [
               "^$CanSeeGasha|1"
@@ -538,7 +585,8 @@
                   "^$CanReach|veran_beaten"
                 ],
                 "visibility_rules": [
-                  "goal_ganon", "goal_veran"
+                  "goal_ganon",
+                  "goal_veran"
                 ],
                 "item_count": 1,
                 "chest_unopened_img": "images/bosses/veran.png",
@@ -1627,6 +1675,26 @@
                 "shape": "diamond",
                 "x": 584,
                 "y": 1335
+              }
+            ]
+          },
+          {
+            "name": "Open Library",
+            "access_rules": [
+              "^$CanReach|open_library"
+            ],
+            "sections": [
+              {
+                "name": "Open Library",
+                "hosted_item": "LibraryOpened"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "past",
+                "shape": "diamond",
+                "x": 847,
+                "y": 1358
               }
             ]
           },

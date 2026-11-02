@@ -1010,6 +1010,34 @@
     "img": "images/items/kingzora_access.png",
     "codes": "enterjabu_toggle, JabuJabuPermission, _got_permission_from_king_zora"
   },
+  {
+    "name": "Place Tuni Nut",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/tuni_placed.png",
+    "codes":"TuniNutPlaced, _tuni_nut_placed"
+  },
+  {
+    "name": "Open Library",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/open_library.png",
+    "codes":"LibraryOpened, _library_open"
+  },
+  {
+    "name": "Redirect Waterfall",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/redirect_waterfall.png",
+    "codes":"WaterfallRedirected, _redirect_waterfall"
+  },
+  {
+    "name": "Move Rolling Ridge Vine seed",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/move_rr_vine.png",
+    "codes":"RollingRidgeVineMoved, _access_cart"
+  },
   // Dungeon Entrances
   {
     "name": "Maku Road Entrance",

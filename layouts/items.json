@@ -376,6 +376,7 @@
     "rows": [
       [
         "curezora_toggle",
+        "LibraryOpened",
         "curefairy_toggle",
         "enterjabu_toggle"
       ]
@@ -392,6 +393,33 @@
       [
         "Nayru",
         "makuseed_toggle"
+      ]
+    ]
+  },
+  "toggle_tab_Talus": {
+    "type": "itemgrid",
+    "orientation": "vertical",
+    "h_alignment": "center",
+    "margin": "0,2",
+    "item_margin": "10,0",
+    "item_size": 44,
+    "rows": [
+      [
+        "WaterfallRedirected",
+        "TuniNutPlaced"
+      ]
+    ]
+  },
+  "toggle_tab_Rolling_Ridge": {
+    "type": "itemgrid",
+    "orientation": "vertical",
+    "h_alignment": "center",
+    "margin": "0,2",
+    "item_margin": "10,0",
+    "item_size": 44,
+    "rows": [
+      [
+        "RollingRidgeVineMoved"
       ]
     ]
   },
@@ -565,27 +593,61 @@
   "toggle_grid": {
     "type": "array",
     "orientation": "vertical",
-    "dock": "left",
+    "dock": "top",
     "content": [
       {
-        "type": "group",
-        "header": "Tokay Island",
+        "type": "array",
+        "orientation": "horizontal",
         "dock": "left",
-        "content": {
-          "type": "layout",
-          "v_alignment": "right",
-          "key": "toggle_tab_D3"
-        }
+        "content": [
+          {
+            "type": "group",
+            "header": "Tokay Island",
+            "dock": "left",
+            "content": {
+              "type": "layout",
+              "v_alignment": "right",
+              "key": "toggle_tab_D3"
+            }
+          },
+          {
+            "type": "group",
+            "header": "Symmetry - Talus",
+            "dock": "left",
+            "content": {
+              "type": "layout",
+              "v_alignment": "right",
+              "key": "toggle_tab_Talus"
+            }
+          }
+        ]
       },
       {
-        "type": "group",
-        "header": "Mermaid Cave Past",
-        "dock": "top",
-        "content": {
-          "type": "layout",
-          "v_alignment": "left",
-          "key": "toggle_tab_D6"
-        }
+        "type": "array",
+        "orientation": "horizontal",
+        "dock": "left",
+        "content": [
+          {
+            "type": "group",
+            "header": "Mermaid Cave Past",
+            "dock": "top",
+            "content": {
+              "type": "layout",
+              "v_alignment": "left",
+              "key": "toggle_tab_D6"
+            }
+          },
+          {
+            "type": "group",
+            "header": "Rolling Ridge",
+            "dock": "left",
+            "content": {
+              "type": "layout",
+              "v_alignment": "right",
+              "key": "toggle_tab_Rolling_Ridge"
+            }
+          }
+        ]
       },
       {
         "type": "group",
@@ -599,7 +661,7 @@
       },
       {
         "type": "group",
-        "header": "Other Story",
+        "header": "Others",
         "dock": "top",
         "content": {
           "type": "layout",

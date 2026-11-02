@@ -17,6 +17,12 @@
       "flags": [
         "ap"
       ]
+    },
+	"var_entrance_rando": {
+      "display_name": "Map Tracker (AP) - ER - 0.9.12",
+      "flags": [
+        "ap"
+      ]
     }
   },
   "versions_url": "https://raw.githubusercontent.com/Dranzior/ooa_brooty/master/versions.json",

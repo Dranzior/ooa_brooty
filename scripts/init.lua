@@ -52,6 +52,9 @@ if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
     -- Locations
     Tracker:AddLocations("locations/overworld_past.json")
     Tracker:AddLocations("locations/overworld_present.json")
+
+    Tracker:AddLocations("locations/entrance_past.json")
+    Tracker:AddLocations("locations/entrance_present.json")
     Tracker:AddLocations("locations/maku_path.json")
     Tracker:AddLocations("locations/spirits_grave.json")
     Tracker:AddLocations("locations/wing_dungeon.json")
