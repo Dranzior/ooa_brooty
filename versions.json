@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "package_version": "0.9.13",
+      "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.13/ooa.zip",
+      "sha256": "bd7beda3d67070690c6b9a4cd1523d095e4c82a71be3f5a4a5b66791b1bf7a9b",
+      "changelog": [
+        "CHANGES: Implement the logic fixes from the APWorld 2.0.1",
+        "FIX: raft auto tracking and logic"
+      ]
+    },
+    {
       "package_version": "0.9.12",
       "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.12/ooa.zip",
       "sha256": "7802ab0b09ef0a3276749a934671c0ea24cee27ec176b622e621d824b3cffe0f",
