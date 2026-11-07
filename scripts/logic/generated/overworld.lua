@@ -325,7 +325,7 @@ outside_d2:connect_one_way_entrance(deku_forest,function() return All(
             ooa_ER_inside_lock_fully_blocked() == false,
             Any(
                 ooa_ER_inside_lock_fully_open(),
-                ooa_has_explosives(false)
+                ooa_has_explosives(1)
             )
         ) end)
 lynna_village:connect_two_ways_entrance(outside_lost_shield_tokay_cave,function() return ooa_can_dive() end)
@@ -353,7 +353,7 @@ outside_wild_tokay_game:connect_one_way_entrance(crescent_past_east,function() r
             ooa_ER_inside_lock_fully_blocked() == false,
             Any(
                 ooa_ER_inside_lock_fully_open(),
-                ooa_has_explosives(false)
+                ooa_has_explosives(1)
             )
         ) end)
 inside_wild_tokay_game:connect_one_way_entrance(wild_tokay_game,function() return ooa_has_bracelet() end)
@@ -393,7 +393,7 @@ outside_flipper_tokay_bomb_cave:connect_one_way_entrance(crescent_past_middle,fu
             ooa_ER_inside_lock_fully_blocked() == false,
             Any(
                 ooa_ER_inside_lock_fully_open(),
-                ooa_has_explosives(false)
+                ooa_has_explosives(1)
             )
         ) end)
 inside_flipper_tokay_bomb_cave:connect_one_way_entrance(tokay_stolen_flippers,function() return Any(
@@ -403,9 +403,38 @@ inside_flipper_tokay_bomb_cave:connect_one_way_entrance(tokay_stolen_flippers,fu
                 ooa_can_jump_1_wide_liquid(false)
             )
         ) end)
-inside_flipper_tokay_bomb_cave:connect_one_way_entrance(inside_flipper_tokay_cave_stairs,function() return Any(
-            ooa_can_jump_1_wide_liquid(false),
-            ooa_can_swim(false)) end)
+inside_flipper_tokay_bomb_cave:connect_one_way_entrance(inside_flipper_tokay_cave_stairs,function() return All(
+        ooa_has_bracelet(),
+
+        Any(
+            ooa_can_swim(false),
+            All(
+                ooa_has_bombs(),
+                ooa_can_jump_1_wide_liquid(false)
+                )
+            )
+        ) end)
+inside_flipper_tokay_cave_stairs:connect_one_way_entrance(inside_flipper_tokay_bomb_cave,function() return Any(
+            ooa_can_swim(false),
+            All(
+                ooa_has_bombs(),
+                ooa_can_jump_1_wide_liquid(false)
+            )
+        ) end)
+inside_flipper_tokay_cave_stairs:connect_one_way_entrance(tokay_stolen_flippers,function() return Any(
+            All(
+                ooa_has_bombs(),
+                ooa_can_jump_1_wide_liquid(false)
+            ),
+
+            All(
+                ooa_can_swim(false),
+                ooa_option_medium_logic()),
+
+            All(
+                ooa_has_bracelet(),
+                ooa_option_medium_logic())
+        ) end)
 outside_flipper_tokay_cave_stairs:connect_two_ways_entrance(tokay_stolen_satchel)
 outside_flipper_tokay_cave_stairs:connect_one_way_entrance(crescent_past_east)
 crescent_present_east:connect_one_way_entrance(tokay_stolen_satchel,function() return ooa_can_switch_past_and_present() end)
@@ -935,7 +964,7 @@ inside_past_zora_palace:connect_one_way_entrance(king_zoras_saved,function() ret
             Has("King Zora's Potion"),
             ooa_can_travel_underwater()
         ) end)
-raftons_raft:connect_two_ways_entrance(library_island_past,function() return Has("_sea_cleaned") end)
+raftons_raft:connect_one_way_entrance(library_island_past,function() return Has("_sea_cleaned") end)
 library_island_past:connect_one_way_entrance(outside_past_fairy_queen_cave,function() return ooa_has_switch_hook() end)
 inside_past_fairy_queen_cave:connect_one_way_entrance(sea_cleaned,function() return Has("Fairy Powder") end)
 library_island_past:connect_one_way_entrance(open_library,function() return Has("Library Key") end)
